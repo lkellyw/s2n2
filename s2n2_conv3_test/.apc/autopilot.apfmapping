@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="activations.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp"/>
+    <originFiles name="bnn-library.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h"/>
+    <originFiles name="configM.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/configM.h"/>
+    <originFiles name="conv_mmv.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv_mmv.cpp"/>
+    <originFiles name="convlayer.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h"/>
+    <originFiles name="dma.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"/>
+    <originFiles name="fclayer.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h"/>
+    <originFiles name="interpret.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp"/>
+    <originFiles name="mac.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp"/>
+    <originFiles name="maxpool.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"/>
+    <originFiles name="memdataM.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/memdataM.h"/>
+    <originFiles name="mmv.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp"/>
+    <originFiles name="mvau.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp"/>
+    <originFiles name="pool.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/pool.hpp"/>
+    <originFiles name="slidingwindow.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"/>
+    <originFiles name="streamtools.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"/>
+    <originFiles name="utils.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp"/>
+    <originFiles name="vvau.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp"/>
+    <originFiles name="weights.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="conv3mmv_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv3mmv_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

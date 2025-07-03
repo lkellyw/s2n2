@@ -1,0 +1,91 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'coder' on host 'coder-kwlaial-kellylaijetnet' (Linux_x86_64 version 5.15.134+release+2.10.0r8-amd64) on Thu Jul 03 03:39:58 UTC 2025
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/coder/Desktop/s2n2'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script '/home/coder/Desktop/s2n2/s2n2_conv3_test/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/coder/Desktop/s2n2/s2n2_conv3_test/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project s2n2_conv3_test 
+INFO: [HLS 200-10] Opening project '/home/coder/Desktop/s2n2/s2n2_conv3_test'.
+INFO: [HLS 200-1510] Running: set_top Testbench_convmmv 
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/activations.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/activations.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/bnn-library.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/bnn-library.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/tb/configM.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/tb/configM.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/tb/conv_mmv.cpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/tb/conv_mmv.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/convlayer.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/convlayer.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/dma.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/dma.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/fclayer.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/fclayer.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/interpret.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/interpret.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/mac.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/mac.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/maxpool.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/maxpool.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/tb/memdataM.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/tb/memdataM.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/mmv.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/mmv.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/mvau.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/mvau.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/pool.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/pool.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/slidingwindow.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/slidingwindow.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/streamtools.h 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/streamtools.h' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/utils.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/utils.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/vvau.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/vvau.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files finn-hlslib-lif/weights.hpp 
+INFO: [HLS 200-10] Adding design file 'finn-hlslib-lif/weights.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb finn-hlslib-lif/tb/conv3mmv_tb.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'finn-hlslib-lif/tb/conv3mmv_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/coder/Desktop/s2n2/s2n2_conv3_test/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./s2n2_conv3_test/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name Testbench_convmmv Testbench_convmmv 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../finn-hlslib-lif/tb/conv3mmv_tb.cpp in debug mode
+../../../../finn-hlslib-lif/tb/conv3mmv_tb.cpp:50:10: fatal error: bnn-library.h: No such file or directory
+ #include "bnn-library.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [csim.mk:78: obj/conv3mmv_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.21 seconds. CPU system time: 0.2 seconds. Elapsed time: 0.59 seconds; current allocated memory: 3.211 MB.
+4
+    while executing
+"source /home/coder/Desktop/s2n2/s2n2_conv3_test/solution1/csim.tcl"
+    invoked from within
+"hls::main /home/coder/Desktop/s2n2/s2n2_conv3_test/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 2.44 seconds. Total CPU system time: 0.6 seconds. Total elapsed time: 6.67 seconds; peak allocated memory: 309.438 MB.
