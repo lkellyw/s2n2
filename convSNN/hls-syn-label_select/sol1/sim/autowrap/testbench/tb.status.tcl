@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/./sim/autowrap/testbench/label_select_top.cpp_pre.cpp.tb.cpp

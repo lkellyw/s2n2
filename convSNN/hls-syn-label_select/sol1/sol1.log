@@ -1,0 +1,74 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'label_select_top.cpp' ... 
+WARNING: [HLS 200-40] clang: warning: argument unused during compilation: '-fdiagnostics-color'
+WARNING: [HLS 200-40] clang: warning: argument unused during compilation: '-fdiagnostics-color'
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109555 ; free virtual = 280532
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109555 ; free virtual = 280532
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109552 ; free virtual = 280530
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:381: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109514 ; free virtual = 280493
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:370) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:377) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:382) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'toplabels.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:362) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topval.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:365) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'Testbench_label_select', detected/extracted 2 process function(s): 
+	 'StreamingDataWidthConverter_Batch<16u, 80u, 10u>'
+	 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374:68) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374:59) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >'... converting 31 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109533 ; free virtual = 280512
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:368:25) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'StreamingDataWidthConverter_Batch<16u, 80u, 10u>' to 'StreamingDataWidthCo' (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:46:46)
+WARNING: [XFORM 203-631] Renaming function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' to 'LabelSelect_Batch' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:45:47)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109523 ; free virtual = 280503
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Testbench_label_select' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingDataWidthCo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 39.92 seconds; current allocated memory: 209.147 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 209.330 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'LabelSelect_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+WARNING: [SCHED 204-21] Estimated clock period (6.43ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path in module 'LabelSelect_Batch' consists of the following:
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [98]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_14', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [107]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [113]  (0.42 ns)
+	'phi' operation ('topval[2].V') with incoming values : ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [20]  (0 ns)
+	'icmp' operation ('icmp_ln895_2', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [45]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [51]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_5', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [61]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [67]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_8', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [77]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [83]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_11', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [92]  (0.866 ns)

@@ -1,0 +1,250 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx2/Vivado/2020.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx2/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'coder' on host 'coder-kwlaial-kellylaijetnet' (Linux_x86_64 version 5.15.134+release+2.10.0r8-amd64) on Fri Jul 11 20:13:23 UTC 2025
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/coder/Desktop/s2n2/convSNN'
+Sourcing Tcl script 'test_label_select.tcl'
+INFO: [HLS 200-10] Creating and opening project '/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select'.
+INFO: [HLS 200-10] Adding design file 'label_select_top.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'label_select_tb.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1'.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../label_select_tb.cpp in debug mode
+   Compiling ../../../../label_select_top.cpp in debug mode
+   Generating csim.exe
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'label_select_top.cpp' ... 
+WARNING: [HLS 200-40] clang: warning: argument unused during compilation: '-fdiagnostics-color'
+WARNING: [HLS 200-40] clang: warning: argument unused during compilation: '-fdiagnostics-color'
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109555 ; free virtual = 280532
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109555 ; free virtual = 280532
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109552 ; free virtual = 280530
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:381: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109514 ; free virtual = 280493
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:370) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:377) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:382) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'toplabels.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:362) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topval.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:365) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'Testbench_label_select', detected/extracted 2 process function(s): 
+	 'StreamingDataWidthConverter_Batch<16u, 80u, 10u>'
+	 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374:68) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374:59) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >'... converting 31 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109533 ; free virtual = 280512
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:368:25) in function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'StreamingDataWidthConverter_Batch<16u, 80u, 10u>' to 'StreamingDataWidthCo' (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:46:46)
+WARNING: [XFORM 203-631] Renaming function 'LabelSelect_Batch<10u, 5u, 3u, ap_int<16>, ap_uint<4> >' to 'LabelSelect_Batch' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:45:47)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109523 ; free virtual = 280503
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Testbench_label_select' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingDataWidthCo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 39.92 seconds; current allocated memory: 209.147 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 209.330 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'LabelSelect_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+WARNING: [SCHED 204-21] Estimated clock period (6.43ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path in module 'LabelSelect_Batch' consists of the following:
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [98]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_14', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [107]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [113]  (0.42 ns)
+	'phi' operation ('topval[2].V') with incoming values : ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [20]  (0 ns)
+	'icmp' operation ('icmp_ln895_2', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [45]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [51]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_5', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [61]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [67]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_8', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [77]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [83]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_11', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [92]  (0.866 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.92 seconds; current allocated memory: 209.846 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 210.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Testbench_label_select' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 210.723 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 210.882 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingDataWidthCo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'StreamingDataWidthCo'.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 211.290 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'LabelSelect_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Testbench_label_select_mux_32_4_1_1' to 'Testbench_label_sbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Testbench_label_sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'LabelSelect_Batch'.
+INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 213.107 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Testbench_label_select' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Testbench_label_select/in_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Testbench_label_select/out_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Testbench_label_select/numReps' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Testbench_label_select' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_LabelSelect_Batch_U0' to 'start_for_LabelSecud' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Testbench_label_select'.
+INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 215.895 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 155.52 MHz
+INFO: [RTMG 210-285] Implementing FIFO 'wa_input_V_V_U(fifo_w80_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'numReps_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_LabelSecud_U(start_for_LabelSecud)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 109494 ; free virtual = 280478
+INFO: [VHDL 208-304] Generating VHDL RTL for Testbench_label_select.
+INFO: [VLOG 209-307] Generating Verilog RTL for Testbench_label_select.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx2/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling label_select_top.cpp_pre.cpp.tb.cpp
+   Compiling apatb_Testbench_label_select.cpp
+   Compiling label_select_tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/tools/Xilinx2/Vivado/2020.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx2/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_Testbench_label_select_top glbl -prj Testbench_label_select.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /tools/Xilinx2/Vivado/2020.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s Testbench_label_select 
+Multi-threading is on. Using 126 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/Testbench_label_select.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_Testbench_label_select_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/AESL_autofifo_in_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_in_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/AESL_autofifo_out_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/StreamingDataWidthCo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StreamingDataWidthCo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/LabelSelect_Batch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LabelSelect_Batch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/Testbench_label_select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_label_select
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/Testbench_label_sbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_label_sbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/fifo_w80_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w80_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w80_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/fifo_w32_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/start_for_LabelSecud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_LabelSecud_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_LabelSecud
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.StreamingDataWidthCo
+Compiling module xil_defaultlib.Testbench_label_sbkb(ID=1,din0_W...
+Compiling module xil_defaultlib.LabelSelect_Batch
+Compiling module xil_defaultlib.fifo_w80_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w80_d2_A
+Compiling module xil_defaultlib.fifo_w32_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w32_d2_A
+Compiling module xil_defaultlib.start_for_LabelSecud_shiftReg
+Compiling module xil_defaultlib.start_for_LabelSecud
+Compiling module xil_defaultlib.Testbench_label_select
+Compiling module xil_defaultlib.AESL_autofifo_in_V_V
+Compiling module xil_defaultlib.AESL_autofifo_out_V_V
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_Testbench_label_select_top
+Compiling module work.glbl
+Built simulation snapshot Testbench_label_select
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/xsim.dir/Testbench_label_select/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 11 20:14:35 2025...
+
+****** xsim v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/Testbench_label_select/xsim_script.tcl
+# xsim {Testbench_label_select} -autoloadwcfg -tclbatch {Testbench_label_select.tcl}
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source Testbench_label_select.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "113000"
+// RTL Simulation : 1 / 1 [n/a] @ "298000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 317500 ps : File "/home/coder/Desktop/s2n2/convSNN/hls-syn-label_select/sol1/sim/verilog/Testbench_label_select.autotb.v" Line 331
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Jul 11 20:14:46 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-112] Total elapsed time: 84.02 seconds; peak allocated memory: 215.895 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Fri Jul 11 20:14:47 2025...

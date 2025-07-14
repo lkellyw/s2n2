@@ -1,0 +1,362 @@
+
+
+================================================================
+== Vivado HLS Report for 'LabelSelect_Batch'
+================================================================
+* Date:           Fri Jul 11 20:14:05 2025
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        hls-syn-label_select
+* Solution:       sol1
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 6.430 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |        ?|        ?|        13|          -|          -|     ?|    no    |
+        | + Loop 1.1  |        6|        6|         6|          1|          1|     2|    yes   |
+        | + Loop 1.2  |        3|        3|         1|          -|          -|     3|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 6, States = { 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 9 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 3 
+9 --> 10 
+10 --> 10 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.16>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%toplabels_0_V_10 = alloca i4"   --->   Operation 11 'alloca' 'toplabels_0_V_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%toplabels_1_V_10 = alloca i4"   --->   Operation 12 'alloca' 'toplabels_1_V_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%toplabels_2_V_12 = alloca i4"   --->   Operation 13 'alloca' 'toplabels_2_V_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i80* %in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 14 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%empty_26 = call i32 (...)* @_ssdm_op_SpecInterface(i4* %out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 15 'specinterface' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%empty_27 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %numReps, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 16 'specinterface' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (2.16ns)   --->   "%numReps_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %numReps)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:354]   --->   Operation 17 'read' 'numReps_read' <Predicate = true> <Delay = 2.16> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 4> <Depth = 2> <FIFO>
+ST_1 : Operation 18 [1/1] (0.75ns)   --->   "br label %.loopexit" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:368->label_select_top.cpp:45]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.75>
+
+State 2 <SV = 1> <Delay = 1.44>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%reps_0_i = phi i32 [ 0, %entry ], [ %reps, %.loopexit.loopexit ]"   --->   Operation 19 'phi' 'reps_0_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.11ns)   --->   "%icmp_ln368 = icmp eq i32 %reps_0_i, %numReps_read" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:368->label_select_top.cpp:45]   --->   Operation 20 'icmp' 'icmp_ln368' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (1.20ns)   --->   "%reps = add i32 %reps_0_i, 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:368->label_select_top.cpp:45]   --->   Operation 21 'add' 'reps' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "br i1 %icmp_ln368, label %.exit, label %.preheader148.i.preheader" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:368->label_select_top.cpp:45]   --->   Operation 22 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.75ns)   --->   "br label %.preheader148.i" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 23 'br' <Predicate = (!icmp_ln368)> <Delay = 0.75>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "ret void" [label_select_top.cpp:45]   --->   Operation 24 'ret' <Predicate = (icmp_ln368)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.72>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%topval_1_V = phi i16 [ %topval_2_V_8, %hls_label_4 ], [ -32768, %.preheader148.i.preheader ]"   --->   Operation 25 'phi' 'topval_1_V' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%topval_0_V = phi i16 [ %topval_1_V_19, %hls_label_4 ], [ -32768, %.preheader148.i.preheader ]"   --->   Operation 26 'phi' 'topval_0_V' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%topval_V_0_0_i = phi i16 [ %topval_0_V_19, %hls_label_4 ], [ -32768, %.preheader148.i.preheader ]"   --->   Operation 27 'phi' 'topval_V_0_0_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%toplabels_2_V = phi i4 [ %idx, %hls_label_4 ], [ 0, %.preheader148.i.preheader ]"   --->   Operation 28 'phi' 'toplabels_2_V' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%block_0_i = phi i2 [ %block, %hls_label_4 ], [ 0, %.preheader148.i.preheader ]"   --->   Operation 29 'phi' 'block_0_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.51ns)   --->   "%icmp_ln374 = icmp eq i2 %block_0_i, -2" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 30 'icmp' 'icmp_ln374' <Predicate = true> <Delay = 0.51> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 31 'speclooptripcount' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.62ns)   --->   "%block = add i2 %block_0_i, 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 32 'add' 'block' <Predicate = true> <Delay = 0.62> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %icmp_ln374, label %.preheader.i.preheader, label %hls_label_4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 33 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 2.16>
+ST_4 : Operation 34 [1/1] (2.16ns)   --->   "%tmp_V_2 = call i80 @_ssdm_op_Read.ap_fifo.volatile.i80P(i80* %in_V_V)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:376->label_select_top.cpp:45]   --->   Operation 34 'read' 'tmp_V_2' <Predicate = (!icmp_ln374)> <Delay = 2.16> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 4> <Depth = 2> <FIFO>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%topval_0_V_20 = trunc i80 %tmp_V_2 to i16" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:381->label_select_top.cpp:45]   --->   Operation 35 'trunc' 'topval_0_V_20' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%topval_0_V_21 = call i16 @_ssdm_op_PartSelect.i16.i80.i32.i32(i80 %tmp_V_2, i32 16, i32 31)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:381->label_select_top.cpp:45]   --->   Operation 36 'partselect' 'topval_0_V_21' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%topval_0_V_22 = call i16 @_ssdm_op_PartSelect.i16.i80.i32.i32(i80 %tmp_V_2, i32 32, i32 47)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:381->label_select_top.cpp:45]   --->   Operation 37 'partselect' 'topval_0_V_22' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%topval_0_V_23 = call i16 @_ssdm_op_PartSelect.i16.i80.i32.i32(i80 %tmp_V_2, i32 48, i32 63)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:381->label_select_top.cpp:45]   --->   Operation 38 'partselect' 'topval_0_V_23' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%topval_0_V_24 = call i16 @_ssdm_op_PartSelect.i16.i80.i32.i32(i80 %tmp_V_2, i32 64, i32 79)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:381->label_select_top.cpp:45]   --->   Operation 39 'partselect' 'topval_0_V_24' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 4.72>
+ST_5 : Operation 40 [1/1] (0.86ns)   --->   "%icmp_ln895_2 = icmp sgt i16 %topval_0_V_20, %topval_1_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 40 'icmp' 'icmp_ln895_2' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 41 [1/1] (0.42ns)   --->   "%topval_2_V_9 = select i1 %icmp_ln895_2, i16 %topval_0_V_20, i16 %topval_1_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 41 'select' 'topval_2_V_9' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 42 [1/1] (0.86ns)   --->   "%icmp_ln895_5 = icmp sgt i16 %topval_0_V_21, %topval_2_V_9" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 42 'icmp' 'icmp_ln895_5' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (0.42ns)   --->   "%topval_2_V_10 = select i1 %icmp_ln895_5, i16 %topval_0_V_21, i16 %topval_2_V_9" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 43 'select' 'topval_2_V_10' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 44 [1/1] (0.86ns)   --->   "%icmp_ln895_8 = icmp sgt i16 %topval_0_V_22, %topval_2_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 44 'icmp' 'icmp_ln895_8' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [1/1] (0.42ns)   --->   "%topval_2_V = select i1 %icmp_ln895_8, i16 %topval_0_V_22, i16 %topval_2_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 45 'select' 'topval_2_V' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 46 [1/1] (0.86ns)   --->   "%icmp_ln895_11 = icmp sgt i16 %topval_0_V_23, %topval_2_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 46 'icmp' 'icmp_ln895_11' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.43>
+ST_6 : Operation 47 [1/1] (0.86ns)   --->   "%icmp_ln895_1 = icmp sgt i16 %topval_0_V_20, %topval_0_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 47 'icmp' 'icmp_ln895_1' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node topval_1_V_20)   --->   "%topval_1_V_2 = select i1 %icmp_ln895_2, i16 %topval_1_V, i16 %topval_0_V_20" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 48 'select' 'topval_1_V_2' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 49 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_1_V_20 = select i1 %icmp_ln895_1, i16 %topval_1_V_2, i16 %topval_0_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 49 'select' 'topval_1_V_20' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 50 [1/1] (0.86ns)   --->   "%icmp_ln895_4 = icmp sgt i16 %topval_0_V_21, %topval_1_V_20" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 50 'icmp' 'icmp_ln895_4' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 51 [1/1] (0.00ns) (grouped into LUT with out node topval_1_V_21)   --->   "%topval_1_V_6 = select i1 %icmp_ln895_5, i16 %topval_2_V_9, i16 %topval_0_V_21" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 51 'select' 'topval_1_V_6' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 52 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_1_V_21 = select i1 %icmp_ln895_4, i16 %topval_1_V_6, i16 %topval_1_V_20" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 52 'select' 'topval_1_V_21' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 53 [1/1] (0.86ns)   --->   "%icmp_ln895_7 = icmp sgt i16 %topval_0_V_22, %topval_1_V_21" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 53 'icmp' 'icmp_ln895_7' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node topval_1_V_22)   --->   "%topval_1_V_10 = select i1 %icmp_ln895_8, i16 %topval_2_V_10, i16 %topval_0_V_22" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 54 'select' 'topval_1_V_10' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 55 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_1_V_22 = select i1 %icmp_ln895_7, i16 %topval_1_V_10, i16 %topval_1_V_21" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 55 'select' 'topval_1_V_22' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 56 [1/1] (0.86ns)   --->   "%icmp_ln895_10 = icmp sgt i16 %topval_0_V_23, %topval_1_V_22" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 56 'icmp' 'icmp_ln895_10' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 57 [1/1] (0.42ns)   --->   "%topval_2_V_11 = select i1 %icmp_ln895_11, i16 %topval_0_V_23, i16 %topval_2_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 57 'select' 'topval_2_V_11' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 58 [1/1] (0.86ns)   --->   "%icmp_ln895_14 = icmp sgt i16 %topval_0_V_24, %topval_2_V_11" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 58 'icmp' 'icmp_ln895_14' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 59 [1/1] (0.42ns)   --->   "%topval_2_V_8 = select i1 %icmp_ln895_14, i16 %topval_0_V_24, i16 %topval_2_V_11" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 59 'select' 'topval_2_V_8' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.43>
+ST_7 : Operation 60 [1/1] (0.86ns)   --->   "%icmp_ln895 = icmp sgt i16 %topval_0_V_20, %topval_V_0_0_i" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 60 'icmp' 'icmp_ln895' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node topval_0_V_3)   --->   "%topval_0_V_2 = select i1 %icmp_ln895_1, i16 %topval_0_V, i16 %topval_0_V_20" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 61 'select' 'topval_0_V_2' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 62 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_0_V_3 = select i1 %icmp_ln895, i16 %topval_0_V_2, i16 %topval_V_0_0_i" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 62 'select' 'topval_0_V_3' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 63 [1/1] (0.86ns)   --->   "%icmp_ln895_3 = icmp sgt i16 %topval_0_V_21, %topval_0_V_3" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 63 'icmp' 'icmp_ln895_3' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node topval_0_V_7)   --->   "%topval_0_V_6 = select i1 %icmp_ln895_4, i16 %topval_1_V_20, i16 %topval_0_V_21" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 64 'select' 'topval_0_V_6' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 65 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_0_V_7 = select i1 %icmp_ln895_3, i16 %topval_0_V_6, i16 %topval_0_V_3" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 65 'select' 'topval_0_V_7' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 66 [1/1] (0.86ns)   --->   "%icmp_ln895_6 = icmp sgt i16 %topval_0_V_22, %topval_0_V_7" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 66 'icmp' 'icmp_ln895_6' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 67 [1/1] (0.00ns) (grouped into LUT with out node topval_0_V_11)   --->   "%topval_0_V_10 = select i1 %icmp_ln895_7, i16 %topval_1_V_21, i16 %topval_0_V_22" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 67 'select' 'topval_0_V_10' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 68 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_0_V_11 = select i1 %icmp_ln895_6, i16 %topval_0_V_10, i16 %topval_0_V_7" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 68 'select' 'topval_0_V_11' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 69 [1/1] (0.86ns)   --->   "%icmp_ln895_9 = icmp sgt i16 %topval_0_V_23, %topval_0_V_11" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 69 'icmp' 'icmp_ln895_9' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node topval_1_V_23)   --->   "%topval_1_V_14 = select i1 %icmp_ln895_11, i16 %topval_2_V, i16 %topval_0_V_23" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 70 'select' 'topval_1_V_14' <Predicate = (!icmp_ln374 & icmp_ln895_10)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 71 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_1_V_23 = select i1 %icmp_ln895_10, i16 %topval_1_V_14, i16 %topval_1_V_22" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 71 'select' 'topval_1_V_23' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 72 [1/1] (0.86ns)   --->   "%icmp_ln895_13 = icmp sgt i16 %topval_0_V_24, %topval_1_V_23" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 72 'icmp' 'icmp_ln895_13' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node topval_1_V_19)   --->   "%topval_1_V_18 = select i1 %icmp_ln895_14, i16 %topval_2_V_11, i16 %topval_0_V_24" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 73 'select' 'topval_1_V_18' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 74 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_1_V_19 = select i1 %icmp_ln895_13, i16 %topval_1_V_18, i16 %topval_1_V_23" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 74 'select' 'topval_1_V_19' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.43>
+ST_8 : Operation 75 [1/1] (0.00ns)   --->   "%toplabels_0_V_10_lo = load i4* %toplabels_0_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 75 'load' 'toplabels_0_V_10_lo' <Predicate = (!icmp_ln374 & !icmp_ln895 & !icmp_ln895_3 & !icmp_ln895_6 & !icmp_ln895_9)> <Delay = 0.00>
+ST_8 : Operation 76 [1/1] (0.00ns)   --->   "%toplabels_1_V_10_lo = load i4* %toplabels_1_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 76 'load' 'toplabels_1_V_10_lo' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 77 [1/1] (0.00ns)   --->   "%toplabels_2_V_12_lo = load i4* %toplabels_2_V_12" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 77 'load' 'toplabels_2_V_12_lo' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 78 [1/1] (0.00ns)   --->   "%tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 78 'specregionbegin' 'tmp_i' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:375->label_select_top.cpp:45]   --->   Operation 79 'specpipeline' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 80 [1/1] (0.86ns)   --->   "%idx = add i4 5, %toplabels_2_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:397->label_select_top.cpp:45]   --->   Operation 80 'add' 'idx' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%trunc_ln895 = trunc i4 %toplabels_2_V to i3" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 81 'trunc' 'trunc_ln895' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node toplabels_0_V_11)   --->   "%toplabels_0_V = select i1 %icmp_ln895_1, i4 %toplabels_1_V_10_lo, i4 %toplabels_2_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 82 'select' 'toplabels_0_V' <Predicate = (!icmp_ln374 & icmp_ln895 & !icmp_ln895_3 & !icmp_ln895_6 & !icmp_ln895_9)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 83 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_0_V_11 = select i1 %icmp_ln895, i4 %toplabels_0_V, i4 %toplabels_0_V_10_lo" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 83 'select' 'toplabels_0_V_11' <Predicate = (!icmp_ln374 & !icmp_ln895_3 & !icmp_ln895_6 & !icmp_ln895_9)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node toplabels_1_V_11)   --->   "%toplabels_1_V = select i1 %icmp_ln895_2, i4 %toplabels_2_V_12_lo, i4 %toplabels_2_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 84 'select' 'toplabels_1_V' <Predicate = (!icmp_ln374 & icmp_ln895_1)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 85 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_1_V_11 = select i1 %icmp_ln895_1, i4 %toplabels_1_V, i4 %toplabels_1_V_10_lo" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 85 'select' 'toplabels_1_V_11' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 86 [1/1] (0.45ns)   --->   "%toplabels_2_V_13 = select i1 %icmp_ln895_2, i4 %toplabels_2_V, i4 %toplabels_2_V_12_lo" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 86 'select' 'toplabels_2_V_13' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 87 [1/1] (0.74ns)   --->   "%toplabels_2_V_14 = add i3 1, %trunc_ln895" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:387->label_select_top.cpp:45]   --->   Operation 87 'add' 'toplabels_2_V_14' <Predicate = (!icmp_ln374)> <Delay = 0.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 88 [1/1] (0.00ns)   --->   "%toplabels_2_V_15 = zext i3 %toplabels_2_V_14 to i4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:387->label_select_top.cpp:45]   --->   Operation 88 'zext' 'toplabels_2_V_15' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node toplabels_0_V_13)   --->   "%toplabels_0_V_12 = select i1 %icmp_ln895_4, i4 %toplabels_1_V_11, i4 %toplabels_2_V_15" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 89 'select' 'toplabels_0_V_12' <Predicate = (!icmp_ln374 & icmp_ln895_3 & !icmp_ln895_6 & !icmp_ln895_9)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 90 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_0_V_13 = select i1 %icmp_ln895_3, i4 %toplabels_0_V_12, i4 %toplabels_0_V_11" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 90 'select' 'toplabels_0_V_13' <Predicate = (!icmp_ln374 & !icmp_ln895_6 & !icmp_ln895_9)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node toplabels_1_V_13)   --->   "%toplabels_1_V_12 = select i1 %icmp_ln895_5, i4 %toplabels_2_V_13, i4 %toplabels_2_V_15" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 91 'select' 'toplabels_1_V_12' <Predicate = (!icmp_ln374 & icmp_ln895_4)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 92 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_1_V_13 = select i1 %icmp_ln895_4, i4 %toplabels_1_V_12, i4 %toplabels_1_V_11" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 92 'select' 'toplabels_1_V_13' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 93 [1/1] (0.45ns)   --->   "%toplabels_2_V_16 = select i1 %icmp_ln895_5, i4 %toplabels_2_V_15, i4 %toplabels_2_V_13" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 93 'select' 'toplabels_2_V_16' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 94 [1/1] (0.74ns)   --->   "%toplabels_2_V_17 = add i3 2, %trunc_ln895" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:387->label_select_top.cpp:45]   --->   Operation 94 'add' 'toplabels_2_V_17' <Predicate = (!icmp_ln374)> <Delay = 0.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 95 [1/1] (0.00ns)   --->   "%toplabels_2_V_18 = zext i3 %toplabels_2_V_17 to i4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:387->label_select_top.cpp:45]   --->   Operation 95 'zext' 'toplabels_2_V_18' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 96 [1/1] (0.00ns) (grouped into LUT with out node toplabels_0_V_15)   --->   "%toplabels_0_V_14 = select i1 %icmp_ln895_7, i4 %toplabels_1_V_13, i4 %toplabels_2_V_18" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 96 'select' 'toplabels_0_V_14' <Predicate = (!icmp_ln374 & icmp_ln895_6 & !icmp_ln895_9)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 97 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_0_V_15 = select i1 %icmp_ln895_6, i4 %toplabels_0_V_14, i4 %toplabels_0_V_13" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 97 'select' 'toplabels_0_V_15' <Predicate = (!icmp_ln374 & !icmp_ln895_9)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node toplabels_1_V_15)   --->   "%toplabels_1_V_14 = select i1 %icmp_ln895_8, i4 %toplabels_2_V_16, i4 %toplabels_2_V_18" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 98 'select' 'toplabels_1_V_14' <Predicate = (!icmp_ln374 & icmp_ln895_7)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 99 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_1_V_15 = select i1 %icmp_ln895_7, i4 %toplabels_1_V_14, i4 %toplabels_1_V_13" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 99 'select' 'toplabels_1_V_15' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 100 [1/1] (0.45ns)   --->   "%toplabels_2_V_19 = select i1 %icmp_ln895_8, i4 %toplabels_2_V_18, i4 %toplabels_2_V_16" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 100 'select' 'toplabels_2_V_19' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 101 [1/1] (0.86ns)   --->   "%toplabels_2_V_20 = add i4 3, %toplabels_2_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:387->label_select_top.cpp:45]   --->   Operation 101 'add' 'toplabels_2_V_20' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 102 [1/1] (0.00ns) (grouped into LUT with out node topval_0_V_15)   --->   "%topval_0_V_14 = select i1 %icmp_ln895_10, i16 %topval_1_V_22, i16 %topval_0_V_23" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 102 'select' 'topval_0_V_14' <Predicate = (!icmp_ln374 & icmp_ln895_9)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node toplabels_0_V_17)   --->   "%toplabels_0_V_16 = select i1 %icmp_ln895_10, i4 %toplabels_1_V_15, i4 %toplabels_2_V_20" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 103 'select' 'toplabels_0_V_16' <Predicate = (!icmp_ln374 & icmp_ln895_9)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 104 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_0_V_17 = select i1 %icmp_ln895_9, i4 %toplabels_0_V_16, i4 %toplabels_0_V_15" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 104 'select' 'toplabels_0_V_17' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 105 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_0_V_15 = select i1 %icmp_ln895_9, i16 %topval_0_V_14, i16 %topval_0_V_11" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 105 'select' 'topval_0_V_15' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 106 [1/1] (0.00ns) (grouped into LUT with out node toplabels_1_V_17)   --->   "%toplabels_1_V_16 = select i1 %icmp_ln895_11, i4 %toplabels_2_V_19, i4 %toplabels_2_V_20" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 106 'select' 'toplabels_1_V_16' <Predicate = (!icmp_ln374 & icmp_ln895_10)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 107 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_1_V_17 = select i1 %icmp_ln895_10, i4 %toplabels_1_V_16, i4 %toplabels_1_V_15" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 107 'select' 'toplabels_1_V_17' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 108 [1/1] (0.45ns)   --->   "%toplabels_2_V_21 = select i1 %icmp_ln895_11, i4 %toplabels_2_V_20, i4 %toplabels_2_V_19" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 108 'select' 'toplabels_2_V_21' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 109 [1/1] (0.86ns)   --->   "%toplabels_2_V_22 = add i4 4, %toplabels_2_V" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:387->label_select_top.cpp:45]   --->   Operation 109 'add' 'toplabels_2_V_22' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 110 [1/1] (0.86ns)   --->   "%icmp_ln895_12 = icmp sgt i16 %topval_0_V_24, %topval_0_V_15" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 110 'icmp' 'icmp_ln895_12' <Predicate = (!icmp_ln374)> <Delay = 0.86> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 111 [1/1] (0.00ns) (grouped into LUT with out node topval_0_V_19)   --->   "%topval_0_V_18 = select i1 %icmp_ln895_13, i16 %topval_1_V_23, i16 %topval_0_V_24" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 111 'select' 'topval_0_V_18' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 112 [1/1] (0.00ns) (grouped into LUT with out node toplabels_0_V_19)   --->   "%toplabels_0_V_18 = select i1 %icmp_ln895_13, i4 %toplabels_1_V_17, i4 %toplabels_2_V_22" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 112 'select' 'toplabels_0_V_18' <Predicate = (!icmp_ln374)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 113 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_0_V_19 = select i1 %icmp_ln895_12, i4 %toplabels_0_V_18, i4 %toplabels_0_V_17" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 113 'select' 'toplabels_0_V_19' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 114 [1/1] (0.42ns) (out node of the LUT)   --->   "%topval_0_V_19 = select i1 %icmp_ln895_12, i16 %topval_0_V_18, i16 %topval_0_V_15" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 114 'select' 'topval_0_V_19' <Predicate = (!icmp_ln374)> <Delay = 0.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 115 [1/1] (0.00ns) (grouped into LUT with out node toplabels_1_V_19)   --->   "%toplabels_1_V_18 = select i1 %icmp_ln895_14, i4 %toplabels_2_V_21, i4 %toplabels_2_V_22" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45]   --->   Operation 115 'select' 'toplabels_1_V_18' <Predicate = (!icmp_ln374 & icmp_ln895_13)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 116 [1/1] (0.45ns) (out node of the LUT)   --->   "%toplabels_1_V_19 = select i1 %icmp_ln895_13, i4 %toplabels_1_V_18, i4 %toplabels_1_V_17" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 116 'select' 'toplabels_1_V_19' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 117 [1/1] (0.45ns)   --->   "%toplabels_2_V_23 = select i1 %icmp_ln895_14, i4 %toplabels_2_V_22, i4 %toplabels_2_V_21" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45]   --->   Operation 117 'select' 'toplabels_2_V_23' <Predicate = (!icmp_ln374)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 118 [1/1] (0.00ns)   --->   "%empty_29 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5, i32 %tmp_i)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:399->label_select_top.cpp:45]   --->   Operation 118 'specregionend' 'empty_29' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 119 [1/1] (0.00ns)   --->   "store i4 %toplabels_2_V_23, i4* %toplabels_2_V_12" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 119 'store' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 120 [1/1] (0.00ns)   --->   "store i4 %toplabels_1_V_19, i4* %toplabels_1_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 120 'store' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 121 [1/1] (0.00ns)   --->   "store i4 %toplabels_0_V_19, i4* %toplabels_0_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 121 'store' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+ST_8 : Operation 122 [1/1] (0.00ns)   --->   "br label %.preheader148.i" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:374->label_select_top.cpp:45]   --->   Operation 122 'br' <Predicate = (!icmp_ln374)> <Delay = 0.00>
+
+State 9 <SV = 3> <Delay = 0.75>
+ST_9 : Operation 123 [1/1] (0.75ns)   --->   "br label %.preheader.i" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:401->label_select_top.cpp:45]   --->   Operation 123 'br' <Predicate = true> <Delay = 0.75>
+
+State 10 <SV = 4> <Delay = 3.36>
+ST_10 : Operation 124 [1/1] (0.00ns)   --->   "%topx3_0_i = phi i2 [ %topx, %0 ], [ 0, %.preheader.i.preheader ]"   --->   Operation 124 'phi' 'topx3_0_i' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 125 [1/1] (0.51ns)   --->   "%icmp_ln401 = icmp eq i2 %topx3_0_i, -1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:401->label_select_top.cpp:45]   --->   Operation 125 'icmp' 'icmp_ln401' <Predicate = true> <Delay = 0.51> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 126 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 126 'speclooptripcount' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 127 [1/1] (0.62ns)   --->   "%topx = add i2 %topx3_0_i, 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:401->label_select_top.cpp:45]   --->   Operation 127 'add' 'topx' <Predicate = true> <Delay = 0.62> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 128 [1/1] (0.00ns)   --->   "br i1 %icmp_ln401, label %.loopexit.loopexit, label %0" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:401->label_select_top.cpp:45]   --->   Operation 128 'br' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 129 [1/1] (0.00ns)   --->   "%toplabels_0_V_10_lo_1 = load i4* %toplabels_0_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45]   --->   Operation 129 'load' 'toplabels_0_V_10_lo_1' <Predicate = (!icmp_ln401)> <Delay = 0.00>
+ST_10 : Operation 130 [1/1] (0.00ns)   --->   "%toplabels_1_V_10_lo_1 = load i4* %toplabels_1_V_10" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45]   --->   Operation 130 'load' 'toplabels_1_V_10_lo_1' <Predicate = (!icmp_ln401)> <Delay = 0.00>
+ST_10 : Operation 131 [1/1] (0.00ns)   --->   "%toplabels_2_V_12_lo_1 = load i4* %toplabels_2_V_12" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45]   --->   Operation 131 'load' 'toplabels_2_V_12_lo_1' <Predicate = (!icmp_ln401)> <Delay = 0.00>
+ST_10 : Operation 132 [1/1] (0.62ns)   --->   "%sub_ln181 = sub i2 -2, %topx3_0_i" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45]   --->   Operation 132 'sub' 'sub_ln181' <Predicate = (!icmp_ln401)> <Delay = 0.62> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 133 [1/1] (0.57ns)   --->   "%tmp_V = call i4 @_ssdm_op_Mux.ap_auto.3i4.i2(i4 %toplabels_0_V_10_lo_1, i4 %toplabels_1_V_10_lo_1, i4 %toplabels_2_V_12_lo_1, i2 %sub_ln181)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45]   --->   Operation 133 'mux' 'tmp_V' <Predicate = (!icmp_ln401)> <Delay = 0.57> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 134 [1/1] (2.16ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i4P(i4* %out_V_V, i4 %tmp_V)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45]   --->   Operation 134 'write' <Predicate = (!icmp_ln401)> <Delay = 2.16> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 4> <Depth = 2> <FIFO>
+ST_10 : Operation 135 [1/1] (0.00ns)   --->   "br label %.preheader.i" [/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:401->label_select_top.cpp:45]   --->   Operation 135 'br' <Predicate = (!icmp_ln401)> <Delay = 0.00>
+ST_10 : Operation 136 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 136 'br' <Predicate = (icmp_ln401)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 2.17ns
+The critical path consists of the following:
+	fifo read on port 'numReps' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:354) [10]  (2.17 ns)
+
+ <State 2>: 1.44ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln368', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:368->label_select_top.cpp:45) [14]  (1.11 ns)
+	blocking operation 0.331 ns on control path)
+
+ <State 3>: 4.72ns
+The critical path consists of the following:
+	'phi' operation ('topval[2].V') with incoming values : ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [20]  (0 ns)
+	'icmp' operation ('icmp_ln895_2', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [45]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [51]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_5', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [61]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [67]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_8', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [77]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [83]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_11', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [92]  (0.866 ns)
+
+ <State 4>: 2.17ns
+The critical path consists of the following:
+	fifo read on port 'in_V_V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:376->label_select_top.cpp:45) [35]  (2.17 ns)
+
+ <State 5>: 4.72ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln895_2', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [45]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [51]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_5', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [61]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [67]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_8', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [77]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [83]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_11', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [92]  (0.866 ns)
+
+ <State 6>: 6.43ns
+The critical path consists of the following:
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [98]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_14', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [107]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [113]  (0.42 ns)
+	'phi' operation ('topval[2].V') with incoming values : ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [20]  (0 ns)
+	'icmp' operation ('icmp_ln895_2', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [45]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [51]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_5', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [61]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [67]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_8', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [77]  (0.866 ns)
+	'select' operation ('topval[2].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [83]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_11', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [92]  (0.866 ns)
+
+ <State 7>: 6.43ns
+The critical path consists of the following:
+	'select' operation ('topval[1].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [93]  (0 ns)
+	'select' operation ('topval[1].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [96]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_13', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [102]  (0.866 ns)
+	'select' operation ('topval[1].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [111]  (0.42 ns)
+	'phi' operation ('topval[1].V') with incoming values : ('topval[1].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [21]  (0 ns)
+	'icmp' operation ('icmp_ln895_1', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [40]  (0.866 ns)
+	'select' operation ('topval[1].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [49]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_4', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [56]  (0.866 ns)
+	'select' operation ('topval[1].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [65]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_7', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [72]  (0.866 ns)
+	'select' operation ('topval[1].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [81]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_10', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [87]  (0.866 ns)
+
+ <State 8>: 6.43ns
+The critical path consists of the following:
+	'select' operation ('topval[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:388->label_select_top.cpp:45) [88]  (0 ns)
+	'select' operation ('topval[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [91]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_12', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [101]  (0.866 ns)
+	'select' operation ('topval[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [106]  (0.42 ns)
+	'phi' operation ('topval[0].V') with incoming values : ('topval[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [22]  (0 ns)
+	'icmp' operation ('icmp_ln895', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [39]  (0.866 ns)
+	'select' operation ('topval[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [44]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_3', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [55]  (0.866 ns)
+	'select' operation ('topval[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [60]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_6', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [71]  (0.866 ns)
+	'select' operation ('topval[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [76]  (0.42 ns)
+	'icmp' operation ('icmp_ln895_9', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:384->label_select_top.cpp:45) [86]  (0.866 ns)
+
+ <State 9>: 0.755ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('topx') with incoming values : ('topx', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:401->label_select_top.cpp:45) [122]  (0.755 ns)
+
+ <State 10>: 3.36ns
+The critical path consists of the following:
+	'phi' operation ('topx') with incoming values : ('topx', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:401->label_select_top.cpp:45) [122]  (0 ns)
+	'sub' operation ('sub_ln181', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45) [131]  (0.625 ns)
+	'mux' operation ('tmp.V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45) [132]  (0.573 ns)
+	fifo write on port 'out_V_V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:402->label_select_top.cpp:45) [133]  (2.17 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
