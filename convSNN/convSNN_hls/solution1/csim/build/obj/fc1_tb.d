@@ -19,8 +19,7 @@ obj/fc1_tb.o: ../../../../fc1_tb.cpp \
  /tools/Xilinx2/Vivado/2020.1/include/ap_fixed_ref.h \
  /tools/Xilinx2/Vivado/2020.1/include/ap_fixed_special.h \
  /tools/Xilinx2/Vivado/2020.1/include/hls_stream.h \
- ../../../../configSNN.h ../../../../fc1_weights.hpp \
- ../../../../../finn-hlslib-lif/bnn-library.h \
+ ../../../../configSNN.h ../../../../../finn-hlslib-lif/bnn-library.h \
  ../../../../../finn-hlslib-lif/weights.hpp \
  ../../../../../finn-hlslib-lif/mmv.hpp \
  ../../../../../finn-hlslib-lif/streamtools.h \

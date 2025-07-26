@@ -1,305 +1,807 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../fc1_tb.cpp in debug mode
+   Compiling ../../../../fc1_top.cpp in debug mode
    Generating csim.exe
- FC1 Weights [Tile-wise for PE 0]:
-Tile 0: 0b0b1111111111111111
-Tile 1: 0b0b1111111111111111
-Tile 2: 0b0b1111111111111111
-Tile 3: 0b0b1111111111111111
-Tile 4: 0b0b1111111111111111
-Tile 5: 0b0b1111111111111111
-Tile 6: 0b0b1111111111111111
-Tile 7: 0b0b1111111111111111
-Tile 8: 0b0b1111111111111111
-Tile 9: 0b0b1111111111111111
-Tile 10: 0b0b1111111111111111
-Tile 11: 0b0b1111111111111111
-Tile 12: 0b0b1111111111111111
-Tile 13: 0b0b1111111111111111
-Tile 14: 0b0b1111111111111111
-Tile 15: 0b0b1111111111111111
-Tile 16: 0b0b1111111111111111
-Tile 17: 0b0b1111111111111111
-Tile 18: 0b0b1111111111111111
-Tile 19: 0b0b1111111111111111
-Tile 20: 0b0b1111111111111111
-Tile 21: 0b0b1111111111111111
-Tile 22: 0b0b1111111111111111
-Tile 23: 0b0b1111111111111111
-Tile 24: 0b0b1111111111111111
-Tile 25: 0b0b1111111111111111
-Tile 26: 0b0b1111111111111111
-Tile 27: 0b0b1111111111111111
-Tile 28: 0b0b1111111111111111
-Tile 29: 0b0b1111111111111111
-Tile 30: 0b0b1111111111111111
-Tile 31: 0b0b1111111111111111
-Tile 32: 0b0b1111111111111111
-Tile 33: 0b0b1111111111111111
-Tile 34: 0b0b1111111111111111
-Tile 35: 0b0b1111111111111111
-Tile 36: 0b0b1111111111111111
-Tile 37: 0b0b1111111111111111
-Tile 38: 0b0b1111111111111111
-Tile 39: 0b0b1111111111111111
-Tile 40: 0b0b1111111111111111
-Tile 41: 0b0b1111111111111111
-Tile 42: 0b0b1111111111111111
-Tile 43: 0b0b1111111111111111
-Tile 44: 0b0b1111111111111111
-Tile 45: 0b0b1111111111111111
-Tile 46: 0b0b1111111111111111
-Tile 47: 0b0b1111111111111111
-Tile 48: 0b0b1111111111111111
-Tile 49: 0b0b1111111111111111
-Tile 50: 0b0b1111111111111111
-Tile 51: 0b0b1111111111111111
-Tile 52: 0b0b1111111111111111
-Tile 53: 0b0b1111111111111111
-Tile 54: 0b0b1111111111111111
-Tile 55: 0b0b1111111111111111
-Tile 56: 0b0b1111111111111111
-Tile 57: 0b0b1111111111111111
-Tile 58: 0b0b1111111111111111
-Tile 59: 0b0b1111111111111111
-Tile 60: 0b0b1111111111111111
-Tile 61: 0b0b1111111111111111
-Tile 62: 0b0b1111111111111111
-Tile 63: 0b0b1111111111111111
-Tile 64: 0b0b1111111111111111
-Tile 65: 0b0b1111111111111111
-Tile 66: 0b0b1111111111111111
-Tile 67: 0b0b1111111111111111
-Tile 68: 0b0b1111111111111111
-Tile 69: 0b0b1111111111111111
-Tile 70: 0b0b1111111111111111
-Tile 71: 0b0b1111111111111111
-Tile 72: 0b0b1111111111111111
-Tile 73: 0b0b1111111111111111
-Tile 74: 0b0b1111111111111111
-Tile 75: 0b0b1111111111111111
-Tile 76: 0b0b1111111111111111
-Tile 77: 0b0b1111111111111111
-Tile 78: 0b0b1111111111111111
-Tile 79: 0b0b1111111111111111
-Tile 80: 0b0b1111111111111111
-Tile 81: 0b0b1111111111111111
-Tile 82: 0b0b1111111111111111
-Tile 83: 0b0b1111111111111111
-Tile 84: 0b0b1111111111111111
-Tile 85: 0b0b1111111111111111
-Tile 86: 0b0b1111111111111111
-Tile 87: 0b0b1111111111111111
-Tile 88: 0b0b1111111111111111
-Tile 89: 0b0b1111111111111111
-Tile 90: 0b0b1111111111111111
-Tile 91: 0b0b1111111111111111
-Tile 92: 0b0b1111111111111111
-Tile 93: 0b0b1111111111111111
-Tile 94: 0b0b1111111111111111
-Tile 95: 0b0b1111111111111111
-Tile 96: 0b0b1111111111111111
-Tile 97: 0b0b1111111111111111
-Tile 98: 0b0b1111111111111111
-Tile 99: 0b0b1111111111111111
-Tile 100: 0b0b1111111111111111
-Tile 101: 0b0b1111111111111111
-Tile 102: 0b0b1111111111111111
-Tile 103: 0b0b1111111111111111
-Tile 104: 0b0b1111111111111111
-Tile 105: 0b0b1111111111111111
-Tile 106: 0b0b1111111111111111
-Tile 107: 0b0b1111111111111111
-Tile 108: 0b0b1111111111111111
-Tile 109: 0b0b1111111111111111
-Tile 110: 0b0b1111111111111111
-Tile 111: 0b0b1111111111111111
-Tile 112: 0b0b1111111111111111
-Tile 113: 0b0b1111111111111111
-Tile 114: 0b0b1111111111111111
-Tile 115: 0b0b1111111111111111
-Tile 116: 0b0b1111111111111111
-Tile 117: 0b0b1111111111111111
-Tile 118: 0b0b1111111111111111
-Tile 119: 0b0b1111111111111111
-Tile 120: 0b0b1111111111111111
-Tile 121: 0b0b1111111111111111
-Tile 122: 0b0b1111111111111111
-Tile 123: 0b0b1111111111111111
-Tile 124: 0b0b1111111111111111
-Tile 125: 0b0b1111111111111111
-Tile 126: 0b0b1111111111111111
-Tile 127: 0b0b1111111111111111
-Tile 128: 0b0b1111111111111111
-Tile 129: 0b0b1111111111111111
-Tile 130: 0b0b1111111111111111
-Tile 131: 0b0b1111111111111111
-Tile 132: 0b0b1111111111111111
-Tile 133: 0b0b1111111111111111
-Tile 134: 0b0b1111111111111111
-Tile 135: 0b0b1111111111111111
-Tile 136: 0b0b1111111111111111
-Tile 137: 0b0b1111111111111111
-Tile 138: 0b0b1111111111111111
-Tile 139: 0b0b1111111111111111
-Tile 140: 0b0b1111111111111111
-Tile 141: 0b0b1111111111111111
-Tile 142: 0b0b1111111111111111
-Tile 143: 0b0b1111111111111111
-Tile 144: 0b0b1111111111111111
-Tile 145: 0b0b1111111111111111
-Tile 146: 0b0b1111111111111111
-Tile 147: 0b0b1111111111111111
-Tile 148: 0b0b1111111111111111
-Tile 149: 0b0b1111111111111111
-Tile 150: 0b0b1111111111111111
-Tile 151: 0b0b1111111111111111
-Tile 152: 0b0b1111111111111111
-Tile 153: 0b0b1111111111111111
-Tile 154: 0b0b1111111111111111
-Tile 155: 0b0b1111111111111111
-Tile 156: 0b0b1111111111111111
-Tile 157: 0b0b1111111111111111
-Tile 158: 0b0b1111111111111111
-Tile 159: 0b0b1111111111111111
-Tile 160: 0b0b1111111111111111
-Tile 161: 0b0b1111111111111111
-Tile 162: 0b0b1111111111111111
-Tile 163: 0b0b1111111111111111
-Tile 164: 0b0b1111111111111111
-Tile 165: 0b0b1111111111111111
-Tile 166: 0b0b1111111111111111
-Tile 167: 0b0b1111111111111111
-Tile 168: 0b0b1111111111111111
-Tile 169: 0b0b1111111111111111
-Tile 170: 0b0b1111111111111111
-Tile 171: 0b0b1111111111111111
-Tile 172: 0b0b1111111111111111
-Tile 173: 0b0b1111111111111111
-Tile 174: 0b0b1111111111111111
-Tile 175: 0b0b1111111111111111
-Tile 176: 0b0b1111111111111111
-Tile 177: 0b0b1111111111111111
-Tile 178: 0b0b1111111111111111
-Tile 179: 0b0b1111111111111111
-Tile 180: 0b0b1111111111111111
-Tile 181: 0b0b1111111111111111
-Tile 182: 0b0b1111111111111111
-Tile 183: 0b0b1111111111111111
-Tile 184: 0b0b1111111111111111
-Tile 185: 0b0b1111111111111111
-Tile 186: 0b0b1111111111111111
-Tile 187: 0b0b1111111111111111
-Tile 188: 0b0b1111111111111111
-Tile 189: 0b0b1111111111111111
-Tile 190: 0b0b1111111111111111
-Tile 191: 0b0b1111111111111111
-Tile 192: 0b0b1111111111111111
-Tile 193: 0b0b1111111111111111
-Tile 194: 0b0b1111111111111111
-Tile 195: 0b0b1111111111111111
-Tile 196: 0b0b1111111111111111
-Tile 197: 0b0b1111111111111111
-Tile 198: 0b0b1111111111111111
-Tile 199: 0b0b1111111111111111
-Tile 200: 0b0b1111111111111111
-Tile 201: 0b0b1111111111111111
-Tile 202: 0b0b1111111111111111
-Tile 203: 0b0b1111111111111111
-Tile 204: 0b0b1111111111111111
-Tile 205: 0b0b1111111111111111
-Tile 206: 0b0b1111111111111111
-Tile 207: 0b0b1111111111111111
-Tile 208: 0b0b1111111111111111
-Tile 209: 0b0b1111111111111111
-Tile 210: 0b0b1111111111111111
-Tile 211: 0b0b1111111111111111
-Tile 212: 0b0b1111111111111111
-Tile 213: 0b0b1111111111111111
-Tile 214: 0b0b1111111111111111
-Tile 215: 0b0b1111111111111111
-Tile 216: 0b0b1111111111111111
-Tile 217: 0b0b1111111111111111
-Tile 218: 0b0b1111111111111111
-Tile 219: 0b0b1111111111111111
-Tile 220: 0b0b1111111111111111
-Tile 221: 0b0b1111111111111111
-Tile 222: 0b0b1111111111111111
-Tile 223: 0b0b1111111111111111
-Tile 224: 0b0b1111111111111111
-Tile 225: 0b0b1111111111111111
-Tile 226: 0b0b1111111111111111
-Tile 227: 0b0b1111111111111111
-Tile 228: 0b0b1111111111111111
-Tile 229: 0b0b1111111111111111
-Tile 230: 0b0b1111111111111111
-Tile 231: 0b0b1111111111111111
-Tile 232: 0b0b1111111111111111
-Tile 233: 0b0b1111111111111111
-Tile 234: 0b0b1111111111111111
-Tile 235: 0b0b1111111111111111
-Tile 236: 0b0b1111111111111111
-Tile 237: 0b0b1111111111111111
-Tile 238: 0b0b1111111111111111
-Tile 239: 0b0b1111111111111111
-Tile 240: 0b0b1111111111111111
-Tile 241: 0b0b1111111111111111
-Tile 242: 0b0b1111111111111111
-Tile 243: 0b0b1111111111111111
-Tile 244: 0b0b1111111111111111
-Tile 245: 0b0b1111111111111111
-Tile 246: 0b0b1111111111111111
-Tile 247: 0b0b1111111111111111
-Tile 248: 0b0b1111111111111111
-Tile 249: 0b0b1111111111111111
-Tile 250: 0b0b1111111111111111
-Tile 251: 0b0b1111111111111111
-Tile 252: 0b0b1111111111111111
-Tile 253: 0b0b1111111111111111
-Tile 254: 0b0b1111111111111111
-Tile 255: 0b0b1111111111111111
 
-Input pattern:
-Input 0: 0b0b01
-Input 1: 0b0b0100000000000000000000000000000000000000000000000000
-Input 2: 0b0b010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-Input 3: 0b0b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-Input 4: 0b0b010000
-Input 5: 0b0b0100000
-Input 6: 0b0b01000000
-Input 7: 0b0b010000000
-Input 8: 0b0b0100000000
-Input 9: 0b0b01000000000
-Input 10: 0b0b010000000000
-Input 11: 0b0b0100000000000
-Input 12: 0b0b01000000000000
-Input 13: 0b0b010000000000000
-Input 14: 0b0b0100000000000000
-Input 15: 0b0b01000000000000000
-Input 16: 0b0b010000000000000000
-Input 17: 0b0b0100000000000000000
-Input 18: 0b0b01000000000000000000
-Input 19: 0b0b010000000000000000000
-Input 20: 0b0b0100000000000000000000
-Input 21: 0b0b01000000000000000000000
-Input 22: 0b0b010000000000000000000000
-Input 23: 0b0b0100000000000000000000000
-Input 24: 0b0b01000000000000000000000000
-Input 25: 0b0b010000000000000000000000000
-Input 26: 0b0b0100000000000000000000000000
-Input 27: 0b0b01000000000000000000000000000
-Input 28: 0b0b010000000000000000000000000000
-Input 29: 0b0b0100000000000000000000000000000
-Input 30: 0b0b01000000000000000000000000000000
-Input 31: 0b0b010000000000000000000000000000000
-Output 0 spikes: 0b0b011111111111110010001101100001000111101100111000
-Output 1 spikes: 0b0b011111111111110010001101100001000111101100111000
-Output 2 spikes: 0b0b011111111111110010001101100001000111101100111000
-Output 3 spikes: 0b0b011111111111110010001101100001000111101100111000
-Output 4 spikes: 0b0b011111111111110010001101100001000111101100111000
-Output 5 spikes: 0b0b011111111111110010001101100001000111101100111000
-Output 6 spikes: 0b0b011111111111110010001101100001000111101100111000
-Output 7 spikes: 0b0b011111111111110010001101100001000111101100111000
+[Time step 0]
+Input: 0b0b01
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.1' contains leftover data, which may result in RTL simulation hanging.
+
+[Time step 1]
+Input: 0b0b0100000
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.2' contains leftover data, which may result in RTL simulation hanging.
+
+[Time step 2]
+Input: 0b0b010000000000
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.3' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.3' contains leftover data, which may result in RTL simulation hanging.
+
+[Time step 3]
+Input: 0b0b01000000000000000
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.4' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.4' contains leftover data, which may result in RTL simulation hanging.
+
+[Time step 4]
+Input: 0b0b0100000000000000000000
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.5' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.5' contains leftover data, which may result in RTL simulation hanging.
+
+[Time step 5]
+Input: 0b0b010000000000000000000000000
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.6' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.6' contains leftover data, which may result in RTL simulation hanging.
+
+[Time step 6]
+Input: 0b0b01000000000000000000000000000000
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.7' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.7' contains leftover data, which may result in RTL simulation hanging.
+
+[Time step 7]
+Input: 0b0b0100000000000000000000000000000000000
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_uint<512>, 0>.8' is read while empty, which may result in RTL simulation hanging.
+Output: 0b0b011111111111111111011000110111000011101000001000
+  Neuron 0: Spike = 0
+  Neuron 1: Spike = 0
+  Neuron 2: Spike = 0
+  Neuron 3: Spike = 1
+  Neuron 4: Spike = 0
+  Neuron 5: Spike = 0
+  Neuron 6: Spike = 0
+  Neuron 7: Spike = 0
+  Neuron 8: Spike = 0
+  Neuron 9: Spike = 1
+  Neuron 10: Spike = 0
+  Neuron 11: Spike = 1
+  Neuron 12: Spike = 1
+  Neuron 13: Spike = 1
+  Neuron 14: Spike = 0
+  Neuron 15: Spike = 0
+  Neuron 16: Spike = 0
+  Neuron 17: Spike = 0
+  Neuron 18: Spike = 1
+  Neuron 19: Spike = 1
+  Neuron 20: Spike = 1
+  Neuron 21: Spike = 0
+  Neuron 22: Spike = 1
+  Neuron 23: Spike = 1
+  Neuron 24: Spike = 0
+  Neuron 25: Spike = 0
+  Neuron 26: Spike = 0
+  Neuron 27: Spike = 1
+  Neuron 28: Spike = 1
+  Neuron 29: Spike = 0
+  Neuron 30: Spike = 1
+  Neuron 31: Spike = 1
+  Neuron 32: Spike = 1
+  Neuron 33: Spike = 1
+  Neuron 34: Spike = 1
+  Neuron 35: Spike = 1
+  Neuron 36: Spike = 1
+  Neuron 37: Spike = 1
+  Neuron 38: Spike = 1
+  Neuron 39: Spike = 1
+  Neuron 40: Spike = 1
+  Neuron 41: Spike = 1
+  Neuron 42: Spike = 1
+  Neuron 43: Spike = 1
+  Neuron 44: Spike = 1
+  Neuron 45: Spike = 1
+  Neuron 46: Spike = 1
+  Neuron 47: Spike = 0
+  Neuron 48: Spike = 0
+  Neuron 49: Spike = 0
+  Neuron 50: Spike = 0
+  Neuron 51: Spike = 0
+  Neuron 52: Spike = 0
+  Neuron 53: Spike = 0
+  Neuron 54: Spike = 0
+  Neuron 55: Spike = 0
+  Neuron 56: Spike = 0
+  Neuron 57: Spike = 0
+  Neuron 58: Spike = 0
+  Neuron 59: Spike = 0
+  Neuron 60: Spike = 0
+  Neuron 61: Spike = 0
+  Neuron 62: Spike = 0
+  Neuron 63: Spike = 0
+WARNING: Hls::stream 'hls::stream<ap_uint<64>, 0>.8' contains leftover data, which may result in RTL simulation hanging.
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

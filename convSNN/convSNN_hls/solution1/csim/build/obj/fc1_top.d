@@ -36,6 +36,5 @@ obj/fc1_top.o: ../../../../fc1_top.cpp \
  ../../../../../finn-hlslib-lif/convlayer.h \
  ../../../../../finn-hlslib-lif/vvau.hpp \
  ../../../../../finn-hlslib-lif/activations.hpp \
- ../../../../fc1_weights.hpp ../../../../configSNN.h \
  ../../../../../finn-hlslib-lif/interpret.hpp \
- ../../../../../finn-hlslib-lif/fclayer.h
+ ../../../../../finn-hlslib-lif/fclayer.h ../../../../configSNN.h
