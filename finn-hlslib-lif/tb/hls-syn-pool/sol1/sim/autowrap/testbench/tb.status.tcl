@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/coder/Desktop/s2n2/finn-hlslib-lif/tb/hls-syn-pool/sol1/./sim/autowrap/testbench/pool_top.cpp_pre.cpp.tb.cpp

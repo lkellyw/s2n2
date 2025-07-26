@@ -1,4 +1,0 @@
-finn-hlslib-lif/tb/conv_mmv.cpp:44:10: fatal error: 'bnn-library.h' file not found
-#include "bnn-library.h"
-         ^~~~~~~~~~~~~~~
-1 error generated.

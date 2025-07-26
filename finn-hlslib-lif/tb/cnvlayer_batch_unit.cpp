@@ -13,6 +13,8 @@ using namespace hls;
 #include "config.h"
 
 // adheres to new config.h
+#define WEIGHT_PRECISION 32
+
 #define OFD OFMDim1
 #define OFC OFM_Channels1
 #define IFD IFMDim1

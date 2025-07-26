@@ -1,0 +1,196 @@
+INFO-FLOW: Workspace /home/coder/Desktop/s2n2/finn-hlslib-lif/tb/trial/solution1 opened at Thu Jul 10 17:29:32 UTC 2025
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /tools/Xilinx2/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xczu3eg-sbva484-1-i 
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data single -quiet 
+Command       ap_part_info done; 1.49 sec.
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu3eg:-sbva484:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xczu3eg-sbva484-1-i 
+Execute         ap_part_info -name xczu3eg-sbva484-1-i -data resources 
+Execute         ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute         ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute         ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.12 sec.
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.78 sec.
+Execute     ap_part_info -data single -name xczu3eg-sbva484-1-i 
+Execute     ap_part_info -name xczu3eg-sbva484-1-i -data resources 
+Execute     ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute     ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute     ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_sdx -optimization_level=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 2.19 sec.
+Execute   set_part xczu3eg-sbva484-1-i 
+Execute     ap_part_info -name xczu3eg-sbva484-1-i -data single -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu3eg:-sbva484:-1-i 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xczu3eg-sbva484-1-i 
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data resources 
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute       config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute       config_chip_info -quiet -speed slow 
+Command     add_library done; 0.15 sec.
+Execute     add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute       get_default_platform 
+Execute     ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.3 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_sdx -optimization_level none -target none 
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute     get_config_compile -pipeline_loops 
+Execute     get_config_compile -name_max_length 
+Execute     get_config_schedule -enable_dsp_full_reg 
+Execute     get_config_rtl -register_reset_num 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_interface -m_axi_addr64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute     set_clock_uncertainty default 
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+Execute   config_export -vivado_optimization_level 2 
+Execute     get_config_export -vivado_impl_strategy 
+Execute     get_config_export -vivado_phys_opt 
+Execute   set_clock_uncertainty 12.5% 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'add_top.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling add_top.cpp as C++
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data info 
+Execute       is_encrypted add_top.cpp 
+Execute       ap_part_info -name xczu3eg-sbva484-1-i -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx2/Vivado/2020.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "add_top.cpp"   -I/home/coder/Desktop/s2n2/finn-hlslib-lif/.  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx2/Vivado/2020.1/common/technology/autopilot" -I "/tools/Xilinx2/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/trial/solution1/.autopilot/db/add_top.pp.0.cpp" 
+INFO-FLOW: exec /tools/Xilinx2/Vivado/2020.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx2/Vivado/2020.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E add_top.cpp -I/home/coder/Desktop/s2n2/finn-hlslib-lif/. -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx2/Vivado/2020.1/common/technology/autopilot -I /tools/Xilinx2/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/coder/Desktop/s2n2/finn-hlslib-lif/tb/trial/solution1/.autopilot/db/add_top.pp.0.cpp
+WARNING: [HLS 200-40] In file included from add_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/./bnn-library.h:57:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/./weights.hpp:55:
+In file included from /tools/Xilinx2/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/array:34:
+/tools/Xilinx2/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/c++0x_warning.h:32:2: error: This file requires compiler and library support for the upcoming ISO C++ standard, C++0x. This support is currently experimental, and must be enabled with the -std=c++0x or -std=gnu++0x compiler options.
+#error This file requires compiler and library support for the upcoming \
+ ^
+1 error generated.
+Command       clang done; error code: 2; 1.92 sec.
+Command     elaborate done; error code: 2; 2.13 sec.
+Command   csynth_design done; error code: 2; 2.14 sec.
+Command ap_source done; error code: 1; 4.99 sec.
+Execute cleanup_all 

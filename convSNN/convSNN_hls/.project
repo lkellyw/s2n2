@@ -37,39 +37,74 @@
 			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/bnn-library.h</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h</location>
+		</link>
+		<link>
+			<name>.reference/fclayer.h</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h</location>
+		</link>
+		<link>
+			<name>.reference/mvau.hpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</location>
+		</link>
+		<link>
+			<name>.reference/weights.hpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp</location>
+		</link>
+		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/.tcls</location>
 		</link>
 		<link>
-			<name>source/add_top.cpp</name>
+			<name>source/configSNN.h</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/add_top.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/configSNN.h</location>
 		</link>
 		<link>
-			<name>source/conv_top.cpp</name>
+			<name>source/fc1_tb.cpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/conv_top.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp</location>
 		</link>
 		<link>
-			<name>source/label_select_top.cpp</name>
+			<name>source/fc1_top.cpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/label_select_top.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp</location>
 		</link>
 		<link>
-			<name>source/label_select_top.h</name>
+			<name>source/fc1_weights.hpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/label_select_top.h</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp</location>
 		</link>
 		<link>
-			<name>testbench/add_tb.cpp</name>
+			<name>source/memdataM.h</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/add_tb.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/memdataM.h</location>
 		</link>
 		<link>
-			<name>testbench/label_select_tb.cpp</name>
+			<name>testbench/configSNN.h</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/label_select_tb.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/configSNN.h</location>
+		</link>
+		<link>
+			<name>testbench/fc1_tb.cpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp</location>
+		</link>
+		<link>
+			<name>testbench/fc1_top.cpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp</location>
+		</link>
+		<link>
+			<name>testbench/fc1_weights.hpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

@@ -1,8 +1,8 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
     <sourceFile name="">
-        <directive functionName="Testbench_convmmv" label="" functionLabel="">
+        <directive functionName="Thresholding_Batch" label="" functionLabel="">
             <pragma name="TOP">
-                <option name="name" value="Testbench_convmmv"/>
+                <option name="name" value="Thresholding_Batch"/>
             </pragma>
         </directive>
     </sourceFile>

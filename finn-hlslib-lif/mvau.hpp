@@ -177,10 +177,10 @@ void Matrix_Vector_Activate_Batch(hls::stream<TI> &in,
 
           //outElem(pe,mmv,1) = activation.activate(nf, pe, accu[mmv][pe]);
     	  if(accu[pe] > 0){
-    		  outElem(pe,1,1) = 1;
+    		  outElem[pe] = 1;
     		  neust[cntr][nf*PE+pe] = 0;
     	  }else{
-    		  outElem(pe,1,1) = 0;
+    		  outElem[pe] = 0;
     		  neust[cntr][nf*PE+pe] = accu[pe];
     	  }
       }

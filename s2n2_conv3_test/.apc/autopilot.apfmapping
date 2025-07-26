@@ -3,15 +3,12 @@
   <source>
     <originFiles name="activations.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp"/>
     <originFiles name="bnn-library.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h"/>
-    <originFiles name="configM.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/configM.h"/>
-    <originFiles name="conv_mmv.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv_mmv.cpp"/>
     <originFiles name="convlayer.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h"/>
     <originFiles name="dma.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"/>
     <originFiles name="fclayer.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h"/>
     <originFiles name="interpret.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp"/>
     <originFiles name="mac.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp"/>
     <originFiles name="maxpool.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"/>
-    <originFiles name="memdataM.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/memdataM.h"/>
     <originFiles name="mmv.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp"/>
     <originFiles name="mvau.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp"/>
     <originFiles name="pool.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/pool.hpp"/>
@@ -22,6 +19,49 @@
     <originFiles name="weights.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp"/>
   </source>
   <testbench>
+    <originFiles name="add_config.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/add_config.h"/>
+    <originFiles name="add_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/add_tb.cpp"/>
+    <originFiles name="add_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/add_top.cpp"/>
+    <originFiles name="channelwise_op_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/channelwise_op_tb.cpp"/>
+    <originFiles name="channelwise_op_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/channelwise_op_top.cpp"/>
+    <originFiles name="channelwise_op_top.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/channelwise_op_top.h"/>
+    <originFiles name="cnvlayer_batch_unit.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/cnvlayer_batch_unit.cpp"/>
+    <originFiles name="conv.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv.hpp"/>
+    <originFiles name="conv3_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv3_tb.cpp"/>
     <originFiles name="conv3mmv_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv3mmv_tb.cpp"/>
+    <originFiles name="conv_dws_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv_dws_tb.cpp"/>
+    <originFiles name="conv_dws_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv_dws_top.cpp"/>
+    <originFiles name="conv_stream_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv_stream_top.cpp"/>
+    <originFiles name="conv_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv_top.cpp"/>
+    <originFiles name="dup_stream_config.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dup_stream_config.h"/>
+    <originFiles name="dup_stream_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dup_stream_tb.cpp"/>
+    <originFiles name="dup_stream_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dup_stream_top.cpp"/>
+    <originFiles name="dwc_config.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dwc_config.h"/>
+    <originFiles name="dwc_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dwc_tb.cpp"/>
+    <originFiles name="dwc_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dwc_top.cpp"/>
+    <originFiles name="dwcnm_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dwcnm_tb.cpp"/>
+    <originFiles name="dwcnm_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/dwcnm_top.cpp"/>
+    <originFiles name="input_gen.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/input_gen.cpp"/>
+    <originFiles name="input_gen.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/input_gen.h"/>
+    <originFiles name="input_gen_kernelstride.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/input_gen_kernelstride.cpp"/>
+    <originFiles name="input_gen_kernelstride.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/input_gen_kernelstride.h"/>
+    <originFiles name="kernel_stride_maxpool_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/kernel_stride_maxpool_tb.cpp"/>
+    <originFiles name="kernel_stride_maxpool_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/kernel_stride_maxpool_top.cpp"/>
+    <originFiles name="kernel_stride_maxpool_top.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/kernel_stride_maxpool_top.h"/>
+    <originFiles name="label_select_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/label_select_tb.cpp"/>
+    <originFiles name="label_select_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/label_select_top.cpp"/>
+    <originFiles name="label_select_top.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/label_select_top.h"/>
+    <originFiles name="maxpool_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/maxpool_tb.cpp"/>
+    <originFiles name="pool_config.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/pool_config.h"/>
+    <originFiles name="pool_tb.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/pool_tb.hpp"/>
+    <originFiles name="pool_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/pool_top.cpp"/>
+    <originFiles name="qdma_stream_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/qdma_stream_tb.cpp"/>
+    <originFiles name="qdma_stream_top.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/qdma_stream_top.cpp"/>
+    <originFiles name="swg_kernelstride_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/swg_kernelstride_tb.cpp"/>
+    <originFiles name="swg_tb.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/swg_tb.cpp"/>
+    <originFiles name="conv_mmv.cpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/conv_mmv.cpp"/>
+    <originFiles name="config.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/config.h"/>
+    <originFiles name="memdata.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/memdata.h"/>
+    <originFiles name="memdataM.h" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/tb/memdataM.h"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

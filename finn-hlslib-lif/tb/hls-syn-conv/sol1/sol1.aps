@@ -13,7 +13,7 @@
         <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" period="5" default="false"/>
+        <clock default="false" name="default" period="5"/>
     </clockList>
 </AutoPilot:solution>
 

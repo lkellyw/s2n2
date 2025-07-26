@@ -1,19 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="com.autoesl.autopilot.project" top="">
-  <files>
-    <file name="add_top.cpp" sc="0" tb="false" cflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif" csimflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-    <file name="conv_top.cpp" sc="0" tb="false" cflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif" csimflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-    <file name="label_select_top.cpp" sc="0" tb="false" cflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif" csimflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-    <file name="label_select_top.h" sc="0" tb="false" cflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif" csimflags="-I/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-    <file name="../../add_tb.cpp" sc="0" tb="1" cflags="-I../../../finn-hlslib-lif" csimflags="-I../../../finn-hlslib-lif"/>
-    <file name="../../label_select_tb.cpp" sc="0" tb="1" cflags="-I../../../finn-hlslib-lif" csimflags="-I../../../finn-hlslib-lif"/>
-  </files>
-  <solutions>
-    <solution name="solution1" status="active"/>
-  </solutions>
-  <includePaths/>
-  <libraryPaths/>
-  <Simulation>
-    <SimFlow name="csim"/>
-  </Simulation>
+<project xmlns="com.autoesl.autopilot.project" name="convSNN_hls" top="fc1_top">
+    <files>
+        <file name="configSNN.h" sc="0" tb="false" cflags="" blackbox="false"/>
+        <file name="fc1_tb.cpp" sc="0" tb="false" cflags="" blackbox="false"/>
+        <file name="fc1_top.cpp" sc="0" tb="false" cflags="" blackbox="false"/>
+        <file name="fc1_weights.hpp" sc="0" tb="false" cflags="" blackbox="false"/>
+        <file name="memdataM.h" sc="0" tb="false" cflags="" blackbox="false"/>
+        <file name="../../configSNN.h" sc="0" tb="1" cflags="-I../../../finn-hlslib-lif"/>
+        <file name="../../fc1_tb.cpp" sc="0" tb="1" cflags="-I../../../finn-hlslib-lif"/>
+        <file name="../../fc1_top.cpp" sc="0" tb="1" cflags="-I../../../finn-hlslib-lif"/>
+        <file name="../../fc1_weights.hpp" sc="0" tb="1" cflags=""/>
+    </files>
+    <includePaths/>
+    <libraryPaths/>
+    <Simulation>
+        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+    </Simulation>
+    <solutions xmlns="">
+        <solution name="solution1" status="active"/>
+    </solutions>
 </project>
+

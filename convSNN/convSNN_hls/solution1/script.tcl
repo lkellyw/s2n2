@@ -4,12 +4,16 @@
 ## Copyright (C) 1986-2020 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project convSNN_hls
-add_files add_top.cpp -cflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif" -csimflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif"
-add_files conv_top.cpp -cflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif" -csimflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif"
-add_files label_select_top.cpp -cflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif" -csimflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif"
-add_files label_select_top.h -cflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif" -csimflags "-I/home/coder/Desktop/s2n2/finn-hlslib-lif"
-add_files -tb add_tb.cpp -cflags "-I../finn-hlslib-lif" -csimflags "-I../finn-hlslib-lif"
-add_files -tb label_select_tb.cpp -cflags "-I../finn-hlslib-lif" -csimflags "-I../finn-hlslib-lif"
+set_top fc1_top
+add_files configSNN.h
+add_files fc1_tb.cpp
+add_files fc1_top.cpp
+add_files fc1_weights.hpp
+add_files memdataM.h
+add_files -tb configSNN.h -cflags "-I../finn-hlslib-lif"
+add_files -tb fc1_tb.cpp -cflags "-I../finn-hlslib-lif"
+add_files -tb fc1_top.cpp -cflags "-I../finn-hlslib-lif"
+add_files -tb fc1_weights.hpp
 open_solution "solution1"
 set_part {xczu28dr-ffvg1517-2-e}
 create_clock -period 10 -name default

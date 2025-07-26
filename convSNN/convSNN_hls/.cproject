@@ -165,13 +165,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.700729977" name="add_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/add_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.976710135">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1323991115" name="fc1_top.cpp" rcbsApplicability="disable" resourcePath="testbench/fc1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.45445351">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.976710135" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.45445351" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.957586021" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1902578027" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.722848962" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.977841362" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="../../../finn-hlslib-lif"/>
                                 								
@@ -191,21 +191,23 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.1847009580" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1771359647" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2010092183" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.206328573" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.585769432" name="label_select_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/label_select_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1124925491">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.501602411" name="configSNN.h" rcbsApplicability="disable" resourcePath="testbench/configSNN.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1037250726" name="fc1_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/fc1_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1857384938">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1124925491" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1857384938" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1499563964" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1138236149" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.257640773" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.391724727" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="../../../finn-hlslib-lif"/>
                                 								
@@ -225,9 +227,9 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.435142285" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1559146519" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.650436912" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1303951202" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -242,8 +244,6 @@
                             <option id="gnu.cpp.compiler.option.preprocessor.def.1833389757" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.506952196" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-                                								
-                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
@@ -275,8 +275,6 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1202937012" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-                                								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
@@ -307,8 +305,6 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1837083369" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-                                								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
@@ -333,7 +329,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="solution1|source/configSNN.h|source/fc1_top.cpp|source/fc1_tb.cpp|source/fc1_weights.hpp|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -487,13 +483,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.2125180152" name="add_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/add_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1333033688">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.2136745578" name="fc1_top.cpp" rcbsApplicability="disable" resourcePath="testbench/fc1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1866925782">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1333033688" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1866925782" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1749463038" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1794435295" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.40198246" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.1024663292" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="../../../finn-hlslib-lif"/>
                                 								
@@ -513,21 +509,23 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.1029464082" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.681692613" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1983871355" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1506211514" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.2091411417" name="label_select_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/label_select_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1603377027">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1472580656" name="configSNN.h" rcbsApplicability="disable" resourcePath="testbench/configSNN.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1236516916" name="fc1_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/fc1_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.146559614">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1603377027" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.146559614" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.741976411" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1108377456" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.1267780822" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.1388749313" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="../../../finn-hlslib-lif"/>
                                 								
@@ -547,9 +545,9 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.1972666138" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.588948583" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1127469380" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1138382203" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -564,8 +562,6 @@
                             <option id="gnu.cpp.compiler.option.preprocessor.def.1817811516" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1079808093" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-                                								
-                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
@@ -597,8 +593,6 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.208972579" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-                                								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
@@ -629,8 +623,6 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.294416751" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
-                                								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
@@ -655,7 +647,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="solution1|source/configSNN.h|source/fc1_top.cpp|source/fc1_tb.cpp|source/fc1_weights.hpp|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

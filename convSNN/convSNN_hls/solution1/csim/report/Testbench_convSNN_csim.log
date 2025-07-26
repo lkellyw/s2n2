@@ -1,0 +1,182 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../add_tb.cpp in debug mode
+   Compiling ../../../../convSNN_tb.cpp in debug mode
+In file included from ../../../../convSNN_tb.cpp:4:0:
+../../../../configSNN.h:10:15: error: expected ‘>’ before numeric constant
+ #define WIDTH 16
+               ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:92:30: note: in expansion of macro ‘WIDTH’
+   typename TD,  unsigned int WIDTH, unsigned int I, unsigned int OFMDim,
+                              ^~~~~
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h:55:0,
+                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:63,
+                 from ../../../../convSNN_tb.cpp:5:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:95:47: error: ‘TI’ was not declared in this scope
+ void Matrix_Vector_Activate_Batch(hls::stream<TI> &in,
+                                               ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:95:49: error: template argument 1 is invalid
+ void Matrix_Vector_Activate_Batch(hls::stream<TI> &in,
+                                                 ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:96:19: error: ‘TO’ was not declared in this scope
+       hls::stream<TO> &out,
+                   ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:96:21: error: template argument 1 is invalid
+       hls::stream<TO> &out,
+                     ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:97:7: error: ‘TW’ has not been declared
+       TW  const &weights,
+       ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:98:7: error: ‘TA’ has not been declared
+       TA  const &activation,
+       ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:101:7: error: ‘R’ has not been declared
+       R const &r) {
+       ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp: In function ‘void Matrix_Vector_Activate_Batch(int&, int&, const int&, const int&, TD, int, const int&)’:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:111:3: error: ‘TI’ was not declared in this scope
+   TI  inputBuf[SF];
+   ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:116:19: error: ‘I’ was not declared in this scope
+   ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE]; // TODO: reset this
+                   ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:116:20: error: template argument 2 is invalid
+   ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE]; // TODO: reset this
+                    ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:116:28: error: ‘OFMDim’ was not declared in this scope
+   ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE]; // TODO: reset this
+                            ^~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:120:19: error: the value of ‘I’ is not usable in a constant expression
+   ap_fixed<WIDTH, I>  accu[PE];
+                   ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:116:19: note: ‘I’ was not declared ‘constexpr’
+   ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE]; // TODO: reset this
+                   ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:120:20: error: could not convert template argument ‘I’ to ‘int’
+   ap_fixed<WIDTH, I>  accu[PE];
+                    ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:133:9: error: expected ‘;’ before ‘inElem’
+     TI  inElem;
+         ^~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136:7: error: ‘inElem’ was not declared in this scope
+       inElem = in.read();
+       ^~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136:19: error: request for member ‘read’ in ‘in’, which is of non-class type ‘int’
+       inElem = in.read();
+                   ^~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:138:7: error: ‘inputBuf’ was not declared in this scope
+       inputBuf[sf] = inElem;
+       ^~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:142:7: error: ‘inElem’ was not declared in this scope
+       inElem = inputBuf[sf];
+       ^~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:142:16: error: ‘inputBuf’ was not declared in this scope
+       inElem = inputBuf[sf];
+                ^~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:145:26: error: ‘inElem’ was not declared in this scope
+     ap_uint<SIMD> mask = inElem.range(SIMD-1, 0);
+                          ^~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:153:23: error: the value of ‘I’ is not usable in a constant expression
+       ap_fixed<WIDTH, I> temp = neust[cntr][nf*PE+pe];
+                       ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:116:19: note: ‘I’ was not declared ‘constexpr’
+   ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE]; // TODO: reset this
+                   ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:153:24: error: could not convert template argument ‘I’ to ‘int’
+       ap_fixed<WIDTH, I> temp = neust[cntr][nf*PE+pe];
+                        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:153:33: error: ‘neust’ was not declared in this scope
+       ap_fixed<WIDTH, I> temp = neust[cntr][nf*PE+pe];
+                                 ^~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:162:29: error: request for member ‘weights’ in ‘weights’, which is of non-class type ‘const int’
+     auto const &w = weights.weights(tile, mask);
+                             ^~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:174:51: error: ‘TO’ was not declared in this scope
+       auto  outElem = TDstI().template operator()<TO>();
+                                                   ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:181:9: error: ‘neust’ was not declared in this scope
+         neust[cntr][nf*PE+pe] = 0;
+         ^~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184:9: error: ‘neust’ was not declared in this scope
+         neust[cntr][nf*PE+pe] = accu[pe];
+         ^~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:187:11: error: request for member ‘write’ in ‘out’, which is of non-class type ‘int’
+       out.write(outElem);
+           ^~~~~
+In file included from ../../../../convSNN_tb.cpp:4:0:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h: At global scope:
+../../../../configSNN.h:10:15: error: expected ‘>’ before numeric constant
+ #define WIDTH 16
+               ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:101:29: note: in expansion of macro ‘WIDTH’
+   typename TD, unsigned int WIDTH, unsigned int I,
+                             ^~~~~
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:64:0,
+                 from ../../../../convSNN_tb.cpp:5:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:106:42: error: ‘InStreamW’ was not declared in this scope
+ void ConvLayer_Batch(hls::stream<ap_uint<InStreamW>>  &in,
+                                          ^~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:106:42: error: template argument 1 is invalid
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:106:51: error: template argument 1 is invalid
+ void ConvLayer_Batch(hls::stream<ap_uint<InStreamW>>  &in,
+                                                   ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:107:28: error: ‘OutStreamW’ was not declared in this scope
+        hls::stream<ap_uint<OutStreamW>> &out,
+                            ^~~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:107:28: error: template argument 1 is invalid
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:107:38: error: template argument 1 is invalid
+        hls::stream<ap_uint<OutStreamW>> &out,
+                                      ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:108:8: error: ‘TW’ has not been declared
+        TW const        &weights,
+        ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:109:8: error: ‘TA’ has not been declared
+        TA const        &activation,
+        ^~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:112:5: error: ‘R’ has not been declared
+     R const &r) {
+     ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h: In function ‘void ConvLayer_Batch(int&, int&, const int&, const int&, unsigned int, TD, const int&)’:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:116:58: error: ‘InStreamW’ was not declared in this scope
+   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
+                                                          ^~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:117:29: error: the value of ‘InStreamW’ is not usable in a constant expression
+   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage>  wa_in (in,  reps);
+                             ^~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:116:58: note: ‘InStreamW’ was not declared ‘constexpr’
+   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
+                                                          ^~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:117:59: error: the value of ‘InpPerImage’ is not usable in a constant expression
+   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage>  wa_in (in,  reps);
+                                                           ^~~~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:116:18: note: ‘InpPerImage’ was not initialized with a constant expression
+   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
+                  ^~~~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:117:70: error: could not convert template argument ‘InStreamW’ to ‘unsigned int’
+   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage>  wa_in (in,  reps);
+                                                                      ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:117:70: error: the value of ‘InpPerImage’ is not usable in a constant expression
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:116:18: note: ‘InpPerImage’ was not initialized with a constant expression
+   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
+                  ^~~~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:117:70: note: in template argument for type ‘unsigned int’ 
+   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage>  wa_in (in,  reps);
+                                                                      ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:117:89: error: expression list treated as compound expression in initializer [-fpermissive]
+   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage>  wa_in (in,  reps);
+                                                                                         ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:118:47: error: ‘OutStreamW’ was not declared in this scope
+   WidthAdjustedOutputStream <PE*TDstI::width, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)>  mvOut (out,  reps);
+                                               ^~~~~~~~~~
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:118:95: error: template argument 2 is invalid
+   WidthAdjustedOutputStream <PE*TDstI::width, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)>  mvOut (out,  reps);
+                                                                                               ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:118:115: error: expression list treated as compound expression in initializer [-fpermissive]
+   WidthAdjustedOutputStream <PE*TDstI::width, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)>  mvOut (out,  reps);
+                                                                                                                   ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:122:106: error: ‘I’ was not declared in this scope
+   Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, SIMDSP, PE, 1, TSrcI, TDstI, TWeightI, TD, WIDTH, I, OFMDim>
+                                                                                                          ^
+make: *** [csim.mk:76: obj/convSNN_tb.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

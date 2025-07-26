@@ -1,23 +1,19 @@
-[
-  {
-    "functionLabel": "",
-    "functionName": "Testbench_convmmv",
+[{
     "id": 0,
-    "ifcond": "",
     "insert_position": "",
+    "functionName": "Thresholding_Batch",
     "label": "",
+    "functionLabel": "",
+    "success": false,
+    "slx": false,
+    "ifcond": "",
+    "sourceFile": "\/home\/coder\/Desktop\/s2n2\/s2n2_conv3_test\/solution1\/csynth.tcl",
+    "sourceLine": 72,
     "pragma": {
       "name": "TOP",
-      "option": [
-        {
+      "option": [{
           "name": "name",
-          "value": "Testbench_convmmv"
-        }
-      ]
-    },
-    "slx": false,
-    "sourceFile": "/home/coder/Desktop/s2n2/s2n2_conv3_test/solution1/csynth.tcl",
-    "sourceLine": 19,
-    "success": false
-  }
-]
+          "value": "Thresholding_Batch"
+        }]
+    }
+  }]

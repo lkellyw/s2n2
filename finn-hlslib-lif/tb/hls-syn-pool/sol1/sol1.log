@@ -1,0 +1,79 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'pool_top.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86554 ; free virtual = 253434
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86554 ; free virtual = 253434
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'WidthAdjustedInputStream<48u, 48u, 256u>::operator hls::stream<ap_uint<48>, 0>&' into 'StreamingMaxPool_Precision_Batch<16u, 2u, 16u, ap_uint<3>, 0, 48, 48>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:214).
+INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<48u, 48u, 64u>::operator hls::stream<ap_uint<48>, 0>&' into 'StreamingMaxPool_Precision_Batch<16u, 2u, 16u, ap_uint<3>, 0, 48, 48>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:215).
+INFO: [XFORM 203-603] Inlining function 'StreamingMaxPool_Precision_Batch<16u, 2u, 16u, ap_uint<3>, 0, 48, 48>' into 'Testbench_pool' (pool_top.cpp:50).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86546 ; free virtual = 253427
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:163: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86553 ; free virtual = 253434
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1.1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:156) in function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:146) in function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1.1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:159) in function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:173) in function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>' completely with a factor of 16.
+INFO: [XFORM 203-101] Partitioning array 'buf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:143) in dimension 2 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86456 ; free virtual = 253338
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:154:31) in function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:153:29) in function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:152:27) in function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'StreamingMaxPool_Precision<16u, 2u, 16u, ap_uint<3>, 0, 48>' to 'StreamingMaxPool_Pre' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:143:49)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:148:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:166:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:179:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86529 ; free virtual = 253411
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Testbench_pool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingMaxPool_Pre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+WARNING: [SCHED 204-68] The II Violation in module 'StreamingMaxPool_Pre' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('buf_0_V_addr_2_write_ln166', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:166) of variable 'trunc_ln647', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:163 on array 'buf[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:143 and 'load' operation ('buf_0_V_load_1', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:164) on array 'buf[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:143.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 26.04 seconds; current allocated memory: 198.735 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 199.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Testbench_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 199.842 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 199.921 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingMaxPool_Pre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_0_V' to 'StreamingMaxPool_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_1_V' to 'StreamingMaxPool_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_2_V' to 'StreamingMaxPool_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_3_V' to 'StreamingMaxPool_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_4_V' to 'StreamingMaxPool_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_5_V' to 'StreamingMaxPool_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_6_V' to 'StreamingMaxPool_hbi' due to the length limit 20

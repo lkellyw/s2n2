@@ -1,6 +1,0 @@
-<xilinx:hls_fe_msgs>
-    <msg msg_groups="" msg_id="207-812" msg_severity="ERROR" msg_loc="finn-hlslib-lif/tb/conv_mmv.cpp:44:10" msg_body="'bnn-library.h' file not found">
-        <args/>
-    </msg>
-</xilinx:hls_fe_msgs>
-

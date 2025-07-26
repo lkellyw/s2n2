@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="add_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/add_top.cpp"/>
-    <originFiles name="conv_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/conv_top.cpp"/>
-    <originFiles name="label_select_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/label_select_top.cpp"/>
-    <originFiles name="label_select_top.h" path="/home/coder/Desktop/s2n2/convSNN/label_select_top.h"/>
+    <originFiles name="configSNN.h" path="/home/coder/Desktop/s2n2/convSNN/configSNN.h"/>
+    <originFiles name="fc1_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp"/>
+    <originFiles name="fc1_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp"/>
+    <originFiles name="memdataM.h" path="/home/coder/Desktop/s2n2/convSNN/memdataM.h"/>
+    <originFiles name="fc1_weights.hpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp"/>
   </source>
   <testbench>
-    <originFiles name="add_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/add_tb.cpp"/>
-    <originFiles name="label_select_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/label_select_tb.cpp"/>
+    <originFiles name="configSNN.h" path="/home/coder/Desktop/s2n2/convSNN/configSNN.h"/>
+    <originFiles name="fc1_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp"/>
+    <originFiles name="fc1_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp"/>
+    <originFiles name="fc1_weights.hpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

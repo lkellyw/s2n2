@@ -75,12 +75,12 @@ all: $(TARGET)
 
 $(ObjDir)/conv3_tb.o: ../../../../conv3_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../conv3_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/coder/Documents/s2n2/finn-hlslib-lif -I/home/coder/Documents/s2n2/finn-hlslib-lif/tb -std=c++0x -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/coder/Desktop/s2n2/finn-hlslib-lif -I/home/coder/Desktop/s2n2/finn-hlslib-lif/tb -std=c++0x -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/conv3_tb.d
 
 $(ObjDir)/conv_top.o: ../../../../conv_top.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../conv_top.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/coder/Documents/s2n2/finn-hlslib-lif -I/home/coder/Documents/s2n2/finn-hlslib-lif/tb -std=c++0x  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/coder/Desktop/s2n2/finn-hlslib-lif -I/home/coder/Desktop/s2n2/finn-hlslib-lif/tb -std=c++0x  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/conv_top.d

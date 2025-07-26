@@ -1,10 +1,1192 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../conv3_tb.cpp in debug mode
-../../../../conv3_tb.cpp:51:10: fatal error: weights.hpp: No such file or directory
- #include "weights.hpp"
-          ^~~~~~~~~~~~~
-compilation terminated.
+In file included from ../../../../conv3_tb.cpp:53:
+../../../../memdata.h:7:2: warning: integer constant is too large for its type
+ -0x900000003fffffff800000004,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:8:1: warning: integer constant is too large for its type
+ 0x80000000600000001fffffffb,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:9:1: warning: integer constant is too large for its type
+ 0xa000000030000000400000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:10:2: warning: integer constant is too large for its type
+ -0x700000000fffffff6fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:11:1: warning: integer constant is too large for its type
+ 0x3fffffffb00000009fffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:12:1: warning: integer constant is too large for its type
+ 0x600000006fffffff6fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:13:1: warning: integer constant is too large for its type
+ 0x8fffffff7fffffffffffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:14:2: warning: integer constant is too large for its type
+ -0x200000003fffffffdfffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:15:2: warning: integer constant is too large for its type
+ -0x6000000040000000200000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:16:2: warning: integer constant is too large for its type
+ -0x3fffffffbfffffffa00000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:17:1: warning: integer constant is too large for its type
+ 0x1000000060000000800000009,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:18:2: warning: integer constant is too large for its type
+ -0x100000006fffffff5fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:19:2: warning: integer constant is too large for its type
+ -0x8fffffff70000000300000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:20:1: warning: integer constant is too large for its type
+ 0xfffffffdfffffff800000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:21:2: warning: integer constant is too large for its type
+ -0x10000000600000003fffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:22:1: warning: integer constant is too large for its type
+ 0x60000000500000007fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:23:1: warning: integer constant is too large for its type
+ 0x1fffffff5fffffff7fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:24:2: warning: integer constant is too large for its type
+ -0x900000001fffffff9fffffff6,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:25:1: warning: integer constant is too large for its type
+ 0x5fffffffe00000008fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:26:2: warning: integer constant is too large for its type
+ -0x500000000fffffff8fffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:27:2: warning: integer constant is too large for its type
+ -0x5fffffffb00000006fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:28:2: warning: integer constant is too large for its type
+ -0x60000000a00000009fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:29:1: warning: integer constant is too large for its type
+ 0xa00000006000000070000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:30:2: warning: integer constant is too large for its type
+ -0x8fffffffbfffffff7fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:31:1: warning: integer constant is too large for its type
+ 0x4fffffff7fffffffafffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:32:1: warning: integer constant is too large for its type
+ 0x5fffffff600000008ffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:33:1: warning: integer constant is too large for its type
+ 0x500000006fffffffefffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:34:1: warning: integer constant is too large for its type
+ 0x9000000010000000500000002,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:35:1: warning: integer constant is too large for its type
+ 0x8fffffff80000000000000003,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:36:2: warning: integer constant is too large for its type
+ -0x500000005fffffffc00000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:37:1: warning: integer constant is too large for its type
+ 0x80000000800000002,
+ ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:38:2: warning: integer constant is too large for its type
+ -0x2ffffffff00000005fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:39:1: warning: integer constant is too large for its type
+ 0x80000000a0000000500000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:40:2: warning: integer constant is too large for its type
+ -0x70000000300000004fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:41:1: warning: integer constant is too large for its type
+ 0x9fffffffafffffffaffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:42:1: warning: integer constant is too large for its type
+ 0xa00000002fffffff5fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:43:1: warning: integer constant is too large for its type
+ 0x4fffffff70000000a00000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:44:2: warning: integer constant is too large for its type
+ -0x8fffffffe00000000fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:45:2: warning: integer constant is too large for its type
+ -0x1fffffffd0000000a00000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:46:1: warning: integer constant is too large for its type
+ 0x7000000030000000900000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:47:1: warning: integer constant is too large for its type
+ 0x90000000a0000000800000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:48:2: warning: integer constant is too large for its type
+ -0x1fffffffd0000000500000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:49:2: warning: integer constant is too large for its type
+ -0xfffffffc00000007fffffffb,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:50:1: warning: integer constant is too large for its type
+ 0x100000003fffffffdfffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:51:1: warning: integer constant is too large for its type
+ 0x80000000700000002fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:52:1: warning: integer constant is too large for its type
+ 0x7ffffffff00000004fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:53:1: warning: integer constant is too large for its type
+ 0x20000000100000002fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:54:2: warning: integer constant is too large for its type
+ -0x800000008fffffffffffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:55:1: warning: integer constant is too large for its type
+ 0x4fffffffe00000006fffffffa,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:56:2: warning: integer constant is too large for its type
+ -0x60000000900000007fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:57:2: warning: integer constant is too large for its type
+ -0xa00000004fffffff900000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:58:2: warning: integer constant is too large for its type
+ -0x400000003fffffffcfffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:59:2: warning: integer constant is too large for its type
+ -0x4000000060000000800000004,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:60:1: warning: integer constant is too large for its type
+ 0x600000005000000020000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:61:2: warning: integer constant is too large for its type
+ -0x600000008fffffff6fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:62:1: warning: integer constant is too large for its type
+ 0x6fffffffe0000000500000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:63:1: warning: integer constant is too large for its type
+ 0x3fffffffd0000000500000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:64:2: warning: integer constant is too large for its type
+ -0xa0000000600000009fffffffb,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:65:2: warning: integer constant is too large for its type
+ -0xa00000005fffffff7fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:66:2: warning: integer constant is too large for its type
+ -0x30000000000000002fffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:67:1: warning: integer constant is too large for its type
+ 0x5fffffff800000006fffffffa,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:68:2: warning: integer constant is too large for its type
+ -0x1fffffffdfffffff7fffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:69:2: warning: integer constant is too large for its type
+ -0x6000000040000000700000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:70:1: warning: integer constant is too large for its type
+ 0x200000000fffffff6fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:71:2: warning: integer constant is too large for its type
+ -0x40000000400000003,
+  ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:72:1: warning: integer constant is too large for its type
+ 0x900000005fffffffd00000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:73:1: warning: integer constant is too large for its type
+ 0x7000000060000000000000006,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:74:2: warning: integer constant is too large for its type
+ -0x7fffffffc0000000000000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:75:1: warning: integer constant is too large for its type
+ 0x5fffffffeffffffff00000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:76:2: warning: integer constant is too large for its type
+ -0x600000003fffffff70000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:77:2: warning: integer constant is too large for its type
+ -0x600000001fffffffffffffffe,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:78:1: warning: integer constant is too large for its type
+ 0x9fffffff9ffffffff0000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:79:2: warning: integer constant is too large for its type
+ -0x5fffffffafffffff60000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:80:1: warning: integer constant is too large for its type
+ 0x1fffffff6000000030000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:81:2: warning: integer constant is too large for its type
+ -0x9000000050000000900000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:82:1: warning: integer constant is too large for its type
+ 0x30000000200000008fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:83:1: warning: integer constant is too large for its type
+ 0xa0000000900000008fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:84:2: warning: integer constant is too large for its type
+ -0x900000003ffffffff00000008,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:85:2: warning: integer constant is too large for its type
+ -0x7fffffffe00000003fffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:86:1: warning: integer constant is too large for its type
+ 0xfffffffb00000002fffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:87:2: warning: integer constant is too large for its type
+ -0x500000007fffffff9fffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:88:2: warning: integer constant is too large for its type
+ -0xa00000007fffffff7fffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:89:2: warning: integer constant is too large for its type
+ -0x9000000020000000900000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:90:2: warning: integer constant is too large for its type
+ -0x6fffffff8fffffffcffffffff,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:92:2: warning: integer constant is too large for its type
+ -0x60000000600000007fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:93:2: warning: integer constant is too large for its type
+ -0xa00000007fffffffafffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:94:2: warning: integer constant is too large for its type
+ -0x300000005fffffffb00000004,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:95:1: warning: integer constant is too large for its type
+ 0x6fffffffffffffff700000005,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:96:2: warning: integer constant is too large for its type
+ -0xa0000000400000006fffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:97:1: warning: integer constant is too large for its type
+ 0x600000006fffffffc00000009,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:98:1: warning: integer constant is too large for its type
+ 0x6fffffffe00000001fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:99:1: warning: integer constant is too large for its type
+ 0x400000001fffffffffffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:100:1: warning: integer constant is too large for its type
+ 0x4000000090000000000000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:101:2: warning: integer constant is too large for its type
+ -0x20000000700000000fffffffe,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:102:2: warning: integer constant is too large for its type
+ -0x8fffffffa00000009fffffff8}
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:104:1: warning: integer constant is too large for its type
+ 0x200000000fffffffefffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:105:2: warning: integer constant is too large for its type
+ -0x2fffffff7fffffff800000008,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:106:1: warning: integer constant is too large for its type
+ 0x100000001fffffffcfffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:107:1: warning: integer constant is too large for its type
+ 0x5fffffff60000000400000006,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:108:1: warning: integer constant is too large for its type
+ 0x4fffffff80000000800000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:109:2: warning: integer constant is too large for its type
+ -0x30000000900000006fffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:110:2: warning: integer constant is too large for its type
+ -0x4fffffffe0000000600000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:111:1: warning: integer constant is too large for its type
+ 0x5fffffffd0000000000000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:112:1: warning: integer constant is too large for its type
+ 0x6fffffff5ffffffff00000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:113:2: warning: integer constant is too large for its type
+ -0x900000007fffffff8fffffffe,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:114:2: warning: integer constant is too large for its type
+ -0x2fffffff60000000a00000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:115:2: warning: integer constant is too large for its type
+ -0x1000000070000000800000008,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:116:1: warning: integer constant is too large for its type
+ 0x800000006fffffff6fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:117:1: warning: integer constant is too large for its type
+ 0x200000006fffffff7fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:118:1: warning: integer constant is too large for its type
+ 0xa0000000100000009fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:119:2: warning: integer constant is too large for its type
+ -0x2fffffffe0000000a00000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:120:1: warning: integer constant is too large for its type
+ 0x3000000060000000a00000005,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:121:2: warning: integer constant is too large for its type
+ -0x300000007fffffff6fffffffe,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:122:1: warning: integer constant is too large for its type
+ 0x40000000700000008fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:123:2: warning: integer constant is too large for its type
+ -0x5fffffffd0000000200000004,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:124:2: warning: integer constant is too large for its type
+ -0x300000000fffffff6fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:125:1: warning: integer constant is too large for its type
+ 0x8fffffffe00000002fffffffa,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:126:1: warning: integer constant is too large for its type
+ 0x2fffffffefffffffa,
+ ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:127:1: warning: integer constant is too large for its type
+ 0x3fffffffffffffffa0000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:128:1: warning: integer constant is too large for its type
+ 0x8fffffffefffffffcfffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:129:2: warning: integer constant is too large for its type
+ -0x6fffffff7fffffff5fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:130:2: warning: integer constant is too large for its type
+ -0x5fffffff5fffffffdfffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:131:2: warning: integer constant is too large for its type
+ -0x2000000070000000800000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:132:2: warning: integer constant is too large for its type
+ -0x2fffffff5fffffff700000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:133:2: warning: integer constant is too large for its type
+ -0x200000009fffffffbfffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:134:1: warning: integer constant is too large for its type
+ 0x4fffffff9fffffff900000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:135:1: warning: integer constant is too large for its type
+ 0x6fffffff80000000a00000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:136:1: warning: integer constant is too large for its type
+ 0x800000006000000060000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:137:1: warning: integer constant is too large for its type
+ 0x5fffffffbfffffff9fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:138:2: warning: integer constant is too large for its type
+ -0x8ffffffff0000000900000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:139:1: warning: integer constant is too large for its type
+ 0x6fffffffbfffffffcfffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:140:1: warning: integer constant is too large for its type
+ 0x9fffffff7fffffffc0000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:141:1: warning: integer constant is too large for its type
+ 0xfffffffdfffffffdfffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:142:2: warning: integer constant is too large for its type
+ -0x1fffffffe00000003fffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:143:2: warning: integer constant is too large for its type
+ -0x5fffffffa00000009fffffffb,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:144:1: warning: integer constant is too large for its type
+ 0xfffffffefffffffaffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:145:1: warning: integer constant is too large for its type
+ 0x100000007fffffff7fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:146:2: warning: integer constant is too large for its type
+ -0x8fffffffd00000002fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:147:2: warning: integer constant is too large for its type
+ -0x2fffffffefffffff8fffffffb,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:148:1: warning: integer constant is too large for its type
+ 0x2fffffffc0000000200000000,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:149:1: warning: integer constant is too large for its type
+ 0x7ffffffff00000009ffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:150:2: warning: integer constant is too large for its type
+ -0x8fffffffe00000001fffffff6,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:151:2: warning: integer constant is too large for its type
+ -0x200000001000000020000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:152:1: warning: integer constant is too large for its type
+ 0x900000005fffffffcfffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:153:1: warning: integer constant is too large for its type
+ 0x1fffffffafffffff5fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:154:1: warning: integer constant is too large for its type
+ 0x7fffffffffffffffe00000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:155:2: warning: integer constant is too large for its type
+ -0x3fffffff60000000900000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:156:1: warning: integer constant is too large for its type
+ 0x300000004fffffff5fffffffa,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:157:1: warning: integer constant is too large for its type
+ 0x3fffffff5fffffffe00000001,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:158:1: warning: integer constant is too large for its type
+ 0x6fffffff8fffffffb,
+ ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:159:1: warning: integer constant is too large for its type
+ 0x100000003fffffff700000009,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:160:2: warning: integer constant is too large for its type
+ -0x300000005fffffffb00000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:161:2: warning: integer constant is too large for its type
+ -0x200000000fffffffd,
+  ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:162:2: warning: integer constant is too large for its type
+ -0x4000000040000000300000004,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:163:2: warning: integer constant is too large for its type
+ -0xa000000060000000700000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:164:2: warning: integer constant is too large for its type
+ -0x5000000090000000200000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:165:2: warning: integer constant is too large for its type
+ -0x4fffffffcfffffffb00000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:166:1: warning: integer constant is too large for its type
+ 0x1fffffff5fffffffe00000001,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:168:2: warning: integer constant is too large for its type
+ -0x1fffffffe00000006fffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:169:2: warning: integer constant is too large for its type
+ -0x1fffffffefffffffbfffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:170:1: warning: integer constant is too large for its type
+ 0x6fffffff70000000300000001,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:171:2: warning: integer constant is too large for its type
+ -0x6fffffffd00000009fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:172:1: warning: integer constant is too large for its type
+ 0x9000000000000000100000000,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:173:2: warning: integer constant is too large for its type
+ -0x5000000010000000900000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:174:1: warning: integer constant is too large for its type
+ 0xa00000000fffffffffffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:175:2: warning: integer constant is too large for its type
+ -0x5fffffffefffffff7,
+  ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:176:2: warning: integer constant is too large for its type
+ -0xa00000000000000060000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:177:1: warning: integer constant is too large for its type
+ 0x6fffffffdfffffff9fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:178:2: warning: integer constant is too large for its type
+ -0x6fffffff6fffffff8fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:179:1: warning: integer constant is too large for its type
+ 0xa000000020000000a00000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:180:2: warning: integer constant is too large for its type
+ -0x100000001fffffffdfffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:181:2: warning: integer constant is too large for its type
+ -0x80000000900000009fffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:182:2: warning: integer constant is too large for its type
+ -0x3000000060000000200000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:183:1: warning: integer constant is too large for its type
+ 0x8fffffffffffffff9fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:184:2: warning: integer constant is too large for its type
+ -0x70000000700000001ffffffff,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:185:1: warning: integer constant is too large for its type
+ 0x9fffffffbfffffff700000006,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:186:2: warning: integer constant is too large for its type
+ -0x2fffffffafffffffb00000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:187:2: warning: integer constant is too large for its type
+ -0x9000000090000000000000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:188:2: warning: integer constant is too large for its type
+ -0x7000000080000000400000005,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:189:2: warning: integer constant is too large for its type
+ -0x9fffffffffffffffdfffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:190:1: warning: integer constant is too large for its type
+ 0x5fffffff8000000010000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:191:2: warning: integer constant is too large for its type
+ -0xa00000002fffffff6ffffffff,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:192:2: warning: integer constant is too large for its type
+ -0x1fffffffc0000000000000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:193:2: warning: integer constant is too large for its type
+ -0x8fffffff5fffffff6fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:194:1: warning: integer constant is too large for its type
+ 0x3fffffffb00000008fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:195:2: warning: integer constant is too large for its type
+ -0xfffffff700000007fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:196:1: warning: integer constant is too large for its type
+ 0x1fffffffa0000000100000000,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:197:2: warning: integer constant is too large for its type
+ -0x3fffffffafffffffffffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:198:1: warning: integer constant is too large for its type
+ 0x600000002fffffff600000005,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:199:1: warning: integer constant is too large for its type
+ 0x4fffffffffffffff700000007}
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:201:2: warning: integer constant is too large for its type
+ -0x90000000a0000000200000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:202:2: warning: integer constant is too large for its type
+ -0x6fffffff6fffffffafffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:203:2: warning: integer constant is too large for its type
+ -0x6fffffffcfffffffd00000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:204:1: warning: integer constant is too large for its type
+ 0x7000000080000000500000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:205:2: warning: integer constant is too large for its type
+ -0x8fffffffc0000000500000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:206:1: warning: integer constant is too large for its type
+ 0x5000000020000000800000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:207:1: warning: integer constant is too large for its type
+ 0x900000003fffffffcfffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:208:2: warning: integer constant is too large for its type
+ -0x2fffffff600000003fffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:209:2: warning: integer constant is too large for its type
+ -0xa00000002fffffffbfffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:210:2: warning: integer constant is too large for its type
+ -0x8fffffff5fffffff900000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:211:1: warning: integer constant is too large for its type
+ 0x20000000500000002ffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:212:2: warning: integer constant is too large for its type
+ -0x100000001fffffffdfffffff6,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:213:2: warning: integer constant is too large for its type
+ -0xfffffffb0000000000000004,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:214:2: warning: integer constant is too large for its type
+ -0x3fffffffbffffffff00000005,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:215:1: warning: integer constant is too large for its type
+ 0x4fffffffa00000007fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:216:2: warning: integer constant is too large for its type
+ -0x8fffffffffffffff5fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:217:1: warning: integer constant is too large for its type
+ 0x600000000fffffff9fffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:218:1: warning: integer constant is too large for its type
+ 0x30000000500000000fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:219:1: warning: integer constant is too large for its type
+ 0x3fffffff8fffffffd00000005,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:220:2: warning: integer constant is too large for its type
+ -0x6fffffffe0000000100000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:221:1: warning: integer constant is too large for its type
+ 0x1000000010000000a00000006,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:222:2: warning: integer constant is too large for its type
+ -0x6fffffffefffffff90000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:223:2: warning: integer constant is too large for its type
+ -0xfffffffa0000000300000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:224:1: warning: integer constant is too large for its type
+ 0x1000000090000000000000002,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:225:1: warning: integer constant is too large for its type
+ 0x8fffffffe0000000a00000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:226:1: warning: integer constant is too large for its type
+ 0x5fffffffe0000000000000009,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:227:1: warning: integer constant is too large for its type
+ 0x7000000000000000a0000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:228:2: warning: integer constant is too large for its type
+ -0x4fffffff70000000600000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:229:1: warning: integer constant is too large for its type
+ 0x2fffffff600000001fffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:230:2: warning: integer constant is too large for its type
+ -0x2fffffffa00000000fffffffe,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:231:1: warning: integer constant is too large for its type
+ 0x300000005fffffff7ffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:232:2: warning: integer constant is too large for its type
+ -0xfffffff60000000a00000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:233:1: warning: integer constant is too large for its type
+ 0x7fffffff90000000200000009,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:234:2: warning: integer constant is too large for its type
+ -0x2fffffffa00000002fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:235:2: warning: integer constant is too large for its type
+ -0x6fffffffe0000000900000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:236:1: warning: integer constant is too large for its type
+ 0x3fffffffdfffffffbfffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:237:2: warning: integer constant is too large for its type
+ -0x3fffffffcfffffff900000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:238:2: warning: integer constant is too large for its type
+ -0x30000000800000003fffffffe,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:239:2: warning: integer constant is too large for its type
+ -0x1fffffff70000000700000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:240:2: warning: integer constant is too large for its type
+ -0x1fffffffbfffffffa00000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:241:2: warning: integer constant is too large for its type
+ -0x9fffffffc00000004fffffffb,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:242:1: warning: integer constant is too large for its type
+ 0x8fffffff90000000200000009,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:243:1: warning: integer constant is too large for its type
+ 0x600000009000000030000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:244:1: warning: integer constant is too large for its type
+ 0x9000000000000000a00000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:245:2: warning: integer constant is too large for its type
+ -0x4000000030000000200000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:246:2: warning: integer constant is too large for its type
+ -0x1fffffffafffffffefffffff6,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:247:1: warning: integer constant is too large for its type
+ 0xfffffff6fffffff7fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:248:1: warning: integer constant is too large for its type
+ 0x3ffffffff00000000fffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:249:2: warning: integer constant is too large for its type
+ -0x500000001fffffff600000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:250:1: warning: integer constant is too large for its type
+ 0x100000007fffffff60000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:251:1: warning: integer constant is too large for its type
+ 0x4fffffff800000008fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:252:2: warning: integer constant is too large for its type
+ -0x8ffffffff0000000a00000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:253:2: warning: integer constant is too large for its type
+ -0xfffffffefffffff600000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:254:2: warning: integer constant is too large for its type
+ -0x40000000800000009fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:255:2: warning: integer constant is too large for its type
+ -0x2fffffff90000000700000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:256:1: warning: integer constant is too large for its type
+ 0x10000000a00000000ffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:257:2: warning: integer constant is too large for its type
+ -0xa00000000fffffffc0000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:258:1: warning: integer constant is too large for its type
+ 0x2fffffffc00000005fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:259:2: warning: integer constant is too large for its type
+ -0x1fffffffefffffff900000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:260:2: warning: integer constant is too large for its type
+ -0x6fffffff9fffffffdfffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:261:1: warning: integer constant is too large for its type
+ 0xa000000020000000a00000005,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:262:1: warning: integer constant is too large for its type
+ 0x50000000500000004fffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:263:2: warning: integer constant is too large for its type
+ -0xfffffffe0000000900000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:264:2: warning: integer constant is too large for its type
+ -0x300000006fffffffdfffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:265:2: warning: integer constant is too large for its type
+ -0x8fffffffdfffffffb00000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:266:2: warning: integer constant is too large for its type
+ -0x9fffffff600000007fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:267:1: warning: integer constant is too large for its type
+ 0x80000000a00000009fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:268:1: warning: integer constant is too large for its type
+ 0x9fffffffd0000000200000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:269:2: warning: integer constant is too large for its type
+ -0x4ffffffff0000000000000008,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:270:1: warning: integer constant is too large for its type
+ 0x700000006fffffff9fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:271:1: warning: integer constant is too large for its type
+ 0x5fffffffefffffff5fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:272:1: warning: integer constant is too large for its type
+ 0x6fffffffc00000005fffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:273:2: warning: integer constant is too large for its type
+ -0x60000000500000004ffffffff,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:274:2: warning: integer constant is too large for its type
+ -0x40000000a00000004,
+  ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:275:2: warning: integer constant is too large for its type
+ -0x2fffffff70000000300000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:276:1: warning: integer constant is too large for its type
+ 0x500000003fffffff5fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:277:2: warning: integer constant is too large for its type
+ -0x500000001fffffff5fffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:278:1: warning: integer constant is too large for its type
+ 0xa000000000000000100000004,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:279:1: warning: integer constant is too large for its type
+ 0x500000002fffffff600000002,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:280:2: warning: integer constant is too large for its type
+ -0x800000005fffffff6,
+  ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:281:2: warning: integer constant is too large for its type
+ -0x200000007fffffffb00000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:282:2: warning: integer constant is too large for its type
+ -0x8fffffff7fffffffdfffffff6,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:283:1: warning: integer constant is too large for its type
+ 0xa0000000600000003,
+ ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:284:1: warning: integer constant is too large for its type
+ 0x30000000300000007fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:285:1: warning: integer constant is too large for its type
+ 0xa000000040000000700000002,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:286:2: warning: integer constant is too large for its type
+ -0x4000000030000000400000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:287:1: warning: integer constant is too large for its type
+ 0x4000000030000000400000006,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:288:1: warning: integer constant is too large for its type
+ 0x70000000a0000000a00000003,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:289:2: warning: integer constant is too large for its type
+ -0x100000004fffffffb0000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:290:1: warning: integer constant is too large for its type
+ 0xa000000050000000000000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:291:1: warning: integer constant is too large for its type
+ 0x3fffffff8fffffffc00000006,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:292:1: warning: integer constant is too large for its type
+ 0xa00000002ffffffff00000003,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:293:1: warning: integer constant is too large for its type
+ 0xfffffffd00000008fffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:294:1: warning: integer constant is too large for its type
+ 0x90000000000000009fffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:295:2: warning: integer constant is too large for its type
+ -0x1fffffffc00000000fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:296:1: warning: integer constant is too large for its type
+ 0x7000000000000000700000003}
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:298:1: warning: integer constant is too large for its type
+ 0x2fffffffcfffffff9fffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:299:2: warning: integer constant is too large for its type
+ -0x7fffffff70000000400000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:300:2: warning: integer constant is too large for its type
+ -0x9000000020000000500000005,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:301:1: warning: integer constant is too large for its type
+ 0x4fffffffb00000008fffffffb,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:302:1: warning: integer constant is too large for its type
+ 0x6fffffff80000000a00000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:303:1: warning: integer constant is too large for its type
+ 0x400000008fffffff60000000a,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:304:2: warning: integer constant is too large for its type
+ -0x8fffffffbfffffff600000005,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:305:2: warning: integer constant is too large for its type
+ -0xa0000000000000006fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:306:1: warning: integer constant is too large for its type
+ 0x7fffffff600000004fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:307:1: warning: integer constant is too large for its type
+ 0x70000000900000001fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:308:1: warning: integer constant is too large for its type
+ 0x8ffffffff0000000500000001,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:309:2: warning: integer constant is too large for its type
+ -0x3ffffffff0000000900000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:310:2: warning: integer constant is too large for its type
+ -0x9fffffffefffffffd00000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:311:1: warning: integer constant is too large for its type
+ 0x700000007fffffff8fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:312:1: warning: integer constant is too large for its type
+ 0x7fffffff8fffffff6fffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:313:1: warning: integer constant is too large for its type
+ 0x1fffffffffffffffefffffffd,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:314:1: warning: integer constant is too large for its type
+ 0x40000000a0000000a00000003,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:315:1: warning: integer constant is too large for its type
+ 0x1000000000000000700000000,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:316:2: warning: integer constant is too large for its type
+ -0x90000000a00000006fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:317:1: warning: integer constant is too large for its type
+ 0xa0000000600000004fffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:318:1: warning: integer constant is too large for its type
+ 0xa00000001fffffffc00000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:319:2: warning: integer constant is too large for its type
+ -0xa0000000500000000fffffffb,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:320:1: warning: integer constant is too large for its type
+ 0x900000006fffffffbfffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:321:2: warning: integer constant is too large for its type
+ -0x60000000700000009fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:322:2: warning: integer constant is too large for its type
+ -0x4fffffffafffffff5fffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:323:2: warning: integer constant is too large for its type
+ -0xa0000000300000003fffffffb,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:324:2: warning: integer constant is too large for its type
+ -0x6fffffff800000002fffffff6,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:325:2: warning: integer constant is too large for its type
+ -0x7fffffffafffffff5fffffffe,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:326:1: warning: integer constant is too large for its type
+ 0x4000000040000000a00000006,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:327:1: warning: integer constant is too large for its type
+ 0x8fffffffb0000000800000008,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:328:1: warning: integer constant is too large for its type
+ 0x80000000700000001ffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:329:1: warning: integer constant is too large for its type
+ 0x1fffffff700000003fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:330:2: warning: integer constant is too large for its type
+ -0x7ffffffff0000000200000008,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:331:1: warning: integer constant is too large for its type
+ 0x50000000200000009fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:332:1: warning: integer constant is too large for its type
+ 0x1fffffff900000009fffffffb,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:333:1: warning: integer constant is too large for its type
+ 0x3fffffff6fffffffdfffffff9,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:334:2: warning: integer constant is too large for its type
+ -0x70000000500000000fffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:335:2: warning: integer constant is too large for its type
+ -0x90000000a00000004fffffffd,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:336:2: warning: integer constant is too large for its type
+ -0x9fffffff60000000100000003,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:337:2: warning: integer constant is too large for its type
+ -0x5000000070000000000000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:338:2: warning: integer constant is too large for its type
+ -0x7fffffffbfffffff70000000a,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:339:1: warning: integer constant is too large for its type
+ 0x900000003fffffff9fffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:340:1: warning: integer constant is too large for its type
+ 0xffffffff0000000800000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:341:1: warning: integer constant is too large for its type
+ 0xfffffffefffffff7fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:342:1: warning: integer constant is too large for its type
+ 0x6fffffffefffffffd00000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:343:2: warning: integer constant is too large for its type
+ -0x4000000070000000500000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:344:2: warning: integer constant is too large for its type
+ -0x400000008fffffff800000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:345:2: warning: integer constant is too large for its type
+ -0x2fffffff700000009fffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:346:2: warning: integer constant is too large for its type
+ -0x200000007fffffffafffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:347:2: warning: integer constant is too large for its type
+ -0x500000007fffffff700000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:348:1: warning: integer constant is too large for its type
+ 0x1fffffff70000000700000001,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:349:2: warning: integer constant is too large for its type
+ -0x1fffffffafffffff8fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:350:1: warning: integer constant is too large for its type
+ 0x9000000020000000600000000,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:351:1: warning: integer constant is too large for its type
+ 0x1fffffff700000008fffffffe,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:352:2: warning: integer constant is too large for its type
+ -0x40000000800000006fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:353:2: warning: integer constant is too large for its type
+ -0x5fffffffcffffffff00000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:354:2: warning: integer constant is too large for its type
+ -0x8fffffffffffffffa,
+  ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:355:2: warning: integer constant is too large for its type
+ -0x3000000030000000000000004,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:356:1: warning: integer constant is too large for its type
+ 0x9fffffffbfffffffffffffffa,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:357:2: warning: integer constant is too large for its type
+ -0x300000003fffffffcfffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:358:2: warning: integer constant is too large for its type
+ -0x1fffffffcfffffff600000002,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:359:1: warning: integer constant is too large for its type
+ 0x4fffffffafffffffefffffff6,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:360:2: warning: integer constant is too large for its type
+ -0x900000008fffffffa00000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:361:1: warning: integer constant is too large for its type
+ 0x2fffffffffffffffffffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:362:2: warning: integer constant is too large for its type
+ -0x5000000010000000300000008,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:363:2: warning: integer constant is too large for its type
+ -0x4fffffffe0000000600000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:364:1: warning: integer constant is too large for its type
+ 0x1fffffffa0000000000000001,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:365:2: warning: integer constant is too large for its type
+ -0xfffffff600000009fffffff6,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:366:2: warning: integer constant is too large for its type
+ -0x400000002fffffffe00000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:367:2: warning: integer constant is too large for its type
+ -0x200000009fffffffdfffffff9,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:368:2: warning: integer constant is too large for its type
+ -0x7000000070000000a,
+  ^~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:369:2: warning: integer constant is too large for its type
+ -0x7fffffff7fffffff5ffffffff,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:370:1: warning: integer constant is too large for its type
+ 0xfffffffcfffffff5fffffffb,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:371:1: warning: integer constant is too large for its type
+ 0xa0000000800000006ffffffff,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:372:1: warning: integer constant is too large for its type
+ 0x500000007fffffff7fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:373:2: warning: integer constant is too large for its type
+ -0x400000002fffffff9fffffffc,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:374:2: warning: integer constant is too large for its type
+ -0x400000002fffffff9ffffffff,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:375:1: warning: integer constant is too large for its type
+ 0x6fffffff700000008fffffffa,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:376:2: warning: integer constant is too large for its type
+ -0x900000000ffffffff00000001,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:377:2: warning: integer constant is too large for its type
+ -0x10000000300000005fffffff7,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:378:1: warning: integer constant is too large for its type
+ 0x20000000800000002fffffffc,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:379:2: warning: integer constant is too large for its type
+ -0x5fffffffdfffffffe00000008,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:380:1: warning: integer constant is too large for its type
+ 0x4000000010000000200000003,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:381:2: warning: integer constant is too large for its type
+ -0x50000000900000002fffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:382:2: warning: integer constant is too large for its type
+ -0x2ffffffff0000000400000005,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:383:2: warning: integer constant is too large for its type
+ -0x7fffffffe0000000000000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:384:2: warning: integer constant is too large for its type
+ -0x60000000200000005fffffffa,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:385:2: warning: integer constant is too large for its type
+ -0x1000000010000000300000007,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:386:1: warning: integer constant is too large for its type
+ 0x3fffffffcfffffffe00000007,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:387:1: warning: integer constant is too large for its type
+ 0x300000001fffffffefffffff7,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:388:2: warning: integer constant is too large for its type
+ -0x1000000040000000500000009,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:389:2: warning: integer constant is too large for its type
+ -0x3000000080000000400000006,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:390:1: warning: integer constant is too large for its type
+ 0x8fffffff9fffffffafffffff8,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:391:2: warning: integer constant is too large for its type
+ -0x7fffffff7fffffff6fffffff8,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:392:2: warning: integer constant is too large for its type
+ -0x6fffffffa0000000900000000,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../memdata.h:393:2: warning: integer constant is too large for its type
+ -0x5fffffff90000000a00000007}
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:51,
+                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:59,
+                 from ../../../../conv3_tb.cpp:52:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+In file included from ../../../../conv3_tb.cpp:53:
+../../../../memdata.h:4:47: error: wrong number of template arguments (5, should be 4)
+ static FixedPointWeightsSp<4,2,ap_int<32>,4,96> weights= {
+                                               ^
+In file included from ../../../../conv3_tb.cpp:51:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:175:7: note: provided for ‘template<unsigned int SIMD, class WT, unsigned int PE, unsigned int TILES> class FixedPointWeightsSp’
+ class FixedPointWeightsSp {
+       ^~~~~~~~~~~~~~~~~~~
+In file included from ../../../../conv3_tb.cpp:53:
+../../../../memdata.h:395:1: error: braces around scalar initializer for type ‘int’
+ };
+ ^
 make: *** [csim.mk:78: obj/conv3_tb.o] Error 1
 ERR: [SIM 100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 3] *************** CSIM finish ***************
