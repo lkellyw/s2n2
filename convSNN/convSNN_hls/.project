@@ -37,9 +37,24 @@
 			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/activations.hpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp</location>
+		</link>
+		<link>
 			<name>.reference/bnn-library.h</name>
 			<type>1</type>
 			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h</location>
+		</link>
+		<link>
+			<name>.reference/convlayer.h</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</location>
+		</link>
+		<link>
+			<name>.reference/dma.h</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h</location>
 		</link>
 		<link>
 			<name>.reference/fclayer.h</name>
@@ -47,14 +62,24 @@
 			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h</location>
 		</link>
 		<link>
-			<name>.reference/mvau.hpp</name>
+			<name>.reference/mmv.hpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</location>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp</location>
 		</link>
 		<link>
-			<name>.reference/weights.hpp</name>
+			<name>.reference/slidingwindow.h</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp</location>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h</location>
+		</link>
+		<link>
+			<name>.reference/streamtools.h</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h</location>
+		</link>
+		<link>
+			<name>.reference/vvau.hpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
@@ -67,44 +92,44 @@
 			<location>/home/coder/Desktop/s2n2/convSNN/configSNN.h</location>
 		</link>
 		<link>
-			<name>source/fc1_tb.cpp</name>
+			<name>source/conv1_tb.cpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/conv1_tb.cpp</location>
 		</link>
 		<link>
-			<name>source/fc1_top.cpp</name>
+			<name>source/conv1_top.cpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp</location>
 		</link>
 		<link>
-			<name>source/fc1_weights.hpp</name>
+			<name>source/conv1_weights.hpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/conv1_weights.hpp</location>
 		</link>
 		<link>
-			<name>source/memdataM.h</name>
+			<name>source/memdata.h</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/memdataM.h</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/memdata.h</location>
 		</link>
 		<link>
-			<name>testbench/configSNN.h</name>
+			<name>source/mvau.hpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/configSNN.h</location>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</location>
 		</link>
 		<link>
-			<name>testbench/fc1_tb.cpp</name>
+			<name>source/script.tcl</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/script.tcl</location>
 		</link>
 		<link>
-			<name>testbench/fc1_top.cpp</name>
+			<name>source/weights.hpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp</location>
+			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp</location>
 		</link>
 		<link>
-			<name>testbench/fc1_weights.hpp</name>
+			<name>testbench/conv1_tb.cpp</name>
 			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp</location>
+			<location>/home/coder/Desktop/s2n2/convSNN/conv1_tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

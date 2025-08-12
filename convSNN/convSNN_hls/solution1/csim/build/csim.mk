@@ -16,7 +16,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../fc1_tb.cpp ../../../../fc1_top.cpp
+HLS_SOURCES = ../../../../conv1_tb.cpp ../../../../conv1_top.cpp
 
 override TARGET := csim.exe
 
@@ -52,7 +52,7 @@ IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E2__
 IFLAG += -I../../../finn-hlslib-lif 
-IFLAG += -g
+AP_ENABLE_OPTIMIZED := 1
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += 
 TOOLCHAIN += 
@@ -65,14 +65,14 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/fc1_tb.o: ../../../../fc1_tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../fc1_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I../../../../../finn-hlslib-lif  $(IFLAG) $(DFLAG) $< -o $@ ; \
+$(ObjDir)/conv1_tb.o: ../../../../conv1_tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../conv1_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I../../../../../finn-hlslib-lif  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
--include $(ObjDir)/fc1_tb.d
+-include $(ObjDir)/conv1_tb.d
 
-$(ObjDir)/fc1_top.o: ../../../../fc1_top.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../fc1_top.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I../../../../../finn-hlslib-lif  $(IFLAG) $(DFLAG) $< -o $@ ; \
+$(ObjDir)/conv1_top.o: ../../../../conv1_top.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../conv1_top.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I../../../../../finn-hlslib-lif  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
--include $(ObjDir)/fc1_top.d
+-include $(ObjDir)/conv1_top.d
