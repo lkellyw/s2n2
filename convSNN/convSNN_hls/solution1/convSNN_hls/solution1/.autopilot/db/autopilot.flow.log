@@ -12615,3 +12615,4 @@ Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet
 INFO-FLOW: DBG:CMD:     exec /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/convSNN_hls/solution1/impl/ip/pack.sh
 Command     export_design done; 21.33 sec.
 Command   ap_source done; 115.9 sec.
+Execute   cleanup_all 

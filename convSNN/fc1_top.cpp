@@ -3,15 +3,15 @@
 #include "bnn-library.h"
 
 #include "activations.hpp"
-#include "fc1_weights.hpp"  // Updated header
+#include "fc1_weights.hpp"
 #include "interpret.hpp"
 #include "fclayer.h"
 #include "configSNN.h"
 
-// Declare weights
+// Global FC1 weights object
 FixedPointWeightsSp<
     SIMD_FC1,
-    ap_int<1>,
+    ap_int<32>,   // <-- 32-bit fixed point
     PE_FC1,
     (FC1_IN_CH * FC1_OUT_CH) / (SIMD_FC1 * PE_FC1)
 > weights_fc1;

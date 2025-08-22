@@ -37,54 +37,14 @@
 			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/activations.hpp</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp</location>
-		</link>
-		<link>
-			<name>.reference/bnn-library.h</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h</location>
-		</link>
-		<link>
-			<name>.reference/convlayer.h</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</location>
-		</link>
-		<link>
-			<name>.reference/dma.h</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h</location>
-		</link>
-		<link>
-			<name>.reference/fclayer.h</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h</location>
-		</link>
-		<link>
-			<name>.reference/mmv.hpp</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp</location>
-		</link>
-		<link>
-			<name>.reference/slidingwindow.h</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h</location>
-		</link>
-		<link>
-			<name>.reference/streamtools.h</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h</location>
-		</link>
-		<link>
-			<name>.reference/vvau.hpp</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/.tcls</location>
+		</link>
+		<link>
+			<name>solution2/constraints</name>
+			<type>2</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution2/.tcls</location>
 		</link>
 		<link>
 			<name>source/configSNN.h</name>
@@ -135,6 +95,21 @@
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/script.tcl</location>
+		</link>
+		<link>
+			<name>solution2/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution2/solution2.directive</location>
+		</link>
+		<link>
+			<name>solution2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution2/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution2/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -21,9 +21,11 @@
 #define CONV1_SIMDSP 3
 #define CONV1_PE 8
 
-// FC1 layer (not used here but for future expansion)
-#define FC1_IN_CH (32 * 16)
-#define FC1_OUT_CH 64
+// === FC1 layer ===
+// PyTorch: nn.Linear(32 * MAX_CONSTITUENTS, 64)
+// If MAX_CONSTITUENTS=10, input dim = 32*10 = 320
+#define FC1_IN_CH 320   // matches 2nd dim of your weight matrix
+#define FC1_OUT_CH 64   // matches 1st dim of your weight matrix
 #define SIMD_FC1 16
 #define PE_FC1 8
 
