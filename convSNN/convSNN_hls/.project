@@ -112,16 +112,6 @@
 			<location>/home/coder/Desktop/s2n2/convSNN/memdata.h</location>
 		</link>
 		<link>
-			<name>source/mvau.hpp</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</location>
-		</link>
-		<link>
-			<name>source/script.tcl</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/script.tcl</location>
-		</link>
-		<link>
 			<name>source/weights.hpp</name>
 			<type>1</type>
 			<location>/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp</location>

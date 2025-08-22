@@ -30,41 +30,18 @@ int main() {
     const int num_inputs = CONV1_IFM_DIM * CONV1_IFM_DIM;
     const int numReps = REPS;
 
-    std::cout << "\nGenerating input spikes...\n";
+    // Generate dummy input (all spikes)
     for (int r = 0; r < numReps; ++r) {
         for (int i = 0; i < num_inputs; ++i) {
-            ap_uint<CONV1_SIMD * INPUT_PRECISION> val = 0b111;  // All channels spike
+            ap_uint<CONV1_SIMD * INPUT_PRECISION> val = 0b111;  
             input.write(val);
         }
     }
 
-    std::cout << "\nRunning CONV1-LIF layer...\n";
     conv1_lif_top(input, output, numReps);
 
-    std::cout << "\n--- Output spikes (partial log) ---\n";
-    int out_idx = 0;
-    int total_spikes = 0;
-
-    while (!output.empty()) {
-        auto val = output.read();
-        int spike_count = 0;
-
-        for (int i = 0; i < CONV1_PE; ++i)
-            if (val[i]) spike_count++;
-
-        total_spikes += spike_count;
-
-        // Print first 10 and then every 500th
-        if (out_idx < 10 || out_idx % 500 == 0) {
-            std::cout << "Output " << out_idx << ": 0b" << val.to_string(2)
-                      << "  (" << spike_count << " spikes)\n";
-        }
-
-        out_idx++;
-    }
-
-    std::cout << "\nTotal outputs: " << out_idx << "\n";
-    std::cout << "Total spikes:  " << total_spikes << "\n";
+    //  Removed detailed spike logging only keep a summary if desired
+    std::cout << "\nRun complete. Output stream size: " << output.size() << "\n";
 
     return 0;
 }

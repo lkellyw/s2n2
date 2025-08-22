@@ -1,38 +1,13 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx2/Vivado/2020.1/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/tools/Xilinx2/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'coder' on host 'coder-kwlaial-kellylaijetnet' (Linux_x86_64 version 5.15.134+release+2.10.0r8-amd64) on Tue Aug 12 01:04:21 UTC 2025
+INFO: [HLS 200-10] For user 'coder' on host 'coder-kwlaial-kellylaijetnet' (Linux_x86_64 version 5.15.134+release+2.10.0r8-amd64) on Mon Aug 18 20:04:22 UTC 2025
 INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/coder/Desktop/s2n2/convSNN'
-Sourcing Tcl script '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/csynth.tcl'
-INFO: [HLS 200-10] Opening project '/home/coder/Desktop/s2n2/convSNN/convSNN_hls'.
-INFO: [HLS 200-10] Adding design file 'configSNN.h' to the project
-INFO: [HLS 200-10] Adding design file 'conv1_tb.cpp' to the project
-INFO: [HLS 200-10] Adding design file 'conv1_top.cpp' to the project
-INFO: [HLS 200-10] Adding design file 'conv1_weights.hpp' to the project
-INFO: [HLS 200-10] Adding design file 'memdata.h' to the project
-INFO: [HLS 200-10] Adding design file '../finn-hlslib-lif/weights.hpp' to the project
-INFO: [HLS 200-10] Adding test bench file 'conv1_tb.cpp' to the project
-INFO: [HLS 200-10] Opening solution '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1'.
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'conv1_top.cpp' ... 
-WARNING: [HLS 200-40] In file included from conv1_top.cpp:3:
-In file included from ../finn-hlslib-lif/bnn-library.h:57:
-In file included from ../finn-hlslib-lif/weights.hpp:55:
-In file included from /tools/Xilinx2/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/array:34:
-/tools/Xilinx2/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/c++0x_warning.h:32:2: error: This file requires compiler and library support for the upcoming ISO C++ standard, C++0x. This support is currently experimental, and must be enabled with the -std=c++0x or -std=gnu++0x compiler options.
-#error This file requires compiler and library support for the upcoming \
- ^
-1 error generated.
-C preprocessor failed.
-    while executing
-"source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/csynth.tcl"
-    invoked from within
-"hls::main /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/csynth.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
+ERROR [AP-1] Could not read script 'script.tcl'.
+INFO: [Common 17-206] Exiting vivado_hls at Mon Aug 18 20:04:22 2025...

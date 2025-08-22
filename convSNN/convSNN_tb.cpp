@@ -33,6 +33,7 @@ int main() {
 
     init_all_weights();
 
+    // generate dummy input
     for (int t = 0; t < REPS; ++t) {
         for (int i = 0; i < CONV1_IFM_DIM * CONV1_IFM_DIM; ++i) {
             ap_uint<CONV1_SIMD * INPUT_PRECISION> val = 0b111;
@@ -44,15 +45,21 @@ int main() {
 
     int total_spikes = 0;
     int total_outputs = 0;
+
     while (!out_stream.empty()) {
-        ap_uint<FC2_OUT_CH * ACTIVATION_PRECISION> val = out_stream.read();
+        auto val = out_stream.read();
+        std::cout << "Output " << total_outputs << ": " 
+                << val.to_string(2) << std::endl;   // = show the whole bitstring
+
         for (int i = 0; i < FC2_OUT_CH; ++i) {
-            if (val[i]) total_spikes++;
+            ap_uint<ACTIVATION_PRECISION> spike =
+                val.range((i+1)*ACTIVATION_PRECISION-1, i*ACTIVATION_PRECISION);
+            if (spike) total_spikes++;
         }
         total_outputs++;
     }
 
-    std::cout << "Total outputs: " << total_outputs << std::endl;
+    std::cout << "Total outputs :)) : " << total_outputs << std::endl;
     std::cout << "Total spikes:  " << total_spikes << std::endl;
 
     return 0;

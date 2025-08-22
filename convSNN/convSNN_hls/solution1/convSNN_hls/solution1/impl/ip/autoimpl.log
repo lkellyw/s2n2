@@ -5,11 +5,7 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source run_ippack.tcl -notrace
-ipx::create_core: Time (s): cpu = 00:00:02 ; elapsed = 00:00:36 . Memory (MB): peak = 2040.676 ; gain = 0.023 ; free physical = 456985 ; free virtual = 757364
-bad lexical cast: source type value could not be interpreted as target
-    while executing
-"rdi::set_property core_revision 2508120428 {component component_1}"
-    invoked from within
-"set_property core_revision $Revision $core"
-    (file "run_ippack.tcl" line 818)
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 12 04:30:10 2025...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 22 19:55:11 2025...

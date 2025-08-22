@@ -6,8 +6,6 @@
     <file name="conv1_top.cpp" sc="0" tb="false" cflags="-I../finn-hlslib-lif" blackbox="false"/>
     <file name="conv1_weights.hpp" sc="0" tb="false" cflags="-I../finn-hlslib-lif" blackbox="false"/>
     <file name="memdata.h" sc="0" tb="false" cflags="" blackbox="false"/>
-    <file name="../finn-hlslib-lif/mvau.hpp" sc="0" tb="false" cflags="" blackbox="false"/>
-    <file name="convSNN_hls/solution1/script.tcl" sc="0" tb="false" cflags="" blackbox="false"/>
     <file name="../finn-hlslib-lif/weights.hpp" sc="0" tb="false" cflags="" blackbox="false"/>
     <file name="../../conv1_tb.cpp" sc="0" tb="1" cflags="-I../../../finn-hlslib-lif"/>
   </files>

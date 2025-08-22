@@ -79270,7 +79270,7 @@ int main() {
     const int num_inputs = 16 * 16;
     const int numReps = 20;
 
-    std::cout << "\nGenerating input spikes...\n";
+
     for (int r = 0; r < numReps; ++r) {
         for (int i = 0; i < num_inputs; ++i) {
             ap_uint<3 * 1> val = 0b111;
@@ -79278,33 +79278,10 @@ int main() {
         }
     }
 
-    std::cout << "\nRunning CONV1-LIF layer...\n";
     conv1_lif_top(input, output, numReps);
 
-    std::cout << "\n--- Output spikes (partial log) ---\n";
-    int out_idx = 0;
-    int total_spikes = 0;
 
-    while (!output.empty()) {
-        auto val = output.read();
-        int spike_count = 0;
-
-        for (int i = 0; i < 8; ++i)
-            if (val[i]) spike_count++;
-
-        total_spikes += spike_count;
-
-
-        if (out_idx < 10 || out_idx % 500 == 0) {
-            std::cout << "Output " << out_idx << ": 0b" << val.to_string(2)
-                      << "  (" << spike_count << " spikes)\n";
-        }
-
-        out_idx++;
-    }
-
-    std::cout << "\nTotal outputs: " << out_idx << "\n";
-    std::cout << "Total spikes:  " << total_spikes << "\n";
+    std::cout << "\nRun complete. Output stream size: " << output.size() << "\n";
 
     return 0;
 }

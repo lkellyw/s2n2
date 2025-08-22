@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Matrix_Vector_Activa'
 ================================================================
-* Date:           Tue Aug 12 04:25:41 2025
+* Date:           Fri Aug 22 19:54:02 2025
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        convSNN_hls
@@ -444,7 +444,7 @@ The critical path consists of the following:
 	'sub' operation ('accu[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:171->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) [100]  (0.853 ns)
 	'select' operation ('accu[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) [206]  (0.357 ns)
 	'select' operation ('select_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) [222]  (0.357 ns)
-	'store' operation ('store_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) of variable 'select_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 on array 'neust[16].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 [225]  (1.24 ns)
+	'store' operation ('store_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) of variable 'select_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 [231]  (1.24 ns)
 
  <State 4>: 0ns
 The critical path consists of the following:

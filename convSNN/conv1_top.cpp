@@ -52,4 +52,3 @@ void conv1_lif_top(
         ap_resource_dsp()
     );
 }
-

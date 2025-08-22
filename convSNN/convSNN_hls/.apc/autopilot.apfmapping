@@ -7,8 +7,6 @@
     <originFiles name="conv1_weights.hpp" path="/home/coder/Desktop/s2n2/convSNN/conv1_weights.hpp"/>
     <originFiles name="memdata.h" path="/home/coder/Desktop/s2n2/convSNN/memdata.h"/>
     <originFiles name="weights.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp"/>
-    <originFiles name="script.tcl" path="/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution1/script.tcl"/>
-    <originFiles name="mvau.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp"/>
   </source>
   <testbench>
     <originFiles name="conv1_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/conv1_tb.cpp"/>
