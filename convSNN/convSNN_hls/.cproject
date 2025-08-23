@@ -195,19 +195,15 @@
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.236883877" name="conv1_weights.hpp" rcbsApplicability="disable" resourcePath="source/conv1_weights.hpp" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1181825007" name="label_select_top.h" rcbsApplicability="disable" resourcePath="source/label_select_top.h" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.918285527" name="configSNN.h" rcbsApplicability="disable" resourcePath="source/configSNN.h" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1564641751" name="conv_top.cpp" rcbsApplicability="disable" resourcePath="source/conv_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.2143477298">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1706018950" name="fc1_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/fc1_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1863497887">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.2143477298" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1863497887" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1833389757" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.475218677" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.506952196" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.1208222900" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="../../../finn-hlslib-lif"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
@@ -220,16 +216,26 @@
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.167880418" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1670320591" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.514223451" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2042978912" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
                     </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1810220843" name="fc1_weights.hpp" rcbsApplicability="disable" resourcePath="source/fc1_weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1674107361" name="fc2_weights.hpp" rcbsApplicability="disable" resourcePath="source/fc2_weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1181825007" name="label_select_top.h" rcbsApplicability="disable" resourcePath="source/label_select_top.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.17142463" name="memdata.h" rcbsApplicability="disable" resourcePath="source/memdata.h" toolsToInvoke=""/>
                     					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1359761374" name="add_top.cpp" rcbsApplicability="disable" resourcePath="source/add_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.352157648">
                         						
@@ -291,13 +297,15 @@
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.853456171" name="conv1_top.cpp" rcbsApplicability="disable" resourcePath="source/conv1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1507101911">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1509210229" name="weights.hpp" rcbsApplicability="disable" resourcePath="source/weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.2118033637" name="fc2_top.cpp" rcbsApplicability="disable" resourcePath="source/fc2_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1174542218">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1507101911" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1174542218" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.250379663" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.2047892347" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.953690390" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.1639227143" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="../finn-hlslib-lif"/>
                                 								
@@ -317,9 +325,111 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.126758136" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.395716707" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.490667318" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1457041195" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.349494001" name="fc1_top.cpp" rcbsApplicability="disable" resourcePath="source/fc1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1246511164">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.1246511164" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1363231815" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.45799877" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="../finn-hlslib-lif"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/convSNN"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1401525257" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1982727629" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1941938112" name="conv1_weights.hpp" rcbsApplicability="disable" resourcePath="source/conv1_weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1401123807" name="configSNN.h" rcbsApplicability="disable" resourcePath="source/configSNN.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.1564641751" name="conv_top.cpp" rcbsApplicability="disable" resourcePath="source/conv_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.2143477298">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.2143477298" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1833389757" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.506952196" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/convSNN"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.167880418" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.514223451" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1925922573.197064712" name="conv1_top.cpp" rcbsApplicability="disable" resourcePath="source/conv1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.857129339">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287.857129339" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1502473287">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1194187687" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1134915969" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="../finn-hlslib-lif"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/convSNN"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1005186530" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1297031452" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -327,7 +437,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="solution1|source/conv1_tb.cpp|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="solution1|solution2|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -511,19 +621,15 @@
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.423137243" name="conv1_weights.hpp" rcbsApplicability="disable" resourcePath="source/conv1_weights.hpp" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1174786470" name="label_select_top.h" rcbsApplicability="disable" resourcePath="source/label_select_top.h" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.2038487333" name="configSNN.h" rcbsApplicability="disable" resourcePath="source/configSNN.h" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.633337159" name="conv_top.cpp" rcbsApplicability="disable" resourcePath="source/conv_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1174326405">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.733888398" name="fc1_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/fc1_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.30343591">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1174326405" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.30343591" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1817811516" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.2048148898" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.1079808093" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.536364142" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="../../../finn-hlslib-lif"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
                                 								
@@ -536,16 +642,26 @@
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.186959720" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.946912271" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.607611262" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1925379182" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
                     </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.557980908" name="fc1_weights.hpp" rcbsApplicability="disable" resourcePath="source/fc1_weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.97696175" name="fc2_weights.hpp" rcbsApplicability="disable" resourcePath="source/fc2_weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1174786470" name="label_select_top.h" rcbsApplicability="disable" resourcePath="source/label_select_top.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1758733126" name="memdata.h" rcbsApplicability="disable" resourcePath="source/memdata.h" toolsToInvoke=""/>
                     					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.987238576" name="add_top.cpp" rcbsApplicability="disable" resourcePath="source/add_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1815281134">
                         						
@@ -607,13 +723,15 @@
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.237332497" name="conv1_top.cpp" rcbsApplicability="disable" resourcePath="source/conv1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.518699667">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1207749146" name="weights.hpp" rcbsApplicability="disable" resourcePath="source/weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1003654066" name="fc2_top.cpp" rcbsApplicability="disable" resourcePath="source/fc2_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1935504629">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.518699667" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1935504629" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.416507108" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.545327827" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.1290271912" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.1894645029" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="../finn-hlslib-lif"/>
                                 								
@@ -633,9 +751,111 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.1670635956" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1415377870" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.815796798" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1880628435" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.43965685" name="fc1_top.cpp" rcbsApplicability="disable" resourcePath="source/fc1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.341751423">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.341751423" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.943856410" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1287895543" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="../finn-hlslib-lif"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/convSNN"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1691832683" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1088793855" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.2038864604" name="conv1_weights.hpp" rcbsApplicability="disable" resourcePath="source/conv1_weights.hpp" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1649020669" name="configSNN.h" rcbsApplicability="disable" resourcePath="source/configSNN.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.633337159" name="conv_top.cpp" rcbsApplicability="disable" resourcePath="source/conv_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1174326405">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.1174326405" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1817811516" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1079808093" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/convSNN"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.186959720" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.607611262" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1880776132.1845236737" name="conv1_top.cpp" rcbsApplicability="disable" resourcePath="source/conv1_top.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.547504462">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011.547504462" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.582455011">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.425088153" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.995020935" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="../finn-hlslib-lif"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/convSNN"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx2/Vivado/2020.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/coder/Desktop/s2n2/finn-hlslib-lif"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1317969962" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1401299206" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -643,7 +863,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="solution1|source/conv1_tb.cpp|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="solution1|solution2|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

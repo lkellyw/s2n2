@@ -52,11 +52,6 @@
 			<location>/home/coder/Desktop/s2n2/convSNN/configSNN.h</location>
 		</link>
 		<link>
-			<name>source/conv1_tb.cpp</name>
-			<type>1</type>
-			<location>/home/coder/Desktop/s2n2/convSNN/conv1_tb.cpp</location>
-		</link>
-		<link>
 			<name>source/conv1_top.cpp</name>
 			<type>1</type>
 			<location>/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp</location>
@@ -65,6 +60,26 @@
 			<name>source/conv1_weights.hpp</name>
 			<type>1</type>
 			<location>/home/coder/Desktop/s2n2/convSNN/conv1_weights.hpp</location>
+		</link>
+		<link>
+			<name>source/fc1_top.cpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp</location>
+		</link>
+		<link>
+			<name>source/fc1_weights.hpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp</location>
+		</link>
+		<link>
+			<name>source/fc2_top.cpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp</location>
+		</link>
+		<link>
+			<name>source/fc2_weights.hpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc2_weights.hpp</location>
 		</link>
 		<link>
 			<name>source/memdata.h</name>
@@ -80,6 +95,11 @@
 			<name>testbench/conv1_tb.cpp</name>
 			<type>1</type>
 			<location>/home/coder/Desktop/s2n2/convSNN/conv1_tb.cpp</location>
+		</link>
+		<link>
+			<name>testbench/fc1_tb.cpp</name>
+			<type>1</type>
+			<location>/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

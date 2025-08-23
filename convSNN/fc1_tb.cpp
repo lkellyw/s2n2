@@ -8,15 +8,7 @@
 #include "interpret.hpp"
 #include "fclayer.h"
 #include "configSNN.h"
-#include "memdata.h"   // <-- your exported weights live here
-
-// Global FC1 weights object (declared here to be visible in init)
-FixedPointWeightsSp<
-    SIMD_FC1,
-    ap_int<32>,
-    PE_FC1,
-    (FC1_IN_CH * FC1_OUT_CH) / (SIMD_FC1 * PE_FC1)
-> weights_fc1;
+#include "memdata.h"   // <-- Python-exported weights
 
 // Initialize weights from memdata.h into weights_fc1
 void init_fc1_weights() {
@@ -27,12 +19,13 @@ void init_fc1_weights() {
             unsigned int pe   = out % PE_FC1;
             unsigned int tile = (out / PE_FC1) * (FC1_IN_CH / SIMD_FC1) + (in / SIMD_FC1);
             unsigned int lane = in % SIMD_FC1;
-            weights_fc1.m_weights[pe][tile](lane*32+31, lane*32) = PARAM::fc1_weights[out][in];
+            // place 32-bit weight into correct lane of the tile
+            weights_fc1.m_weights[pe][tile].range((lane+1)*32-1, lane*32) = PARAM::fc1_weights[out][in];
         }
     }
 }
 
-// Prototype of fc1_top
+// Prototype of fc1_top (defined in fc1_top.cpp)
 void fc1_top(hls::stream<ap_uint<FC1_IN_CH * INPUT_PRECISION>> &in,
              hls::stream<ap_uint<FC1_OUT_CH * ACTIVATION_PRECISION>> &out,
              unsigned int numReps);
@@ -41,11 +34,12 @@ int main() {
     hls::stream<ap_uint<FC1_IN_CH * INPUT_PRECISION>> input;
     hls::stream<ap_uint<FC1_OUT_CH * ACTIVATION_PRECISION>> output;
 
+    // Load Python-trained FC1 weights
     init_fc1_weights();
 
     const int numReps = REPS;
 
-    // Generate dummy input vector (all ones) and push for numReps times
+    // Generate dummy input vector (all ones) for numReps iterations
     for (int r = 0; r < numReps; ++r) {
         ap_uint<FC1_IN_CH * INPUT_PRECISION> val = 0;
         for (int i = 0; i < FC1_IN_CH * INPUT_PRECISION; i++) {
@@ -54,6 +48,7 @@ int main() {
         input.write(val);
     }
 
+    // Run FC1 top
     fc1_top(input, output, numReps);
 
     std::cout << "\nRun complete. Output stream size: " << output.size() << "\n";

@@ -1,22 +1,38 @@
-############################################################
-## This file is generated automatically by Vivado HLS.
-## Please DO NOT edit it.
-## Copyright (C) 1986-2020 Xilinx, Inc. All Rights Reserved.
-############################################################
+# Vivado HLS Script (Final)
 open_project convSNN_hls
-set_top convSNN_top
-add_files configSNN.h -cflags "-I../finn-hlslib-lif"
-add_files conv1_tb.cpp -cflags "-I../finn-hlslib-lif"
-add_files conv1_top.cpp -cflags "-I../finn-hlslib-lif"
-add_files conv1_weights.hpp -cflags "-I../finn-hlslib-lif"
-add_files memdata.h
-add_files ../finn-hlslib-lif/weights.hpp
-add_files -tb conv1_tb.cpp -cflags "-I../finn-hlslib-lif"
+set_top conv1_lif_top
+# Set paths
+set src_dir "/home/coder/Desktop/s2n2/convSNN"
+set finn_root "$::env(FINN_HLS_ROOT)"
+# Add source files
+add_files $src_dir/configSNN.h -cflags "-std=c++0x -I$finn_root"
+add_files $src_dir/conv1_top.cpp -cflags "-std=c++0x -I$finn_root"
+add_files $src_dir/conv1_weights.hpp -cflags "-std=c++0x -I$finn_root"
+add_files $src_dir/memdata.h -cflags "-std=c++0x -I$finn_root"
+add_files $finn_root/weights.hpp
+add_files $finn_root/mvau.hpp
+add_files $finn_root/bnn-library.h
+# Add testbench (correctly!)
+add_files -tb $src_dir/conv1_tb.cpp -cflags "-std=c++0x -I$finn_root"
+# Synthesis settings
 open_solution "solution1"
 set_part {xczu28dr-ffvg1517-2-e}
 create_clock -period 10 -name default
-#source "./convSNN_hls/solution1/directives.tcl"
+# Run steps
 csim_design -clean -O
 csynth_design
 cosim_design
-export_design -format ip_catalog
+# Export IP
+export_design -format ip_catalog -version 2.0.1
+
+
+
+
+
+
+
+
+
+
+
+

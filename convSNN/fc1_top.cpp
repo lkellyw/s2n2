@@ -11,7 +11,7 @@
 // Global FC1 weights object
 FixedPointWeightsSp<
     SIMD_FC1,
-    ap_int<32>,   // <-- 32-bit fixed point
+    ap_int<32>,   // 32-bit fixed point, matches your memdata.h
     PE_FC1,
     (FC1_IN_CH * FC1_OUT_CH) / (SIMD_FC1 * PE_FC1)
 > weights_fc1;
@@ -33,12 +33,12 @@ void fc1_top(hls::stream<ap_uint<FC1_IN_CH * INPUT_PRECISION>> &in,
         ap_uint<FC1_IN_CH * INPUT_PRECISION>,
         ap_uint<FC1_OUT_CH * ACTIVATION_PRECISION>,
         decltype(weights_fc1),
-        ThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>,
+        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>,  // same as conv1
         ap_resource_dsp
     >(
         in, out,
         weights_fc1,
-        ThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(0.25),
+        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(0), // threshold = 0
         DECAY,
         numReps,
         ap_resource_dsp()

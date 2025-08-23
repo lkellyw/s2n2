@@ -2,13 +2,17 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="configSNN.h" path="/home/coder/Desktop/s2n2/convSNN/configSNN.h"/>
-    <originFiles name="conv1_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/conv1_tb.cpp"/>
     <originFiles name="conv1_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp"/>
     <originFiles name="conv1_weights.hpp" path="/home/coder/Desktop/s2n2/convSNN/conv1_weights.hpp"/>
+    <originFiles name="fc1_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp"/>
+    <originFiles name="fc1_weights.hpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp"/>
+    <originFiles name="fc2_top.cpp" path="/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp"/>
+    <originFiles name="fc2_weights.hpp" path="/home/coder/Desktop/s2n2/convSNN/fc2_weights.hpp"/>
     <originFiles name="memdata.h" path="/home/coder/Desktop/s2n2/convSNN/memdata.h"/>
     <originFiles name="weights.hpp" path="/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp"/>
   </source>
   <testbench>
     <originFiles name="conv1_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/conv1_tb.cpp"/>
+    <originFiles name="fc1_tb.cpp" path="/home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
