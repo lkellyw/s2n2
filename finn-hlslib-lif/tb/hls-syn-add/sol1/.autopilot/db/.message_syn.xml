@@ -2,21 +2,21 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;add_top.cpp&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:19 ; elapsed = 00:01:29 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86823 ; free virtual = 252340"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:19 ; elapsed = 00:01:29 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86823 ; free virtual = 252340"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:19 ; elapsed = 00:00:42 . Memory (MB): peak = 1696.543 ; gain = 1294.723 ; free physical = 460309 ; free virtual = 762968"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:19 ; elapsed = 00:00:42 . Memory (MB): peak = 1696.543 ; gain = 1294.723 ; free physical = 460338 ; free virtual = 762998"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:01:32 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86811 ; free virtual = 252334"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:45 . Memory (MB): peak = 1696.543 ; gain = 1294.723 ; free physical = 460221 ; free virtual = 763035"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;AddStreams&lt;32u, ap_uint&lt;4&gt;, ap_uint&lt;4&gt;, ap_ufixed&lt;4, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4u, 2&gt;&apos; into &apos;AddStreams_Batch&lt;32u, ap_uint&lt;4&gt;, ap_uint&lt;4&gt;, ap_ufixed&lt;4, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4u, 2&gt;&apos; (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:613) automatically."/>
 	<Message severity="WARNING" prefix="[SYNCHK 200-23]" key="SYNCHK_VAR_INDEX_RANGE_359" tag="" content="/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:576: variable-indexed range selection may cause suboptimal QoR."/>
 	<Message severity="INFO" prefix="[SYNCHK 200-10]" key="SYNCHK_SYNCHK_SUMMARY_377" tag="" content="0 error(s), 1 warning(s)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:01:32 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86804 ; free virtual = 252328"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:00:45 . Memory (MB): peak = 1696.543 ; gain = 1294.723 ; free physical = 460213 ; free virtual = 763028"/>
 	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1&apos; (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:569) in function &apos;AddStreams&lt;32u, ap_uint&lt;4&gt;, ap_uint&lt;4&gt;, ap_ufixed&lt;4, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4u, 2&gt;&apos; for pipelining."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:574) in function &apos;AddStreams&lt;32u, ap_uint&lt;4&gt;, ap_uint&lt;4&gt;, ap_ufixed&lt;4, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4u, 2&gt;&apos; completely with a factor of 32."/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;AddStreams_Batch&lt;32u, ap_uint&lt;4&gt;, ap_uint&lt;4&gt;, ap_ufixed&lt;4, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4u, 2&gt;&apos; into &apos;Testbench_add&apos; (add_top.cpp:14) automatically."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:01:33 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86769 ; free virtual = 252294"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:46 . Memory (MB): peak = 1696.543 ; gain = 1294.723 ; free physical = 460180 ; free virtual = 762996"/>
 	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;AddStreams&lt;32u, ap_uint&lt;4&gt;, ap_uint&lt;4&gt;, ap_ufixed&lt;4, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4u, 2&gt;&apos; to &apos;AddStreams&apos; (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:569:42)"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:22 ; elapsed = 00:01:34 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86762 ; free virtual = 252287"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1696.543 ; gain = 1294.723 ; free physical = 460198 ; free virtual = 763013"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;Testbench_add&apos; ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
@@ -26,30 +26,30 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 94.6 seconds; current allocated memory: 209.652 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 47.86 seconds; current allocated memory: 210.003 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.44 seconds; current allocated memory: 211.389 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.36 seconds; current allocated memory: 211.739 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Testbench_add&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.53 seconds; current allocated memory: 211.629 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.5 seconds; current allocated memory: 211.995 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.23 seconds; current allocated memory: 211.728 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.39 seconds; current allocated memory: 212.095 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;AddStreams&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;AddStreams&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.49 seconds; current allocated memory: 214.650 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.93 seconds; current allocated memory: 215.002 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Testbench_add&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -59,10 +59,10 @@
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;Testbench_add/numReps&apos; to &apos;ap_none&apos;."/>
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;Testbench_add&apos; to &apos;ap_ctrl_hs&apos;."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Testbench_add&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.24 seconds; current allocated memory: 221.337 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.86 seconds; current allocated memory: 221.642 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-790]" key="HLS 200-790" tag="LOOP,SDX_LOOP" content="**** Loop Constraint Status: All loop constraints were satisfied."/>
 	<Message severity="INFO" prefix="[HLS 200-789]" key="HLS 200-789" tag="THROUGHPUT,SDX_KERNEL" content="**** Estimated Fmax: 255.57 MHz"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:24 ; elapsed = 00:01:41 . Memory (MB): peak = 1629.574 ; gain = 1227.754 ; free physical = 86684 ; free virtual = 252252"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:23 ; elapsed = 00:00:55 . Memory (MB): peak = 1696.543 ; gain = 1294.723 ; free physical = 452451 ; free virtual = 755289"/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for Testbench_add."/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for Testbench_add."/>
 </Messages>

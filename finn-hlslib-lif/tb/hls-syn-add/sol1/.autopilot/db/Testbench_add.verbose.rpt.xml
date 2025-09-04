@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Testbench_add'" level="0">
-<item name = "Date">Thu Jul 10 17:40:58 2025
+<item name = "Date">Tue Aug 12 01:35:19 2025
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">hls-syn-add</item>

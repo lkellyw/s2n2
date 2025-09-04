@@ -36865,7 +36865,23 @@ namespace std
 
 }
 # 60 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp" 2
-# 89 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp"
+
+template<typename T>
+struct DebugThresholdActivation {
+    T threshold;
+
+    DebugThresholdActivation(T thresh) : threshold(thresh) {}
+
+    T operator()(T acc) const {
+        bool spike = acc >= threshold;
+        std::cout << "[THRESHOLD DEBUG] acc=" << acc
+                  << " > threshold=" << threshold
+                  << " => " << (spike ? "YES: SPIKE" : "NO: no spike")
+                  << std::endl;
+        return spike ? T(1) : T(0);
+    }
+};
+# 105 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp"
 template<
   unsigned MatrixW, unsigned MatrixH, unsigned SIMD, unsigned SIMDSP, unsigned PE, unsigned MMV,
   typename TSrcI = Identity, typename TDstI = Identity, typename TWeightI = Identity,
@@ -36940,12 +36956,21 @@ _ssdm_Unroll(0,0,0, "");
 
 
     auto const &w = weights.weights(tile, mask);
-    for(unsigned pe = 0; pe < PE; pe++) {
+
+
+    std::cout << "[DEBUG] Tile = " << tile
+              << ", Mask = " << mask.to_string(2) << std::endl;
+
+    for (unsigned pe = 0; pe < PE; pe++) {
 _ssdm_Unroll(0,0,0, "");
- accu[pe] += w[pe];
+ std::cout << "  [PE " << pe << "] Weight = " << w[pe]
+                  << "  Accumulator before = " << accu[pe] << std::endl;
 
+        accu[pe] += w[pe];
 
+        std::cout << "  [PE " << pe << "] Accumulator after  = " << accu[pe] << std::endl;
     }
+
 
 
     ++tile;
@@ -36954,16 +36979,11 @@ _ssdm_Unroll(0,0,0, "");
       auto outElem = TDstI().template operator()<TO>();
       for (unsigned pe = 0; pe < PE; pe++) {
 _ssdm_Unroll(0,0,0, "");
-
-
- if(accu[pe] > 0){
-        outElem(pe,1,1) = 1;
-        neust[cntr][nf*PE+pe] = 0;
-       }else{
-        outElem(pe,1,1) = 0;
-        neust[cntr][nf*PE+pe] = accu[pe];
-       }
+ auto spike = activation(accu[pe]);
+       outElem[pe] = (spike != 0) ? 1 : 0;
+          neust[cntr][nf * PE + pe] = (spike == 1) ? ap_fixed<WIDTH, I>(0) : accu[pe];
       }
+
       out.write(outElem);
       cntr++;
       cntr = cntr%(OFMDim * OFMDim);
@@ -36976,7 +36996,7 @@ _ssdm_Unroll(0,0,0, "");
     }
   }
 }
-# 227 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp"
+# 247 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp"
 template<
   unsigned MatrixW, unsigned MatrixH, unsigned SIMD, unsigned PE,
   typename TSrcI = Identity, typename TDstI = Identity, typename TWeightI = Identity, typename TW,

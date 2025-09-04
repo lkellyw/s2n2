@@ -238,4 +238,5 @@ void Thresholding_Batch(hls::stream<TI> &in,
     }
   }
 }
+
 #endif

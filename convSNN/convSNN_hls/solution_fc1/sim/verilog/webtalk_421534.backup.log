@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Sep  4 00:53:06 2025
+# Process ID: 421534
+# Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution_fc1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution_fc1/sim/verilog/xsim.dir/fc1_top/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution_fc1/sim/verilog/webtalk.log
+# Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution_fc1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution_fc1/sim/verilog/xsim.dir/fc1_top/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:07 . Memory (MB): peak = 389.484 ; gain = 0.000 ; free physical = 126683 ; free virtual = 420978
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep  4 00:53:13 2025...
