@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Messages>
 	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1427" tag="" content="Running &apos;/tools/Xilinx2/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;coder&apos; on host &apos;coder-kwlaial-kellylaijetnet&apos; (Linux_x86_64 version 5.15.134+release+2.10.0r8-amd64) on Thu Sep 04 02:02:20 UTC 2025"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1429" tag="" content="On os Ubuntu 20.04.6 LTS"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1430" tag="" content="In directory &apos;/home/coder/Desktop/s2n2/convSNN/convSNN_hls&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1303" tag="" content="Opening project &apos;/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_hls&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/configSNN.h&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/fc2_weights.hpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/memdata.h&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding test bench file &apos;/home/coder/Desktop/s2n2/convSNN/fc2_tb.cpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1427" tag="" content="Running &apos;/tools/Xilinx2/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;coder&apos; on host &apos;coder-kwlaial-kellylaijetnet&apos; (Linux_x86_64 version 5.15.134+release+2.10.0r8-amd64) on Thu Sep 04 02:15:52 UTC 2025"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1429" tag="" content="On os Ubuntu 20.04.6 LTS"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1430" tag="" content="In directory &apos;/home/coder/Desktop/s2n2/convSNN/convSNN_hls&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1352" tag="" content="Creating and opening project &apos;/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/configSNN.h&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/fc2_weights.hpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/convSNN/memdata.h&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding test bench file &apos;/home/coder/Desktop/s2n2/convSNN/fc2_tb.cpp&apos; to the project"/>
 </Messages>
