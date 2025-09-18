@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Sep 18 04:11:26 2025
+# Process ID: 31514
+# Current directory: /home/coder/Desktop/s2n2/VivadoSNNIP/VivadoSNNIP.runs/synth_1
+# Command line: vivado -log conv1_lif_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source conv1_lif_top.tcl
+# Log file: /home/coder/Desktop/s2n2/VivadoSNNIP/VivadoSNNIP.runs/synth_1/conv1_lif_top.vds
+# Journal file: /home/coder/Desktop/s2n2/VivadoSNNIP/VivadoSNNIP.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source conv1_lif_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/solution_fc2/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_hls/solution_conv1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/solution_fc1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2136.715 ; gain = 0.000 ; free physical = 222694 ; free virtual = 366859
+Command: synth_design -top conv1_lif_top -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xczu28dr'. Explanation: The license feature Synthesis could not be found.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+5 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xczu28dr'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Please note that Vivado 2017.3 and later requires upgrading your license server tools to the Flex 11.14.1 tools. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 18 04:11:44 2025...
