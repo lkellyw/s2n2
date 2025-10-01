@@ -205,3 +205,7 @@ INFO: [SYN 201-210] Renamed object name 'start_for_Block_ZN8ap_fixedIL_U0' to 's
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top'.
 INFO: [HLS 200-111]  Elapsed time: 1.69 seconds; current allocated memory: 270.155 MB.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

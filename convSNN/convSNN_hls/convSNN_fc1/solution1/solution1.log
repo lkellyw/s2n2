@@ -1,0 +1,520 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:40:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:41:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:44:9
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 39207 ; free virtual = 343967
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 39202 ; free virtual = 343962
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::weights' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178).
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189).
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::operator()<ap_uint<64> >' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:199).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<64> >::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<64> >::operator ap_uint<64> const&' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 39212 ; free virtual = 343884
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
+WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:204: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 39204 ; free virtual = 343877
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) accessed through non-constant indices on dimension 2 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'accu.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136) in dimension 1 completely.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.0' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.4' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.5' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.6' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.7' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.8' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.9' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.10' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.11' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.12' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.13' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.14' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.15' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.16' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.17' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.18' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.19' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.20' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.21' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.22' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.23' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.24' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.25' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.26' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.27' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.28' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.29' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.30' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.31' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.32' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.33' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.34' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.35' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.36' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.37' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.38' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.39' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.40' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.41' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.42' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.43' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.44' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.45' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.46' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.47' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.48' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.49' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.50' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.51' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.52' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.53' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.54' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.55' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.56' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.57' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.58' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.59' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.60' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.61' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.62' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.63' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'fc1_top', detected/extracted 1 process function(s): 
+	 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165:5) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197:5) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 67 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:216:5) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 65 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 39063 ; free virtual = 343738
+WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' to 'Matrix_Vector_Activa' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 39123 ; free virtual = 343799
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fc1_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 48.22 seconds; current allocated memory: 223.114 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 224.619 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 224.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 224.783 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'fc1_top_mux_83_16_1_1' to 'fc1_top_mux_83_16bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fc1_top_mux_83_16bkb': 63 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 228.432 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/in_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/out_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/numReps' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fc1_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fc1_top'.
+INFO: [HLS 200-111]  Elapsed time: 1.23 seconds; current allocated memory: 234.032 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 367.44 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 39010 ; free virtual = 343787
+INFO: [VHDL 208-304] Generating VHDL RTL for fc1_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for fc1_top.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu250-figd2104-2L-e'
+WARNING: [HLS 200-40] Resetting target device to 'xcvu9p-flga2577-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:40:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:41:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:44:9
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 38599 ; free virtual = 343333
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 38599 ; free virtual = 343333
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::weights' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178).
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189).
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::operator()<ap_uint<64> >' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:199).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<64> >::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<64> >::operator ap_uint<64> const&' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 38700 ; free virtual = 343436
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
+WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:204: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 38676 ; free virtual = 343414
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) accessed through non-constant indices on dimension 2 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'accu.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136) in dimension 1 completely.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.0' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.4' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.5' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.6' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.7' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.8' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.9' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.10' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.11' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.12' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.13' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.14' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.15' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.16' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.17' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.18' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.19' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.20' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.21' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.22' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.23' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.24' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.25' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.26' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.27' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.28' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.29' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.30' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.31' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.32' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.33' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.34' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.35' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.36' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.37' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.38' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.39' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.40' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.41' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.42' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.43' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.44' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.45' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.46' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.47' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.48' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.49' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.50' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.51' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.52' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.53' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.54' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.55' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.56' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.57' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.58' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.59' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.60' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.61' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.62' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.63' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'fc1_top', detected/extracted 1 process function(s): 
+	 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165:5) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197:5) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 67 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:216:5) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 65 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 38701 ; free virtual = 343456
+WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' to 'Matrix_Vector_Activa' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 38625 ; free virtual = 343384
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fc1_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 50.46 seconds; current allocated memory: 223.659 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 225.149 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 225.275 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 225.374 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'fc1_top_mux_83_16_1_1' to 'fc1_top_mux_83_16bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fc1_top_mux_83_16bkb': 63 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 229.011 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/in_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/out_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/numReps' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fc1_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fc1_top'.
+INFO: [HLS 200-111]  Elapsed time: 1.44 seconds; current allocated memory: 234.641 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 367.44 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 38590 ; free virtual = 343348
+INFO: [VHDL 208-304] Generating VHDL RTL for fc1_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for fc1_top.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2577-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:40:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:41:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:44:9
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28267 ; free virtual = 344574
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28263 ; free virtual = 344570
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::weights' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178).
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189).
+INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::operator()<ap_uint<64> >' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:199).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<64> >::operator[]' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<64> >::operator ap_uint<64> const&' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28340 ; free virtual = 344729
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
+WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:204: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:49 ; elapsed = 00:01:00 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28339 ; free virtual = 344730
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) accessed through non-constant indices on dimension 2 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'accu.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136) in dimension 1 completely.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.0' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.4' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.5' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.6' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.7' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.8' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.9' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.10' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.11' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.12' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.13' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.14' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.15' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.16' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.17' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.18' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.19' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.20' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.21' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.22' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.23' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.24' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.25' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.26' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.27' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.28' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.29' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.30' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.31' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.32' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.33' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.34' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.35' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.36' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.37' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.38' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.39' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.40' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.41' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.42' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.43' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.44' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.45' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.46' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.47' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.48' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.49' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.50' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.51' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.52' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.53' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.54' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.55' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.56' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.57' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.58' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.59' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.60' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.61' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.62' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'neust.V.63' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) automatically.
+INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'fc1_top', detected/extracted 1 process function(s): 
+	 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165:5) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197:5) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 67 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:216:5) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 65 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 27954 ; free virtual = 344355
+WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<320>, ap_uint<64>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' to 'Matrix_Vector_Activa' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:51 ; elapsed = 00:01:04 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28001 ; free virtual = 344403
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fc1_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 64.29 seconds; current allocated memory: 223.648 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 225.155 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 225.279 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 225.377 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'fc1_top_mux_83_16_1_1' to 'fc1_top_mux_83_16bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fc1_top_mux_83_16bkb': 63 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 229.026 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/in_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/out_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/numReps' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fc1_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fc1_top'.
+INFO: [HLS 200-111]  Elapsed time: 1.49 seconds; current allocated memory: 234.644 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 367.44 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:55 ; elapsed = 00:01:10 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 27564 ; free virtual = 343970
+INFO: [VHDL 208-304] Generating VHDL RTL for fc1_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for fc1_top.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

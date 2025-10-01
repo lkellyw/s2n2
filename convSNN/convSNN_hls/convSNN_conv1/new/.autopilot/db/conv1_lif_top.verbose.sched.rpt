@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vivado HLS Report for 'conv1_lif_top'
+================================================================
+* Date:           Thu Sep 25 03:20:29 2025
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        convSNN_conv1
+* Solution:       new
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 4.628 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 5, States = { 1 2 3 4 5 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.45>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%numReps_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %numReps)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 6 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%numReps_c8 = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 7 'alloca' 'numReps_c8' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%numReps_c = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 8 'alloca' 'numReps_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%convInp_V_V = alloca i3, align 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 9 'alloca' 'convInp_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (1.45ns)   --->   "call fastcc void @conv1_lif_top.entry3(i32 %numReps_read, i32* %numReps_c, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 10 'call' <Predicate = true> <Delay = 1.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 11 [2/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 11 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 12 [1/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%mul_ln124_loc_channe = call fastcc i32 @Block__ZN8ap_fixedIL(i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 13 'call' 'mul_ln124_loc_channe' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_4 : Operation 14 [2/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i3* %convInp_V_V, i32* %out_V_V, i32 %mul_ln124_loc_channe)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 14 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str) nounwind" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 15 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 16 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 16 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 17 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i3* %in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i3* %in_V_V), !map !174"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_V_V), !map !178"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %numReps), !map !182"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 21 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @convInp_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i3* %convInp_V_V, i3* %convInp_V_V)"   --->   Operation 21 'specchannel' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecInterface(i3* %convInp_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 22 'specinterface' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @conv1_lif_top_str) nounwind"   --->   Operation 23 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @numReps_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %numReps_c, i32* %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 24 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 25 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %numReps_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 25 'specinterface' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @numReps_c8_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %numReps_c8, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 26 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %numReps_c8, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 27 'specinterface' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 28 [1/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i3* %convInp_V_V, i32* %out_V_V, i32 %mul_ln124_loc_channe)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 28 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:54]   --->   Operation 29 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.46ns
+The critical path consists of the following:
+	wire read on port 'numReps' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) [4]  (0 ns)
+	'call' operation ('call_ln24', /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24) to 'conv1_lif_top.entry3' [21]  (1.46 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

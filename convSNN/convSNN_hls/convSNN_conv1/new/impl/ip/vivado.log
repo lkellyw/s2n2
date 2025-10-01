@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Sep 25 03:22:18 2025
+# Process ID: 78620
+# Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/new/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/new/impl/ip/vivado.log
+# Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/new/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 25 03:22:33 2025...

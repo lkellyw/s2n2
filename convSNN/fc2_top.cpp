@@ -38,7 +38,7 @@ void fc2_top(hls::stream<ap_uint<FC2_IN_CH * INPUT_PRECISION>> &in,
     >(
         in, out,
         weights_fc2,
-        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(0), // threshold 0
+        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(1), // threshold = 1 
         DECAY,
         numReps,
         ap_resource_dsp()

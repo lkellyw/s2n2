@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'conv1_lif_top'" level="0">
+<item name = "Date">Thu Sep 25 03:15:42 2025
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">convSNN_conv1</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.628 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Matrix_Vector_Activa_fu_68">Matrix_Vector_Activa, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_ConvolutionInputGene_fu_76">ConvolutionInputGene, ?, ?, ?, ?, ?, ?, none</column>
+<column name="mul_ln124_loc_channe_Block_ZN8ap_fixedIL_fu_84">Block_ZN8ap_fixedIL, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="call_ln24_conv1_lif_top_entry3_fu_90">conv1_lif_top_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

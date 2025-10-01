@@ -16,7 +16,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../conv1_tb.cpp ../../../../../conv1_top.cpp
+HLS_SOURCES = ../../../../../conv1_tb.cpp ../../../../../fc2_tb.cpp ../../../../../conv1_top.cpp ../../../../../fc2_top.cpp
 
 override TARGET := csim.exe
 
@@ -42,6 +42,7 @@ IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_TOOL}/auto_cc/include"
+IFLAG += -I "/usr/include/x86_64-linux-gnu"
 IFLAG += -D__SIM_FPO__
 
 IFLAG += -D__SIM_FFT__
@@ -71,8 +72,20 @@ $(ObjDir)/conv1_tb.o: ../../../../../conv1_tb.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/conv1_tb.d
 
+$(ObjDir)/fc2_tb.o: ../../../../../fc2_tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../fc2_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
+
+-include $(ObjDir)/fc2_tb.d
+
 $(ObjDir)/conv1_top.o: ../../../../../conv1_top.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../conv1_top.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
 -include $(ObjDir)/conv1_top.d
+
+$(ObjDir)/fc2_top.o: ../../../../../fc2_top.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../fc2_top.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
+
+-include $(ObjDir)/fc2_top.d

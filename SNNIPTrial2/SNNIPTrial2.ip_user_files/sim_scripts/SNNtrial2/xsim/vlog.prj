@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../bd/SNNtrial2/sim/SNNtrial2.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

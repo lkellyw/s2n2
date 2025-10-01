@@ -1,0 +1,273 @@
+
+*** Running vivado
+    with args -log design_1_fc1_top_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fc1_top_0_0.tcl
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_fc1_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2135.746 ; gain = 0.000 ; free physical = 77538 ; free virtual = 358941
+Command: synth_design -top design_1_fc1_top_0_0 -part xcvu9p-flga2577-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-1540] The version limit for your license is '2020.06' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcvu9p-flga2577-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 213007
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2788.895 ; gain = 187.719 ; free physical = 75439 ; free virtual = 356846
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_fc1_top_0_0' [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_fc1_top_0_0/synth/design_1_fc1_top_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'fc1_top' [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/fc1_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Matrix_Vector_Activa' [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state4 bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'fc1_top_mux_83_16bkb' [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/fc1_top_mux_83_16bkb.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 16 - type: integer 
+	Parameter din5_WIDTH bound to: 16 - type: integer 
+	Parameter din6_WIDTH bound to: 16 - type: integer 
+	Parameter din7_WIDTH bound to: 16 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fc1_top_mux_83_16bkb' (1#1) [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/fc1_top_mux_83_16bkb.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2168]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2172]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2176]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2180]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2184]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2188]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2192]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2260]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2262]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2264]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2266]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2268]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2270]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2272]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:2274]
+INFO: [Synth 8-6155] done synthesizing module 'Matrix_Vector_Activa' (2#1) [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/Matrix_Vector_Activa.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'fc1_top' (3#1) [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ipshared/2e25/hdl/verilog/fc1_top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fc1_top_0_0' (4#1) [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_fc1_top_0_0/synth/design_1_fc1_top_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2836.801 ; gain = 235.625 ; free physical = 75456 ; free virtual = 356864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.645 ; gain = 253.469 ; free physical = 75441 ; free virtual = 356848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.645 ; gain = 253.469 ; free physical = 75441 ; free virtual = 356848
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2854.645 ; gain = 0.000 ; free physical = 75428 ; free virtual = 356836
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_fc1_top_0_0/constraints/fc1_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_fc1_top_0_0/constraints/fc1_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.runs/design_1_fc1_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.runs/design_1_fc1_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3043.238 ; gain = 0.000 ; free physical = 75215 ; free virtual = 356622
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3043.238 ; gain = 0.000 ; free physical = 75221 ; free virtual = 356629
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 3043.238 ; gain = 442.062 ; free physical = 75223 ; free virtual = 356630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flga2577-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 3043.238 ; gain = 442.062 ; free physical = 75223 ; free virtual = 356631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.runs/design_1_fc1_top_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 3043.238 ; gain = 442.062 ; free physical = 75223 ; free virtual = 356631
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 3043.238 ; gain = 442.062 ; free physical = 75212 ; free virtual = 356621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 14    
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               16 Bit    Registers := 63    
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 462   
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 3043.238 ; gain = 442.062 ; free physical = 75225 ; free virtual = 356638
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:54 . Memory (MB): peak = 3295.551 ; gain = 694.375 ; free physical = 76259 ; free virtual = 357668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:54 . Memory (MB): peak = 3317.582 ; gain = 716.406 ; free physical = 76232 ; free virtual = 357641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:55 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76230 ; free virtual = 357639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76211 ; free virtual = 357620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76211 ; free virtual = 357620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76211 ; free virtual = 357620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76211 ; free virtual = 357620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76211 ; free virtual = 357620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76211 ; free virtual = 357620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    26|
+|2     |LUT1   |     3|
+|3     |LUT2   |    30|
+|4     |LUT3   |     1|
+|5     |LUT4   |    23|
+|6     |LUT5   |     5|
+|7     |LUT6   |    25|
+|8     |FDRE   |   129|
+|9     |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.598 ; gain = 732.422 ; free physical = 76211 ; free virtual = 357620
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:47 . Memory (MB): peak = 3333.598 ; gain = 543.828 ; free physical = 76242 ; free virtual = 357651
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:58 . Memory (MB): peak = 3333.605 ; gain = 732.422 ; free physical = 76241 ; free virtual = 357650
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3341.598 ; gain = 0.000 ; free physical = 76305 ; free virtual = 357714
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3423.301 ; gain = 0.000 ; free physical = 76199 ; free virtual = 357612
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:02:46 . Memory (MB): peak = 3423.301 ; gain = 1287.555 ; free physical = 76333 ; free virtual = 357746
+INFO: [Common 17-1381] The checkpoint '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.runs/design_1_fc1_top_0_0_synth_1/design_1_fc1_top_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fc1_top_0_0, cache-ID = f5a764971492edf2
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.runs/design_1_fc1_top_0_0_synth_1/design_1_fc1_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_fc1_top_0_0_utilization_synth.rpt -pb design_1_fc1_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 25 15:45:14 2025...

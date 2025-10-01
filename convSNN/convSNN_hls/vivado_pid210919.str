@@ -1,0 +1,410 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 210919
+License: Customer
+
+Current time: 	Thu Sep 25 15:34:11 UTC 2025
+Time zone: 	Coordinated Universal Time (Etc/UTC)
+
+OS: Ubuntu
+OS Version: 5.15.0-119-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :90.0
+Screen size: 1536x808
+Screen resolution (DPI): 116
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=14
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx2/Vivado/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx2/Vivado/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	coder
+User home directory: /home/coder
+User working directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx2/Vivado
+HDI_APPROOT: /tools/Xilinx2/Vivado/2020.1
+RDI_DATADIR: /tools/Xilinx2/Vivado/2020.1/data
+RDI_BINDIR: /tools/Xilinx2/Vivado/2020.1/bin
+
+Vivado preferences file location: /home/coder/.Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: /home/coder/.Xilinx/Vivado/2020.1/
+Vivado layouts directory: /home/coder/.Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	/tools/Xilinx2/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.log
+Vivado journal file location: 	/home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-210919-coder-kwlaial-kellylaijetnet
+
+Xilinx Environment Variables
+----------------------------
+VIVADO_DESKTOP_SERVICE_PORT: tcp://10.98.215.223:6081
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP: tcp://10.98.215.223:6081
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP_ADDR: 10.98.215.223
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP_PORT: 6081
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP_PROTO: tcp
+VIVADO_DESKTOP_SERVICE_SERVICE_HOST: 10.98.215.223
+VIVADO_DESKTOP_SERVICE_SERVICE_PORT: 6081
+VIVADO_DESKTOP_SERVICE_SERVICE_PORT_NOVNC: 6081
+XILINX: /tools/Xilinx2/Vivado/2020.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinxd.xilinx-dev
+XILINX_DSP: /tools/Xilinx2/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx2/Vivado/2020.1
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx2/Vivado/2020.1
+XILINX_VIVADO_HLS: /tools/Xilinx2/Vivado/2020.1
+
+
+GUI allocated memory:	226 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,472 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr", 0); // r (J, cs)
+// [GUI Memory]: 76 MB (+77562kb) [00:00:17]
+// [Engine Memory]: 1,464 MB (+1383414kb) [00:00:17]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,433 MB. GUI used memory: 53 MB. Current time: 9/25/25, 3:34:12 PM UTC
+// Tcl Message: open_project /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+23737kb) [00:00:32]
+// [GUI Memory]: 109 MB (+594kb) [00:00:34]
+// [GUI Memory]: 127 MB (+13155kb) [00:00:34]
+// WARNING: HEventQueue.dispatchEvent() is taking  4550 ms.
+// Tcl Message: open_project /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/solution1/impl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/solution1/impl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,521 MB. GUI used memory: 73 MB. Current time: 9/25/25, 3:34:29 PM UTC
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 7076.254 ; gain = 36.074 ; free physical = 82290 ; free virtual = 358118 
+// Project name: SNNTrial3; location: /home/coder/Desktop/s2n2/SNNTrial3; part: xcvu9p-flga2577-2-e
+// Elapsed time: 20 seconds
+dismissDialog("Open Project"); // bz (cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  2642 ms.
+// [Engine Memory]: 1,550 MB (+13242kb) [00:00:41]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,654 MB (+28509kb) [00:00:47]
+// WARNING: HEventQueue.dispatchEvent() is taking  1670 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// 'bJ' command handler elapsed time: 3 seconds
+dismissDialog("Open Block Design"); // bz (cs)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// 'k' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "Cancel"); // JButton (v, B)
+// Elapsed time: 20 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1050 ms.
+// Elapsed time: 22 seconds
+dismissDialog("Settings"); // d (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+// [GUI Memory]: 136 MB (+3310kb) [00:01:53]
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cs)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// [GUI Memory]: 147 MB (+4239kb) [00:02:20]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 156 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // Q (aI, cs)
+// [GUI Memory]: 156 MB (+1895kb) [00:05:01]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 207 seconds
+selectButton(PAResourceItoN.NotificationManager_RUN_FAILED, "design_1_conv1_lif_top_0_0_synth_1"); // k (Q, ResizableWindow)
+// Run Command: PAResourceCommand.PACommandNames_DESIGN_RUNS_WINDOW
+// Elapsed time: 115 seconds
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Submodule Runs Failed ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:33:11 UTC 2025 ; 00:10:34 ;  ;  ;  ;  ; ", 3); // az (J, cs)
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Name", 0); // az (J, cs)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 149 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false); // az (J, cs)
+// PAPropertyPanels.initPanels (design_1_conv1_lif_top_0_0_synth_1) elapsed time: 0.4s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false); // az (J, cs)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11); // az (J, cs)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false, false, false, false, false, true); // az (J, cs) - Double Click
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false); // az (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,669 MB. GUI used memory: 86 MB. Current time: 9/25/25, 3:46:57 PM UTC
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 52 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0 ;  ;  ;  ; ", 29, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0", 0, false); // O (J, cs)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0 ;  ;  ;  ; ", 29); // O (J, cs)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0 ;  ;  ;  ; ", 29, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0", 0, false, false, false, false, false, true); // O (J, cs) - Double Click
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0 ;  ;  ;  ; ", 29, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0", 0, false); // O (J, cs)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0 ;  ;  ;  ; ", 29, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0", 0, false, false, false, false, true, false); // O (J, cs) - Popup Trigger
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_report_utilization_0 ; report_utilization ;  ;  ; ", 28, "design_1_conv1_lif_top_0_0_synth_1_synth_report_utilization_0", 0, false); // O (J, cs)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_report_utilization_0 ; report_utilization ;  ;  ; ", 28, "design_1_conv1_lif_top_0_0_synth_1_synth_report_utilization_0", 0, false, false, false, false, true, false); // O (J, cs) - Popup Trigger
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0 ;  ;  ;  ; ", 29, "design_1_conv1_lif_top_0_0_synth_1_synth_synthesis_report_0", 0, false); // O (J, cs)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false, false, false, false, true, false); // az (J, cs) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_VIEW_RUN_REPORTS, "Display Reports"); // ai (ao, cs)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false, false, false, false, true, false); // az (J, cs) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_VIEW_RUN_LOG, "Display Log"); // ai (ao, cs)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false, false, false, false, true, false); // az (J, cs) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_VIEW_RUN_MESSAGES, "Display Messages"); // ai (ao, cs)
+// Elapsed time: 73 seconds
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[Out-of-Context Module Runs, design_1]", 10, false); // a (J, cs)
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[Out-of-Context Module Runs, design_1]", 10, false, false, false, false, false, true); // a (J, cs) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 55 seconds
+selectButton(PAResourceAtoD.CustomizeCoreDialog_IP_LOCATION, "IP Location"); // E (g, r)
+dismissDialog("Re-customize IP"); // r (cs)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 267, 147, 1181, 250, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_ANSWER_RECORD_SRC, "View Answer Records"); // ai (cs)
+// Run Command: PAResourceCommand.PACommandNames_SHOW_ANSWER_RECORD_SRC
+// bz (cs):  Answer Records : addNotify
+dismissDialog("Answer Records"); // bz (cs)
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[Out-of-Context Module Runs, design_1]", 9, false); // a (J, cs)
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[Out-of-Context Module Runs, design_1]", 11, false); // a (J, cs)
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[Out-of-Context Module Runs, design_1]", 10, false); // a (J, cs)
+// Elapsed time: 52 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 486, 90); // n (C, cs)
+// Elapsed time: 25 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1_conv1_lif_top_0_0_synth_1 ; design_1_conv1_lif_top_0_0 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Sep 25 15:41:45 UTC 2025 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu9p-flga2577-2-e ; coder-kwlaial-kellylaijetnet ; Vivado Synthesis Defaults", 11, "design_1_conv1_lif_top_0_0_synth_1", 0, false, false, false, false, true, false); // az (J, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Synthesis Run Properties..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_conv1_lif_top_0_0_synth_1 
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (design_1_conv1_lif_top_0_0_synth_1) elapsed time: 0.2s
+// Tcl Message: [Thu Sep 25 15:52:47 2025] Launched design_1_conv1_lif_top_0_0_synth_1... Run output will be captured here: /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.runs/design_1_conv1_lif_top_0_0_synth_1/runme.log [Thu Sep 25 15:52:47 2025] Launched synth_1... Run output will be captured here: /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 7 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 29 seconds
+selectButton(PAResourceItoN.NotificationManager_RUN_FAILED, "design_1_conv1_lif_top_0_0_synth_1"); // k (Q, ResizableWindow)
+// Run Command: PAResourceCommand.PACommandNames_DESIGN_RUNS_WINDOW
+// Elapsed time: 24 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 38, 39); // n (i, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,686 MB. GUI used memory: 89 MB. Current time: 9/25/25, 4:16:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 4:46:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 5:16:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 5:46:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 6:16:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 6:46:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 7:16:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 7:46:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 8:16:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 8:46:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 9:16:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 9:46:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 10:16:57 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 10:46:58 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 11:16:58 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/25/25, 11:46:58 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 12:16:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 12:46:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 1:16:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 1:46:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 2:16:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 2:46:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 3:16:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 3:46:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 4:16:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 4:46:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 5:16:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 80 MB. Current time: 9/26/25, 5:46:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 6:16:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 6:46:58 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 7:16:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 7:46:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 8:16:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 8:46:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 9:16:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 9:46:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 10:16:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 10:46:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 11:16:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 11:46:59 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 12:16:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 12:46:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 1:16:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 1:46:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 2:16:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 2:46:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 3:16:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 80 MB. Current time: 9/26/25, 3:46:59 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 4:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 4:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 5:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 5:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 6:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 6:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 7:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 7:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 8:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 8:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 9:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 9:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 10:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 10:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 11:17:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/26/25, 11:47:00 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 12:17:00 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 12:47:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 1:17:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 1:47:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 2:17:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 2:47:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 3:17:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 3:47:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 4:17:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 4:47:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 5:17:01 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 79 MB. Current time: 9/27/25, 5:47:01 AM UTC

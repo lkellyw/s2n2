@@ -6,6 +6,7 @@ set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/tools/fft_v9_1
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/tools/fir_v7_0
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/tools/dds_v6_0
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/csim
 ### C sim ###
 if {![file exists csim.exe]} {

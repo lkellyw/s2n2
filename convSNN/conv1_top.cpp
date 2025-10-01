@@ -46,7 +46,7 @@ void conv1_lif_top(
         in,
         out,
         weights_conv1,
-        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(0),  // Set threshold
+        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(1),  // Set threshold = 1
         numReps,
         DECAY,
         ap_resource_dsp()

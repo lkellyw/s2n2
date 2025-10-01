@@ -1,4 +1,7 @@
 <AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" name="convSNN_fc2" top="fc2_top">
+    <Simulation argv="">
+        <SimFlow name="csim" setup="false" optimizeCompile="true" clean="true" ldflags="" mflags=""/>
+    </Simulation>
     <files>
         <file name="/home/coder/Desktop/s2n2/convSNN/fc2_tb.cpp" sc="0" tb="1" cflags=" -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x  -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
         <file name="/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
@@ -11,9 +14,8 @@
     </files>
     <solutions>
         <solution name="solution_fc2" status=""/>
+        <solution name="solution1" status=""/>
+        <solution name="new" status=""/>
     </solutions>
-    <Simulation argv="">
-        <SimFlow name="csim" setup="false" optimizeCompile="true" clean="true" ldflags="" mflags=""/>
-    </Simulation>
 </AutoPilot:project>
 
