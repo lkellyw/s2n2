@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fc1_top'" level="0">
-<item name = "Date">Thu Sep 25 03:20:28 2025
+<item name = "Date">Thu Oct  2 05:03:57 2025
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">convSNN_fc1</item>
 <item name = "Solution">new</item>
-<item name = "Product family">virtexuplus</item>
-<item name = "Target device">xcvu9p-flga2577-2-e</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.721 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 3.282 ns, 1.25 ns</column>
 </table>
 </item>
 </section>

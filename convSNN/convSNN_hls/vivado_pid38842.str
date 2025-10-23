@@ -1,0 +1,233 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 38842
+License: Customer
+
+Current time: 	Thu Oct 16 03:10:40 UTC 2025
+Time zone: 	Coordinated Universal Time (Etc/UTC)
+
+OS: Ubuntu
+OS Version: 5.15.0-139-generic
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: :90.0
+Screen size: 1536x808
+Screen resolution (DPI): 116
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=14
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx2/Vivado/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx2/Vivado/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	coder
+User home directory: /home/coder
+User working directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx2/Vivado
+HDI_APPROOT: /tools/Xilinx2/Vivado/2020.1
+RDI_DATADIR: /tools/Xilinx2/Vivado/2020.1/data
+RDI_BINDIR: /tools/Xilinx2/Vivado/2020.1/bin
+
+Vivado preferences file location: /home/coder/.Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: /home/coder/.Xilinx/Vivado/2020.1/
+Vivado layouts directory: /home/coder/.Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	/tools/Xilinx2/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.log
+Vivado journal file location: 	/home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-38842-coder-kwlaial-kellylaijetnet
+
+Xilinx Environment Variables
+----------------------------
+VIVADO_DESKTOP_SERVICE_PORT: tcp://10.98.215.223:6081
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP: tcp://10.98.215.223:6081
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP_ADDR: 10.98.215.223
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP_PORT: 6081
+VIVADO_DESKTOP_SERVICE_PORT_6081_TCP_PROTO: tcp
+VIVADO_DESKTOP_SERVICE_SERVICE_HOST: 10.98.215.223
+VIVADO_DESKTOP_SERVICE_SERVICE_PORT: 6081
+VIVADO_DESKTOP_SERVICE_SERVICE_PORT_NOVNC: 6081
+XILINX: /tools/Xilinx2/Vivado/2020.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinxd.xilinx-dev
+XILINX_DSP: /tools/Xilinx2/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx2/Vivado/2020.1
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx2/Vivado/2020.1
+XILINX_VIVADO_HLS: /tools/Xilinx2/Vivado/2020.1
+XILINX_VIVADO_JAVA_HEAP_MB: 16384
+XILINX_VIVADO_MAX_MEM_GB: 32
+
+
+GUI allocated memory:	192 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,507 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 117 MB (+119731kb) [00:00:07]
+// [Engine Memory]: 1,493 MB (+1414478kb) [00:00:07]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,493 MB. GUI used memory: 50 MB. Current time: 10/16/25, 3:10:41 AM UTC
+// WARNING: HEventQueue.dispatchEvent() is taking  3251 ms.
+// Tcl Message: open_project /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/xc7a200t-fbg484-2/impl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xc7a200t-fbg484-2/impl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xc7a200t-fbg484-2/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'. 
+// Project name: SNNTrial3; location: /home/coder/Desktop/s2n2/SNNTrial3; part: xc7a200tfbg484-2
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 7136.613 ; gain = 36.074 ; free physical = 461719 ; free virtual = 812792 
+dismissDialog("Open Project"); // bz (cs)
+// [Engine Memory]: 1,581 MB (+13946kb) [00:00:15]
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Submodule Runs Failed ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 16 03:10:09 UTC 2025 ; 00:00:41 ;  ;  ;  ;  ; ", 3); // az (J, cs)
+// [GUI Memory]: 128 MB (+6012kb) [00:00:24]
+// [GUI Memory]: 136 MB (+1138kb) [00:00:25]
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Constraints", 1); // az (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,655 MB. GUI used memory: 74 MB. Current time: 10/16/25, 3:11:01 AM UTC
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 1,661 MB (+80kb) [00:01:26]
+// [GUI Memory]: 144 MB (+1671kb) [00:01:43]
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 485 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aA (g, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ai (cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_fc1_top_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_fc2_top_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_conv1_lif_top_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_clk_wiz_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_rst_clk_wiz_100M_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_clk_wiz_1_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_rst_clk_wiz_1_100M_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_clk_wiz_2_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run design_1_rst_clk_wiz_2_100M_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bz)
+// 'k' command handler elapsed time: 3 seconds
+// Tcl Message: reset_run design_1_axis_dwidth_converter_0_0_synth_1 
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify

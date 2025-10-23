@@ -15,105 +15,105 @@ INFO: [COSIM-316] Starting C post checking ...
 
 Initializing FC2 weights...
 [DEBUG] Tile = 0, Mask = 0b11111111
-  [PE 0] Weight = 5 Accumulator before = -31.918
-  [PE 0] Accumulator after  = -26.918
-  [PE 1] Weight = 18 Accumulator before = -10.3281
-  [PE 1] Accumulator after  = 7.67188
-  [PE 2] Weight = -11 Accumulator before = 31.999
-  [PE 2] Accumulator after  = 20.999
+  [PE 0] Weight = 5 Accumulator before = -21.6094
+  [PE 0] Accumulator after  = -16.6094
+  [PE 1] Weight = 18 Accumulator before = -13.2881
+  [PE 1] Accumulator after  = 4.71191
+  [PE 2] Weight = -11 Accumulator before = 31.9971
+  [PE 2] Accumulator after  = 20.9971
   [PE 3] Weight = -26 Accumulator before = 0
   [PE 3] Accumulator after  = -26
-  [PE 4] Weight = 2 Accumulator before = -31.8359
-  [PE 4] Accumulator after  = -29.8359
+  [PE 4] Weight = 2 Accumulator before = -21.5273
+  [PE 4] Accumulator after  = -19.5273
 [DEBUG] Tile = 1, Mask = 0b11111111
-  [PE 0] Weight = -15 Accumulator before = -26.918
-  [PE 0] Accumulator after  = 22.082
-  [PE 1] Weight = -12 Accumulator before = 7.67188
-  [PE 1] Accumulator after  = -4.32812
-  [PE 2] Weight = 0 Accumulator before = 20.999
-  [PE 2] Accumulator after  = 20.999
+  [PE 0] Weight = -15 Accumulator before = -16.6094
+  [PE 0] Accumulator after  = -31.6094
+  [PE 1] Weight = -12 Accumulator before = 4.71191
+  [PE 1] Accumulator after  = -7.28809
+  [PE 2] Weight = 0 Accumulator before = 20.9971
+  [PE 2] Accumulator after  = 20.9971
   [PE 3] Weight = -21 Accumulator before = -26
   [PE 3] Accumulator after  = 17
-  [PE 4] Weight = -81 Accumulator before = -29.8359
-  [PE 4] Accumulator after  = 17.1641
+  [PE 4] Weight = -81 Accumulator before = -19.5273
+  [PE 4] Accumulator after  = 27.4727
 [DEBUG] Tile = 2, Mask = 0b11111111
-  [PE 0] Weight = 0 Accumulator before = 22.082
-  [PE 0] Accumulator after  = 22.082
-  [PE 1] Weight = -8 Accumulator before = -4.32812
-  [PE 1] Accumulator after  = -12.3281
-  [PE 2] Weight = -109 Accumulator before = 20.999
-  [PE 2] Accumulator after  = -24.001
+  [PE 0] Weight = 0 Accumulator before = -31.6094
+  [PE 0] Accumulator after  = -31.6094
+  [PE 1] Weight = -8 Accumulator before = -7.28809
+  [PE 1] Accumulator after  = -15.2881
+  [PE 2] Weight = -109 Accumulator before = 20.9971
+  [PE 2] Accumulator after  = -24.0029
   [PE 3] Weight = -67 Accumulator before = 17
   [PE 3] Accumulator after  = 14
-  [PE 4] Weight = -8 Accumulator before = 17.1641
-  [PE 4] Accumulator after  = 9.16406
+  [PE 4] Weight = -8 Accumulator before = 27.4727
+  [PE 4] Accumulator after  = 19.4727
 [DEBUG] Tile = 3, Mask = 0b11111111
-  [PE 0] Weight = -38 Accumulator before = 22.082
-  [PE 0] Accumulator after  = -15.918
-  [PE 1] Weight = 2 Accumulator before = -12.3281
-  [PE 1] Accumulator after  = -10.3281
-  [PE 2] Weight = 1 Accumulator before = -24.001
-  [PE 2] Accumulator after  = -23.001
+  [PE 0] Weight = -38 Accumulator before = -31.6094
+  [PE 0] Accumulator after  = -5.60938
+  [PE 1] Weight = 2 Accumulator before = -15.2881
+  [PE 1] Accumulator after  = -13.2881
+  [PE 2] Weight = 1 Accumulator before = -24.0029
+  [PE 2] Accumulator after  = -23.0029
   [PE 3] Weight = 8 Accumulator before = 14
   [PE 3] Accumulator after  = 22
-  [PE 4] Weight = 1 Accumulator before = 9.16406
-  [PE 4] Accumulator after  = 10.1641
+  [PE 4] Weight = 1 Accumulator before = 19.4727
+  [PE 4] Accumulator after  = 20.4727
 [DEBUG] Tile = 4, Mask = 0b11111111
-  [PE 0] Weight = 14 Accumulator before = -15.918
-  [PE 0] Accumulator after  = -1.91797
-  [PE 1] Weight = 3 Accumulator before = -10.3281
-  [PE 1] Accumulator after  = -7.32812
-  [PE 2] Weight = 10 Accumulator before = -23.001
-  [PE 2] Accumulator after  = -13.001
+  [PE 0] Weight = 14 Accumulator before = -5.60938
+  [PE 0] Accumulator after  = 8.39062
+  [PE 1] Weight = 3 Accumulator before = -13.2881
+  [PE 1] Accumulator after  = -10.2881
+  [PE 2] Weight = 10 Accumulator before = -23.0029
+  [PE 2] Accumulator after  = -13.0029
   [PE 3] Weight = -8 Accumulator before = 22
   [PE 3] Accumulator after  = 14
-  [PE 4] Weight = -15 Accumulator before = 10.1641
-  [PE 4] Accumulator after  = -4.83594
+  [PE 4] Weight = -15 Accumulator before = 20.4727
+  [PE 4] Accumulator after  = 5.47266
 [DEBUG] Tile = 5, Mask = 0b11111111
-  [PE 0] Weight = 29 Accumulator before = -1.91797
-  [PE 0] Accumulator after  = 27.082
-  [PE 1] Weight = 32 Accumulator before = -7.32812
-  [PE 1] Accumulator after  = 24.6719
-  [PE 2] Weight = -82 Accumulator before = -13.001
-  [PE 2] Accumulator after  = -31.001
+  [PE 0] Weight = 29 Accumulator before = 8.39062
+  [PE 0] Accumulator after  = -26.6094
+  [PE 1] Weight = 32 Accumulator before = -10.2881
+  [PE 1] Accumulator after  = 21.7119
+  [PE 2] Weight = -82 Accumulator before = -13.0029
+  [PE 2] Accumulator after  = -31.0029
   [PE 3] Weight = -25 Accumulator before = 14
   [PE 3] Accumulator after  = -11
-  [PE 4] Weight = 5 Accumulator before = -4.83594
-  [PE 4] Accumulator after  = 0.164062
+  [PE 4] Weight = 5 Accumulator before = 5.47266
+  [PE 4] Accumulator after  = 10.4727
 [DEBUG] Tile = 6, Mask = 0b11111111
-  [PE 0] Weight = -36 Accumulator before = 27.082
-  [PE 0] Accumulator after  = -8.91797
-  [PE 1] Weight = -51 Accumulator before = 24.6719
-  [PE 1] Accumulator after  = -26.3281
-  [PE 2] Weight = 9 Accumulator before = -31.001
-  [PE 2] Accumulator after  = -22.001
+  [PE 0] Weight = -36 Accumulator before = -26.6094
+  [PE 0] Accumulator after  = 1.39062
+  [PE 1] Weight = -51 Accumulator before = 21.7119
+  [PE 1] Accumulator after  = -29.2881
+  [PE 2] Weight = 9 Accumulator before = -31.0029
+  [PE 2] Accumulator after  = -22.0029
   [PE 3] Weight = 3 Accumulator before = -11
   [PE 3] Accumulator after  = -8
-  [PE 4] Weight = 4 Accumulator before = 0.164062
-  [PE 4] Accumulator after  = 4.16406
+  [PE 4] Weight = 4 Accumulator before = 10.4727
+  [PE 4] Accumulator after  = 14.4727
 [DEBUG] Tile = 7, Mask = 0b11111111
-  [PE 0] Weight = 26 Accumulator before = -8.91797
-  [PE 0] Accumulator after  = 17.082
-  [PE 1] Weight = -8 Accumulator before = -26.3281
-  [PE 1] Accumulator after  = 29.6719
-  [PE 2] Weight = 10 Accumulator before = -22.001
-  [PE 2] Accumulator after  = -12.001
+  [PE 0] Weight = 26 Accumulator before = 1.39062
+  [PE 0] Accumulator after  = 27.3906
+  [PE 1] Weight = -8 Accumulator before = -29.2881
+  [PE 1] Accumulator after  = 26.7119
+  [PE 2] Weight = 10 Accumulator before = -22.0029
+  [PE 2] Accumulator after  = -12.0029
   [PE 3] Weight = 6 Accumulator before = -8
   [PE 3] Accumulator after  = -2
-  [PE 4] Weight = 2 Accumulator before = 4.16406
-  [PE 4] Accumulator after  = 6.16406
-[THRESHOLD DEBUG] acc=17.082 > threshold=1 => YES: SPIKE
-[THRESHOLD DEBUG] acc=29.6719 > threshold=1 => YES: SPIKE
-[THRESHOLD DEBUG] acc=-12.001 > threshold=1 => NO: no spike
+  [PE 4] Weight = 2 Accumulator before = 14.4727
+  [PE 4] Accumulator after  = 16.4727
+[THRESHOLD DEBUG] acc=27.3906 > threshold=1 => YES: SPIKE
+[THRESHOLD DEBUG] acc=26.7119 > threshold=1 => YES: SPIKE
+[THRESHOLD DEBUG] acc=-12.0029 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-2 > threshold=1 => NO: no spike
-[THRESHOLD DEBUG] acc=6.16406 > threshold=1 => YES: SPIKE
+[THRESHOLD DEBUG] acc=16.4727 > threshold=1 => YES: SPIKE
 [DEBUG] Tile = 0, Mask = 0b11111111
   [PE 0] Weight = 5 Accumulator before = 0
   [PE 0] Accumulator after  = 5
   [PE 1] Weight = 18 Accumulator before = 0
   [PE 1] Accumulator after  = 18
-  [PE 2] Weight = -11 Accumulator before = -10.5
-  [PE 2] Accumulator after  = -21.5
+  [PE 2] Weight = -11 Accumulator before = -10.502
+  [PE 2] Accumulator after  = -21.502
   [PE 3] Weight = -26 Accumulator before = -1.75
   [PE 3] Accumulator after  = -27.75
   [PE 4] Weight = 2 Accumulator before = 0
@@ -123,8 +123,8 @@ Initializing FC2 weights...
   [PE 0] Accumulator after  = -10
   [PE 1] Weight = -12 Accumulator before = 18
   [PE 1] Accumulator after  = 6
-  [PE 2] Weight = 0 Accumulator before = -21.5
-  [PE 2] Accumulator after  = -21.5
+  [PE 2] Weight = 0 Accumulator before = -21.502
+  [PE 2] Accumulator after  = -21.502
   [PE 3] Weight = -21 Accumulator before = -27.75
   [PE 3] Accumulator after  = 15.25
   [PE 4] Weight = -81 Accumulator before = 2
@@ -134,8 +134,8 @@ Initializing FC2 weights...
   [PE 0] Accumulator after  = -10
   [PE 1] Weight = -8 Accumulator before = 6
   [PE 1] Accumulator after  = -2
-  [PE 2] Weight = -109 Accumulator before = -21.5
-  [PE 2] Accumulator after  = -2.5
+  [PE 2] Weight = -109 Accumulator before = -21.502
+  [PE 2] Accumulator after  = -2.50195
   [PE 3] Weight = -67 Accumulator before = 15.25
   [PE 3] Accumulator after  = 12.25
   [PE 4] Weight = -8 Accumulator before = -15
@@ -145,8 +145,8 @@ Initializing FC2 weights...
   [PE 0] Accumulator after  = 16
   [PE 1] Weight = 2 Accumulator before = -2
   [PE 1] Accumulator after  = 0
-  [PE 2] Weight = 1 Accumulator before = -2.5
-  [PE 2] Accumulator after  = -1.5
+  [PE 2] Weight = 1 Accumulator before = -2.50195
+  [PE 2] Accumulator after  = -1.50195
   [PE 3] Weight = 8 Accumulator before = 12.25
   [PE 3] Accumulator after  = 20.25
   [PE 4] Weight = 1 Accumulator before = -23
@@ -156,8 +156,8 @@ Initializing FC2 weights...
   [PE 0] Accumulator after  = 30
   [PE 1] Weight = 3 Accumulator before = 0
   [PE 1] Accumulator after  = 3
-  [PE 2] Weight = 10 Accumulator before = -1.5
-  [PE 2] Accumulator after  = 8.5
+  [PE 2] Weight = 10 Accumulator before = -1.50195
+  [PE 2] Accumulator after  = 8.49805
   [PE 3] Weight = -8 Accumulator before = 20.25
   [PE 3] Accumulator after  = 12.25
   [PE 4] Weight = -15 Accumulator before = -22
@@ -167,8 +167,8 @@ Initializing FC2 weights...
   [PE 0] Accumulator after  = -5
   [PE 1] Weight = 32 Accumulator before = 3
   [PE 1] Accumulator after  = -29
-  [PE 2] Weight = -82 Accumulator before = 8.5
-  [PE 2] Accumulator after  = -9.5
+  [PE 2] Weight = -82 Accumulator before = 8.49805
+  [PE 2] Accumulator after  = -9.50195
   [PE 3] Weight = -25 Accumulator before = 12.25
   [PE 3] Accumulator after  = -12.75
   [PE 4] Weight = 5 Accumulator before = 27
@@ -178,8 +178,8 @@ Initializing FC2 weights...
   [PE 0] Accumulator after  = 23
   [PE 1] Weight = -51 Accumulator before = -29
   [PE 1] Accumulator after  = -16
-  [PE 2] Weight = 9 Accumulator before = -9.5
-  [PE 2] Accumulator after  = -0.5
+  [PE 2] Weight = 9 Accumulator before = -9.50195
+  [PE 2] Accumulator after  = -0.501953
   [PE 3] Weight = 3 Accumulator before = -12.75
   [PE 3] Accumulator after  = -9.75
   [PE 4] Weight = 4 Accumulator before = -32
@@ -189,15 +189,15 @@ Initializing FC2 weights...
   [PE 0] Accumulator after  = -15
   [PE 1] Weight = -8 Accumulator before = -16
   [PE 1] Accumulator after  = -24
-  [PE 2] Weight = 10 Accumulator before = -0.5
-  [PE 2] Accumulator after  = 9.5
+  [PE 2] Weight = 10 Accumulator before = -0.501953
+  [PE 2] Accumulator after  = 9.49805
   [PE 3] Weight = 6 Accumulator before = -9.75
   [PE 3] Accumulator after  = -3.75
   [PE 4] Weight = 2 Accumulator before = -28
   [PE 4] Accumulator after  = -26
 [THRESHOLD DEBUG] acc=-15 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-24 > threshold=1 => NO: no spike
-[THRESHOLD DEBUG] acc=9.5 > threshold=1 => YES: SPIKE
+[THRESHOLD DEBUG] acc=9.49805 > threshold=1 => YES: SPIKE
 [THRESHOLD DEBUG] acc=-3.75 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-26 > threshold=1 => NO: no spike
 [DEBUG] Tile = 0, Mask = 0b11111111
@@ -245,7 +245,7 @@ Initializing FC2 weights...
   [PE 4] Weight = 1 Accumulator before = 14.25
   [PE 4] Accumulator after  = 15.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 2.875
   [PE 0] Accumulator after  = 2.875
   [PE 1] Weight = 0 Accumulator before = -25
@@ -257,7 +257,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = 15.25
   [PE 4] Accumulator after  = 13.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 2.875
   [PE 0] Accumulator after  = 2.875
   [PE 1] Weight = 0 Accumulator before = -25
@@ -269,7 +269,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 13.25
   [PE 4] Accumulator after  = 13.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = 2.875
   [PE 0] Accumulator after  = 0.875
   [PE 1] Weight = -2 Accumulator before = -25
@@ -281,7 +281,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 13.25
   [PE 4] Accumulator after  = 13.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 0.875
   [PE 0] Accumulator after  = 0.875
   [PE 1] Weight = -2 Accumulator before = -27
@@ -298,7 +298,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=14.7188 > threshold=1 => YES: SPIKE
 [THRESHOLD DEBUG] acc=13.25 > threshold=1 => YES: SPIKE
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 0.765625
   [PE 0] Accumulator after  = 0.765625
   [PE 1] Weight = 0 Accumulator before = -29.375
@@ -310,7 +310,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 0
   [PE 4] Accumulator after  = 0
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = 0.765625
   [PE 0] Accumulator after  = -1.23438
   [PE 1] Weight = -2 Accumulator before = -29.375
@@ -322,7 +322,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = 0
   [PE 4] Accumulator after  = -2
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -1.23438
   [PE 0] Accumulator after  = -1.23438
   [PE 1] Weight = -2 Accumulator before = -31.375
@@ -334,7 +334,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -2
   [PE 4] Accumulator after  = -4
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -1.23438
   [PE 0] Accumulator after  = -3.23438
   [PE 1] Weight = 0 Accumulator before = 30.625
@@ -346,7 +346,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -4
   [PE 4] Accumulator after  = -4
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -3.23438
   [PE 0] Accumulator after  = -3.23438
   [PE 1] Weight = 0 Accumulator before = 30.625
@@ -358,7 +358,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -4
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -3.23438
   [PE 0] Accumulator after  = -3.23438
   [PE 1] Weight = 0 Accumulator before = 30.625
@@ -370,7 +370,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -6
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -3.23438
   [PE 0] Accumulator after  = -5.23438
   [PE 1] Weight = -2 Accumulator before = 30.625
@@ -382,7 +382,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -6
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -5.23438
   [PE 0] Accumulator after  = -5.23438
   [PE 1] Weight = -2 Accumulator before = 28.625
@@ -399,7 +399,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-10 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-6 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -4.58008
   [PE 0] Accumulator after  = -4.58008
   [PE 1] Weight = 0 Accumulator before = 0
@@ -411,7 +411,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -5.25
   [PE 4] Accumulator after  = -5.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -4.58008
   [PE 0] Accumulator after  = -6.58008
   [PE 1] Weight = -2 Accumulator before = 0
@@ -423,7 +423,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -5.25
   [PE 4] Accumulator after  = -7.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -6.58008
   [PE 0] Accumulator after  = -6.58008
   [PE 1] Weight = -2 Accumulator before = -2
@@ -435,7 +435,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -7.25
   [PE 4] Accumulator after  = -9.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -6.58008
   [PE 0] Accumulator after  = -8.58008
   [PE 1] Weight = 0 Accumulator before = -4
@@ -447,7 +447,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -9.25
   [PE 4] Accumulator after  = -9.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -8.58008
   [PE 0] Accumulator after  = -8.58008
   [PE 1] Weight = 0 Accumulator before = -4
@@ -459,7 +459,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -9.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -8.58008
   [PE 0] Accumulator after  = -8.58008
   [PE 1] Weight = 0 Accumulator before = -4
@@ -471,7 +471,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -11.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -8.58008
   [PE 0] Accumulator after  = -10.5801
   [PE 1] Weight = -2 Accumulator before = -4
@@ -483,7 +483,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -11.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -10.5801
   [PE 0] Accumulator after  = -10.5801
   [PE 1] Weight = -2 Accumulator before = -6
@@ -500,7 +500,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-18.75 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-11.25 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -9.25684
   [PE 0] Accumulator after  = -9.25684
   [PE 1] Weight = 0 Accumulator before = -7
@@ -512,7 +512,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -9.84375
   [PE 4] Accumulator after  = -9.84375
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -9.25684
   [PE 0] Accumulator after  = -11.2568
   [PE 1] Weight = -2 Accumulator before = -7
@@ -524,7 +524,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -9.84375
   [PE 4] Accumulator after  = -11.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -11.2568
   [PE 0] Accumulator after  = -11.2568
   [PE 1] Weight = -2 Accumulator before = -9
@@ -536,7 +536,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -11.8438
   [PE 4] Accumulator after  = -13.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -11.2568
   [PE 0] Accumulator after  = -13.2568
   [PE 1] Weight = 0 Accumulator before = -11
@@ -548,7 +548,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -13.8438
   [PE 4] Accumulator after  = -13.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.2568
   [PE 0] Accumulator after  = -13.2568
   [PE 1] Weight = 0 Accumulator before = -11
@@ -560,7 +560,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -13.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.2568
   [PE 0] Accumulator after  = -13.2568
   [PE 1] Weight = 0 Accumulator before = -11
@@ -572,7 +572,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -15.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -13.2568
   [PE 0] Accumulator after  = -15.2568
   [PE 1] Weight = -2 Accumulator before = -11
@@ -584,7 +584,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -15.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -15.2568
   [PE 0] Accumulator after  = -15.2568
   [PE 1] Weight = -2 Accumulator before = -13
@@ -601,7 +601,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-30.4062 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-15.8438 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.3496
   [PE 0] Accumulator after  = -13.3496
   [PE 1] Weight = 0 Accumulator before = -13.125
@@ -613,7 +613,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -13.8633
   [PE 4] Accumulator after  = -13.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -13.3496
   [PE 0] Accumulator after  = -15.3496
   [PE 1] Weight = -2 Accumulator before = -13.125
@@ -625,7 +625,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -13.8633
   [PE 4] Accumulator after  = -15.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -15.3496
   [PE 0] Accumulator after  = -15.3496
   [PE 1] Weight = -2 Accumulator before = -15.125
@@ -637,7 +637,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -15.8633
   [PE 4] Accumulator after  = -17.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -15.3496
   [PE 0] Accumulator after  = -17.3496
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -649,7 +649,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -17.8633
   [PE 4] Accumulator after  = -17.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -17.3496
   [PE 0] Accumulator after  = -17.3496
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -661,7 +661,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -17.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -17.3496
   [PE 0] Accumulator after  = -17.3496
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -673,7 +673,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -19.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -17.3496
   [PE 0] Accumulator after  = -19.3496
   [PE 1] Weight = -2 Accumulator before = -17.125
@@ -685,7 +685,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -19.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -19.3496
   [PE 0] Accumulator after  = -19.3496
   [PE 1] Weight = -2 Accumulator before = -19.125
@@ -702,7 +702,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=23.3945 > threshold=1 => YES: SPIKE
 [THRESHOLD DEBUG] acc=-19.8633 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -20.9307
   [PE 0] Accumulator after  = -20.9307
   [PE 1] Weight = 0 Accumulator before = -22.4844
@@ -714,7 +714,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -21.3799
   [PE 4] Accumulator after  = -21.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -20.9307
   [PE 0] Accumulator after  = -22.9307
   [PE 1] Weight = -2 Accumulator before = -22.4844
@@ -726,7 +726,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -21.3799
   [PE 4] Accumulator after  = -23.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -22.9307
   [PE 0] Accumulator after  = -22.9307
   [PE 1] Weight = -2 Accumulator before = -24.4844
@@ -738,7 +738,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -23.3799
   [PE 4] Accumulator after  = -25.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -22.9307
   [PE 0] Accumulator after  = -24.9307
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -750,7 +750,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -25.3799
   [PE 4] Accumulator after  = -25.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -24.9307
   [PE 0] Accumulator after  = -24.9307
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -762,7 +762,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -25.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -24.9307
   [PE 0] Accumulator after  = -24.9307
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -774,7 +774,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -24.9307
   [PE 0] Accumulator after  = -26.9307
   [PE 1] Weight = -2 Accumulator before = -26.4844
@@ -786,7 +786,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -26.9307
   [PE 0] Accumulator after  = -26.9307
   [PE 1] Weight = -2 Accumulator before = -28.4844
@@ -803,7 +803,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-10 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-27.3799 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -27.5635
   [PE 0] Accumulator after  = -27.5635
   [PE 1] Weight = 0 Accumulator before = -30.6738
@@ -815,7 +815,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.957
   [PE 4] Accumulator after  = -27.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -27.5635
   [PE 0] Accumulator after  = -29.5635
   [PE 1] Weight = -2 Accumulator before = -30.6738
@@ -827,7 +827,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -27.957
   [PE 4] Accumulator after  = -29.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -29.5635
   [PE 0] Accumulator after  = -29.5635
   [PE 1] Weight = -2 Accumulator before = 31.3262
@@ -839,7 +839,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -29.957
   [PE 4] Accumulator after  = -31.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -29.5635
   [PE 0] Accumulator after  = -31.5635
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -851,7 +851,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -31.957
   [PE 4] Accumulator after  = -31.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -31.5635
   [PE 0] Accumulator after  = -31.5635
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -863,7 +863,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -31.957
   [PE 4] Accumulator after  = 30.043
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -31.5635
   [PE 0] Accumulator after  = -31.5635
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -875,7 +875,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 30.043
   [PE 4] Accumulator after  = 30.043
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -31.5635
   [PE 0] Accumulator after  = 30.4365
   [PE 1] Weight = -2 Accumulator before = 29.3262
@@ -887,7 +887,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 30.043
   [PE 4] Accumulator after  = 30.043
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 30.4365
   [PE 0] Accumulator after  = 30.4365
   [PE 1] Weight = -2 Accumulator before = 27.3262
@@ -904,7 +904,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-18.75 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=30.043 > threshold=1 => YES: SPIKE
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 0
   [PE 0] Accumulator after  = 0
   [PE 1] Weight = 0 Accumulator before = 0
@@ -916,7 +916,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 0
   [PE 4] Accumulator after  = 0
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = 0
   [PE 0] Accumulator after  = -2
   [PE 1] Weight = -2 Accumulator before = 0
@@ -928,7 +928,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = 0
   [PE 4] Accumulator after  = -2
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -2
   [PE 0] Accumulator after  = -2
   [PE 1] Weight = -2 Accumulator before = -2
@@ -940,7 +940,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -2
   [PE 4] Accumulator after  = -4
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -2
   [PE 0] Accumulator after  = -4
   [PE 1] Weight = 0 Accumulator before = -4
@@ -952,7 +952,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -4
   [PE 4] Accumulator after  = -4
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -4
   [PE 0] Accumulator after  = -4
   [PE 1] Weight = 0 Accumulator before = -4
@@ -964,7 +964,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -4
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -4
   [PE 0] Accumulator after  = -4
   [PE 1] Weight = 0 Accumulator before = -4
@@ -976,7 +976,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -6
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -4
   [PE 0] Accumulator after  = -6
   [PE 1] Weight = -2 Accumulator before = -4
@@ -988,7 +988,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -6
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -6
   [PE 0] Accumulator after  = -6
   [PE 1] Weight = -2 Accumulator before = -6
@@ -1005,7 +1005,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-30.4062 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-6 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -5.25
   [PE 0] Accumulator after  = -5.25
   [PE 1] Weight = 0 Accumulator before = -7
@@ -1017,7 +1017,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -5.25
   [PE 4] Accumulator after  = -5.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -5.25
   [PE 0] Accumulator after  = -7.25
   [PE 1] Weight = -2 Accumulator before = -7
@@ -1029,7 +1029,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -5.25
   [PE 4] Accumulator after  = -7.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -7.25
   [PE 0] Accumulator after  = -7.25
   [PE 1] Weight = -2 Accumulator before = -9
@@ -1041,7 +1041,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -7.25
   [PE 4] Accumulator after  = -9.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -7.25
   [PE 0] Accumulator after  = -9.25
   [PE 1] Weight = 0 Accumulator before = -11
@@ -1053,7 +1053,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -9.25
   [PE 4] Accumulator after  = -9.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -9.25
   [PE 0] Accumulator after  = -9.25
   [PE 1] Weight = 0 Accumulator before = -11
@@ -1065,7 +1065,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -9.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -9.25
   [PE 0] Accumulator after  = -9.25
   [PE 1] Weight = 0 Accumulator before = -11
@@ -1077,7 +1077,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -11.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -9.25
   [PE 0] Accumulator after  = -11.25
   [PE 1] Weight = -2 Accumulator before = -11
@@ -1089,7 +1089,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -11.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -11.25
   [PE 0] Accumulator after  = -11.25
   [PE 1] Weight = -2 Accumulator before = -13
@@ -1106,7 +1106,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=23.3945 > threshold=1 => YES: SPIKE
 [THRESHOLD DEBUG] acc=-11.25 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -9.84375
   [PE 0] Accumulator after  = -9.84375
   [PE 1] Weight = 0 Accumulator before = -13.125
@@ -1118,7 +1118,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -9.84375
   [PE 4] Accumulator after  = -9.84375
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -9.84375
   [PE 0] Accumulator after  = -11.8438
   [PE 1] Weight = -2 Accumulator before = -13.125
@@ -1130,7 +1130,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -9.84375
   [PE 4] Accumulator after  = -11.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -11.8438
   [PE 0] Accumulator after  = -11.8438
   [PE 1] Weight = -2 Accumulator before = -15.125
@@ -1142,7 +1142,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -11.8438
   [PE 4] Accumulator after  = -13.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -11.8438
   [PE 0] Accumulator after  = -13.8438
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -1154,7 +1154,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -13.8438
   [PE 4] Accumulator after  = -13.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.8438
   [PE 0] Accumulator after  = -13.8438
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -1166,7 +1166,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -13.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.8438
   [PE 0] Accumulator after  = -13.8438
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -1178,7 +1178,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -15.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -13.8438
   [PE 0] Accumulator after  = -15.8438
   [PE 1] Weight = -2 Accumulator before = -17.125
@@ -1190,7 +1190,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -15.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -15.8438
   [PE 0] Accumulator after  = -15.8438
   [PE 1] Weight = -2 Accumulator before = -19.125
@@ -1207,7 +1207,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-10 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-15.8438 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.8633
   [PE 0] Accumulator after  = -13.8633
   [PE 1] Weight = 0 Accumulator before = -22.4844
@@ -1219,7 +1219,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -13.8633
   [PE 4] Accumulator after  = -13.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -13.8633
   [PE 0] Accumulator after  = -15.8633
   [PE 1] Weight = -2 Accumulator before = -22.4844
@@ -1231,7 +1231,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -13.8633
   [PE 4] Accumulator after  = -15.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -15.8633
   [PE 0] Accumulator after  = -15.8633
   [PE 1] Weight = -2 Accumulator before = -24.4844
@@ -1243,7 +1243,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -15.8633
   [PE 4] Accumulator after  = -17.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -15.8633
   [PE 0] Accumulator after  = -17.8633
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -1255,7 +1255,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -17.8633
   [PE 4] Accumulator after  = -17.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -17.8633
   [PE 0] Accumulator after  = -17.8633
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -1267,7 +1267,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -17.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -17.8633
   [PE 0] Accumulator after  = -17.8633
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -1279,7 +1279,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -19.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -17.8633
   [PE 0] Accumulator after  = -19.8633
   [PE 1] Weight = -2 Accumulator before = -26.4844
@@ -1291,7 +1291,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -19.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -19.8633
   [PE 0] Accumulator after  = -19.8633
   [PE 1] Weight = -2 Accumulator before = -28.4844
@@ -1308,7 +1308,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-18.75 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-19.8633 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -21.3799
   [PE 0] Accumulator after  = -21.3799
   [PE 1] Weight = 0 Accumulator before = -30.6738
@@ -1320,7 +1320,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -21.3799
   [PE 4] Accumulator after  = -21.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -21.3799
   [PE 0] Accumulator after  = -23.3799
   [PE 1] Weight = -2 Accumulator before = -30.6738
@@ -1332,7 +1332,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -21.3799
   [PE 4] Accumulator after  = -23.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -23.3799
   [PE 0] Accumulator after  = -23.3799
   [PE 1] Weight = -2 Accumulator before = 31.3262
@@ -1344,7 +1344,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -23.3799
   [PE 4] Accumulator after  = -25.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -23.3799
   [PE 0] Accumulator after  = -25.3799
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -1356,7 +1356,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -25.3799
   [PE 4] Accumulator after  = -25.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -25.3799
   [PE 0] Accumulator after  = -25.3799
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -1368,7 +1368,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -25.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -25.3799
   [PE 0] Accumulator after  = -25.3799
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -1380,7 +1380,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -25.3799
   [PE 0] Accumulator after  = -27.3799
   [PE 1] Weight = -2 Accumulator before = 29.3262
@@ -1392,7 +1392,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -27.3799
   [PE 0] Accumulator after  = -27.3799
   [PE 1] Weight = -2 Accumulator before = 27.3262
@@ -1409,7 +1409,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-30.4062 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-27.3799 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -27.957
   [PE 0] Accumulator after  = -27.957
   [PE 1] Weight = 0 Accumulator before = 0
@@ -1421,7 +1421,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.957
   [PE 4] Accumulator after  = -27.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -27.957
   [PE 0] Accumulator after  = -29.957
   [PE 1] Weight = -2 Accumulator before = 0
@@ -1433,7 +1433,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -27.957
   [PE 4] Accumulator after  = -29.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -29.957
   [PE 0] Accumulator after  = -29.957
   [PE 1] Weight = -2 Accumulator before = -2
@@ -1445,7 +1445,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -29.957
   [PE 4] Accumulator after  = -31.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -29.957
   [PE 0] Accumulator after  = -31.957
   [PE 1] Weight = 0 Accumulator before = -4
@@ -1457,7 +1457,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -31.957
   [PE 4] Accumulator after  = -31.957
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -31.957
   [PE 0] Accumulator after  = -31.957
   [PE 1] Weight = 0 Accumulator before = -4
@@ -1469,7 +1469,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -31.957
   [PE 4] Accumulator after  = 30.043
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -31.957
   [PE 0] Accumulator after  = -31.957
   [PE 1] Weight = 0 Accumulator before = -4
@@ -1481,7 +1481,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 30.043
   [PE 4] Accumulator after  = 30.043
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -31.957
   [PE 0] Accumulator after  = 30.043
   [PE 1] Weight = -2 Accumulator before = -4
@@ -1493,7 +1493,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 30.043
   [PE 4] Accumulator after  = 30.043
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 30.043
   [PE 0] Accumulator after  = 30.043
   [PE 1] Weight = -2 Accumulator before = -6
@@ -1510,7 +1510,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=23.3945 > threshold=1 => YES: SPIKE
 [THRESHOLD DEBUG] acc=30.043 > threshold=1 => YES: SPIKE
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = 0
   [PE 0] Accumulator after  = 0
   [PE 1] Weight = 0 Accumulator before = -7
@@ -1522,7 +1522,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = 0
   [PE 4] Accumulator after  = 0
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = 0
   [PE 0] Accumulator after  = -2
   [PE 1] Weight = -2 Accumulator before = -7
@@ -1534,7 +1534,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = 0
   [PE 4] Accumulator after  = -2
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -2
   [PE 0] Accumulator after  = -2
   [PE 1] Weight = -2 Accumulator before = -9
@@ -1546,7 +1546,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -2
   [PE 4] Accumulator after  = -4
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -2
   [PE 0] Accumulator after  = -4
   [PE 1] Weight = 0 Accumulator before = -11
@@ -1558,7 +1558,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -4
   [PE 4] Accumulator after  = -4
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -4
   [PE 0] Accumulator after  = -4
   [PE 1] Weight = 0 Accumulator before = -11
@@ -1570,7 +1570,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -4
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -4
   [PE 0] Accumulator after  = -4
   [PE 1] Weight = 0 Accumulator before = -11
@@ -1582,7 +1582,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -6
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -4
   [PE 0] Accumulator after  = -6
   [PE 1] Weight = -2 Accumulator before = -11
@@ -1594,7 +1594,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -6
   [PE 4] Accumulator after  = -6
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -6
   [PE 0] Accumulator after  = -6
   [PE 1] Weight = -2 Accumulator before = -13
@@ -1611,7 +1611,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-10 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-6 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -5.25
   [PE 0] Accumulator after  = -5.25
   [PE 1] Weight = 0 Accumulator before = -13.125
@@ -1623,7 +1623,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -5.25
   [PE 4] Accumulator after  = -5.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -5.25
   [PE 0] Accumulator after  = -7.25
   [PE 1] Weight = -2 Accumulator before = -13.125
@@ -1635,7 +1635,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -5.25
   [PE 4] Accumulator after  = -7.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -7.25
   [PE 0] Accumulator after  = -7.25
   [PE 1] Weight = -2 Accumulator before = -15.125
@@ -1647,7 +1647,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -7.25
   [PE 4] Accumulator after  = -9.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -7.25
   [PE 0] Accumulator after  = -9.25
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -1659,7 +1659,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -9.25
   [PE 4] Accumulator after  = -9.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -9.25
   [PE 0] Accumulator after  = -9.25
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -1671,7 +1671,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -9.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -9.25
   [PE 0] Accumulator after  = -9.25
   [PE 1] Weight = 0 Accumulator before = -17.125
@@ -1683,7 +1683,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -11.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -9.25
   [PE 0] Accumulator after  = -11.25
   [PE 1] Weight = -2 Accumulator before = -17.125
@@ -1695,7 +1695,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -11.25
   [PE 4] Accumulator after  = -11.25
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -11.25
   [PE 0] Accumulator after  = -11.25
   [PE 1] Weight = -2 Accumulator before = -19.125
@@ -1712,7 +1712,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-18.75 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-11.25 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -9.84375
   [PE 0] Accumulator after  = -9.84375
   [PE 1] Weight = 0 Accumulator before = -22.4844
@@ -1724,7 +1724,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -9.84375
   [PE 4] Accumulator after  = -9.84375
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -9.84375
   [PE 0] Accumulator after  = -11.8438
   [PE 1] Weight = -2 Accumulator before = -22.4844
@@ -1736,7 +1736,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -9.84375
   [PE 4] Accumulator after  = -11.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -11.8438
   [PE 0] Accumulator after  = -11.8438
   [PE 1] Weight = -2 Accumulator before = -24.4844
@@ -1748,7 +1748,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -11.8438
   [PE 4] Accumulator after  = -13.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -11.8438
   [PE 0] Accumulator after  = -13.8438
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -1760,7 +1760,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -13.8438
   [PE 4] Accumulator after  = -13.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.8438
   [PE 0] Accumulator after  = -13.8438
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -1772,7 +1772,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -13.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.8438
   [PE 0] Accumulator after  = -13.8438
   [PE 1] Weight = 0 Accumulator before = -26.4844
@@ -1784,7 +1784,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -15.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -13.8438
   [PE 0] Accumulator after  = -15.8438
   [PE 1] Weight = -2 Accumulator before = -26.4844
@@ -1796,7 +1796,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -15.8438
   [PE 4] Accumulator after  = -15.8438
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -15.8438
   [PE 0] Accumulator after  = -15.8438
   [PE 1] Weight = -2 Accumulator before = -28.4844
@@ -1813,7 +1813,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=-30.4062 > threshold=1 => NO: no spike
 [THRESHOLD DEBUG] acc=-15.8438 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -13.8633
   [PE 0] Accumulator after  = -13.8633
   [PE 1] Weight = 0 Accumulator before = -30.6738
@@ -1825,7 +1825,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -13.8633
   [PE 4] Accumulator after  = -13.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -13.8633
   [PE 0] Accumulator after  = -15.8633
   [PE 1] Weight = -2 Accumulator before = -30.6738
@@ -1837,7 +1837,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -13.8633
   [PE 4] Accumulator after  = -15.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -15.8633
   [PE 0] Accumulator after  = -15.8633
   [PE 1] Weight = -2 Accumulator before = 31.3262
@@ -1849,7 +1849,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -15.8633
   [PE 4] Accumulator after  = -17.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -15.8633
   [PE 0] Accumulator after  = -17.8633
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -1861,7 +1861,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -17.8633
   [PE 4] Accumulator after  = -17.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -17.8633
   [PE 0] Accumulator after  = -17.8633
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -1873,7 +1873,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -17.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -17.8633
   [PE 0] Accumulator after  = -17.8633
   [PE 1] Weight = 0 Accumulator before = 29.3262
@@ -1885,7 +1885,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -19.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -17.8633
   [PE 0] Accumulator after  = -19.8633
   [PE 1] Weight = -2 Accumulator before = 29.3262
@@ -1897,7 +1897,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -19.8633
   [PE 4] Accumulator after  = -19.8633
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -19.8633
   [PE 0] Accumulator after  = -19.8633
   [PE 1] Weight = -2 Accumulator before = 27.3262
@@ -1914,7 +1914,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
 [THRESHOLD DEBUG] acc=23.3945 > threshold=1 => YES: SPIKE
 [THRESHOLD DEBUG] acc=-19.8633 > threshold=1 => NO: no spike
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 0, Mask = 0b10100000
+[DEBUG] Tile = 0, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -21.3799
   [PE 0] Accumulator after  = -21.3799
   [PE 1] Weight = 0 Accumulator before = 0
@@ -1926,7 +1926,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -21.3799
   [PE 4] Accumulator after  = -21.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 1, Mask = 0b10100000
+[DEBUG] Tile = 1, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -21.3799
   [PE 0] Accumulator after  = -23.3799
   [PE 1] Weight = -2 Accumulator before = 0
@@ -1938,7 +1938,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -21.3799
   [PE 4] Accumulator after  = -23.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 2, Mask = 0b10100000
+[DEBUG] Tile = 2, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -23.3799
   [PE 0] Accumulator after  = -23.3799
   [PE 1] Weight = -2 Accumulator before = -2
@@ -1950,7 +1950,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -23.3799
   [PE 4] Accumulator after  = -25.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 3, Mask = 0b10100000
+[DEBUG] Tile = 3, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -23.3799
   [PE 0] Accumulator after  = -25.3799
   [PE 1] Weight = 0 Accumulator before = -4
@@ -1962,7 +1962,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -25.3799
   [PE 4] Accumulator after  = -25.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 4, Mask = 0b10100000
+[DEBUG] Tile = 4, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -25.3799
   [PE 0] Accumulator after  = -25.3799
   [PE 1] Weight = 0 Accumulator before = -4
@@ -1974,7 +1974,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = -2 Accumulator before = -25.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 5, Mask = 0b10100000
+[DEBUG] Tile = 5, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -25.3799
   [PE 0] Accumulator after  = -25.3799
   [PE 1] Weight = 0 Accumulator before = -4
@@ -1986,7 +1986,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 6, Mask = 0b10100000
+[DEBUG] Tile = 6, Mask = 0b11000000
   [PE 0] Weight = -2 Accumulator before = -25.3799
   [PE 0] Accumulator after  = -27.3799
   [PE 1] Weight = -2 Accumulator before = -4
@@ -1998,7 +1998,7 @@ WARNING: Hls::stream 'input' is read while empty, which may result in RTL simula
   [PE 4] Weight = 0 Accumulator before = -27.3799
   [PE 4] Accumulator after  = -27.3799
 WARNING: Hls::stream 'input' is read while empty, which may result in RTL simulation hanging.
-[DEBUG] Tile = 7, Mask = 0b10100000
+[DEBUG] Tile = 7, Mask = 0b11000000
   [PE 0] Weight = 0 Accumulator before = -27.3799
   [PE 0] Accumulator after  = -27.3799
   [PE 1] Weight = -2 Accumulator before = -6
@@ -2021,7 +2021,7 @@ INFO: [XSIM 43-3496] Using init file passed via -initfile option "/tools/Xilinx2
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
 Running: /tools/Xilinx2/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_fc2_top_top glbl -prj fc2_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /tools/Xilinx2/Vivado/2020.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s fc2_top 
-Multi-threading is on. Using 46 slave threads.
+Multi-threading is on. Using 78 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/new/sim/verilog/glbl.v" into library work
@@ -2056,7 +2056,7 @@ Built simulation snapshot fc2_top
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/new/sim/verilog/xsim.dir/fc2_top/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Thu Sep 25 03:22:12 2025...
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct  2 05:12:48 2025...
 
 ****** xsim v2020.1 (64-bit)
   **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
@@ -2080,7 +2080,7 @@ source fc2_top.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 1815 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/new/sim/verilog/fc2_top.autotb.v" Line 331
 ## quit
-INFO: [Common 17-206] Exiting xsim at Thu Sep 25 03:22:30 2025...
+INFO: [Common 17-206] Exiting xsim at Thu Oct  2 05:13:00 2025...
 
 Initializing FC2 weights...
 

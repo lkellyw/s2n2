@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'conv1_lif_top'
 ================================================================
-* Date:           Thu Sep 25 03:20:30 2025
+* Date:           Thu Oct  2 04:41:55 2025
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        convSNN_conv1
 * Solution:       new
-* Product family: virtexuplus
-* Target device:  xcvu9p-flga2577-2-e
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 4.628 ns |   1.25 ns  |
+    |ap_clk  | 10.00 ns | 5.258 ns |   1.25 ns  |
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -87,12 +87,12 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.45>
+State 1 <SV = 0> <Delay = 1.83>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%numReps_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %numReps)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 6 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%numReps_c8 = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 7 'alloca' 'numReps_c8' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%numReps_c = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 8 'alloca' 'numReps_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%convInp_V_V = alloca i3, align 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 9 'alloca' 'convInp_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 10 [1/1] (1.45ns)   --->   "call fastcc void @conv1_lif_top.entry3(i32 %numReps_read, i32* %numReps_c, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 10 'call' <Predicate = true> <Delay = 1.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%numReps_c8 = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 7 'alloca' 'numReps_c8' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%numReps_c = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 8 'alloca' 'numReps_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%convInp_V_V = alloca i3, align 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 9 'alloca' 'convInp_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (1.83ns)   --->   "call fastcc void @conv1_lif_top.entry3(i32 %numReps_read, i32* %numReps_c, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 10 'call' <Predicate = true> <Delay = 1.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 11 [2/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 11 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -101,7 +101,7 @@ State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 12 [1/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%mul_ln124_loc_channe = call fastcc i32 @Block__ZN8ap_fixedIL(i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 13 'call' 'mul_ln124_loc_channe' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%mul_ln124_loc_channe = call fastcc i32 @Block__ZN8ap_fixedIL(i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 13 'call' 'mul_ln124_loc_channe' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_4 : Operation 14 [2/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i3* %convInp_V_V, i32* %out_V_V, i32 %mul_ln124_loc_channe)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 14 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 0.00>
@@ -613,14 +613,14 @@ ret_ln54                  (ret                 ) [ 000000]
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
 | Operation|                 Functional Unit                |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|          |         grp_Matrix_Vector_Activa_fu_68         |    32   |    0    |  19.296 |   995   |   2739  |    0    |
-|   call   |         grp_ConvolutionInputGene_fu_76         |    0    |    2    |  2.412  |   541   |   1190  |    0    |
+|          |         grp_Matrix_Vector_Activa_fu_68         |    32   |    0    |  20.992 |   995   |   2739  |    0    |
+|   call   |         grp_ConvolutionInputGene_fu_76         |    0    |    2    |  2.624  |   541   |   1190  |    0    |
 |          | mul_ln124_loc_channe_Block_ZN8ap_fixedIL_fu_84 |    0    |    2    |    0    |    0    |    20   |    0    |
 |          |      call_ln24_conv1_lif_top_entry3_fu_90      |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   read   |             numReps_read_read_fu_62            |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                |    32   |    4    |  21.708 |   1536  |   3949  |    0    |
+|   Total  |                                                |    32   |    4    |  23.616 |   1536  |   3949  |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -644,7 +644,7 @@ N/A
 |--------------------------------|------|------|------|--------||---------||---------|
 | grp_Matrix_Vector_Activa_fu_68 |  p3  |   2  |  32  |   64   ||    9    |
 |--------------------------------|------|------|------|--------||---------||---------|
-|              Total             |      |      |      |   64   ||  0.603  ||    9    |
+|              Total             |      |      |      |   64   ||  0.656  ||    9    |
 |--------------------------------|------|------|------|--------||---------||---------|
 
 
@@ -653,10 +653,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   32   |    4   |   21   |  1536  |  3949  |    0   |
+|  Function |   32   |    4   |   23   |  1536  |  3949  |    0   |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    0   |    -   |    9   |    -   |
 |  Register |    -   |    -   |    -   |   99   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   32   |    4   |   22   |  1635  |  3958  |    0   |
+|   Total   |   32   |    4   |   24   |  1635  |  3958  |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

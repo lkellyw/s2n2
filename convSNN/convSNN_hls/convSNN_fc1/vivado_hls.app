@@ -15,6 +15,8 @@
     <solutions>
         <solution name="solution1" status=""/>
         <solution name="new" status=""/>
+        <solution name="xc7a200t-fbg484-2" status=""/>
+        <solution name="xcvu9p-flga2577-2-e" status=""/>
     </solutions>
 </AutoPilot:project>
 

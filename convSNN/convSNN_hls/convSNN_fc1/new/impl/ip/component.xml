@@ -184,7 +184,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>cf3a2c2a</spirit:value>
+            <spirit:value>bffc9eea</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -200,7 +200,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d77a1432</spirit:value>
+            <spirit:value>ac884684</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -216,7 +216,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>487ac07b</spirit:value>
+            <spirit:value>f8f9418f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -232,7 +232,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2fcb0da1</spirit:value>
+            <spirit:value>9e98cb88</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -528,7 +528,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/fc1_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4a04d48a</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_3241fd11</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -611,7 +611,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:supportedFamilies>
-        <xilinx:family xilinx:lifeCycle="Pre-Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynquplus</xilinx:family>
       </xilinx:supportedFamilies>
       <xilinx:taxonomies>
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
@@ -619,12 +619,12 @@
       <xilinx:displayName>Fc1_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-09-25T03:22:21Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2025-10-02T05:05:07Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="602e47d1"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a24f8a22"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="98353195"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="1ef9c8d6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="aa56afb2"/>
     </xilinx:packagingInfo>

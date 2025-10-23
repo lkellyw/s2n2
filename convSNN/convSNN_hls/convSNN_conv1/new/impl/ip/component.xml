@@ -184,7 +184,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>40937881</spirit:value>
+            <spirit:value>21b6a5a9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -200,7 +200,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f2cf03bd</spirit:value>
+            <spirit:value>0e6b8555</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -216,7 +216,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>fa331a17</spirit:value>
+            <spirit:value>efda0d7c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -232,7 +232,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6b9bafee</spirit:value>
+            <spirit:value>2b2aef71</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -619,7 +619,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/conv1_lif_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_9d619bf2</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_3fdd490a</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -737,7 +737,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:supportedFamilies>
-        <xilinx:family xilinx:lifeCycle="Pre-Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynquplus</xilinx:family>
       </xilinx:supportedFamilies>
       <xilinx:taxonomies>
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
@@ -745,12 +745,12 @@
       <xilinx:displayName>Conv1_lif_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-09-25T03:22:33Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2025-10-02T04:47:53Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="602e47d1"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7f67a7c2"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="06d7818d"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="1edc710b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="d7c6f67f"/>
     </xilinx:packagingInfo>

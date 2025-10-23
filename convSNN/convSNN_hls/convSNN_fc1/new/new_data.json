@@ -7,9 +7,9 @@
   "GenerateBdFiles": "0",
   "HostMachineBits": "64",
   "Target": {
-    "Family": "virtexuplus",
-    "Device": "xcvu9p",
-    "Package": "-flga2577",
+    "Family": "zynquplus",
+    "Device": "xczu9eg",
+    "Package": "-ffvb1156",
     "Speed": "-2-e"
   },
   "HlsSolution": {"Config": [
@@ -241,7 +241,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "2.721"
+          "Estimate": "3.282"
         },
         "Loops": [{
             "Name": "Loop 1",
@@ -270,7 +270,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "2.721"
+          "Estimate": "3.282"
         },
         "Area": {
           "FF": "1139",
@@ -292,7 +292,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-09-25 03:21:59 UTC",
+    "Time": "2025-10-02 05:04:54 UTC",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }

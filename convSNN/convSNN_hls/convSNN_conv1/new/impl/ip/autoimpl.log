@@ -5,7 +5,8 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:02 ; elapsed = 00:00:50 . Memory (MB): peak = 2097.191 ; gain = 0.023 ; free physical = 122673 ; free virtual = 449455
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 25 03:22:33 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  2 04:47:53 2025...

@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>virtexuplus</ProductFamily>
-<Part>xcvu9p-flga2577-2-e</Part>
+<ProductFamily>zynquplus</ProductFamily>
+<Part>xczu9eg-ffvb1156-2-e</Part>
 <TopModelName>Matrix_Vector_Activa</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
@@ -17,7 +17,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.205</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.826</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -49,11 +49,11 @@
 <DSP48E>0</DSP48E>
 </Resources>
 <AvailableResources>
-<BRAM_18K>4320</BRAM_18K>
-<DSP48E>6840</DSP48E>
-<FF>2364480</FF>
-<LUT>1182240</LUT>
-<URAM>960</URAM>
+<BRAM_18K>1824</BRAM_18K>
+<DSP48E>2520</DSP48E>
+<FF>548160</FF>
+<LUT>274080</LUT>
+<URAM>0</URAM>
 </AvailableResources>
 </AreaEstimates>
 

@@ -7,9 +7,9 @@
   "GenerateBdFiles": "0",
   "HostMachineBits": "64",
   "Target": {
-    "Family": "virtexuplus",
-    "Device": "xcvu9p",
-    "Package": "-flga2577",
+    "Family": "zynquplus",
+    "Device": "xczu9eg",
+    "Package": "-ffvb1156",
     "Speed": "-2-e"
   },
   "HlsSolution": {"Config": [
@@ -290,7 +290,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "1.458"
+          "Estimate": "1.838"
         },
         "Area": {
           "FF": "3",
@@ -312,7 +312,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "4.628"
+          "Estimate": "5.258"
         },
         "Loops": [{
             "Name": "Loop 1",
@@ -341,7 +341,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "4.628"
+          "Estimate": "5.258"
         },
         "Area": {
           "DSP48E": "2",
@@ -363,7 +363,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "4.205"
+          "Estimate": "4.826"
         },
         "Loops": [{
             "Name": "Loop 1",
@@ -392,7 +392,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "4.628"
+          "Estimate": "5.258"
         },
         "Area": {
           "BRAM_18K": "32",
@@ -414,7 +414,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-09-25 03:22:16 UTC",
+    "Time": "2025-10-02 04:44:45 UTC",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }

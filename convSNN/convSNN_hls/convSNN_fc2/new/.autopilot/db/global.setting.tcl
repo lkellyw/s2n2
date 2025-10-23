@@ -39,7 +39,7 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xcvu9p:-flga2577:-2-e
+set TargetInfo xczu9eg:-ffvb1156:-2-e
 set SourceFiles {sc {} c {/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp /home/coder/Desktop/s2n2/convSNN/memdata.h /home/coder/Desktop/s2n2/convSNN/fc2_weights.hpp /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp /home/coder/Desktop/s2n2/convSNN/configSNN.h}}
 set SourceFlags {sc {} c {{ } {} { } {} { } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {}}}
 set DirectiveFile /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/new/new.directive
@@ -59,5 +59,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus xilinx/virtexuplus/virtexuplus_fpv7}}}
+set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus xilinx/virtexuplus/virtexuplus_fpv7 xilinx/zynq/zynq xilinx/zynq/zynq_fpv6 xilinx/zynquplus/zynquplus xilinx/zynquplus/zynquplus_fpv7}}}
 set HPFPO 0

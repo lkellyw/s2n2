@@ -1,0 +1,143 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'conv1_lif_top'" level="0">
+<item name = "Date">Thu Oct 23 00:40:13 2025
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">convSNN_conv1</item>
+<item name = "Solution">xcvu9p-flga2577-2-e</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.628 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="Matrix_Vector_Activa_U0">Matrix_Vector_Activa, ?, ?, ?, ?, ?, ?, none</column>
+<column name="ConvolutionInputGene_U0">ConvolutionInputGene, ?, ?, ?, ?, ?, ?, none</column>
+<column name="Block_ZN8ap_fixedIL_U0">Block_ZN8ap_fixedIL, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="conv1_lif_top_entry3_U0">conv1_lif_top_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 30, -</column>
+<column name="FIFO">0, -, 20, 148, -</column>
+<column name="Instance">32, 4, 1494, 4542, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 36, -</column>
+<column name="Register">-, -, 6, -, -</column>
+<specialColumn name="Available SLR">1440, 2280, 788160, 394080, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">2, ~0, ~0, 1, 0</specialColumn>
+<specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="Block_ZN8ap_fixedIL_U0">Block_ZN8ap_fixedIL, 0, 2, 32, 49, 0</column>
+<column name="ConvolutionInputGene_U0">ConvolutionInputGene, 0, 2, 491, 1426, 0</column>
+<column name="Matrix_Vector_Activa_U0">Matrix_Vector_Activa, 32, 0, 968, 3029, 0</column>
+<column name="conv1_lif_top_entry3_U0">conv1_lif_top_entry3, 0, 0, 3, 38, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="convInp_V_V_U">0, 5, 0, -, 2, 3, 6</column>
+<column name="mul_ln124_loc_channe_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="numReps_c8_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="numReps_c_U">0, 5, 0, -, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ConvolutionInputGene_U0_ap_ready_count">+, 0, 0, 9, 2, 1</column>
+<column name="conv1_lif_top_entry3_U0_ap_ready_count">+, 0, 0, 9, 2, 1</column>
+<column name="ConvolutionInputGene_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="conv1_lif_top_entry3_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ConvolutionInputGene_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_conv1_lif_top_entry3_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ConvolutionInputGene_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="ap_sync_reg_ConvolutionInputGene_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_conv1_lif_top_entry3_U0_ap_ready">9, 2, 1, 2</column>
+<column name="conv1_lif_top_entry3_U0_ap_ready_count">9, 2, 2, 4</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ConvolutionInputGene_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="ap_sync_reg_ConvolutionInputGene_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_conv1_lif_top_entry3_U0_ap_ready">1, 0, 1, 0</column>
+<column name="conv1_lif_top_entry3_U0_ap_ready_count">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="in_V_V_dout">in, 3, ap_fifo, in_V_V, pointer</column>
+<column name="in_V_V_empty_n">in, 1, ap_fifo, in_V_V, pointer</column>
+<column name="in_V_V_read">out, 1, ap_fifo, in_V_V, pointer</column>
+<column name="out_V_V_din">out, 32, ap_fifo, out_V_V, pointer</column>
+<column name="out_V_V_full_n">in, 1, ap_fifo, out_V_V, pointer</column>
+<column name="out_V_V_write">out, 1, ap_fifo, out_V_V, pointer</column>
+<column name="numReps">in, 32, ap_none, numReps, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, conv1_lif_top, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, conv1_lif_top, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, conv1_lif_top, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, conv1_lif_top, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, conv1_lif_top, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, conv1_lif_top, return value</column>
+</table>
+</item>
+</section>
+</profile>

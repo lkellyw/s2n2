@@ -19,7 +19,7 @@ add_files $finn_root/bnn-library.h
 add_files -tb $src_dir/fc1_tb.cpp     -cflags "-std=c++0x -I$finn_root"
 
 # Synthesis settings
-open_solution "new"
+open_solution "xcvu9p-flga2577-2-e"
 set_part {xcvu9p-flga2577-2-e}
 create_clock -period 10 -name default   ;# 100 MHz (use 4.0 for 250 MHz)
 
