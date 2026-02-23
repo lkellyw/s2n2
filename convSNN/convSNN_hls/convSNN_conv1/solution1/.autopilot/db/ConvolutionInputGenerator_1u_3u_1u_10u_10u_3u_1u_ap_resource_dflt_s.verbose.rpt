@@ -1,0 +1,613 @@
+
+
+================================================================
+== Vitis HLS Report for 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s'
+================================================================
+* Date:           Mon Feb 23 22:37:19 2026
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        convSNN_conv1
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.170 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                                |                                                                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                                    Instance                                    |                                Module                                |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +--------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2_fu_48  |ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +--------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|        2|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     2|      310|     1103|    -|
+|Memory               |        0|     -|        8|       10|    0|
+|Multiplexer          |        -|     -|        -|       47|    -|
+|Register             |        -|     -|       44|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     2|      362|     1162|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+------+-----+
+    |                                    Instance                                    |                                Module                                | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +--------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+------+-----+
+    |grp_ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2_fu_48  |ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2  |        0|   0|  310|  1083|    0|
+    |mul_32ns_8ns_39_1_1_U8                                                          |mul_32ns_8ns_39_1_1                                                   |        0|   2|    0|    20|    0|
+    +--------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+------+-----+
+    |Total                                                                           |                                                                      |        0|   2|  310|  1103|    0|
+    +--------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +--------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |    Memory    |                                      Module                                      | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |inputBuf_U    |ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_inputBuf_bkb  |        0|  4|   5|    0|    10|    3|     1|           30|
+    |inputBuf_1_U  |ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_inputBuf_bkb  |        0|  4|   5|    0|    10|    3|     1|           30|
+    +--------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total         |                                                                                  |        0|  8|  10|    0|    20|    6|     2|           60|
+    +--------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm        |  20|          4|    1|          4|
+    |ap_done          |   9|          2|    1|          2|
+    |convInp_i_write  |   9|          2|    1|          2|
+    |in_r_read        |   9|          2|    1|          2|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            |  47|         10|    4|         10|
+    +-----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                             Name                                            | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                                    |   3|   0|    3|          0|
+    |ap_done_reg                                                                                  |   1|   0|    1|          0|
+    |bound_reg_74                                                                                 |  39|   0|   39|          0|
+    |grp_ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2_fu_48_ap_start_reg  |   1|   0|    1|          0|
+    +---------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                        |  44|   0|   44|          0|
+    +---------------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |                               Source Object                               |    C Type    |
++--------------------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>|  return value|
+|ap_continue               |   in|    1|  ap_ctrl_hs|  ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>|  return value|
+|in_r_dout                 |   in|    3|     ap_fifo|                                                                       in_r|       pointer|
+|in_r_empty_n              |   in|    1|     ap_fifo|                                                                       in_r|       pointer|
+|in_r_read                 |  out|    1|     ap_fifo|                                                                       in_r|       pointer|
+|convInp_i_din             |  out|    3|     ap_fifo|                                                                  convInp_i|       pointer|
+|convInp_i_num_data_valid  |   in|    2|     ap_fifo|                                                                  convInp_i|       pointer|
+|convInp_i_fifo_cap        |   in|    2|     ap_fifo|                                                                  convInp_i|       pointer|
+|convInp_i_full_n          |   in|    1|     ap_fifo|                                                                  convInp_i|       pointer|
+|convInp_i_write           |  out|    1|     ap_fifo|                                                                  convInp_i|       pointer|
+|numReps                   |   in|   32|     ap_none|                                                                    numReps|        scalar|
++--------------------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.65>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%numReps_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %numReps"   --->   Operation 4 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.65ns)   --->   "%inputBuf = alloca i64 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180]   --->   Operation 5 'alloca' 'inputBuf' <Predicate = true> <Delay = 0.65> <CoreInst = "RAM_2P">   --->   Core 92 'RAM_2P' <Latency = 1> <II = 1> <Delay = 0.65> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 10> <RAM>
+ST_1 : Operation 6 [1/1] (0.65ns)   --->   "%inputBuf_1 = alloca i64 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180]   --->   Operation 6 'alloca' 'inputBuf_1' <Predicate = true> <Delay = 0.65> <CoreInst = "RAM_2P">   --->   Core 92 'RAM_2P' <Latency = 1> <II = 1> <Delay = 0.65> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 10> <RAM>
+
+State 2 <SV = 1> <Delay = 3.17>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%cast = zext i32 %numReps_read"   --->   Operation 7 'zext' 'cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (3.17ns)   --->   "%bound = mul i39 %cast, i39 110"   --->   Operation 8 'mul' 'bound' <Predicate = true> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 9 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2, i39 %bound, i3 %in_r, i3 %inputBuf, i3 %inputBuf_1, i3 %convInp_i"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %convInp_i, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %in_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln75 = specmemcore void @_ssdm_op_SpecMemCore, i3 %inputBuf_1, i64 666, i64 21, i64 18446744073709551615" [/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75->/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:183]   --->   Operation 13 'specmemcore' 'specmemcore_ln75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%specmemcore_ln75 = specmemcore void @_ssdm_op_SpecMemCore, i3 %inputBuf, i64 666, i64 21, i64 18446744073709551615" [/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75->/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:183]   --->   Operation 14 'specmemcore' 'specmemcore_ln75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln0 = call void @ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2, i39 %bound, i3 %in_r, i3 %inputBuf, i3 %inputBuf_1, i3 %convInp_i"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln271 = ret" [/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:271]   --->   Operation 16 'ret' 'ret_ln271' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ in_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ convInp_i]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ numReps]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+numReps_read      (read         ) [ 0010]
+inputBuf          (alloca       ) [ 0011]
+inputBuf_1        (alloca       ) [ 0011]
+cast              (zext         ) [ 0000]
+bound             (mul          ) [ 0001]
+empty             (wait         ) [ 0000]
+specinterface_ln0 (specinterface) [ 0000]
+specinterface_ln0 (specinterface) [ 0000]
+specmemcore_ln75  (specmemcore  ) [ 0000]
+specmemcore_ln75  (specmemcore  ) [ 0000]
+call_ln0          (call         ) [ 0000]
+ret_ln271         (ret          ) [ 0000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="in_r">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in_r"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="convInp_i">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="convInp_i"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="numReps">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="numReps"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Wait"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1004" name="inputBuf_alloca_fu_34">
+<pin_list>
+<pin id="35" dir="0" index="0" bw="1" slack="0"/>
+<pin id="36" dir="1" index="1" bw="3" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="inputBuf/1 "/>
+</bind>
+</comp>
+
+<comp id="38" class="1004" name="inputBuf_1_alloca_fu_38">
+<pin_list>
+<pin id="39" dir="0" index="0" bw="1" slack="0"/>
+<pin id="40" dir="1" index="1" bw="3" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="inputBuf_1/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="numReps_read_read_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="32" slack="0"/>
+<pin id="44" dir="0" index="1" bw="32" slack="0"/>
+<pin id="45" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="numReps_read/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="grp_ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="0" slack="0"/>
+<pin id="50" dir="0" index="1" bw="39" slack="0"/>
+<pin id="51" dir="0" index="2" bw="3" slack="0"/>
+<pin id="52" dir="0" index="3" bw="3" slack="2147483647"/>
+<pin id="53" dir="0" index="4" bw="3" slack="2147483647"/>
+<pin id="54" dir="0" index="5" bw="3" slack="0"/>
+<pin id="55" dir="1" index="6" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/2 "/>
+</bind>
+</comp>
+
+<comp id="59" class="1004" name="bound_fu_59">
+<pin_list>
+<pin id="60" dir="0" index="0" bw="32" slack="0"/>
+<pin id="61" dir="0" index="1" bw="8" slack="0"/>
+<pin id="62" dir="1" index="2" bw="39" slack="0"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="bound/2 "/>
+</bind>
+</comp>
+
+<comp id="65" class="1004" name="cast_fu_65">
+<pin_list>
+<pin id="66" dir="0" index="0" bw="32" slack="1"/>
+<pin id="67" dir="1" index="1" bw="39" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="cast/2 "/>
+</bind>
+</comp>
+
+<comp id="69" class="1005" name="numReps_read_reg_69">
+<pin_list>
+<pin id="70" dir="0" index="0" bw="32" slack="1"/>
+<pin id="71" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="numReps_read "/>
+</bind>
+</comp>
+
+<comp id="74" class="1005" name="bound_reg_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="39" slack="1"/>
+<pin id="76" dir="1" index="1" bw="39" slack="1"/>
+</pin_list>
+<bind>
+<opset="bound "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="37"><net_src comp="8" pin="0"/><net_sink comp="34" pin=0"/></net>
+
+<net id="41"><net_src comp="8" pin="0"/><net_sink comp="38" pin=0"/></net>
+
+<net id="46"><net_src comp="6" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="47"><net_src comp="4" pin="0"/><net_sink comp="42" pin=1"/></net>
+
+<net id="56"><net_src comp="14" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="57"><net_src comp="0" pin="0"/><net_sink comp="48" pin=2"/></net>
+
+<net id="58"><net_src comp="2" pin="0"/><net_sink comp="48" pin=5"/></net>
+
+<net id="63"><net_src comp="10" pin="0"/><net_sink comp="59" pin=1"/></net>
+
+<net id="64"><net_src comp="59" pin="2"/><net_sink comp="48" pin=1"/></net>
+
+<net id="68"><net_src comp="65" pin="1"/><net_sink comp="59" pin=0"/></net>
+
+<net id="72"><net_src comp="42" pin="2"/><net_sink comp="69" pin=0"/></net>
+
+<net id="73"><net_src comp="69" pin="1"/><net_sink comp="65" pin=0"/></net>
+
+<net id="77"><net_src comp="59" pin="2"/><net_sink comp="74" pin=0"/></net>
+
+<net id="78"><net_src comp="74" pin="1"/><net_sink comp="48" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: in_r | {}
+	Port: convInp_i | {2 3 }
+ - Input state : 
+	Port: ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt> : in_r | {2 3 }
+	Port: ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt> : numReps | {1 }
+  - Chain level:
+	State 1
+	State 2
+		bound : 1
+		call_ln0 : 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
+| Operation|                                 Functional Unit                                |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
+|   call   | grp_ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2_fu_48 |    0    |  1.548  |   353   |   921   |
+|----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
+|    mul   |                                   bound_fu_59                                  |    2    |    0    |    0    |    20   |
+|----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
+|   read   |                             numReps_read_read_fu_42                            |    0    |    0    |    0    |    0    |
+|----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
+|   zext   |                                   cast_fu_65                                   |    0    |    0    |    0    |    0    |
+|----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
+|   Total  |                                                                                |    2    |  1.548  |   353   |   941   |
+|----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
+
+Memories:
++----------+--------+--------+--------+--------+
+|          |  BRAM  |   FF   |   LUT  |  URAM  |
++----------+--------+--------+--------+--------+
+| inputBuf |    0   |    4   |    5   |    0   |
+|inputBuf_1|    0   |    4   |    5   |    0   |
++----------+--------+--------+--------+--------+
+|   Total  |    0   |    8   |   10   |    0   |
++----------+--------+--------+--------+--------+
+
+* Register list:
++-------------------+--------+
+|                   |   FF   |
++-------------------+--------+
+|    bound_reg_74   |   39   |
+|numReps_read_reg_69|   32   |
++-------------------+--------+
+|       Total       |   71   |
++-------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                      Comp                                      |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|--------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+| grp_ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2_fu_48 |  p1  |   2  |  39  |   78   ||    9    |
+|--------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                      Total                                     |      |      |      |   78   ||  0.387  ||    9    |
+|--------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    -   |    2   |    1   |   353  |   941  |    -   |
+|   Memory  |    0   |    -   |    -   |    8   |   10   |    0   |
+|Multiplexer|    -   |    -   |    0   |    -   |    9   |    -   |
+|  Register |    -   |    -   |    -   |   71   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |    0   |    2   |    1   |   432  |   960  |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

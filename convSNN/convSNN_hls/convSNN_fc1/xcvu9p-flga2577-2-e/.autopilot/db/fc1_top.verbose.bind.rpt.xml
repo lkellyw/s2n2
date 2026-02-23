@@ -1,11 +1,11 @@
 <profile>
 
-<section name = "Vivado HLS Report for 'fc1_top'" level="0">
-<item name = "Date">Thu Oct 23 00:43:25 2025
+<section name = "Vitis HLS Report for 'fc1_top'" level="0">
+<item name = "Date">Sun Feb 22 04:32:18 2026
 </item>
-<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">convSNN_fc1</item>
-<item name = "Solution">xcvu9p-flga2577-2-e</item>
+<item name = "Solution">xcvu9p-flga2577-2-e (Vivado IP Flow Target)</item>
 <item name = "Product family">virtexuplus</item>
 <item name = "Target device">xcvu9p-flga2577-2-e</item>
 </section>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.721 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 2.374 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_Matrix_Vector_Activa_fu_38">Matrix_Vector_Activa, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_Matrix_Vector_Activate_Batch_fu_36">Matrix_Vector_Activate_Batch, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

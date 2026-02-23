@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 23 02:00:11 2025
+# Process ID: 28385
+# Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls
+# Command line: vivado
+# Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.log
+# Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets reset_rtl_0_0_1_1] [get_bd_ports reset_rtl_0_0_1]
+delete_bd_objs [get_bd_nets clk_100MHz_2_1] [get_bd_nets clk_wiz_2_locked] [get_bd_cells clk_wiz_2]
+delete_bd_objs [get_bd_ports clk_100MHz_2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins fc2_top_0/ap_clk]
+endgroup
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets conv1_lif_top_0_out_V_V_write] [get_bd_nets axis_dwidth_converter_0_s_axis_tready] [get_bd_nets conv1_lif_top_0_out_V_V_din] [get_bd_nets axis_dwidth_converter_0_m_axis_tvalid] [get_bd_nets fc1_top_0_in_V_V_read] [get_bd_nets axis_dwidth_converter_0_m_axis_tdata] [get_bd_cells axis_dwidth_converter_0]
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_reset] [get_bd_nets xlconstant_1_dout] [get_bd_nets conv1_lif_top_0_ap_done] [get_bd_cells conv1_lif_top_0]
+undo
+undo
+undo
+undo
+undo
+undo
+create_bd_design "design_2"
+update_compile_order -fileset sources_1
+current_bd_design [get_bd_designs design_1]
+delete_bd_objs [get_bd_nets reset_rtl_0_0_1_1] [get_bd_nets clk_100MHz_2_1] [get_bd_nets clk_wiz_2_locked] [get_bd_cells clk_wiz_2]
+delete_bd_objs [get_bd_ports reset_rtl_0_0_1]
+delete_bd_objs [get_bd_nets clk_wiz_2_clk_out1] [get_bd_nets rst_clk_wiz_2_100M_peripheral_reset] [get_bd_cells rst_clk_wiz_2_100M]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins fc2_top_0/ap_clk]
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets conv1_lif_top_0_out_V_V_write] [get_bd_nets axis_dwidth_converter_0_s_axis_tready] [get_bd_nets conv1_lif_top_0_out_V_V_din] [get_bd_nets axis_dwidth_converter_0_m_axis_tvalid] [get_bd_nets fc1_top_0_in_V_V_read] [get_bd_nets axis_dwidth_converter_0_m_axis_tdata] [get_bd_cells axis_dwidth_converter_0]
+delete_bd_objs [get_bd_nets xlconstant_1_dout] [get_bd_nets conv1_lif_top_0_ap_done] [get_bd_cells conv1_lif_top_0]
+set_property location {3 893 349} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins fc1_top_0/ap_start]
+delete_bd_objs [get_bd_ports clk_100MHz_2]
+validate_bd_design
+validate_bd_design -force
+make_wrapper -files [get_files /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd] -top
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1

@@ -11,37 +11,37 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 68 \
-    name in_V_V \
+    id 7 \
+    name in_r \
     type fifo \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_in_V_V \
+    corename dc_in_r \
     op interface \
-    ports { in_V_V_dout { I 320 vector } in_V_V_empty_n { I 1 bit } in_V_V_read { O 1 bit } } \
+    ports { in_r_dout { I 16 vector } in_r_empty_n { I 1 bit } in_r_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 69 \
-    name out_V_V \
+    id 8 \
+    name out_r \
     type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_out_V_V \
+    corename dc_out_r \
     op interface \
-    ports { out_V_V_din { O 64 vector } out_V_V_full_n { I 1 bit } out_V_V_write { O 1 bit } } \
+    ports { out_r_din { O 8 vector } out_r_full_n { I 1 bit } out_r_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 70 \
+    id 9 \
     name numReps \
     type other \
     dir I \

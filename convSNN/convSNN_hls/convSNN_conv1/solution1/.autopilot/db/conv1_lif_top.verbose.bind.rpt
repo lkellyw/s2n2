@@ -1,13 +1,13 @@
 
 
 ================================================================
-== Vivado HLS Report for 'conv1_lif_top'
+== Vitis HLS Report for 'conv1_lif_top'
 ================================================================
-* Date:           Thu Sep 25 03:15:42 2025
+* Date:           Mon Feb 23 22:37:13 2026
 
-* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        convSNN_conv1
-* Solution:       solution1
+* Solution:       solution1 (Vivado IP Flow Target)
 * Product family: virtexuplus
 * Target device:  xcvu9p-flga2577-2-e
 
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 4.628 ns |   1.25 ns  |
+    |ap_clk  |  10.00 ns|  3.170 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,20 +29,19 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
     |   min   |   max   |    min   |    max   | min | max |   Type   |
     +---------+---------+----------+----------+-----+-----+----------+
-    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
     +---------+---------+----------+----------+-----+-----+----------+
 
     + Detail: 
         * Instance: 
-        +------------------------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
-        |                                                |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-        |                    Instance                    |        Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
-        +------------------------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_Matrix_Vector_Activa_fu_68                  |Matrix_Vector_Activa  |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
-        |grp_ConvolutionInputGene_fu_76                  |ConvolutionInputGene  |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
-        |mul_ln124_loc_channe_Block_ZN8ap_fixedIL_fu_84  |Block_ZN8ap_fixedIL   |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
-        |call_ln24_conv1_lif_top_entry3_fu_90            |conv1_lif_top_entry3  |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
-        +------------------------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                               |                                                                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                                    Instance                                   |                                Module                               |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_fu_56  |ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |mul_ln125_loc_channel_Block_entry13_proc_fu_65                                 |Block_entry13_proc                                                   |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+        |grp_Matrix_Vector_Activate_Batch_fu_70                                         |Matrix_Vector_Activate_Batch                                         |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
         N/A
@@ -73,53 +72,44 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 5
+* Number of FSM states : 4
 * Pipeline : 0
 * Dataflow Pipeline: 1
-  DF-Pipeline-0: Size = 5, States = { 1 2 3 4 5 }
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
 
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
 3 --> 4 
-4 --> 5 
-5 --> 
+4 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.45>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%numReps_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %numReps)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 6 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%numReps_c8 = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 7 'alloca' 'numReps_c8' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%numReps_c = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 8 'alloca' 'numReps_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%convInp_V_V = alloca i3, align 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 9 'alloca' 'convInp_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 10 [1/1] (1.45ns)   --->   "call fastcc void @conv1_lif_top.entry3(i32 %numReps_read, i32* %numReps_c, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 10 'call' <Predicate = true> <Delay = 1.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%numReps_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %numReps"   --->   Operation 5 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%convInp = alloca i64 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 6 'alloca' 'convInp' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 3> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln120 = call void @ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>, i3 %in_r, i3 %convInp, i32 %numReps_read" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:120->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 7 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 11 [2/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 11 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln120 = call void @ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>, i3 %in_r, i3 %convInp, i32 %numReps_read" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:120->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 8 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 12 [1/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 3 <SV = 2> <Delay = 3.17>
+ST_3 : Operation 9 [1/1] (3.17ns)   --->   "%mul_ln125_loc_channel = call i32 @Block_entry13_proc, i32 %numReps_read"   --->   Operation 9 'call' 'mul_ln125_loc_channel' <Predicate = true> <Delay = 3.17> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_3 : Operation 10 [2/2] (2.69ns)   --->   "%call_ln122 = call void @Matrix_Vector_Activate_Batch, i3 %convInp, i32 %out_r, i32 %mul_ln125_loc_channel" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:122->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 10 'call' 'call_ln122' <Predicate = true> <Delay = 2.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%mul_ln124_loc_channe = call fastcc i32 @Block__ZN8ap_fixedIL(i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 13 'call' 'mul_ln124_loc_channe' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_4 : Operation 14 [2/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i3* %convInp_V_V, i32* %out_V_V, i32 %mul_ln124_loc_channe)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 14 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-
-State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str) nounwind" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 15 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 16 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 16 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 17 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i3* %in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' 'empty_8' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i3* %in_V_V), !map !174"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_V_V), !map !178"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %numReps), !map !182"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 21 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @convInp_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i3* %convInp_V_V, i3* %convInp_V_V)"   --->   Operation 21 'specchannel' 'empty_9' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecInterface(i3* %convInp_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 22 'specinterface' 'empty_10' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @conv1_lif_top_str) nounwind"   --->   Operation 23 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @numReps_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %numReps_c, i32* %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 24 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 25 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %numReps_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 25 'specinterface' 'empty_12' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @numReps_c8_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %numReps_c8, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 26 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %numReps_c8, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 27 'specinterface' 'empty_14' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 28 [1/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i3* %convInp_V_V, i32* %out_V_V, i32 %mul_ln124_loc_channe)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 28 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_5 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:54]   --->   Operation 29 'ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln23 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:23]   --->   Operation 11 'specdataflowpipeline' 'specdataflowpipeline_ln23' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%spectopmodule_ln18 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:18]   --->   Operation 12 'spectopmodule' 'spectopmodule_ln18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %in_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %in_r"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %out_r"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %numReps"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %numReps, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @convInp_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i3 %convInp, i3 %convInp"   --->   Operation 19 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %convInp, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln122 = call void @Matrix_Vector_Activate_Batch, i3 %convInp, i32 %out_r, i32 %mul_ln125_loc_channel" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:122->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 21 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%ret_ln55 = ret" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:55]   --->   Operation 22 'ret' 'ret_ln55' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -133,8 +123,8 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ in_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ out_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ in_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
 Port [ numReps]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
@@ -142,48 +132,42 @@ Port [ numReps]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; ex
 
 <LifeTime>
 <method=bitvector/>
-numReps_read              (read                ) [ 000000]
-numReps_c8                (alloca              ) [ 011111]
-numReps_c                 (alloca              ) [ 011111]
-convInp_V_V               (alloca              ) [ 001111]
-call_ln24                 (call                ) [ 000000]
-call_ln121                (call                ) [ 000000]
-mul_ln124_loc_channe      (call                ) [ 000001]
-specdataflowpipeline_ln24 (specdataflowpipeline) [ 000000]
-empty                     (specinterface       ) [ 000000]
-empty_8                   (specinterface       ) [ 000000]
-specbitsmap_ln0           (specbitsmap         ) [ 000000]
-specbitsmap_ln0           (specbitsmap         ) [ 000000]
-specbitsmap_ln0           (specbitsmap         ) [ 000000]
-empty_9                   (specchannel         ) [ 000000]
-empty_10                  (specinterface       ) [ 000000]
-spectopmodule_ln0         (spectopmodule       ) [ 000000]
-empty_11                  (specchannel         ) [ 000000]
-empty_12                  (specinterface       ) [ 000000]
-empty_13                  (specchannel         ) [ 000000]
-empty_14                  (specinterface       ) [ 000000]
-call_ln124                (call                ) [ 000000]
-ret_ln54                  (ret                 ) [ 000000]
+numReps_read              (read                ) [ 00110]
+convInp                   (alloca              ) [ 01111]
+call_ln120                (call                ) [ 00000]
+mul_ln125_loc_channel     (call                ) [ 00001]
+specdataflowpipeline_ln23 (specdataflowpipeline) [ 00000]
+spectopmodule_ln18        (spectopmodule       ) [ 00000]
+specinterface_ln0         (specinterface       ) [ 00000]
+specbitsmap_ln0           (specbitsmap         ) [ 00000]
+specinterface_ln0         (specinterface       ) [ 00000]
+specbitsmap_ln0           (specbitsmap         ) [ 00000]
+specbitsmap_ln0           (specbitsmap         ) [ 00000]
+specinterface_ln0         (specinterface       ) [ 00000]
+empty                     (specchannel         ) [ 00000]
+specinterface_ln0         (specinterface       ) [ 00000]
+call_ln122                (call                ) [ 00000]
+ret_ln55                  (ret                 ) [ 00000]
 </LifeTime>
 
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="in_V_V">
+<comp id="0" class="1000" name="in_r">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="in_V_V"/></StgValue>
+<StgValue><ssdm name="in_r"/></StgValue>
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="out_V_V">
+<comp id="2" class="1000" name="out_r">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="out_V_V"/></StgValue>
+<StgValue><ssdm name="out_r"/></StgValue>
 </bind>
 </comp>
 
@@ -219,7 +203,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="conv1_lif_top.entry3"/></StgValue>
+<StgValue><ssdm name="ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>"/></StgValue>
 </bind>
 </comp>
 
@@ -228,7 +212,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="ConvolutionInputGene"/></StgValue>
+<StgValue><ssdm name="Block_entry13_proc"/></StgValue>
 </bind>
 </comp>
 
@@ -237,16 +221,16 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="15" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="Block__ZN8ap_fixedIL"/></StgValue>
+<StgValue><ssdm name="Matrix_Vector_Activate_Batch"/></StgValue>
 </bind>
 </comp>
 
 <comp id="16" class="1001" name="const_16">
 <pin_list>
-<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="Matrix_Vector_Activa"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
 </bind>
 </comp>
 
@@ -255,7 +239,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -273,7 +257,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </bind>
 </comp>
 
@@ -282,7 +266,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
 </bind>
 </comp>
 
@@ -291,7 +275,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -300,7 +284,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
 </bind>
 </comp>
 
@@ -309,7 +293,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty_0"/></StgValue>
 </bind>
 </comp>
 
@@ -318,7 +302,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
 </bind>
 </comp>
 
@@ -327,7 +311,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+<StgValue><ssdm name="empty_1"/></StgValue>
 </bind>
 </comp>
 
@@ -345,7 +329,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="convInp_OC_V_OC_V_st"/></StgValue>
+<StgValue><ssdm name="convInp_str"/></StgValue>
 </bind>
 </comp>
 
@@ -363,7 +347,7 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+<StgValue><ssdm name="p_str"/></StgValue>
 </bind>
 </comp>
 
@@ -372,66 +356,26 @@ ret_ln54                  (ret                 ) [ 000000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="conv1_lif_top_str"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
-<comp id="46" class="1001" name="const_46">
+<comp id="46" class="1004" name="convInp_fu_46">
 <pin_list>
-<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="numReps_c_str"/></StgValue>
-</bind>
-</comp>
-
-<comp id="48" class="1001" name="const_48">
-<pin_list>
-<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="numReps_c8_str"/></StgValue>
-</bind>
-</comp>
-
-<comp id="50" class="1004" name="numReps_c8_fu_50">
-<pin_list>
-<pin id="51" dir="0" index="0" bw="1" slack="0"/>
-<pin id="52" dir="1" index="1" bw="32" slack="0"/>
+<pin id="47" dir="0" index="0" bw="1" slack="0"/>
+<pin id="48" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="numReps_c8/1 "/>
+<opset="convInp/1 "/>
 </bind>
 </comp>
 
-<comp id="54" class="1004" name="numReps_c_fu_54">
+<comp id="50" class="1004" name="numReps_read_read_fu_50">
 <pin_list>
-<pin id="55" dir="0" index="0" bw="1" slack="0"/>
-<pin id="56" dir="1" index="1" bw="32" slack="0"/>
-</pin_list>
-<bind>
-<opcode="alloca(26) " fcode="alloca"/>
-<opset="numReps_c/1 "/>
-</bind>
-</comp>
-
-<comp id="58" class="1004" name="convInp_V_V_fu_58">
-<pin_list>
-<pin id="59" dir="0" index="0" bw="1" slack="0"/>
-<pin id="60" dir="1" index="1" bw="3" slack="1"/>
-</pin_list>
-<bind>
-<opcode="alloca(26) " fcode="alloca"/>
-<opset="convInp_V_V/1 "/>
-</bind>
-</comp>
-
-<comp id="62" class="1004" name="numReps_read_read_fu_62">
-<pin_list>
-<pin id="63" dir="0" index="0" bw="32" slack="0"/>
-<pin id="64" dir="0" index="1" bw="32" slack="0"/>
-<pin id="65" dir="1" index="2" bw="32" slack="0"/>
+<pin id="51" dir="0" index="0" bw="32" slack="0"/>
+<pin id="52" dir="0" index="1" bw="32" slack="0"/>
+<pin id="53" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -439,150 +383,114 @@ ret_ln54                  (ret                 ) [ 000000]
 </bind>
 </comp>
 
-<comp id="68" class="1004" name="grp_Matrix_Vector_Activa_fu_68">
+<comp id="56" class="1004" name="grp_ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_fu_56">
 <pin_list>
-<pin id="69" dir="0" index="0" bw="0" slack="0"/>
-<pin id="70" dir="0" index="1" bw="3" slack="3"/>
-<pin id="71" dir="0" index="2" bw="32" slack="0"/>
-<pin id="72" dir="0" index="3" bw="32" slack="0"/>
-<pin id="73" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="57" dir="0" index="0" bw="0" slack="0"/>
+<pin id="58" dir="0" index="1" bw="3" slack="0"/>
+<pin id="59" dir="0" index="2" bw="3" slack="0"/>
+<pin id="60" dir="0" index="3" bw="32" slack="0"/>
+<pin id="61" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln124/4 "/>
+<opset="call_ln120/1 "/>
 </bind>
 </comp>
 
-<comp id="76" class="1004" name="grp_ConvolutionInputGene_fu_76">
+<comp id="65" class="1004" name="mul_ln125_loc_channel_Block_entry13_proc_fu_65">
 <pin_list>
-<pin id="77" dir="0" index="0" bw="0" slack="0"/>
-<pin id="78" dir="0" index="1" bw="3" slack="0"/>
-<pin id="79" dir="0" index="2" bw="3" slack="1"/>
-<pin id="80" dir="0" index="3" bw="32" slack="1"/>
-<pin id="81" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="66" dir="0" index="0" bw="32" slack="0"/>
+<pin id="67" dir="0" index="1" bw="32" slack="2"/>
+<pin id="68" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln121/2 "/>
+<opset="mul_ln125_loc_channel/3 "/>
 </bind>
 </comp>
 
-<comp id="84" class="1004" name="mul_ln124_loc_channe_Block_ZN8ap_fixedIL_fu_84">
+<comp id="70" class="1004" name="grp_Matrix_Vector_Activate_Batch_fu_70">
 <pin_list>
-<pin id="85" dir="0" index="0" bw="32" slack="0"/>
-<pin id="86" dir="0" index="1" bw="32" slack="3"/>
-<pin id="87" dir="1" index="2" bw="32" slack="0"/>
+<pin id="71" dir="0" index="0" bw="0" slack="0"/>
+<pin id="72" dir="0" index="1" bw="3" slack="2"/>
+<pin id="73" dir="0" index="2" bw="32" slack="0"/>
+<pin id="74" dir="0" index="3" bw="32" slack="0"/>
+<pin id="75" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="mul_ln124_loc_channe/4 "/>
+<opset="call_ln122/3 "/>
 </bind>
 </comp>
 
-<comp id="90" class="1004" name="call_ln24_conv1_lif_top_entry3_fu_90">
+<comp id="79" class="1005" name="numReps_read_reg_79">
 <pin_list>
-<pin id="91" dir="0" index="0" bw="0" slack="0"/>
-<pin id="92" dir="0" index="1" bw="32" slack="0"/>
-<pin id="93" dir="0" index="2" bw="32" slack="0"/>
-<pin id="94" dir="0" index="3" bw="32" slack="0"/>
-<pin id="95" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="80" dir="0" index="0" bw="32" slack="1"/>
+<pin id="81" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opcode="call(48) " fcode="call"/>
-<opset="call_ln24/1 "/>
+<opset="numReps_read "/>
 </bind>
 </comp>
 
-<comp id="98" class="1005" name="numReps_c8_reg_98">
+<comp id="85" class="1005" name="convInp_reg_85">
 <pin_list>
-<pin id="99" dir="0" index="0" bw="32" slack="0"/>
-<pin id="100" dir="1" index="1" bw="32" slack="0"/>
+<pin id="86" dir="0" index="0" bw="3" slack="0"/>
+<pin id="87" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
-<opset="numReps_c8 "/>
+<opset="convInp "/>
 </bind>
 </comp>
 
-<comp id="104" class="1005" name="numReps_c_reg_104">
+<comp id="91" class="1005" name="mul_ln125_loc_channel_reg_91">
 <pin_list>
-<pin id="105" dir="0" index="0" bw="32" slack="0"/>
-<pin id="106" dir="1" index="1" bw="32" slack="0"/>
+<pin id="92" dir="0" index="0" bw="32" slack="1"/>
+<pin id="93" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="numReps_c "/>
-</bind>
-</comp>
-
-<comp id="110" class="1005" name="convInp_V_V_reg_110">
-<pin_list>
-<pin id="111" dir="0" index="0" bw="3" slack="1"/>
-<pin id="112" dir="1" index="1" bw="3" slack="1"/>
-</pin_list>
-<bind>
-<opset="convInp_V_V "/>
-</bind>
-</comp>
-
-<comp id="116" class="1005" name="mul_ln124_loc_channe_reg_116">
-<pin_list>
-<pin id="117" dir="0" index="0" bw="32" slack="1"/>
-<pin id="118" dir="1" index="1" bw="32" slack="1"/>
-</pin_list>
-<bind>
-<opset="mul_ln124_loc_channe "/>
+<opset="mul_ln125_loc_channel "/>
 </bind>
 </comp>
 
 </comp_list>
 
 <net_list>
-<net id="53"><net_src comp="8" pin="0"/><net_sink comp="50" pin=0"/></net>
+<net id="49"><net_src comp="8" pin="0"/><net_sink comp="46" pin=0"/></net>
 
-<net id="57"><net_src comp="8" pin="0"/><net_sink comp="54" pin=0"/></net>
+<net id="54"><net_src comp="6" pin="0"/><net_sink comp="50" pin=0"/></net>
 
-<net id="61"><net_src comp="8" pin="0"/><net_sink comp="58" pin=0"/></net>
+<net id="55"><net_src comp="4" pin="0"/><net_sink comp="50" pin=1"/></net>
 
-<net id="66"><net_src comp="6" pin="0"/><net_sink comp="62" pin=0"/></net>
+<net id="62"><net_src comp="10" pin="0"/><net_sink comp="56" pin=0"/></net>
 
-<net id="67"><net_src comp="4" pin="0"/><net_sink comp="62" pin=1"/></net>
+<net id="63"><net_src comp="0" pin="0"/><net_sink comp="56" pin=1"/></net>
 
-<net id="74"><net_src comp="16" pin="0"/><net_sink comp="68" pin=0"/></net>
+<net id="64"><net_src comp="50" pin="2"/><net_sink comp="56" pin=3"/></net>
 
-<net id="75"><net_src comp="2" pin="0"/><net_sink comp="68" pin=2"/></net>
+<net id="69"><net_src comp="12" pin="0"/><net_sink comp="65" pin=0"/></net>
 
-<net id="82"><net_src comp="12" pin="0"/><net_sink comp="76" pin=0"/></net>
+<net id="76"><net_src comp="14" pin="0"/><net_sink comp="70" pin=0"/></net>
 
-<net id="83"><net_src comp="0" pin="0"/><net_sink comp="76" pin=1"/></net>
+<net id="77"><net_src comp="2" pin="0"/><net_sink comp="70" pin=2"/></net>
 
-<net id="88"><net_src comp="14" pin="0"/><net_sink comp="84" pin=0"/></net>
+<net id="78"><net_src comp="65" pin="2"/><net_sink comp="70" pin=3"/></net>
 
-<net id="89"><net_src comp="84" pin="2"/><net_sink comp="68" pin=3"/></net>
+<net id="82"><net_src comp="50" pin="2"/><net_sink comp="79" pin=0"/></net>
 
-<net id="96"><net_src comp="10" pin="0"/><net_sink comp="90" pin=0"/></net>
+<net id="83"><net_src comp="79" pin="1"/><net_sink comp="56" pin=3"/></net>
 
-<net id="97"><net_src comp="62" pin="2"/><net_sink comp="90" pin=1"/></net>
+<net id="84"><net_src comp="79" pin="1"/><net_sink comp="65" pin=1"/></net>
 
-<net id="101"><net_src comp="50" pin="1"/><net_sink comp="98" pin=0"/></net>
+<net id="88"><net_src comp="46" pin="1"/><net_sink comp="85" pin=0"/></net>
 
-<net id="102"><net_src comp="98" pin="1"/><net_sink comp="90" pin=3"/></net>
+<net id="89"><net_src comp="85" pin="1"/><net_sink comp="56" pin=2"/></net>
 
-<net id="103"><net_src comp="98" pin="1"/><net_sink comp="84" pin=1"/></net>
+<net id="90"><net_src comp="85" pin="1"/><net_sink comp="70" pin=1"/></net>
 
-<net id="107"><net_src comp="54" pin="1"/><net_sink comp="104" pin=0"/></net>
+<net id="94"><net_src comp="65" pin="2"/><net_sink comp="91" pin=0"/></net>
 
-<net id="108"><net_src comp="104" pin="1"/><net_sink comp="90" pin=2"/></net>
-
-<net id="109"><net_src comp="104" pin="1"/><net_sink comp="76" pin=3"/></net>
-
-<net id="113"><net_src comp="58" pin="1"/><net_sink comp="110" pin=0"/></net>
-
-<net id="114"><net_src comp="110" pin="1"/><net_sink comp="76" pin=2"/></net>
-
-<net id="115"><net_src comp="110" pin="1"/><net_sink comp="68" pin=1"/></net>
-
-<net id="119"><net_src comp="84" pin="2"/><net_sink comp="116" pin=0"/></net>
-
-<net id="120"><net_src comp="116" pin="1"/><net_sink comp="68" pin=3"/></net>
+<net id="95"><net_src comp="91" pin="1"/><net_sink comp="70" pin=3"/></net>
 
 </net_list>
 
@@ -591,18 +499,17 @@ ret_ln54                  (ret                 ) [ 000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: out_V_V | {4 5 }
+	Port: out_r | {3 4 }
  - Input state : 
-	Port: conv1_lif_top : in_V_V | {2 3 }
+	Port: conv1_lif_top : in_r | {1 2 }
 	Port: conv1_lif_top : numReps | {1 }
   - Chain level:
 	State 1
-		call_ln24 : 1
+		call_ln120 : 1
 	State 2
 	State 3
+		call_ln122 : 1
 	State 4
-		call_ln124 : 1
-	State 5
 
 
 ============================================================
@@ -610,18 +517,17 @@ ret_ln54                  (ret                 ) [ 000000]
 ============================================================
 
 * Functional unit list:
-|----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
-| Operation|                 Functional Unit                |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
-|----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|          |         grp_Matrix_Vector_Activa_fu_68         |    32   |    0    |  19.296 |   995   |   2739  |    0    |
-|   call   |         grp_ConvolutionInputGene_fu_76         |    0    |    2    |  2.412  |   541   |   1190  |    0    |
-|          | mul_ln124_loc_channe_Block_ZN8ap_fixedIL_fu_84 |    0    |    2    |    0    |    0    |    20   |    0    |
-|          |      call_ln24_conv1_lif_top_entry3_fu_90      |    0    |    0    |    0    |    0    |    0    |    0    |
-|----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   read   |             numReps_read_read_fu_62            |    0    |    0    |    0    |    0    |    0    |    0    |
-|----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                |    32   |    4    |  21.708 |   1536  |   3949  |    0    |
-|----------|------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                                Functional Unit                                |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          | grp_ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_fu_56 |    0    |    2    |  1.935  |   432   |   960   |    0    |
+|   call   |                 mul_ln125_loc_channel_Block_entry13_proc_fu_65                |    0    |    2    |    0    |    0    |    20   |    0    |
+|          |                     grp_Matrix_Vector_Activate_Batch_fu_70                    |    0    |    0    |  12.384 |   3367  |   5919  |    0    |
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   read   |                            numReps_read_read_fu_50                            |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                                               |    0    |    4    |  14.319 |   3799  |   6899  |    0    |
+|----------|-------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
 N/A
@@ -630,33 +536,33 @@ N/A
 +----------------------------+--------+
 |                            |   FF   |
 +----------------------------+--------+
-|     convInp_V_V_reg_110    |    3   |
-|mul_ln124_loc_channe_reg_116|   32   |
-|      numReps_c8_reg_98     |   32   |
-|      numReps_c_reg_104     |   32   |
+|       convInp_reg_85       |    3   |
+|mul_ln125_loc_channel_reg_91|   32   |
+|     numReps_read_reg_79    |   32   |
 +----------------------------+--------+
-|            Total           |   99   |
+|            Total           |   67   |
 +----------------------------+--------+
 
 * Multiplexer (MUX) list: 
-|--------------------------------|------|------|------|--------||---------||---------|
-|              Comp              |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
-|--------------------------------|------|------|------|--------||---------||---------|
-| grp_Matrix_Vector_Activa_fu_68 |  p3  |   2  |  32  |   64   ||    9    |
-|--------------------------------|------|------|------|--------||---------||---------|
-|              Total             |      |      |      |   64   ||  0.603  ||    9    |
-|--------------------------------|------|------|------|--------||---------||---------|
+|-------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                      Comp                                     |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+| grp_ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_fu_56 |  p3  |   2  |  32  |   64   ||    9    |
+|                     grp_Matrix_Vector_Activate_Batch_fu_70                    |  p3  |   2  |  32  |   64   ||    9    |
+|-------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                     Total                                     |      |      |      |   128  ||  0.774  ||    18   |
+|-------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
 
 
 
 * Summary:
 +-----------+--------+--------+--------+--------+--------+--------+
-|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   32   |    4   |   21   |  1536  |  3949  |    0   |
+|  Function |    0   |    4   |   14   |  3799  |  6899  |    0   |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
-|Multiplexer|    -   |    -   |    0   |    -   |    9   |    -   |
-|  Register |    -   |    -   |    -   |   99   |    -   |    -   |
+|Multiplexer|    -   |    -   |    0   |    -   |   18   |    -   |
+|  Register |    -   |    -   |    -   |   67   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   32   |    4   |   22   |  1635  |  3958  |    0   |
+|   Total   |    0   |    4   |   15   |  3866  |  6917  |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

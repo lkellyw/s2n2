@@ -1,0 +1,414 @@
+
+
+================================================================
+== Synthesis Summary Report of 'conv1_lif_top'
+================================================================
++ General Information: 
+    * Date:           Mon Feb 23 22:37:31 2026
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        convSNN_conv1
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2577-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |                                  Modules                                 | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |            |            |     |
+    |                                  & Loops                                 | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
+    +--------------------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |+ conv1_lif_top*                                                          |     -|  4.13|        -|       -|         -|        -|     -|  dataflow|     -|  4 (~0%)|  3849 (~0%)|  8149 (~0%)|    -|
+    | + ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s    |     -|  4.13|        -|       -|         -|        -|     -|        no|     -|  2 (~0%)|   362 (~0%)|  1162 (~0%)|    -|
+    |  + ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2  |     -|  4.79|        -|       -|         -|        -|     -|        no|     -|        -|   310 (~0%)|  1083 (~0%)|    -|
+    |   o VITIS_LOOP_196_1_VITIS_LOOP_197_2                                    |     -|  7.30|        -|       -|         2|        1|     -|       yes|     -|        -|           -|           -|    -|
+    | + Block_entry13_proc                                                     |     -|  4.13|        0|   0.000|         -|        0|     -|        no|     -|  2 (~0%)|    34 (~0%)|    40 (~0%)|    -|
+    | + Matrix_Vector_Activate_Batch                                           |     -|  4.15|        -|       -|         -|        -|     -|        no|     -|        -|  3371 (~0%)|  6865 (~0%)|    -|
+    |  o VITIS_LOOP_147_1                                                      |     -|  7.30|        -|       -|         2|        1|     -|       yes|     -|        -|           -|           -|    -|
+    +--------------------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_FIFO
++-----------+-----------+------------+
+| Interface | Direction | Data Width |
++-----------+-----------+------------+
+| in_r      | out       | 3          |
+| out_r     | out       | 32         |
++-----------+-----------+------------+
+
+* Other Ports
++---------+---------+-----------+----------+
+| Port    | Mode    | Direction | Bitwidth |
++---------+---------+-----------+----------+
+| numReps | ap_none | in        | 32       |
++---------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------------------+
+| Argument | Direction | Datatype                |
++----------+-----------+-------------------------+
+| in       | in        | stream<ap_uint<3>, 0>&  |
+| out      | out       | stream<ap_uint<32>, 0>& |
+| numReps  | in        | unsigned int            |
++----------+-----------+-------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| in       | in_r         | interface |
+| out      | out_r        | interface |
+| numReps  | numReps      | port      |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------------------------------+-----+--------+--------------------------+------+--------+---------+
+| Name                                                                     | DSP | Pragma | Variable                 | Op   | Impl   | Latency |
++--------------------------------------------------------------------------+-----+--------+--------------------------+------+--------+---------+
+| + conv1_lif_top                                                          | 4   |        |                          |      |        |         |
+|   mul_ln125_loc_channel_U                                                | 2   |        | mul_ln125_loc_channel    | fifo | srl    | 0       |
+|  + ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s   | 2   |        |                          |      |        |         |
+|    mul_32ns_8ns_39_1_1_U8                                                | 2   |        | bound                    | mul  | auto   | 0       |
+|   + ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2 | 0   |        |                          |      |        |         |
+|     add_ln196_fu_301_p2                                                  | -   |        | add_ln196                | add  | fabric | 0       |
+|     ofm_x_fu_350_p2                                                      | -   |        | ofm_x                    | add  | fabric | 0       |
+|     ofm_y_1_fu_370_p2                                                    | -   |        | ofm_y_1                  | add  | fabric | 0       |
+|     grp_fu_195_p2                                                        | -   |        | current_line_2           | add  | fabric | 0       |
+|     grp_fu_207_p2                                                        | -   |        | read_block_2             | add  | fabric | 0       |
+|     grp_fu_212_p2                                                        | -   |        | current_block_write_4    | add  | fabric | 0       |
+|     counter_internal_block_2_fu_455_p2                                   | -   |        | counter_internal_block_2 | add  | fabric | 0       |
+|     grp_fu_195_p2                                                        | -   |        | current_line_1           | add  | fabric | 0       |
+|     inp_2_fu_480_p2                                                      | -   |        | inp_2                    | add  | fabric | 0       |
+|     grp_fu_212_p2                                                        | -   |        | current_block_write_2    | add  | fabric | 0       |
+|     grp_fu_207_p2                                                        | -   |        | read_block_1             | add  | fabric | 0       |
+|     add_ln197_fu_521_p2                                                  | -   |        | add_ln197                | add  | fabric | 0       |
+|  + Block_entry13_proc                                                    | 2   |        |                          |      |        |         |
+|    mul_32s_8ns_32_1_1_U14                                                | 2   |        | mul_ln125                | mul  | auto   | 0       |
+|  + Matrix_Vector_Activate_Batch                                          | 0   |        |                          |      |        |         |
+|    i_2_fu_1357_p2                                                        | -   |        | i_2                      | add  | fabric | 0       |
+|    temp_4_fu_1910_p2                                                     | -   |        | temp_4                   | sub  | fabric | 0       |
+|    sub_ln171_fu_1940_p2                                                  | -   |        | sub_ln171                | sub  | fabric | 0       |
+|    sub_ln171_1_fu_1970_p2                                                | -   |        | sub_ln171_1              | sub  | fabric | 0       |
+|    sub_ln171_2_fu_2000_p2                                                | -   |        | sub_ln171_2              | sub  | fabric | 0       |
+|    sub_ln171_3_fu_2030_p2                                                | -   |        | sub_ln171_3              | sub  | fabric | 0       |
+|    sub_ln171_4_fu_2060_p2                                                | -   |        | sub_ln171_4              | sub  | fabric | 0       |
+|    sub_ln171_5_fu_2090_p2                                                | -   |        | sub_ln171_5              | sub  | fabric | 0       |
+|    sub_ln171_6_fu_2120_p2                                                | -   |        | sub_ln171_6              | sub  | fabric | 0       |
+|    sub_ln171_7_fu_2150_p2                                                | -   |        | sub_ln171_7              | sub  | fabric | 0       |
+|    sub_ln171_8_fu_2180_p2                                                | -   |        | sub_ln171_8              | sub  | fabric | 0       |
+|    sub_ln171_9_fu_2210_p2                                                | -   |        | sub_ln171_9              | sub  | fabric | 0       |
+|    sub_ln171_10_fu_2240_p2                                               | -   |        | sub_ln171_10             | sub  | fabric | 0       |
+|    sub_ln171_11_fu_2270_p2                                               | -   |        | sub_ln171_11             | sub  | fabric | 0       |
+|    sub_ln171_12_fu_2300_p2                                               | -   |        | sub_ln171_12             | sub  | fabric | 0       |
+|    sub_ln171_13_fu_2330_p2                                               | -   |        | sub_ln171_13             | sub  | fabric | 0       |
+|    sub_ln171_14_fu_2360_p2                                               | -   |        | sub_ln171_14             | sub  | fabric | 0       |
+|    sub_ln171_15_fu_2390_p2                                               | -   |        | sub_ln171_15             | sub  | fabric | 0       |
+|    sub_ln171_16_fu_2420_p2                                               | -   |        | sub_ln171_16             | sub  | fabric | 0       |
+|    sub_ln171_17_fu_2450_p2                                               | -   |        | sub_ln171_17             | sub  | fabric | 0       |
+|    sub_ln171_18_fu_2480_p2                                               | -   |        | sub_ln171_18             | sub  | fabric | 0       |
+|    sub_ln171_19_fu_2510_p2                                               | -   |        | sub_ln171_19             | sub  | fabric | 0       |
+|    sub_ln171_20_fu_2540_p2                                               | -   |        | sub_ln171_20             | sub  | fabric | 0       |
+|    sub_ln171_21_fu_2570_p2                                               | -   |        | sub_ln171_21             | sub  | fabric | 0       |
+|    sub_ln171_22_fu_2600_p2                                               | -   |        | sub_ln171_22             | sub  | fabric | 0       |
+|    sub_ln171_23_fu_2630_p2                                               | -   |        | sub_ln171_23             | sub  | fabric | 0       |
+|    sub_ln171_24_fu_2660_p2                                               | -   |        | sub_ln171_24             | sub  | fabric | 0       |
+|    sub_ln171_25_fu_2690_p2                                               | -   |        | sub_ln171_25             | sub  | fabric | 0       |
+|    sub_ln171_26_fu_2720_p2                                               | -   |        | sub_ln171_26             | sub  | fabric | 0       |
+|    sub_ln171_27_fu_2750_p2                                               | -   |        | sub_ln171_27             | sub  | fabric | 0       |
+|    sub_ln171_28_fu_2780_p2                                               | -   |        | sub_ln171_28             | sub  | fabric | 0       |
+|    sub_ln171_29_fu_2810_p2                                               | -   |        | sub_ln171_29             | sub  | fabric | 0       |
+|    temp_5_fu_2840_p2                                                     | -   |        | temp_5                   | sub  | fabric | 0       |
+|    cntr_1_fu_1850_p2                                                     | -   |        | cntr_1                   | add  | fabric | 0       |
+|    add_ln209_fu_1862_p2                                                  | -   |        | add_ln209                | add  | fabric | 0       |
++--------------------------------------------------------------------------+-----+--------+--------------------------+------+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++------------------------------------------------------------------------+------+------+--------+------------+---------+------+---------+
+| Name                                                                   | BRAM | URAM | Pragma | Variable   | Storage | Impl | Latency |
++------------------------------------------------------------------------+------+------+--------+------------+---------+------+---------+
+| + conv1_lif_top                                                        | 0    | 0    |        |            |         |      |         |
+|   convInp_U                                                            | -    | -    |        | convInp    | fifo    | srl  | 0       |
+|  + ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s | 0    | 0    |        |            |         |      |         |
+|    inputBuf_U                                                          | -    | -    | yes    | inputBuf   | ram_2p  | auto | 1       |
+|    inputBuf_1_U                                                        | -    | -    | yes    | inputBuf_1 | ram_2p  | auto | 1       |
+|  + Matrix_Vector_Activate_Batch                                        | 0    | 0    |        |            |         |      |         |
+|    neust_U                                                             | -    | -    |        | neust      | ram_s2p | auto | 1       |
+|    neust_1_U                                                           | -    | -    |        | neust_1    | ram_s2p | auto | 1       |
+|    neust_2_U                                                           | -    | -    |        | neust_2    | ram_s2p | auto | 1       |
+|    neust_3_U                                                           | -    | -    |        | neust_3    | ram_s2p | auto | 1       |
+|    neust_4_U                                                           | -    | -    |        | neust_4    | ram_s2p | auto | 1       |
+|    neust_5_U                                                           | -    | -    |        | neust_5    | ram_s2p | auto | 1       |
+|    neust_6_U                                                           | -    | -    |        | neust_6    | ram_s2p | auto | 1       |
+|    neust_7_U                                                           | -    | -    |        | neust_7    | ram_s2p | auto | 1       |
+|    neust_8_U                                                           | -    | -    |        | neust_8    | ram_s2p | auto | 1       |
+|    neust_9_U                                                           | -    | -    |        | neust_9    | ram_s2p | auto | 1       |
+|    neust_10_U                                                          | -    | -    |        | neust_10   | ram_s2p | auto | 1       |
+|    neust_11_U                                                          | -    | -    |        | neust_11   | ram_s2p | auto | 1       |
+|    neust_12_U                                                          | -    | -    |        | neust_12   | ram_s2p | auto | 1       |
+|    neust_13_U                                                          | -    | -    |        | neust_13   | ram_s2p | auto | 1       |
+|    neust_14_U                                                          | -    | -    |        | neust_14   | ram_s2p | auto | 1       |
+|    neust_15_U                                                          | -    | -    |        | neust_15   | ram_s2p | auto | 1       |
+|    neust_16_U                                                          | -    | -    |        | neust_16   | ram_s2p | auto | 1       |
+|    neust_17_U                                                          | -    | -    |        | neust_17   | ram_s2p | auto | 1       |
+|    neust_18_U                                                          | -    | -    |        | neust_18   | ram_s2p | auto | 1       |
+|    neust_19_U                                                          | -    | -    |        | neust_19   | ram_s2p | auto | 1       |
+|    neust_20_U                                                          | -    | -    |        | neust_20   | ram_s2p | auto | 1       |
+|    neust_21_U                                                          | -    | -    |        | neust_21   | ram_s2p | auto | 1       |
+|    neust_22_U                                                          | -    | -    |        | neust_22   | ram_s2p | auto | 1       |
+|    neust_23_U                                                          | -    | -    |        | neust_23   | ram_s2p | auto | 1       |
+|    neust_24_U                                                          | -    | -    |        | neust_24   | ram_s2p | auto | 1       |
+|    neust_25_U                                                          | -    | -    |        | neust_25   | ram_s2p | auto | 1       |
+|    neust_26_U                                                          | -    | -    |        | neust_26   | ram_s2p | auto | 1       |
+|    neust_27_U                                                          | -    | -    |        | neust_27   | ram_s2p | auto | 1       |
+|    neust_28_U                                                          | -    | -    |        | neust_28   | ram_s2p | auto | 1       |
+|    neust_29_U                                                          | -    | -    |        | neust_29   | ram_s2p | auto | 1       |
+|    neust_30_U                                                          | -    | -    |        | neust_30   | ram_s2p | auto | 1       |
+|    neust_31_U                                                          | -    | -    |        | neust_31   | ram_s2p | auto | 1       |
++------------------------------------------------------------------------+------+------+--------+------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++------------+------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+| Type       | Options                                  | Location                                                                                    | Messages                                                                        |
++------------+------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+| resource   | variable=res core=Mul_LUT                | ../../finn-hlslib-lif/mac.hpp:116 in mul, res                                               | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead      |
+| resource   | variable=res core=DSP48                  | ../../finn-hlslib-lif/mac.hpp:142 in mul, res                                               | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead      |
+| resource   | variable=accumulators core=RAM_2P_LUTRAM | ../../finn-hlslib-lif/maxpool.h:296 in accpool_batch, accumulators                          | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead      |
+| resource   | variable=inputBuf core=RAM_2P            | ../../finn-hlslib-lif/slidingwindow.h:75 in memory_resource, inputBuf                       | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead      |
+| resource   | variable=inputBuf core=RAM_S2P_BRAM      | ../../finn-hlslib-lif/slidingwindow.h:97 in memory_resource, inputBuf                       | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead      |
+| resource   | variable=inputBuf core=RAM_S2P_URAM      | ../../finn-hlslib-lif/slidingwindow.h:119 in memory_resource, inputBuf                      | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead      |
+| resource   | variable=inputBuf core=RAM_S2P_LUTRAM    | ../../finn-hlslib-lif/slidingwindow.h:141 in memory_resource, inputBuf                      | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead      |
+| reset      | variable=inp                             | ../../finn-hlslib-lif/slidingwindow.h:195 in convolutioninputgenerator, inp                 | Invalid variable in '#pragma HLS reset': expect variable to be static or global |
+| dependence | variable=current_block_write intra false | ../../finn-hlslib-lif/slidingwindow.h:260 in convolutioninputgenerator, current_block_write | Ignoring dependence pragma on local scalar variable 'current_block_write'.      |
++------------+------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| Type            | Options                                  | Location                                                                                                      |
++-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:69 in init                                                              |
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:87 in activate                                                          |
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:104 in thresholdactivation<ta, compare>                                 |
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:109 in activate                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:132 in init                                                             |
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:138 in activate                                                         |
+| unroll          |                                          | ../../finn-hlslib-lif/activations.hpp:141 in activate                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:171 in init                                                             |
+| inline          |                                          | ../../finn-hlslib-lif/activations.hpp:176 in activate                                                         |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/activations.hpp:223 in thresholding_batch                                               |
+| unroll          |                                          | ../../finn-hlslib-lif/activations.hpp:230 in thresholding_batch                                               |
+| inline          |                                          | ../../finn-hlslib-lif/convlayer.h:113 in convlayer_batch                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/convlayer.h:186 in convlayer_batch_mmv                                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/dma.h:141 in mem2stream                                                                 |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/dma.h:154 in stream2mem                                                                 |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/dma.h:224 in genparamstream                                                             |
+| inline          |                                          | ../../finn-hlslib-lif/fclayer.h:100 in streamingfclayer_batch                                                 |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:61 in xnormul                                                             |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:66 in operator*                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:71 in operator*                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:79 in binary                                                              |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:88 in operator*                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:96 in operator*                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:101 in operator*                                                          |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:115 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:121 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:137 in container<tv>                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:142 in operator[]                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:146 in operator[]                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:150 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:154 in operator const type-parameter-1-0 &                                |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:162 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:167 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:172 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:203 in container<tv>                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:206 in container<tv>                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:210 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:214 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:219 in operator[]                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:223 in operator const type-parameter-1-0 &                                |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:231 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:236 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:241 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:260 in container<tv>                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:263 in container<tv>                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:266 in container<tv>                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:270 in operator const type-parameter-1-0 &                                |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:274 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:278 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:283 in operator[]                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:291 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:296 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/interpret.hpp:301 in operator()                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/mac.hpp:89 in mul                                                                       |
+| inline          |                                          | ../../finn-hlslib-lif/mac.hpp:114 in mul                                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/mac.hpp:140 in mul                                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/mac.hpp:165 in mac                                                                      |
+| unroll          |                                          | ../../finn-hlslib-lif/mac.hpp:168 in mac                                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/mac.hpp:178 in acc                                                                      |
+| unroll          |                                          | ../../finn-hlslib-lif/mac.hpp:181 in acc                                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/mac.hpp:206 in mac                                                                      |
+| unroll          |                                          | ../../finn-hlslib-lif/mac.hpp:209 in mac                                                                      |
+| inline          |                                          | ../../finn-hlslib-lif/mac.hpp:216 in mac                                                                      |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:72 in streamingmaxpool                                                        |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/maxpool.h:79 in streamingmaxpool                                                        |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/maxpool.h:89 in streamingmaxpool                                                        |
+| array_partition | variable=buf complete dim=2              | ../../finn-hlslib-lif/maxpool.h:144 in streamingmaxpool_precision, buf                                        |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:147 in streamingmaxpool_precision                                             |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/maxpool.h:157 in streamingmaxpool_precision                                             |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:160 in streamingmaxpool_precision                                             |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:174 in streamingmaxpool_precision                                             |
+| inline          |                                          | ../../finn-hlslib-lif/maxpool.h:207 in streamingmaxpool_precision_batch                                       |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/maxpool.h:251 in relu_batch                                                             |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:254 in relu_batch                                                             |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/maxpool.h:302 in accpool_batch                                                          |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:306 in accpool_batch                                                          |
+| array_partition | variable=toplabels complete dim=1        | ../../finn-hlslib-lif/maxpool.h:363 in labelselect_batch, toplabels                                           |
+| array_partition | variable=topval complete dim=1           | ../../finn-hlslib-lif/maxpool.h:366 in labelselect_batch, topval                                              |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:371 in labelselect_batch                                                      |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/maxpool.h:375 in labelselect_batch                                                      |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:378 in labelselect_batch                                                      |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:383 in labelselect_batch                                                      |
+| array_partition | variable=accu complete dim=0             | ../../finn-hlslib-lif/maxpool.h:443 in pool_batch, accu                                                       |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/maxpool.h:450 in pool_batch                                                             |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:457 in pool_batch                                                             |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:464 in pool_batch                                                             |
+| unroll          |                                          | ../../finn-hlslib-lif/maxpool.h:473 in pool_batch                                                             |
+| inline          |                                          | ../../finn-hlslib-lif/mmv.hpp:53 in operator[]                                                                |
+| array_partition | variable=inputBuf complete dim=0         | ../../finn-hlslib-lif/mvau.hpp:128 in matrix_vector_activate_batch, inputBuf                                  |
+| array_partition | variable=neust complete dim=2            | ../../finn-hlslib-lif/mvau.hpp:133 in matrix_vector_activate_batch, neust                                     |
+| array_partition | variable=accu complete dim=0             | ../../finn-hlslib-lif/mvau.hpp:137 in matrix_vector_activate_batch, accu                                      |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/mvau.hpp:148 in matrix_vector_activate_batch                                            |
+| unroll          |                                          | ../../finn-hlslib-lif/mvau.hpp:167 in matrix_vector_activate_batch                                            |
+| unroll          |                                          | ../../finn-hlslib-lif/mvau.hpp:185 in matrix_vector_activate_batch                                            |
+| unroll          |                                          | ../../finn-hlslib-lif/mvau.hpp:201 in matrix_vector_activate_batch                                            |
+| array_partition | variable=inputBuf complete dim=1         | ../../finn-hlslib-lif/mvau.hpp:269 in matrix_vector_activate_stream_batch, inputBuf                           |
+| array_partition | variable=accu complete dim=0             | ../../finn-hlslib-lif/mvau.hpp:272 in matrix_vector_activate_stream_batch, accu                               |
+| array_partition | variable=w.m_weights complete dim=0      | ../../finn-hlslib-lif/mvau.hpp:275 in matrix_vector_activate_stream_batch, w.m_weights                        |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/mvau.hpp:287 in matrix_vector_activate_stream_batch                                     |
+| unroll          |                                          | ../../finn-hlslib-lif/mvau.hpp:304 in matrix_vector_activate_stream_batch                                     |
+| unroll          |                                          | ../../finn-hlslib-lif/mvau.hpp:311 in matrix_vector_activate_stream_batch                                     |
+| unroll          |                                          | ../../finn-hlslib-lif/mvau.hpp:318 in matrix_vector_activate_stream_batch                                     |
+| unroll          |                                          | ../../finn-hlslib-lif/mvau.hpp:331 in matrix_vector_activate_stream_batch                                     |
+| inline          |                                          | ../../finn-hlslib-lif/slidingwindow.h:74 in memory_resource                                                   |
+| inline          |                                          | ../../finn-hlslib-lif/slidingwindow.h:96 in memory_resource                                                   |
+| inline          |                                          | ../../finn-hlslib-lif/slidingwindow.h:118 in memory_resource                                                  |
+| inline          |                                          | ../../finn-hlslib-lif/slidingwindow.h:140 in memory_resource                                                  |
+| array_partition | variable=inputBuf complete dim=1         | ../../finn-hlslib-lif/slidingwindow.h:182 in convolutioninputgenerator, inputBuf                              |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/slidingwindow.h:198 in convolutioninputgenerator                                        |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:249 in convolutioninputgenerator, inputBuf                              |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:250 in convolutioninputgenerator, inputBuf                              |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:314 in convolutioninputgenerator_mmv, inputBuf                          |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:315 in convolutioninputgenerator_mmv, inputBuf                          |
+| array_partition | variable=inputBuf complete dim=1         | ../../finn-hlslib-lif/slidingwindow.h:316 in convolutioninputgenerator_mmv, inputBuf                          |
+| array_partition | variable=inputBuf complete dim=2         | ../../finn-hlslib-lif/slidingwindow.h:317 in convolutioninputgenerator_mmv, inputBuf                          |
+| reset           | variable=inp                             | ../../finn-hlslib-lif/slidingwindow.h:330 in convolutioninputgenerator_mmv, inp                               |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/slidingwindow.h:333 in convolutioninputgenerator_mmv                                    |
+| unroll          |                                          | ../../finn-hlslib-lif/slidingwindow.h:340 in convolutioninputgenerator_mmv                                    |
+| unroll          |                                          | ../../finn-hlslib-lif/slidingwindow.h:366 in convolutioninputgenerator_mmv                                    |
+| unroll          |                                          | ../../finn-hlslib-lif/slidingwindow.h:399 in convolutioninputgenerator_mmv                                    |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:401 in convolutioninputgenerator_mmv, inputBuf                          |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:402 in convolutioninputgenerator_mmv, inputBuf                          |
+| dependence      | variable=current_block_write intra false | ../../finn-hlslib-lif/slidingwindow.h:413 in convolutioninputgenerator_mmv, current_block_write               |
+| array_partition | variable=inputBuf complete dim=1         | ../../finn-hlslib-lif/slidingwindow.h:466 in convolutioninputgenerator_kernel_stride, inputBuf                |
+| reset           | variable=inp                             | ../../finn-hlslib-lif/slidingwindow.h:478 in convolutioninputgenerator_kernel_stride, inp                     |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:480 in convolutioninputgenerator_kernel_stride, inputBuf                |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:481 in convolutioninputgenerator_kernel_stride, inputBuf                |
+| dependence      | variable=current_block_write intra false | ../../finn-hlslib-lif/slidingwindow.h:487 in convolutioninputgenerator_kernel_stride, current_block_write     |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/slidingwindow.h:490 in convolutioninputgenerator_kernel_stride                          |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:555 in convolutioninputgenerator_kernel_stride, inputBuf                |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:556 in convolutioninputgenerator_kernel_stride, inputBuf                |
+| dependence      | variable=current_block_write intra false | ../../finn-hlslib-lif/slidingwindow.h:565 in convolutioninputgenerator_kernel_stride, current_block_write     |
+| array_partition | variable=inputBuf complete dim=1         | ../../finn-hlslib-lif/slidingwindow.h:616 in convolutioninputgenerator_dws, inputBuf                          |
+| reset           | variable=inp                             | ../../finn-hlslib-lif/slidingwindow.h:629 in convolutioninputgenerator_dws, inp                               |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/slidingwindow.h:632 in convolutioninputgenerator_dws                                    |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:683 in convolutioninputgenerator_dws, inputBuf                          |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:684 in convolutioninputgenerator_dws, inputBuf                          |
+| dependence      | variable=current_block_write intra false | ../../finn-hlslib-lif/slidingwindow.h:694 in convolutioninputgenerator_dws, current_block_write               |
+| array_partition | variable=inputBuf complete dim=1         | ../../finn-hlslib-lif/slidingwindow.h:746 in convolutioninputgenerator_kernel_stride_dws, inputBuf            |
+| reset           | variable=inp                             | ../../finn-hlslib-lif/slidingwindow.h:757 in convolutioninputgenerator_kernel_stride_dws, inp                 |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:759 in convolutioninputgenerator_kernel_stride_dws, inputBuf            |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:760 in convolutioninputgenerator_kernel_stride_dws, inputBuf            |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/slidingwindow.h:768 in convolutioninputgenerator_kernel_stride_dws                      |
+| dependence      | variable=current_block_write intra false | ../../finn-hlslib-lif/slidingwindow.h:770 in convolutioninputgenerator_kernel_stride_dws, current_block_write |
+| dependence      | variable=inputBuf inter false            | ../../finn-hlslib-lif/slidingwindow.h:836 in convolutioninputgenerator_kernel_stride_dws, inputBuf            |
+| dependence      | variable=inputBuf intra false            | ../../finn-hlslib-lif/slidingwindow.h:837 in convolutioninputgenerator_kernel_stride_dws, inputBuf            |
+| dependence      | variable=current_block_write intra false | ../../finn-hlslib-lif/slidingwindow.h:846 in convolutioninputgenerator_kernel_stride_dws, current_block_write |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/slidingwindow.h:888 in convolutioninputgenerator_kernel1                                |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:77 in streamlimiter                                                       |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:160 in sameresize                                                         |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:234 in streamingcast                                                      |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:282 in fmpadding                                                          |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:371 in streamingdatawidthconverter_batch                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:391 in streamingdatawidthconverter_batch                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:403 in streamingdatawidthconverter_batch                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:512 in duplicatestreams                                                   |
+| pipeline        | II = 1                                   | ../../finn-hlslib-lif/streamtools.h:570 in addstreams                                                         |
+| unroll          |                                          | ../../finn-hlslib-lif/streamtools.h:575 in addstreams                                                         |
+| inline          |                                          | ../../finn-hlslib-lif/streamtools.h:644 in addstreamslayer_batch                                              |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:691 in multichandatawidthconverter_batch                                  |
+| unroll          |                                          | ../../finn-hlslib-lif/streamtools.h:698 in multichandatawidthconverter_batch                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:714 in multichandatawidthconverter_batch                                  |
+| unroll          |                                          | ../../finn-hlslib-lif/streamtools.h:720 in multichandatawidthconverter_batch                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:733 in multichandatawidthconverter_batch                                  |
+| unroll          |                                          | ../../finn-hlslib-lif/streamtools.h:737 in multichandatawidthconverter_batch                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:773 in flattenmultichandata                                               |
+| unroll          |                                          | ../../finn-hlslib-lif/streamtools.h:777 in flattenmultichandata                                               |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:804 in packmultichandata                                                  |
+| unroll          |                                          | ../../finn-hlslib-lif/streamtools.h:808 in packmultichandata                                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:897 in qdma2stream_batch                                                  |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/streamtools.h:920 in stream2qdma_batch                                                  |
+| array_partition | variable=accu complete dim=0             | ../../finn-hlslib-lif/vvau.hpp:100 in vector_vector_activate_batch, accu                                      |
+| pipeline        | II=1                                     | ../../finn-hlslib-lif/vvau.hpp:109 in vector_vector_activate_batch                                            |
+| unroll          |                                          | ../../finn-hlslib-lif/vvau.hpp:116 in vector_vector_activate_batch                                            |
+| unroll          |                                          | ../../finn-hlslib-lif/vvau.hpp:125 in vector_vector_activate_batch                                            |
+| unroll          |                                          | ../../finn-hlslib-lif/vvau.hpp:139 in vector_vector_activate_batch                                            |
+| unroll          |                                          | ../../finn-hlslib-lif/vvau.hpp:141 in vector_vector_activate_batch                                            |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:83 in tileindex                                                             |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:88 in operator[]                                                            |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:95 in weights                                                               |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:127 in tileindex                                                            |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:132 in operator[]                                                           |
+| unroll          |                                          | ../../finn-hlslib-lif/weights.hpp:135 in operator[]                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:147 in weights                                                              |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:159 in operator[]                                                           |
+| unroll          |                                          | ../../finn-hlslib-lif/weights.hpp:162 in operator[]                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:192 in tileindex                                                            |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:197 in operator[]                                                           |
+| unroll          |                                          | ../../finn-hlslib-lif/weights.hpp:201 in operator[]                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:215 in weights                                                              |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:240 in tileindex                                                            |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:245 in operator[]                                                           |
+| unroll          |                                          | ../../finn-hlslib-lif/weights.hpp:248 in operator[]                                                           |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:265 in weights                                                              |
+| inline          |                                          | ../../finn-hlslib-lif/weights.hpp:271 in setmask                                                              |
+| unroll          |                                          | ../../finn-hlslib-lif/weights.hpp:274 in setmask                                                              |
+| dataflow        |                                          | ../conv1_top.cpp:23 in conv1_lif_top                                                                          |
++-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+
+

@@ -1,0 +1,137 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 5",
+    "file": "fc1_top.cpp",
+    "fileloc": 22,
+    "instructions": 21,
+    "name": "fc1_top",
+    "total_instructions": 3486
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "interpret.hpp",
+    "fileloc": 235,
+    "instructions": 2,
+    "name": "operator()<ap_uint<8> >",
+    "total_instructions": 4
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights.hpp",
+    "fileloc": 190,
+    "instructions": 8,
+    "loads": {
+      "L": 1
+    },
+    "name": "TileIndex",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 8
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 67,
+    "instructions": 24,
+    "name": "operator()",
+    "total_instructions": 742
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 65,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "DebugThresholdActivation",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 202,
+    "instructions": 2,
+    "name": "Container",
+    "total_instructions": 2
+  },
+  "5": {
+    "basicblocks": 37,
+    "calls": "7 9 9 1 2 8 6",
+    "file": "mvau.hpp",
+    "fileloc": 111,
+    "instructions": 259,
+    "loads": {
+      "L": 10
+    },
+    "name": "Matrix_Vector_Activate_Batch<320, 64, 16, 16, 8, 1, Slice<ap_uint<1>, 1>, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16, 6, 1, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16, ap_int<32>, 8, 160>, DebugThresholdActivation<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> >, ap_resource_dsp>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 3026
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 222,
+    "instructions": 2,
+    "name": "operator const ap_uint<8> &",
+    "total_instructions": 2
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "weights.hpp",
+    "fileloc": 214,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "weights",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 218,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "operator[]",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "9": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "weights.hpp",
+    "fileloc": 196,
+    "instructions": 54,
+    "loads": {
+      "L": 3
+    },
+    "name": "operator[]",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 146
+  }
+}

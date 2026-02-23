@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln147_fu_83_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147" VARIABLE="icmp_ln147" MODULE="Matrix_Vector_Activate_Batch" LOOP="VITIS_LOOP_147_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_89_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147" VARIABLE="i_2" MODULE="Matrix_Vector_Activate_Batch" LOOP="VITIS_LOOP_147_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="sf_1_fu_98_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197" VARIABLE="sf_1" MODULE="Matrix_Vector_Activate_Batch" LOOP="VITIS_LOOP_147_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln197_fu_104_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197" VARIABLE="icmp_ln197" MODULE="Matrix_Vector_Activate_Batch" LOOP="VITIS_LOOP_147_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

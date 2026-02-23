@@ -1,829 +1,232 @@
 ==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
 ==============================================================
-INFO: [HLS 200-10] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2577-2-e 
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2577-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -clean 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 28.37 seconds. CPU system time: 7.72 seconds. Elapsed time: 52.54 seconds; current allocated memory: 4.000 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.24 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.3 seconds; current allocated memory: 1.453 GB.
 INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp' ... 
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:48:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:49:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:52:9
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:97:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:119:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:141:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:296:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:116:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:142:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:49:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:50:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:53:9)
 WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:33 ; elapsed = 00:01:14 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 42782 ; free virtual = 344661
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:33 ; elapsed = 00:01:14 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 42782 ; free virtual = 344661
+WARNING: [HLS 207-5292] unused parameter 'reps' (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:837:77)
+WARNING: [HLS 207-5292] unused parameter 'reps' (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:869:78)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:149:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:166:58)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:209:56)
+WARNING: [HLS 207-5292] unused parameter 'flag' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:209:72)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:213:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:218:30)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:240:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:262:39)
+WARNING: [HLS 207-5292] unused parameter 'flag' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:273:72)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:300:52)
+WARNING: [HLS 207-5292] unused parameter 'decay' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:115:16)
+WARNING: [HLS 207-5292] unused parameter 'r' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:16)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:68:26)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:68:45)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:86:29)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:86:48)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:108:32)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:108:51)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:131:26)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:131:45)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:170:26)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:170:45)
+WARNING: [HLS 207-5547] Invalid variable in '#pragma HLS reset': expect variable to be static or global (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:195:28)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 25.95 seconds. CPU system time: 4.33 seconds. Elapsed time: 36.65 seconds; current allocated memory: 1.456 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,186 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 15,401 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 820 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 751 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-273] In function 'void ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, unsigned int, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_resource_dsp const&)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:112:0)
+INFO: [HLS 214-131] Inlining function 'void memory_resource<ap_uint<3> (*) [10]>(ap_uint<3> (*) [10], ap_resource_dflt const&)' into 'void ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>(hls::stream<ap_uint<(3u) * (1u)>, 0>&, hls::stream<ap_uint<(3u) * (1u)>, 0>&, unsigned int, ap_resource_dflt const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:183:2)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::TileIndex(FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, unsigned int, ap_uint<3>)' into 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::weights(unsigned int, ap_uint<3>) const' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:216:9)
+INFO: [HLS 214-131] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator ap_uint<32> const&() const' into 'void Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207:17)
+INFO: [HLS 214-131] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator[](unsigned int) const' into 'void Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203:8)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[](unsigned int) const' into 'void Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189:21)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[](unsigned int) const' into 'void Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186:57)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::weights(unsigned int, ap_uint<3>) const' into 'void Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178:29)
+INFO: [HLS 214-131] Inlining function 'void ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, unsigned int, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_resource_dsp const&)' into 'conv1_lif_top(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27:2)
+WARNING: [HLS 214-199] Ignoring dependence pragma on local scalar variable 'current_block_write'. (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:260:9)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_166_2' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_184_3' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_200_1' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200:25)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_200_4' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200:25)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_166_2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166:24) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_184_3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184:23) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_200_1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200:25) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_200_4' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200:25) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-178] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::DebugThresholdActivation(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'conv1_lif_top(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:22:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedInputStream<3u, 3u, 100u>::WidthAdjustedInputStream(hls::stream<ap_uint<3>, 0>&, unsigned int)' into 'conv1_lif_top(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:22:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedOutputStream<32u, 32u, 100u>::WidthAdjustedOutputStream(hls::stream<ap_uint<32>, 0>&, unsigned int)' into 'conv1_lif_top(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:22:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedInputStream<3u, 3u, 100u>::operator hls::stream<ap_uint<3>, 0>&()' into 'conv1_lif_top(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:22:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedOutputStream<32u, 32u, 100u>::operator hls::stream<ap_uint<32>, 0>&()' into 'conv1_lif_top(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:22:0)
+INFO: [HLS 214-248] Applying array_partition to 'inputBuf': Complete partitioning on dimension 1. (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180:33)
+INFO: [HLS 214-248] Applying array_partition to 'neust': Complete partitioning on dimension 2. (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132:22)
+INFO: [HLS 214-248] Applying array_partition to 'accu': Complete partitioning on dimension 1. (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136:21)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out' with compact=bit mode in 32-bits (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:22:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'in' with compact=bit mode in 3-bits (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:22:0)
+INFO: [HLS 214-364] Automatically inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>) const' to improve effectiveness of pipeline pragma in function 'void Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<3>, 0>&, hls::stream<ap_uint<32>, 0>&, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 13.49 seconds. CPU system time: 4.71 seconds. Elapsed time: 24.1 seconds; current allocated memory: 1.458 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.458 GB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedInputStream<3u, 3u, 100u>::operator hls::stream<ap_uint<3>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121).
-INFO: [XFORM 203-603] Inlining function 'memory_resource<ap_uint<3> (*) [10]>' into 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:183).
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<32u, 32u, 100u>::operator hls::stream<ap_uint<32>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::weights' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::operator()<ap_uint<32> >' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:199).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator ap_uint<32> const&' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207).
-INFO: [XFORM 203-603] Inlining function 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' into 'conv1_lif_top' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:35 ; elapsed = 00:01:16 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 42607 ; free virtual = 344555
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 1.459 GB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:204: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:35 ; elapsed = 00:01:17 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 42511 ; free virtual = 344460
-WARNING: [XFORM 203-311] Ignored reset directive (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:195:1): variable 'inp' is not static or global variable.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' for pipelining.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'accu.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180) in dimension 1 completely.
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-INFO: [XFORM 203-712] Applying dataflow to function 'conv1_lif_top', detected/extracted 4 process function(s): 
-	 'conv1_lif_top.entry35'
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.461 GB.
+WARNING: [HLS 200-805] An internal stream 'convInp' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'conv1_lif_top' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:18:1), detected/extracted 3 process function(s): 
 	 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'
-	 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc'
+	 'Block_entry13_proc'
 	 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165:5) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197:5) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:216:85) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:224:11) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:249:1) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:262:9) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 3 basic blocks.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:36 ; elapsed = 00:01:18 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 42614 ; free virtual = 344565
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:196:35) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'.
-WARNING: [XFORM 203-631] Renaming function 'conv1_lif_top.entry35' to 'conv1_lif_top.entry3' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24:1)
-WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' to 'Matrix_Vector_Activa' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:124:46)
-WARNING: [XFORM 203-631] Renaming function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' to 'ConvolutionInputGene' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:19)
-WARNING: [XFORM 203-631] Renaming function 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc' to 'Block__ZN8ap_fixedIL' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110:23)
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'current_block_write.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:257:13).
-INFO: [HLS 200-472] Inferring partial write operation for 'neust[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:202:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:248:11)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:36 ; elapsed = 00:01:19 . Memory (MB): peak = 1629.578 ; gain = 1227.754 ; free physical = 42608 ; free virtual = 344559
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.4 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.48 seconds; current allocated memory: 1.485 GB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_196_1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:196:20) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'.
+WARNING: [HLS 200-1946] Dependence pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:250:9) in loop 'VITIS_LOOP_197_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_196_1'.
+WARNING: [HLS 200-1946] Dependence pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:250:9) in loop 'VITIS_LOOP_197_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_196_1'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.35 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.05 seconds; current allocated memory: 1.516 GB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'conv1_lif_top' ...
-WARNING: [SYN 201-103] Legalizing function name 'conv1_lif_top.entry3' to 'conv1_lif_top_entry3'.
-WARNING: [SYN 201-103] Legalizing function name 'Block__ZN8ap_fixedIL' to 'Block_ZN8ap_fixedIL'.
+WARNING: [SYN 201-103] Legalizing function name 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' to 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s'.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top_entry3' 
+INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_196_1_VITIS_LOOP_197_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_196_1_VITIS_LOOP_197_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 79.34 seconds; current allocated memory: 254.170 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.47 seconds. CPU system time: 0.41 seconds. Elapsed time: 2.66 seconds; current allocated memory: 1.519 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 254.232 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.3 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.55 seconds; current allocated memory: 1.519 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGene' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 255.074 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_0_V' will be ignored if a simpler one can be used.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_1_V' will be ignored if a simpler one can be used.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 255.714 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Block_ZN8ap_fixedIL' 
+INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 255.815 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.35 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.99 seconds; current allocated memory: 1.519 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 255.859 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.33 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.22 seconds; current allocated memory: 1.519 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-42] -- Implementing module 'Block_entry13_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-WARNING: [SCHED 204-68] The II Violation in module 'Matrix_Vector_Activa' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'store' operation ('neust_0_V_addr_write_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) of variable 'select_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 and 'load' operation ('neust_0_V_load', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:169->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 257.784 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.43 seconds; current allocated memory: 1.519 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 259.478 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.51 seconds; current allocated memory: 1.519 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activate_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_147_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_147_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 6.92 seconds. CPU system time: 0.03 seconds. Elapsed time: 7.3 seconds; current allocated memory: 1.523 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.62 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.78 seconds; current allocated memory: 1.523 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 259.747 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.51 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.81 seconds; current allocated memory: 1.524 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 260.103 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 1.524 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top_entry3' 
+INFO: [HLS 200-10] -- Generating RTL for module 'ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top_entry3'.
-INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 260.445 MB.
+WARNING: [HLS 200-2049] Adding the rewind optimization to the pipelined process 'VITIS_LOOP_196_1_VITIS_LOOP_197_2' with inout ports inside a dataflow region can result in the creation of loop-carried dependencies and errors. Use caution when adding the rewind optimization to such loops.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2' pipeline 'VITIS_LOOP_196_1_VITIS_LOOP_197_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_2_1_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ConvolutionInputGenerator_Pipeline_VITIS_LOOP_196_1_VITIS_LOOP_197_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.01 seconds; current allocated memory: 1.524 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'ConvolutionInputGene' 
+INFO: [HLS 200-10] -- Generating RTL for module 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_0_V' to 'ConvolutionInputGbkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_1_V' to 'ConvolutionInputGcud' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'ConvolutionInputGene'.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 261.612 MB.
+INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_inputBuf_RAM_2P_AUTO_1R1W' to 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_inputBuf_bkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_inputBuf_1_RAM_2P_AUTO_1R1W' to 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_inputBuf_cud' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_8ns_39_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s'.
+INFO: [RTMG 210-278] Implementing memory 'conv1_lif_top_ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_inputBuf_bkb' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.06 seconds. CPU system time: 0.05 seconds. Elapsed time: 4.08 seconds; current allocated memory: 1.526 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Block_ZN8ap_fixedIL' 
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_entry13_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_ZN8ap_fixedIL'.
-INFO: [HLS 200-111]  Elapsed time: 1.03 seconds; current allocated memory: 264.736 MB.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_8ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_entry13_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.4 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.82 seconds; current allocated memory: 1.527 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activate_Batch' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_0_V' to 'Matrix_Vector_ActdEe' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_1_V' to 'Matrix_Vector_ActeOg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_2_V' to 'Matrix_Vector_ActfYi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_3_V' to 'Matrix_Vector_Actg8j' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_4_V' to 'Matrix_Vector_Acthbi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_5_V' to 'Matrix_Vector_Actibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_6_V' to 'Matrix_Vector_ActjbC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_7_V' to 'Matrix_Vector_ActkbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_8_V' to 'Matrix_Vector_ActlbW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_9_V' to 'Matrix_Vector_Actmb6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_10_V' to 'Matrix_Vector_Actncg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_11_V' to 'Matrix_Vector_Actocq' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_12_V' to 'Matrix_Vector_ActpcA' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_13_V' to 'Matrix_Vector_ActqcK' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_14_V' to 'Matrix_Vector_ActrcU' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_15_V' to 'Matrix_Vector_Actsc4' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_16_V' to 'Matrix_Vector_Acttde' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_17_V' to 'Matrix_Vector_Actudo' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_18_V' to 'Matrix_Vector_Actvdy' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_19_V' to 'Matrix_Vector_ActwdI' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_20_V' to 'Matrix_Vector_ActxdS' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_21_V' to 'Matrix_Vector_Actyd2' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_22_V' to 'Matrix_Vector_Actzec' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_23_V' to 'Matrix_Vector_ActAem' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_24_V' to 'Matrix_Vector_ActBew' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_25_V' to 'Matrix_Vector_ActCeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_26_V' to 'Matrix_Vector_ActDeQ' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_27_V' to 'Matrix_Vector_ActEe0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_28_V' to 'Matrix_Vector_ActFfa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_29_V' to 'Matrix_Vector_ActGfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_30_V' to 'Matrix_Vector_ActHfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_31_V' to 'Matrix_Vector_ActIfE' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
-INFO: [HLS 200-111]  Elapsed time: 1.43 seconds; current allocated memory: 267.756 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Matrix_Vector_Activate_Batch' pipeline 'VITIS_LOOP_147_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activate_Batch'.
+INFO: [RTMG 210-278] Implementing memory 'conv1_lif_top_Matrix_Vector_Activate_Batch_neust_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.61 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.16 seconds; current allocated memory: 1.531 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/in_V_V' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/out_V_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/in_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/out_r' to 'ap_fifo'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/numReps' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'conv1_lif_top' to 'ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'start_for_Block_ZN8ap_fixedIL_U0' to 'start_for_Block_ZJfO' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top'.
-INFO: [HLS 200-111]  Elapsed time: 2.24 seconds; current allocated memory: 276.542 MB.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xcu250-figd2104-2L-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp' ... 
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:48:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:49:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:52:9
-WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 40901 ; free virtual = 345227
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 40901 ; free virtual = 345227
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedInputStream<3u, 3u, 100u>::operator hls::stream<ap_uint<3>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121).
-INFO: [XFORM 203-603] Inlining function 'memory_resource<ap_uint<3> (*) [10]>' into 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:183).
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<32u, 32u, 100u>::operator hls::stream<ap_uint<32>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::weights' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::operator()<ap_uint<32> >' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:199).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator ap_uint<32> const&' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207).
-INFO: [XFORM 203-603] Inlining function 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' into 'conv1_lif_top' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 40786 ; free virtual = 345237
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:204: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 40743 ; free virtual = 345224
-WARNING: [XFORM 203-311] Ignored reset directive (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:195:1): variable 'inp' is not static or global variable.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' for pipelining.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'accu.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180) in dimension 1 completely.
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-INFO: [XFORM 203-712] Applying dataflow to function 'conv1_lif_top', detected/extracted 4 process function(s): 
-	 'conv1_lif_top.entry35'
-	 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'
-	 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc'
-	 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165:5) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197:5) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:216:85) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:224:11) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:249:1) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:262:9) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 3 basic blocks.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 40440 ; free virtual = 344950
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:196:35) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'.
-WARNING: [XFORM 203-631] Renaming function 'conv1_lif_top.entry35' to 'conv1_lif_top.entry3' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24:1)
-WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' to 'Matrix_Vector_Activa' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:124:46)
-WARNING: [XFORM 203-631] Renaming function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' to 'ConvolutionInputGene' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:19)
-WARNING: [XFORM 203-631] Renaming function 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc' to 'Block__ZN8ap_fixedIL' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110:23)
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'current_block_write.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:257:13).
-INFO: [HLS 200-472] Inferring partial write operation for 'neust[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:202:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:248:11)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 40324 ; free virtual = 344835
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'conv1_lif_top' ...
-WARNING: [SYN 201-103] Legalizing function name 'conv1_lif_top.entry3' to 'conv1_lif_top_entry3'.
-WARNING: [SYN 201-103] Legalizing function name 'Block__ZN8ap_fixedIL' to 'Block_ZN8ap_fixedIL'.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top_entry3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 47.56 seconds; current allocated memory: 254.694 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 254.755 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGene' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 255.696 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_0_V' will be ignored if a simpler one can be used.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_1_V' will be ignored if a simpler one can be used.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 256.302 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Block_ZN8ap_fixedIL' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 256.404 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 256.448 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-WARNING: [SCHED 204-68] The II Violation in module 'Matrix_Vector_Activa' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'store' operation ('neust_0_V_addr_write_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) of variable 'select_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 and 'load' operation ('neust_0_V_load', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:169->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 258.371 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.8 seconds; current allocated memory: 260.050 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 260.337 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 260.676 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top_entry3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top_entry3'.
-INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 261.021 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'ConvolutionInputGene' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_0_V' to 'ConvolutionInputGbkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_1_V' to 'ConvolutionInputGcud' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'ConvolutionInputGene'.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 262.159 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Block_ZN8ap_fixedIL' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_ZN8ap_fixedIL'.
-INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 265.330 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_0_V' to 'Matrix_Vector_ActdEe' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_1_V' to 'Matrix_Vector_ActeOg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_2_V' to 'Matrix_Vector_ActfYi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_3_V' to 'Matrix_Vector_Actg8j' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_4_V' to 'Matrix_Vector_Acthbi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_5_V' to 'Matrix_Vector_Actibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_6_V' to 'Matrix_Vector_ActjbC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_7_V' to 'Matrix_Vector_ActkbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_8_V' to 'Matrix_Vector_ActlbW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_9_V' to 'Matrix_Vector_Actmb6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_10_V' to 'Matrix_Vector_Actncg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_11_V' to 'Matrix_Vector_Actocq' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_12_V' to 'Matrix_Vector_ActpcA' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_13_V' to 'Matrix_Vector_ActqcK' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_14_V' to 'Matrix_Vector_ActrcU' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_15_V' to 'Matrix_Vector_Actsc4' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_16_V' to 'Matrix_Vector_Acttde' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_17_V' to 'Matrix_Vector_Actudo' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_18_V' to 'Matrix_Vector_Actvdy' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_19_V' to 'Matrix_Vector_ActwdI' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_20_V' to 'Matrix_Vector_ActxdS' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_21_V' to 'Matrix_Vector_Actyd2' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_22_V' to 'Matrix_Vector_Actzec' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_23_V' to 'Matrix_Vector_ActAem' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_24_V' to 'Matrix_Vector_ActBew' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_25_V' to 'Matrix_Vector_ActCeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_26_V' to 'Matrix_Vector_ActDeQ' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_27_V' to 'Matrix_Vector_ActEe0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_28_V' to 'Matrix_Vector_ActFfa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_29_V' to 'Matrix_Vector_ActGfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_30_V' to 'Matrix_Vector_ActHfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_31_V' to 'Matrix_Vector_ActIfE' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
-INFO: [HLS 200-111]  Elapsed time: 1.43 seconds; current allocated memory: 268.367 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/in_V_V' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/out_V_V' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/numReps' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'conv1_lif_top' to 'ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'start_for_Block_ZN8ap_fixedIL_U0' to 'start_for_Block_ZJfO' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top'.
-INFO: [HLS 200-111]  Elapsed time: 2.13 seconds; current allocated memory: 277.155 MB.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xcu250-figd2104-2L-e'
-WARNING: [HLS 200-40] Resetting target device to 'xcvu9p-flga2577-2-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp' ... 
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:48:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:49:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:52:9
-WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 37630 ; free virtual = 343236
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 37630 ; free virtual = 343236
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedInputStream<3u, 3u, 100u>::operator hls::stream<ap_uint<3>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121).
-INFO: [XFORM 203-603] Inlining function 'memory_resource<ap_uint<3> (*) [10]>' into 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:183).
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<32u, 32u, 100u>::operator hls::stream<ap_uint<32>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::weights' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::operator()<ap_uint<32> >' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:199).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator ap_uint<32> const&' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207).
-INFO: [XFORM 203-603] Inlining function 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' into 'conv1_lif_top' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 36864 ; free virtual = 342470
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:204: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:50 ; elapsed = 00:01:00 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 36792 ; free virtual = 342398
-WARNING: [XFORM 203-311] Ignored reset directive (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:195:1): variable 'inp' is not static or global variable.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' for pipelining.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'accu.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180) in dimension 1 completely.
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-INFO: [XFORM 203-712] Applying dataflow to function 'conv1_lif_top', detected/extracted 4 process function(s): 
-	 'conv1_lif_top.entry35'
-	 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'
-	 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc'
-	 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165:5) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197:5) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:216:85) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:224:11) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:249:1) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:262:9) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 3 basic blocks.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 37037 ; free virtual = 342646
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:196:35) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'.
-WARNING: [XFORM 203-631] Renaming function 'conv1_lif_top.entry35' to 'conv1_lif_top.entry3' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24:1)
-WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' to 'Matrix_Vector_Activa' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:124:46)
-WARNING: [XFORM 203-631] Renaming function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' to 'ConvolutionInputGene' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:19)
-WARNING: [XFORM 203-631] Renaming function 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc' to 'Block__ZN8ap_fixedIL' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110:23)
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'current_block_write.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:257:13).
-INFO: [HLS 200-472] Inferring partial write operation for 'neust[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:202:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:248:11)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 36799 ; free virtual = 342408
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'conv1_lif_top' ...
-WARNING: [SYN 201-103] Legalizing function name 'conv1_lif_top.entry3' to 'conv1_lif_top_entry3'.
-WARNING: [SYN 201-103] Legalizing function name 'Block__ZN8ap_fixedIL' to 'Block_ZN8ap_fixedIL'.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top_entry3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 62.46 seconds; current allocated memory: 254.712 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 254.774 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGene' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 255.698 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_0_V' will be ignored if a simpler one can be used.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_1_V' will be ignored if a simpler one can be used.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 256.303 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Block_ZN8ap_fixedIL' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 256.420 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 256.464 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-WARNING: [SCHED 204-68] The II Violation in module 'Matrix_Vector_Activa' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'store' operation ('neust_0_V_addr_write_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) of variable 'select_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 and 'load' operation ('neust_0_V_load', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:169->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 258.371 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 260.050 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 260.337 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 260.677 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top_entry3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top_entry3'.
-INFO: [HLS 200-111]  Elapsed time: 1 seconds; current allocated memory: 261.022 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'ConvolutionInputGene' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_0_V' to 'ConvolutionInputGbkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_1_V' to 'ConvolutionInputGcud' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'ConvolutionInputGene'.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 262.159 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Block_ZN8ap_fixedIL' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_ZN8ap_fixedIL'.
-INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 265.331 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_0_V' to 'Matrix_Vector_ActdEe' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_1_V' to 'Matrix_Vector_ActeOg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_2_V' to 'Matrix_Vector_ActfYi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_3_V' to 'Matrix_Vector_Actg8j' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_4_V' to 'Matrix_Vector_Acthbi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_5_V' to 'Matrix_Vector_Actibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_6_V' to 'Matrix_Vector_ActjbC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_7_V' to 'Matrix_Vector_ActkbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_8_V' to 'Matrix_Vector_ActlbW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_9_V' to 'Matrix_Vector_Actmb6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_10_V' to 'Matrix_Vector_Actncg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_11_V' to 'Matrix_Vector_Actocq' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_12_V' to 'Matrix_Vector_ActpcA' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_13_V' to 'Matrix_Vector_ActqcK' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_14_V' to 'Matrix_Vector_ActrcU' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_15_V' to 'Matrix_Vector_Actsc4' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_16_V' to 'Matrix_Vector_Acttde' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_17_V' to 'Matrix_Vector_Actudo' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_18_V' to 'Matrix_Vector_Actvdy' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_19_V' to 'Matrix_Vector_ActwdI' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_20_V' to 'Matrix_Vector_ActxdS' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_21_V' to 'Matrix_Vector_Actyd2' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_22_V' to 'Matrix_Vector_Actzec' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_23_V' to 'Matrix_Vector_ActAem' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_24_V' to 'Matrix_Vector_ActBew' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_25_V' to 'Matrix_Vector_ActCeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_26_V' to 'Matrix_Vector_ActDeQ' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_27_V' to 'Matrix_Vector_ActEe0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_28_V' to 'Matrix_Vector_ActFfa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_29_V' to 'Matrix_Vector_ActGfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_30_V' to 'Matrix_Vector_ActHfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_31_V' to 'Matrix_Vector_ActIfE' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
-INFO: [HLS 200-111]  Elapsed time: 1.47 seconds; current allocated memory: 268.369 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/in_V_V' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/out_V_V' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/numReps' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'conv1_lif_top' to 'ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'start_for_Block_ZN8ap_fixedIL_U0' to 'start_for_Block_ZJfO' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top'.
-INFO: [HLS 200-111]  Elapsed time: 2.87 seconds; current allocated memory: 277.140 MB.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2577-2-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp' ... 
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:48:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:49:9
-WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:52:9
-WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28088 ; free virtual = 344395
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28088 ; free virtual = 344395
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedInputStream<3u, 3u, 100u>::operator hls::stream<ap_uint<3>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121).
-INFO: [XFORM 203-603] Inlining function 'memory_resource<ap_uint<3> (*) [10]>' into 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:183).
-INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<32u, 32u, 100u>::operator hls::stream<ap_uint<32>, 0>&' into 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::weights' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189).
-INFO: [XFORM 203-603] Inlining function 'FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>::TileIndex::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::operator()<ap_uint<32> >' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:199).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator[]' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203).
-INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<32> >::operator ap_uint<32> const&' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207).
-INFO: [XFORM 203-603] Inlining function 'ConvLayer_Batch<1u, 3u, 10u, 32u, 10u, 3u, 3u, 32u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 3, 32, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' into 'conv1_lif_top' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:51 ; elapsed = 00:01:05 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28358 ; free virtual = 344749
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-WARNING: [SYNCHK 200-23] /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:204: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28196 ; free virtual = 344595
-WARNING: [XFORM 203-311] Ignored reset directive (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:195:1): variable 'inp' is not static or global variable.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' for pipelining.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 32.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'neust.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'accu.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:136) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180) in dimension 1 completely.
-INFO: [XFORM 203-602] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202) automatically.
-INFO: [XFORM 203-712] Applying dataflow to function 'conv1_lif_top', detected/extracted 4 process function(s): 
-	 'conv1_lif_top.entry35'
-	 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'
-	 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc'
-	 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:165:5) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197:5) in function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:216:85) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:224:11) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:249:1) to (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:262:9) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'... converting 3 basic blocks.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:53 ; elapsed = 00:01:07 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 28244 ; free virtual = 344645
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:196:35) in function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>'.
-WARNING: [XFORM 203-631] Renaming function 'conv1_lif_top.entry35' to 'conv1_lif_top.entry3' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24:1)
-WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Batch<3u, 32u, 3u, 3u, 32u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 10u, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3u, ap_int<32>, 32u, 1u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' to 'Matrix_Vector_Activa' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:124:46)
-WARNING: [XFORM 203-631] Renaming function 'ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>' to 'ConvolutionInputGene' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:19)
-WARNING: [XFORM 203-631] Renaming function 'Block__ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit13_proc' to 'Block__ZN8ap_fixedIL' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110:23)
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[1].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'current_block_write.3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:257:13).
-INFO: [HLS 200-472] Inferring partial write operation for 'neust[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204:40)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:202:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:248:11)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:54 ; elapsed = 00:01:08 . Memory (MB): peak = 1696.547 ; gain = 1294.723 ; free physical = 27923 ; free virtual = 344324
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'conv1_lif_top' ...
-WARNING: [SYN 201-103] Legalizing function name 'conv1_lif_top.entry3' to 'conv1_lif_top_entry3'.
-WARNING: [SYN 201-103] Legalizing function name 'Block__ZN8ap_fixedIL' to 'Block_ZN8ap_fixedIL'.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top_entry3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 68.5 seconds; current allocated memory: 254.695 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 254.756 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGene' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 255.677 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_0_V' will be ignored if a simpler one can be used.
-WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_1_V' will be ignored if a simpler one can be used.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 256.282 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Block_ZN8ap_fixedIL' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 256.400 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 256.444 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-WARNING: [SCHED 204-68] The II Violation in module 'Matrix_Vector_Activa' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'store' operation ('neust_0_V_addr_write_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) of variable 'select_ln204', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:204->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26 and 'load' operation ('neust_0_V_load', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:169->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) on array 'neust[0].V', /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132->/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 258.354 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.11 seconds; current allocated memory: 260.045 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv1_lif_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.22 seconds; current allocated memory: 260.317 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 260.657 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top_entry3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top_entry3'.
-INFO: [HLS 200-111]  Elapsed time: 1.04 seconds; current allocated memory: 261.002 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'ConvolutionInputGene' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_0_V' to 'ConvolutionInputGbkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_inputBuf_1_V' to 'ConvolutionInputGcud' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'ConvolutionInputGene'.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 262.156 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Block_ZN8ap_fixedIL' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_ZN8ap_fixedIL'.
-INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 265.310 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_0_V' to 'Matrix_Vector_ActdEe' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_1_V' to 'Matrix_Vector_ActeOg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_2_V' to 'Matrix_Vector_ActfYi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_3_V' to 'Matrix_Vector_Actg8j' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_4_V' to 'Matrix_Vector_Acthbi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_5_V' to 'Matrix_Vector_Actibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_6_V' to 'Matrix_Vector_ActjbC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_7_V' to 'Matrix_Vector_ActkbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_8_V' to 'Matrix_Vector_ActlbW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_9_V' to 'Matrix_Vector_Actmb6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_10_V' to 'Matrix_Vector_Actncg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_11_V' to 'Matrix_Vector_Actocq' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_12_V' to 'Matrix_Vector_ActpcA' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_13_V' to 'Matrix_Vector_ActqcK' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_14_V' to 'Matrix_Vector_ActrcU' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_15_V' to 'Matrix_Vector_Actsc4' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_16_V' to 'Matrix_Vector_Acttde' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_17_V' to 'Matrix_Vector_Actudo' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_18_V' to 'Matrix_Vector_Actvdy' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_19_V' to 'Matrix_Vector_ActwdI' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_20_V' to 'Matrix_Vector_ActxdS' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_21_V' to 'Matrix_Vector_Actyd2' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_22_V' to 'Matrix_Vector_Actzec' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_23_V' to 'Matrix_Vector_ActAem' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_24_V' to 'Matrix_Vector_ActBew' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_25_V' to 'Matrix_Vector_ActCeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_26_V' to 'Matrix_Vector_ActDeQ' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_27_V' to 'Matrix_Vector_ActEe0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_28_V' to 'Matrix_Vector_ActFfa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_29_V' to 'Matrix_Vector_ActGfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_30_V' to 'Matrix_Vector_ActHfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_neust_31_V' to 'Matrix_Vector_ActIfE' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
-INFO: [HLS 200-111]  Elapsed time: 3.02 seconds; current allocated memory: 268.348 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv1_lif_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/in_V_V' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/out_V_V' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'conv1_lif_top/numReps' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'conv1_lif_top' to 'ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'start_for_Block_ZN8ap_fixedIL_U0' to 'start_for_Block_ZJfO' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_lif_top'.
-INFO: [HLS 200-111]  Elapsed time: 3.2 seconds; current allocated memory: 277.135 MB.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [RTMG 210-285] Implementing FIFO 'convInp_U(conv1_lif_top_fifo_w3_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'mul_ln125_loc_channel_U(conv1_lif_top_fifo_w32_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4.77 seconds. CPU system time: 0.12 seconds. Elapsed time: 6.33 seconds; current allocated memory: 1.545 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 4.08 seconds. CPU system time: 0.19 seconds. Elapsed time: 5.88 seconds; current allocated memory: 1.545 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.4 seconds. CPU system time: 0.1 seconds. Elapsed time: 1.56 seconds; current allocated memory: 1.554 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv1_lif_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv1_lif_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 315.46 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 66.49 seconds. CPU system time: 10.31 seconds. Elapsed time: 103.77 seconds; current allocated memory: 103.316 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -version 2.0.1 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file convSNN_conv1/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 73.11 seconds. CPU system time: 7.86 seconds. Elapsed time: 157.59 seconds; current allocated memory: 7.602 MB.

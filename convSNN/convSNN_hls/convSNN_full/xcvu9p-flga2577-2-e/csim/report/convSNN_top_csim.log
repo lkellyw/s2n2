@@ -1,0 +1,164 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../convSNN_tb.cpp in release mode
+   Compiling ../../../../../fc2_top.cpp in release mode
+   Compiling ../../../../../fc1_top.cpp in release mode
+   Compiling ../../../../../conv1_top.cpp in release mode
+   Compiling ../../../../../convSNN_top.cpp in release mode
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:51,
+                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:59,
+                 from ../../../../../fc1_weights.hpp:6,
+                 from ../../../../../convSNN_tb.cpp:4:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:51,
+                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:59,
+                 from ../../../../../fc2_top.cpp:4:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:51,
+                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:59,
+                 from ../../../../../fc1_top.cpp:3:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:51,
+                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:59,
+                 from ../../../../../conv1_top.cpp:3:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:51,
+                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:59,
+                 from ../../../../../convSNN_top.cpp:3:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+../../../../../convSNN_top.cpp: In function ‘void convSNN_top(hls::stream<ap_uint<3> >&, hls::stream<ap_uint<5> >&, unsigned int)’:
+../../../../../convSNN_top.cpp:50:5: error: ‘conv1_top’ was not declared in this scope
+     conv1_top(in, conv_out, numReps);
+     ^~~~~~~~~
+../../../../../convSNN_top.cpp:50:5: note: suggested alternative: ‘convSNN_top’
+     conv1_top(in, conv_out, numReps);
+     ^~~~~~~~~
+     convSNN_top
+../../../../../convSNN_top.cpp:55:5: error: ‘fc1_top’ was not declared in this scope
+     fc1_top(fc1_in, fc1_out, numReps);
+     ^~~~~~~
+../../../../../convSNN_top.cpp:55:5: note: suggested alternative: ‘fc1_out’
+     fc1_top(fc1_in, fc1_out, numReps);
+     ^~~~~~~
+     fc1_out
+../../../../../convSNN_top.cpp:56:5: error: ‘fc2_top’ was not declared in this scope
+     fc2_top(fc1_out, out, numReps);
+     ^~~~~~~
+make: *** [csim.mk:103: obj/convSNN_top.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

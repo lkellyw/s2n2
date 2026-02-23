@@ -1,0 +1,61 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 3486, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 4180, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 1247, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 1248, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 1102, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 2468, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 1409, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 1409, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 1409, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 1346, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   191, loop and instruction simplification</column>
+            <column name="">(2) parallelization,    38, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,    38, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,    38, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,    46, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,    53, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="fc1_top" col1="fc1_top.cpp:22" col2="3486" col3="1102" col4="1346" col5="38" col6="53">
+                    <row id="4" col0="DebugThresholdActivation" col1="mvau.hpp:65" col2="4" col3="" col4="" col5="" col6=""/>
+                    <row id="6" col0="Matrix_Vector_Activate_Batch&lt;320, 64, 16, 16, 8, 1, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, 16, 6, 1, ap_uint&lt;16&gt;, ap_uint&lt;8&gt;, FixedPointWeightsSp&lt;16, ap_int&lt;32&gt;, 8, 160&gt;, DebugThresholdActivation&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt; &gt;, ap_resource_dsp&gt;" col1="mvau.hpp:111" col2="3026" col3="1098" col4="1344" col5="36" col6="40">
+                        <row id="8" col0="weights" col1="weights.hpp:214" col2="13" col3="" col4="" col5="" col6="">
+                            <row id="2" col0="TileIndex" col1="weights.hpp:190" col2="8" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="10" col0="operator[]" col1="weights.hpp:196" col2="292" col2_disp=" 292 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="1" col0="operator()&lt;ap_uint&lt;8&gt; &gt;" col1="interpret.hpp:235" col2="4" col3="" col4="" col5="" col6="">
+                            <row id="5" col0="Container" col1="interpret.hpp:202" col2="2" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="3" col0="operator()" col1="mvau.hpp:67" col2="742" col3="" col4="" col5="" col6=""/>
+                        <row id="9" col0="operator[]" col1="interpret.hpp:218" col2="4" col3="" col4="" col5="" col6=""/>
+                        <row id="7" col0="operator const ap_uint&lt;8&gt; &amp;" col1="interpret.hpp:222" col2="2" col3="" col4="" col5="" col6=""/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

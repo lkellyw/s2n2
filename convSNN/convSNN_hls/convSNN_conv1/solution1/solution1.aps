@@ -1,33 +1,22 @@
 <AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
-    <config>
-        <schedule model="conv1_lif_top"/>
-        <config_export format="ip_catalog" version="2.0.1"/>
-    </config>
-    <Simulation argv="">
-        <SimFlow name="cosim" setup="false" dumpTrace="none" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" reduce_diskspace="false" toolName="auto">
-            <Rtl name="systemc" active="false"/>
-            <Rtl name="verilog" active="true"/>
-            <Rtl name="vhdl" active="false"/>
-        </SimFlow>
-    </Simulation>
-    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
-        <Format formatName="ip_catalog" description="" vendor="" library="" ipname="" version="2.0.1" driver_input_dir="" display_name="" taxonomy=""/>
-    </ExportDesign>
     <name>
         <value string="solution1"/>
     </name>
     <project>
         <value string="convSNN_conv1"/>
     </project>
+    <flowTarget value="vivado"/>
     <targetInfo>
         <TargetInfo value="xcvu9p:-flga2577:-2-e"/>
     </targetInfo>
     <libraryList>
         <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
-        <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="10"/>
+        <clock name="default" period="10" default="false"/>
     </clockList>
+    <config>
+        <config_export format="ip_catalog" version="2.0.1"/>
+    </config>
 </AutoPilot:solution>
 

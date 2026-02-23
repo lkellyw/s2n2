@@ -1,6 +1,6 @@
 // ==============================================================
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
 
@@ -14,26 +14,24 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
-`define AESL_FIFO_in_V_V AESL_autofifo_in_V_V
-`define AESL_FIFO_INST_in_V_V AESL_autofifo_inst_in_V_V
-`define AESL_FIFO_out_V_V AESL_autofifo_out_V_V
-`define AESL_FIFO_INST_out_V_V AESL_autofifo_inst_out_V_V
+`define AESL_FIFO_in_r AESL_autofifo_in_r
+`define AESL_FIFO_INST_in_r AESL_autofifo_inst_in_r
+`define AESL_FIFO_out_r AESL_autofifo_out_r
+`define AESL_FIFO_INST_out_r AESL_autofifo_inst_out_r
 `define AESL_DEPTH_numReps 1
-`define AUTOTB_TVIN_in_V_V  "./c.fc1_top.autotvin_in_V_V.dat"
-`define AUTOTB_TVIN_out_V_V  "./c.fc1_top.autotvin_out_V_V.dat"
+`define AUTOTB_TVIN_in_r  "./c.fc1_top.autotvin_in_r.dat"
 `define AUTOTB_TVIN_numReps  "./c.fc1_top.autotvin_numReps.dat"
-`define AUTOTB_TVIN_in_V_V_out_wrapc  "./rtl.fc1_top.autotvin_in_V_V.dat"
-`define AUTOTB_TVIN_out_V_V_out_wrapc  "./rtl.fc1_top.autotvin_out_V_V.dat"
+`define AUTOTB_TVIN_in_r_out_wrapc  "./rtl.fc1_top.autotvin_in_r.dat"
 `define AUTOTB_TVIN_numReps_out_wrapc  "./rtl.fc1_top.autotvin_numReps.dat"
-`define AUTOTB_TVOUT_out_V_V  "./c.fc1_top.autotvout_out_V_V.dat"
-`define AUTOTB_TVOUT_out_V_V_out_wrapc  "./impl_rtl.fc1_top.autotvout_out_V_V.dat"
+`define AUTOTB_TVOUT_out_r  "./c.fc1_top.autotvout_out_r.dat"
+`define AUTOTB_TVOUT_out_r_out_wrapc  "./impl_rtl.fc1_top.autotvout_out_r.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = -1;
-parameter LENGTH_in_V_V = 20;
-parameter LENGTH_out_V_V = 160;
+parameter LENGTH_in_r = 20;
+parameter LENGTH_out_r = 160;
 parameter LENGTH_numReps = 1;
 
 task read_token;
@@ -102,6 +100,7 @@ endtask
 
 reg AESL_clock;
 reg rst;
+reg dut_rst;
 reg start;
 reg ce;
 reg tb_continue;
@@ -117,12 +116,14 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire [319 : 0] in_V_V_dout;
-wire  in_V_V_empty_n;
-wire  in_V_V_read;
-wire [63 : 0] out_V_V_din;
-wire  out_V_V_full_n;
-wire  out_V_V_write;
+wire  ap_local_block;
+wire  ap_local_deadlock;
+wire [319 : 0] in_r_dout;
+wire  in_r_empty_n;
+wire  in_r_read;
+wire [63 : 0] out_r_din;
+wire  out_r_full_n;
+wire  out_r_write;
 wire [31 : 0] numReps;
 wire ap_start;
 wire ap_done;
@@ -138,17 +139,20 @@ reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
 
+
 wire ap_clk;
 wire ap_rst;
 wire ap_rst_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
-    .in_V_V_dout(in_V_V_dout),
-    .in_V_V_empty_n(in_V_V_empty_n),
-    .in_V_V_read(in_V_V_read),
-    .out_V_V_din(out_V_V_din),
-    .out_V_V_full_n(out_V_V_full_n),
-    .out_V_V_write(out_V_V_write),
+    .ap_local_block(ap_local_block),
+    .ap_local_deadlock(ap_local_deadlock),
+    .in_r_dout(in_r_dout),
+    .in_r_empty_n(in_r_empty_n),
+    .in_r_read(in_r_read),
+    .out_r_din(out_r_din),
+    .out_r_full_n(out_r_full_n),
+    .out_r_write(out_r_write),
     .numReps(numReps),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
@@ -159,8 +163,8 @@ wire ap_rst_n;
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
-assign ap_rst = AESL_reset;
-assign ap_rst_n = ~AESL_reset;
+assign ap_rst = dut_rst;
+assign ap_rst_n = ~dut_rst;
 assign AESL_reset = rst;
 assign ap_start = AESL_start;
 assign AESL_start = start;
@@ -187,91 +191,91 @@ assign AESL_continue = tb_continue;
             end
         end
     end
-// Fifo Instantiation in_V_V
+// Fifo Instantiation in_r
 
-wire fifoin_V_V_rd;
-wire [319 : 0] fifoin_V_V_dout;
-wire fifoin_V_V_empty_n;
-wire fifoin_V_V_ready;
-wire fifoin_V_V_done;
-reg [31:0] ap_c_n_tvin_trans_num_in_V_V;
-reg in_V_V_ready_reg;
+wire fifoin_r_rd;
+wire [319 : 0] fifoin_r_dout;
+wire fifoin_r_empty_n;
+wire fifoin_r_ready;
+wire fifoin_r_done;
+reg [31:0] ap_c_n_tvin_trans_num_in_r;
+reg in_r_ready_reg;
 
-`AESL_FIFO_in_V_V `AESL_FIFO_INST_in_V_V (
+`AESL_FIFO_in_r `AESL_FIFO_INST_in_r (
     .clk          (AESL_clock),
     .reset        (AESL_reset),
     .if_write     (),
     .if_din       (),
     .if_full_n    (),
-    .if_read      (fifoin_V_V_rd),
-    .if_dout      (fifoin_V_V_dout),
-    .if_empty_n   (fifoin_V_V_empty_n),
-    .ready        (fifoin_V_V_ready),
-    .done         (fifoin_V_V_done)
+    .if_read      (fifoin_r_rd),
+    .if_dout      (fifoin_r_dout),
+    .if_empty_n   (fifoin_r_empty_n),
+    .ready        (fifoin_r_ready),
+    .done         (fifoin_r_done)
 );
 
-// Assignment between dut and fifoin_V_V
+// Assignment between dut and fifoin_r
 
-// Assign input of fifoin_V_V
-assign      fifoin_V_V_rd        =   in_V_V_read & in_V_V_empty_n;
-assign    fifoin_V_V_ready   =   in_V_V_ready_reg | ready_initial;
-assign    fifoin_V_V_done    =   0;
+// Assign input of fifoin_r
+assign      fifoin_r_rd        =   in_r_read & in_r_empty_n;
+assign    fifoin_r_ready   =   in_r_ready_reg | ready_initial;
+assign    fifoin_r_done    =   0;
 // Assign input of dut
-assign      in_V_V_dout       =   fifoin_V_V_dout;
-reg   reg_fifoin_V_V_empty_n;
-initial begin : gen_reg_fifoin_V_V_empty_n_process
+assign      in_r_dout       =   fifoin_r_dout;
+reg   reg_fifoin_r_empty_n;
+initial begin : gen_reg_fifoin_r_empty_n_process
     integer proc_rand;
-    reg_fifoin_V_V_empty_n = fifoin_V_V_empty_n;
+    reg_fifoin_r_empty_n = fifoin_r_empty_n;
     while (1) begin
-        @ (fifoin_V_V_empty_n);
-        reg_fifoin_V_V_empty_n = fifoin_V_V_empty_n;
+        @ (fifoin_r_empty_n);
+        reg_fifoin_r_empty_n = fifoin_r_empty_n;
     end
 end
 
-assign      in_V_V_empty_n    =   reg_fifoin_V_V_empty_n;
+assign      in_r_empty_n    =   reg_fifoin_r_empty_n;
 
 
-//------------------------Fifoout_V_V Instantiation--------------
+//------------------------Fifoout_r Instantiation--------------
 
-// The input and output of fifoout_V_V
-wire  fifoout_V_V_wr;
-wire  [63 : 0] fifoout_V_V_din;
-wire  fifoout_V_V_full_n;
-wire  fifoout_V_V_ready;
-wire  fifoout_V_V_done;
+// The input and output of fifoout_r
+wire  fifoout_r_wr;
+wire  [63 : 0] fifoout_r_din;
+wire  fifoout_r_full_n;
+wire  fifoout_r_ready;
+wire  fifoout_r_done;
 
-`AESL_FIFO_out_V_V `AESL_FIFO_INST_out_V_V(
+`AESL_FIFO_out_r `AESL_FIFO_INST_out_r(
     .clk          (AESL_clock),
     .reset        (AESL_reset),
-    .if_write     (fifoout_V_V_wr),
-    .if_din       (fifoout_V_V_din),
-    .if_full_n    (fifoout_V_V_full_n),
+    .if_write     (fifoout_r_wr),
+    .if_din       (fifoout_r_din),
+    .if_full_n    (fifoout_r_full_n),
     .if_read      (),
     .if_dout      (),
     .if_empty_n   (),
-    .ready        (fifoout_V_V_ready),
-    .done         (fifoout_V_V_done)
+    .ready        (fifoout_r_ready),
+    .done         (fifoout_r_done)
 );
 
-// Assignment between dut and fifoout_V_V
+// Assignment between dut and fifoout_r
 
-// Assign input of fifoout_V_V
-assign      fifoout_V_V_wr        =   out_V_V_write & out_V_V_full_n;
-assign      fifoout_V_V_din        =   out_V_V_din;
-assign    fifoout_V_V_ready   =  0;   //ready_initial | AESL_done_delay;
-assign    fifoout_V_V_done    =   AESL_done_delay;
+// Assign input of fifoout_r
+assign      fifoout_r_wr        =   out_r_write & out_r_full_n;
+assign      fifoout_r_din        =   out_r_din;
+assign    fifoout_r_ready   =  0;   //ready_initial | AESL_done_delay;
+assign    fifoout_r_done    =   AESL_done_delay;
 // Assign input of dut
-reg   reg_fifoout_V_V_full_n;
-initial begin : gen_reg_fifoout_V_V_full_n_process
+reg   reg_fifoout_r_full_n;
+initial begin : gen_reg_fifoout_r_full_n_process
     integer proc_rand;
-    reg_fifoout_V_V_full_n = fifoout_V_V_full_n;
+    reg_fifoout_r_full_n = fifoout_r_full_n;
     while (1) begin
-        @ (fifoout_V_V_full_n);
-        reg_fifoout_V_V_full_n = fifoout_V_V_full_n;
+        @ (fifoout_r_full_n);
+        reg_fifoout_r_full_n = fifoout_r_full_n;
     end
 end
 
-assign      out_V_V_full_n    =   reg_fifoout_V_V_full_n;
+assign      out_r_full_n    =   reg_fifoout_r_full_n;
 
 
 // The signal of port numReps
@@ -379,18 +383,15 @@ end
         integer fp2;
         wait (all_finish == 1);
         // last transaction is saved at negedge right after last done
-        @ (posedge AESL_clock);
-        @ (posedge AESL_clock);
-        @ (posedge AESL_clock);
-        @ (posedge AESL_clock);
-    fp1 = $fopen("./rtl.fc1_top.autotvout_out_V_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.fc1_top.autotvout_out_V_V.dat", "r");
+        repeat(6) @ (posedge AESL_clock);
+    fp1 = $fopen("./rtl.fc1_top.autotvout_out_r.dat", "r");
+    fp2 = $fopen("./impl_rtl.fc1_top.autotvout_out_r.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.fc1_top.autotvout_out_V_V.dat\"!");
+        $display("Failed to open file \"./rtl.fc1_top.autotvout_out_r.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.fc1_top.autotvout_out_V_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.fc1_top.autotvout_out_r.dat\"!");
     else begin
-        $display("Comparing rtl.fc1_top.autotvout_out_V_V.dat with impl_rtl.fc1_top.autotvout_out_V_V.dat");
+        $display("Comparing rtl.fc1_top.autotvout_out_r.dat with impl_rtl.fc1_top.autotvout_out_r.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
@@ -405,22 +406,29 @@ initial begin
 end
 
 
-reg end_in_V_V;
-reg [31:0] size_in_V_V;
-reg [31:0] size_in_V_V_backup;
-reg end_out_V_V;
-reg [31:0] size_out_V_V;
-reg [31:0] size_out_V_V_backup;
+reg end_in_r;
+reg [31:0] size_in_r;
+reg [31:0] size_in_r_backup;
 reg end_numReps;
 reg [31:0] size_numReps;
 reg [31:0] size_numReps_backup;
+reg end_out_r;
+reg [31:0] size_out_r;
+reg [31:0] size_out_r_backup;
 
 initial begin : initial_process
     integer proc_rand;
     rst = 1;
     # 100;
-    repeat(3) @ (posedge AESL_clock);
+    repeat(0+3) @ (posedge AESL_clock);
     rst = 0;
+end
+initial begin : initial_process_for_dut_rst
+    integer proc_rand;
+    dut_rst = 1;
+    # 100;
+    repeat(3) @ (posedge AESL_clock);
+    dut_rst = 0;
 end
 initial begin : start_process
     integer proc_rand;
@@ -433,11 +441,10 @@ initial begin : start_process
     #0 start = 1;
     start_cnt = start_cnt + 1;
     forever begin
-        @ (posedge AESL_clock);
-        if (start_cnt >= AUTOTB_TRANSACTION_NUM) begin
-            // keep pushing garbage in
-            #0 start = 1;
+        if (start_cnt >= AUTOTB_TRANSACTION_NUM + 1) begin
+            #0 start = 0;
         end
+        @ (posedge AESL_clock);
         if (AESL_ready) begin
             start_cnt = start_cnt + 1;
         end
@@ -514,104 +521,104 @@ begin
           interface_done = 0;
   end
 end
-initial begin : proc_gen_in_V_V_internal_ready
+initial begin : proc_gen_in_r_internal_ready
     integer internal_trans_num;
     wait(AESL_reset === 0);
     wait (ready_initial === 1);
-    in_V_V_ready_reg <= 0;
+    in_r_ready_reg <= 0;
     @(posedge AESL_clock);
     internal_trans_num = 1;
     while(internal_trans_num != AUTOTB_TRANSACTION_NUM + 1) begin
-        if (ap_c_n_tvin_trans_num_in_V_V > internal_trans_num) begin
-            in_V_V_ready_reg <= 1;
+        if (ap_c_n_tvin_trans_num_in_r > internal_trans_num) begin
+            in_r_ready_reg <= 1;
             @(posedge AESL_clock);
-            in_V_V_ready_reg <= 0;
+            in_r_ready_reg <= 0;
             internal_trans_num = internal_trans_num + 1;
         end
         else begin
             @(posedge AESL_clock);
         end
     end
-    in_V_V_ready_reg <= 0;
+    in_r_ready_reg <= 0;
 end
     
-    `define STREAM_SIZE_IN_in_V_V "./stream_size_in_in_V_V.dat"
+    `define STREAM_SIZE_IN_in_r "./stream_size_in_in_r.dat"
     
-    initial begin : gen_ap_c_n_tvin_trans_num_in_V_V
-        integer fp_in_V_V;
-        reg [127:0] token_in_V_V;
+    initial begin : gen_ap_c_n_tvin_trans_num_in_r
+        integer fp_in_r;
+        reg [127:0] token_in_r;
         integer ret;
         
-        ap_c_n_tvin_trans_num_in_V_V = 0;
-        end_in_V_V = 0;
+        ap_c_n_tvin_trans_num_in_r = 0;
+        end_in_r = 0;
         wait (AESL_reset === 0);
         
-        fp_in_V_V = $fopen(`STREAM_SIZE_IN_in_V_V, "r");
-        if(fp_in_V_V == 0) begin
-            $display("Failed to open file \"%s\"!", `STREAM_SIZE_IN_in_V_V);
+        fp_in_r = $fopen(`STREAM_SIZE_IN_in_r, "r");
+        if(fp_in_r == 0) begin
+            $display("Failed to open file \"%s\"!", `STREAM_SIZE_IN_in_r);
             $finish;
         end
-        read_token(fp_in_V_V, token_in_V_V); // should be [[[runtime]]]
-        if (token_in_V_V != "[[[runtime]]]") begin
-            $display("ERROR: token_in_V_V != \"[[[runtime]]]\"");
+        read_token(fp_in_r, token_in_r); // should be [[[runtime]]]
+        if (token_in_r != "[[[runtime]]]") begin
+            $display("ERROR: token_in_r != \"[[[runtime]]]\"");
             $finish;
         end
-        size_in_V_V = 0;
-        size_in_V_V_backup = 0;
-        while (size_in_V_V == 0 && end_in_V_V == 0) begin
-            ap_c_n_tvin_trans_num_in_V_V = ap_c_n_tvin_trans_num_in_V_V + 1;
-            read_token(fp_in_V_V, token_in_V_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_in_V_V == "[[transaction]]") begin
-                read_token(fp_in_V_V, token_in_V_V); // should be transaction number
-                read_token(fp_in_V_V, token_in_V_V); // should be size for hls::stream
-                ret = $sscanf(token_in_V_V, "%d", size_in_V_V);
-                if (size_in_V_V > 0) begin
-                    size_in_V_V_backup = size_in_V_V;
+        size_in_r = 0;
+        size_in_r_backup = 0;
+        while (size_in_r == 0 && end_in_r == 0) begin
+            ap_c_n_tvin_trans_num_in_r = ap_c_n_tvin_trans_num_in_r + 1;
+            read_token(fp_in_r, token_in_r); // should be [[transaction]] or [[[/runtime]]]
+            if (token_in_r == "[[transaction]]") begin
+                read_token(fp_in_r, token_in_r); // should be transaction number
+                read_token(fp_in_r, token_in_r); // should be size for hls::stream
+                ret = $sscanf(token_in_r, "%d", size_in_r);
+                if (size_in_r > 0) begin
+                    size_in_r_backup = size_in_r;
                 end
-                read_token(fp_in_V_V, token_in_V_V); // should be [[/transaction]]
-            end else if (token_in_V_V == "[[[/runtime]]]") begin
-                $fclose(fp_in_V_V);
-                end_in_V_V = 1;
+                read_token(fp_in_r, token_in_r); // should be [[/transaction]]
+            end else if (token_in_r == "[[[/runtime]]]") begin
+                $fclose(fp_in_r);
+                end_in_r = 1;
             end else begin
-                $display("ERROR: unknown token_in_V_V");
+                $display("ERROR: unknown token_in_r");
                 $finish;
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_in_V_V == 0) begin
-                if (in_V_V_read == 1) begin
-                    if (size_in_V_V > 0) begin
-                        size_in_V_V = size_in_V_V - 1;
-                        while (size_in_V_V == 0 && end_in_V_V == 0) begin
-                            ap_c_n_tvin_trans_num_in_V_V = ap_c_n_tvin_trans_num_in_V_V + 1;
-                            read_token(fp_in_V_V, token_in_V_V); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_in_V_V == "[[transaction]]") begin
-                                read_token(fp_in_V_V, token_in_V_V); // should be transaction number
-                                read_token(fp_in_V_V, token_in_V_V); // should be size for hls::stream
-                                ret = $sscanf(token_in_V_V, "%d", size_in_V_V);
-                                if (size_in_V_V > 0) begin
-                                    size_in_V_V_backup = size_in_V_V;
+            if (end_in_r == 0) begin
+                if (in_r_read == 1 && in_r_empty_n == 1) begin
+                    if (size_in_r > 0) begin
+                        size_in_r = size_in_r - 1;
+                        while (size_in_r == 0 && end_in_r == 0) begin
+                            ap_c_n_tvin_trans_num_in_r = ap_c_n_tvin_trans_num_in_r + 1;
+                            read_token(fp_in_r, token_in_r); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_in_r == "[[transaction]]") begin
+                                read_token(fp_in_r, token_in_r); // should be transaction number
+                                read_token(fp_in_r, token_in_r); // should be size for hls::stream
+                                ret = $sscanf(token_in_r, "%d", size_in_r);
+                                if (size_in_r > 0) begin
+                                    size_in_r_backup = size_in_r;
                                 end
-                                read_token(fp_in_V_V, token_in_V_V); // should be [[/transaction]]
-                            end else if (token_in_V_V == "[[[/runtime]]]") begin
-                                size_in_V_V = size_in_V_V_backup;
-                                $fclose(fp_in_V_V);
-                                end_in_V_V = 1;
+                                read_token(fp_in_r, token_in_r); // should be [[/transaction]]
+                            end else if (token_in_r == "[[[/runtime]]]") begin
+                                size_in_r = size_in_r_backup;
+                                $fclose(fp_in_r);
+                                end_in_r = 1;
                             end else begin
-                                $display("ERROR: unknown token_in_V_V");
+                                $display("ERROR: unknown token_in_r");
                                 $finish;
                             end
                         end
                     end
                 end
             end else begin
-                if (in_V_V_read == 1) begin
-                    if (size_in_V_V > 0) begin
-                        size_in_V_V = size_in_V_V - 1;
-                        if (size_in_V_V == 0) begin
-                            ap_c_n_tvin_trans_num_in_V_V = ap_c_n_tvin_trans_num_in_V_V + 1;
-                            size_in_V_V = size_in_V_V_backup;
+                if (in_r_read == 1 && in_r_empty_n == 1) begin
+                    if (size_in_r > 0) begin
+                        size_in_r = size_in_r - 1;
+                        if (size_in_r == 0) begin
+                            ap_c_n_tvin_trans_num_in_r = ap_c_n_tvin_trans_num_in_r + 1;
+                            size_in_r = size_in_r_backup;
                         end
                     end
                 end
@@ -619,15 +626,53 @@ end
         end
     end
     
+task write_binary;
+    input integer fp;
+    input reg[64-1:0] in;
+    input integer in_bw;
+    reg [63:0] tmp_long;
+    reg[64-1:0] local_in;
+    integer char_num;
+    integer long_num;
+    integer i;
+    integer j;
+    begin
+        long_num = (in_bw + 63) / 64;
+        char_num = ((in_bw - 1) % 64 + 7) / 8;
+        for(i=long_num;i>0;i=i-1) begin
+             local_in = in;
+             tmp_long = local_in >> ((i-1)*64);
+             for(j=0;j<64;j=j+1)
+                 if (tmp_long[j] === 1'bx)
+                     tmp_long[j] = 1'b0;
+             if (i == long_num) begin
+                 case(char_num)
+                     1: $fwrite(fp,"%c",tmp_long[7:0]);
+                     2: $fwrite(fp,"%c%c",tmp_long[15:8],tmp_long[7:0]);
+                     3: $fwrite(fp,"%c%c%c",tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     4: $fwrite(fp,"%c%c%c%c",tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     5: $fwrite(fp,"%c%c%c%c%c",tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     6: $fwrite(fp,"%c%c%c%c%c%c",tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     7: $fwrite(fp,"%c%c%c%c%c%c%c",tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     8: $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     default: ;
+                 endcase
+             end
+             else begin
+                 $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+             end
+        end
+    end
+endtask;
 
-reg dump_tvout_finish_out_V_V;
+reg dump_tvout_finish_out_r;
 
-initial begin : dump_tvout_runtime_sign_out_V_V
+initial begin : dump_tvout_runtime_sign_out_r
     integer fp;
-    dump_tvout_finish_out_V_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_out_V_V_out_wrapc, "w");
+    dump_tvout_finish_out_r = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -635,18 +680,16 @@ initial begin : dump_tvout_runtime_sign_out_V_V
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
     // last transaction is saved at negedge right after last done
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_out_V_V_out_wrapc, "a");
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_out_V_V = 1;
+    dump_tvout_finish_out_r = 1;
 end
 
 
@@ -665,9 +708,16 @@ reg AESL_ready_p1;
 reg AESL_start_p1;
 
 always @ (posedge AESL_clock) begin
-    clk_cnt <= clk_cnt + 1;
-    AESL_ready_p1 <= AESL_ready;
-    AESL_start_p1 <= AESL_start;
+    if (AESL_reset == 1) begin
+        clk_cnt <= 32'h0;
+        AESL_ready_p1 <= 1'b0;
+        AESL_start_p1 <= 1'b0;
+    end
+    else begin
+        clk_cnt <= clk_cnt + 1;
+        AESL_ready_p1 <= AESL_ready;
+        AESL_start_p1 <= AESL_start;
+    end
 end
 
 reg [31:0] start_timestamp [0:AUTOTB_TRANSACTION_NUM - 1];
@@ -676,7 +726,14 @@ reg [31:0] ready_timestamp [0:AUTOTB_TRANSACTION_NUM - 1];
 reg [31:0] ap_ready_cnt;
 reg [31:0] finish_timestamp [0:AUTOTB_TRANSACTION_NUM - 1];
 reg [31:0] finish_cnt;
+reg [31:0] lat_total;
 event report_progress;
+
+always @(posedge AESL_clock)
+begin
+    if (finish_cnt == AUTOTB_TRANSACTION_NUM - 1 && AESL_done == 1'b1)
+        lat_total = clk_cnt - start_timestamp[0];
+end
 
 initial begin
     start_cnt = 0;
@@ -787,6 +844,7 @@ task calculate_performance();
     reg [31:0] interval_max;
     reg [31:0] interval_total;
     reg [31:0] interval_average;
+    reg [31:0] total_execute_time;
     begin
         latency_min = -1;
         latency_max = 0;
@@ -794,6 +852,7 @@ task calculate_performance();
         interval_min = -1;
         interval_max = 0;
         interval_total = 0;
+        total_execute_time = lat_total;
 
         for (i = 0; i < AUTOTB_TRANSACTION_NUM; i = i + 1) begin
             // calculate latency
@@ -830,6 +889,7 @@ task calculate_performance();
         $fdisplay(fp, "$MAX_THROUGHPUT = \"%0d\"", interval_max);
         $fdisplay(fp, "$MIN_THROUGHPUT = \"%0d\"", interval_min);
         $fdisplay(fp, "$AVER_THROUGHPUT = \"%0d\"", interval_average);
+        $fdisplay(fp, "$TOTAL_EXECUTE_TIME = \"%0d\"", total_execute_time);
 
         $fclose(fp);
 
@@ -861,5 +921,14 @@ endtask
 `ifndef POST_SYN
 
 `endif
+///////////////////////////////////////////////////////
+// dataflow status monitor
+///////////////////////////////////////////////////////
+dataflow_monitor U_dataflow_monitor(
+    .clock(AESL_clock),
+    .reset(rst),
+    .finish(all_finish));
+
+`include "fifo_para.vh"
 
 endmodule

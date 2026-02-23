@@ -1,0 +1,1209 @@
+---
+MainSourceFile:  /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          59548
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          287376
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          287844
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          288313
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          572268
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_134_1:  '
+    FileOffset:      134
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1709506
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_134_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_161_1:  '
+    FileOffset:      161
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1710145
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_161_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_200_1:  '
+    FileOffset:      200
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1710959
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_200_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_247_1:  '
+    FileOffset:      247
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1712014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_273_1:  '
+    FileOffset:      273
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1712629
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_273_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_279_2:  '
+    FileOffset:      279
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1712753
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_279_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_76_1:  '
+    FileOffset:      76
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1730614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_76_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_1:  '
+    FileOffset:      108
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1731074
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_1:  '
+    FileOffset:      158
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1732131
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_159_2:  '
+    FileOffset:      159
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1732176
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_159_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_1:  '
+    FileOffset:      209
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1732885
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_233_1:  '
+    FileOffset:      233
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1733219
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_233_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_279_1:  '
+    FileOffset:      279
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1734099
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_279_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_280_2:  '
+    FileOffset:      280
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1734144
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_280_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_3:  '
+    FileOffset:      281
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1734190
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_334_1:  '
+    FileOffset:      334
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1734920
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_334_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_370_1:  '
+    FileOffset:      370
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1735683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_370_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_390_2:  '
+    FileOffset:      390
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1736012
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_390_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_402_3:  '
+    FileOffset:      402
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1736451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_402_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_456_1:  '
+    FileOffset:      456
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1737701
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_456_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_474_2:  '
+    FileOffset:      474
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1738236
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_474_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_1:  '
+    FileOffset:      511
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1738920
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_539_1:  '
+    FileOffset:      539
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1739356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_539_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_569_1:  '
+    FileOffset:      569
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1739898
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_569_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_574_2:  '
+    FileOffset:      574
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1740130
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_574_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_612_1:  '
+    FileOffset:      612
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1740914
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_612_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1743065
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_697_2:  '
+    FileOffset:      697
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1743217
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_697_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_713_3:  '
+    FileOffset:      713
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1743482
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_713_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_719_4:  '
+    FileOffset:      719
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1743659
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_719_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_732_5:  '
+    FileOffset:      732
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1744068
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_732_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_736_6:  '
+    FileOffset:      736
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1744195
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_736_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_772_1:  '
+    FileOffset:      772
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1744728
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_772_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_776_2:  '
+    FileOffset:      776
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1744894
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_776_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_803_1:  '
+    FileOffset:      803
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1745316
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_803_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_807_2:  '
+    FileOffset:      807
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1745478
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_807_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_895_1:  '
+    FileOffset:      895
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1747478
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_895_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_896_2:  '
+    FileOffset:      896
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1747537
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_896_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_918_1:  '
+    FileOffset:      918
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1747920
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_918_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_919_2:  '
+    FileOffset:      919
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1747979
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_919_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_1:  '
+    FileOffset:      113
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1749402
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_1:  '
+    FileOffset:      140
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1750145
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_1:  '
+    FileOffset:      153
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1750684
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_1:  '
+    FileOffset:      166
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1751074
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_1:  '
+    FileOffset:      187
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1751639
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_222_1:  '
+    FileOffset:      222
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1752214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_222_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_223_2:  '
+    FileOffset:      223
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1752265
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_223_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_227_3:  '
+    FileOffset:      227
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1752379
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_227_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_94_1:  '
+    FileOffset:      94
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1815523
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_94_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_2:  '
+    FileOffset:      100
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1815679
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      75
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_S2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      97
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_S2P_URAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      119
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_S2P_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      141
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_196_1:  '
+    FileOffset:      196
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1818567
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_196_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_197_2:  '
+    FileOffset:      197
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1818646
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_197_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_331_1:  '
+    FileOffset:      331
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1823423
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_331_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_332_2:  '
+    FileOffset:      332
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1823500
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_332_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_338_3:  '
+    FileOffset:      338
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1823702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_338_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_365_4:  '
+    FileOffset:      365
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1824549
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_365_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_398_5:  '
+    FileOffset:      398
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1825401
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_398_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_484_1:  '
+    FileOffset:      484
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1828000
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_484_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_489_2:  '
+    FileOffset:      489
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1828281
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_489_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_630_1:  '
+    FileOffset:      630
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1832572
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_630_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_631_2:  '
+    FileOffset:      631
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1832651
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_631_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_763_1:  '
+    FileOffset:      763
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1837165
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_763_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_767_2:  '
+    FileOffset:      767
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1837399
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_767_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_884_1:  '
+    FileOffset:      884
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1841478
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_884_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_885_2:  '
+    FileOffset:      885
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1841524
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_885_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_886_3:  '
+    FileOffset:      886
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1841571
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_886_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_887_4:  '
+    FileOffset:      887
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1841619
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_887_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1890898
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_76_2:  '
+    FileOffset:      76
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1890990
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_76_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_3:  '
+    FileOffset:      77
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1891051
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_4:  '
+    FileOffset:      78
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1891105
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_5:  '
+    FileOffset:      81
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1891227
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_6:  '
+    FileOffset:      88
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1891361
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_1:  '
+    FileOffset:      114
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1891789
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_1:  '
+    FileOffset:      145
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1892428
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_146_2:  '
+    FileOffset:      146
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1892485
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_146_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_152_3:  '
+    FileOffset:      152
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1892630
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_152_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_4:  '
+    FileOffset:      153
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1892691
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_154_5:  '
+    FileOffset:      154
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1892745
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_154_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_6:  '
+    FileOffset:      156
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1892811
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_159_7:  '
+    FileOffset:      159
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1892919
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_159_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_172_8:  '
+    FileOffset:      172
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1893330
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_172_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_173_9:  '
+    FileOffset:      173
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1893405
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_173_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_212_1:  '
+    FileOffset:      212
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1894451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_212_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1895199
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_2:  '
+    FileOffset:      249
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1895255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_250_3:  '
+    FileOffset:      250
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1895318
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_250_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_4:  '
+    FileOffset:      253
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1895431
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      296
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_299_1:  '
+    FileOffset:      299
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1896435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_299_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_300_2:  '
+    FileOffset:      300
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1896491
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_300_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_3:  '
+    FileOffset:      301
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1896554
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_305_4:  '
+    FileOffset:      305
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1896739
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_305_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_322_5:  '
+    FileOffset:      322
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1897349
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_322_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_368_1:  '
+    FileOffset:      368
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1898277
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_368_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_370_2:  '
+    FileOffset:      370
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1898355
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_370_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_374_3:  '
+    FileOffset:      374
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1898461
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_374_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_377_4:  '
+    FileOffset:      377
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1898577
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_377_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_382_5:  '
+    FileOffset:      382
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1898796
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_382_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_401_6:  '
+    FileOffset:      401
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1899295
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_401_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_449_1:  '
+    FileOffset:      449
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1900027
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_449_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_456_2:  '
+    FileOffset:      456
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1900175
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_456_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_463_3:  '
+    FileOffset:      463
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1900336
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_463_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_472_4:  '
+    FileOffset:      472
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1900544
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_472_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: Mul_LUT pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      116
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: DSP48 pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      142
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_167_1:  '
+    FileOffset:      167
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1902217
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_167_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_180_1:  '
+    FileOffset:      180
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1902437
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_180_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_208_1:  '
+    FileOffset:      208
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1902744
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_208_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_147_1:  '
+    FileOffset:      147
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1904732
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_147_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_2:  '
+    FileOffset:      166
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1905025
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_184_3:  '
+    FileOffset:      184
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1905364
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_184_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_200_4:  '
+    FileOffset:      200
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1905795
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_200_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1907222
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_303_2:  '
+    FileOffset:      303
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1907475
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_303_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_310_3:  '
+    FileOffset:      310
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1907637
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_310_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_317_4:  '
+    FileOffset:      317
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1907754
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_317_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_5:  '
+    FileOffset:      330
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1908056
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_1:  '
+    FileOffset:      108
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1914191
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_2:  '
+    FileOffset:      114
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1914328
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_115_3:  '
+    FileOffset:      115
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1914374
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_115_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_124_4:  '
+    FileOffset:      124
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1914550
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_124_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_5:  '
+    FileOffset:      127
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1914650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_138_6:  '
+    FileOffset:      138
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1914899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_138_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_7:  '
+    FileOffset:      140
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1914958
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_1:  '
+    FileOffset:      140
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1916848
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_221_1:  '
+    FileOffset:      221
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1918002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_221_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_2:  '
+    FileOffset:      228
+    FilePath:        /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp
+    Replacements:    
+      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+        Offset:          1918186
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_2: '
+...

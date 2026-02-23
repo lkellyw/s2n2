@@ -37,21 +37,21 @@
          <obj_property name="Render_Data">/apatb_fc2_top_top/AESL_inst_fc2_top//AESL_inst_fc2_top_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_fc2_top_top/AESL_inst_fc2_top//AESL_inst_fc2_top_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_fc2_top_top/AESL_inst_fc2_top//AESL_inst_fc2_top_activity.dataflowTxTooltipData</obj_property>
-         <wvobject type="group" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/Matrix_Vector_Activa_U0_activity">
-            <obj_property name="label">Matrix_Vector_Activa_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/Matrix_Vector_Activate_Batch_U0_activity">
+            <obj_property name="label">Matrix_Vector_Activate_Batch_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">Matrix_Vector_Activa_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">Matrix_Vector_Activa_U0_activity</obj_property>
+            <obj_property name="ElementShortName">Matrix_Vector_Activate_Batch_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Matrix_Vector_Activate_Batch_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/Matrix_Vector_Activa_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/Matrix_Vector_Activa_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/Matrix_Vector_Activa_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/Matrix_Vector_Activate_Batch_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/Matrix_Vector_Activate_Batch_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/Matrix_Vector_Activate_Batch_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -62,9 +62,9 @@
    <wvobject type="group" fp_name="AESL_inst_fc2_top_group">
       <obj_property name="label">AESL_inst_fc2_top</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="protoinst" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/Matrix_Vector_Activa_U0_activity">
-         <obj_property name="ElementShortName">Matrix_Vector_Activa_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">Matrix_Vector_Activa_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/Matrix_Vector_Activate_Batch_U0_activity">
+         <obj_property name="ElementShortName">Matrix_Vector_Activate_Batch_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Matrix_Vector_Activate_Batch_U0_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_fc2_top_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -82,72 +82,72 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="Matrix_Vector_Activa_U0_group">
-         <obj_property name="label">Matrix_Vector_Activa_U0</obj_property>
+      <wvobject type="group" fp_name="Matrix_Vector_Activate_Batch_U0_group">
+         <obj_property name="label">Matrix_Vector_Activate_Batch_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="Matrix_Vector_Activa_U0_Input_group">
+         <wvobject type="group" fp_name="Matrix_Vector_Activate_Batch_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="in_V_V_group">
-               <obj_property name="label">in_V_V(FIFO)</obj_property>
+            <wvobject type="group" fp_name="in_r_group">
+               <obj_property name="label">in_r(FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/in_V_V_blk_n">
-                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/in_r_blk_n">
+                  <obj_property name="ElementShortName">in_r_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_r_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/in_V_V_dout">
-                  <obj_property name="ElementShortName">in_V_V_dout[63:0]</obj_property>
-                  <obj_property name="ObjectShortName">in_V_V_dout[63:0]</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/in_r_dout">
+                  <obj_property name="ElementShortName">in_r_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_r_dout[7:0]</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/in_V_V_empty_n">
-                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/in_r_empty_n">
+                  <obj_property name="ElementShortName">in_r_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_r_empty_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/in_V_V_read">
-                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
-                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/in_r_read">
+                  <obj_property name="ElementShortName">in_r_read</obj_property>
+                  <obj_property name="ObjectShortName">in_r_read</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="Matrix_Vector_Activa_U0_Handshake_group">
+         <wvobject type="group" fp_name="Matrix_Vector_Activate_Batch_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="Matrix_Vector_Activa_U0_Output_group">
+         <wvobject type="group" fp_name="Matrix_Vector_Activate_Batch_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="out_V_V_group">
-               <obj_property name="label">out_V_V(FIFO)</obj_property>
+            <wvobject type="group" fp_name="out_r_group">
+               <obj_property name="label">out_r(FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/out_V_V_blk_n">
-                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/out_r_blk_n">
+                  <obj_property name="ElementShortName">out_r_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_r_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/out_V_V_din">
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/out_r_din">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/out_V_V_full_n">
-                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
-                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/out_r_full_n">
+                  <obj_property name="ElementShortName">out_r_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_r_full_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activa_U0/out_V_V_write">
-                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
-                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fc2_top_top/AESL_inst_fc2_top/Matrix_Vector_Activate_Batch_U0/out_r_write">
+                  <obj_property name="ElementShortName">out_r_write</obj_property>
+                  <obj_property name="ObjectShortName">out_r_write</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>

@@ -1,0 +1,23 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "fc2_top.cpp",
+    "fileloc": 21,
+    "instructions": 13,
+    "name": "fc2_top",
+    "total_instructions": 34
+  },
+  "1": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 111,
+    "instructions": 21,
+    "name": "Matrix_Vector_Activate_Batch<64, 5, 8, 8, 5, 1, Slice<ap_uint<1>, 1>, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16, 6, 1, ap_uint<8>, ap_uint<5>, FixedPointWeightsSp<8, ap_int<32>, 5, 8>, DebugThresholdActivation<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> >, ap_resource_dsp>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 21
+  }
+}

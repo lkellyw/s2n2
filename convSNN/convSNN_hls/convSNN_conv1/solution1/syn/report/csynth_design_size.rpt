@@ -1,0 +1,55 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Instructions per Function for each Compilation Phase
++--------------------------------------+---------------------+-----------------+-------------------+----------------------+---------------+
+| Function                             | Location            | Compile/Link    | Unroll/Inline     | Performance/Pipeline | Optimizations |
++--------------------------------------+---------------------+-----------------+-------------------+----------------------+---------------+
+| + conv1_lif_top                      | conv1_top.cpp:18    | 4,186           | 15,401            | 820                  | 751           |
+|    DebugThresholdActivation          | mvau.hpp:65         |     4           |      3            |                      |               |
+|  + ConvLayer_Batch<1, 3, 10, 32...   | convlayer.h:106     | 3,697           |                   |                      |               |
+|     WidthAdjustedInputStream         | streamtools.h:837   |     3           |                   |                      |               |
+|     WidthAdjustedOutputStream        | streamtools.h:869   |     3           |                   |                      |               |
+|     operator hls::stream<ap_uint...  | streamtools.h:841   |     3           |                   |                      |               |
+|   + ConvolutionInputGenerator<1,...  | slidingwindow.h:171 |   300           |                   |                      |               |
+|      memory_resource<ap_uint<3> (... | slidingwindow.h:73  |     2           |                   |                      |               |
+|     operator hls::stream<ap_uint...  | streamtools.h:874   |     3           |                   |                      |               |
+|   + Matrix_Vector_Activate_Batch...  | mvau.hpp:111        | 3,345           |                   |                      |               |
+|    + weights                         | weights.hpp:214     |    13           |                   |                      |               |
+|       TileIndex                      | weights.hpp:190     |     8           |                   |                      |               |
+|      operator[]                      | weights.hpp:196     |   336 (2 calls) |                   |                      |               |
+|    + operator()<ap_uint<32> >        | interpret.hpp:235   |    12           |                   |                      |               |
+|       Container                      | interpret.hpp:202   |    10           |                   |                      |               |
+|      operator()                      | mvau.hpp:67         |   806           |                   |                      |               |
+|      operator[]                      | interpret.hpp:218   |     4           |                   |                      |               |
+|      operator const ap_uint<32> &... | interpret.hpp:222   |     2           |                   |                      |               |
+|     ~WidthAdjustedOutputStream       | streamtools.h:871   |     1           |                   |                      |               |
+|     ~WidthAdjustedInputStream        | streamtools.h:838   |     1           |                   |                      |               |
+|    WidthAdjustedInputStream          | streamtools.h:837   |                 |      3            |                      |               |
+|    WidthAdjustedOutputStream         | streamtools.h:869   |                 |      3            |                      |               |
+|    operator hls::stream<ap_uint...   | streamtools.h:841   |                 |      1            |                      |               |
+|    ConvolutionInputGenerator<1,...   | slidingwindow.h:171 |                 |    156            | 120                  | 134           |
+|    operator hls::stream<ap_uint...   | streamtools.h:874   |                 |      1            |                      |               |
+|  + Matrix_Vector_Activate_Batch...   | mvau.hpp:111        |                 | 15,170            | 687                  | 595           |
+|     operator()                       | mvau.hpp:67         |                 |  5,472 (32 calls) |                      |               |
++--------------------------------------+---------------------+-----------------+-------------------+----------------------+---------------+
+
+* Description of Compilation Phases
++----------------------+------------------------------------------------------------+
+| Compilation Phase    | Description                                                |
++----------------------+------------------------------------------------------------+
+| Compile/Link         | All functions are compiled and linked into a single design |
+| Unroll/Inline        | After user unroll and inline pragmas are applied           |
+| Performance/Pipeline | After performance and pipeline pragmas are applied         |
+| Optimizations        | After high level synthesis optimizations                   |
++----------------------+------------------------------------------------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

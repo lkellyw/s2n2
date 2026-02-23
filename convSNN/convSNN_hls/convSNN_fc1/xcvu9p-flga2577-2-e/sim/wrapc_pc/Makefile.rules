@@ -2,7 +2,7 @@
 #
 # Makefile rules for autopilot SystemC simulation flow
 #
-#-  (c) Copyright 2011-2019 Xilinx, Inc. All rights reserved.
+#-  (c) Copyright 2011-2021 Xilinx, Inc. All rights reserved.
 #-
 #-  This file contains confidential and proprietary information
 #-  of Xilinx, Inc. and is protected under U.S. and
@@ -139,17 +139,21 @@ ifdef __USE_CLANG__
 ifdef AP_CLANG_PATH
 CC      = $(AP_CLANG_PATH)/clang
 CXX     = $(AP_CLANG_PATH)/clang++
+LLC     = $(AUTOPILOT_TOOL)/clang-3.9-csynth/bin/llc
 else
 CC      = clang
 CXX     = clang++
+LLC     = $(AUTOPILOT_TOOL)/clang-3.9-csynth/bin/llc
 endif
 else
 ifdef AP_GCC_PATH
 CC      = $(AP_GCC_PATH)/gcc
 CXX     = $(AP_GCC_PATH)/g++
+LLC     = $(AUTOPILOT_TOOL)/clang-3.9-csynth/bin/llc
 else
 CC	= gcc
 CXX	= g++
+LLC     = $(AUTOPILOT_TOOL)/clang-3.9-csynth/bin/llc
 endif
 endif
 
@@ -179,6 +183,12 @@ IFLAG += -I "$(AUTOPILOT_ROOT)/include"
 IFLAG += -I "$(AUTOPILOT_TECH)/generic/SystemC/AESL_comp"
 LFLAG += -Wl,--as-needed
 LFLAG += -Wl,-rpath,"$(SYSCLIB)" -L "$(SYSCLIB)" -lsystemc -lpthread
+
+ifeq ($(AUTOPILOT_MACH),win64)
+  LLCTARGET += -mtriple=x86_64-pc-mingw32
+else
+  LLCTARGET += -mtriple=x86_64-linux
+endif
 
 ifdef __SIM_MATHHLS__
 
@@ -218,6 +228,7 @@ endif
 ifdef __SIM_FPO__
    LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel
 endif
+
 
 ifdef __SIM_FFT__
   LFLAG += -Wl,-rpath,"$(FFTLIB)" -L "$(FFTLIB)" -lIp_xfft_v9_1_bitacc_cmodel
@@ -260,6 +271,7 @@ ifndef HLS_SOURCES
   SUFFIX_C++  = c++
   SUFFIX_c    = c
   SUFFIX_C    = C
+  SUFFIX_ll   = ll 
   SOURCES_CPP = $(wildcard *.$(SUFFIX_CPP))
   SOURCES_CP = $(wildcard *.$(SUFFIX_CP))
   SOURCES_CXX = $(wildcard *.$(SUFFIX_CXX))
@@ -267,6 +279,7 @@ ifndef HLS_SOURCES
   SOURCES_C++ = $(wildcard *.$(SUFFIX_C++))
   SOURCES_c = $(wildcard *.$(SUFFIX_c))
   SOURCES_C = $(wildcard *.$(SUFFIX_C))
+  SOURCES_ll = $(wildcard *.$(SUFFIX_ll))
 
 ifdef HLS_RtlSCDir
   SOURCES_CPP += $(wildcard $(HLS_RtlSCDir)/*.cpp)
@@ -278,7 +291,7 @@ endif
   FILE_SOURCES_CC = $(notdir $(SOURCES_CC))
   FILE_SOURCES_C = $(notdir $(SOURCES_C))
 
-  override HLS_SOURCES = $(SOURCES_CPP) $(SOURCES_CP) $(SOURCES_CXX) $(SOURCES_CC) $(SOURCES_C++) $(SOURCES_c) $(SOURCES_C)
+  override HLS_SOURCES = $(SOURCES_CPP) $(SOURCES_CP) $(SOURCES_CXX) $(SOURCES_CC) $(SOURCES_C++) $(SOURCES_c) $(SOURCES_C) $(SOURCES_ll)
 endif
 
 OBJECTS := $(basename $(notdir $(HLS_SOURCES)))
@@ -366,6 +379,7 @@ endif
 #-------------- C/C++ to binary ----------------------------------------
 Compile.C     = $(CC) $(CPP.Flags) $(CompileCommonOpts) -c $(C.Flags)
 Compile.CXX   = $(CXX) $(CPP.Flags) $(CompileCommonOpts) $(CXX.Flags) -c
+Compile.LLC   = $(LLC)
 
 CXXPATH = $(shell which ${CXX})
 
@@ -400,6 +414,9 @@ $(ObjDir)/%.o: %.c $(ObjDir)/.dir
 	then $(MV) -f "$(ObjDir)/$*.Cd" "$(ObjDir)/$*.d"; \
 	else $(RM) -f "$(ObjDir)/$*.Cd"; exit 1; fi
 
+$(ObjDir)/%.o: %.ll $(ObjDir)/.dir
+	$(Echo) "   Compiling $*.ll" $(AVE_DIR_DLOG)
+	$(Verb)  $(Compile.LLC) $(LLCTARGET) -filetype=obj $< -o $@
 
 # This rules ensures that header files that are removed still have a rule for
 # which they can be "generated."  This allows make to ignore them and

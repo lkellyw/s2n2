@@ -1,11 +1,11 @@
 <profile>
 
-<section name = "Vivado HLS Report for 'conv1_lif_top'" level="0">
-<item name = "Date">Thu Sep 25 03:15:42 2025
+<section name = "Vitis HLS Report for 'conv1_lif_top'" level="0">
+<item name = "Date">Mon Feb 23 22:37:13 2026
 </item>
-<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">convSNN_conv1</item>
-<item name = "Solution">solution1</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">virtexuplus</item>
 <item name = "Target device">xcvu9p-flga2577-2-e</item>
 </section>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.628 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 3.170 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,10 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_Matrix_Vector_Activa_fu_68">Matrix_Vector_Activa, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_ConvolutionInputGene_fu_76">ConvolutionInputGene, ?, ?, ?, ?, ?, ?, none</column>
-<column name="mul_ln124_loc_channe_Block_ZN8ap_fixedIL_fu_84">Block_ZN8ap_fixedIL, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
-<column name="call_ln24_conv1_lif_top_entry3_fu_90">conv1_lif_top_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s_fu_56">ConvolutionInputGenerator_1u_3u_1u_10u_10u_3u_1u_ap_resource_dflt_s, ?, ?, ?, ?, ?, ?, no</column>
+<column name="mul_ln125_loc_channel_Block_entry13_proc_fu_65">Block_entry13_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_Matrix_Vector_Activate_Batch_fu_70">Matrix_Vector_Activate_Batch, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

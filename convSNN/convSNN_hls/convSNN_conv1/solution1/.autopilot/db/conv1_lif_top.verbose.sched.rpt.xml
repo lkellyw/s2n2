@@ -1,11 +1,11 @@
 <profile>
 
-<section name = "Vivado HLS Report for 'conv1_lif_top'" level="0">
-<item name = "Date">Thu Sep 25 03:15:41 2025
+<section name = "Vitis HLS Report for 'conv1_lif_top'" level="0">
+<item name = "Date">Mon Feb 23 22:37:13 2026
 </item>
-<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">convSNN_conv1</item>
-<item name = "Solution">solution1</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">virtexuplus</item>
 <item name = "Target device">xcvu9p-flga2577-2-e</item>
 </section>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.628 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 3.170 ns, 2.70 ns</column>
 </table>
 </item>
 </section>

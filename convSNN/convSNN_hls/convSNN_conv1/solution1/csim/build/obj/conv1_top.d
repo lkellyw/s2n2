@@ -1,30 +1,31 @@
 obj/conv1_top.o: ../../../../../conv1_top.cpp \
- /tools/Xilinx2/Vivado/2020.1/include/hls_stream.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_int.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_common.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_decl.h \
- /tools/Xilinx2/Vivado/2020.1/include/etc/ap_private.h \
- /tools/Xilinx2/Vivado/2020.1/include/hls_half.h \
- /tools/Xilinx2/Vivado/2020.1/include/hls_fpo.h \
- /tools/Xilinx2/Vivado/2020.1/include/floating_point_v7_0_bitacc_cmodel.h \
- /tools/Xilinx2/Vivado/2020.1/include/gmp.h \
- /tools/Xilinx2/Vivado/2020.1/include/mpfr.h \
- /tools/Xilinx2/Vivado/2020.1/include/gmp.h \
- /tools/Xilinx2/Vivado/2020.1/include/mpfr.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_decl.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_int_base.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_int_ref.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_int_special.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_fixed.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_fixed_base.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_fixed_ref.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_fixed_special.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_common.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_decl.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_private.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/hls_half.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/hls_half_fpo.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/hls_fpo.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/floating_point_v7_1_bitacc_cmodel.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/gmp.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/mpfr.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/gmp.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/mpfr.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/hls_half_x_utils.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_int_base.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_int_ref.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_int_special.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/ap_fixed.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_base.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_ref.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_special.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_axi_sdata.h \
- /tools/Xilinx2/Vivado/2020.1/include/ap_int.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h \
+ /tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp \
@@ -35,6 +36,6 @@ obj/conv1_top.o: ../../../../../conv1_top.cpp \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp \
+ ../../../../../configSNN.h ../../../../../conv1_weights.hpp \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp \
- ../../../../../conv1_weights.hpp ../../../../../configSNN.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp

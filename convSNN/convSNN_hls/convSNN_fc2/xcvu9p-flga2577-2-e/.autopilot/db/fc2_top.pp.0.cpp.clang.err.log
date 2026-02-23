@@ -1,0 +1,730 @@
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:58:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:83:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=TileIndex_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:88:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:95:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=weights_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:127:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=TileIndex_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:132:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:135:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:147:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=weights_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:159:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:162:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:192:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=TileIndex_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:197:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:201:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:215:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=weights_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:240:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=TileIndex_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:248:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:265:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=weights_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:271:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=setMask_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:274:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=setMask_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:58:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:59:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:77:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamLimiter_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:160:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SameResize_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:234:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingCast_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:282:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=FMPadding_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:371:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:391:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:403:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:512:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=DuplicateStreams_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:570:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AddStreams_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II = 1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:575:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AddStreams_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:644:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AddStreamsLayer_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:691:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiChanDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:698:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiChanDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:714:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiChanDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:720:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiChanDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:733:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiChanDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:737:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiChanDataWidthConverter_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:773:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=FlattenMultiChanData_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:777:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=FlattenMultiChanData_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:804:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PackMultiChanData_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:808:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PackMultiChanData_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:837:77: warning: unused parameter 'reps' [-Wunused-parameter]
+  WidthAdjustedInputStream(hls::stream<ap_uint<W> >& source, unsigned const reps) : m_source(source) {}
+                                                                            ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:869:78: warning: unused parameter 'reps' [-Wunused-parameter]
+  WidthAdjustedOutputStream(hls::stream<ap_uint<W> >& target, unsigned const reps)
+                                                                             ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:897:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Qdma2Stream_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:920:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Stream2Qdma_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:60:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h:141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mem2Stream_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h:154:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Stream2Mem_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=GenParamStream_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:61:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:74:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_2P
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=variable=inputBuf core=RAM_2P_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:96:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:97:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_BRAM
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:97:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=variable=inputBuf core=RAM_S2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:119:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_URAM
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:119:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=variable=inputBuf core=RAM_S2P_URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:140:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:141:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_LUTRAM
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=memory_resource_XLX_SEP_ PragmaOptions=variable=inputBuf core=RAM_S2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:182:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:195:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=reset_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_XLX_SEP_ PragmaOptions=variable=inp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS reset variable=inp
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:198:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:249:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:250:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:260:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_XLX_SEP_ PragmaOptions=variable=current_block_write intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=current_block_write intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:314:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:315:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:316:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:317:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=2
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:330:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=reset_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=inp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS reset variable=inp
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:333:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:340:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:366:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:399:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:401:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:402:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:413:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_MMV_XLX_SEP_ PragmaOptions=variable=current_block_write intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=current_block_write intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:466:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:478:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=reset_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=inp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS RESET variable=inp
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:480:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:481:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:487:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=current_block_write intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=current_block_write intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:490:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:555:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:556:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:565:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_XLX_SEP_ PragmaOptions=variable=current_block_write intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=current_block_write intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:616:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_dws_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:629:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=reset_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_dws_XLX_SEP_ PragmaOptions=variable=inp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS reset variable=inp
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:632:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_dws_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:683:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_dws_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:684:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_dws_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:694:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=deprecated_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_dws_XLX_SEP_ PragmaOptions=variable=current_block_write intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma AP dependence variable=current_block_write intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:746:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:757:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=reset_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=inp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS RESET variable=inp
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:759:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:760:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:768:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:770:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=current_block_write intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=current_block_write intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:836:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=inputBuf inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf inter false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:837:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=inputBuf intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=inputBuf intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:846:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel_stride_dws_XLX_SEP_ PragmaOptions=variable=current_block_write intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=current_block_write intra false
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:888:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvolutionInputGenerator_kernel1_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:62:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:50:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:61:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=XnorMul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:66:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:71:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:79:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Binary_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:88:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:96:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:101:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:115:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:121:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:137:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Container<TV>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:146:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:150:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:149:53: warning: unused parameter 'mmv' [-Wunused-parameter]
+    T operator()(unsigned const idx, unsigned const mmv) const {
+                                                    ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:154:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator const type-parameter-1-0 &_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:162:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:167:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:166:58: warning: unused parameter 'mmv' [-Wunused-parameter]
+  Container<TV> operator()(TV const &val, unsigned const mmv) const {
+                                                         ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:172:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:203:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Container<TV>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:206:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Container<TV>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:210:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:209:56: warning: unused parameter 'mmv' [-Wunused-parameter]
+    auto operator()(unsigned const idx, unsigned const mmv, const bool flag) const -> decltype(m_val(STRIDE, 0)) {
+                                                       ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:209:72: warning: unused parameter 'flag' [-Wunused-parameter]
+    auto operator()(unsigned const idx, unsigned const mmv, const bool flag) const -> decltype(m_val(STRIDE, 0)) {
+                                                                       ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:214:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:213:53: warning: unused parameter 'mmv' [-Wunused-parameter]
+    T operator()(unsigned const idx, unsigned const mmv) const {
+                                                    ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:219:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:218:30: warning: unused parameter 'mmv' [-Wunused-parameter]
+    auto operator[](unsigned mmv) const -> decltype(m_val) {
+                             ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:223:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator const type-parameter-1-0 &_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:231:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:236:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:241:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:240:53: warning: unused parameter 'mmv' [-Wunused-parameter]
+  Container<TV> operator() (TV const &val, unsigned mmv) const {
+                                                    ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:260:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Container<TV>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:263:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Container<TV>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:262:39: warning: unused parameter 'mmv' [-Wunused-parameter]
+    Container(TV const &val, unsigned mmv) : m_val(val){
+                                      ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:266:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Container<TV>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:270:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator const type-parameter-1-0 &_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:274:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:273:72: warning: unused parameter 'flag' [-Wunused-parameter]
+    auto operator()(unsigned const idx, unsigned const mmv, const bool flag) const -> decltype(m_val.data[mmv](STRIDE, 0)) {
+                                                                       ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:278:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:283:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator[]_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:291:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:296:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:301:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:300:52: warning: unused parameter 'mmv' [-Wunused-parameter]
+  Container<TV> operator()(TV const &val, unsigned mmv) {
+                                                   ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:62:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:72:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:79:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:144:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_Precision_XLX_SEP_ PragmaOptions=variable=buf complete dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=2
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:147:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_Precision_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:157:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_Precision_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:160:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_Precision_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:174:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_Precision_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:207:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingMaxPool_Precision_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:251:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ReLU_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:254:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ReLU_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:296:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=accumulators core=RAM_2P_LUTRAM
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:296:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AccPool_Batch_XLX_SEP_ PragmaOptions=variable=accumulators core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:302:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AccPool_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:306:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AccPool_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:363:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LabelSelect_Batch_XLX_SEP_ PragmaOptions=variable=toplabels complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=toplabels complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:366:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LabelSelect_Batch_XLX_SEP_ PragmaOptions=variable=topval complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=topval complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:371:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LabelSelect_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:375:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LabelSelect_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:378:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LabelSelect_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:383:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LabelSelect_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:443:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Pool_batch_XLX_SEP_ PragmaOptions=variable=accu complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=accu complete dim=0
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:450:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Pool_batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:457:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Pool_batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:464:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Pool_batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:473:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Pool_batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:63:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h:55:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:56:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:114:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:116:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=res core=Mul_LUT
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:116:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mul_XLX_SEP_ PragmaOptions=variable=res core=Mul_LUT_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:140:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:142:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=res core=DSP48
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mul_XLX_SEP_ PragmaOptions=variable=res core=DSP48_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:165:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:168:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:178:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=acc_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:181:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=acc_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:206:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:209:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:216:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:63:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h:55:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:128:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=0
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:133:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=variable=neust complete dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=neust complete dim=2
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:137:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=variable=accu complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=accu complete dim=0
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:148:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:167:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:185:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:201:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:115:16: warning: unused parameter 'decay' [-Wunused-parameter]
+      TD const decay,
+               ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:16: warning: unused parameter 'r' [-Wunused-parameter]
+      R const &r) {
+               ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:269:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=variable=inputBuf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:272:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=variable=accu complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=accu complete dim=0
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:275:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=variable=w.m_weights complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=w.m_weights complete dim=0
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:287:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:304:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:311:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:318:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:331:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Matrix_Vector_Activate_Stream_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:63:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h:100:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=StreamingFCLayer_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:64:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:113:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvLayer_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:186:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ConvLayer_Batch_MMV_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:65:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp:100:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Vector_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=variable=accu complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=accu complete dim=0
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp:109:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Vector_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp:116:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Vector_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp:125:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Vector_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp:139:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Vector_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp:141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Vector_Vector_Activate_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:8:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:69:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=init_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:68:26: warning: unused parameter 'nf' [-Wunused-parameter]
+  TA init(unsigned const nf, unsigned const pe) const {
+                         ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:68:45: warning: unused parameter 'pe' [-Wunused-parameter]
+  TA init(unsigned const nf, unsigned const pe) const {
+                                            ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:87:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=activate_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:86:29: warning: unused parameter 'nf' [-Wunused-parameter]
+  T activate(unsigned const nf, unsigned const pe, T const &accu) const {
+                            ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:86:48: warning: unused parameter 'pe' [-Wunused-parameter]
+  T activate(unsigned const nf, unsigned const pe, T const &accu) const {
+                                               ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:104:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ThresholdActivation<TA, Compare>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:109:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=activate_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:108:32: warning: unused parameter 'nf' [-Wunused-parameter]
+  bool activate(unsigned const nf, unsigned const pe, TA const &accu) const {
+                               ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:108:51: warning: unused parameter 'pe' [-Wunused-parameter]
+  bool activate(unsigned const nf, unsigned const pe, TA const &accu) const {
+                                                  ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:132:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=init_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:131:26: warning: unused parameter 'nf' [-Wunused-parameter]
+  TA init(unsigned const nf, unsigned const pe) const {
+                         ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:131:45: warning: unused parameter 'pe' [-Wunused-parameter]
+  TA init(unsigned const nf, unsigned const pe) const {
+                                            ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=activate_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=activate_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:171:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=init_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:170:26: warning: unused parameter 'nf' [-Wunused-parameter]
+  TI init(unsigned const nf, unsigned const pe) const {
+                         ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:170:45: warning: unused parameter 'pe' [-Wunused-parameter]
+  TI init(unsigned const nf, unsigned const pe) const {
+                                            ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:176:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=activate_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:223:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Thresholding_Batch_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:230:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Thresholding_Batch_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc2_script.fcl:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=fc2_top_XLX_SEP_ PragmaOptions=name=fc2_top_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=fc2_top
+        ^
+/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fc2_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+238 warnings generated.

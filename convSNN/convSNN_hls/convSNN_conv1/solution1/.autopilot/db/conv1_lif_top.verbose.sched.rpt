@@ -1,13 +1,13 @@
 
 
 ================================================================
-== Vivado HLS Report for 'conv1_lif_top'
+== Vitis HLS Report for 'conv1_lif_top'
 ================================================================
-* Date:           Thu Sep 25 03:15:41 2025
+* Date:           Mon Feb 23 22:37:13 2026
 
-* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        convSNN_conv1
-* Solution:       solution1
+* Solution:       solution1 (Vivado IP Flow Target)
 * Product family: virtexuplus
 * Target device:  xcvu9p-flga2577-2-e
 
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 4.628 ns |   1.25 ns  |
+    |ap_clk  |  10.00 ns|  3.170 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
     |   min   |   max   |    min   |    max   | min | max |   Type   |
     +---------+---------+----------+----------+-----+-----+----------+
-    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
     +---------+---------+----------+----------+-----+-----+----------+
 
     + Detail: 
@@ -65,75 +65,62 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 5
+* Number of FSM states : 4
 * Pipeline : 0
 * Dataflow Pipeline: 1
-  DF-Pipeline-0: Size = 5, States = { 1 2 3 4 5 }
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
 
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
 3 --> 4 
-4 --> 5 
-5 --> 
+4 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.45>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%numReps_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %numReps)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 6 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%numReps_c8 = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 7 'alloca' 'numReps_c8' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%numReps_c = alloca i32, align 4" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 8 'alloca' 'numReps_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%convInp_V_V = alloca i3, align 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 9 'alloca' 'convInp_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 10 [1/1] (1.45ns)   --->   "call fastcc void @conv1_lif_top.entry3(i32 %numReps_read, i32* %numReps_c, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 10 'call' <Predicate = true> <Delay = 1.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%numReps_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %numReps"   --->   Operation 5 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%convInp = alloca i64 1" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:119->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 6 'alloca' 'convInp' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 3> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln120 = call void @ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>, i3 %in_r, i3 %convInp, i32 %numReps_read" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:120->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 7 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 11 [2/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 11 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln120 = call void @ConvolutionInputGenerator<1u, 3u, 1u, 10u, 10u, 3u, 1u, ap_resource_dflt>, i3 %in_r, i3 %convInp, i32 %numReps_read" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:120->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 8 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 12 [1/2] (0.00ns)   --->   "call fastcc void @ConvolutionInputGene(i3* %in_V_V, i3* %convInp_V_V, i32* nocapture %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:121->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 3 <SV = 2> <Delay = 3.17>
+ST_3 : Operation 9 [1/1] (3.17ns)   --->   "%mul_ln125_loc_channel = call i32 @Block_entry13_proc, i32 %numReps_read"   --->   Operation 9 'call' 'mul_ln125_loc_channel' <Predicate = true> <Delay = 3.17> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_3 : Operation 10 [2/2] (2.69ns)   --->   "%call_ln122 = call void @Matrix_Vector_Activate_Batch, i3 %convInp, i32 %out_r, i32 %mul_ln125_loc_channel" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:122->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 10 'call' 'call_ln122' <Predicate = true> <Delay = 2.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%mul_ln124_loc_channe = call fastcc i32 @Block__ZN8ap_fixedIL(i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 13 'call' 'mul_ln124_loc_channe' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_4 : Operation 14 [2/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i3* %convInp_V_V, i32* %out_V_V, i32 %mul_ln124_loc_channe)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 14 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-
-State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str) nounwind" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24]   --->   Operation 15 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 16 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 16 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 17 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i3* %in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' 'empty_8' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i3* %in_V_V), !map !174"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_V_V), !map !178"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %numReps), !map !182"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 21 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @convInp_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i3* %convInp_V_V, i3* %convInp_V_V)"   --->   Operation 21 'specchannel' 'empty_9' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecInterface(i3* %convInp_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 22 'specinterface' 'empty_10' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @conv1_lif_top_str) nounwind"   --->   Operation 23 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @numReps_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %numReps_c, i32* %numReps_c)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 24 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 25 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %numReps_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 25 'specinterface' 'empty_12' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @numReps_c8_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %numReps_c8, i32* %numReps_c8)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 26 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %numReps_c8, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 27 'specinterface' 'empty_14' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 28 [1/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i3* %convInp_V_V, i32* %out_V_V, i32 %mul_ln124_loc_channe)" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:124->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26]   --->   Operation 28 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_5 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:54]   --->   Operation 29 'ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln23 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:23]   --->   Operation 11 'specdataflowpipeline' 'specdataflowpipeline_ln23' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%spectopmodule_ln18 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:18]   --->   Operation 12 'spectopmodule' 'spectopmodule_ln18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %in_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %in_r"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %out_r"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %numReps"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %numReps, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @convInp_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i3 %convInp, i3 %convInp"   --->   Operation 19 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %convInp, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln122 = call void @Matrix_Vector_Activate_Batch, i3 %convInp, i32 %out_r, i32 %mul_ln125_loc_channel" [/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:122->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27]   --->   Operation 21 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%ret_ln55 = ret" [/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:55]   --->   Operation 22 'ret' 'ret_ln55' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 1.25ns.
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 1.46ns
-The critical path consists of the following:
-	wire read on port 'numReps' (/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:110->/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:26) [4]  (0 ns)
-	'call' operation ('call_ln24', /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:24) to 'conv1_lif_top.entry3' [21]  (1.46 ns)
-
- <State 2>: 0ns
+ <State 1>: 0.000ns
 The critical path consists of the following:
 
- <State 3>: 0ns
+ <State 2>: 0.000ns
 The critical path consists of the following:
 
- <State 4>: 0ns
+ <State 3>: 3.170ns
 The critical path consists of the following:
+	'call' operation ('mul_ln125_loc_channel') to 'Block_entry13_proc' [17]  (3.170 ns)
 
- <State 5>: 0ns
+ <State 4>: 0.000ns
 The critical path consists of the following:
 
 
@@ -149,7 +136,6 @@ N/A
 	State 2
 	State 3
 	State 4
-	State 5
 
 
 ============================================================

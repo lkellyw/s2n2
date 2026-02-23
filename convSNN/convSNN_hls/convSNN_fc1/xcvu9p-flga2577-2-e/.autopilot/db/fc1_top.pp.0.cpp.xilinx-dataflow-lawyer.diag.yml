@@ -1,0 +1,20 @@
+---
+MainSourceFile:  /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.autopilot/db/fc1_top.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '45:9'
+    FilePath:        /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '46:9'
+    FilePath:        /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '48:9'
+    FilePath:        /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '49:9'
+    FilePath:        /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+...

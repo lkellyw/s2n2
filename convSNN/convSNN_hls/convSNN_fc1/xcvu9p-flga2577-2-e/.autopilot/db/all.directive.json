@@ -1,3 +1,23 @@
-{
-  
-}
+[
+  {
+    "functionLabel": "",
+    "functionName": "fc1_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fc1_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc1_script.fcl",
+    "sourceLine": 34,
+    "success": true
+  }
+]

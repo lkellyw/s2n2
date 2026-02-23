@@ -1,0 +1,269 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "10 18",
+    "file": "conv1_top.cpp",
+    "fileloc": 18,
+    "instructions": 21,
+    "name": "conv1_lif_top",
+    "total_instructions": 4186
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 869,
+    "instructions": 3,
+    "name": "WidthAdjustedOutputStream",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 65,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "DebugThresholdActivation",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "interpret.hpp",
+    "fileloc": 235,
+    "instructions": 2,
+    "name": "operator()<ap_uint<32> >",
+    "total_instructions": 12
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 874,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "operator hls::stream<ap_uint<32>, 0> &",
+    "total_instructions": 3
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 838,
+    "instructions": 1,
+    "name": "~WidthAdjustedInputStream",
+    "total_instructions": 1
+  },
+  "14": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "weights.hpp",
+    "fileloc": 175,
+    "instructions": 18,
+    "name": "FixedPointWeightsSp",
+    "total_instructions": 25
+  },
+  "15": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 67,
+    "instructions": 24,
+    "name": "operator()",
+    "total_instructions": 806
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "conv1_top.cpp",
+    "fileloc": 16,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 27
+  },
+  "17": {
+    "basicblocks": 49,
+    "calls": "8",
+    "file": "slidingwindow.h",
+    "fileloc": 171,
+    "instructions": 245,
+    "loads": {
+      "L": 12
+    },
+    "name": "ConvolutionInputGenerator<1, 3, 1, 10, 10, 3, 1, ap_resource_dflt>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 300
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "4 1 22 17 12 21 9 13",
+    "file": "convlayer.h",
+    "fileloc": 106,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "ConvLayer_Batch<1, 3, 10, 32, 10, 3, 3, 32, Slice<ap_uint<1>, 1>, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16, 6, 3, 32, FixedPointWeightsSp<3, ap_int<32>, 32, 1>, DebugThresholdActivation<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> >, ap_resource_dsp>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3697
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 218,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "operator[]",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 222,
+    "instructions": 2,
+    "name": "operator const ap_uint<32> &",
+    "total_instructions": 2
+  },
+  "20": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "weights.hpp",
+    "fileloc": 196,
+    "instructions": 62,
+    "loads": {
+      "L": 4
+    },
+    "name": "operator[]",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 168
+  },
+  "21": {
+    "basicblocks": 49,
+    "calls": "5 20 20 11 15 19 2",
+    "file": "mvau.hpp",
+    "fileloc": 111,
+    "instructions": 294,
+    "loads": {
+      "L": 10
+    },
+    "name": "Matrix_Vector_Activate_Batch<3, 32, 3, 3, 32, 1, Slice<ap_uint<1>, 1>, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16, 6, 10, ap_uint<3>, ap_uint<32>, FixedPointWeightsSp<3, ap_int<32>, 32, 1>, DebugThresholdActivation<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> >, ap_resource_dsp>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 3345
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 841,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "operator hls::stream<ap_uint<3>, 0> &",
+    "total_instructions": 3
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 202,
+    "instructions": 3,
+    "name": "Container",
+    "total_instructions": 10
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 837,
+    "instructions": 3,
+    "name": "WidthAdjustedInputStream",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "weights.hpp",
+    "fileloc": 214,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "weights",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights.hpp",
+    "fileloc": 190,
+    "instructions": 8,
+    "loads": {
+      "L": 1
+    },
+    "name": "TileIndex",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 8
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "16",
+    "file": "conv1_top.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 29
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "slidingwindow.h",
+    "fileloc": 73,
+    "instructions": 2,
+    "name": "memory_resource<ap_uint<3> (*)[10]>",
+    "total_instructions": 2
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 871,
+    "instructions": 1,
+    "name": "~WidthAdjustedOutputStream",
+    "total_instructions": 1
+  }
+}

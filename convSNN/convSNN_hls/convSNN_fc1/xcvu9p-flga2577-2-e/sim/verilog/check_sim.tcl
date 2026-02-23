@@ -1,6 +1,6 @@
 # ==============================================================
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 proc sc_sim_check {ret err logfile} {
 	if {$::AESL_AUTOSIM::gDebug == 1} {
@@ -80,20 +80,13 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.fc1_top.autotvin_in_V_V.dat"
-         "c.fc1_top.autotvin_out_V_V.dat"
+         "c.fc1_top.autotvin_in_r.dat"
          "c.fc1_top.autotvin_numReps.dat"
-         "c.fc1_top.autotvout_out_V_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
         } else {
             ::AP::printMsg ERR COSIM 320 COSIM_320_994
-            return 1
-        }
-        set ret [catch {eval exec "grep /runtime $rtlfile"} err]
-        if { $ret } {
-            ::AP::printMsg ERR COSIM 320 COSIM_320_995
             return 1
         }
     }
@@ -108,17 +101,12 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.fc1_top.autotvout_out_V_V.dat"
+         "rtl.fc1_top.autotvout_out_r.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
         } else {
             ::AP::printMsg ERR COSIM 303 COSIM_303_996
-            return 1
-        }
-        set ret [catch {eval exec "grep /runtime $rtlfile"} err]
-        if { $ret } {
-            ::AP::printMsg ERR COSIM 303 COSIM_303_997
             return 1
         }
     }

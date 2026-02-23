@@ -1,0 +1,5 @@
+7 warnings and 7 errors generated.
+Error while processing /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp.
+clang-tidy applied 130 of 130 suggested fixes.
+Suppressed 97 warnings (90 in non-user code, 7 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

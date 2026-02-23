@@ -1,6 +1,6 @@
 # ==============================================================
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 __SIM_FPO__ = 1
 __SIM_MATHHLS__ = 1
@@ -10,7 +10,7 @@ __SIM_DDS__ = 1
 
 override TARGET := cosim.tv.exe
 
-AUTOPILOT_ROOT := /tools/Xilinx2/Vivado/2020.1
+AUTOPILOT_ROOT := /tools/Xilinx/Vitis_HLS/2021.2
 AUTOPILOT_MACH := lnx64
 
 ifdef COSIM_M32
@@ -23,11 +23,11 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /tools/Xilinx2/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin
+  AP_GCC_PATH := /tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology
-CCFLAG += 
+CCFLAG += -Werror=return-type
 TOOLCHAIN += 
 
 IFLAG += -g
@@ -40,13 +40,16 @@ IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/systemc/include"
 IFLAG += -I "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/auto_cc/include"
 IFLAG += -I "/usr/include/x86_64-linux-gnu"
+IFLAG += -D__VITIS_HLS__
 IFLAG += -D__SIM_FPO__
 IFLAG += -D__SIM_FFT__
 IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 IFLAG += -D__DSP48E2__
+IFLAG += -DUSE_BINARY_TV_FILE
 IFLAG += -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x -Wno-unknown-pragmas
 LFLAG += -L "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/systemc/lib" -lsystemc -lpthread
+LFLAG += -L "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/clang-3.9-csynth/lib/clang/7.0.0/lib/linux" -lclang_rt.builtins-x86_64
 IFLAG += -D__RTL_SIMULATION__
 IFLAG += -D__xilinx_ip_top=
 DFLAG += -DAESL_PIPELINE

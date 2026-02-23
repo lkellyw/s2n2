@@ -1,11 +1,11 @@
 #include "hls_design_meta.h"
 const Port_Property HLS_Design_Meta::port_props[]={
-	Port_Property("in_V_V_dout", 64, hls_in, 0, "ap_fifo", "fifo_data", 1),
-	Port_Property("in_V_V_empty_n", 1, hls_in, 0, "ap_fifo", "fifo_status", 1),
-	Port_Property("in_V_V_read", 1, hls_out, 0, "ap_fifo", "fifo_update", 1),
-	Port_Property("out_V_V_din", 5, hls_out, 1, "ap_fifo", "fifo_data", 1),
-	Port_Property("out_V_V_full_n", 1, hls_in, 1, "ap_fifo", "fifo_status", 1),
-	Port_Property("out_V_V_write", 1, hls_out, 1, "ap_fifo", "fifo_update", 1),
+	Port_Property("in_r_dout", 8, hls_in, 0, "ap_fifo", "fifo_data_in", 1),
+	Port_Property("in_r_empty_n", 1, hls_in, 0, "ap_fifo", "fifo_status", 1),
+	Port_Property("in_r_read", 1, hls_out, 0, "ap_fifo", "fifo_port_we", 1),
+	Port_Property("out_r_din", 5, hls_out, 1, "ap_fifo", "fifo_data_in", 1),
+	Port_Property("out_r_full_n", 1, hls_in, 1, "ap_fifo", "fifo_status", 1),
+	Port_Property("out_r_write", 1, hls_out, 1, "ap_fifo", "fifo_port_we", 1),
 	Port_Property("numReps", 32, hls_in, 2, "ap_none", "in_data", 1),
 	Port_Property("ap_clk", 1, hls_in, -1, "", "", 1),
 	Port_Property("ap_rst", 1, hls_in, -1, "", "", 1),

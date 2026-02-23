@@ -1,0 +1,671 @@
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:1445:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:1445:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:2419:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:2419:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:2433:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:2433:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:2447:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:2447:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:4076:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:4076:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34517:4: warning: Added loop label VITIS_LOOP_134_1:   [xilinx-label-all-loops]
+   for(unsigned int i=0; i<SIMD; i++) {
+   ^~~
+   VITIS_LOOP_134_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34517:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34544:5: warning: Added loop label VITIS_LOOP_161_1:   [xilinx-label-all-loops]
+    for(unsigned int i=0; i<SIMD; i++) {
+    ^~~
+    VITIS_LOOP_161_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34544:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34583:7: warning: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+      for(unsigned int j=0; j<SIMD; j++){
+      ^~~
+      VITIS_LOOP_200_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34583:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34630:4: warning: Added loop label VITIS_LOOP_247_1:   [xilinx-label-all-loops]
+   for(unsigned int i=0; i<SIMDSP; i++) {
+   ^~~
+   VITIS_LOOP_247_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34630:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34656:2: warning: Added loop label VITIS_LOOP_273_1:   [xilinx-label-all-loops]
+ for(unsigned int i=0; i<SIMDSP; i++){
+ ^~~
+ VITIS_LOOP_273_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34656:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34662:4: warning: Added loop label VITIS_LOOP_279_2:   [xilinx-label-all-loops]
+   for(unsigned int i=0; i<SIMD; i++){
+   ^~~
+   VITIS_LOOP_279_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:34662:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35050:3: warning: Added loop label VITIS_LOOP_76_1:   [xilinx-label-all-loops]
+  for (unsigned int i = 0; i < NumTotal; i++) {
+  ^~~
+  VITIS_LOOP_76_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35050:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35066:3: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+  for (unsigned int rep = 0; rep < numReps; rep++) {
+  ^~~
+  VITIS_LOOP_108_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35066:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35098:2: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+ for(unsigned int y = 0; y<OutputDim; y++){
+ ^~~
+ VITIS_LOOP_158_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35098:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35099:3: warning: Added loop label VITIS_LOOP_159_2:   [xilinx-label-all-loops]
+  for(unsigned int x=0; x < OutputDim; x++){
+  ^~~
+  VITIS_LOOP_159_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35099:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35130:2: warning: Added loop label VITIS_LOOP_209_1:   [xilinx-label-all-loops]
+ for (unsigned int rep = 0; rep < numReps; rep++) {
+ ^~~
+ VITIS_LOOP_209_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35130:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35138:3: warning: Added loop label VITIS_LOOP_233_1:   [xilinx-label-all-loops]
+  for(unsigned int i = 0; i < numReps; i++) {
+  ^~~
+  VITIS_LOOP_233_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35138:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35165:2: warning: Added loop label VITIS_LOOP_279_1:   [xilinx-label-all-loops]
+ for(unsigned int y = 0; y<OutputDim; y++){
+ ^~~
+ VITIS_LOOP_279_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35165:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35166:3: warning: Added loop label VITIS_LOOP_280_2:   [xilinx-label-all-loops]
+  for(unsigned int x=0; x < OutputDim; x++){
+  ^~~
+  VITIS_LOOP_280_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35166:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35167:4: warning: Added loop label VITIS_LOOP_281_3:   [xilinx-label-all-loops]
+   for(unsigned int simd=0; simd < Folding; simd++) {
+   ^~~
+   VITIS_LOOP_281_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35167:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35200:2: warning: Added loop label VITIS_LOOP_334_1:   [xilinx-label-all-loops]
+ for (unsigned int rep = 0; rep < numReps; rep++) {
+ ^~~
+ VITIS_LOOP_334_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35200:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35219:5: warning: Added loop label VITIS_LOOP_370_1:   [xilinx-label-all-loops]
+    for (unsigned int t = 0; t < totalIters; t++) {
+    ^~~
+    VITIS_LOOP_370_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35219:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35239:5: warning: Added loop label VITIS_LOOP_390_2:   [xilinx-label-all-loops]
+    for (unsigned int i = 0; i < NumInWords * numReps; i++) {
+    ^~~
+    VITIS_LOOP_390_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35239:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35251:5: warning: Added loop label VITIS_LOOP_402_3:   [xilinx-label-all-loops]
+    for (unsigned int t = 0; t < totalIters; t++) {
+    ^~~
+    VITIS_LOOP_402_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35251:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35291:7: warning: Added loop label VITIS_LOOP_456_1:   [xilinx-label-all-loops]
+      for (; offset <= (InWidth-OutWidth) ; offset+=OutWidth){
+      ^~~
+      VITIS_LOOP_456_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35291:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35309:7: warning: Added loop label VITIS_LOOP_474_2:   [xilinx-label-all-loops]
+      for (; offset <= (OutWidth-InWidth); offset+=InWidth){
+      ^~~
+      VITIS_LOOP_474_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35309:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35332:2: warning: Added loop label VITIS_LOOP_511_1:   [xilinx-label-all-loops]
+ for (unsigned int i = 0; i < NumTotal; i++) {
+ ^~~
+ VITIS_LOOP_511_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35332:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35346:2: warning: Added loop label VITIS_LOOP_539_1:   [xilinx-label-all-loops]
+ for (unsigned int image = 0; image < numReps; image++) {
+ ^~~
+ VITIS_LOOP_539_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35346:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35360:3: warning: Added loop label VITIS_LOOP_569_1:   [xilinx-label-all-loops]
+  for (unsigned int i = 0; i < NumTotal; i++) {
+  ^~~
+  VITIS_LOOP_569_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35360:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35365:5: warning: Added loop label VITIS_LOOP_574_2:   [xilinx-label-all-loops]
+    for (unsigned int j = 0; j < NumChannels; j++) {
+    ^~~
+    VITIS_LOOP_574_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35365:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35384:3: warning: Added loop label VITIS_LOOP_612_1:   [xilinx-label-all-loops]
+  for (unsigned int image = 0; image < numReps; image++) {
+  ^~~
+  VITIS_LOOP_612_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35384:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35425:3: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+  for (unsigned int t = 0; t < totalIters; t++) {
+  ^~~
+  VITIS_LOOP_690_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35425:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35432:4: warning: Added loop label VITIS_LOOP_697_2:   [xilinx-label-all-loops]
+   for(unsigned int v = 0; v < NumVecs; v++) {
+   ^~~
+   VITIS_LOOP_697_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35432:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35448:3: warning: Added loop label VITIS_LOOP_713_3:   [xilinx-label-all-loops]
+  for (unsigned int i = 0; i < NumInWords * numReps; i++) {
+  ^~~
+  VITIS_LOOP_713_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35448:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35454:4: warning: Added loop label VITIS_LOOP_719_4:   [xilinx-label-all-loops]
+   for(unsigned int v=0; v < NumVecs; v++) {
+   ^~~
+   VITIS_LOOP_719_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35454:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35467:3: warning: Added loop label VITIS_LOOP_732_5:   [xilinx-label-all-loops]
+  for (unsigned int t = 0; t < totalIters; t++) {
+  ^~~
+  VITIS_LOOP_732_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35467:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35471:4: warning: Added loop label VITIS_LOOP_736_6:   [xilinx-label-all-loops]
+   for(unsigned int v = 0; v < NumVecs; v++) {
+   ^~~
+   VITIS_LOOP_736_6: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35471:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35493:2: warning: Added loop label VITIS_LOOP_772_1:   [xilinx-label-all-loops]
+ for(unsigned int r = 0; r < numReps; r++) {
+ ^~~
+ VITIS_LOOP_772_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35493:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35497:3: warning: Added loop label VITIS_LOOP_776_2:   [xilinx-label-all-loops]
+  for(unsigned int v = 0; v < NumChannels; v++) {
+  ^~~
+  VITIS_LOOP_776_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35497:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35511:2: warning: Added loop label VITIS_LOOP_803_1:   [xilinx-label-all-loops]
+ for(unsigned int r = 0; r < numReps; r++) {
+ ^~~
+ VITIS_LOOP_803_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35511:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35515:3: warning: Added loop label VITIS_LOOP_807_2:   [xilinx-label-all-loops]
+  for(unsigned int v = 0; v < NumChannels; v++) {
+  ^~~
+  VITIS_LOOP_807_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35515:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35590:2: warning: Added loop label VITIS_LOOP_895_1:   [xilinx-label-all-loops]
+ for (unsigned int image = 0; image < numReps; image++) {
+ ^~~
+ VITIS_LOOP_895_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35590:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35591:3: warning: Added loop label VITIS_LOOP_896_2:   [xilinx-label-all-loops]
+  for (unsigned int word = 0; word < NumTotal; word++) {
+  ^~~
+  VITIS_LOOP_896_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35591:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35600:2: warning: Added loop label VITIS_LOOP_918_1:   [xilinx-label-all-loops]
+ for (unsigned int image = 0; image < numReps; image++) {
+ ^~~
+ VITIS_LOOP_918_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35600:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35601:3: warning: Added loop label VITIS_LOOP_919_2:   [xilinx-label-all-loops]
+  for (unsigned int word = 0; word < NumTotal; word++) {
+  ^~~
+  VITIS_LOOP_919_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35601:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35630:5: warning: Added loop label VITIS_LOOP_113_1:   [xilinx-label-all-loops]
+    while (rep != numReps) {
+    ^~~~~
+    VITIS_LOOP_113_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35630:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35644:3: warning: Added loop label VITIS_LOOP_140_1:   [xilinx-label-all-loops]
+  for (unsigned int i = 0; i < numWords; i++) {
+  ^~~
+  VITIS_LOOP_140_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35644:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35657:3: warning: Added loop label VITIS_LOOP_153_1:   [xilinx-label-all-loops]
+  for (unsigned int i = 0; i < numWords; i++) {
+  ^~~
+  VITIS_LOOP_153_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35657:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35670:3: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+  while (rep != numReps) {
+  ^~~~~
+  VITIS_LOOP_166_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35670:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35691:3: warning: Added loop label VITIS_LOOP_187_1:   [xilinx-label-all-loops]
+  while (rep != numReps) {
+  ^~~~~
+  VITIS_LOOP_187_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35691:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35713:3: warning: Added loop label VITIS_LOOP_222_1:   [xilinx-label-all-loops]
+  for (unsigned rep = 0; rep < numReps; rep++) {
+  ^~~
+  VITIS_LOOP_222_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35713:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35714:5: warning: Added loop label VITIS_LOOP_223_2:   [xilinx-label-all-loops]
+    for (unsigned tile = 0; tile < TILES; tile++) {
+    ^~~
+    VITIS_LOOP_223_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35714:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35718:7: warning: Added loop label VITIS_LOOP_227_3:   [xilinx-label-all-loops]
+      for (unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_227_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:35718:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38123:3: warning: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
+  while(!log.empty()){
+  ^~~~~
+  VITIS_LOOP_94_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38123:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38129:3: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
+  while(!tmp_stream.empty()){
+  ^~~~~
+  VITIS_LOOP_100_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38129:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38141:9: error: Resource with core_name: RAM_2P pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_2P
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38147:9: error: Resource with core_name: RAM_S2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_BRAM
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38153:9: error: Resource with core_name: RAM_S2P_URAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_URAM
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38159:9: error: Resource with core_name: RAM_S2P_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_LUTRAM
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38195:2: warning: Added loop label VITIS_LOOP_196_1:   [xilinx-label-all-loops]
+ for (unsigned int count_image = 0; count_image < numReps; count_image++) {
+ ^~~
+ VITIS_LOOP_196_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38195:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38196:5: warning: Added loop label VITIS_LOOP_197_2:   [xilinx-label-all-loops]
+    for (unsigned int i = 0; i < baseIter; i++) {
+    ^~~
+    VITIS_LOOP_197_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38196:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38310:2: warning: Added loop label VITIS_LOOP_331_1:   [xilinx-label-all-loops]
+ for (unsigned int count_image = 0; count_image < numReps; count_image++) {
+ ^~~
+ VITIS_LOOP_331_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38310:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38311:3: warning: Added loop label VITIS_LOOP_332_2:   [xilinx-label-all-loops]
+  for (unsigned int i = 0; i < baseIter; i++) {
+  ^~~
+  VITIS_LOOP_332_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38311:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38317:5: warning: Added loop label VITIS_LOOP_338_3:   [xilinx-label-all-loops]
+    for(unsigned int v = 0; v < MMV; v++)
+    ^~~
+    VITIS_LOOP_338_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38317:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38344:6: warning: Added loop label VITIS_LOOP_365_4:   [xilinx-label-all-loops]
+     for(unsigned int v = 0; v < MMV; v++) {
+     ^~~
+     VITIS_LOOP_365_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38344:6: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38377:6: warning: Added loop label VITIS_LOOP_398_5:   [xilinx-label-all-loops]
+     for(unsigned int v = 0; v < MMV; v++) {
+     ^~~
+     VITIS_LOOP_398_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38377:6: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38442:1: warning: Added loop label VITIS_LOOP_484_1:   [xilinx-label-all-loops]
+for (unsigned int count_image = 0; count_image < numReps; count_image++) {
+^~~
+VITIS_LOOP_484_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38442:1: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38447:3: warning: Added loop label VITIS_LOOP_489_2:   [xilinx-label-all-loops]
+  for (unsigned int i = 0; i < baseIter; i++) {
+  ^~~
+  VITIS_LOOP_489_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38447:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38568:2: warning: Added loop label VITIS_LOOP_630_1:   [xilinx-label-all-loops]
+ for (unsigned int count_image = 0; count_image < numReps; count_image++) {
+ ^~~
+ VITIS_LOOP_630_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38568:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38569:5: warning: Added loop label VITIS_LOOP_631_2:   [xilinx-label-all-loops]
+    for (unsigned int i = 0; i < baseIter; i++) {
+    ^~~
+    VITIS_LOOP_631_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38569:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38680:2: warning: Added loop label VITIS_LOOP_763_1:   [xilinx-label-all-loops]
+ for (unsigned int count_image = 0; count_image < numReps; count_image++) {
+ ^~~
+ VITIS_LOOP_763_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38680:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38684:7: warning: Added loop label VITIS_LOOP_767_2:   [xilinx-label-all-loops]
+      for (unsigned int i = 0; i < baseIter; i++) {
+      ^~~
+      VITIS_LOOP_767_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38684:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38786:2: warning: Added loop label VITIS_LOOP_884_1:   [xilinx-label-all-loops]
+ for (unsigned int im=0; im<numReps; im++) {
+ ^~~
+ VITIS_LOOP_884_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38786:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38787:3: warning: Added loop label VITIS_LOOP_885_2:   [xilinx-label-all-loops]
+  for (unsigned int y = 0; y < IFMDim; y++) {
+  ^~~
+  VITIS_LOOP_885_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38787:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38788:4: warning: Added loop label VITIS_LOOP_886_3:   [xilinx-label-all-loops]
+   for (unsigned int x = 0; x < IFMDim; x++) {
+   ^~~
+   VITIS_LOOP_886_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38788:4: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38789:5: warning: Added loop label VITIS_LOOP_887_4:   [xilinx-label-all-loops]
+    for (unsigned int count_simd =0; count_simd < IFMChannels/SIMD; count_simd++) {
+    ^~~
+    VITIS_LOOP_887_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:38789:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40523:3: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+  for(unsigned int i = 0; i < ImgDim / PoolDim; i++) {
+  ^~~
+  VITIS_LOOP_71_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40523:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40528:3: warning: Added loop label VITIS_LOOP_76_2:   [xilinx-label-all-loops]
+  for (unsigned int yp = 0; yp < ImgDim / PoolDim; yp++) {
+  ^~~
+  VITIS_LOOP_76_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40528:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40529:5: warning: Added loop label VITIS_LOOP_77_3:   [xilinx-label-all-loops]
+    for (unsigned int ky = 0; ky < PoolDim; ky++) {
+    ^~~
+    VITIS_LOOP_77_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40529:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40530:7: warning: Added loop label VITIS_LOOP_78_4:   [xilinx-label-all-loops]
+      for (unsigned int xp = 0; xp < ImgDim / PoolDim; xp++) {
+      ^~~
+      VITIS_LOOP_78_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40530:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40533:9: warning: Added loop label VITIS_LOOP_81_5:   [xilinx-label-all-loops]
+        for (unsigned int kx = 0; kx < PoolDim; kx++) {
+        ^~~
+        VITIS_LOOP_81_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40533:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40540:5: warning: Added loop label VITIS_LOOP_88_6:   [xilinx-label-all-loops]
+    for (unsigned int outpix = 0; outpix < ImgDim / PoolDim; outpix++) {
+    ^~~
+    VITIS_LOOP_88_6: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40540:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40552:3: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+  for (unsigned int rep = 0; rep < numReps; rep++) {
+  ^~~
+  VITIS_LOOP_114_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40552:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40566:2: warning: Added loop label VITIS_LOOP_145_1:   [xilinx-label-all-loops]
+ for(unsigned int i = 0; i < ImgDim / PoolDim; i++) {
+ ^~~
+ VITIS_LOOP_145_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40566:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40567:5: warning: Added loop label VITIS_LOOP_146_2:   [xilinx-label-all-loops]
+    for(unsigned int ch = 0; ch<NumChannels; ch++){
+    ^~~
+    VITIS_LOOP_146_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40567:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40573:3: warning: Added loop label VITIS_LOOP_152_3:   [xilinx-label-all-loops]
+  for (unsigned int yp = 0; yp < ImgDim / PoolDim; yp++) {
+  ^~~
+  VITIS_LOOP_152_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40573:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40574:5: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+    for (unsigned int ky = 0; ky < PoolDim; ky++) {
+    ^~~
+    VITIS_LOOP_153_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40574:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40575:7: warning: Added loop label VITIS_LOOP_154_5:   [xilinx-label-all-loops]
+      for (unsigned int xp = 0; xp < ImgDim / PoolDim; xp++) {
+      ^~~
+      VITIS_LOOP_154_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40575:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40577:9: warning: Added loop label VITIS_LOOP_156_6:   [xilinx-label-all-loops]
+        for (unsigned int kx = 0; kx < PoolDim; kx++) {
+        ^~~
+        VITIS_LOOP_156_6: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40577:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40580:11: warning: Added loop label VITIS_LOOP_159_7:   [xilinx-label-all-loops]
+          for(unsigned int ch = 0; ch<NumChannels; ch++){
+          ^~~
+          VITIS_LOOP_159_7: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40580:11: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40593:5: warning: Added loop label VITIS_LOOP_172_8:   [xilinx-label-all-loops]
+    for (unsigned int outpix = 0; outpix < ImgDim / PoolDim; outpix++) {
+    ^~~
+    VITIS_LOOP_172_8: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40593:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40594:7: warning: Added loop label VITIS_LOOP_173_9:   [xilinx-label-all-loops]
+      for(unsigned int ch = 0; ch < NumChannels; ch++){
+      ^~~
+      VITIS_LOOP_173_9: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40594:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40617:3: warning: Added loop label VITIS_LOOP_212_1:   [xilinx-label-all-loops]
+  for (unsigned int rep = 0; rep < numReps; rep++) {
+  ^~~
+  VITIS_LOOP_212_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40617:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40637:5: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+    for(unsigned int reps=0; reps<numReps; reps++){
+    ^~~
+    VITIS_LOOP_248_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40637:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40638:9: warning: Added loop label VITIS_LOOP_249_2:   [xilinx-label-all-loops]
+        for(unsigned int pixel=0; pixel<ImgDim*ImgDim; pixel++){
+        ^~~
+        VITIS_LOOP_249_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40638:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40639:7: warning: Added loop label VITIS_LOOP_250_3:   [xilinx-label-all-loops]
+      for(unsigned int fold=0; fold<NumChannels/PECount; fold++){
+      ^~~
+      VITIS_LOOP_250_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40639:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40642:9: warning: Added loop label VITIS_LOOP_253_4:   [xilinx-label-all-loops]
+        for(unsigned int pe=0; pe<PECount; pe++){
+        ^~~
+        VITIS_LOOP_253_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40642:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40671:9: error: Resource with core_name: RAM_2P_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=accumulators core=RAM_2P_LUTRAM
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40674:2: warning: Added loop label VITIS_LOOP_299_1:   [xilinx-label-all-loops]
+ for(unsigned int reps=0; reps<numReps; reps++){
+ ^~~
+ VITIS_LOOP_299_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40674:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40675:9: warning: Added loop label VITIS_LOOP_300_2:   [xilinx-label-all-loops]
+        for(unsigned int pixel=0; pixel<ImgDim*ImgDim; pixel++){
+        ^~~
+        VITIS_LOOP_300_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40675:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40676:7: warning: Added loop label VITIS_LOOP_301_3:   [xilinx-label-all-loops]
+      for(unsigned int fold=0; fold<NumChannels/PECount; fold++){
+      ^~~
+      VITIS_LOOP_301_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40676:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40680:9: warning: Added loop label VITIS_LOOP_305_4:   [xilinx-label-all-loops]
+        for(unsigned int pe=0; pe<PECount; pe++){
+        ^~~
+        VITIS_LOOP_305_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40680:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40697:5: warning: Added loop label VITIS_LOOP_322_5:   [xilinx-label-all-loops]
+    for (unsigned int fold = 0; fold < NumChannels / PECount; fold++)
+    ^~~
+    VITIS_LOOP_322_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40697:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40726:2: warning: Added loop label VITIS_LOOP_368_1:   [xilinx-label-all-loops]
+ for(unsigned int reps=0; reps<numReps; reps++){
+ ^~~
+ VITIS_LOOP_368_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40726:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40728:5: warning: Added loop label VITIS_LOOP_370_2:   [xilinx-label-all-loops]
+    for(unsigned int topx=0; topx<NumTop; topx++){
+    ^~~
+    VITIS_LOOP_370_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40728:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40732:5: warning: Added loop label VITIS_LOOP_374_3:   [xilinx-label-all-loops]
+    for(unsigned int block=0; block<(NumClasses/PECount); block++){
+    ^~~
+    VITIS_LOOP_374_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40732:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40735:7: warning: Added loop label VITIS_LOOP_377_4:   [xilinx-label-all-loops]
+      for(unsigned int elem=0; elem<PECount; elem++){
+      ^~~
+      VITIS_LOOP_377_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40735:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40740:9: warning: Added loop label VITIS_LOOP_382_5:   [xilinx-label-all-loops]
+        for(unsigned int topx=0; topx<NumTop; topx++){
+        ^~~
+        VITIS_LOOP_382_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40740:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40759:5: warning: Added loop label VITIS_LOOP_401_6:   [xilinx-label-all-loops]
+    for(unsigned int topx = 0; topx < NumTop; topx++){
+    ^~~
+    VITIS_LOOP_401_6: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40759:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40785:3: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+  for(unsigned i = 0; i < reps * TOTAL_FOLD; i++) {
+  ^~~
+  VITIS_LOOP_449_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40785:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40792:7: warning: Added loop label VITIS_LOOP_456_2:   [xilinx-label-all-loops]
+      for(unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_456_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40792:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40799:5: warning: Added loop label VITIS_LOOP_463_3:   [xilinx-label-all-loops]
+    for(unsigned pe = 0; pe < PE; pe++) {
+    ^~~
+    VITIS_LOOP_463_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40799:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40808:7: warning: Added loop label VITIS_LOOP_472_4:   [xilinx-label-all-loops]
+      for(unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_472_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40808:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40841:9: error: Resource with core_name: Mul_LUT pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=res core=Mul_LUT
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40849:9: error: Resource with core_name: DSP48 pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=res core=DSP48
+        ^
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40857:3: warning: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+  for(unsigned i = 0; i < N; i++) {
+  ^~~
+  VITIS_LOOP_167_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40857:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40870:3: warning: Added loop label VITIS_LOOP_180_1:   [xilinx-label-all-loops]
+  for(unsigned i = 0; i < N; i++) {
+  ^~~
+  VITIS_LOOP_180_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40870:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40882:3: warning: Added loop label VITIS_LOOP_208_1:   [xilinx-label-all-loops]
+  for(unsigned i = 0; i < N; i++) {
+  ^~~
+  VITIS_LOOP_208_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40882:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40956:3: warning: Added loop label VITIS_LOOP_147_1:   [xilinx-label-all-loops]
+  for(unsigned i = 0; i < reps * TOTAL_FOLD; i++) {
+  ^~~
+  VITIS_LOOP_147_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40956:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40975:6: warning: Added loop label VITIS_LOOP_166_2:   [xilinx-label-all-loops]
+     for(unsigned pe = 0; pe < PE; pe++) {
+     ^~~
+     VITIS_LOOP_166_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40975:6: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40993:5: warning: Added loop label VITIS_LOOP_184_3:   [xilinx-label-all-loops]
+    for (unsigned pe = 0; pe < PE; pe++) {
+    ^~~
+    VITIS_LOOP_184_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:40993:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41009:7: warning: Added loop label VITIS_LOOP_200_4:   [xilinx-label-all-loops]
+      for (unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_200_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41009:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41068:3: warning: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+  for(unsigned i = 0; i < reps * TOTAL_FOLD; i++) {
+  ^~~
+  VITIS_LOOP_286_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41068:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41085:5: warning: Added loop label VITIS_LOOP_303_2:   [xilinx-label-all-loops]
+    for (unsigned pe = 0; pe < PE; pe++) {
+    ^~~
+    VITIS_LOOP_303_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41085:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41092:7: warning: Added loop label VITIS_LOOP_310_3:   [xilinx-label-all-loops]
+      for(unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_310_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41092:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41099:5: warning: Added loop label VITIS_LOOP_317_4:   [xilinx-label-all-loops]
+    for(unsigned pe = 0; pe < PE; pe++) {
+    ^~~
+    VITIS_LOOP_317_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41099:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41112:7: warning: Added loop label VITIS_LOOP_330_5:   [xilinx-label-all-loops]
+      for (unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_330_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41112:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41281:3: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+  for(unsigned i = 0; i < reps * TOTAL_FOLD; i++) {
+  ^~~
+  VITIS_LOOP_108_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41281:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41287:7: warning: Added loop label VITIS_LOOP_114_2:   [xilinx-label-all-loops]
+      for(unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_114_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41287:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41288:9: warning: Added loop label VITIS_LOOP_115_3:   [xilinx-label-all-loops]
+        for(unsigned mmv = 0; mmv < MMV; mmv++) {
+        ^~~
+        VITIS_LOOP_115_3: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41288:9: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41297:5: warning: Added loop label VITIS_LOOP_124_4:   [xilinx-label-all-loops]
+    for(unsigned pe = 0; pe < PE; pe++) {
+    ^~~
+    VITIS_LOOP_124_4: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41297:5: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41300:7: warning: Added loop label VITIS_LOOP_127_5:   [xilinx-label-all-loops]
+      for (unsigned mmv = 0; mmv < MMV; mmv++){
+      ^~~
+      VITIS_LOOP_127_5: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41300:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41311:7: warning: Added loop label VITIS_LOOP_138_6:   [xilinx-label-all-loops]
+      for (unsigned pe = 0; pe < PE; pe++) {
+      ^~~
+      VITIS_LOOP_138_6: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41311:7: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41313:2: warning: Added loop label VITIS_LOOP_140_7:   [xilinx-label-all-loops]
+ for (unsigned mmv = 0; mmv < MMV; mmv++){
+ ^~~
+ VITIS_LOOP_140_7: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41313:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41394:2: warning: Added loop label VITIS_LOOP_140_1:   [xilinx-label-all-loops]
+ for(unsigned int i=0; i< NumTH; i++){
+ ^~~
+ VITIS_LOOP_140_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41394:2: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41439:3: warning: Added loop label VITIS_LOOP_221_1:   [xilinx-label-all-loops]
+  for (unsigned i = 0; i < reps * ImgDim * ImgDim * NF; i++)
+  ^~~
+  VITIS_LOOP_221_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41439:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41446:5: warning: Added loop label VITIS_LOOP_228_2:   [xilinx-label-all-loops]
+    for (unsigned pe = 0; pe < PE; pe++)
+    ^~~
+    VITIS_LOOP_228_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/.autopilot/db/fc2_top.pp.0.cpp:41446:5: note: FIX-IT applied suggested code changes

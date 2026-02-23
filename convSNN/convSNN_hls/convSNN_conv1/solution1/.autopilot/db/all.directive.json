@@ -1,3 +1,23 @@
-{
-  
-}
+[
+  {
+    "functionLabel": "",
+    "functionName": "conv1_lif_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "conv1_lif_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv1_script.tcl",
+    "sourceLine": 81,
+    "success": true
+  }
+]

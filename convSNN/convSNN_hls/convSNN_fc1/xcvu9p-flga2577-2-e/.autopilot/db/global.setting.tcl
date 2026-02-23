@@ -19,9 +19,11 @@ set ResetStyle control
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
 set ResetVariableFlag 0
+set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
+set RtlSubPrefix fc1_top_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -40,9 +42,9 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvu9p:-flga2577:-2-e
-set SourceFiles {sc {} c {/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp /home/coder/Desktop/s2n2/convSNN/memdata.h /home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp /home/coder/Desktop/s2n2/convSNN/configSNN.h}}
-set SourceFlags {sc {} c {{ } {} { } {} { } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++0x } {}}}
-set DirectiveFile /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/xcvu9p-flga2577-2-e.directive
+set SourceFiles {sc {} c {/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp /home/coder/Desktop/s2n2/convSNN/memdata.h /home/coder/Desktop/s2n2/convSNN/fc1_weights.hpp /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp /home/coder/Desktop/s2n2/convSNN/configSNN.h}}
+set SourceFlags {sc {} c {{ } {} { } {} { } {} { } {} { } {} { } {} { } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++14 } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++14 } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++14 } {} { -I/home/coder/Desktop/s2n2/finn-hlslib-lif -std=c++14 } {}}}
+set DirectiveFile {}
 set TBFiles {verilog /home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp bc /home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp sc /home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp vhdl /home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp c {} cas /home/coder/Desktop/s2n2/convSNN/fc1_tb.cpp}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -52,12 +54,12 @@ set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}
-set AppFile ../vivado_hls.app
+set AppFile ../hls.app
 set ApsFile xcvu9p-flga2577-2-e.aps
-set AvePath ../..
+set AvePath ../../.
 set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus xilinx/virtexuplus/virtexuplus_fpv7}}}
+set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus}}}
 set HPFPO 0

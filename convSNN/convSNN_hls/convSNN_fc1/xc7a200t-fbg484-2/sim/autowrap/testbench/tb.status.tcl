@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xc7a200t-fbg484-2/./sim/autowrap/testbench/fc1_top.cpp_pre.cpp.tb.cpp

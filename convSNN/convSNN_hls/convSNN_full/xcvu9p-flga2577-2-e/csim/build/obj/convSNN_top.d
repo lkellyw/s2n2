@@ -1,0 +1,45 @@
+obj/convSNN_top.o: ../../../../../convSNN_top.cpp \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/hls_stream.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/ap_int.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_decl.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/hls_half.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/gmp.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/mpfr.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/gmp.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/mpfr.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_x_utils.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_int_base.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_int_ref.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_int_special.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_ref.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_special.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/ap_int.h \
+ /tools/Xilinx/Vitis_HLS/2023.2/include/hls_stream.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp \
+ ../../../../../configSNN.h ../../../../../conv1_weights.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp \
+ ../../../../../fc1_weights.hpp ../../../../../fc2_weights.hpp \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h \
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp

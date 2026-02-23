@@ -1,0 +1,57 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "2",
+    "file": "fc1_top.cpp",
+    "fileloc": 22,
+    "instructions": 6,
+    "name": "fc1_top",
+    "total_instructions": 4180
+  },
+  "1": {
+    "basicblocks": 43,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 67,
+    "instructions": 143,
+    "loads": {
+      "L": 10
+    },
+    "name": "operator()",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 143
+  },
+  "2": {
+    "basicblocks": 915,
+    "calls": "1 1 1 1 1 1 1 1",
+    "file": "mvau.hpp",
+    "fileloc": 111,
+    "instructions": 3030,
+    "loads": {
+      "G": 128,
+      "L": 89
+    },
+    "name": "Matrix_Vector_Activate_Batch<320, 64, 16, 16, 8, 1, Slice<ap_uint<1>, 1>, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16, 6, 1, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16, ap_int<32>, 8, 160>, DebugThresholdActivation<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> >, ap_resource_dsp>",
+    "stores": {
+      "L": 41
+    },
+    "total_instructions": 4174
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 65,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "DebugThresholdActivation",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  }
+}

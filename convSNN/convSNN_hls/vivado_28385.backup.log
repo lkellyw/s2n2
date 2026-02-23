@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 23 02:00:11 2025
+# Process ID: 28385
+# Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls
+# Command line: vivado
+# Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.log
+# Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/xcvu9p-flga2577-2-e/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc2/xcvu9p-flga2577-2-e/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx2/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_conv1_lif_top_0_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_conv1_lif_top_0_0/design_1_conv1_lif_top_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_conv1_lif_top_0_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_conv1_lif_top_0_0/design_1_conv1_lif_top_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_conv1_lif_top_0_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_conv1_lif_top_0_0/design_1_conv1_lif_top_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_conv1_lif_top_0_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_conv1_lif_top_0_0/design_1_conv1_lif_top_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_conv1_lif_top_0_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_conv1_lif_top_0_0/design_1_conv1_lif_top_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_2_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_2_0/design_1_clk_wiz_2_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_2_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_2_0/design_1_clk_wiz_2_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_2_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_2_0/design_1_clk_wiz_2_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_2_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_2_0/design_1_clk_wiz_2_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_2_0' generated file not found '/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_2_0/design_1_clk_wiz_2_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:48 . Memory (MB): peak = 7069.555 ; gain = 41.078 ; free physical = 797613 ; free virtual = 983780
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+open_bd_design {/home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_2
+Adding component instance block -- xilinx.com:hls:conv1_lif_top:2.0 - conv1_lif_top_0
+Adding component instance block -- xilinx.com:hls:fc1_top:2.0 - fc1_top_0
+Adding component instance block -- xilinx.com:hls:fc2_top:2.0 - fc2_top_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_2_100M
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Successfully read diagram <design_1> from BD file </home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:57 . Memory (MB): peak = 7304.668 ; gain = 0.000 ; free physical = 794864 ; free virtual = 983588
+delete_bd_objs [get_bd_nets reset_rtl_0_0_1_1] [get_bd_ports reset_rtl_0_0_1]
+delete_bd_objs [get_bd_nets clk_100MHz_2_1] [get_bd_nets clk_wiz_2_locked] [get_bd_cells clk_wiz_2]
+delete_bd_objs [get_bd_ports clk_100MHz_2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins fc2_top_0/ap_clk]
+INFO: [BD 5-455] Automation on '/rst_clk_wiz_2_100M/slowest_sync_clk' will not be run, since it is obsolete due to previously run automations
+endgroup
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets conv1_lif_top_0_out_V_V_write] [get_bd_nets axis_dwidth_converter_0_s_axis_tready] [get_bd_nets conv1_lif_top_0_out_V_V_din] [get_bd_nets axis_dwidth_converter_0_m_axis_tvalid] [get_bd_nets fc1_top_0_in_V_V_read] [get_bd_nets axis_dwidth_converter_0_m_axis_tdata] [get_bd_cells axis_dwidth_converter_0]
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_reset] [get_bd_nets xlconstant_1_dout] [get_bd_nets conv1_lif_top_0_ap_done] [get_bd_cells conv1_lif_top_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_reset] [get_bd_nets xlconstant_1_dout] [get_bd_nets conv1_lif_top_0_ap_done] [get_bd_cells conv1_lif_top_0]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets conv1_lif_top_0_out_V_V_write] [get_bd_nets axis_dwidth_converter_0_s_axis_tready] [get_bd_nets conv1_lif_top_0_out_V_V_din] [get_bd_nets axis_dwidth_converter_0_m_axis_tvalid] [get_bd_nets fc1_top_0_in_V_V_read] [get_bd_nets axis_dwidth_converter_0_m_axis_tdata] [get_bd_cells axis_dwidth_converter_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins fc2_top_0/ap_clk]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_ports clk_100MHz_2]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets clk_100MHz_2_1] [get_bd_nets clk_wiz_2_locked] [get_bd_cells clk_wiz_2]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets reset_rtl_0_0_1_1] [get_bd_ports reset_rtl_0_0_1]'
+create_bd_design "design_2"
+Wrote  : </home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_2/design_2.bd> 
+update_compile_order -fileset sources_1
+current_bd_design [get_bd_designs design_1]
+delete_bd_objs [get_bd_nets reset_rtl_0_0_1_1] [get_bd_nets clk_100MHz_2_1] [get_bd_nets clk_wiz_2_locked] [get_bd_cells clk_wiz_2]
+delete_bd_objs [get_bd_ports reset_rtl_0_0_1]
+delete_bd_objs [get_bd_nets clk_wiz_2_clk_out1] [get_bd_nets rst_clk_wiz_2_100M_peripheral_reset] [get_bd_cells rst_clk_wiz_2_100M]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins fc2_top_0/ap_clk]
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets conv1_lif_top_0_out_V_V_write] [get_bd_nets axis_dwidth_converter_0_s_axis_tready] [get_bd_nets conv1_lif_top_0_out_V_V_din] [get_bd_nets axis_dwidth_converter_0_m_axis_tvalid] [get_bd_nets fc1_top_0_in_V_V_read] [get_bd_nets axis_dwidth_converter_0_m_axis_tdata] [get_bd_cells axis_dwidth_converter_0]
+delete_bd_objs [get_bd_nets xlconstant_1_dout] [get_bd_nets conv1_lif_top_0_ap_done] [get_bd_cells conv1_lif_top_0]
+set_property location {3 893 349} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins fc1_top_0/ap_start]
+WARNING: [BD 41-1306] The connection to interface pin /fc1_top_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+delete_bd_objs [get_bd_ports clk_100MHz_2]
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+validate_bd_design -force
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+make_wrapper -files [get_files /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:04 ; elapsed = 00:01:18 . Memory (MB): peak = 7493.445 ; gain = 0.000 ; free physical = 789684 ; free virtual = 983403
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/coder/Desktop/s2n2/SNNTrial3/SNNTrial3.srcs/sources_1/bd/design_1/synth/design_1.hwdef

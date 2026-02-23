@@ -1,13 +1,13 @@
 
 
 ================================================================
-== Vivado HLS Report for 'fc2_top'
+== Vitis HLS Report for 'fc2_top'
 ================================================================
-* Date:           Thu Oct 23 00:46:39 2025
+* Date:           Sun Feb 22 21:00:31 2026
 
-* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        convSNN_fc2
-* Solution:       xcvu9p-flga2577-2-e
+* Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
 * Product family: virtexuplus
 * Target device:  xcvu9p-flga2577-2-e
 
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 1.739 ns |   1.25 ns  |
+    |ap_clk  |  10.00 ns|  2.695 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
     |   min   |   max   |    min   |    max   | min | max |   Type   |
     +---------+---------+----------+----------+-----+-----+----------+
-    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
     +---------+---------+----------+----------+-----+-----+----------+
 
     + Detail: 
@@ -76,31 +76,34 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%numReps_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %numReps)" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:19]   --->   Operation 3 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [2/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i64* %in_V_V, i5* %out_V_V, i32 %numReps_read)" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:24]   --->   Operation 4 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 1 <SV = 0> <Delay = 2.30>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%numReps_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %numReps" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:24]   --->   Operation 3 'read' 'numReps_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [2/2] (2.30ns)   --->   "%call_ln41 = call void @Matrix_Vector_Activate_Batch, i8 %in_r, i5 %out_r, i32 %numReps_read" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:41]   --->   Operation 4 'call' 'call_ln41' <Predicate = true> <Delay = 2.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str) nounwind" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:22]   --->   Operation 5 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i5* %out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 6 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecInterface(i64* %in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 7 'specinterface' 'empty_4' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %in_V_V), !map !148"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %out_V_V), !map !152"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %numReps), !map !156"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @fc2_top_str) nounwind"   --->   Operation 11 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [1/2] (0.00ns)   --->   "call fastcc void @Matrix_Vector_Activa(i64* %in_V_V, i5* %out_V_V, i32 %numReps_read)" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:24]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "ret void" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:46]   --->   Operation 13 'ret' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln26 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:26]   --->   Operation 5 'specdataflowpipeline' 'specdataflowpipeline_ln26' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%spectopmodule_ln21 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:21]   --->   Operation 6 'spectopmodule' 'spectopmodule_ln21' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %in_r"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %out_r"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %numReps"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %numReps, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln41 = call void @Matrix_Vector_Activate_Batch, i8 %in_r, i5 %out_r, i32 %numReps_read" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:41]   --->   Operation 13 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%ret_ln64 = ret" [/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:64]   --->   Operation 14 'ret' 'ret_ln64' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 1.25ns.
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 0ns
+ <State 1>: 2.308ns
 The critical path consists of the following:
+	wire read operation ('numReps_read', /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:24) on port 'numReps' (/home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:24) [12]  (0.000 ns)
+	'call' operation 0 bit ('call_ln41', /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:41) to 'Matrix_Vector_Activate_Batch' [13]  (2.308 ns)
 
- <State 2>: 0ns
+ <State 2>: 0.000ns
 The critical path consists of the following:
 
 

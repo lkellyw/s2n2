@@ -3,7 +3,7 @@ set clock_constraint { \
     module conv1_lif_top \
     port ap_clk \
     period 10 \
-    uncertainty 1.25 \
+    uncertainty 2.7 \
 }
 
 set all_path {}

@@ -1,7 +1,0 @@
-Running: xsim.dir/fc1_top/xsimk -simmode gui -wdb fc1_top.wdb -simrunnum 0 -socket 33457
-Design successfully loaded
-Design Loading Memory Usage: 27368 KB (Peak: 27376 KB)
-Design Loading CPU Usage: 10 ms
-Simulation completed
-Simulation Memory Usage: 109556 KB (Peak: 166636 KB)
-Simulation CPU Usage: 30 ms

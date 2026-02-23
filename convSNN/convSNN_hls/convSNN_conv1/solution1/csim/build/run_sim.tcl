@@ -1,13 +1,15 @@
 # ==============================================================
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+# Tool Version Limit: 2023.05
+# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+# 
 # ==============================================================
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/tools/fpo_v6_1
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/tools/fft_v9_1
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/tools/fir_v7_0
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/tools/dds_v6_0
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx2/Vivado/2020.1/lnx64/csim
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/fpo_v7_1
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/fft_v9_1
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/fir_v7_0
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/dds_v6_0
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2023.1/lnx64/csim
 ### C sim ###
 if {![file exists csim.exe]} {
   puts "@E C-simulation is not set up properly. Please re-run csim."
@@ -32,13 +34,6 @@ if {$ret || $err != ""} {
         } else {
             puts "@E Simulation failed."
         }
-        return -code error
-    }
-}
-if {[file exists $logfile]} {
-    set cmdret [catch {eval exec "grep \"Error:\" $logfile"} err]
-    if {$cmdret == 0} {
-        puts "@E Simulation failed."
         return -code error
     }
 }

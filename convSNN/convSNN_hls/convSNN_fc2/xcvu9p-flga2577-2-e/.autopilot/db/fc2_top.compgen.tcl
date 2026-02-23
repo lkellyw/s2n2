@@ -12,14 +12,14 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 4 \
-    name in_V_V \
+    name in_r \
     type fifo \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_in_V_V \
+    corename dc_in_r \
     op interface \
-    ports { in_V_V_dout { I 64 vector } in_V_V_empty_n { I 1 bit } in_V_V_read { O 1 bit } } \
+    ports { in_r_dout { I 8 vector } in_r_empty_n { I 1 bit } in_r_read { O 1 bit } } \
 } "
 }
 
@@ -27,14 +27,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 5 \
-    name out_V_V \
+    name out_r \
     type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_out_V_V \
+    corename dc_out_r \
     op interface \
-    ports { out_V_V_din { O 5 vector } out_V_V_full_n { I 1 bit } out_V_V_write { O 1 bit } } \
+    ports { out_r_din { O 5 vector } out_r_full_n { I 1 bit } out_r_write { O 1 bit } } \
 } "
 }
 

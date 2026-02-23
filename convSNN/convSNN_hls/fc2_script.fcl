@@ -1,30 +1,34 @@
-# Vivado HLS Script for FC2
+# fc2_script.tcl
 open_project convSNN_fc2
 set_top fc2_top
 
-# Set paths
 set src_dir "/home/coder/Desktop/s2n2/convSNN"
 set finn_root "$::env(FINN_HLS_ROOT)"
 
-# Add design sources (FC2 only)
-add_files $src_dir/configSNN.h        -cflags "-std=c++0x -I$finn_root"
-add_files $src_dir/fc2_top.cpp        -cflags "-std=c++0x -I$finn_root"
-add_files $src_dir/fc2_weights.hpp    -cflags "-std=c++0x -I$finn_root"
-add_files $src_dir/memdata.h          -cflags "-std=c++0x -I$finn_root"
+# Design sources
+add_files $src_dir/configSNN.h        -cflags "-std=c++14 -I$finn_root"
+add_files $src_dir/memdata.h          -cflags "-std=c++14 -I$finn_root"
+add_files $src_dir/fc2_weights.hpp    -cflags "-std=c++14 -I$finn_root"
+add_files $src_dir/fc2_top.cpp        -cflags "-std=c++14 -I$finn_root"
+
+# FINN / hlslib headers used by fc2_top.cpp
+add_files $finn_root/bnn-library.h
+add_files $finn_root/streamtools.h
 add_files $finn_root/weights.hpp
 add_files $finn_root/mvau.hpp
-add_files $finn_root/bnn-library.h
+add_files $finn_root/fclayer.h
+add_files $finn_root/activations.hpp
+add_files $finn_root/interpret.hpp
 
-# Add testbench
-add_files -tb $src_dir/fc2_tb.cpp     -cflags "-std=c++0x -I$finn_root"
+# Testbench
+add_files -tb $src_dir/fc2_tb.cpp     -cflags "-std=c++14 -I$finn_root"
 
-# Synthesis settings
+# Solution
 open_solution "xcvu9p-flga2577-2-e"
 set_part {xcvu9p-flga2577-2-e}
-create_clock -period 10 -name default   ;# 100 MHz (use 4.0 for 250 MHz)
+create_clock -period 10 -name default
 
-# Run steps
+# Run (no cosim yet)
 csim_design -clean -O
 csynth_design
-cosim_design
 export_design -format ip_catalog -version 2.0.1

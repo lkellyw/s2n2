@@ -1,0 +1,30 @@
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:61:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_2P
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:97:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_BRAM
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:119:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_URAM
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:141:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_LUTRAM
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:62:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:296:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=accumulators core=RAM_2P_LUTRAM
+        ^
+In file included from /home/coder/Desktop/s2n2/convSNN/fc2_top.cpp:4:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:63:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h:55:
+In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:56:
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:116:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=res core=Mul_LUT
+        ^
+/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:142:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=res core=DSP48
+        ^
+7 warnings generated.
