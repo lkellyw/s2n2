@@ -799,7 +799,7 @@
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>5531</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -847,7 +847,7 @@
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>5531</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -895,7 +895,7 @@
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>5531</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -943,7 +943,7 @@
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>5531</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -2575,7 +2575,7 @@
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>5531</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -2847,7 +2847,7 @@
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>5531</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -2895,7 +2895,7 @@
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>5531</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>

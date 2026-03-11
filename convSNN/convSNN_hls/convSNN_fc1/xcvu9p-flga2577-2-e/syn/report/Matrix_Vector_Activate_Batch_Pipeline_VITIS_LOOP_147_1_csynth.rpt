@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'Matrix_Vector_Activate_Batch_Pipeline_VITIS_LOOP_147_1'
 ================================================================
-* Date:           Sun Feb 22 04:32:18 2026
+* Date:           Mon Feb 23 23:21:16 2026
 
-* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        convSNN_fc1
 * Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
 * Product family: virtexuplus
@@ -93,7 +93,7 @@
     |nf_4_fu_126_p2                    |         +|   0|  0|  39|          32|           1|
     |sf_1_fu_109_p2                    |         +|   0|  0|  39|          32|           1|
     |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
-    |ap_condition_194                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_200                  |       and|   0|  0|   2|           1|           1|
     |icmp_ln147_fu_89_p2               |      icmp|   0|  0|  39|          32|          32|
     |icmp_ln150_fu_100_p2              |      icmp|   0|  0|  39|          32|           1|
     |icmp_ln197_fu_115_p2              |      icmp|   0|  0|  39|          32|           5|

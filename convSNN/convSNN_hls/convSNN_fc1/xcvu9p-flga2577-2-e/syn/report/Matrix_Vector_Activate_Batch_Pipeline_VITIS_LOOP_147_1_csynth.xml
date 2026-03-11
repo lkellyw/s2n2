@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2023.1</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -43,19 +43,6 @@
 </InstanceList>
 </VITIS_LOOP_147_1>
 </SummaryOfLoopLatency>
-<SummaryOfViolations>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:140</SourceLocation>
-<SummaryOfLoopViolations>
-<VITIS_LOOP_147_1>
-<Name>VITIS_LOOP_147_1</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147</SourceLocation>
-</VITIS_LOOP_147_1>
-</SummaryOfLoopViolations>
-</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>

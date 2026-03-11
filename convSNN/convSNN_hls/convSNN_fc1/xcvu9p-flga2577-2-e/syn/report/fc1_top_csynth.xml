@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2023.1</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -32,11 +32,6 @@
 <Interval-min>undef</Interval-min>
 <Interval-max>undef</Interval-max>
 </SummaryOfOverallLatency>
-<SummaryOfViolations>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:27</SourceLocation>
-</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>

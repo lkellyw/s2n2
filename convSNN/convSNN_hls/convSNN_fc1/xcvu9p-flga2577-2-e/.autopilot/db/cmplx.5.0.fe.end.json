@@ -8,19 +8,10 @@
         "calls": "2",
         "basicblocks": "1"
     },
-    "0": {
-        "name": "fc1_top",
-        "file": "fc1_top.cpp",
-        "fileloc": "22",
-        "instructions": "11",
-        "total_instructions": "57",
-        "calls": "1",
-        "basicblocks": "1"
-    },
     "2": {
         "name": "Matrix_Vector_Activate_Batch_Pipeline_VITIS_LOOP_147_1",
-        "file": "\/home\/coder\/Desktop\/s2n2\/finn-hlslib-lif\/mvau.hpp",
-        "fileloc": "115",
+        "file": "mvau.hpp",
+        "fileloc": "0",
         "instructions": "37",
         "total_instructions": "37",
         "calls": "",
@@ -34,5 +25,14 @@
         "loops": {
             "L": "1"
         }
+    },
+    "0": {
+        "name": "fc1_top",
+        "file": "fc1_top.cpp",
+        "fileloc": "22",
+        "instructions": "11",
+        "total_instructions": "57",
+        "calls": "1",
+        "basicblocks": "1"
     }
 }

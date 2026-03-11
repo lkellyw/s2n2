@@ -1,0 +1,18 @@
+Effective reps: 200 | Expected out words: 200 | Drained: 200 | Remaining: 0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
+effectiveReps=200 in_words_total=600 out_words_total=200
+Calling conv1_lif_top...
+Returned from conv1_lif_top.
+Expected out words: 200 | Drained: 200 | Remaining: 0
+PASS: Received all expected outputs.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
+effectiveReps=200 in_words_total=600 out_words_total=200
+Calling conv1_lif_top...
+Returned from conv1_lif_top.
+Expected out words: 200 | Drained: 200 | Remaining: 0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
+effectiveReps=200 drained_total=200 remaining_out=0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3
+effectiveReps=200
+drained_total=200 remaining_out=0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3

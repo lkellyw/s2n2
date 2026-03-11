@@ -20,22 +20,4 @@ obj/conv1_tb.o: ../../../../../conv1_tb.cpp \
  /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_ref.h \
  /tools/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_special.h \
  /tools/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h \
- ../../../../../configSNN.h ../../../../../conv1_weights.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h \
- /tools/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h \
- /tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp \
- ../../../../../memdata.h
+ ../../../../../configSNN.h

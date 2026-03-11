@@ -1,6 +1,6 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
-# Tool Version Limit: 2023.10
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+# Tool Version Limit: 2023.05
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 # Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
@@ -72,7 +72,6 @@ set xo_kernel_files {}
 set enable_xo_gen false
 set kernel_xml [file join [pwd] ../kernel/kernel.xml]
 set solution_dir "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e"
-set solution_json_file [file join $solution_dir [file tail $solution_dir]_data.json]
 set debug_dir "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/.debug"
 set xo_hls_files_dir ""
 set hdl_module_list {fc1_top_flow_control_loop_pipe_sequential_init
@@ -81,7 +80,6 @@ Matrix_Vector_Activate_Batch
 fc1_top
 }
 set kernel_xo ""
-set detect_deadlock_json "fc1_top_message_dict.json"
 
 ## Variables
 set Top "fc1_top"
@@ -821,8 +819,6 @@ if {$SubcoreFiles != ""} {
 
 ## Basic info
 set vivado_ver [version -short]
-set vivado_major_ver $vivado_ver
-regexp {^(.*\.\d+)\.\d+$} $vivado_major_ver {\1} vivado_major_ver
 set core [ipx::create_core $Vendor $Library $IPName $Version]
 set_property definition_source HLS [ipx::current_core]
 set_property display_name $DisplayName $core
@@ -921,13 +917,10 @@ if {[llength $SWDriverFiles] > 0} {
     set current_file_group [ipx::add_file_group xilinx_softwaredriver $core]
     foreach f $SWDriverFiles {
         set current_file [ipx::add_file $f $current_file_group]
-        set fext [string tolower [file ext $f]]
-        if {$fext == ".mdd"} {
+        if {[file ext $f] == ".mdd"} {
             set_property type {driver_mdd} $current_file
-        } elseif {$fext == ".tcl"} {
+        } elseif {[file ext $f] == ".tcl"} {
             set_property type {driver_tcl} $current_file
-        } elseif {$fext == ".yml" || $fext == ".yaml"} {
-            set_property type {driver_yml} $current_file
         } else {
             set_property type {driver_src} $current_file
         }
@@ -1721,13 +1714,6 @@ if {$enable_xo_gen && $kernel_xo ne ""} {
         if {[file isdirectory $xo_hls_files_dir] && [regsub {(\.[0-9][0-9]*)\.[0-9].*$} [::version -short] {\1}] > 2018.2} {
             lappend pack_xo_args -hls_directory $xo_hls_files_dir
         }
-        set detect_deadlock_json_file [file join $solution_dir $detect_deadlock_json]
-        if {[file isfile $detect_deadlock_json_file]} {
-            lappend pack_xo_args -deadlock_files $detect_deadlock_json_file
-        }
-        if { $vivado_major_ver >= 2023.2 && [file isfile $solution_json_file] } {
-            lappend pack_xo_args -kernel_json $solution_json_file
-        }
         puts "Running package_xo $pack_xo_args"
         package_xo {*}$pack_xo_args
         if {[file isdirectory $ip_unzip_dir]} {
@@ -1740,6 +1726,7 @@ if {$enable_xo_gen && $kernel_xo ne ""} {
 
 
 # Generate sysgen xml file
-source -notrace "/tools/Xilinx/Vitis_HLS/2023.2/common/scripts/ipxhls.tcl"
+source -notrace "/tools/Xilinx/Vitis_HLS/2023.1/common/scripts/ipxhls.tcl"
+set json_file [file join $solution_dir [file tail $solution_dir]_data.json]
 set outdir .
-catch { ::ipx::utils::hls::write_sysgen_info_xml $solution_json_file $outdir}
+catch { ::ipx::utils::hls::write_sysgen_info_xml $json_file $outdir}

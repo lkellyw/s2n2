@@ -12,7 +12,7 @@ target triple = "fpga64-xilinx-none"
 %"struct.ap_int_base<8, false>" = type { %"class.std::ios_base::Init" }
 %"class.std::ios_base::Init" = type { i8 }
 
-; Function Attrs: inaccessiblememonly nounwind willreturn
+; Function Attrs: inaccessiblememonly nounwind
 declare void @llvm.sideeffect() #0
 
 ; Function Attrs: noinline
@@ -28,15 +28,15 @@ entry:
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
+; Function Attrs: argmemonly noinline
 define internal fastcc void @copy_in(%"class.hls::stream<ap_uint<16>, 0>"* noalias "unpacked"="0", i16* noalias nocapture align 512 "unpacked"="1.0", %"class.hls::stream<ap_uint<8>, 0>"* noalias "unpacked"="2", i8* noalias nocapture align 512 "unpacked"="3.0") unnamed_addr #2 {
 entry:
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<16>, 0>.29"(i16* align 512 %1, %"class.hls::stream<ap_uint<16>, 0>"* %0)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<16>, 0>.27"(i16* align 512 %1, %"class.hls::stream<ap_uint<16>, 0>"* %0)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>"(i8* align 512 %3, %"class.hls::stream<ap_uint<8>, 0>"* %2)
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
+; Function Attrs: argmemonly noinline
 define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<16>, 0>"(%"class.hls::stream<ap_uint<16>, 0>"* noalias "unpacked"="0" %dst, i16* noalias nocapture align 512 "unpacked"="1.0" %src) unnamed_addr #3 {
 entry:
   %0 = icmp eq %"class.hls::stream<ap_uint<16>, 0>"* %dst, null
@@ -50,7 +50,7 @@ ret:                                              ; preds = %copy, %entry
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
+; Function Attrs: argmemonly noinline
 define internal fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<16>, 0>"(%"class.hls::stream<ap_uint<16>, 0>"* noalias nocapture "unpacked"="0", i16* noalias nocapture align 512 "unpacked"="1.0") unnamed_addr #4 {
 entry:
   %2 = alloca i16
@@ -78,7 +78,7 @@ ret:                                              ; preds = %empty
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
+; Function Attrs: argmemonly noinline
 define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>"(i8* noalias nocapture align 512 "unpacked"="0.0" %dst, %"class.hls::stream<ap_uint<8>, 0>"* noalias "unpacked"="1" %src) unnamed_addr #3 {
 entry:
   %0 = icmp eq %"class.hls::stream<ap_uint<8>, 0>"* %src, null
@@ -92,7 +92,7 @@ ret:                                              ; preds = %copy, %entry
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
+; Function Attrs: argmemonly noinline
 define internal fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<8>, 0>"(i8* noalias nocapture align 512 "unpacked"="0.0", %"class.hls::stream<ap_uint<8>, 0>"* noalias nocapture "unpacked"="1") unnamed_addr #4 {
 entry:
   %2 = alloca %"class.hls::stream<ap_uint<8>, 0>"
@@ -118,30 +118,30 @@ ret:                                              ; preds = %empty
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
+; Function Attrs: argmemonly noinline
 define internal fastcc void @copy_out(%"class.hls::stream<ap_uint<16>, 0>"* noalias "unpacked"="0", i16* noalias nocapture align 512 "unpacked"="1.0", %"class.hls::stream<ap_uint<8>, 0>"* noalias "unpacked"="2", i8* noalias nocapture align 512 "unpacked"="3.0") unnamed_addr #5 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<16>, 0>"(%"class.hls::stream<ap_uint<16>, 0>"* %0, i16* align 512 %1)
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>.17"(%"class.hls::stream<ap_uint<8>, 0>"* %2, i8* align 512 %3)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>.15"(%"class.hls::stream<ap_uint<8>, 0>"* %2, i8* align 512 %3)
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>.17"(%"class.hls::stream<ap_uint<8>, 0>"* noalias "unpacked"="0" %dst, i8* noalias nocapture align 512 "unpacked"="1.0" %src) unnamed_addr #3 {
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>.15"(%"class.hls::stream<ap_uint<8>, 0>"* noalias "unpacked"="0" %dst, i8* noalias nocapture align 512 "unpacked"="1.0" %src) unnamed_addr #3 {
 entry:
   %0 = icmp eq %"class.hls::stream<ap_uint<8>, 0>"* %dst, null
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<8>, 0>.20"(%"class.hls::stream<ap_uint<8>, 0>"* nonnull %dst, i8* align 512 %src)
+  call fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<8>, 0>.18"(%"class.hls::stream<ap_uint<8>, 0>"* nonnull %dst, i8* align 512 %src)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<8>, 0>.20"(%"class.hls::stream<ap_uint<8>, 0>"* noalias nocapture "unpacked"="0", i8* noalias nocapture align 512 "unpacked"="1.0") unnamed_addr #4 {
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<8>, 0>.18"(%"class.hls::stream<ap_uint<8>, 0>"* noalias nocapture "unpacked"="0", i8* noalias nocapture align 512 "unpacked"="1.0") unnamed_addr #4 {
 entry:
   %2 = alloca i8
   %3 = alloca %"class.hls::stream<ap_uint<8>, 0>"
@@ -165,22 +165,22 @@ ret:                                              ; preds = %empty
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<16>, 0>.29"(i16* noalias nocapture align 512 "unpacked"="0.0" %dst, %"class.hls::stream<ap_uint<16>, 0>"* noalias "unpacked"="1" %src) unnamed_addr #3 {
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<16>, 0>.27"(i16* noalias nocapture align 512 "unpacked"="0.0" %dst, %"class.hls::stream<ap_uint<16>, 0>"* noalias "unpacked"="1" %src) unnamed_addr #3 {
 entry:
   %0 = icmp eq %"class.hls::stream<ap_uint<16>, 0>"* %src, null
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<16>, 0>.32"(i16* align 512 %dst, %"class.hls::stream<ap_uint<16>, 0>"* nonnull %src)
+  call fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<16>, 0>.30"(i16* align 512 %dst, %"class.hls::stream<ap_uint<16>, 0>"* nonnull %src)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
   ret void
 }
 
-; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<16>, 0>.32"(i16* noalias nocapture align 512 "unpacked"="0.0", %"class.hls::stream<ap_uint<16>, 0>"* noalias nocapture "unpacked"="1") unnamed_addr #4 {
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream<ap_uint<16>, 0>.30"(i16* noalias nocapture align 512 "unpacked"="0.0", %"class.hls::stream<ap_uint<16>, 0>"* noalias nocapture "unpacked"="1") unnamed_addr #4 {
 entry:
   %2 = alloca %"class.hls::stream<ap_uint<16>, 0>"
   %3 = alloca i16
@@ -209,11 +209,11 @@ ret:                                              ; preds = %empty
 
 declare void @apatb_fc1_top_hw(i16*, i8*, i32)
 
-; Function Attrs: argmemonly noinline willreturn
+; Function Attrs: argmemonly noinline
 define internal fastcc void @copy_back(%"class.hls::stream<ap_uint<16>, 0>"* noalias "unpacked"="0", i16* noalias nocapture align 512 "unpacked"="1.0", %"class.hls::stream<ap_uint<8>, 0>"* noalias "unpacked"="2", i8* noalias nocapture align 512 "unpacked"="3.0") unnamed_addr #5 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<16>, 0>"(%"class.hls::stream<ap_uint<16>, 0>"* %0, i16* align 512 %1)
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>.17"(%"class.hls::stream<ap_uint<8>, 0>"* %2, i8* align 512 %3)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<ap_uint<8>, 0>.15"(%"class.hls::stream<ap_uint<8>, 0>"* %2, i8* align 512 %3)
   ret void
 }
 
@@ -241,15 +241,15 @@ declare void @fpga_fifo_push_2(i8*, i8*)
 
 declare void @fpga_fifo_push_1(i8*, i8*)
 
-attributes #0 = { inaccessiblememonly nounwind willreturn }
+attributes #0 = { inaccessiblememonly nounwind }
 attributes #1 = { noinline "fpga.wrapper.func"="wrapper" }
-attributes #2 = { argmemonly noinline willreturn "fpga.wrapper.func"="copyin" }
-attributes #3 = { argmemonly noinline willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
-attributes #4 = { argmemonly noinline willreturn "fpga.wrapper.func"="streamcpy_hls" }
-attributes #5 = { argmemonly noinline willreturn "fpga.wrapper.func"="copyout" }
+attributes #2 = { argmemonly noinline "fpga.wrapper.func"="copyin" }
+attributes #3 = { argmemonly noinline "fpga.wrapper.func"="onebyonecpy_hls" }
+attributes #4 = { argmemonly noinline "fpga.wrapper.func"="streamcpy_hls" }
+attributes #5 = { argmemonly noinline "fpga.wrapper.func"="copyout" }
 attributes #6 = { "fpga.wrapper.func"="stub" }
-attributes #7 = { inaccessiblememonly nounwind willreturn "xlx.port.bitwidth"="16" "xlx.source"="user" }
-attributes #8 = { inaccessiblememonly nounwind willreturn "xlx.port.bitwidth"="8" "xlx.source"="user" }
+attributes #7 = { inaccessiblememonly nounwind "xlx.port.bitwidth"="16" "xlx.source"="user" }
+attributes #8 = { inaccessiblememonly nounwind "xlx.port.bitwidth"="8" "xlx.source"="user" }
 
 !llvm.dbg.cu = !{}
 !llvm.ident = !{!0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0}

@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Matrix_Vector_Activate_Batch_Pipeline_VITIS_LOOP_147_1'" level="0">
-<item name = "Date">Sun Feb 22 04:32:18 2026
+<item name = "Date">Mon Feb 23 23:21:16 2026
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">convSNN_fc1</item>
 <item name = "Solution">xcvu9p-flga2577-2-e (Vivado IP Flow Target)</item>
 <item name = "Product family">virtexuplus</item>
@@ -84,7 +84,7 @@
 <column name="nf_4_fu_126_p2">+, 0, 0, 39, 32, 1</column>
 <column name="sf_1_fu_109_p2">+, 0, 0, 39, 32, 1</column>
 <column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_194">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_200">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln147_fu_89_p2">icmp, 0, 0, 39, 32, 32</column>
 <column name="icmp_ln150_fu_100_p2">icmp, 0, 0, 39, 32, 1</column>
 <column name="icmp_ln197_fu_115_p2">icmp, 0, 0, 39, 32, 5</column>

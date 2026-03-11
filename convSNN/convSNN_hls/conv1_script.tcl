@@ -79,5 +79,5 @@ create_clock -period 10 -name default
 # Run
 csim_design -clean
 csynth_design
-# cosim_design
+cosim_design
 export_design -format ip_catalog -version 2.0.1

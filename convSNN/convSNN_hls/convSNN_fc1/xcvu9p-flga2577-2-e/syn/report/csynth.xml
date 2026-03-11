@@ -1,6 +1,6 @@
 <profile>
     <ReportVersion>
-        <Version>2023.2</Version>
+        <Version>2023.1</Version>
     </ReportVersion>
     <UserAssignments>
         <unit>ns</unit>
@@ -29,11 +29,6 @@
             <Interval-min>undef</Interval-min>
             <Interval-max>undef</Interval-max>
         </SummaryOfOverallLatency>
-        <SummaryOfViolations>
-            <IssueType>-</IssueType>
-            <ViolationType>-</ViolationType>
-            <SourceLocation>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:27</SourceLocation>
-        </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
@@ -261,19 +256,6 @@
                         <InstanceList/>
                     </VITIS_LOOP_147_1>
                 </SummaryOfLoopLatency>
-                <SummaryOfViolations>
-                    <IssueType>-</IssueType>
-                    <ViolationType>-</ViolationType>
-                    <SourceLocation>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:140</SourceLocation>
-                    <SummaryOfLoopViolations>
-                        <VITIS_LOOP_147_1>
-                            <Name>VITIS_LOOP_147_1</Name>
-                            <IssueType>-</IssueType>
-                            <ViolationType>-</ViolationType>
-                            <SourceLocation>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147</SourceLocation>
-                        </VITIS_LOOP_147_1>
-                    </SummaryOfLoopViolations>
-                </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
@@ -295,9 +277,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_147_1" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_94_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147" STORAGESUBTYPE="" URAM="0" VARIABLE="i_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_147_1" OPTYPE="add" PRAGMA="" RTLNAME="sf_1_fu_109_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197" STORAGESUBTYPE="" URAM="0" VARIABLE="sf_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_147_1" OPTYPE="add" PRAGMA="" RTLNAME="nf_4_fu_126_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:212" STORAGESUBTYPE="" URAM="0" VARIABLE="nf_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_147_1" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_94_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:147" URAM="0" VARIABLE="i_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_147_1" OPTYPE="add" PRAGMA="" RTLNAME="sf_1_fu_109_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:197" URAM="0" VARIABLE="sf_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_147_1" OPTYPE="add" PRAGMA="" RTLNAME="nf_4_fu_126_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:212" URAM="0" VARIABLE="nf_4"/>
             </BindNodes>
         </Module>
         <Module>
@@ -318,11 +300,6 @@
                     <PipelineInitiationInterval>undef</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
-                <SummaryOfViolations>
-                    <IssueType>-</IssueType>
-                    <ViolationType>-</ViolationType>
-                    <SourceLocation>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:218</SourceLocation>
-                </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
@@ -344,7 +321,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mul_fu_51_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="mul"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mul_fu_51_p2" SOURCE="" URAM="0" VARIABLE="mul"/>
             </BindNodes>
         </Module>
         <Module>
@@ -366,11 +343,6 @@
                     <PipelineInitiationInterval>undef</PipelineInitiationInterval>
                     <PipelineType>dataflow</PipelineType>
                 </SummaryOfOverallLatency>
-                <SummaryOfViolations>
-                    <IssueType>-</IssueType>
-                    <ViolationType>-</ViolationType>
-                    <SourceLocation>/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:27</SourceLocation>
-                </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
@@ -538,7 +510,7 @@
             </item>
         </section>
     </ReportSWInterface>
-    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <ResolutionUrl key="ZZZ">www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=ZZZ.html</ResolutionUrl>
     <PragmaReport>
         <Pragma type="inline" location="../../finn-hlslib-lif/activations.hpp:69" status="valid" parentFunction="init" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="../../finn-hlslib-lif/activations.hpp:87" status="valid" parentFunction="activate" variable="" isDirective="0" options=""/>
@@ -596,11 +568,11 @@
         <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:89" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:114" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
         <Pragma type="resource" location="../../finn-hlslib-lif/mac.hpp:116" status="warning" parentFunction="mul" variable="res" isDirective="0" options="variable=res core=Mul_LUT">
-            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+            <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
         <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:140" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
         <Pragma type="resource" location="../../finn-hlslib-lif/mac.hpp:142" status="warning" parentFunction="mul" variable="res" isDirective="0" options="variable=res core=DSP48">
-            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+            <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
         <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:165" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
         <Pragma type="unroll" location="../../finn-hlslib-lif/mac.hpp:168" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
@@ -621,7 +593,7 @@
         <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:251" status="valid" parentFunction="relu_batch" variable="" isDirective="0" options="II=1"/>
         <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:254" status="valid" parentFunction="relu_batch" variable="" isDirective="0" options=""/>
         <Pragma type="resource" location="../../finn-hlslib-lif/maxpool.h:296" status="warning" parentFunction="accpool_batch" variable="accumulators" isDirective="0" options="variable=accumulators core=RAM_2P_LUTRAM">
-            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+            <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
         <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:302" status="valid" parentFunction="accpool_batch" variable="" isDirective="0" options="II=1"/>
         <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:306" status="valid" parentFunction="accpool_batch" variable="" isDirective="0" options=""/>
@@ -654,19 +626,19 @@
         <Pragma type="unroll" location="../../finn-hlslib-lif/mvau.hpp:331" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:74" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
         <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:75" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_2P">
-            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+            <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
         <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:96" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
         <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:97" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_BRAM">
-            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+            <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
         <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:118" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
         <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:119" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_URAM">
-            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+            <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
         <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:140" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
         <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:141" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_LUTRAM">
-            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+            <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
         <Pragma type="array_partition" location="../../finn-hlslib-lif/slidingwindow.h:182" status="valid" parentFunction="convolutioninputgenerator" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
         <Pragma type="reset" location="../../finn-hlslib-lif/slidingwindow.h:195" status="valid" parentFunction="convolutioninputgenerator" variable="inp" isDirective="0" options="variable=inp"/>

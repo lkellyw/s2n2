@@ -36,6 +36,7 @@ obj/conv1_top.o: ../../../../../conv1_top.cpp \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp \
- ../../../../../configSNN.h ../../../../../conv1_weights.hpp \
+ ../../../../../configSNN.h \
  /home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp \
- /home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp
+ /home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp \
+ ../../../../../memdata.h

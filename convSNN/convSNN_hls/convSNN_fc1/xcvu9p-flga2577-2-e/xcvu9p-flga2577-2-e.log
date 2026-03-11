@@ -854,3 +854,169 @@ INFO: [HLS 200-1510] Running: export_design -format ip_catalog -version 2.0.1
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 INFO: [HLS 200-802] Generated output file convSNN_fc1/xcvu9p-flga2577-2-e/impl/export.zip
 INFO: [HLS 200-111] Finished Command export_design CPU user time: 15.59 seconds. CPU system time: 3.28 seconds. Elapsed time: 341.45 seconds; current allocated memory: 5.098 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2577-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2577-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -O 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building optimized C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 23.41 seconds. CPU system time: 7.31 seconds. Elapsed time: 31.65 seconds; current allocated memory: 2.379 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.28 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.34 seconds; current allocated memory: 1.454 GB.
+INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp' ... 
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:75:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:97:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:119:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:141:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h:296:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:116:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp:142:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:45:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:46:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:48:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:49:9)
+WARNING: [HLS 200-471] Dataflow form checks found 4 issue(s) in file /home/coder/Desktop/s2n2/convSNN/fc1_top.cpp
+WARNING: [HLS 207-5292] unused parameter 'reps' (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:837:77)
+WARNING: [HLS 207-5292] unused parameter 'reps' (/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h:869:78)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:149:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:166:58)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:209:56)
+WARNING: [HLS 207-5292] unused parameter 'flag' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:209:72)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:213:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:218:30)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:240:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:262:39)
+WARNING: [HLS 207-5292] unused parameter 'flag' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:273:72)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp:300:52)
+WARNING: [HLS 207-5292] unused parameter 'decay' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:115:16)
+WARNING: [HLS 207-5292] unused parameter 'r' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:16)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:68:26)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:68:45)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:86:29)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:86:48)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:108:32)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:108:51)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:131:26)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:131:45)
+WARNING: [HLS 207-5292] unused parameter 'nf' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:170:26)
+WARNING: [HLS 207-5292] unused parameter 'pe' (/home/coder/Desktop/s2n2/finn-hlslib-lif/activations.hpp:170:45)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 32.19 seconds. CPU system time: 8.29 seconds. Elapsed time: 43.95 seconds; current allocated memory: 1.457 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 3,836 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,809 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 48 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 57 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_fc1/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::TileIndex(FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u> const&, unsigned int, ap_uint<16>)' into 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::weights(unsigned int, ap_uint<16>) const' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:216:9)
+INFO: [HLS 214-131] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<8> >::operator ap_uint<8> const&() const' into 'void Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<8>, 0>&, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:207:17)
+INFO: [HLS 214-131] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<8> >::operator[](unsigned int) const' into 'void Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<8>, 0>&, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:203:8)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[](unsigned int) const' into 'void Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<8>, 0>&, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:189:21)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::TileIndex::operator[](unsigned int) const' into 'void Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<8>, 0>&, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:186:57)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>::weights(unsigned int, ap_uint<16>) const' into 'void Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<8>, 0>&, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:178:29)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_166_2' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_184_3' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_200_1' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200:25)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_200_4' is marked as complete unroll implied by the pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200:25)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_166_2' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:166:24) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_184_3' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:184:23) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_200_1' (/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp:200:25) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 16 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_200_4' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:200:25) in function 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>' completely with a factor of 8 (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:117:0)
+INFO: [HLS 214-178] Inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::DebugThresholdActivation(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'fc1_top(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int)' (/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:26:0)
+INFO: [HLS 214-248] Applying array_partition to 'inputBuf': Complete partitioning on dimension 1. (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:127:6)
+INFO: [HLS 214-248] Applying array_partition to 'neust': Complete partitioning on dimension 2. (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:132:22)
+INFO: [HLS 214-364] Automatically inlining function 'DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>) const' to improve effectiveness of pipeline pragma in function 'void Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<8>, 0>&, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u> const&, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > const&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dsp const&)' (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:202:15)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'weights_fc1' due to pipeline pragma (/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:148:9)
+INFO: [HLS 214-248] Applying array_partition to 'weights_fc1': Complete partitioning on dimension 1. (/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:17:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 12.27 seconds. CPU system time: 5.15 seconds. Elapsed time: 24.28 seconds; current allocated memory: 1.458 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.458 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.460 GB.
+INFO: [XFORM 203-712] Applying dataflow to function 'fc1_top' (/home/coder/Desktop/s2n2/convSNN/fc1_top.cpp:22:1), detected/extracted 1 process function(s): 
+	 'Matrix_Vector_Activate_Batch<320u, 64u, 16u, 16u, 8u, 1u, Slice<ap_uint<1>, 1u>, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<16>, ap_uint<8>, FixedPointWeightsSp<16u, ap_int<32>, 8u, 160u>, DebugThresholdActivation<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_resource_dsp>'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.18 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.35 seconds; current allocated memory: 1.482 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.31 seconds; current allocated memory: 1.492 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fc1_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activate_Batch_Pipeline_VITIS_LOOP_147_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_147_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_147_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.47 seconds. CPU system time: 0.55 seconds. Elapsed time: 1.46 seconds; current allocated memory: 1.493 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.37 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.73 seconds; current allocated memory: 1.493 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activate_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.32 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.59 seconds; current allocated memory: 1.493 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.32 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.62 seconds; current allocated memory: 1.493 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.51 seconds; current allocated memory: 1.493 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.5 seconds; current allocated memory: 1.493 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activate_Batch_Pipeline_VITIS_LOOP_147_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Matrix_Vector_Activate_Batch_Pipeline_VITIS_LOOP_147_1' pipeline 'VITIS_LOOP_147_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activate_Batch_Pipeline_VITIS_LOOP_147_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.37 seconds; current allocated memory: 1.493 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activate_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activate_Batch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.64 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.17 seconds; current allocated memory: 1.494 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fc1_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/in_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/out_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fc1_top/numReps' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fc1_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fc1_top'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.49 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.38 seconds; current allocated memory: 1.495 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.06 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.28 seconds; current allocated memory: 1.498 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.31 seconds. CPU system time: 0.16 seconds. Elapsed time: 1.53 seconds; current allocated memory: 1.504 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fc1_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for fc1_top.
+INFO: [HLS 200-789] **** Estimated Fmax: 421.23 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 50.96 seconds. CPU system time: 15.1 seconds. Elapsed time: 80.88 seconds; current allocated memory: 51.887 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -version 2.0.1 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file convSNN_fc1/xcvu9p-flga2577-2-e/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 73.07 seconds. CPU system time: 5.8 seconds. Elapsed time: 87.69 seconds; current allocated memory: 5.406 MB.

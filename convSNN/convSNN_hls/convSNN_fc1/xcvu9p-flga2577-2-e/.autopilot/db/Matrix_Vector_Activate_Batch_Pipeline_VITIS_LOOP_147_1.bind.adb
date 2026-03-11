@@ -70,7 +70,7 @@
 						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1629888613</coreId>
+						<coreId>1885414944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886352491</coreId>
+						<coreId>412713952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -129,28 +129,14 @@
 						<type>0</type>
 						<id>4</id>
 						<name>sf</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>140</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second class_id="11" tracking_level="0" version="0">
-									<count>1</count>
-									<item_version>0</item_version>
-									<item class_id="12" tracking_level="0" version="0">
-										<first class_id="13" tracking_level="0" version="0">
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
-										</first>
-										<second>140</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName>sf</originalName>
 						<rtlName></rtlName>
@@ -160,7 +146,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967292</coreId>
+						<coreId>1667592275</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -185,28 +171,14 @@
 						<type>0</type>
 						<id>5</id>
 						<name>i</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>147</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
-										</first>
-										<second>147</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName>i</originalName>
 						<rtlName></rtlName>
@@ -216,7 +188,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1667592275</coreId>
+						<coreId>371486128</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -241,28 +213,14 @@
 						<type>0</type>
 						<id>6</id>
 						<name>nf</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>139</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
-										</first>
-										<second>139</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName>nf</originalName>
 						<rtlName></rtlName>
@@ -272,7 +230,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>814042616</coreId>
+						<coreId>2453117168</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -305,13 +263,13 @@
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
-							<item>
+							<item class_id="11" tracking_level="0" version="0">
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
+								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
+									<item class_id="13" tracking_level="0" version="0">
+										<first class_id="14" tracking_level="0" version="0">
 											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
 											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
 										</first>
@@ -328,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1885415456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -353,29 +311,15 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>nf_write_ln139</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>139</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
+						<name>nf_write_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
-										</first>
-										<second>139</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
@@ -385,7 +329,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1885415456</coreId>
+						<coreId>544424224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -410,29 +354,15 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_write_ln147</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>147</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
+						<name>i_write_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
-										</first>
-										<second>147</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
@@ -442,7 +372,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544424224</coreId>
+						<coreId>1630347296</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -467,29 +397,15 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>sf_write_ln140</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>140</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
+						<name>sf_write_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
-										</first>
-										<second>140</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
@@ -499,7 +415,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701605485</coreId>
+						<coreId>7955819</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -542,7 +458,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2037672306</coreId>
+						<coreId>412376032</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -598,7 +514,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539122993</coreId>
+						<coreId>412400688</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -655,7 +571,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>543236200</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -826,7 +742,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1868767334</coreId>
+						<coreId>412450224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -941,7 +857,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1043341356</coreId>
+						<coreId>412443664</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1056,7 +972,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601726834</coreId>
+						<coreId>412633424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1112,7 +1028,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1213932032</coreId>
+						<coreId>412630912</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1283,7 +1199,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412735520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1309,10 +1225,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>sf_write_ln140</name>
+						<name>sf_write_ln197</name>
 						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>140</lineNumber>
+						<lineNumber>197</lineNumber>
 						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
 						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1328,7 +1244,7 @@
 											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
 											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
 										</first>
-										<second>140</second>
+										<second>197</second>
 									</item>
 								</second>
 							</item>
@@ -1341,7 +1257,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412453120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1400,7 +1316,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412706000</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1654,10 +1570,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>nf_write_ln139</name>
+						<name>nf_write_ln216</name>
 						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>216</lineNumber>
 						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
 						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1673,7 +1589,7 @@
 											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
 											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
 										</first>
-										<second>139</second>
+										<second>216</second>
 									</item>
 								</second>
 							</item>
@@ -1686,7 +1602,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412736960</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1713,10 +1629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>sf_write_ln140</name>
+						<name>sf_write_ln216</name>
 						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>140</lineNumber>
+						<lineNumber>216</lineNumber>
 						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</contextFuncName>
 						<contextNormFuncName>Matrix_Vector_Activate_Batch_320_64_16_16_8_1_Slice_ap_uint_1_1_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_16_ap_uint_8_FixedPointWeightsSp_16_ap_int_32_8_160_DebugThresholdActivation_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_resource_dsp_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1732,7 +1648,7 @@
 											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
 											<second>Matrix_Vector_Activate_Batch&amp;lt;320, 64, 16, 16, 8, 1, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;16&amp;gt;, ap_uint&amp;lt;8&amp;gt;, FixedPointWeightsSp&amp;lt;16, ap_int&amp;lt;32&amp;gt;, 8, 160&amp;gt;, DebugThresholdActivation&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, ap_resource_dsp&amp;gt;</second>
 										</first>
-										<second>140</second>
+										<second>216</second>
 									</item>
 								</second>
 							</item>
@@ -1745,7 +1661,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1818766702</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1804,7 +1720,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>544367872</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1919,7 +1835,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412735520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1961,7 +1877,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412460256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2006,7 +1922,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412459264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2037,7 +1953,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2099,7 +2015,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>412462232</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2130,7 +2046,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2237,7 +2153,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2269,7 +2185,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1684371561</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2301,7 +2217,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1667853395</coreId>
+					<coreId>412630896</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2317,7 +2233,7 @@
 				<Obj>
 					<type>3</type>
 					<id>36</id>
-					<name>if.end.i.7.15.for.inc95_crit_edge</name>
+					<name>if.end.i.7.15.for.inc117_crit_edge</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2349,7 +2265,7 @@
 				<Obj>
 					<type>3</type>
 					<id>44</id>
-					<name>VITIS_LOOP_200_4</name>
+					<name>_ZNK24DebugThresholdActivationI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEEclES3_.exit369</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2367,7 +2283,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>412724144</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2386,7 +2302,7 @@
 				<Obj>
 					<type>3</type>
 					<id>47</id>
-					<name>for.inc95</name>
+					<name>for.inc117</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2404,7 +2320,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>480</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2418,7 +2334,7 @@
 				<Obj>
 					<type>3</type>
 					<id>49</id>
-					<name>for.end97.loopexit.exitStub</name>
+					<name>for.end119.loopexit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2436,7 +2352,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>412458160</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -4009,15 +3925,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln139_store_fu_146</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>41</item>
-			</second>
-		</item>
-		<item>
-			<first>store_ln139_store_fu_68</first>
+			<first>store_ln0_store_fu_68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4025,23 +3933,15 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln140_store_fu_121</first>
+			<first>store_ln0_store_fu_73</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>34</item>
+				<item>11</item>
 			</second>
 		</item>
 		<item>
-			<first>store_ln140_store_fu_151</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>42</item>
-			</second>
-		</item>
-		<item>
-			<first>store_ln140_store_fu_78</first>
+			<first>store_ln0_store_fu_78</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4057,11 +3957,27 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln147_store_fu_73</first>
+			<first>store_ln197_store_fu_121</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>11</item>
+				<item>34</item>
+			</second>
+		</item>
+		<item>
+			<first>store_ln216_store_fu_146</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>41</item>
+			</second>
+		</item>
+		<item>
+			<first>store_ln216_store_fu_151</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>42</item>
 			</second>
 		</item>
 		<item>
