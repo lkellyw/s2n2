@@ -3,20 +3,19 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Mar 12 03:47:48 2026
-# Process ID: 45550
+# Start of session at: Thu Mar 12 04:19:50 2026
+# Process ID: 48326
 # Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp
 # Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
 # Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp/vivado.log
 # Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp/vivado.jou
-# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3600.157 MHz, CPU Physical cores: 16, Host memory: 404293 MB
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3399.956 MHz, CPU Physical cores: 16, Host memory: 404293 MB
 #-----------------------------------------------------------
 source run_vivado_gen_ip.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:31 . Memory (MB): peak = 2432.367 ; gain = 115.992 ; free physical = 113827 ; free virtual = 338334
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 2408.168 ; gain = 115.961 ; free physical = 113985 ; free virtual = 339787
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
-create_ip: Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:07 . Memory (MB): peak = 2538.082 ; gain = 105.715 ; free physical = 113784 ; free virtual = 338342
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'conv1_lif_top_fadd_32ns_32ns_32_3_full_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'conv1_lif_top_fadd_32ns_32ns_32_3_full_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'conv1_lif_top_fsub_32ns_32ns_32_3_full_dsp_1_ip'...
@@ -25,4 +24,4 @@ INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'conv1_lif_top_fmul
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'conv1_lif_top_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'conv1_lif_top_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'conv1_lif_top_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 12 03:49:08 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 12 04:20:23 2026...

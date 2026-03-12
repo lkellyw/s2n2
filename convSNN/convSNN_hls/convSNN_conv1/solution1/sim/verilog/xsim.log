@@ -3,13 +3,13 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Mar 12 03:50:15 2026
-# Process ID: 45878
+# Start of session at: Thu Mar 12 04:21:07 2026
+# Process ID: 48563
 # Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/conv1_lif_top/xsim_script.tcl}
 # Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/xsim.log
 # Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/xsim.jou
-# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3599.998 MHz, CPU Physical cores: 15, Host memory: 404293 MB
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3600.171 MHz, CPU Physical cores: 16, Host memory: 404293 MB
 #-----------------------------------------------------------
 source xsim.dir/conv1_lif_top/xsim_script.tcl
 # xsim {conv1_lif_top} -autoloadwcfg -tclbatch {conv1_lif_top.tcl}
@@ -2330,7 +2330,7 @@ Time: 595 ns  Iteration: 12  Process: /apatb_conv1_lif_top_top/AESL_inst_conv1_l
 // RTL Simulation : 1 / 1 [n/a] @ "5905000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 5965 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/conv1_lif_top.autotb.v" Line 331
-run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:24 . Memory (MB): peak = 1241.359 ; gain = 0.000 ; free physical = 114626 ; free virtual = 339496
+run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:24 . Memory (MB): peak = 1241.359 ; gain = 0.000 ; free physical = 115212 ; free virtual = 341090
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 323200 KB (Peak: 373372 KB), Simulation CPU Usage: 24450 ms
-INFO: [Common 17-206] Exiting xsim at Thu Mar 12 03:50:42 2026...
+INFO: xsimkernel Simulation Memory Usage: 323200 KB (Peak: 373372 KB), Simulation CPU Usage: 24050 ms
+INFO: [Common 17-206] Exiting xsim at Thu Mar 12 04:21:33 2026...

@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Mar 12 03:50:46 2026
-# Process ID: 45978
+# Start of session at: Thu Mar 12 04:21:37 2026
+# Process ID: 48664
 # Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/impl/ip/vivado.log
 # Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/impl/ip/vivado.jou
-# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3600.116 MHz, CPU Physical cores: 16, Host memory: 404293 MB
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 800.000 MHz, CPU Physical cores: 16, Host memory: 404293 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 2408.047 ; gain = 112.992 ; free physical = 113615 ; free virtual = 338488
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 2408.168 ; gain = 114.992 ; free physical = 114036 ; free virtual = 339916
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
@@ -27,4 +27,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'conv1_lif_top_fsu
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 12 03:51:20 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 12 04:22:11 2026...

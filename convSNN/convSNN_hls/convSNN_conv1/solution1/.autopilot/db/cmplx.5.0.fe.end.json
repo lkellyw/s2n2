@@ -1,5 +1,23 @@
 {
     "1": {
+        "name": "conv1_lif_top_Pipeline_VITIS_LOOP_29_2_VITIS_LOOP_30_3",
+        "file": "conv1_top.cpp",
+        "fileloc": "0",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
         "name": "conv1_lif_top_Pipeline_VITIS_LOOP_58_6_VITIS_LOOP_59_7",
         "file": "conv1_top.cpp",
         "fileloc": "0",
@@ -23,31 +41,13 @@
         "fileloc": "8",
         "instructions": "93",
         "total_instructions": "1123",
-        "calls": "2 3 1",
+        "calls": "1 3 2",
         "basicblocks": "4",
         "loads": {
             "L": "1"
         },
         "stores": {
             "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "2": {
-        "name": "conv1_lif_top_Pipeline_VITIS_LOOP_29_2_VITIS_LOOP_30_3",
-        "file": "conv1_top.cpp",
-        "fileloc": "0",
-        "instructions": "41",
-        "total_instructions": "41",
-        "calls": "",
-        "basicblocks": "8",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "9"
         },
         "loops": {
             "L": "1"

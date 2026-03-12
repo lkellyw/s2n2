@@ -14,24 +14,6 @@ INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
 INFO: [COSIM-323] Starting verilog simulation. 
 INFO: [COSIM-15] Starting XSIM ...
 INFO: [COSIM-316] Starting C post checking ...
-Effective reps: 200 | Expected out words: 200 | Drained: 200 | Remaining: 0
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
-effectiveReps=200 in_words_total=600 out_words_total=200
-Calling conv1_lif_top...
-Returned from conv1_lif_top.
-Expected out words: 200 | Drained: 200 | Remaining: 0
-PASS: Received all expected outputs.
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
-effectiveReps=200 in_words_total=600 out_words_total=200
-Calling conv1_lif_top...
-Returned from conv1_lif_top.
-Expected out words: 200 | Drained: 200 | Remaining: 0
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
-effectiveReps=200 drained_total=200 remaining_out=0
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3
-effectiveReps=200
-drained_total=200 remaining_out=0
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3
 Reading input file: /home/coder/Desktop/s2n2/convSNN/conv1_input_float.txt
 Reading expected file: /home/coder/Desktop/s2n2/convSNN/conv1_expected_packed.txt
 expected_input_words = 30
@@ -2653,10 +2635,10 @@ Time: 595 ns  Iteration: 12  Process: /apatb_conv1_lif_top_top/AESL_inst_conv1_l
 // RTL Simulation : 1 / 1 [n/a] @ "5905000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 5965 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/conv1_lif_top.autotb.v" Line 331
-run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:24 . Memory (MB): peak = 1241.359 ; gain = 0.000 ; free physical = 114626 ; free virtual = 339496
+run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:24 . Memory (MB): peak = 1241.359 ; gain = 0.000 ; free physical = 115212 ; free virtual = 341090
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 323200 KB (Peak: 373372 KB), Simulation CPU Usage: 24450 ms
-INFO: [Common 17-206] Exiting xsim at Thu Mar 12 03:50:42 2026...
+INFO: xsimkernel Simulation Memory Usage: 323200 KB (Peak: 373372 KB), Simulation CPU Usage: 24050 ms
+INFO: [Common 17-206] Exiting xsim at Thu Mar 12 04:21:33 2026...
 Reading input file: /home/coder/Desktop/s2n2/convSNN/conv1_input_float.txt
 Reading expected file: /home/coder/Desktop/s2n2/convSNN/conv1_expected_packed.txt
 expected_input_words = 30
