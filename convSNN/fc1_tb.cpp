@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 #include "ap_int.h"
 #include "hls_stream.h"
 #include "bnn-library.h"
@@ -8,50 +9,87 @@
 #include "interpret.hpp"
 #include "fclayer.h"
 #include "configSNN.h"
-#include "memdata.h"   // <-- Python-exported weights
+#include "memdata.h"
+
+// weights_fc1 is defined in fc1_top.cpp
+extern FixedPointWeightsSp<
+    SIMD_FC1,
+    ap_int<32>,
+    PE_FC1,
+    (FC1_IN_CH * FC1_OUT_CH) / (SIMD_FC1 * PE_FC1)
+> weights_fc1;
+
+// Prototype of fc1_top (defined in fc1_top.cpp)
+void fc1_top(
+    hls::stream<ap_uint<SIMD_FC1 * INPUT_PRECISION>> &in,
+    hls::stream<ap_uint<PE_FC1 * ACTIVATION_PRECISION>> &out,
+    unsigned int numReps
+);
 
 // Initialize weights from memdata.h into weights_fc1
 void init_fc1_weights() {
     std::cout << "\nInitializing FC1 weights from memdata.h...\n";
     for (unsigned int out = 0; out < FC1_OUT_CH; ++out) {
         for (unsigned int in = 0; in < FC1_IN_CH; ++in) {
-            // map neuron-major [64][320] array into the tiled structure
             unsigned int pe   = out % PE_FC1;
             unsigned int tile = (out / PE_FC1) * (FC1_IN_CH / SIMD_FC1) + (in / SIMD_FC1);
             unsigned int lane = in % SIMD_FC1;
-            // place 32-bit weight into correct lane of the tile
-            weights_fc1.m_weights[pe][tile].range((lane+1)*32-1, lane*32) = PARAM::fc1_weights[out][in];
+
+            weights_fc1.m_weights[pe][tile].range((lane + 1) * 32 - 1, lane * 32) =
+                PARAM::fc1_weights[out][in];
         }
     }
 }
 
-// Prototype of fc1_top (defined in fc1_top.cpp)
-void fc1_top(hls::stream<ap_uint<FC1_IN_CH * INPUT_PRECISION>> &in,
-             hls::stream<ap_uint<FC1_OUT_CH * ACTIVATION_PRECISION>> &out,
-             unsigned int numReps);
-
 int main() {
-    hls::stream<ap_uint<FC1_IN_CH * INPUT_PRECISION>> input;
-    hls::stream<ap_uint<FC1_OUT_CH * ACTIVATION_PRECISION>> output;
+    hls::stream<ap_uint<SIMD_FC1 * INPUT_PRECISION>> input;
+    hls::stream<ap_uint<PE_FC1 * ACTIVATION_PRECISION>> output;
 
-    // Load Python-trained FC1 weights
     init_fc1_weights();
 
     const int numReps = REPS;
 
-    // Generate dummy input vector (all ones) for numReps iterations
+    // FINN MVU expects: FC1_IN_CH/SIMD_FC1 input words per rep
+    const int in_words_per_rep  = FC1_IN_CH / SIMD_FC1;
+    const int out_words_per_rep = FC1_OUT_CH / PE_FC1;
+
+    std::cout << "FC1: in_words_per_rep=" << in_words_per_rep
+              << " out_words_per_rep=" << out_words_per_rep
+              << " numReps=" << numReps << "\n";
+
+    // Write correct number of input words
     for (int r = 0; r < numReps; ++r) {
-        ap_uint<FC1_IN_CH * INPUT_PRECISION> val = 0;
-        for (int i = 0; i < FC1_IN_CH * INPUT_PRECISION; i++) {
-            val.set(i, 1); // every bit = spike
+        for (int w = 0; w < in_words_per_rep; ++w) {
+            ap_uint<SIMD_FC1 * INPUT_PRECISION> chunk = 0;
+            // dummy "all ones" spikes
+            for (int i = 0; i < SIMD_FC1 * INPUT_PRECISION; i++) {
+                chunk.set(i, 1);
+            }
+            input.write(chunk);
         }
-        input.write(val);
     }
 
-    // Run FC1 top
+    // Run FC1
     fc1_top(input, output, numReps);
 
-    std::cout << "\nRun complete. Output stream size: " << output.size() << "\n";
+    // Drain expected output words so we detect any mismatch immediately
+    const int expected_out_words = numReps * out_words_per_rep;
+    int drained = 0;
 
+    for (int i = 0; i < expected_out_words; ++i) {
+        auto o = output.read();
+        (void)o;
+        drained++;
+    }
+
+    std::cout << "Expected out words: " << expected_out_words
+              << " | Drained: " << drained << "\n";
+
+    // If there are leftovers, that's also a red flag
+    if (!output.empty()) {
+        std::cout << "WARNING: output stream not empty after draining expected words.\n";
+    }
+
+    std::cout << "CSIM done.\n";
     return 0;
 }

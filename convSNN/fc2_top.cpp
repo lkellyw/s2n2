@@ -1,25 +1,42 @@
+// fc2_top.cpp
 #include <hls_stream.h>
 #include "ap_int.h"
 #include "bnn-library.h"
 
-#include "activations.hpp"
-#include "fc2_weights.hpp"
-#include "interpret.hpp"
-#include "fclayer.h"
 #include "configSNN.h"
+#include "fclayer.h"
+#include "activations.hpp"
+#include "interpret.hpp"
+#include "fc2_weights.hpp"
+#include "streamtools.h"
 
-// Declare weights
+// Global FC2 weights object
 FixedPointWeightsSp<
     SIMD_FC2,
-    ap_int<32>,   // same type we used for conv1/fc1
+    ap_int<32>,
     PE_FC2,
     (FC2_IN_CH * FC2_OUT_CH) / (SIMD_FC2 * PE_FC2)
 > weights_fc2;
 
-void fc2_top(hls::stream<ap_uint<FC2_IN_CH * INPUT_PRECISION>> &in,
-             hls::stream<ap_uint<FC2_OUT_CH * ACTIVATION_PRECISION>> &out,
-             unsigned int numReps) {
+void fc2_top(
+    hls::stream<ap_uint<SIMD_FC2 * INPUT_PRECISION>> &in,
+    hls::stream<ap_uint<PE_FC2 * ACTIVATION_PRECISION>> &out,
+    unsigned int numReps
+) {
 #pragma HLS DATAFLOW
+
+    // These keep the interface stable even if you later change outer stream widths.
+    WidthAdjustedInputStream<
+        SIMD_FC2 * INPUT_PRECISION,
+        SIMD_FC2 * INPUT_PRECISION,
+        (FC2_IN_CH / SIMD_FC2)
+    > in_adj(in, numReps);
+
+    WidthAdjustedOutputStream<
+        PE_FC2 * ACTIVATION_PRECISION,
+        PE_FC2 * ACTIVATION_PRECISION,
+        (FC2_OUT_CH / PE_FC2)
+    > out_adj(out, numReps);
 
     Matrix_Vector_Activate_Batch<
         FC2_IN_CH, FC2_OUT_CH,
@@ -30,17 +47,18 @@ void fc2_top(hls::stream<ap_uint<FC2_IN_CH * INPUT_PRECISION>> &in,
         Identity,
         ap_fixed<AP_WIDTH, AP_INT>,
         AP_WIDTH, AP_INT, 1,
-        ap_uint<FC2_IN_CH * INPUT_PRECISION>,
-        ap_uint<FC2_OUT_CH * ACTIVATION_PRECISION>,
+        ap_uint<SIMD_FC2 * INPUT_PRECISION>,
+        ap_uint<PE_FC2 * ACTIVATION_PRECISION>,
         decltype(weights_fc2),
-        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>, // match conv1/fc1
+        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>,
         ap_resource_dsp
     >(
-        in, out,
+        (hls::stream<ap_uint<SIMD_FC2 * INPUT_PRECISION>>&)in_adj,
+        (hls::stream<ap_uint<PE_FC2 * ACTIVATION_PRECISION>>&)out_adj,
         weights_fc2,
-        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(1), // threshold = 1 
+        DebugThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(1), // threshold=1
         DECAY,
-        numReps,
+        (int)numReps,
         ap_resource_dsp()
     );
 }

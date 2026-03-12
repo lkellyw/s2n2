@@ -1,72 +1,57 @@
+#include <hls_stream.h>
 #include "ap_int.h"
-#include "hls_stream.h"
+#include "bnn-library.h"
+
 #include "configSNN.h"
 #include "conv1_weights.hpp"
 #include "fc1_weights.hpp"
 #include "fc2_weights.hpp"
 #include "activations.hpp"
-#include "bnn-library.h"
+#include "convlayer.h"
+#include "fclayer.h"
+#include "interpret.hpp"
 
-void convSNN_top(hls::stream<ap_uint<CONV1_SIMD * INPUT_PRECISION>> &in,
-                 hls::stream<ap_uint<FC2_OUT_CH * ACTIVATION_PRECISION>> &out,
+// assume these exist globally like your layer files
+extern decltype(weights_conv1) weights_conv1;
+extern decltype(weights_fc1)   weights_fc1;
+extern decltype(weights_fc2)   weights_fc2;
+
+// Helper: pack N words of W bits into one (N*W)-bit word
+template<int N, int W>
+void PackStream(hls::stream<ap_uint<W>> &in,
+                hls::stream<ap_uint<N*W>> &out,
+                unsigned int numReps) {
+#pragma HLS INLINE off
+    for (unsigned int r = 0; r < numReps; r++) {
+        ap_uint<N*W> packed = 0;
+        for (int i = 0; i < N; i++) {
+#pragma HLS PIPELINE II=1
+            ap_uint<W> w = in.read();
+            packed.range((i+1)*W-1, i*W) = w;
+        }
+        out.write(packed);
+    }
+}
+
+void convSNN_top(hls::stream<ap_uint<3>> &in,
+                 hls::stream<ap_uint<5>> &out,
                  unsigned int numReps) {
 #pragma HLS DATAFLOW
-    hls::stream<ap_uint<CONV1_PE * ACTIVATION_PRECISION>> conv_out;
-    hls::stream<ap_uint<FC1_OUT_CH * ACTIVATION_PRECISION>> fc1_out;
+
+    hls::stream<ap_uint<32>>  conv_out("conv_out_32");
+    hls::stream<ap_uint<320>> fc1_in("fc1_in_320");
+    hls::stream<ap_uint<64>>  fc1_out("fc1_out_64");
+
 #pragma HLS STREAM variable=conv_out depth=64
-#pragma HLS STREAM variable=fc1_out depth=64
+#pragma HLS STREAM variable=fc1_in  depth=32
+#pragma HLS STREAM variable=fc1_out depth=32
 
-    ConvLayer_Batch<
-        CONV1_KERNEL_DIM, CONV1_IFM_CH, CONV1_IFM_DIM,
-        CONV1_OFM_CH, CONV1_OFM_DIM,
-        CONV1_SIMD, CONV1_SIMDSP, CONV1_PE,
-        Slice<ap_uint<INPUT_PRECISION>>,
-        Slice<ap_uint<ACTIVATION_PRECISION>>,
-        Identity,
-        ap_fixed<AP_WIDTH, AP_INT>,
-        AP_WIDTH, AP_INT,
-        CONV1_SIMD * INPUT_PRECISION,
-        CONV1_PE * ACTIVATION_PRECISION,
-        decltype(weights_conv1),
-        decltype(thresh_conv1),
-        ap_resource_dsp>(
-            in, conv_out, weights_conv1, thresh_conv1, numReps, DECAY, ap_resource_dsp());
+    // conv1 produces 10*32 outputs per image (example)
+    conv1_top(in, conv_out, numReps);
 
-    Matrix_Vector_Activate_Batch<
-        FC1_IN_CH, FC1_OUT_CH,
-        SIMD_FC1, SIMD_FC1,
-        PE_FC1, 1,
-        Slice<ap_uint<INPUT_PRECISION>>,
-        Slice<ap_uint<ACTIVATION_PRECISION>>,
-        Identity,
-        ap_fixed<AP_WIDTH, AP_INT>,
-        AP_WIDTH, AP_INT, 1,
-        ap_uint<FC1_IN_CH * INPUT_PRECISION>,
-        ap_uint<FC1_OUT_CH * ACTIVATION_PRECISION>,
-        decltype(weights_fc1),
-        ThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>,
-        ap_resource_dsp>(
-            conv_out, fc1_out,
-            weights_fc1,
-            ThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(0.25),
-            DECAY, numReps, ap_resource_dsp());
+    // pack 10 words of 32-bit into 320-bit for fc1
+    PackStream<10, 32>(conv_out, fc1_in, numReps);
 
-    Matrix_Vector_Activate_Batch<
-        FC2_IN_CH, FC2_OUT_CH,
-        SIMD_FC2, SIMD_FC2,
-        PE_FC2, 1,
-        Slice<ap_uint<INPUT_PRECISION>>,
-        Slice<ap_uint<ACTIVATION_PRECISION>>,
-        Identity,
-        ap_fixed<AP_WIDTH, AP_INT>,
-        AP_WIDTH, AP_INT, 1,
-        ap_uint<FC2_IN_CH * INPUT_PRECISION>,
-        ap_uint<FC2_OUT_CH * ACTIVATION_PRECISION>,
-        decltype(weights_fc2),
-        ThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>,
-        ap_resource_dsp>(
-            fc1_out, out,
-            weights_fc2,
-            ThresholdActivation<ap_fixed<AP_WIDTH, AP_INT>>(0.25),
-            DECAY, numReps, ap_resource_dsp());
+    fc1_top(fc1_in, fc1_out, numReps);
+    fc2_top(fc1_out, out, numReps);
 }
