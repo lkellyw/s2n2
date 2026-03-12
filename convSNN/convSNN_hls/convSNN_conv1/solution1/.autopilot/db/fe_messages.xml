@@ -1,0 +1,69 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv1_script.tcl:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=conv1_lif_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_fifo port=in depth=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_fifo port=out depth=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_lif_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:64:34" msg_body="Loop 'VITIS_LOOP_64_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_64_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:68:38" msg_body="Loop 'VITIS_LOOP_68_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_68_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:12:0" msg_body="Unrolling loop 'VITIS_LOOP_64_8' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:64:34) in function 'conv1_lif_top' completely with a factor of 32">
+        <args Factor="32" LoopLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:64:34" LoopName="VITIS_LOOP_64_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:12:0" msg_body="Unrolling loop 'VITIS_LOOP_68_9' (/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:68:38) in function 'conv1_lif_top' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:68:38" LoopName="VITIS_LOOP_68_9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:0:1" msg_body="array_partition dim=2 type=complete  variable=x 1 conv1_lif_top /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27:15 /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9x">
+        <args PragmaFunction="conv1_lif_top" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=x" PragmaSrcLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9" PragmaSrcLoc-DebugLoc="File /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp Line 60 Column 9" PragmaType="array_partition" VarName="x" varLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'x' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="x" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:0:2" msg_body="array_partition dim=1 type=complete  variable=mem 1 conv1_lif_top /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:43:15 /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9mem">
+        <args PragmaFunction="conv1_lif_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=mem" PragmaSrcLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9" PragmaSrcLoc-DebugLoc="File /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp Line 60 Column 9" PragmaType="array_partition" VarName="mem" varLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:43:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'mem' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="mem" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:0:3" msg_body="array_partition dim=1 type=complete  variable=prev_spk 1 conv1_lif_top /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:44:20 /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9prev_spk">
+        <args PragmaFunction="conv1_lif_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=prev_spk" PragmaSrcLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9" PragmaSrcLoc-DebugLoc="File /home/coder/Desktop/s2n2/convSNN/conv1_top.cpp Line 60 Column 9" PragmaType="array_partition" VarName="prev_spk" varLoc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:44:20"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:60:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'prev_spk' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="prev_spk" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:27:15" msg_body="Applying array_partition to 'x': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="x"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:43:15" msg_body="Applying array_partition to 'mem': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="mem"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/coder/Desktop/s2n2/convSNN/conv1_top.cpp:44:20" msg_body="Applying array_partition to 'prev_spk': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="prev_spk"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

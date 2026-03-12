@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Mar 12 03:47:48 2026
+# Process ID: 45550
+# Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp/vivado.jou
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3600.157 MHz, CPU Physical cores: 16, Host memory: 404293 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

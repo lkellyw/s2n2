@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 244,
+    "calls": "",
+    "file": "conv1_top.cpp",
+    "fileloc": 8,
+    "instructions": 1233,
+    "loads": {
+      "L": 160
+    },
+    "name": "conv1_lif_top",
+    "stores": {
+      "L": 67
+    },
+    "total_instructions": 1233
+  }
+}

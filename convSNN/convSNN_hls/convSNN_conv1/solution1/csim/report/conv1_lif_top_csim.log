@@ -2,15 +2,56 @@ INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../conv1_tb.cpp in debug mode
    Compiling ../../../../../conv1_top.cpp in debug mode
-In file included from /home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h:55,
-                 from /home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h:63,
-                 from ../../../../../conv1_top.cpp:3:
-/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp: In instantiation of ‘void Matrix_Vector_Activate_Batch(hls::stream<TI>&, hls::stream<TO>&, const TW&, const TA&, TD, int, const R&) [with unsigned int MatrixW = 3; unsigned int MatrixH = 32; unsigned int SIMD = 1; unsigned int SIMDSP = 1; unsigned int PE = 32; unsigned int MMV = 1; TSrcI = Slice<ap_uint<1> >; TDstI = Slice<ap_uint<1> >; TWeightI = Identity; TD = ap_fixed<16, 6>; unsigned int WIDTH = 16; unsigned int I = 6; unsigned int OFMDim = 1; TI = ap_uint<1>; TO = ap_uint<32>; TW = FixedPointWeightsSp<1, ap_int<32>, 32, 3>; TA = ThresholdActivation<ap_fixed<16, 6> >; R = ap_resource_dsp]’:
-/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:53:5:   required from ‘void ConvLayer_Batch(hls::stream<ap_uint<InStreamW> >&, hls::stream<ap_uint<OutStreamW> >&, const TW&, const TA&, unsigned int, TD, const R&) [with unsigned int ConvKernelDim = 1; unsigned int IFMChannels = 3; unsigned int IFMDim = 1; unsigned int OFMChannels = 32; unsigned int OFMDim = 1; unsigned int SIMD = 1; unsigned int SIMDSP = 1; unsigned int PE = 32; TSrcI = Slice<ap_uint<1> >; TDstI = Slice<ap_uint<1> >; TWeightI = Identity; TD = ap_fixed<16, 6>; unsigned int WIDTH = 16; unsigned int I = 6; int InStreamW = 1; int OutStreamW = 32; TW = FixedPointWeightsSp<1, ap_int<32>, 32, 3>; TA = ThresholdActivation<ap_fixed<16, 6> >; R = ap_resource_dsp]’
-../../../../../conv1_top.cpp:89:5:   required from here
-/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:115:32: error: no match for call to ‘(const ThresholdActivation<ap_fixed<16, 6> >) (ap_fixed<16, 6>&)’
-         auto spike = activation(accu[pe]);  // returns 0/1 (ap_fixed)
-                      ~~~~~~~~~~^~~~~~~~~~
-make: *** [csim.mk:85: obj/conv1_top.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+   Generating csim.exe
+Reading input file: /home/coder/Desktop/s2n2/convSNN/conv1_input_float.txt
+Reading expected file: /home/coder/Desktop/s2n2/convSNN/conv1_expected_packed.txt
+expected_input_words = 30
+loaded_input_words   = 30
+expected_output_words = 200
+loaded_expected_output_words = 200
+[TOP] Enter conv1_lif_top, numEvents=1
+[TOP] Reading event 0
+[TOP] x[0][0] = 0.185304
+[TOP] x[0][1] = 0.373208
+[TOP] x[0][2] = -1.1809
+[TOP] x[1][0] = 0.00856868
+[TOP] x[1][1] = 0.171962
+[TOP] x[1][2] = 1.30216
+[TOP] Starting timestep loop
+[TOP] t=0 p=0 oc=0 prev_spk=0 mem_before=0 cur=0.073168 mem_after=0.073168 spike=0
+[TOP] t=0 p=0 oc=1 prev_spk=0 mem_before=0 cur=-1.39526 mem_after=-1.39526 spike=0
+[TOP] t=0 p=0 oc=2 prev_spk=0 mem_before=0 cur=0.88024 mem_after=0.88024 spike=0
+[TOP] t=0 p=0 oc=3 prev_spk=1 mem_before=0 cur=1.60625 mem_after=1.60625 spike=1
+[TOP] out_word(t=0, p=0) = 134251560
+[TOP] out_word(t=0, p=1) = 4195274
+[TOP] t=1 p=0 oc=0 prev_spk=0 mem_before=0.073168 cur=0.073168 mem_after=0.109752 spike=0
+[TOP] t=1 p=0 oc=1 prev_spk=0 mem_before=-1.39526 cur=-1.39526 mem_after=-2.09289 spike=0
+[TOP] t=1 p=0 oc=2 prev_spk=1 mem_before=0.88024 cur=0.88024 mem_after=1.32036 spike=1
+[TOP] t=1 p=0 oc=3 prev_spk=1 mem_before=1.60625 cur=1.60625 mem_after=1.40937 spike=1
+[TOP] out_word(t=1, p=0) = 1212191020
+[TOP] out_word(t=1, p=1) = 1075876552
+[TOP] Exit conv1_lif_top
+[TB] t=0 p=0 expected=134251560 got=134251560
+[TB] t=0 p=1 expected=4195274 got=4195274
+[TB] t=0 p=2 expected=1077937098 got=1077937098
+[TB] t=0 p=3 expected=1077937098 got=1077937098
+[TB] t=0 p=4 expected=1207993388 got=1207993388
+[TB] t=0 p=5 expected=1207992360 got=1207992360
+[TB] t=0 p=6 expected=1207996460 got=1207996460
+[TB] t=0 p=7 expected=1208254500 got=1208254500
+[TB] t=0 p=8 expected=1086587842 got=1086587842
+[TB] t=0 p=9 expected=1216644128 got=1216644128
+[TB] t=1 p=0 expected=1212191020 got=1212191020
+[TB] t=1 p=1 expected=1075876552 got=1075876552
+[TB] t=1 p=2 expected=2147746752 got=2147746752
+[TB] t=1 p=3 expected=263040 got=263040
+[TB] t=1 p=4 expected=138711072 got=138711072
+[TB] t=1 p=5 expected=138712100 got=138712100
+[TB] t=1 p=6 expected=138708000 got=138708000
+[TB] t=1 p=7 expected=1220546600 got=1220546600
+[TB] t=1 p=8 expected=3225682824 got=3225682824
+[TB] t=1 p=9 expected=1212450084 got=1212450084
+TEST PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 200
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

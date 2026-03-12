@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Mar 12 03:50:15 2026
+# Process ID: 45878
+# Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/conv1_lif_top/xsim_script.tcl}
+# Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/xsim.log
+# Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/xsim.jou
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3599.998 MHz, CPU Physical cores: 15, Host memory: 404293 MB
+#-----------------------------------------------------------
+source xsim.dir/conv1_lif_top/xsim_script.tcl
+source conv1_lif_top.tcl
