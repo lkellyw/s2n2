@@ -1,0 +1,6 @@
+,AESL_inst_conv2x2_top,,module_status1.csv
+,grp_conv2x2_top_Pipeline_VITIS_LOOP_47_1_fu_126,,module_status2.csv
+,grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_135,,module_status3.csv
+,call_ln40_load_weights_once_fu_143,,module_status4.csv
+,grp_conv2x2_top_Pipeline_VITIS_LOOP_74_3_fu_149,,module_status5.csv
+,grp_conv2x2_top_Pipeline_VITIS_LOOP_79_2_fu_155,,module_status6.csv

@@ -1,0 +1,104 @@
+{
+    "0": {
+        "name": "conv2x2_top",
+        "file": "conv2x2_top.cpp",
+        "fileloc": "36",
+        "instructions": "52",
+        "total_instructions": "238",
+        "calls": "2 4 3 1 5",
+        "basicblocks": "3",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "1": {
+        "name": "conv2x2_top_Pipeline_VITIS_LOOP_74_3",
+        "file": "conv2x2_top.cpp",
+        "fileloc": "0",
+        "instructions": "17",
+        "total_instructions": "17",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "load_weights_once",
+        "file": "conv2x2_top.cpp",
+        "fileloc": "27",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "3": {
+        "name": "conv2x2_top_Pipeline_VITIS_LOOP_197_2",
+        "file": "conv2x2_top.cpp",
+        "fileloc": "0",
+        "instructions": "118",
+        "total_instructions": "118",
+        "calls": "",
+        "basicblocks": "19",
+        "loads": {
+            "L": "12"
+        },
+        "stores": {
+            "L": "30"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "conv2x2_top_Pipeline_VITIS_LOOP_47_1",
+        "file": "conv2x2_top.cpp",
+        "fileloc": "0",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "conv2x2_top_Pipeline_VITIS_LOOP_79_2",
+        "file": "conv2x2_top.cpp",
+        "fileloc": "0",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

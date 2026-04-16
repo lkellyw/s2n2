@@ -1,0 +1,108 @@
+
+
+================================================================
+== Vitis HLS Report for 'load_weights_once'
+================================================================
+* Date:           Thu Apr 16 02:04:43 2026
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        conv2x2_prj
+* Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|      0 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 2 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%br_ln30 = br i1 %loaded_load, void %if.end, void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 3 'br' 'br_ln30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%store_ln33 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:33]   --->   Operation 4 'store' 'store_ln33' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%br_ln34 = br void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:34]   --->   Operation 5 'br' 'br_ln34' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%ret_ln34 = ret" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:34]   --->   Operation 6 'ret' 'ret_ln34' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

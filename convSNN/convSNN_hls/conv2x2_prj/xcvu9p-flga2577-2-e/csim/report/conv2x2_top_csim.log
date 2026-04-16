@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../conv2x2_tb.cpp in release mode
+   Compiling ../../../../../conv2x2_top.cpp in release mode
+   Generating csim.exe
+Expected spikes: 1 0 1 0 
+Got spikes     : 1 0 0 1 
+TB FAILED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
+ERR: [SIM 100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 3] *************** CSIM finish ***************

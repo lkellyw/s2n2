@@ -1,0 +1,58 @@
+<design_size title="Design Size Report">
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
+            <rows>
+                <row id="0" col0="conv2x2_top" col1="conv2x2_top.cpp:36" col2="2334" col3="413" col4="173" col5="208">
+                    <row id="9" col0="load_weights_once" col1="conv2x2_top.cpp:27" col2="31" col3="7" col4="6" col5="7"/>
+                    <row id="19" col0="ConvLayer_Batch&lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 1, 1, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="convlayer.h:30" col2="1803" col3="" col4="" col5="">
+                        <row id="14" col0="WidthAdjustedInputStream" col1="streamtools.h:837" col2="3" col3="" col4="" col5=""/>
+                        <row id="11" col0="WidthAdjustedOutputStream" col1="streamtools.h:869" col2="3" col3="" col4="" col5=""/>
+                        <row id="21" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:841" col2="3" col3="" col4="" col5=""/>
+                        <row id="20" col0="ConvolutionInputGenerator&lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&gt;" col1="slidingwindow.h:171" col2="300" col3="" col4="" col5="">
+                            <row id="4" col0="memory_resource&lt;ap_uint&lt;1&gt; (*)[2]&gt;" col1="slidingwindow.h:73" col2="2" col3="" col4="" col5=""/>
+                        </row>
+                        <row id="8" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:874" col2="3" col3="" col4="" col5=""/>
+                        <row id="12" col0="Matrix_Vector_Activate_Batch&lt;1, 1, 1, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 2, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="mvau.hpp:26" col2="1450" col3="" col4="" col5="">
+                            <row id="7" col0="weights" col1="weights.hpp:214" col2="13" col3="" col4="" col5="">
+                                <row id="16" col0="TileIndex" col1="weights.hpp:190" col2="8" col3="" col4="" col5=""/>
+                            </row>
+                            <row id="2" col0="operator[]" col1="weights.hpp:196" col2="172" col3="" col4="" col5=""/>
+                            <row id="18" col0="operator()&lt;ap_uint&lt;1&gt; &gt;" col1="interpret.hpp:235" col2="12" col3="" col4="" col5="">
+                                <row id="10" col0="Container" col1="interpret.hpp:202" col2="10" col3="" col4="" col5=""/>
+                            </row>
+                            <row id="15" col0="operator()" col1="conv2x2_top.cpp:21" col2="138" col3="" col4="" col5=""/>
+                            <row id="1" col0="operator[]" col1="interpret.hpp:218" col2="4" col3="" col4="" col5=""/>
+                            <row id="5" col0="operator const ap_uint&lt;1&gt; &amp;" col1="interpret.hpp:222" col2="2" col3="" col4="" col5=""/>
+                        </row>
+                        <row id="3" col0="~WidthAdjustedOutputStream" col1="streamtools.h:871" col2="1" col3="" col4="" col5=""/>
+                        <row id="6" col0="~WidthAdjustedInputStream" col1="streamtools.h:838" col2="1" col3="" col4="" col5=""/>
+                    </row>
+                    <row id="14" col0="WidthAdjustedInputStream" col1="streamtools.h:837" col2="" col3="3" col4="" col5=""/>
+                    <row id="11" col0="WidthAdjustedOutputStream" col1="streamtools.h:869" col2="" col3="3" col4="" col5=""/>
+                    <row id="21" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:841" col2="" col3="1" col4="" col5=""/>
+                    <row id="20" col0="ConvolutionInputGenerator&lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&gt;" col1="slidingwindow.h:171" col2="" col3="141" col4="" col5=""/>
+                    <row id="8" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:874" col2="" col3="1" col4="" col5=""/>
+                    <row id="12" col0="Matrix_Vector_Activate_Batch&lt;1, 1, 1, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 2, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="mvau.hpp:26" col2="" col3="176" col4="" col5=""/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

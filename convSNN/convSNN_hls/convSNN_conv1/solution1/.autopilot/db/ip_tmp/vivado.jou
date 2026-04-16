@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Mar 12 04:19:50 2026
-# Process ID: 48326
+# Start of session at: Wed Mar 18 18:52:54 2026
+# Process ID: 3851
 # Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp
 # Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
 # Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp/vivado.log
 # Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/.autopilot/db/ip_tmp/vivado.jou
-# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3399.956 MHz, CPU Physical cores: 16, Host memory: 404293 MB
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 2000.000 MHz, CPU Physical cores: 32, Host memory: 540711 MB
 #-----------------------------------------------------------
 source run_vivado_gen_ip.tcl -notrace

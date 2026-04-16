@@ -1,0 +1,36 @@
+{
+  "0": {
+    "basicblocks": 30,
+    "calls": "1",
+    "file": "conv2x2_top.cpp",
+    "fileloc": 36,
+    "instructions": 167,
+    "loads": {
+      "G": 1,
+      "L": 2,
+      "T": 4
+    },
+    "name": "conv2x2_top",
+    "stores": {
+      "G": 1,
+      "L": 4,
+      "T": 4
+    },
+    "total_instructions": 173
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "conv2x2_top.cpp",
+    "fileloc": 27,
+    "instructions": 6,
+    "loads": {
+      "G": 1
+    },
+    "name": "load_weights_once",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 6
+  }
+}

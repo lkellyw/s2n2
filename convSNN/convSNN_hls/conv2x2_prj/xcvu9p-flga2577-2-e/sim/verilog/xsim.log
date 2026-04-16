@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Apr 16 02:05:38 2026
+# Process ID: 8445
+# Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/conv2x2_top/xsim_script.tcl}
+# Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/xsim.log
+# Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/xsim.jou
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3643.399 MHz, CPU Physical cores: 2, Host memory: 1622903 MB
+#-----------------------------------------------------------
+source xsim.dir/conv2x2_top/xsim_script.tcl
+# xsim {conv2x2_top} -autoloadwcfg -tclbatch {conv2x2_top.tcl}
+Time resolution is 1 ps
+source conv2x2_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "435000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 495 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" Line 646
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Apr 16 02:05:52 2026...

@@ -1,0 +1,116 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_conv2x2_top.cpp
+   Compiling conv2x2_top.cpp_pre.cpp.tb.cpp
+   Compiling conv2x2_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_conv2x2_top_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+ERROR: [COSIM-361] C TB post check failed, nonzero return value '1'.
+Expected spikes: 1 0 1 0 
+Got spikes     : 1 0 1 0 
+TB PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_conv2x2_top_top glbl -Oenable_linking_all_libraries -prj conv2x2_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s conv2x2_top 
+Multi-threading is on. Using 382 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_conv2x2_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_load_weights_once.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_load_weights_once
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_47_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_47_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_74_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_74_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_79_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_79_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_fifo_w1_d256_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d256_S
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d256_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_fifo_w1_d8_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d8_S
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d8_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_mux_4_2_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_mux_4_2_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_mux_2_1_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_mux_2_1_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.conv2x2_top_inputBuf_RAM_2P_AUTO...
+Compiling module xil_defaultlib.conv2x2_top_mux_4_2_1_1_1(ID=1,d...
+Compiling module xil_defaultlib.conv2x2_top_flow_control_loop_pi...
+Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
+Compiling module xil_defaultlib.conv2x2_top_mux_2_1_1_1_1(ID=1,d...
+Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
+Compiling module xil_defaultlib.conv2x2_top_load_weights_once
+Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
+Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d256_S_Shift...
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d256_S
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d8_S_ShiftRe...
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d8_S
+Compiling module xil_defaultlib.conv2x2_top
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_conv2x2_top_top
+Compiling module work.glbl
+Built simulation snapshot conv2x2_top
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/conv2x2_top/xsim_script.tcl
+# xsim {conv2x2_top} -autoloadwcfg -tclbatch {conv2x2_top.tcl}
+Time resolution is 1 ps
+source conv2x2_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "435000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 495 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" Line 646
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Apr 16 02:05:52 2026...
+Expected spikes: 1 0 1 0 
+Got spikes     : 0 0 0 0 
+TB FAILED
+ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

@@ -1,0 +1,47 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../fc_simple_tb.cpp in release mode
+../../../../../fc_simple_tb.cpp:6:18: error: ‘IN_CH’ was not declared in this scope
+     const int in[IN_CH],
+                  ^~~~~
+../../../../../fc_simple_tb.cpp:6:18: note: suggested alternative: ‘INT8_C’
+     const int in[IN_CH],
+                  ^~~~~
+                  INT8_C
+../../../../../fc_simple_tb.cpp:6:24: error: expected ‘)’ before ‘,’ token
+     const int in[IN_CH],
+                        ^
+                        )
+../../../../../fc_simple_tb.cpp:5:19: note: to match this ‘(’
+ void fc_simple_top(
+                   ^
+../../../../../fc_simple_tb.cpp:7:5: error: expected unqualified-id before ‘const’
+     const int W[OUT_CH][IN_CH],
+     ^~~~~
+../../../../../fc_simple_tb.cpp: In function ‘int main()’:
+../../../../../fc_simple_tb.cpp:13:14: error: ‘OUT_CH’ was not declared in this scope
+     int vmem[OUT_CH];
+              ^~~~~~
+../../../../../fc_simple_tb.cpp:17:9: error: ‘vmem’ was not declared in this scope
+         vmem[i] = 0;
+         ^~~~
+../../../../../fc_simple_tb.cpp:17:9: note: suggested alternative: ‘timegm’
+         vmem[i] = 0;
+         ^~~~
+         timegm
+../../../../../fc_simple_tb.cpp:18:9: error: ‘spk’ was not declared in this scope
+         spk[i] = 0;
+         ^~~
+../../../../../fc_simple_tb.cpp:21:32: error: ‘vmem’ was not declared in this scope
+     fc_simple_top(FC_IN, FC_W, vmem, spk);
+                                ^~~~
+../../../../../fc_simple_tb.cpp:21:32: note: suggested alternative: ‘timegm’
+     fc_simple_top(FC_IN, FC_W, vmem, spk);
+                                ^~~~
+                                timegm
+../../../../../fc_simple_tb.cpp:21:38: error: ‘spk’ was not declared in this scope
+     fc_simple_top(FC_IN, FC_W, vmem, spk);
+                                      ^~~
+make: *** [csim.mk:79: obj/fc_simple_tb.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

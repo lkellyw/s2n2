@@ -1,0 +1,19 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xcvu9p:-flga2577:-2-e"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+    </clockList>
+    <name>
+        <value string="sol1"/>
+    </name>
+    <project>
+        <value string="conv1x1_prj"/>
+    </project>
+</AutoPilot:solution>
+

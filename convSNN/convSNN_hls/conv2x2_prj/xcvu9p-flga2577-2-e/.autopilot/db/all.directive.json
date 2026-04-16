@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "conv2x2_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "conv2x2_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2.tcl",
+    "sourceLine": 37,
+    "success": true
+  }
+]

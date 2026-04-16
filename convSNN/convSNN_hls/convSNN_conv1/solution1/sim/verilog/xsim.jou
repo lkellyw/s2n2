@@ -3,13 +3,13 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Mar 12 04:21:07 2026
-# Process ID: 48563
+# Start of session at: Wed Mar 18 19:05:41 2026
+# Process ID: 4886
 # Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/conv1_lif_top/xsim_script.tcl}
 # Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/xsim.log
 # Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/convSNN_conv1/solution1/sim/verilog/xsim.jou
-# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3600.171 MHz, CPU Physical cores: 16, Host memory: 404293 MB
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 2000.000 MHz, CPU Physical cores: 32, Host memory: 540711 MB
 #-----------------------------------------------------------
 source xsim.dir/conv1_lif_top/xsim_script.tcl
 source conv1_lif_top.tcl
