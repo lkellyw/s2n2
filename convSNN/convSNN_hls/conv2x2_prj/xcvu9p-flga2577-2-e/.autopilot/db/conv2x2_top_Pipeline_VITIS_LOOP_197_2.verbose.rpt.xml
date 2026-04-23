@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2x2_top_Pipeline_VITIS_LOOP_197_2'" level="0">
-<item name = "Date">Thu Apr 16 02:04:52 2026
+<item name = "Date">Thu Apr 23 02:33:07 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">conv2x2_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.407 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.455 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mux_2_1_1_1_1_U8">mux_2_1_1_1_1, 0, 0, 0, 9, 0</column>
+<column name="mux_2_1_1_1_1_U9">mux_2_1_1_1_1, 0, 0, 0, 9, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -84,7 +84,7 @@
 <column name="grp_fu_171_p2">+, 0, 0, 39, 32, 1</column>
 <column name="grp_fu_182_p2">+, 0, 0, 39, 32, 1</column>
 <column name="grp_fu_194_p2">+, 0, 0, 39, 32, 1</column>
-<column name="i_5_fu_278_p2">+, 0, 0, 10, 3, 1</column>
+<column name="i_2_fu_278_p2">+, 0, 0, 10, 3, 1</column>
 <column name="inp_4_fu_455_p2">+, 0, 0, 39, 32, 1</column>
 <column name="ofm_x_fu_310_p2">+, 0, 0, 39, 32, 1</column>
 <column name="ofm_y_2_fu_322_p2">+, 0, 0, 39, 32, 1</column>

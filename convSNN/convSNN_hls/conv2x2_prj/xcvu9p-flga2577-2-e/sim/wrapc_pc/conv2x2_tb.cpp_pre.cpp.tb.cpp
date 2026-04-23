@@ -61280,24 +61280,55 @@ int main() {
   ap_uint<1> in_mem[4];
   ap_uint<1> out_mem[4];
 
+  std::cout << "================ Testbench begin ================" << std::endl;
+  std::cout << "[TB] IN_FM from ref:" << std::endl;
+  for (int i = 0; i < 4; i++) {
+    std::cout << "  IN_FM[" << i << "] = " << IN_FM[i] << std::endl;
+  }
+
+  std::cout << "[TB] EXPECT_SPK from ref:" << std::endl;
+  for (int i = 0; i < 4; i++) {
+    std::cout << "  EXPECT_SPK[" << i << "] = " << EXPECT_SPK[i] << std::endl;
+  }
+
+  std::cout << "[TB] W_VAL from ref = " << W_VAL << std::endl;
+
   for (int i = 0; i < 4; i++) {
     in_mem[i] = IN_FM[i];
     out_mem[i] = 0;
   }
 
+  std::cout << "[TB] Input sent to DUT:" << std::endl;
+  std::cout << "  " << (int)in_mem[0] << " " << (int)in_mem[1] << std::endl;
+  std::cout << "  " << (int)in_mem[2] << " " << (int)in_mem[3] << std::endl;
+
   
 #ifndef HLS_FASTSIM
 #define conv2x2_top apatb_conv2x2_top_sw
 #endif
-# 16 "/home/coder/Desktop/s2n2/convSNN/conv2x2_tb.cpp"
+# 33 "/home/coder/Desktop/s2n2/convSNN/conv2x2_tb.cpp"
 conv2x2_top(in_mem, out_mem);
 #undef conv2x2_top
-# 16 "/home/coder/Desktop/s2n2/convSNN/conv2x2_tb.cpp"
+# 33 "/home/coder/Desktop/s2n2/convSNN/conv2x2_tb.cpp"
 
 
   bool pass = true;
 
-  std::cout << "Expected spikes: ";
+  std::cout << "\n[TB] Per-index comparison:" << std::endl;
+  for (int i = 0; i < 4; i++) {
+    int got = (int)out_mem[i];
+    int exp = EXPECT_SPK[i];
+    std::cout << "  idx " << i
+              << ": expected = " << exp
+              << ", got = " << got;
+    if (got != exp) {
+      std::cout << "   <-- mismatch";
+      pass = false;
+    }
+    std::cout << std::endl;
+  }
+
+  std::cout << "\nExpected spikes: ";
   for (int i = 0; i < 4; i++) {
     std::cout << EXPECT_SPK[i] << " ";
   }
@@ -61305,20 +61336,24 @@ conv2x2_top(in_mem, out_mem);
 
   std::cout << "Got spikes     : ";
   for (int i = 0; i < 4; i++) {
-    int got = (int)out_mem[i];
-    std::cout << got << " ";
-    if (got != EXPECT_SPK[i]) pass = false;
+    std::cout << (int)out_mem[i] << " ";
   }
   std::cout << "\n";
 
+  std::cout << "[TB] Output as 2x2:" << std::endl;
+  std::cout << "  " << (int)out_mem[0] << " " << (int)out_mem[1] << std::endl;
+  std::cout << "  " << (int)out_mem[2] << " " << (int)out_mem[3] << std::endl;
+
   if (pass) {
     std::cout << "TB PASSED\n";
+    std::cout << "================ Testbench end ==================\n";
     return 0;
   } else {
     std::cout << "TB FAILED\n";
+    std::cout << "================ Testbench end ==================\n";
     return 1;
   }
 }
 #endif
-# 41 "/home/coder/Desktop/s2n2/convSNN/conv2x2_tb.cpp"
+# 76 "/home/coder/Desktop/s2n2/convSNN/conv2x2_tb.cpp"
 

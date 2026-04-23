@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "fc_finn_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fc_finn_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn.tcl",
+    "sourceLine": 40,
+    "success": true
+  }
+]

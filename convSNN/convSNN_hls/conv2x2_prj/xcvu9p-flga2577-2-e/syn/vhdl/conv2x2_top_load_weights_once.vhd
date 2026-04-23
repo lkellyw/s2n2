@@ -15,7 +15,9 @@ port (
     ap_start : IN STD_LOGIC;
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
-    ap_ready : OUT STD_LOGIC );
+    ap_ready : OUT STD_LOGIC;
+    conv_weights_0_0 : OUT STD_LOGIC_VECTOR (1 downto 0);
+    conv_weights_0_0_ap_vld : OUT STD_LOGIC );
 end;
 
 
@@ -26,6 +28,7 @@ architecture behav of conv2x2_top_load_weights_once is
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
+    constant ap_const_lv2_3 : STD_LOGIC_VECTOR (1 downto 0) := "11";
     constant ap_const_boolean_1 : BOOLEAN := true;
 
 attribute shreg_extract : string;
@@ -35,7 +38,7 @@ attribute shreg_extract : string;
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal loaded : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    signal loaded_load_load_fu_4_p1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal loaded_load_load_fu_8_p1 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
@@ -60,7 +63,7 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_start = ap_const_logic_1) and (loaded_load_load_fu_4_p1 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
+            if (((ap_start = ap_const_logic_1) and (loaded_load_load_fu_8_p1 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                 loaded <= ap_const_lv1_1;
             end if;
         end if;
@@ -116,5 +119,16 @@ begin
         end if; 
     end process;
 
-    loaded_load_load_fu_4_p1 <= loaded;
+    conv_weights_0_0 <= ap_const_lv2_3;
+
+    conv_weights_0_0_ap_vld_assign_proc : process(ap_start, ap_CS_fsm_state1, loaded_load_load_fu_8_p1)
+    begin
+        if (((ap_start = ap_const_logic_1) and (loaded_load_load_fu_8_p1 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+            conv_weights_0_0_ap_vld <= ap_const_logic_1;
+        else 
+            conv_weights_0_0_ap_vld <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    loaded_load_load_fu_8_p1 <= loaded;
 end behav;

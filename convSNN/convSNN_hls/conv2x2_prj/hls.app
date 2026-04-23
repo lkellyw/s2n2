@@ -3,6 +3,21 @@
         <SimFlow name="csim" setup="false" optimizeCompile="true" clean="true" ldflags="" mflags=""/>
     </Simulation>
     <files>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/pool.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/vvau.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/maxpool.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/dma.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/mmv.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/utils.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/mac.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/interpret.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/activations.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/slidingwindow.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/convlayer.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/streamtools.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/weights.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/mvau.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="/home/coder/Document/s2n2/finn-hlslib-lif/bnn-library.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="/home/coder/Documents/s2n2/finn-hlslib-lif/pool.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="/home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

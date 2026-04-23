@@ -44,7 +44,7 @@
  *
  *  This project has received funding from the European Union's Framework
  *  Programme for Research and Innovation Horizon 2020 (2014-2020) under
- *  the Marie SkBodowska-Curie Grant Agreement No. 751339.
+ *  the Marie Skłodowska-Curie Grant Agreement No. 751339.
  *
  *******************************************************************************/
 
@@ -195,7 +195,7 @@ class FixedPointWeightsSp {
    public:
     WT operator[](unsigned const  pe) const {
 #pragma HLS inline
-      WT temp = 0;
+      WT temp = 0; 
 
       for(unsigned int j=0; j<SIMD; j++){
 #pragma HLS unroll
@@ -223,7 +223,7 @@ template<unsigned SIMD, unsigned SIMDSP, typename WT ,unsigned PE, unsigned TILE
 class FixedPointWeightsSpDU {
  public:
   ap_uint<SIMD*WT::width>  m_weights[PE][TILES];
-  ap_uint<SIMDSP*WT::width> const m_ap;
+  ap_uint<SIMDSP*WT::width> const m_ap; 
 
  private:
   /**
@@ -243,7 +243,7 @@ class FixedPointWeightsSpDU {
    public:
     std::array<WT,SIMDSP> operator[](unsigned const  pe) const {
 #pragma HLS inline
-      std::array<WT,SIMDSP> temp;
+      std::array<WT,SIMDSP> temp; 
 	  for(unsigned int i=0; i<SIMDSP; i++) {
 #pragma HLS unroll
 
@@ -278,7 +278,7 @@ class FixedPointWeightsSpDU {
   	unsigned int cntr = 0;
   	for(unsigned int i=0; i<SIMD; i++){
   		if(mask.bit(i) == 1){
-  			m_ap((cntr+1)*32-1, cntr*32) = i;
+  			m_ap((cntr+1)*32-1, cntr*32) = i; 
   			cntr++;
   		}
   	}

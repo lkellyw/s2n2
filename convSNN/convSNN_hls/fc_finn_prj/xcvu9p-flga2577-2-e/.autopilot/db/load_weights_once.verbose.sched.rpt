@@ -1,0 +1,117 @@
+
+
+================================================================
+== Vitis HLS Report for 'load_weights_once'
+================================================================
+* Date:           Thu Apr 23 02:33:01 2026
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        fc_finn_prj
+* Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.405 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        1|       35|  10.000 ns|  0.350 us|    1|   35|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:19]   --->   Operation 3 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%br_ln19 = br i1 %loaded_load, void %for.inc.preheader, void %return" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:19]   --->   Operation 4 'br' 'br_ln19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, i2 %FC_W, i2 %fc_weights_0"   --->   Operation 5 'call' 'call_ln0' <Predicate = (!loaded_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln0 = call void @load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, i2 %FC_W, i2 %fc_weights_0"   --->   Operation 6 'call' 'call_ln0' <Predicate = (!loaded_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%store_ln30 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:30]   --->   Operation 7 'store' 'store_ln30' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln31 = br void %return" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:31]   --->   Operation 8 'br' 'br_ln31' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln31 = ret" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:31]   --->   Operation 9 'ret' 'ret_ln31' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

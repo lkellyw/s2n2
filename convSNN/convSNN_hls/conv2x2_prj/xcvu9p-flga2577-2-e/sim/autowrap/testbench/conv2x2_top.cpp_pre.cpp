@@ -83368,10 +83368,11 @@ inline bool operator!=(
 # 3 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 1
-# 48 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h"
+
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 1
+# 48 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
-# 49 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 49 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
 
 
 
@@ -83380,11 +83381,11 @@ using namespace std;
 
 
 
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp" 1
-# 54 "/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp"
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp" 1
+# 54 "/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
-# 55 "/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp" 2
-# 66 "/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp"
+# 55 "/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp" 2
+# 66 "/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp"
 template<unsigned SIMD, unsigned PE, unsigned TILES>
 class BinaryWeights {
  public:
@@ -83418,7 +83419,7 @@ class BinaryWeights {
     return TileIndex(*this, tile);
   }
 };
-# 110 "/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp"
+# 110 "/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp"
 template<unsigned SIMD, typename WT ,unsigned PE, unsigned TILES>
 class FixedPointWeights {
  public:
@@ -83596,9 +83597,9 @@ class FixedPointWeightsSpDU {
    }
   }
 };
-# 58 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp" 1
-# 49 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mmv.hpp"
+# 58 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/mmv.hpp" 1
+# 49 "/home/coder/Documents/s2n2/finn-hlslib-lif/mmv.hpp"
 template <unsigned int NumChannels, unsigned int DataWidth>
 class MultiChanData {
 public: ap_uint<DataWidth> data[NumChannels];
@@ -83608,9 +83609,9 @@ public: ap_uint<DataWidth> data[NumChannels];
     }
 
 };
-# 59 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h" 1
-# 51 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 59 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h" 1
+# 51 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h" 1
 # 41 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 1 3
@@ -83773,8 +83774,8 @@ template <std::size_t WData> struct qdma_axis<WData, 0, 0, 0> {
     return *this;
   }
 };
-# 52 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h" 2
-# 68 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 52 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h" 2
+# 68 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int DataWidth,
   unsigned int NumAllowed,
   unsigned int NumTotal
@@ -83792,7 +83793,7 @@ void StreamLimiter(hls::stream<ap_uint<DataWidth> > & in,
     }
   }
 }
-# 102 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 102 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int DataWidth,
   unsigned int NumAllowed,
   unsigned int NumTotal
@@ -83803,7 +83804,7 @@ void StreamLimiter_Batch(hls::stream<ap_uint<DataWidth> > & in,
     StreamLimiter<DataWidth, NumAllowed, NumTotal>(in, out);
   }
 }
-# 131 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 131 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template< unsigned int ImgDim,
    unsigned int KernelDim,
    unsigned int Stride,
@@ -83853,7 +83854,7 @@ void SameResize(stream<ap_uint<NumChannels* In_t::width> > &in,
   }
  }
 }
-# 200 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 200 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template< unsigned int ImgDim,
    unsigned int KernelDim,
    unsigned int Stride,
@@ -83868,7 +83869,7 @@ void SameResize_Batch(stream<ap_uint<NumChannels* In_t::width> > &in,
  }
 
 }
-# 231 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 231 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<typename InT, typename OutT>
 void StreamingCast(hls::stream<InT> & in, hls::stream<OutT> & out, unsigned int numReps) {
   for(unsigned int i = 0; i < numReps; i++) {
@@ -83876,7 +83877,7 @@ void StreamingCast(hls::stream<InT> & in, hls::stream<OutT> & out, unsigned int 
     out.write((OutT) in.read());
   }
 }
-# 258 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 258 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template< unsigned int ImgDim,
    unsigned int OutputDim,
    unsigned int Padding,
@@ -83922,7 +83923,7 @@ void FMPadding(stream<ap_uint<SIMD* In_t::width> > &in,
   }
  }
 }
-# 324 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 324 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template< unsigned int ImgDim,
    unsigned int OutputDim,
    unsigned int Padding,
@@ -83938,7 +83939,7 @@ void FMPadding_Batch(stream<ap_uint<SIMD* In_t::width> > &in,
  }
 
 }
-# 357 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 357 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int InWidth,
   unsigned int OutWidth,
   unsigned int NumInWords
@@ -84000,7 +84001,7 @@ void StreamingDataWidthConverter_Batch(hls::stream<ap_uint<InWidth> > & in,
     }
   }
 }
-# 433 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 433 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<
     unsigned int InWidth,
     unsigned int OutWidth
@@ -84058,7 +84059,7 @@ void StreamingDataWidthConverterNoMultiple(
     }
 
 }
-# 505 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 505 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int DataWidth,
   unsigned int NumTotal
 >
@@ -84073,7 +84074,7 @@ void DuplicateStreams(stream<ap_uint<DataWidth> > & in, stream<ap_uint<DataWidth
   out2.write(e);
  }
 }
-# 534 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 534 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int DataWidth,
   unsigned int NumTotal
 >
@@ -84083,7 +84084,7 @@ void DuplicateStreams_Batch(stream<ap_uint<DataWidth> > & in, stream<ap_uint<Dat
   DuplicateStreams<DataWidth, NumTotal>(in, out1, out2);
  }
 }
-# 560 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 560 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template <unsigned int NumChannels,
           typename In1_t,
           typename In2_t,
@@ -84108,7 +84109,7 @@ void AddStreams(stream<ap_uint<NumChannels * In1_t::width>> &in1, stream<ap_uint
     out.write(e);
   }
 }
-# 604 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 604 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template <unsigned int NumChannels,
           typename In1_t,
           typename In2_t,
@@ -84121,7 +84122,7 @@ void AddStreams_Batch(stream<ap_uint<NumChannels * In1_t::width>> &in1, stream<a
     AddStreams<NumChannels, In1_t, In2_t, Out_t, NumTotal, offset>(in1, in2, out);
   }
 }
-# 635 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 635 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template <unsigned int NumChannels,
           typename In1_t,
           typename In2_t,
@@ -84141,7 +84142,7 @@ void AddStreamsLayer_Batch(stream<ap_uint<NumChannels * In1_t::width>> &in1, str
   AddStreams_Batch<PECount, In1_t, In2_t, Out_t, NumTotal *(NumChannels / PECount),offset>(in_folded1, in_folded2, out_folded, numReps);
   StreamingDataWidthConverter_Batch<PECount * Out_t::width, NumChannels * Out_t::width, NumTotal *(NumChannels / PECount)>(out_folded, out, numReps);
 }
-# 674 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 674 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int InWidth,
   unsigned int OutWidth,
   unsigned int NumInWords,
@@ -84219,7 +84220,7 @@ void MultiChanDataWidthConverter_Batch(
   }
  }
 }
-# 766 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 766 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template <unsigned int NumChannels, unsigned int DataWidth>
 void FlattenMultiChanData(
  stream<MultiChanData<NumChannels, DataWidth> > & in,
@@ -84237,7 +84238,7 @@ void FlattenMultiChanData(
   out.write(o);
  }
 }
-# 797 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 797 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template <unsigned int NumChannels, unsigned int DataWidth>
 void PackMultiChanData(
  stream<ap_uint<NumChannels*DataWidth> > & in,
@@ -84319,7 +84320,7 @@ template<unsigned W, unsigned N>
     return m_target;
   }
 };
-# 892 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 892 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int DataWidth, unsigned int NumTotal>
 void Qdma2Stream_Batch(hls::stream<qdma_axis<DataWidth,0,0,0> > & in, hls::stream<ap_uint<DataWidth> > & out, const unsigned int numReps){
 
@@ -84330,7 +84331,7 @@ void Qdma2Stream_Batch(hls::stream<qdma_axis<DataWidth,0,0,0> > & in, hls::strea
   }
  }
 }
-# 916 "/home/coder/Desktop/s2n2/finn-hlslib-lif/streamtools.h"
+# 916 "/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h"
 template<unsigned int DataWidth, unsigned int NumTotal>
 void Stream2Qdma_Batch(hls::stream<ap_uint<DataWidth> > & in, hls::stream<qdma_axis<DataWidth,0,0,0> > & out, const unsigned int numReps){
  for (unsigned int image = 0; image < numReps; image++) {
@@ -84344,21 +84345,21 @@ void Stream2Qdma_Batch(hls::stream<ap_uint<DataWidth> > & in, hls::stream<qdma_a
   }
  }
 }
-# 60 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h" 1
-# 51 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"
+# 60 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h" 1
+# 51 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
-# 52 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h" 2
-# 64 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"
+# 52 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h" 2
+# 64 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h"
 template<unsigned int DataWidth, unsigned int numBytes>
 void Mem2Stream(ap_uint<DataWidth> * in, hls::stream<ap_uint<DataWidth> > & out);
-# 80 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"
+# 80 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h"
 template<unsigned int DataWidth, unsigned int numBytes>
 void Mem2Stream_Batch(ap_uint<DataWidth> * in, hls::stream<ap_uint<DataWidth> > & out, const unsigned int numReps);
-# 93 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"
+# 93 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h"
 template<unsigned int DataWidth, unsigned int numBytes>
 void Stream2Mem(hls::stream<ap_uint<DataWidth> > & in, ap_uint<DataWidth> * out);
-# 109 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"
+# 109 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h"
 template<unsigned int DataWidth, unsigned int numBytes>
 void Mem2Stream_Batch_external_wmem(ap_uint<DataWidth> * in,
         stream<ap_uint<DataWidth> > & out, const unsigned int numReps) {
@@ -84368,7 +84369,7 @@ void Mem2Stream_Batch_external_wmem(ap_uint<DataWidth> * in,
         rep += 1;
     }
 }
-# 132 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"
+# 132 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h"
 template<unsigned int DataWidth, unsigned int numBytes>
 void Stream2Mem_Batch(hls::stream<ap_uint<DataWidth> > & in, ap_uint<DataWidth> * out, const unsigned int numReps);
 
@@ -84437,7 +84438,7 @@ void Stream2Mem_Batch(hls::stream<ap_uint<DataWidth> > & in, ap_uint<DataWidth> 
     }
   }
 }
-# 214 "/home/coder/Desktop/s2n2/finn-hlslib-lif/dma.h"
+# 214 "/home/coder/Documents/s2n2/finn-hlslib-lif/dma.h"
 template<
   unsigned int TILES,
   unsigned int SIMD,
@@ -84461,11 +84462,11 @@ void GenParamStream(TW const &W_in, hls::stream<ap_uint<SIMD * PE * WP>> &paramS
     }
   }
 }
-# 61 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h" 1
-# 51 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp" 1
-# 52 "/home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp"
+# 61 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h" 1
+# 51 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/utils.hpp" 1
+# 52 "/home/coder/Documents/s2n2/finn-hlslib-lif/utils.hpp"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 3
        
@@ -86308,12 +86309,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1170 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 2 3
-# 53 "/home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp" 2
+# 53 "/home/coder/Documents/s2n2/finn-hlslib-lif/utils.hpp" 2
 
 
 
 
-# 56 "/home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp"
+# 56 "/home/coder/Documents/s2n2/finn-hlslib-lif/utils.hpp"
 template<size_t N> struct clog2 {
   static unsigned const value = 1 + ((N&1) == 0? clog2<N/2>::value : clog2<N/2+1>::value);
 };
@@ -86336,7 +86337,7 @@ class ap_resource_dsp {};
 class ap_resource_lutram {};
 class ap_resource_bram {};
 class ap_resource_uram {};
-# 89 "/home/coder/Desktop/s2n2/finn-hlslib-lif/utils.hpp"
+# 89 "/home/coder/Documents/s2n2/finn-hlslib-lif/utils.hpp"
 template < unsigned int BitWidth >
 void logStringStream(const char *layer_name, hls::stream<ap_uint<BitWidth> > &log){
     std::ofstream ofs(layer_name);
@@ -86355,32 +86356,32 @@ void logStringStream(const char *layer_name, hls::stream<ap_uint<BitWidth> > &lo
 
   ofs.close();
 }
-# 52 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h" 2
-# 72 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 52 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h" 2
+# 72 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template <typename T>
 void memory_resource(T inputBuf, ap_resource_dflt const&){
 #pragma HLS inline
 #pragma HLS RESOURCE variable=inputBuf core=RAM_2P
 }
-# 94 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 94 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template <typename T>
 void memory_resource(T inputBuf, ap_resource_bram const&){
 #pragma HLS inline
 #pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_BRAM
 }
-# 116 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 116 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template <typename T>
 void memory_resource(T inputBuf, ap_resource_uram const&){
 #pragma HLS inline
 #pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_URAM
 }
-# 138 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 138 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template <typename T>
 void memory_resource(T inputBuf, ap_resource_lutram const&){
 #pragma HLS inline
 #pragma HLS RESOURCE variable=inputBuf core=RAM_S2P_LUTRAM
 }
-# 163 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 163 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template<unsigned int ConvKernelDim,
    unsigned int IFMChannels,
    unsigned int Input_precision,
@@ -86490,7 +86491,7 @@ void ConvolutionInputGenerator(
  read_block = 0;
   }
 }
-# 293 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 293 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template<unsigned int ConvKernelDim,
   unsigned int IFMChannels,
   unsigned int Input_precision,
@@ -86624,7 +86625,7 @@ void ConvolutionInputGenerator_MMV(
  read_block = 0;
  }
 }
-# 448 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 448 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template<unsigned int ConvKernelDim,
    unsigned int IFMChannels,
    unsigned int Input_precision,
@@ -86754,7 +86755,7 @@ for (unsigned int count_image = 0; count_image < numReps; count_image++) {
   }
   }
 }
-# 598 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 598 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template<unsigned int ConvKernelDim,
    unsigned int IFMChannels,
    unsigned int Input_precision,
@@ -86863,7 +86864,7 @@ void ConvolutionInputGenerator_dws(
  read_block = 0;
   }
 }
-# 728 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 728 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template<unsigned int ConvKernelDim,
          unsigned int IFMChannels,
          unsigned int Input_precision,
@@ -86994,7 +86995,7 @@ void ConvolutionInputGenerator_kernel_stride_dws(
         }
   }
 }
-# 874 "/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h"
+# 874 "/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h"
 template< unsigned int IFMChannels,
   unsigned int Input_precision,
   unsigned int IFMDim,
@@ -87019,13 +87020,13 @@ void ConvolutionInputGenerator_kernel1(
   }
  }
 }
-# 62 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h" 1
-# 50 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp" 1
-# 51 "/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp"
+# 62 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h" 1
+# 50 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp" 1
+# 51 "/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
-# 52 "/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp" 2
+# 52 "/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp" 2
 
 
 
@@ -87279,8 +87280,8 @@ class Slice_mmv {
     return Container<TV>(val);
   }
 };
-# 51 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h" 2
-# 65 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 51 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h" 2
+# 65 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<unsigned int ImgDim, unsigned int PoolDim, unsigned int NumChannels>
 void StreamingMaxPool(stream<ap_uint<NumChannels> > & in,
         stream<ap_uint<NumChannels> > & out) {
@@ -87312,7 +87313,7 @@ void StreamingMaxPool(stream<ap_uint<NumChannels> > & in,
     }
   }
 }
-# 111 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 111 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<unsigned int ImgDim, unsigned int PoolDim, unsigned int NumChannels>
 void StreamingMaxPool_Batch(stream<ap_uint<NumChannels> > & in,
         stream<ap_uint<NumChannels> > & out, unsigned int numReps) {
@@ -87320,7 +87321,7 @@ void StreamingMaxPool_Batch(stream<ap_uint<NumChannels> > & in,
     StreamingMaxPool<ImgDim, PoolDim, NumChannels>(in, out);
   }
 }
-# 136 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 136 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<unsigned int ImgDim, unsigned int PoolDim, unsigned int NumChannels, typename ActType, int min_value,
         int StreamW
         >
@@ -87370,7 +87371,7 @@ void StreamingMaxPool_Precision(stream<ap_uint<StreamW> > & in,
     }
   }
 }
-# 202 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 202 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<unsigned int ImgDim, unsigned int PoolDim, unsigned int NumChannels, typename ActType, int min_value,
         int InStreamW, int OutStreamW
         >
@@ -87387,7 +87388,7 @@ void StreamingMaxPool_Precision_Batch(stream<ap_uint<InStreamW> > & in,
       static_cast<hls::stream<ap_uint<NumChannels*ActType::width>>&>(wa_out));
   }
 }
-# 235 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 235 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<
         unsigned int ImgDim,
     unsigned int NumChannels,
@@ -87424,7 +87425,7 @@ void ReLU_Batch(stream<ap_uint<PECount * ActType::width> > & in,
         }
     }
 }
-# 286 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 286 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<
     unsigned int ImgDim,
         unsigned int NumChannels,
@@ -87467,7 +87468,7 @@ void AccPool_Batch(stream<ap_uint<PECount * ActType::width> > & in,
     }
     }
 }
-# 346 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 346 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<
 
         unsigned int NumClasses,
@@ -87528,7 +87529,7 @@ void LabelSelect_Batch(stream<ap_uint<PECount * In_T::width> > & in,
     }
   }
 }
-# 429 "/home/coder/Desktop/s2n2/finn-hlslib-lif/maxpool.h"
+# 429 "/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h"
 template<
   unsigned Channels, unsigned PE, unsigned Kernel,
   typename TSrcI = Identity,typename TDstI = Identity,
@@ -87582,28 +87583,25 @@ void Pool_batch(hls::stream<TI> &in,
     }
   }
 }
-# 63 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h" 1
-# 51 "/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h"
+# 63 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h" 1
+# 51 "/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
-# 52 "/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h" 2
+# 52 "/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h" 2
 
 
 
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp" 1
-
-
-
-
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp" 1
-# 87 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp"
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp" 1
+# 56 "/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp"
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp" 1
+# 87 "/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp"
 template<typename TC, typename TD>
 auto mul(TC const &c, TD const &d, ap_resource_dflt const&) -> decltype(c*d) {
 #pragma HLS inline
   auto r = c*d;
   return r;
 }
-# 112 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp"
+# 112 "/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp"
 template<typename TC, typename TD>
 auto mul(TC const &c, TD const &d, ap_resource_lut const&) -> decltype(c*d) {
 #pragma HLS inline
@@ -87611,7 +87609,7 @@ auto mul(TC const &c, TD const &d, ap_resource_lut const&) -> decltype(c*d) {
 #pragma HLS RESOURCE variable=res core=Mul_LUT
   return res;
 }
-# 138 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp"
+# 138 "/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp"
 template<typename TC, typename TD>
 auto mul(TC const &c, TD const &d, ap_resource_dsp const&) -> decltype(c*d) {
 #pragma HLS inline
@@ -87619,7 +87617,7 @@ auto mul(TC const &c, TD const &d, ap_resource_dsp const&) -> decltype(c*d) {
 #pragma HLS RESOURCE variable=res core=DSP48
   return res;
 }
-# 163 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp"
+# 163 "/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp"
 template<unsigned N, typename T, typename TC, typename TD, typename R>
 T mac(T const &a, TC const &c, TD const &d, R const &r, unsigned mmv) {
 #pragma HLS inline
@@ -87644,7 +87642,7 @@ T acc(T const &a, TC const &c) {
   }
   return res;
 }
-# 204 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mac.hpp"
+# 204 "/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp"
 template<unsigned N, typename T, typename TC, typename TD, typename R>
 T mac(T const &a, TC const &c, TD const &d, R const &r) {
 #pragma HLS inline
@@ -87660,138 +87658,220 @@ inline T mac(T const &a, TC const &c, TD const &d) {
 #pragma HLS inline
   return mac<N>(a, c, d, ap_resource_dflt());
 }
-# 6 "/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp" 2
-
-
-
-template<typename T>
-struct DebugThresholdActivation {
-    T threshold;
-    DebugThresholdActivation(T thresh) : threshold(thresh) {}
-
-    T operator()(T acc) const {
-#pragma HLS inline
-        return (acc >= threshold) ? T(1) : T(0);
-    }
-};
-
+# 57 "/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp" 2
+# 89 "/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp"
 template<
   unsigned MatrixW, unsigned MatrixH, unsigned SIMD, unsigned SIMDSP, unsigned PE, unsigned MMV,
   typename TSrcI = Identity, typename TDstI = Identity, typename TWeightI = Identity,
   typename TD, unsigned int WIDTH, unsigned int I, unsigned int OFMDim,
   typename TI, typename TO, typename TW, typename TA, typename R
 >
-void Matrix_Vector_Activate_Batch(
-    hls::stream<TI> &in,
-    hls::stream<TO> &out,
-    TW const &weights,
-    TA const &activation,
-    TD const decay,
-    int const reps,
-    R const &r) {
+void Matrix_Vector_Activate_Batch(hls::stream<TI> &in,
+      hls::stream<TO> &out,
+      TW const &weights,
+      TA const &activation,
+      TD const decay,
+      int const reps,
+      R const &r) {
+
+
 
   unsigned const NF = MatrixH / PE;
+
+
   unsigned const SF = MatrixW / SIMD;
+
 
   TI inputBuf[SF];
 #pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=0
 
 
   {if (!(MMV == 1)) {std::cout<< "CASSERT_DATAFLOW condition is not met " << endl; exit(-1); }};
-
-
-  ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE];
+  static ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE] = {};
 #pragma HLS ARRAY_PARTITION variable=neust complete dim=2
 
 
-#pragma HLS BIND_STORAGE variable=neust type=ram_2p impl=bram
-
   ap_fixed<WIDTH, I> accu[PE];
 #pragma HLS ARRAY_PARTITION variable=accu complete dim=0
-
-
-  static bool st_init = false;
-#pragma HLS RESET variable=st_init
-  if (!st_init) {
-    for (unsigned p = 0; p < OFMDim * OFMDim; p++) {
-      for (unsigned c = 0; c < NF * PE; c++) {
-#pragma HLS PIPELINE II=1
-        neust[p][c] = 0;
-      }
-    }
-    st_init = true;
-  }
 
   unsigned nf = 0;
   unsigned sf = 0;
   unsigned tile = 0;
   unsigned cntr = 0;
 
-  unsigned const TOTAL_FOLD = NF * SF;
 
-  for (unsigned i = 0; i < (unsigned)(reps * TOTAL_FOLD); i++) {
+
+  unsigned const TOTAL_FOLD = NF * SF;
+  for(unsigned i = 0; i < reps * TOTAL_FOLD; i++) {
 #pragma HLS PIPELINE II=1
     TI inElem;
+    if(nf == 0) {
 
-    if (nf == 0) {
       inElem = in.read();
+
       inputBuf[sf] = inElem;
-    } else {
+    }
+    else {
+
       inElem = inputBuf[sf];
     }
 
+    ap_uint<SIMD> mask = inElem.range(SIMD-1, 0);
 
-    ap_uint<SIMD> mask = inElem.range(SIMD - 1, 0);
 
 
-    if (sf == 0) {
-      for (unsigned pe = 0; pe < PE; pe++) {
+    if(sf == 0) {
+     for(unsigned pe = 0; pe < PE; pe++) {
 #pragma HLS UNROLL
-        ap_fixed<WIDTH, I> v = neust[cntr][nf * PE + pe];
-        v = v * decay;
-        accu[pe] = v;
-      }
-    }
 
+      ap_fixed<WIDTH, I> temp = neust[cntr][nf*PE+pe];
+
+      temp -= (temp<<1)>>4;
+      accu[pe] = temp;
+
+     }
+    }
 
 
     auto const &w = weights.weights(tile, mask);
-
-    for (unsigned pe = 0; pe < PE; pe++) {
+    for(unsigned pe = 0; pe < PE; pe++) {
 #pragma HLS UNROLL
-      accu[pe] += w[pe];
+     accu[pe] += w[pe];
+
+
     }
 
+
     ++tile;
+    if(++sf == SF) {
 
-
-    if (++sf == SF) {
       auto outElem = TDstI().template operator()<TO>();
-
       for (unsigned pe = 0; pe < PE; pe++) {
 #pragma HLS UNROLL
-        auto spike = activation(accu[pe]);
-        outElem[pe] = (spike != 0) ? 1 : 0;
 
 
-        neust[cntr][nf * PE + pe] = (spike == 1) ? ap_fixed<WIDTH, I>(0) : accu[pe];
+       if(accu[pe] > 0){
+        outElem(pe,1,1) = 1;
+        neust[cntr][nf*PE+pe] = 0;
+       }else{
+        outElem(pe,1,1) = 0;
+        neust[cntr][nf*PE+pe] = accu[pe];
+       }
       }
-
       out.write(outElem);
-
       cntr++;
-      cntr = cntr % (OFMDim * OFMDim);
+      cntr = cntr%(OFMDim * OFMDim);
 
       sf = 0;
-      if (++nf == NF) {
-        nf = 0;
-        tile = 0;
+      if(++nf == NF) {
+     nf = 0;
+     tile = 0;
       }
     }
   }
 }
-# 56 "/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h" 2
-# 83 "/home/coder/Desktop/s2n2/finn-hlslib-lif/fclayer.h"
+# 227 "/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp"
+template<
+  unsigned MatrixW, unsigned MatrixH, unsigned SIMD, unsigned PE,
+  typename TSrcI = Identity, typename TDstI = Identity, typename TWeightI = Identity, typename TW,
+  typename TI, typename TO, typename TA, typename R
+>
+void Matrix_Vector_Activate_Stream_Batch(hls::stream<TI> &in,
+          hls::stream<TO> &out,
+          hls::stream<ap_uint<PE*SIMD*TW::width>> &weight,
+          TA const &activation,
+          int const reps,
+          R const &r) {
+
+
+
+  unsigned const NF = MatrixH / PE;
+
+
+
+  unsigned const SF = MatrixW / SIMD;
+
+
+  TI inputBuf[SF];
+#pragma HLS ARRAY_PARTITION variable=inputBuf complete dim=1
+
+  decltype(activation.init(0,0)) accu[1][PE];
+#pragma HLS ARRAY_PARTITION variable=accu complete dim=0
+
+  Weights_Tile<SIMD, TW, PE > w;
+#pragma HLS ARRAY_PARTITION variable=w.m_weights complete dim=0
+  ap_uint<PE * SIMD * TW::width> W_packed;
+
+
+  unsigned nf = 0;
+  unsigned sf = 0;
+  unsigned tile = 0;
+
+
+
+  unsigned const TOTAL_FOLD = NF * SF;
+  for(unsigned i = 0; i < reps * TOTAL_FOLD; i++) {
+#pragma HLS PIPELINE II=1
+    TI inElem;
+
+    if(nf == 0) {
+
+      inElem = in.read();
+
+      inputBuf[sf] = inElem;
+    }
+    else {
+
+      inElem = inputBuf[sf];
+    }
+
+
+    W_packed = weight.read();
+    for (unsigned pe = 0; pe < PE; pe++) {
+#pragma HLS UNROLL
+      w.m_weights[pe] = W_packed((pe+1)*SIMD*TW::width-1,pe*SIMD*TW::width);
+    }
+
+
+    if(sf == 0) {
+      for(unsigned pe = 0; pe < PE; pe++) {
+#pragma HLS UNROLL
+      accu[0][pe] = activation.init(nf, pe);
+      }
+    }
+
+
+    for(unsigned pe = 0; pe < PE; pe++) {
+#pragma HLS UNROLL
+      auto const act = TSrcI()(inElem, 0);
+      auto const wgt = TWeightI()(w[pe]);
+
+      accu[0][pe] = mac<SIMD>(accu[0][pe], wgt, act, r, 0);
+    }
+
+
+    ++tile;
+    if(++sf == SF) {
+
+      auto outElem = TDstI().template operator()<TO>();
+      for (unsigned pe = 0; pe < PE; pe++) {
+#pragma HLS UNROLL
+      outElem(pe,0,1) = activation.activate(nf, pe, accu[0][pe]);
+          }
+
+      out.write(outElem);
+
+
+      sf = 0;
+      if(++nf == NF) {
+      nf = 0;
+      tile = 0;
+      }
+    }
+  }
+}
+# 56 "/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h" 2
+# 83 "/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h"
 template<
   unsigned int MatrixW, unsigned int MatrixH,
   unsigned int SIMD, unsigned int PE,
@@ -87821,68 +87901,100 @@ void StreamingFCLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
      static_cast<hls::stream<ap_uint<PE*TDstI::width>>&> (wa_out),
      weights, activation, reps, r);
 }
-# 64 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h" 1
-
-
-
+# 64 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h" 1
+# 51 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
-# 5 "/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h" 2
-
-
-
-
-
+# 52 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h" 2
+# 86 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h"
 template<
-        unsigned int ConvKernelDim,
-        unsigned int IFMChannels,
-        unsigned int IFMDim,
-        unsigned int OFMChannels,
-        unsigned int OFMDim,
+  unsigned int ConvKernelDim,
+  unsigned int IFMChannels,
+  unsigned int IFMDim,
+  unsigned int OFMChannels,
+  unsigned int OFMDim,
 
-        unsigned int SIMD,
-        unsigned int SIMDSP,
-        unsigned int PE,
+  unsigned int SIMD,
+  unsigned int SIMDSP,
+  unsigned int PE,
 
-        typename TSrcI = Identity,
-        typename TDstI = Identity,
-        typename TWeightI = Identity,
+  typename TSrcI = Identity,
+  typename TDstI = Identity,
+  typename TWeightI = Identity,
 
-        typename TD, unsigned int WIDTH, unsigned int I,
+  typename TD, unsigned int WIDTH, unsigned int I,
 
-        int InStreamW, int OutStreamW,
-        typename TW, typename TA, typename R
+  int InStreamW, int OutStreamW,
+  typename TW, typename TA, typename R
 >
 void ConvLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
-                hls::stream<ap_uint<OutStreamW>> &out,
-                TW const &weights,
-                TA const &activation,
-                unsigned const reps,
-                TD decay,
-                R const &r) {
+       hls::stream<ap_uint<OutStreamW>> &out,
+       TW const &weights,
+       TA const &activation,
+       unsigned const reps,
+    TD decay,
+    R const &r) {
 #pragma HLS INLINE
-
   unsigned const MatrixW = ConvKernelDim * ConvKernelDim * IFMChannels;
   unsigned const MatrixH = OFMChannels;
   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
-
   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage> wa_in (in, reps);
   WidthAdjustedOutputStream <PE*TDstI::width, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)> mvOut (out, reps);
-
   hls::stream<ap_uint<SIMD*TSrcI::width> > convInp("StreamingConvLayer_Batch.convInp");
-#pragma HLS STREAM variable=convInp depth=256
-
   ConvolutionInputGenerator<ConvKernelDim, IFMChannels, TSrcI::width, IFMDim,
-            OFMDim, SIMD, 1>(wa_in, convInp, reps, ap_resource_dflt());
-
+   OFMDim, SIMD,1>(wa_in, convInp, reps, ap_resource_dflt());
   Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, SIMDSP, PE, 1, TSrcI, TDstI, TWeightI, TD, WIDTH, I, OFMDim>
     (static_cast<hls::stream<ap_uint<SIMD*TSrcI::width>>&>(convInp),
      static_cast<hls::stream<ap_uint<PE*TDstI::width>>&> (mvOut),
-     weights, activation, decay, reps * OFMDim * OFMDim, r);
+     weights, activation, decay, reps* OFMDim * OFMDim, r);
 }
-# 65 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp" 1
-# 80 "/home/coder/Desktop/s2n2/finn-hlslib-lif/vvau.hpp"
+# 161 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h"
+template<
+  unsigned int ConvKernelDim,
+  unsigned int IFMChannels,
+  unsigned int IFMDim,
+  unsigned int OFMChannels,
+  unsigned int OFMDim,
+  unsigned int STRIDE,
+
+  unsigned int SIMD,
+  unsigned int PE,
+  unsigned int MMV,
+
+  typename TSrcI = Identity,
+  typename TDstI = Identity,
+  typename TWeightI = Identity,
+
+  int InStreamW, int OutStreamW,
+  typename TW, typename TA, typename R
+>
+void ConvLayer_Batch_MMV(hls::stream<ap_uint<InStreamW>> &in,
+       hls::stream<ap_uint<OutStreamW>> &out,
+       TW const &weights,
+       TA const &activation,
+       unsigned const reps,
+    R const &r) {
+#pragma HLS INLINE
+  unsigned const MatrixW = ConvKernelDim * ConvKernelDim * IFMChannels;
+  unsigned const MatrixH = OFMChannels;
+  unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
+  const unsigned int mmvReps = (reps * OFMDim * OFMDim) / MMV;
+  WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage> wa_in (in, reps);
+  WidthAdjustedOutputStream <PE*TDstI::width*MMV, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)/MMV> mvOut (out, reps);
+  stream<MultiChanData<MMV, PE * TDstI::width> > mmv2dwc("mmv2dwc");
+  hls::stream<MultiChanData<MMV, SIMD *TSrcI::width> > convInp("StreamingConvLayer_Batch.convInp");
+  ConvolutionInputGenerator_MMV<ConvKernelDim, IFMChannels, TSrcI::width, IFMDim,
+   OFMDim, SIMD, STRIDE, MMV>(wa_in, convInp, reps, ap_resource_dflt());
+  Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, PE, MMV, TSrcI, TDstI, TWeightI>
+    (static_cast<hls::stream<MultiChanData<MMV,SIMD*TSrcI::width>>&>(convInp),
+     static_cast<hls::stream<MultiChanData<MMV,PE*TDstI::width>>&>(mmv2dwc),
+     weights, activation, mmvReps, r);
+  FlattenMultiChanData<MMV, PE * TDstI::width>(mmv2dwc, mvOut, mmvReps);
+
+}
+# 65 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp" 1
+# 80 "/home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp"
 template<
   unsigned Channels, unsigned Kernel, unsigned SIMD, unsigned PE, unsigned MMV,
   typename TSrcI = Identity, typename TDstI = Identity, typename TWeightI = Identity,
@@ -87958,14 +88070,14 @@ void Vector_Vector_Activate_Batch(hls::stream<TI> &in,
     }
   }
 }
-# 65 "/home/coder/Desktop/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 6 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/weights.hpp" 1
+# 65 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
 # 7 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h" 1
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp" 1
 # 8 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
-# 1 "/home/coder/Desktop/s2n2/finn-hlslib-lif/interpret.hpp" 1
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h" 1
 # 9 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp" 1
+# 10 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 # 1 "/home/coder/Desktop/s2n2/convSNN/conv2x2_config.h" 1
 
@@ -87987,7 +88099,7 @@ static const unsigned PE = 1;
 
 typedef ap_int<8> WT;
 typedef ap_fixed<16,8> NEU_T;
-# 11 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 12 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 # 1 "/home/coder/Desktop/s2n2/convSNN/conv2x2_ref.h" 1
 
 
@@ -87995,7 +88107,7 @@ typedef ap_fixed<16,8> NEU_T;
 static const int IN_FM[4] = {1, 0, 1, 0};
 static const int W_VAL = 3;
 static const int EXPECT_SPK[4] = {1, 0, 1, 0};
-# 12 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 13 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 static FixedPointWeightsSp<
     SIMD,
@@ -88017,6 +88129,13 @@ static void load_weights_once() {
   if (loaded) return;
 
   conv_weights.m_weights[0][0] = ap_uint<SIMD * WT::width>(W_VAL & 0xFF);
+
+
+  std::cout << "[DBG] load_weights_once()" << std::endl;
+  std::cout << "[DBG] W_VAL = " << W_VAL << std::endl;
+  std::cout << "[DBG] packed weight raw = " << conv_weights.m_weights[0][0] << std::endl;
+
+
   loaded = true;
 }
 
@@ -88026,6 +88145,28 @@ void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
 
   load_weights_once();
 
+
+  std::cout << "================ conv2x2_top begin ================" << std::endl;
+  std::cout << "[DBG] Config:" << std::endl;
+  std::cout << "  KERNEL_DIM = " << KERNEL_DIM << std::endl;
+  std::cout << "  IFM_CH     = " << IFM_CH << std::endl;
+  std::cout << "  IFM_DIM    = " << IFM_DIM << std::endl;
+  std::cout << "  OFM_CH     = " << OFM_CH << std::endl;
+  std::cout << "  OFM_DIM    = " << OFM_DIM << std::endl;
+  std::cout << "  SIMD       = " << SIMD << std::endl;
+  std::cout << "  SIMDSP     = " << SIMDSP << std::endl;
+  std::cout << "  PE         = " << PE << std::endl;
+
+  std::cout << "[DBG] Input array:" << std::endl;
+  for (int i = 0; i < 4; i++) {
+    std::cout << "  in[" << i << "] = " << (int)in[i] << std::endl;
+  }
+
+  std::cout << "[DBG] Input layout as 2x2:" << std::endl;
+  std::cout << "  " << (int)in[0] << " " << (int)in[1] << std::endl;
+  std::cout << "  " << (int)in[2] << " " << (int)in[3] << std::endl;
+
+
   hls::stream<ap_uint<1> > in_stream("in_stream");
   hls::stream<ap_uint<1> > out_stream("out_stream");
 #pragma HLS STREAM variable=in_stream depth=8
@@ -88033,11 +88174,19 @@ void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
 
   for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
+
+    std::cout << "[DBG] write in_stream[" << i << "] = " << (int)in[i] << std::endl;
+
     in_stream.write(in[i]);
   }
 
   DummyActivation act;
   NEU_T decay = NEU_T(0.0);
+
+
+  std::cout << "[DBG] decay = " << decay << std::endl;
+  std::cout << "[DBG] Calling ConvLayer_Batch..." << std::endl;
+
 
   ConvLayer_Batch<
       KERNEL_DIM,
@@ -88063,8 +88212,22 @@ void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
       ap_resource_dflt()
   );
 
+
+  std::cout << "[DBG] Returned from ConvLayer_Batch" << std::endl;
+
+
   for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
     out[i] = out_stream.read();
+
+    std::cout << "[DBG] read out_stream[" << i << "] = " << (int)out[i] << std::endl;
+
   }
+
+
+  std::cout << "[DBG] Output layout as 2x2:" << std::endl;
+  std::cout << "  " << (int)out[0] << " " << (int)out[1] << std::endl;
+  std::cout << "  " << (int)out[2] << " " << (int)out[3] << std::endl;
+  std::cout << "================ conv2x2_top end ==================" << std::endl;
+
 }

@@ -111,7 +111,7 @@ wire   [31:0] inp_4_fu_455_p2;
 wire   [0:0] grp_fu_188_p2;
 wire    ap_loop_init;
 reg   [2:0] i_1_fu_66;
-wire   [2:0] i_5_fu_278_p2;
+wire   [2:0] i_2_fu_278_p2;
 reg   [31:0] current_block_write_fu_70;
 wire   [31:0] grp_fu_205_p3;
 reg   [31:0] read_block_fu_74;
@@ -177,7 +177,7 @@ conv2x2_top_mux_2_1_1_1_1 #(
     .din1_WIDTH( 1 ),
     .din2_WIDTH( 1 ),
     .dout_WIDTH( 1 ))
-mux_2_1_1_1_1_U8(
+mux_2_1_1_1_1_U9(
     .din0(inputBuf_q0),
     .din1(inputBuf_1_q0),
     .din2(p_0_fu_496_p3),
@@ -272,7 +272,7 @@ always @ (posedge ap_clk) begin
         if ((ap_loop_init == 1'b1)) begin
             i_1_fu_66 <= 3'd0;
         end else if (((icmp_ln197_fu_272_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            i_1_fu_66 <= i_5_fu_278_p2;
+            i_1_fu_66 <= i_2_fu_278_p2;
         end
     end
 end
@@ -605,7 +605,7 @@ assign grp_fu_199_p2 = ((grp_fu_171_p2 == 32'd2) ? 1'b1 : 1'b0);
 
 assign grp_fu_205_p3 = ((grp_fu_199_p2[0:0] == 1'b1) ? 32'd0 : grp_fu_171_p2);
 
-assign i_5_fu_278_p2 = (i_1_fu_66 + 3'd1);
+assign i_2_fu_278_p2 = (i_1_fu_66 + 3'd1);
 
 assign icmp_ln197_fu_272_p2 = ((i_1_fu_66 == 3'd6) ? 1'b1 : 1'b0);
 

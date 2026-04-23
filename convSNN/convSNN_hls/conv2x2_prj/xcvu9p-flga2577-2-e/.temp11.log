@@ -1,0 +1,370 @@
+================ Testbench begin ================
+[TB] IN_FM from ref:
+  IN_FM[0] = 1
+  IN_FM[1] = 0
+  IN_FM[2] = 1
+  IN_FM[3] = 0
+[TB] EXPECT_SPK from ref:
+  EXPECT_SPK[0] = 1
+  EXPECT_SPK[1] = 0
+  EXPECT_SPK[2] = 1
+  EXPECT_SPK[3] = 0
+[TB] W_VAL from ref = 3
+[TB] Input sent to DUT:
+  1 0
+  1 0
+[DBG] load_weights_once()
+[DBG] W_VAL = 3
+[DBG] packed weight raw = 3
+================ conv2x2_top begin ================
+[DBG] Config:
+  KERNEL_DIM = 1
+  IFM_CH     = 1
+  IFM_DIM    = 2
+  OFM_CH     = 1
+  OFM_DIM    = 2
+  SIMD       = 1
+  SIMDSP     = 1
+  PE         = 1
+[DBG] Input array:
+  in[0] = 1
+  in[1] = 0
+  in[2] = 1
+  in[3] = 0
+[DBG] Input layout as 2x2:
+  1 0
+  1 0
+[DBG] write in_stream[0] = 1
+[DBG] write in_stream[1] = 0
+[DBG] write in_stream[2] = 1
+[DBG] write in_stream[3] = 0
+[DBG] decay = 0
+[DBG] Calling ConvLayer_Batch...
+[READ] i=0 cntr=0 sf=0 nf=0 inElem=1
+[MASK] cntr=0 nf=0 sf=0 tile=0 mask=1
+[INIT BEFORE] cntr=0 nf=0 pe=0 neust=0
+[INIT AFTER ] cntr=0 nf=0 pe=0 temp=0 accu=0
+[ACC BEFORE] cntr=0 nf=0 sf=0 pe=0 accu=0 w=3
+[ACC AFTER ] cntr=0 nf=0 sf=0 pe=0 accu=3
+[SPIKE BEFORE] cntr=0 nf=0 pe=0 accu=3 old_neust=0
+[SPIKE AFTER ] cntr=0 nf=0 pe=0 spike=1 new_neust=0
+[CNTR NEXT] cntr=1
+[RESET NF/TILE]
+[READ] i=1 cntr=1 sf=0 nf=0 inElem=0
+[MASK] cntr=1 nf=0 sf=0 tile=0 mask=0
+[INIT BEFORE] cntr=1 nf=0 pe=0 neust=0
+[INIT AFTER ] cntr=1 nf=0 pe=0 temp=0 accu=0
+[ACC BEFORE] cntr=1 nf=0 sf=0 pe=0 accu=0 w=0
+[ACC AFTER ] cntr=1 nf=0 sf=0 pe=0 accu=0
+[SPIKE BEFORE] cntr=1 nf=0 pe=0 accu=0 old_neust=0
+[SPIKE AFTER ] cntr=1 nf=0 pe=0 spike=0 new_neust=0
+[CNTR NEXT] cntr=2
+[RESET NF/TILE]
+[READ] i=2 cntr=2 sf=0 nf=0 inElem=1
+[MASK] cntr=2 nf=0 sf=0 tile=0 mask=1
+[INIT BEFORE] cntr=2 nf=0 pe=0 neust=0
+[INIT AFTER ] cntr=2 nf=0 pe=0 temp=0 accu=0
+[ACC BEFORE] cntr=2 nf=0 sf=0 pe=0 accu=0 w=3
+[ACC AFTER ] cntr=2 nf=0 sf=0 pe=0 accu=3
+[SPIKE BEFORE] cntr=2 nf=0 pe=0 accu=3 old_neust=0
+[SPIKE AFTER ] cntr=2 nf=0 pe=0 spike=1 new_neust=0
+[CNTR NEXT] cntr=3
+[RESET NF/TILE]
+[READ] i=3 cntr=3 sf=0 nf=0 inElem=0
+[MASK] cntr=3 nf=0 sf=0 tile=0 mask=0
+[INIT BEFORE] cntr=3 nf=0 pe=0 neust=0
+[INIT AFTER ] cntr=3 nf=0 pe=0 temp=0 accu=0
+[ACC BEFORE] cntr=3 nf=0 sf=0 pe=0 accu=0 w=0
+[ACC AFTER ] cntr=3 nf=0 sf=0 pe=0 accu=0
+[SPIKE BEFORE] cntr=3 nf=0 pe=0 accu=0 old_neust=0
+[SPIKE AFTER ] cntr=3 nf=0 pe=0 spike=0 new_neust=0
+[CNTR NEXT] cntr=0
+[RESET NF/TILE]
+[DBG] Returned from ConvLayer_Batch
+[DBG] read out_stream[0] = 1
+[DBG] read out_stream[1] = 0
+[DBG] read out_stream[2] = 1
+[DBG] read out_stream[3] = 0
+[DBG] Output layout as 2x2:
+  1 0
+  1 0
+================ conv2x2_top end ==================
+
+[TB] Per-index comparison:
+  idx 0: expected = 1, got = 1
+  idx 1: expected = 0, got = 0
+  idx 2: expected = 1, got = 1
+  idx 3: expected = 0, got = 0
+
+Expected spikes: 1 0 1 0 
+Got spikes     : 1 0 1 0 
+[TB] Output as 2x2:
+  1 0
+  1 0
+TB PASSED
+================ Testbench end ==================
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
+================ Testbench begin ================
+[TB] IN_FM from ref:
+  IN_FM[0] = 1
+  IN_FM[1] = 0
+  IN_FM[2] = 1
+  IN_FM[3] = 0
+[TB] EXPECT_SPK from ref:
+  EXPECT_SPK[0] = 1
+  EXPECT_SPK[1] = 0
+  EXPECT_SPK[2] = 1
+  EXPECT_SPK[3] = 0
+[TB] W_VAL from ref = 3
+[TB] Input sent to DUT:
+  1 0
+  1 0
+[DBG] load_weights_once()
+[DBG] W_VAL = 3
+[DBG] packed weight raw = 3
+================ conv2x2_top begin ================
+[DBG] Config:
+  KERNEL_DIM = 1
+  IFM_CH     = 1
+  IFM_DIM    = 2
+  OFM_CH     = 1
+  OFM_DIM    = 2
+  SIMD       = 1
+  SIMDSP     = 1
+  PE         = 1
+[DBG] Input array:
+  in[0] = 1
+  in[1] = 0
+  in[2] = 1
+  in[3] = 0
+[DBG] Input layout as 2x2:
+  1 0
+  1 0
+[DBG] write in_stream[0] = 1
+[DBG] write in_stream[1] = 0
+[DBG] write in_stream[2] = 1
+[DBG] write in_stream[3] = 0
+[DBG] decay = 0
+[DBG] Calling ConvLayer_Batch...
+[DBG] Returned from ConvLayer_Batch
+[DBG] read out_stream[0] = 1
+[DBG] read out_stream[1] = 0
+[DBG] read out_stream[2] = 1
+[DBG] read out_stream[3] = 0
+[DBG] Output layout as 2x2:
+  1 0
+  1 0
+================ conv2x2_top end ==================
+
+[TB] Per-index comparison:
+  idx 0: expected = 1, got = 1
+  idx 1: expected = 0, got = 0
+  idx 2: expected = 1, got = 1
+  idx 3: expected = 0, got = 0
+
+Expected spikes: 1 0 1 0 
+Got spikes     : 1 0 1 0 
+[TB] Output as 2x2:
+  1 0
+  1 0
+TB PASSED
+================ Testbench end ==================
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
+================ Testbench begin ================
+[TB] IN_FM from ref:
+  IN_FM[0] = 1
+  IN_FM[1] = 0
+  IN_FM[2] = 1
+  IN_FM[3] = 0
+[TB] EXPECT_SPK from ref:
+  EXPECT_SPK[0] = 1
+  EXPECT_SPK[1] = 0
+  EXPECT_SPK[2] = 1
+  EXPECT_SPK[3] = 0
+[TB] W_VAL from ref = 3
+[TB] Input sent to DUT:
+  1 0
+  1 0
+[DBG] load_weights_once()
+[DBG] W_VAL = 3
+[DBG] packed weight raw = 3
+================ conv2x2_top begin ================
+[DBG] Config:
+  KERNEL_DIM = 1
+  IFM_CH     = 1
+  IFM_DIM    = 2
+  OFM_CH     = 1
+  OFM_DIM    = 2
+  SIMD       = 1
+  SIMDSP     = 1
+  PE         = 1
+[DBG] Input array:
+  in[0] = 1
+  in[1] = 0
+  in[2] = 1
+  in[3] = 0
+[DBG] Input layout as 2x2:
+  1 0
+  1 0
+[DBG] write in_stream[0] = 1
+[DBG] write in_stream[1] = 0
+[DBG] write in_stream[2] = 1
+[DBG] write in_stream[3] = 0
+[DBG] decay = 0
+[DBG] Calling ConvLayer_Batch...
+[DBG] Returned from ConvLayer_Batch
+[DBG] read out_stream[0] = 1
+[DBG] read out_stream[1] = 0
+[DBG] read out_stream[2] = 1
+[DBG] read out_stream[3] = 0
+[DBG] Output layout as 2x2:
+  1 0
+  1 0
+================ conv2x2_top end ==================
+
+[TB] Per-index comparison:
+  idx 0: expected = 1, got = 1
+  idx 1: expected = 0, got = 0
+  idx 2: expected = 1, got = 1
+  idx 3: expected = 0, got = 0
+
+Expected spikes: 1 0 1 0 
+Got spikes     : 1 0 1 0 
+[TB] Output as 2x2:
+  1 0
+  1 0
+TB PASSED
+================ Testbench end ==================
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
+================ Testbench begin ================
+[TB] IN_FM from ref:
+  IN_FM[0] = 1
+  IN_FM[1] = 0
+  IN_FM[2] = 1
+  IN_FM[3] = 0
+[TB] EXPECT_SPK from ref:
+  EXPECT_SPK[0] = 1
+  EXPECT_SPK[1] = 0
+  EXPECT_SPK[2] = 1
+  EXPECT_SPK[3] = 0
+[TB] W_VAL from ref = 3
+[TB] Input sent to DUT:
+  1 0
+  1 0
+[DBG] load_weights_once()
+[DBG] W_VAL = 3
+[DBG] packed weight raw = 3
+================ conv2x2_top begin ================
+[DBG] Config:
+  KERNEL_DIM = 1
+  IFM_CH     = 1
+  IFM_DIM    = 2
+  OFM_CH     = 1
+  OFM_DIM    = 2
+  SIMD       = 1
+  SIMDSP     = 1
+  PE         = 1
+[DBG] Input array:
+  in[0] = 1
+  in[1] = 0
+  in[2] = 1
+  in[3] = 0
+[DBG] Input layout as 2x2:
+  1 0
+  1 0
+[DBG] write in_stream[0] = 1
+[DBG] write in_stream[1] = 0
+[DBG] write in_stream[2] = 1
+[DBG] write in_stream[3] = 0
+[DBG] decay = 0
+[DBG] Calling ConvLayer_Batch...
+[DBG] Returned from ConvLayer_Batch
+[DBG] read out_stream[0] = 1
+[DBG] read out_stream[1] = 0
+[DBG] read out_stream[2] = 1
+[DBG] read out_stream[3] = 0
+[DBG] Output layout as 2x2:
+  1 0
+  1 0
+================ conv2x2_top end ==================
+
+[TB] Per-index comparison:
+  idx 0: expected = 1, got = 1
+  idx 1: expected = 0, got = 0
+  idx 2: expected = 1, got = 1
+  idx 3: expected = 0, got = 0
+
+Expected spikes: 1 0 1 0 
+Got spikes     : 1 0 1 0 
+[TB] Output as 2x2:
+  1 0
+  1 0
+TB PASSED
+================ Testbench end ==================
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
+================ Testbench begin ================
+[TB] IN_FM from ref:
+  IN_FM[0] = 1
+  IN_FM[1] = 0
+  IN_FM[2] = 1
+  IN_FM[3] = 0
+[TB] EXPECT_SPK from ref:
+  EXPECT_SPK[0] = 1
+  EXPECT_SPK[1] = 0
+  EXPECT_SPK[2] = 1
+  EXPECT_SPK[3] = 0
+[TB] W_VAL from ref = 3
+[TB] Input sent to DUT:
+  1 0
+  1 0
+[DBG] load_weights_once()
+[DBG] W_VAL = 3
+[DBG] packed weight raw = 3
+================ conv2x2_top begin ================
+[DBG] Config:
+  KERNEL_DIM = 1
+  IFM_CH     = 1
+  IFM_DIM    = 2
+  OFM_CH     = 1
+  OFM_DIM    = 2
+  SIMD       = 1
+  SIMDSP     = 1
+  PE         = 1
+[DBG] Input array:
+  in[0] = 1
+  in[1] = 0
+  in[2] = 1
+  in[3] = 0
+[DBG] Input layout as 2x2:
+  1 0
+  1 0
+[DBG] write in_stream[0] = 1
+[DBG] write in_stream[1] = 0
+[DBG] write in_stream[2] = 1
+[DBG] write in_stream[3] = 0
+[DBG] decay = 0
+[DBG] Calling ConvLayer_Batch...
+[DBG] Returned from ConvLayer_Batch
+[DBG] read out_stream[0] = 1
+[DBG] read out_stream[1] = 0
+[DBG] read out_stream[2] = 1
+[DBG] read out_stream[3] = 0
+[DBG] Output layout as 2x2:
+  1 0
+  1 0
+================ conv2x2_top end ==================
+
+[TB] Per-index comparison:
+  idx 0: expected = 1, got = 1
+  idx 1: expected = 0, got = 0
+  idx 2: expected = 1, got = 1
+  idx 3: expected = 0, got = 0
+
+Expected spikes: 1 0 1 0 
+Got spikes     : 1 0 1 0 
+[TB] Output as 2x2:
+  1 0
+  1 0
+TB PASSED
+================ Testbench end ==================
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4

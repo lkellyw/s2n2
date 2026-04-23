@@ -3,13 +3,13 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Apr 16 02:05:38 2026
-# Process ID: 8445
+# Start of session at: Thu Apr 23 02:42:59 2026
+# Process ID: 300584
 # Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/conv2x2_top/xsim_script.tcl}
 # Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/xsim.log
 # Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/xsim.jou
-# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3643.399 MHz, CPU Physical cores: 2, Host memory: 1622903 MB
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3223.157 MHz, CPU Physical cores: 16, Host memory: 540851 MB
 #-----------------------------------------------------------
 source xsim.dir/conv2x2_top/xsim_script.tcl
 # xsim {conv2x2_top} -autoloadwcfg -tclbatch {conv2x2_top.tcl}
@@ -23,8 +23,25 @@ source conv2x2_top.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "435000"
-////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 495 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" Line 646
-## quit
-INFO: [Common 17-206] Exiting xsim at Thu Apr 16 02:05:52 2026...
+// RTL Simulation : 0 / 1 [27027027.03%] @ "100000145000"
+// RTL Simulation : 0 / 1 [54054056.76%] @ "200000155000"
+// RTL Simulation : 0 / 1 [81081086.49%] @ "300000165000"
+// RTL Simulation : 0 / 1 [108108116.22%] @ "400000175000"
+// RTL Simulation : 0 / 1 [135135145.95%] @ "500000185000"
+// RTL Simulation : 0 / 1 [162162175.68%] @ "600000195000"
+// RTL Simulation : 0 / 1 [189189205.41%] @ "700000205000"
+// RTL Simulation : 0 / 1 [216216235.14%] @ "800000215000"
+// RTL Simulation : 0 / 1 [243243264.86%] @ "900000225000"
+// RTL Simulation : 0 / 1 [270270294.59%] @ "1000000235000"
+// RTL Simulation : 0 / 1 [297297324.32%] @ "1100000245000"
+// RTL Simulation : 0 / 1 [324324354.05%] @ "1200000255000"
+// RTL Simulation : 0 / 1 [351351383.78%] @ "1300000265000"
+// RTL Simulation : 0 / 1 [378378413.51%] @ "1400000275000"
+// RTL Simulation : 0 / 1 [405405443.24%] @ "1500000285000"
+// RTL Simulation : 0 / 1 [432432472.97%] @ "1600000295000"
+// RTL Simulation : 0 / 1 [459459502.70%] @ "1700000305000"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00.11 ; elapsed = 00:13:51 . Memory (MB): peak = 1297.418 ; gain = 8.004 ; free physical = 186264 ; free virtual = 439749
+INFO: [Common 17-344] 'run' was cancelled
+xsim: Time (s): cpu = 00:00:00.11 ; elapsed = 00:13:52 . Memory (MB): peak = 1297.418 ; gain = 105.875 ; free physical = 186264 ; free virtual = 439747
+INFO: [Common 17-344] 'source' was cancelled

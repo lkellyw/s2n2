@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'load_weights_once'
 ================================================================
-* Date:           Thu Apr 16 02:04:43 2026
+* Date:           Thu Apr 23 02:33:00 2026
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        conv2x2_prj
@@ -75,11 +75,12 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 2 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%br_ln30 = br i1 %loaded_load, void %if.end, void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 3 'br' 'br_ln30' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%store_ln33 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:33]   --->   Operation 4 'store' 'store_ln33' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%br_ln34 = br void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:34]   --->   Operation 5 'br' 'br_ln34' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%ret_ln34 = ret" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:34]   --->   Operation 6 'ret' 'ret_ln34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:31]   --->   Operation 2 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%br_ln31 = br i1 %loaded_load, void %if.end, void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:31]   --->   Operation 3 'br' 'br_ln31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%store_ln33 = store i2 3, i2 %conv_weights_0_0" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:33]   --->   Operation 4 'store' 'store_ln33' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%store_ln41 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:41]   --->   Operation 5 'store' 'store_ln41' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln42 = br void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:42]   --->   Operation 6 'br' 'br_ln42' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln42 = ret" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:42]   --->   Operation 7 'ret' 'ret_ln42' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -94,6 +95,7 @@ STG Binding:
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ loaded]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
+Port [ conv_weights_0_0]:  wired=1; compound=0; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -101,10 +103,11 @@ Port [ loaded]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; ext
 <LifeTime>
 <method=bitvector/>
 loaded_load (load ) [ 01]
-br_ln30     (br   ) [ 00]
+br_ln31     (br   ) [ 00]
 store_ln33  (store) [ 00]
-br_ln34     (br   ) [ 00]
-ret_ln34    (ret  ) [ 00]
+store_ln41  (store) [ 00]
+br_ln42     (br   ) [ 00]
+ret_ln42    (ret  ) [ 00]
 </LifeTime>
 
 <model>
@@ -119,19 +122,37 @@ ret_ln34    (ret  ) [ 00]
 </bind>
 </comp>
 
-<comp id="2" class="1001" name="const_2">
+<comp id="2" class="1000" name="conv_weights_0_0">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv_weights_0_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
-<comp id="4" class="1004" name="loaded_load_load_fu_4">
+<comp id="6" class="1001" name="const_6">
 <pin_list>
-<pin id="5" dir="0" index="0" bw="1" slack="0"/>
-<pin id="6" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1004" name="loaded_load_load_fu_8">
+<pin_list>
+<pin id="9" dir="0" index="0" bw="1" slack="0"/>
+<pin id="10" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -139,11 +160,11 @@ ret_ln34    (ret  ) [ 00]
 </bind>
 </comp>
 
-<comp id="8" class="1004" name="store_ln33_store_fu_8">
+<comp id="12" class="1004" name="store_ln33_store_fu_12">
 <pin_list>
-<pin id="9" dir="0" index="0" bw="1" slack="0"/>
-<pin id="10" dir="0" index="1" bw="1" slack="0"/>
-<pin id="11" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="13" dir="0" index="0" bw="1" slack="0"/>
+<pin id="14" dir="0" index="1" bw="2" slack="0"/>
+<pin id="15" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
@@ -151,14 +172,30 @@ ret_ln34    (ret  ) [ 00]
 </bind>
 </comp>
 
+<comp id="18" class="1004" name="store_ln41_store_fu_18">
+<pin_list>
+<pin id="19" dir="0" index="0" bw="1" slack="0"/>
+<pin id="20" dir="0" index="1" bw="1" slack="0"/>
+<pin id="21" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="store_ln41/1 "/>
+</bind>
+</comp>
+
 </comp_list>
 
 <net_list>
-<net id="7"><net_src comp="0" pin="0"/><net_sink comp="4" pin=0"/></net>
+<net id="11"><net_src comp="0" pin="0"/><net_sink comp="8" pin=0"/></net>
 
-<net id="12"><net_src comp="2" pin="0"/><net_sink comp="8" pin=0"/></net>
+<net id="16"><net_src comp="4" pin="0"/><net_sink comp="12" pin=0"/></net>
 
-<net id="13"><net_src comp="0" pin="0"/><net_sink comp="8" pin=1"/></net>
+<net id="17"><net_src comp="2" pin="0"/><net_sink comp="12" pin=1"/></net>
+
+<net id="22"><net_src comp="6" pin="0"/><net_sink comp="18" pin=0"/></net>
+
+<net id="23"><net_src comp="0" pin="0"/><net_sink comp="18" pin=1"/></net>
 
 </net_list>
 
@@ -168,11 +205,12 @@ ret_ln34    (ret  ) [ 00]
 * FSMD analyzer results:
   - Output states:
 	Port: loaded | {1 }
+	Port: conv_weights_0_0 | {1 }
  - Input state : 
 	Port: load_weights_once : loaded | {1 }
   - Chain level:
 	State 1
-		br_ln30 : 1
+		br_ln31 : 1
 
 
 ============================================================

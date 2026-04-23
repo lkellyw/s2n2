@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/fc_finn_top.cpp_pre.cpp.tb.cpp

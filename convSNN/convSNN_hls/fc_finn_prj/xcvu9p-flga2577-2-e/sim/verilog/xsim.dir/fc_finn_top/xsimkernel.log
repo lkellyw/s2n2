@@ -1,0 +1,7 @@
+Running: xsim.dir/fc_finn_top/xsimk -simmode gui -wdb fc_finn_top.wdb -simrunnum 0 -socket 60457
+Design successfully loaded
+Design Loading Memory Usage: 23200 KB (Peak: 23200 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 105904 KB (Peak: 162468 KB)
+Simulation CPU Usage: 10 ms

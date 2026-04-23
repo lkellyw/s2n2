@@ -2,26 +2,10 @@ INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../fc_finn_tb.cpp in release mode
    Compiling ../../../../../fc_finn_top.cpp in release mode
-In file included from /home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h:63,
-                 from ../../../../../fc_finn_top.cpp:4:
-/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h: In instantiation of ‘void StreamingFCLayer_Batch(hls::stream<ap_uint<InStreamW> >&, hls::stream<ap_uint<OutStreamW> >&, const TW&, const TA&, unsigned int, const R&) [with unsigned int MatrixW = 8; unsigned int MatrixH = 4; unsigned int SIMD = 1; unsigned int PE = 1; TSrcI = Identity; TDstI = Slice<ap_uint<1>, 1>; TWeightI = Identity; int InStreamW = 1; int OutStreamW = 1; TW = FixedPointWeights<1, ap_int<8>, 1, 32>; TA = ThresholdActivation1; R = ap_resource_dflt]’:
-../../../../../fc_finn_top.cpp:76:3:   required from here
-/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h:108:5: error: no matching function for call to ‘Matrix_Vector_Activate_Batch<8, 4, 1, 1, 1, Identity, Slice<ap_uint<1>, 1>, Identity>(hls::stream<ap_uint<1> >&, hls::stream<ap_uint<1> >&, const FixedPointWeights<1, ap_int<8>, 1, 32>&, const ThresholdActivation1&, const unsigned int&, const ap_resource_dflt&)’
-   Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, PE, 1, TSrcI, TDstI, TWeightI>
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     (static_cast<hls::stream<ap_uint<SIMD*TSrcI::width>>&>(wa_in),
-     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      static_cast<hls::stream<ap_uint<PE*TDstI::width>>&>  (wa_out),
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      weights, activation, reps, r);
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h:55,
-                 from /home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h:63,
-                 from ../../../../../fc_finn_top.cpp:4:
-/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:95:6: note: candidate: ‘template<unsigned int MatrixW, unsigned int MatrixH, unsigned int SIMD, unsigned int SIMDSP, unsigned int PE, unsigned int MMV, class TSrcI, class TDstI, class TWeightI, class TD, unsigned int WIDTH, unsigned int I, unsigned int OFMDim, class TI, class TO, class TW, class TA, class R> void Matrix_Vector_Activate_Batch(hls::stream<TI>&, hls::stream<TO>&, const TW&, const TA&, TD, int, const R&)’
- void Matrix_Vector_Activate_Batch(hls::stream<TI> &in,
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:95:6: note:   template argument deduction/substitution failed:
-make: *** [csim.mk:85: obj/fc_finn_top.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+   Generating csim.exe
+Expected spikes: 1 1 0 1 
+Got spikes     : 1 1 0 1 
+TB PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

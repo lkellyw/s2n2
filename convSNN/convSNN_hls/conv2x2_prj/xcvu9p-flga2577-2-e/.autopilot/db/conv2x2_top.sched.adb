@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>52</coreId>
+						<coreId>17</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>17</coreId>
+						<coreId>51</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916402464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1852401199</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -286,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916479968</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -301,17 +301,17 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>26</count>
+			<count>23</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_9">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>28</id>
+						<id>32</id>
 						<name>convInp</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</fileName>
+						<fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</contextFuncName>
 						<contextNormFuncName>ConvLayer_Batch_1_1_2_1_2_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_8_AP_TRN_AP_WRAP_0_16_8_1_1_FixedPointWeightsSp_1_ap_int_8_1_1_DummyActivation_ap_resource_dflt_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -327,14 +327,14 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>55</second>
+										<second>93</second>
 									</item>
 									<item>
 										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
 											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
 										</first>
-										<second>46</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -347,7 +347,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4204895318</coreId>
+						<coreId>915567616</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -355,7 +355,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>67</item>
+					<item>65</item>
 				</oprand_edges>
 				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
@@ -370,11 +370,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>31</id>
+						<id>35</id>
 						<name>in_stream</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>conv2x2_top</contextFuncName>
 						<contextNormFuncName>conv2x2_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -390,12 +390,138 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>42</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
 						<originalName>in_stream</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1314013527</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>66</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_11">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>38</id>
+						<name>out_stream</name>
+						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
+						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
+						<lineNumber>73</lineNumber>
+						<contextFuncName>conv2x2_top</contextFuncName>
+						<contextNormFuncName>conv2x2_top</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
+											<second>conv2x2_top</second>
+										</first>
+										<second>73</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>out_stream</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>67</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>3</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_12">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>41</id>
+						<name>inputBuf</name>
+						<fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h</fileName>
+						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
+						<lineNumber>180</lineNumber>
+						<contextFuncName>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</contextFuncName>
+						<contextNormFuncName>ConvolutionInputGenerator_1_1_1_2_2_1_1_ap_resource_dflt_s</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
+								<second>
+									<count>3</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
+											<second>conv2x2_top</second>
+										</first>
+										<second>93</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>120</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h</first>
+											<second>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>180</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>inputBuf</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -419,39 +545,53 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>2</m_topoIndex>
+				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_11">
+			<item class_id_reference="9" object_id="_13">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>34</id>
-						<name>out_stream</name>
-						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
+						<id>42</id>
+						<name>inputBuf_1</name>
+						<fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>43</lineNumber>
-						<contextFuncName>conv2x2_top</contextFuncName>
-						<contextNormFuncName>conv2x2_top</contextNormFuncName>
+						<lineNumber>180</lineNumber>
+						<contextFuncName>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</contextFuncName>
+						<contextNormFuncName>ConvolutionInputGenerator_1_1_1_2_2_1_1_ap_resource_dflt_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>1</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>43</second>
+										<second>93</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>120</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h</first>
+											<second>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>180</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>out_stream</originalName>
+						<originalName>inputBuf</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -459,7 +599,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>915882048</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -475,146 +615,6 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>3</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_12">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>37</id>
-						<name>inputBuf</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>180</lineNumber>
-						<contextFuncName>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</contextFuncName>
-						<contextNormFuncName>ConvolutionInputGenerator_1_1_1_2_2_1_1_ap_resource_dflt_s</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
-											<second>conv2x2_top</second>
-										</first>
-										<second>55</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>49</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h</first>
-											<second>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>180</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>inputBuf</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>70</item>
-				</oprand_edges>
-				<opcode>alloca</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>4</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_13">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>38</id>
-						<name>inputBuf_1</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>180</lineNumber>
-						<contextFuncName>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</contextFuncName>
-						<contextNormFuncName>ConvolutionInputGenerator_1_1_1_2_2_1_1_ap_resource_dflt_s</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
-											<second>conv2x2_top</second>
-										</first>
-										<second>55</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>49</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h</first>
-											<second>ConvolutionInputGenerator&amp;lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>180</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>inputBuf</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>71</item>
-				</oprand_edges>
-				<opcode>alloca</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
 				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -622,11 +622,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>39</id>
-						<name>_ln40</name>
+						<id>43</id>
+						<name>_ln48</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>conv2x2_top</contextFuncName>
 						<contextNormFuncName>conv2x2_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -642,7 +642,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>40</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -661,10 +661,11 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>73</item>
-					<item>123</item>
+					<item>71</item>
+					<item>115</item>
+					<item>116</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -679,7 +680,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>40</id>
+						<id>44</id>
 						<name>in_0_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -698,7 +699,50 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916830000</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>73</item>
+					<item>74</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>6</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_16">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>45</id>
+						<name>in_1_read</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>916794944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -715,15 +759,15 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>6</m_topoIndex>
+				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_16">
+			<item class_id_reference="9" object_id="_17">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>41</id>
-						<name>in_1_read</name>
+						<id>46</id>
+						<name>in_2_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -758,49 +802,6 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>7</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>42</id>
-						<name>in_2_read</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>79</item>
-					<item>80</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -808,7 +809,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>43</id>
+						<id>47</id>
 						<name>in_3_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -827,7 +828,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916811328</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -835,8 +836,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>81</item>
-					<item>82</item>
+					<item>79</item>
+					<item>80</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -851,8 +852,8 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>44</id>
-						<name>empty_15</name>
+						<id>48</id>
+						<name>empty_17</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -878,11 +879,11 @@
 				<oprand_edges>
 					<count>5</count>
 					<item_version>0</item_version>
-					<item>84</item>
-					<item>420</item>
-					<item>421</item>
-					<item>422</item>
-					<item>423</item>
+					<item>82</item>
+					<item>412</item>
+					<item>413</item>
+					<item>414</item>
+					<item>415</item>
 				</oprand_edges>
 				<opcode>wait</opcode>
 				<m_Display>0</m_Display>
@@ -897,7 +898,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>45</id>
+						<id>49</id>
 						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -916,7 +917,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916794944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -924,13 +925,13 @@
 				<oprand_edges>
 					<count>7</count>
 					<item_version>0</item_version>
+					<item>84</item>
+					<item>85</item>
 					<item>86</item>
 					<item>87</item>
 					<item>88</item>
 					<item>89</item>
-					<item>90</item>
-					<item>91</item>
-					<item>424</item>
+					<item>416</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -945,142 +946,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>46</id>
-						<name>empty_16</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>92</item>
-					<item>417</item>
-					<item>425</item>
-				</oprand_edges>
-				<opcode>wait</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>49</id>
-						<name>empty_17</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>93</item>
-					<item>418</item>
-				</oprand_edges>
-				<opcode>wait</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_23">
-				<Value>
-					<Obj>
-						<type>0</type>
 						<id>50</id>
-						<name>_ln0</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>7</count>
-					<item_version>0</item_version>
-					<item>95</item>
-					<item>96</item>
-					<item>97</item>
-					<item>98</item>
-					<item>99</item>
-					<item>426</item>
-					<item>434</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_24">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>51</id>
 						<name>empty_18</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1107,9 +973,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>100</item>
-					<item>419</item>
-					<item>427</item>
+					<item>90</item>
+					<item>406</item>
+					<item>417</item>
 				</oprand_edges>
 				<opcode>wait</opcode>
 				<m_Display>0</m_Display>
@@ -1117,298 +983,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_25">
+			<item class_id_reference="9" object_id="_22">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>st_init_load</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>57</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_1_1_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_8_AP_TRN_AP_WRAP_0_16_8_2_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_1_DummyActivation_ap_resource_dflt_s</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
-											<second>conv2x2_top</second>
-										</first>
-										<second>55</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>52</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>57</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>101</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_26">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>54</id>
-						<name>br_ln57</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>57</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_1_1_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_8_AP_TRN_AP_WRAP_0_16_8_2_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_1_DummyActivation_ap_resource_dflt_s</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
-											<second>conv2x2_top</second>
-										</first>
-										<second>55</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>52</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>57</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>102</item>
-					<item>103</item>
-					<item>104</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_27">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>56</id>
-						<name>st_init_write_ln64</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_1_1_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_8_AP_TRN_AP_WRAP_0_16_8_2_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_1_DummyActivation_ap_resource_dflt_s</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
-											<second>conv2x2_top</second>
-										</first>
-										<second>55</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>52</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>106</item>
-					<item>107</item>
-					<item>437</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>19</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_28">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>57</id>
-						<name>br_ln65</name>
-						<fileName>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>65</lineNumber>
-						<contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</contextFuncName>
-						<contextNormFuncName>Matrix_Vector_Activate_Batch_1_1_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_8_AP_TRN_AP_WRAP_0_16_8_2_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_1_DummyActivation_ap_resource_dflt_s</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
-											<second>conv2x2_top</second>
-										</first>
-										<second>55</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>52</second>
-									</item>
-									<item>
-										<first>
-											<first>/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp</first>
-											<second>Matrix_Vector_Activate_Batch&amp;lt;1, 1, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 2, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
-										</first>
-										<second>65</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>108</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_29">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>59</id>
 						<name>empty_19</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1427,7 +1009,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916808816</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1435,8 +1017,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>109</item>
-					<item>433</item>
+					<item>91</item>
+					<item>407</item>
 				</oprand_edges>
 				<opcode>wait</opcode>
 				<m_Display>0</m_Display>
@@ -1444,14 +1026,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_30">
+			<item class_id_reference="9" object_id="_23">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>60</id>
+						<id>54</id>
 						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1476,14 +1058,15 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>6</count>
+					<count>7</count>
 					<item_version>0</item_version>
-					<item>111</item>
-					<item>112</item>
-					<item>113</item>
-					<item>430</item>
-					<item>436</item>
-					<item>439</item>
+					<item>93</item>
+					<item>94</item>
+					<item>95</item>
+					<item>96</item>
+					<item>97</item>
+					<item>418</item>
+					<item>425</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1491,14 +1074,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_31">
+			<item class_id_reference="9" object_id="_24">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>61</id>
+						<id>55</id>
 						<name>empty_20</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1517,7 +1100,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916759952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1525,9 +1108,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>114</item>
-					<item>428</item>
-					<item>431</item>
+					<item>98</item>
+					<item>408</item>
+					<item>419</item>
 				</oprand_edges>
 				<opcode>wait</opcode>
 				<m_Display>0</m_Display>
@@ -1535,15 +1118,196 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_32">
+			<item class_id_reference="9" object_id="_25">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>62</id>
+						<id>56</id>
+						<name>temp</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>temp</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>99</item>
+					<item>426</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>17</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_26">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>57</id>
 						<name>empty_21</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>916776336</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>100</item>
+					<item>409</item>
+				</oprand_edges>
+				<opcode>wait</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>18</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_27">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
+						<name>_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>10</count>
+					<item_version>0</item_version>
+					<item>102</item>
+					<item>103</item>
+					<item>104</item>
+					<item>105</item>
+					<item>117</item>
+					<item>118</item>
+					<item>119</item>
+					<item>120</item>
+					<item>420</item>
+					<item>424</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>19</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_28">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>59</id>
+						<name>empty_22</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>916759952</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>106</item>
+					<item>410</item>
+					<item>421</item>
+				</oprand_edges>
+				<opcode>wait</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>20</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_29">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>60</id>
+						<name>empty_23</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1569,8 +1333,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>115</item>
-					<item>429</item>
+					<item>107</item>
+					<item>411</item>
 				</oprand_edges>
 				<opcode>wait</opcode>
 				<m_Display>0</m_Display>
@@ -1578,14 +1342,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_33">
+			<item class_id_reference="9" object_id="_30">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>63</id>
+						<id>61</id>
 						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1604,23 +1368,22 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916773824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>9</count>
+					<count>8</count>
 					<item_version>0</item_version>
-					<item>117</item>
-					<item>118</item>
-					<item>119</item>
-					<item>120</item>
-					<item>121</item>
-					<item>122</item>
-					<item>432</item>
-					<item>435</item>
-					<item>438</item>
+					<item>109</item>
+					<item>110</item>
+					<item>111</item>
+					<item>112</item>
+					<item>113</item>
+					<item>114</item>
+					<item>422</item>
+					<item>423</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1628,18 +1391,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_34">
+			<item class_id_reference="9" object_id="_31">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>64</id>
-						<name>_ln83</name>
+						<id>62</id>
+						<name>_ln135</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>conv2x2_top</contextFuncName>
 						<contextNormFuncName>conv2x2_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1655,7 +1418,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>83</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -1683,18 +1446,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
-			<count>7</count>
+			<count>6</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_35">
+			<item class_id="16" tracking_level="1" version="0" object_id="_32">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>66</id>
+						<id>64</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1713,7 +1476,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916139792</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1721,11 +1484,11 @@
 				<const_type>0</const_type>
 				<content>1</content>
 			</item>
-			<item class_id_reference="16" object_id="_36">
+			<item class_id_reference="16" object_id="_33">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>72</id>
+						<id>70</id>
 						<name>load_weights_once</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1744,7 +1507,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1752,12 +1515,12 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:load_weights_once&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_37">
+			<item class_id_reference="16" object_id="_34">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>85</id>
-						<name>conv2x2_top_Pipeline_VITIS_LOOP_47_1</name>
+						<id>83</id>
+						<name>conv2x2_top_Pipeline_VITIS_LOOP_77_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1775,19 +1538,19 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>916593824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_47_1&gt;</content>
+				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_77_1&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_38">
+			<item class_id_reference="16" object_id="_35">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>94</id>
+						<id>92</id>
 						<name>conv2x2_top_Pipeline_VITIS_LOOP_197_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1814,12 +1577,12 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_197_2&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_39">
+			<item class_id_reference="16" object_id="_36">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>105</id>
-						<name>empty</name>
+						<id>101</id>
+						<name>conv2x2_top_Pipeline_VITIS_LOOP_131_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1837,51 +1600,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>22207184</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>1</content>
-			</item>
-			<item class_id_reference="16" object_id="_40">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>110</id>
-						<name>conv2x2_top_Pipeline_VITIS_LOOP_74_3</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>22212072</coreId>
+						<coreId>916139792</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_74_3&gt;</content>
+				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_131_1&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_41">
+			<item class_id_reference="16" object_id="_37">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>116</id>
-						<name>conv2x2_top_Pipeline_VITIS_LOOP_79_2</name>
+						<id>108</id>
+						<name>conv2x2_top_Pipeline_VITIS_LOOP_121_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1899,23 +1631,23 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>22210704</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_79_2&gt;</content>
+				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_121_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
-			<count>3</count>
+			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_42">
+			<item class_id="18" tracking_level="1" version="0" object_id="_38">
 				<Obj>
 					<type>3</type>
-					<id>55</id>
-					<name>entry</name>
+					<id>63</id>
+					<name>conv2x2_top</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1933,550 +1665,452 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>745827945</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
-					<count>18</count>
+					<count>23</count>
 					<item_version>0</item_version>
-					<item>28</item>
-					<item>31</item>
-					<item>34</item>
-					<item>37</item>
+					<item>32</item>
+					<item>35</item>
 					<item>38</item>
-					<item>39</item>
-					<item>40</item>
 					<item>41</item>
 					<item>42</item>
 					<item>43</item>
 					<item>44</item>
 					<item>45</item>
 					<item>46</item>
+					<item>47</item>
+					<item>48</item>
 					<item>49</item>
 					<item>50</item>
-					<item>51</item>
 					<item>53</item>
 					<item>54</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="18" object_id="_43">
-				<Obj>
-					<type>3</type>
-					<id>58</id>
-					<name>VITIS_LOOP_58_1.i</name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<contextNormFuncName></contextNormFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<control></control>
-					<opType></opType>
-					<implIndex></implIndex>
-					<coreName></coreName>
-					<isStorage>0</isStorage>
-					<storageDepth>0</storageDepth>
-					<coreId>151307440</coreId>
-					<rtlModuleName></rtlModuleName>
-				</Obj>
-				<node_objs>
-					<count>2</count>
-					<item_version>0</item_version>
+					<item>55</item>
 					<item>56</item>
 					<item>57</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="18" object_id="_44">
-				<Obj>
-					<type>3</type>
-					<id>65</id>
-					<name>VITIS_LOOP_74_3.i</name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<contextNormFuncName></contextNormFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<control></control>
-					<opType></opType>
-					<implIndex></implIndex>
-					<coreName></coreName>
-					<isStorage>0</isStorage>
-					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
-					<rtlModuleName></rtlModuleName>
-				</Obj>
-				<node_objs>
-					<count>6</count>
-					<item_version>0</item_version>
+					<item>58</item>
 					<item>59</item>
 					<item>60</item>
 					<item>61</item>
 					<item>62</item>
-					<item>63</item>
-					<item>64</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>64</count>
+			<count>59</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_45">
+			<item class_id="20" tracking_level="1" version="0" object_id="_39">
+				<id>65</id>
+				<edge_type>1</edge_type>
+				<source_obj>64</source_obj>
+				<sink_obj>32</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_40">
+				<id>66</id>
+				<edge_type>1</edge_type>
+				<source_obj>64</source_obj>
+				<sink_obj>35</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_41">
 				<id>67</id>
 				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>28</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_46">
-				<id>68</id>
-				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>31</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_47">
-				<id>69</id>
-				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>34</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_48">
-				<id>70</id>
-				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>37</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_49">
-				<id>71</id>
-				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
+				<source_obj>64</source_obj>
 				<sink_obj>38</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_50">
-				<id>73</id>
+			<item class_id_reference="20" object_id="_42">
+				<id>68</id>
 				<edge_type>1</edge_type>
-				<source_obj>72</source_obj>
-				<sink_obj>39</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_51">
-				<id>76</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>40</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_52">
-				<id>78</id>
-				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>64</source_obj>
 				<sink_obj>41</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_53">
-				<id>80</id>
+			<item class_id_reference="20" object_id="_43">
+				<id>69</id>
 				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
+				<source_obj>64</source_obj>
 				<sink_obj>42</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_54">
-				<id>82</id>
+			<item class_id_reference="20" object_id="_44">
+				<id>71</id>
 				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
+				<source_obj>70</source_obj>
 				<sink_obj>43</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_55">
-				<id>86</id>
+			<item class_id_reference="20" object_id="_45">
+				<id>74</id>
 				<edge_type>1</edge_type>
-				<source_obj>85</source_obj>
+				<source_obj>1</source_obj>
+				<sink_obj>44</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_46">
+				<id>76</id>
+				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_56">
-				<id>87</id>
+			<item class_id_reference="20" object_id="_47">
+				<id>78</id>
 				<edge_type>1</edge_type>
-				<source_obj>40</source_obj>
-				<sink_obj>45</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_57">
-				<id>88</id>
-				<edge_type>1</edge_type>
-				<source_obj>41</source_obj>
-				<sink_obj>45</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_58">
-				<id>89</id>
-				<edge_type>1</edge_type>
-				<source_obj>42</source_obj>
-				<sink_obj>45</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_59">
-				<id>90</id>
-				<edge_type>1</edge_type>
-				<source_obj>43</source_obj>
-				<sink_obj>45</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_60">
-				<id>91</id>
-				<edge_type>1</edge_type>
-				<source_obj>31</source_obj>
-				<sink_obj>45</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_61">
-				<id>95</id>
-				<edge_type>1</edge_type>
-				<source_obj>94</source_obj>
-				<sink_obj>50</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_62">
-				<id>96</id>
-				<edge_type>1</edge_type>
-				<source_obj>31</source_obj>
-				<sink_obj>50</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_63">
-				<id>97</id>
-				<edge_type>1</edge_type>
-				<source_obj>37</source_obj>
-				<sink_obj>50</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_64">
-				<id>98</id>
-				<edge_type>1</edge_type>
-				<source_obj>38</source_obj>
-				<sink_obj>50</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_65">
-				<id>99</id>
-				<edge_type>1</edge_type>
-				<source_obj>28</source_obj>
-				<sink_obj>50</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_66">
-				<id>101</id>
-				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>53</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_67">
-				<id>102</id>
-				<edge_type>1</edge_type>
-				<source_obj>53</source_obj>
-				<sink_obj>54</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_68">
-				<id>103</id>
-				<edge_type>2</edge_type>
-				<source_obj>58</source_obj>
-				<sink_obj>54</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_69">
-				<id>104</id>
-				<edge_type>2</edge_type>
-				<source_obj>65</source_obj>
-				<sink_obj>54</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_70">
-				<id>106</id>
-				<edge_type>1</edge_type>
-				<source_obj>105</source_obj>
-				<sink_obj>56</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_71">
-				<id>107</id>
-				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>56</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_72">
-				<id>108</id>
-				<edge_type>2</edge_type>
-				<source_obj>65</source_obj>
-				<sink_obj>57</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_73">
-				<id>111</id>
-				<edge_type>1</edge_type>
-				<source_obj>110</source_obj>
-				<sink_obj>60</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_74">
-				<id>112</id>
-				<edge_type>1</edge_type>
-				<source_obj>28</source_obj>
-				<sink_obj>60</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_75">
-				<id>113</id>
-				<edge_type>1</edge_type>
-				<source_obj>34</source_obj>
-				<sink_obj>60</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_76">
-				<id>117</id>
-				<edge_type>1</edge_type>
-				<source_obj>116</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_77">
-				<id>118</id>
-				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_78">
-				<id>119</id>
-				<edge_type>1</edge_type>
-				<source_obj>8</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_79">
-				<id>120</id>
-				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_80">
-				<id>121</id>
-				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_81">
-				<id>122</id>
-				<edge_type>1</edge_type>
-				<source_obj>34</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_82">
-				<id>123</id>
-				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>39</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_83">
-				<id>414</id>
-				<edge_type>2</edge_type>
-				<source_obj>55</source_obj>
-				<sink_obj>65</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_84">
-				<id>415</id>
-				<edge_type>2</edge_type>
-				<source_obj>55</source_obj>
-				<sink_obj>58</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_85">
-				<id>416</id>
-				<edge_type>2</edge_type>
-				<source_obj>58</source_obj>
-				<sink_obj>65</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_86">
-				<id>417</id>
-				<edge_type>4</edge_type>
-				<source_obj>44</source_obj>
+				<source_obj>3</source_obj>
 				<sink_obj>46</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_87">
-				<id>418</id>
-				<edge_type>4</edge_type>
+			<item class_id_reference="20" object_id="_48">
+				<id>80</id>
+				<edge_type>1</edge_type>
+				<source_obj>4</source_obj>
+				<sink_obj>47</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_49">
+				<id>84</id>
+				<edge_type>1</edge_type>
+				<source_obj>83</source_obj>
+				<sink_obj>49</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_50">
+				<id>85</id>
+				<edge_type>1</edge_type>
+				<source_obj>44</source_obj>
+				<sink_obj>49</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_51">
+				<id>86</id>
+				<edge_type>1</edge_type>
+				<source_obj>45</source_obj>
+				<sink_obj>49</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_52">
+				<id>87</id>
+				<edge_type>1</edge_type>
 				<source_obj>46</source_obj>
 				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_88">
-				<id>419</id>
-				<edge_type>4</edge_type>
-				<source_obj>49</source_obj>
-				<sink_obj>51</sink_obj>
+			<item class_id_reference="20" object_id="_53">
+				<id>88</id>
+				<edge_type>1</edge_type>
+				<source_obj>47</source_obj>
+				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_89">
-				<id>420</id>
-				<edge_type>4</edge_type>
-				<source_obj>40</source_obj>
-				<sink_obj>44</sink_obj>
+			<item class_id_reference="20" object_id="_54">
+				<id>89</id>
+				<edge_type>1</edge_type>
+				<source_obj>35</source_obj>
+				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_90">
-				<id>421</id>
-				<edge_type>4</edge_type>
+			<item class_id_reference="20" object_id="_55">
+				<id>93</id>
+				<edge_type>1</edge_type>
+				<source_obj>92</source_obj>
+				<sink_obj>54</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_56">
+				<id>94</id>
+				<edge_type>1</edge_type>
+				<source_obj>35</source_obj>
+				<sink_obj>54</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_57">
+				<id>95</id>
+				<edge_type>1</edge_type>
 				<source_obj>41</source_obj>
-				<sink_obj>44</sink_obj>
+				<sink_obj>54</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_91">
-				<id>422</id>
-				<edge_type>4</edge_type>
+			<item class_id_reference="20" object_id="_58">
+				<id>96</id>
+				<edge_type>1</edge_type>
 				<source_obj>42</source_obj>
-				<sink_obj>44</sink_obj>
+				<sink_obj>54</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_92">
-				<id>423</id>
-				<edge_type>4</edge_type>
-				<source_obj>43</source_obj>
-				<sink_obj>44</sink_obj>
+			<item class_id_reference="20" object_id="_59">
+				<id>97</id>
+				<edge_type>1</edge_type>
+				<source_obj>32</source_obj>
+				<sink_obj>54</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_93">
-				<id>424</id>
-				<edge_type>4</edge_type>
-				<source_obj>44</source_obj>
-				<sink_obj>45</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_94">
-				<id>425</id>
-				<edge_type>4</edge_type>
-				<source_obj>45</source_obj>
-				<sink_obj>46</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_95">
-				<id>426</id>
-				<edge_type>4</edge_type>
-				<source_obj>49</source_obj>
-				<sink_obj>50</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_96">
-				<id>427</id>
-				<edge_type>4</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>51</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_97">
-				<id>428</id>
-				<edge_type>4</edge_type>
-				<source_obj>59</source_obj>
-				<sink_obj>61</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_98">
-				<id>429</id>
-				<edge_type>4</edge_type>
-				<source_obj>61</source_obj>
-				<sink_obj>62</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_99">
-				<id>430</id>
-				<edge_type>4</edge_type>
-				<source_obj>59</source_obj>
-				<sink_obj>60</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_100">
-				<id>431</id>
-				<edge_type>4</edge_type>
-				<source_obj>60</source_obj>
-				<sink_obj>61</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_101">
-				<id>432</id>
-				<edge_type>4</edge_type>
-				<source_obj>62</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_102">
-				<id>433</id>
-				<edge_type>4</edge_type>
-				<source_obj>51</source_obj>
-				<sink_obj>59</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_103">
-				<id>434</id>
-				<edge_type>4</edge_type>
-				<source_obj>45</source_obj>
-				<sink_obj>50</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_104">
-				<id>435</id>
-				<edge_type>4</edge_type>
-				<source_obj>60</source_obj>
-				<sink_obj>63</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_105">
-				<id>436</id>
-				<edge_type>4</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>60</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_106">
-				<id>437</id>
-				<edge_type>4</edge_type>
-				<source_obj>53</source_obj>
+			<item class_id_reference="20" object_id="_60">
+				<id>99</id>
+				<edge_type>1</edge_type>
+				<source_obj>10</source_obj>
 				<sink_obj>56</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_107">
-				<id>438</id>
-				<edge_type>4</edge_type>
-				<source_obj>60</source_obj>
-				<sink_obj>63</sink_obj>
+			<item class_id_reference="20" object_id="_61">
+				<id>102</id>
+				<edge_type>1</edge_type>
+				<source_obj>101</source_obj>
+				<sink_obj>58</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_108">
-				<id>439</id>
+			<item class_id_reference="20" object_id="_62">
+				<id>103</id>
+				<edge_type>1</edge_type>
+				<source_obj>38</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_63">
+				<id>104</id>
+				<edge_type>1</edge_type>
+				<source_obj>32</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_64">
+				<id>105</id>
+				<edge_type>1</edge_type>
+				<source_obj>56</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_65">
+				<id>109</id>
+				<edge_type>1</edge_type>
+				<source_obj>108</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_66">
+				<id>110</id>
+				<edge_type>1</edge_type>
+				<source_obj>5</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_67">
+				<id>111</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_68">
+				<id>112</id>
+				<edge_type>1</edge_type>
+				<source_obj>7</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_69">
+				<id>113</id>
+				<edge_type>1</edge_type>
+				<source_obj>6</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_70">
+				<id>114</id>
+				<edge_type>1</edge_type>
+				<source_obj>38</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_71">
+				<id>115</id>
+				<edge_type>1</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>43</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_72">
+				<id>116</id>
+				<edge_type>1</edge_type>
+				<source_obj>10</source_obj>
+				<sink_obj>43</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_73">
+				<id>117</id>
+				<edge_type>1</edge_type>
+				<source_obj>11</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_74">
+				<id>118</id>
+				<edge_type>1</edge_type>
+				<source_obj>12</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_75">
+				<id>119</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_76">
+				<id>120</id>
+				<edge_type>1</edge_type>
+				<source_obj>14</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_77">
+				<id>406</id>
+				<edge_type>4</edge_type>
+				<source_obj>48</source_obj>
+				<sink_obj>50</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_78">
+				<id>407</id>
 				<edge_type>4</edge_type>
 				<source_obj>50</source_obj>
+				<sink_obj>53</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_79">
+				<id>408</id>
+				<edge_type>4</edge_type>
+				<source_obj>53</source_obj>
+				<sink_obj>55</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_80">
+				<id>409</id>
+				<edge_type>4</edge_type>
+				<source_obj>55</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_81">
+				<id>410</id>
+				<edge_type>4</edge_type>
+				<source_obj>57</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_82">
+				<id>411</id>
+				<edge_type>4</edge_type>
+				<source_obj>59</source_obj>
 				<sink_obj>60</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_83">
+				<id>412</id>
+				<edge_type>4</edge_type>
+				<source_obj>44</source_obj>
+				<sink_obj>48</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_84">
+				<id>413</id>
+				<edge_type>4</edge_type>
+				<source_obj>45</source_obj>
+				<sink_obj>48</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_85">
+				<id>414</id>
+				<edge_type>4</edge_type>
+				<source_obj>46</source_obj>
+				<sink_obj>48</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_86">
+				<id>415</id>
+				<edge_type>4</edge_type>
+				<source_obj>47</source_obj>
+				<sink_obj>48</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_87">
+				<id>416</id>
+				<edge_type>4</edge_type>
+				<source_obj>48</source_obj>
+				<sink_obj>49</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_88">
+				<id>417</id>
+				<edge_type>4</edge_type>
+				<source_obj>49</source_obj>
+				<sink_obj>50</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_89">
+				<id>418</id>
+				<edge_type>4</edge_type>
+				<source_obj>53</source_obj>
+				<sink_obj>54</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_90">
+				<id>419</id>
+				<edge_type>4</edge_type>
+				<source_obj>54</source_obj>
+				<sink_obj>55</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_91">
+				<id>420</id>
+				<edge_type>4</edge_type>
+				<source_obj>57</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_92">
+				<id>421</id>
+				<edge_type>4</edge_type>
+				<source_obj>58</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_93">
+				<id>422</id>
+				<edge_type>4</edge_type>
+				<source_obj>60</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_94">
+				<id>423</id>
+				<edge_type>4</edge_type>
+				<source_obj>58</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_95">
+				<id>424</id>
+				<edge_type>4</edge_type>
+				<source_obj>54</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_96">
+				<id>425</id>
+				<edge_type>4</edge_type>
+				<source_obj>49</source_obj>
+				<sink_obj>54</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_97">
+				<id>426</id>
+				<edge_type>4</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>56</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -2484,7 +2118,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_109">
+		<item class_id="22" tracking_level="1" version="0" object_id="_98">
 			<mId>1</mId>
 			<mTag>conv2x2_top</mTag>
 			<mNormTag>conv2x2_top</mNormTag>
@@ -2494,11 +2128,9 @@
 				<item_version>0</item_version>
 			</sub_regions>
 			<basic_blocks>
-				<count>3</count>
+				<count>1</count>
 				<item_version>0</item_version>
-				<item>55</item>
-				<item>58</item>
-				<item>65</item>
+				<item>63</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -2513,31 +2145,17 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>26</count>
+		<count>23</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
-			<first>28</first>
+			<first>32</first>
 			<second class_id="28" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>31</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>34</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>37</first>
+			<first>35</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
@@ -2545,20 +2163,6 @@
 		</item>
 		<item>
 			<first>38</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>39</first>
-			<second>
-				<first>6</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>40</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
@@ -2581,61 +2185,75 @@
 		<item>
 			<first>43</first>
 			<second>
-				<first>0</first>
+				<first>6</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>1</first>
-				<second>1</second>
+				<first>0</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>3</first>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>47</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>48</first>
+			<second>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>49</first>
 			<second>
-				<first>4</first>
-				<second>0</second>
+				<first>1</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>4</first>
-				<second>1</second>
-			</second>
-		</item>
-		<item>
-			<first>51</first>
-			<second>
-				<first>6</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>6</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
+			<second>
+				<first>4</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>55</first>
 			<second>
 				<first>6</first>
 				<second>0</second>
@@ -2644,54 +2262,47 @@
 		<item>
 			<first>56</first>
 			<second>
-				<first>6</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>6</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>59</first>
-			<second>
 				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>60</first>
+			<first>58</first>
 			<second>
 				<first>7</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>61</first>
+			<first>59</first>
 			<second>
 				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>62</first>
+			<first>60</first>
 			<second>
 				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>63</first>
+			<first>61</first>
 			<second>
 				<first>10</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>64</first>
+			<first>62</first>
 			<second>
 				<first>11</first>
 				<second>0</second>
@@ -2699,26 +2310,12 @@
 		</item>
 	</node_label_latency>
 	<bblk_ent_exit class_id="29" tracking_level="0" version="0">
-		<count>3</count>
+		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>55</first>
+			<first>63</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>6</second>
-			</second>
-		</item>
-		<item>
-			<first>58</first>
-			<second>
-				<first>6</first>
-				<second>6</second>
-			</second>
-		</item>
-		<item>
-			<first>65</first>
-			<second>
-				<first>7</first>
 				<second>11</second>
 			</second>
 		</item>

@@ -9,37 +9,73 @@
 		<module_structure>Sequential</module_structure>
 		<ret_bitwidth>0</ret_bitwidth>
 		<ports class_id="2" tracking_level="0" version="0">
-			<count>0</count>
+			<count>1</count>
 			<item_version>0</item_version>
-		</ports>
-		<nodes class_id="3" tracking_level="0" version="0">
-			<count>5</count>
-			<item_version>0</item_version>
-			<item class_id="4" tracking_level="1" version="0" object_id="_1">
-				<Value class_id="5" tracking_level="0" version="0">
-					<Obj class_id="6" tracking_level="0" version="0">
-						<type>0</type>
+			<item class_id="3" tracking_level="1" version="0" object_id="_1">
+				<Value class_id="4" tracking_level="0" version="0">
+					<Obj class_id="5" tracking_level="0" version="0">
+						<type>1</type>
 						<id>2</id>
+						<name>conv_weights_0_0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo class_id="6" tracking_level="0" version="0">
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>84</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs class_id="7" tracking_level="0" version="0">
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+		</ports>
+		<nodes class_id="8" tracking_level="0" version="0">
+			<count>6</count>
+			<item_version>0</item_version>
+			<item class_id="9" tracking_level="1" version="0" object_id="_2">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>3</id>
 						<name>loaded_load</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>30</lineNumber>
+						<lineNumber>31</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
-						<inlineStackInfo class_id="7" tracking_level="0" version="0">
+						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
-							<item class_id="8" tracking_level="0" version="0">
+							<item class_id="10" tracking_level="0" version="0">
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-								<second class_id="9" tracking_level="0" version="0">
+								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
-									<item class_id="10" tracking_level="0" version="0">
-										<first class_id="11" tracking_level="0" version="0">
+									<item class_id="12" tracking_level="0" version="0">
+										<first class_id="13" tracking_level="0" version="0">
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>30</second>
+										<second>31</second>
 									</item>
 								</second>
 							</item>
@@ -52,7 +88,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1667592275</coreId>
+						<coreId>48</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -60,7 +96,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>10</item>
+					<item>12</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -71,15 +107,15 @@
 				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="4" object_id="_2">
+			<item class_id_reference="9" object_id="_3">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>3</id>
-						<name>br_ln30</name>
+						<id>4</id>
+						<name>br_ln31</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>30</lineNumber>
+						<lineNumber>31</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -95,7 +131,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>30</second>
+										<second>31</second>
 									</item>
 								</second>
 							</item>
@@ -108,7 +144,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701995631</coreId>
+						<coreId>109</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -116,9 +152,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>11</item>
-					<item>12</item>
 					<item>13</item>
+					<item>14</item>
+					<item>15</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -129,12 +165,12 @@
 				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="4" object_id="_3">
+			<item class_id_reference="9" object_id="_4">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>5</id>
-						<name>loaded_write_ln33</name>
+						<id>6</id>
+						<name>conv_weights_0_0_write_ln33</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
 						<lineNumber>33</lineNumber>
@@ -166,17 +202,16 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>151551328</coreId>
+						<coreId>623058254</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>15</item>
-					<item>16</item>
-					<item>21</item>
+					<item>17</item>
+					<item>18</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -187,15 +222,15 @@
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="4" object_id="_4">
+			<item class_id_reference="9" object_id="_5">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>6</id>
-						<name>br_ln34</name>
+						<id>7</id>
+						<name>loaded_write_ln41</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -211,7 +246,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>34</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -224,17 +259,19 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>32</coreId>
+						<coreId>279432228</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>17</item>
+					<item>20</item>
+					<item>21</item>
+					<item>26</item>
 				</oprand_edges>
-				<opcode>br</opcode>
+				<opcode>store</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -243,15 +280,15 @@
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="4" object_id="_5">
+			<item class_id_reference="9" object_id="_6">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>_ln34</name>
+						<name>br_ln42</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -267,7 +304,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>34</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -280,7 +317,63 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>232492416</coreId>
+						<coreId>1630347296</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>22</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>5</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_7">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>10</id>
+						<name>_ln42</name>
+						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
+						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
+						<lineNumber>42</lineNumber>
+						<contextFuncName>load_weights_once</contextFuncName>
+						<contextNormFuncName>load_weights_once</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
+											<second>load_weights_once</second>
+										</first>
+										<second>42</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -295,18 +388,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>5</m_topoIndex>
+				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
-		<consts class_id="13" tracking_level="0" version="0">
-			<count>1</count>
+		<consts class_id="15" tracking_level="0" version="0">
+			<count>2</count>
 			<item_version>0</item_version>
-			<item class_id="14" tracking_level="1" version="0" object_id="_6">
+			<item class_id="16" tracking_level="1" version="0" object_id="_8">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>14</id>
+						<id>16</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -325,7 +418,38 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>128</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>3</content>
+			</item>
+			<item class_id_reference="16" object_id="_9">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>19</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1314013527</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -334,13 +458,13 @@
 				<content>1</content>
 			</item>
 		</consts>
-		<blocks class_id="15" tracking_level="0" version="0">
+		<blocks class_id="17" tracking_level="0" version="0">
 			<count>3</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_7">
+			<item class_id="18" tracking_level="1" version="0" object_id="_10">
 				<Obj>
 					<type>3</type>
-					<id>4</id>
+					<id>5</id>
 					<name>entry</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -359,20 +483,20 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>745827945</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>2</item>
 					<item>3</item>
+					<item>4</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="16" object_id="_8">
+			<item class_id_reference="18" object_id="_11">
 				<Obj>
 					<type>3</type>
-					<id>7</id>
+					<id>9</id>
 					<name>if.end</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -391,20 +515,21 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>745827945</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>5</item>
 					<item>6</item>
+					<item>7</item>
+					<item>8</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="16" object_id="_9">
+			<item class_id_reference="18" object_id="_12">
 				<Obj>
 					<type>3</type>
-					<id>9</id>
+					<id>11</id>
 					<name>return</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -423,102 +548,116 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>7955819</coreId>
+					<coreId>745827945</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>8</item>
+					<item>10</item>
 				</node_objs>
 			</item>
 		</blocks>
-		<edges class_id="17" tracking_level="0" version="0">
-			<count>11</count>
+		<edges class_id="19" tracking_level="0" version="0">
+			<count>13</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_10">
-				<id>10</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>2</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="18" object_id="_11">
-				<id>11</id>
-				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
-				<sink_obj>3</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="18" object_id="_12">
+			<item class_id="20" tracking_level="1" version="0" object_id="_13">
 				<id>12</id>
-				<edge_type>2</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>3</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="18" object_id="_13">
-				<id>13</id>
-				<edge_type>2</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>3</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="18" object_id="_14">
-				<id>15</id>
-				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
-				<sink_obj>5</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="18" object_id="_15">
-				<id>16</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>5</sink_obj>
+				<sink_obj>3</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="18" object_id="_16">
-				<id>17</id>
+			<item class_id_reference="20" object_id="_14">
+				<id>13</id>
+				<edge_type>1</edge_type>
+				<source_obj>3</source_obj>
+				<sink_obj>4</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_15">
+				<id>14</id>
 				<edge_type>2</edge_type>
 				<source_obj>9</source_obj>
+				<sink_obj>4</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_16">
+				<id>15</id>
+				<edge_type>2</edge_type>
+				<source_obj>11</source_obj>
+				<sink_obj>4</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_17">
+				<id>17</id>
+				<edge_type>1</edge_type>
+				<source_obj>16</source_obj>
 				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="18" object_id="_17">
+			<item class_id_reference="20" object_id="_18">
 				<id>18</id>
-				<edge_type>2</edge_type>
-				<source_obj>4</source_obj>
-				<sink_obj>9</sink_obj>
+				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
+				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="18" object_id="_18">
-				<id>19</id>
-				<edge_type>2</edge_type>
-				<source_obj>4</source_obj>
+			<item class_id_reference="20" object_id="_19">
+				<id>20</id>
+				<edge_type>1</edge_type>
+				<source_obj>19</source_obj>
 				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="18" object_id="_19">
-				<id>20</id>
+			<item class_id_reference="20" object_id="_20">
+				<id>21</id>
+				<edge_type>1</edge_type>
+				<source_obj>1</source_obj>
+				<sink_obj>7</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_21">
+				<id>22</id>
 				<edge_type>2</edge_type>
-				<source_obj>7</source_obj>
+				<source_obj>11</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_22">
+				<id>23</id>
+				<edge_type>2</edge_type>
+				<source_obj>5</source_obj>
+				<sink_obj>11</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_23">
+				<id>24</id>
+				<edge_type>2</edge_type>
+				<source_obj>5</source_obj>
 				<sink_obj>9</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="18" object_id="_20">
-				<id>21</id>
+			<item class_id_reference="20" object_id="_24">
+				<id>25</id>
+				<edge_type>2</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>11</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_25">
+				<id>26</id>
 				<edge_type>4</edge_type>
-				<source_obj>2</source_obj>
-				<sink_obj>5</sink_obj>
+				<source_obj>3</source_obj>
+				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
 	</cdfg>
-	<cdfg_regions class_id="19" tracking_level="0" version="0">
+	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="20" tracking_level="1" version="0" object_id="_21">
+		<item class_id="22" tracking_level="1" version="0" object_id="_26">
 			<mId>1</mId>
 			<mTag>load_weights_once</mTag>
 			<mNormTag>load_weights_once</mNormTag>
@@ -530,9 +669,9 @@
 			<basic_blocks>
 				<count>3</count>
 				<item_version>0</item_version>
-				<item>4</item>
-				<item>7</item>
+				<item>5</item>
 				<item>9</item>
+				<item>11</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -546,25 +685,18 @@
 	</cdfg_regions>
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
-	<node_label_latency class_id="24" tracking_level="0" version="0">
-		<count>5</count>
+	<node_label_latency class_id="26" tracking_level="0" version="0">
+		<count>6</count>
 		<item_version>0</item_version>
-		<item class_id="25" tracking_level="0" version="0">
-			<first>2</first>
-			<second class_id="26" tracking_level="0" version="0">
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
+		<item class_id="27" tracking_level="0" version="0">
 			<first>3</first>
-			<second>
+			<second class_id="28" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>5</first>
+			<first>4</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
@@ -578,26 +710,33 @@
 			</second>
 		</item>
 		<item>
+			<first>7</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
 			<first>8</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
-	</node_label_latency>
-	<bblk_ent_exit class_id="27" tracking_level="0" version="0">
-		<count>3</count>
-		<item_version>0</item_version>
-		<item class_id="28" tracking_level="0" version="0">
-			<first>4</first>
-			<second class_id="29" tracking_level="0" version="0">
+		<item>
+			<first>10</first>
+			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
-		<item>
-			<first>7</first>
-			<second>
+	</node_label_latency>
+	<bblk_ent_exit class_id="29" tracking_level="0" version="0">
+		<count>3</count>
+		<item_version>0</item_version>
+		<item class_id="30" tracking_level="0" version="0">
+			<first>5</first>
+			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
@@ -609,16 +748,23 @@
 				<second>0</second>
 			</second>
 		</item>
+		<item>
+			<first>11</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
 	</bblk_ent_exit>
-	<regions class_id="30" tracking_level="0" version="0">
+	<regions class_id="32" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</regions>
-	<dp_fu_nodes class_id="31" tracking_level="0" version="0">
+	<dp_fu_nodes class_id="33" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes>
-	<dp_fu_nodes_expression class_id="32" tracking_level="0" version="0">
+	<dp_fu_nodes_expression class_id="34" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes_expression>
@@ -634,7 +780,7 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</return_ports>
-	<dp_mem_port_nodes class_id="33" tracking_level="0" version="0">
+	<dp_mem_port_nodes class_id="35" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_mem_port_nodes>
@@ -654,7 +800,7 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_regname_phi>
-	<dp_port_io_nodes class_id="34" tracking_level="0" version="0">
+	<dp_port_io_nodes class_id="36" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_port_io_nodes>

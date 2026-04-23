@@ -1,9 +1,9 @@
 {
   "0": {
     "basicblocks": 13,
-    "calls": "18 7",
+    "calls": "3 5",
     "file": "conv2x2_top.cpp",
-    "fileloc": 36,
+    "fileloc": 44,
     "instructions": 69,
     "loads": {
       "L": 2
@@ -13,31 +13,28 @@
       "L": 1,
       "T": 1
     },
-    "total_instructions": 2334
+    "total_instructions": 2570
   },
   "1": {
     "basicblocks": 1,
-    "calls": "5",
-    "file": "conv2x2_top.pp.0.cpp",
-    "fileloc": 0,
-    "instructions": 2,
-    "name": "",
-    "total_instructions": 29
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 837,
+    "instructions": 3,
+    "name": "WidthAdjustedInputStream",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
   },
   "10": {
     "basicblocks": 1,
     "calls": "",
-    "file": "interpret.hpp",
-    "fileloc": 218,
-    "instructions": 4,
-    "loads": {
-      "L": 1
-    },
-    "name": "operator[]",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 4
+    "file": "streamtools.h",
+    "fileloc": 871,
+    "instructions": 1,
+    "name": "~WidthAdjustedOutputStream",
+    "total_instructions": 1
   },
   "11": {
     "basicblocks": 9,
@@ -57,31 +54,13 @@
   "12": {
     "basicblocks": 1,
     "calls": "",
-    "file": "streamtools.h",
-    "fileloc": 871,
-    "instructions": 1,
-    "name": "~WidthAdjustedOutputStream",
-    "total_instructions": 1
-  },
-  "13": {
-    "basicblocks": 1,
-    "calls": "",
     "file": "slidingwindow.h",
     "fileloc": 73,
     "instructions": 2,
     "name": "memory_resource<ap_uint<1> (*)[2]>",
     "total_instructions": 2
   },
-  "14": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "interpret.hpp",
-    "fileloc": 222,
-    "instructions": 2,
-    "name": "operator const ap_uint<1> &",
-    "total_instructions": 2
-  },
-  "15": {
+  "13": {
     "basicblocks": 1,
     "calls": "",
     "file": "streamtools.h",
@@ -90,9 +69,26 @@
     "name": "~WidthAdjustedInputStream",
     "total_instructions": 1
   },
-  "16": {
+  "14": {
+    "basicblocks": 49,
+    "calls": "15 11 9 4 4 16",
+    "file": "mvau.hpp",
+    "fileloc": 95,
+    "instructions": 249,
+    "loads": {
+      "G": 2,
+      "L": 7
+    },
+    "name": "Matrix_Vector_Activate_Batch<1, 1, 1, 1, 1, 1, Identity, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 16, 8, 2, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1, ap_int<8>, 1, 1>, DummyActivation, ap_resource_dflt>",
+    "stores": {
+      "G": 3,
+      "L": 6
+    },
+    "total_instructions": 1687
+  },
+  "15": {
     "basicblocks": 1,
-    "calls": "4",
+    "calls": "20",
     "file": "weights.hpp",
     "fileloc": 214,
     "instructions": 5,
@@ -104,6 +100,15 @@
       "L": 1
     },
     "total_instructions": 13
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 222,
+    "instructions": 2,
+    "name": "operator const ap_uint<1> &",
+    "total_instructions": 2
   },
   "17": {
     "basicblocks": 1,
@@ -118,20 +123,13 @@
     "total_instructions": 3
   },
   "18": {
-    "basicblocks": 4,
+    "basicblocks": 7,
     "calls": "",
-    "file": "conv2x2_top.cpp",
-    "fileloc": 27,
-    "instructions": 14,
-    "loads": {
-      "G": 1,
-      "L": 1
-    },
-    "name": "load_weights_once",
-    "stores": {
-      "G": 2
-    },
-    "total_instructions": 31
+    "file": "weights.hpp",
+    "fileloc": 175,
+    "instructions": 18,
+    "name": "FixedPointWeightsSp",
+    "total_instructions": 25
   },
   "19": {
     "basicblocks": 1,
@@ -144,64 +142,14 @@
   },
   "2": {
     "basicblocks": 1,
-    "calls": "",
-    "file": "streamtools.h",
-    "fileloc": 869,
-    "instructions": 3,
-    "name": "WidthAdjustedOutputStream",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 3
+    "calls": "21",
+    "file": "conv2x2_top.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 29
   },
   "20": {
-    "basicblocks": 63,
-    "calls": "16 11 6 3 10 14",
-    "file": "mvau.hpp",
-    "fileloc": 26,
-    "instructions": 301,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "Matrix_Vector_Activate_Batch<1, 1, 1, 1, 1, 1, Identity, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 16, 8, 2, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1, ap_int<8>, 1, 1>, DummyActivation, ap_resource_dflt>",
-    "stores": {
-      "G": 1,
-      "L": 11
-    },
-    "total_instructions": 1450
-  },
-  "21": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "weights.hpp",
-    "fileloc": 175,
-    "instructions": 18,
-    "name": "FixedPointWeightsSp",
-    "total_instructions": 25
-  },
-  "22": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "streamtools.h",
-    "fileloc": 837,
-    "instructions": 3,
-    "name": "WidthAdjustedInputStream",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 3
-  },
-  "3": {
-    "basicblocks": 4,
-    "calls": "",
-    "file": "conv2x2_top.cpp",
-    "fileloc": 21,
-    "instructions": 8,
-    "name": "operator()",
-    "total_instructions": 138
-  },
-  "4": {
     "basicblocks": 1,
     "calls": "",
     "file": "weights.hpp",
@@ -216,30 +164,46 @@
     },
     "total_instructions": 8
   },
-  "5": {
+  "21": {
     "basicblocks": 1,
-    "calls": "21",
+    "calls": "18",
     "file": "conv2x2_top.cpp",
-    "fileloc": 18,
+    "fileloc": 19,
     "instructions": 2,
     "name": "__cxx_global_var_init.1",
     "total_instructions": 27
   },
-  "6": {
-    "basicblocks": 1,
-    "calls": "19",
-    "file": "interpret.hpp",
-    "fileloc": 235,
-    "instructions": 2,
-    "name": "operator()<ap_uint<1> >",
-    "total_instructions": 12
+  "3": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "conv2x2_top.cpp",
+    "fileloc": 28,
+    "instructions": 14,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "load_weights_once",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 31
   },
-  "7": {
+  "4": {
     "basicblocks": 1,
-    "calls": "22 2 9 8 17 20 12 15",
+    "calls": "",
+    "file": "interpret.hpp",
+    "fileloc": 209,
+    "instructions": 8,
+    "name": "operator()",
+    "total_instructions": 19
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "1 8 7 6 17 14 10 13",
     "file": "convlayer.h",
-    "fileloc": 30,
-    "instructions": 36,
+    "fileloc": 106,
+    "instructions": 35,
     "loads": {
       "L": 1
     },
@@ -247,11 +211,11 @@
     "stores": {
       "L": 1
     },
-    "total_instructions": 1803
+    "total_instructions": 2039
   },
-  "8": {
+  "6": {
     "basicblocks": 49,
-    "calls": "13",
+    "calls": "12",
     "file": "slidingwindow.h",
     "fileloc": 171,
     "instructions": 245,
@@ -264,7 +228,7 @@
     },
     "total_instructions": 300
   },
-  "9": {
+  "7": {
     "basicblocks": 1,
     "calls": "",
     "file": "streamtools.h",
@@ -275,5 +239,26 @@
     },
     "name": "operator hls::stream<ap_uint<1>, 0> &",
     "total_instructions": 3
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 869,
+    "instructions": 3,
+    "name": "WidthAdjustedOutputStream",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "19",
+    "file": "interpret.hpp",
+    "fileloc": 235,
+    "instructions": 2,
+    "name": "operator()<ap_uint<1> >",
+    "total_instructions": 12
   }
 }

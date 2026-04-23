@@ -1,28 +1,28 @@
 {
   "0": {
-    "basicblocks": 38,
+    "basicblocks": 43,
     "calls": "1",
     "file": "conv2x2_top.cpp",
-    "fileloc": 36,
-    "instructions": 201,
+    "fileloc": 44,
+    "instructions": 244,
     "loads": {
-      "G": 1,
-      "L": 5,
+      "G": 3,
+      "L": 6,
       "T": 4
     },
     "name": "conv2x2_top",
     "stores": {
-      "G": 1,
+      "G": 3,
       "L": 7,
       "T": 4
     },
-    "total_instructions": 208
+    "total_instructions": 251
   },
   "1": {
     "basicblocks": 3,
     "calls": "",
     "file": "conv2x2_top.cpp",
-    "fileloc": 27,
+    "fileloc": 28,
     "instructions": 7,
     "loads": {
       "G": 1

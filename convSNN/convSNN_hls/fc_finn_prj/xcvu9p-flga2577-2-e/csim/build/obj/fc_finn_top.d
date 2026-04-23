@@ -37,6 +37,5 @@ obj/fc_finn_top.o: ../../../../../fc_finn_top.cpp \
  /home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h \
  /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp \
  /home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp \
- /home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h \
  /home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp \
  ../../../../../fc_finn_config.h ../../../../../fc_finn_ref.h

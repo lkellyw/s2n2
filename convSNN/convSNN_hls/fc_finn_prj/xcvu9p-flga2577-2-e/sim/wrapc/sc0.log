@@ -1,0 +1,6 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling fc_finn_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fc_finn_top.cpp
+   Compiling fc_finn_top.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fc_finn_top_ir.ll
+   Generating cosim.tv.exe

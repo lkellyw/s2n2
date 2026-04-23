@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_weights_once'" level="0">
-<item name = "Date">Thu Apr 16 02:04:50 2026
+<item name = "Date">Thu Apr 23 02:33:05 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">conv2x2_prj</item>
@@ -104,6 +104,8 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, load_weights_once, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, load_weights_once, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, load_weights_once, return value</column>
+<column name="conv_weights_0_0">out, 2, ap_vld, conv_weights_0_0, pointer</column>
+<column name="conv_weights_0_0_ap_vld">out, 1, ap_vld, conv_weights_0_0, pointer</column>
 </table>
 </item>
 </section>

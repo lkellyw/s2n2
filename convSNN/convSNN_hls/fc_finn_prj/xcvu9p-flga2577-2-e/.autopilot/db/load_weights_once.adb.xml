@@ -1,0 +1,177 @@
+<stg><name>load_weights_once</name>
+
+
+<trans_list>
+
+<trans id="10" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="1" op_0_bw="1">
+<![CDATA[
+entry:0 %loaded_load = load i1 %loaded
+
+]]></Node>
+<StgValue><ssdm name="loaded_load"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+entry:1 %br_ln19 = br i1 %loaded_load, void %for.inc.preheader, void %return
+
+]]></Node>
+<StgValue><ssdm name="br_ln19"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="loaded_load" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2">
+<![CDATA[
+for.inc.preheader:0 %call_ln0 = call void @load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, i2 %FC_W, i2 %fc_weights_0
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="loaded_load" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2">
+<![CDATA[
+for.inc.preheader:0 %call_ln0 = call void @load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, i2 %FC_W, i2 %fc_weights_0
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="loaded_load" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="1" op_1_bw="1" op_2_bw="0">
+<![CDATA[
+for.inc.preheader:1 %store_ln30 = store i1 1, i1 %loaded
+
+]]></Node>
+<StgValue><ssdm name="store_ln30"/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="loaded_load" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="0" op_0_bw="0">
+<![CDATA[
+for.inc.preheader:2 %br_ln31 = br void %return
+
+]]></Node>
+<StgValue><ssdm name="br_ln31"/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0">
+<![CDATA[
+return:0 %ret_ln31 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln31"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="12" name="loaded" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="loaded"/></StgValue>
+</port>
+<port id="13" name="FC_W" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="FC_W"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="14" name="fc_weights_0" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="fc_weights_0"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="15" from="loaded" to="loaded_load" fromId="12" toId="3">
+</dataflow>
+<dataflow id="16" from="loaded_load" to="br_ln19" fromId="3" toId="4">
+</dataflow>
+<dataflow id="18" from="load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2" to="call_ln0" fromId="17" toId="5">
+</dataflow>
+<dataflow id="19" from="FC_W" to="call_ln0" fromId="13" toId="5">
+</dataflow>
+<dataflow id="20" from="fc_weights_0" to="call_ln0" fromId="14" toId="5">
+</dataflow>
+<dataflow id="21" from="load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2" to="call_ln0" fromId="17" toId="6">
+</dataflow>
+<dataflow id="22" from="FC_W" to="call_ln0" fromId="13" toId="6">
+</dataflow>
+<dataflow id="23" from="fc_weights_0" to="call_ln0" fromId="14" toId="6">
+</dataflow>
+<dataflow id="25" from="StgValue_24" to="store_ln30" fromId="24" toId="7">
+</dataflow>
+<dataflow id="26" from="loaded" to="store_ln30" fromId="12" toId="7">
+</dataflow>
+<dataflow id="27" from="loaded_load" to="StgValue_1" fromId="3" toId="1">
+</dataflow>
+<dataflow id="28" from="loaded_load" to="StgValue_2" fromId="3" toId="2">
+</dataflow>
+</dataflows>
+
+
+</stg>

@@ -95,7 +95,7 @@ attribute shreg_extract : string;
     signal grp_fu_188_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal i_1_fu_66 : STD_LOGIC_VECTOR (2 downto 0);
-    signal i_5_fu_278_p2 : STD_LOGIC_VECTOR (2 downto 0);
+    signal i_2_fu_278_p2 : STD_LOGIC_VECTOR (2 downto 0);
     signal current_block_write_fu_70 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_205_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal read_block_fu_74 : STD_LOGIC_VECTOR (31 downto 0);
@@ -181,7 +181,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mux_2_1_1_1_1_U8 : component conv2x2_top_mux_2_1_1_1_1
+    mux_2_1_1_1_1_U9 : component conv2x2_top_mux_2_1_1_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -314,7 +314,7 @@ begin
                 if ((ap_loop_init = ap_const_logic_1)) then 
                     i_1_fu_66 <= ap_const_lv3_0;
                 elsif (((icmp_ln197_fu_272_p2 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1))) then 
-                    i_1_fu_66 <= i_5_fu_278_p2;
+                    i_1_fu_66 <= i_2_fu_278_p2;
                 end if;
             end if; 
         end if;
@@ -619,7 +619,7 @@ begin
     grp_fu_205_p3 <= 
         ap_const_lv32_0 when (grp_fu_199_p2(0) = '1') else 
         grp_fu_171_p2;
-    i_5_fu_278_p2 <= std_logic_vector(unsigned(i_1_fu_66) + unsigned(ap_const_lv3_1));
+    i_2_fu_278_p2 <= std_logic_vector(unsigned(i_1_fu_66) + unsigned(ap_const_lv3_1));
     icmp_ln197_fu_272_p2 <= "1" when (i_1_fu_66 = ap_const_lv3_6) else "0";
     icmp_ln199_fu_298_p2 <= "1" when (tmp_fu_288_p4 = ap_const_lv31_0) else "0";
     icmp_ln233_fu_316_p2 <= "1" when (ofm_x_fu_310_p2 = ap_const_lv32_2) else "0";

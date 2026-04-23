@@ -1,5 +1,5 @@
-7 warnings and 8 errors generated.
+7 warnings and 7 errors generated.
 Error while processing /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.
-clang-tidy applied 126 of 126 suggested fixes.
+clang-tidy applied 129 of 129 suggested fixes.
 Suppressed 97 warnings (90 in non-user code, 7 with check filters).
 Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

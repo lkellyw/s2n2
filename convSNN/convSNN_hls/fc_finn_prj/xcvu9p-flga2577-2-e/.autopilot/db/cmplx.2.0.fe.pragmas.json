@@ -1,0 +1,49 @@
+{
+  "0": {
+    "basicblocks": 12,
+    "calls": "2 1",
+    "file": "fc_finn_top.cpp",
+    "fileloc": 33,
+    "instructions": 34,
+    "loads": {
+      "T": 1
+    },
+    "name": "fc_finn_top",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 254
+  },
+  "1": {
+    "basicblocks": 76,
+    "calls": "",
+    "file": "mvau.hpp",
+    "fileloc": 95,
+    "instructions": 192,
+    "loads": {
+      "G": 3,
+      "L": 6
+    },
+    "name": "Matrix_Vector_Activate_Batch<8, 4, 1, 1, 1, 1, Identity, Slice<ap_uint<1>, 1>, Identity, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16, 6, 1, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1, ap_int<8>, 1, 32>, int, ap_resource_dflt>",
+    "stores": {
+      "G": 3,
+      "L": 4
+    },
+    "total_instructions": 192
+  },
+  "2": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "fc_finn_top.cpp",
+    "fileloc": 16,
+    "instructions": 28,
+    "loads": {
+      "G": 2
+    },
+    "name": "load_weights_once",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 28
+  }
+}

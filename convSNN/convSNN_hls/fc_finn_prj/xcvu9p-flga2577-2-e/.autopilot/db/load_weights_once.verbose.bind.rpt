@@ -1,0 +1,298 @@
+
+
+================================================================
+== Vitis HLS Report for 'load_weights_once'
+================================================================
+* Date:           Thu Apr 23 02:33:01 2026
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        fc_finn_prj
+* Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.405 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        1|       35|  10.000 ns|  0.350 us|    1|   35|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------------------+------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                      |                                                            |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                               Instance                               |                           Module                           |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------------------------------------------------+------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2_fu_10  |load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2  |       34|       34|  0.340 us|  0.340 us|   34|   34|       no|
+        +----------------------------------------------------------------------+------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:19]   --->   Operation 3 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%br_ln19 = br i1 %loaded_load, void %for.inc.preheader, void %return" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:19]   --->   Operation 4 'br' 'br_ln19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, i2 %FC_W, i2 %fc_weights_0"   --->   Operation 5 'call' 'call_ln0' <Predicate = (!loaded_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln0 = call void @load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, i2 %FC_W, i2 %fc_weights_0"   --->   Operation 6 'call' 'call_ln0' <Predicate = (!loaded_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%store_ln30 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:30]   --->   Operation 7 'store' 'store_ln30' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln31 = br void %return" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:31]   --->   Operation 8 'br' 'br_ln31' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln31 = ret" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:31]   --->   Operation 9 'ret' 'ret_ln31' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ loaded]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
+Port [ FC_W]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ fc_weights_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+loaded_load (load ) [ 011]
+br_ln19     (br   ) [ 000]
+call_ln0    (call ) [ 000]
+store_ln30  (store) [ 000]
+br_ln31     (br   ) [ 000]
+ret_ln31    (ret  ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="loaded">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="loaded"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="FC_W">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="FC_W"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="fc_weights_0">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fc_weights_0"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1004" name="grp_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2_fu_10">
+<pin_list>
+<pin id="11" dir="0" index="0" bw="0" slack="0"/>
+<pin id="12" dir="0" index="1" bw="2" slack="0"/>
+<pin id="13" dir="0" index="2" bw="2" slack="0"/>
+<pin id="14" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="18" class="1004" name="loaded_load_load_fu_18">
+<pin_list>
+<pin id="19" dir="0" index="0" bw="1" slack="0"/>
+<pin id="20" dir="1" index="1" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="loaded_load/1 "/>
+</bind>
+</comp>
+
+<comp id="22" class="1004" name="store_ln30_store_fu_22">
+<pin_list>
+<pin id="23" dir="0" index="0" bw="1" slack="0"/>
+<pin id="24" dir="0" index="1" bw="1" slack="0"/>
+<pin id="25" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="store_ln30/2 "/>
+</bind>
+</comp>
+
+<comp id="28" class="1005" name="loaded_load_reg_28">
+<pin_list>
+<pin id="29" dir="0" index="0" bw="1" slack="1"/>
+<pin id="30" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="loaded_load "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="15"><net_src comp="6" pin="0"/><net_sink comp="10" pin=0"/></net>
+
+<net id="16"><net_src comp="2" pin="0"/><net_sink comp="10" pin=1"/></net>
+
+<net id="17"><net_src comp="4" pin="0"/><net_sink comp="10" pin=2"/></net>
+
+<net id="21"><net_src comp="0" pin="0"/><net_sink comp="18" pin=0"/></net>
+
+<net id="26"><net_src comp="8" pin="0"/><net_sink comp="22" pin=0"/></net>
+
+<net id="27"><net_src comp="0" pin="0"/><net_sink comp="22" pin=1"/></net>
+
+<net id="31"><net_src comp="18" pin="1"/><net_sink comp="28" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: loaded | {2 }
+	Port: fc_weights_0 | {1 2 }
+ - Input state : 
+	Port: load_weights_once : loaded | {1 }
+	Port: load_weights_once : FC_W | {1 2 }
+  - Chain level:
+	State 1
+		br_ln19 : 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------------------------------------------|---------|---------|---------|
+| Operation|                            Functional Unit                           |  Delay  |    FF   |   LUT   |
+|----------|----------------------------------------------------------------------|---------|---------|---------|
+|   call   | grp_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2_fu_10 |  0.387  |    82   |    88   |
+|----------|----------------------------------------------------------------------|---------|---------|---------|
+|   Total  |                                                                      |  0.387  |    82   |    88   |
+|----------|----------------------------------------------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++------------------+--------+
+|                  |   FF   |
++------------------+--------+
+|loaded_load_reg_28|    1   |
++------------------+--------+
+|       Total      |    1   |
++------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    0   |   82   |   88   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |    1   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    0   |   83   |   88   |
++-----------+--------+--------+--------+

@@ -15,7 +15,7 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>2.407</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.481</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
@@ -32,8 +32,8 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>0</BRAM_18K>
-            <FF>301</FF>
-            <LUT>1299</LUT>
+            <FF>367</FF>
+            <LUT>1387</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -262,38 +262,38 @@
             <ModuleName>conv2x2_top</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_47_1_fu_126</InstName>
-                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_47_1</ModuleName>
+                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130</InstName>
+                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_77_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>126</ID>
-                    <BindInstances>add_ln47_fu_93_p2</BindInstances>
+                    <ID>130</ID>
+                    <BindInstances>add_ln77_fu_93_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_135</InstName>
+                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_139</InstName>
                     <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_197_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>135</ID>
-                    <BindInstances>i_5_fu_278_p2 grp_fu_171_p2 ofm_x_fu_310_p2 ofm_y_2_fu_322_p2 grp_fu_182_p2 grp_fu_194_p2 grp_fu_182_p2 inp_4_fu_455_p2 grp_fu_171_p2 grp_fu_194_p2</BindInstances>
+                    <ID>139</ID>
+                    <BindInstances>i_2_fu_278_p2 grp_fu_171_p2 ofm_x_fu_310_p2 ofm_y_2_fu_322_p2 grp_fu_182_p2 grp_fu_194_p2 grp_fu_182_p2 inp_4_fu_455_p2 grp_fu_171_p2 grp_fu_194_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>call_ln40_load_weights_once_fu_143</InstName>
+                    <InstName>call_ln48_load_weights_once_fu_147</InstName>
                     <ModuleName>load_weights_once</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>143</ID>
+                    <ID>147</ID>
                 </Instance>
                 <Instance>
-                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_74_3_fu_149</InstName>
-                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_74_3</ModuleName>
-                    <IsCompInst>true</IsCompInst>
-                    <ID>149</ID>
-                    <BindInstances>i_3_fu_70_p2</BindInstances>
-                </Instance>
-                <Instance>
-                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_79_2_fu_155</InstName>
-                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_79_2</ModuleName>
+                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_155</InstName>
+                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_131_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>155</ID>
-                    <BindInstances>add_ln79_fu_104_p2</BindInstances>
+                    <BindInstances>i_3_fu_117_p2 cntr_3_fu_123_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170</InstName>
+                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_121_2</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>170</ID>
+                    <BindInstances>add_ln121_fu_104_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>convInp_fifo_U in_stream_fifo_U out_stream_fifo_U inputBuf_U inputBuf_1_U</BindInstances>
@@ -340,9 +340,9 @@
             </AreaEstimates>
         </Module>
         <Module>
-            <Name>conv2x2_top_Pipeline_VITIS_LOOP_47_1</Name>
+            <Name>conv2x2_top_Pipeline_VITIS_LOOP_77_1</Name>
             <Loops>
-                <VITIS_LOOP_47_1/>
+                <VITIS_LOOP_77_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -361,8 +361,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_47_1>
-                        <Name>VITIS_LOOP_47_1</Name>
+                    <VITIS_LOOP_77_1>
+                        <Name>VITIS_LOOP_77_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>4</TripCount>
                         <Latency>4</Latency>
@@ -371,7 +371,7 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_47_1>
+                    </VITIS_LOOP_77_1>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -394,7 +394,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_47_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_fu_93_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:47" URAM="0" VARIABLE="add_ln47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_93_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:77" URAM="0" VARIABLE="add_ln77"/>
             </BindNodes>
         </Module>
         <Module>
@@ -406,7 +406,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.407</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>2.455</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>8</Best-caseLatency>
@@ -452,28 +452,28 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="i_5_fu_278_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:197" URAM="0" VARIABLE="i_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_171_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:216" URAM="0" VARIABLE="current_block_read"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="ofm_x_fu_310_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:232" URAM="0" VARIABLE="ofm_x"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="ofm_y_2_fu_322_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:235" URAM="0" VARIABLE="ofm_y_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_182_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:251" URAM="0" VARIABLE="current_line_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_194_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:255" URAM="0" VARIABLE="read_block_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_182_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:203" URAM="0" VARIABLE="current_line_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="inp_4_fu_455_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:204" URAM="0" VARIABLE="inp_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_171_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:207" URAM="0" VARIABLE="current_block_write_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_194_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:211" URAM="0" VARIABLE="read_block_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_278_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:197" URAM="0" VARIABLE="i_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_171_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:216" URAM="0" VARIABLE="current_block_read"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="ofm_x_fu_310_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:232" URAM="0" VARIABLE="ofm_x"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="ofm_y_2_fu_322_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:235" URAM="0" VARIABLE="ofm_y_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_182_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:251" URAM="0" VARIABLE="current_line_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_194_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:255" URAM="0" VARIABLE="read_block_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_182_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:203" URAM="0" VARIABLE="current_line_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="inp_4_fu_455_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:204" URAM="0" VARIABLE="inp_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_171_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:207" URAM="0" VARIABLE="current_block_write_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_194_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:211" URAM="0" VARIABLE="read_block_4"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>conv2x2_top_Pipeline_VITIS_LOOP_74_3</Name>
+            <Name>conv2x2_top_Pipeline_VITIS_LOOP_131_1</Name>
             <Loops>
-                <VITIS_LOOP_74_3/>
+                <VITIS_LOOP_131_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>1.368</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>4.481</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>6</Best-caseLatency>
@@ -486,8 +486,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_74_3>
-                        <Name>VITIS_LOOP_74_3</Name>
+                    <VITIS_LOOP_131_1>
+                        <Name>VITIS_LOOP_131_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>4</TripCount>
                         <Latency>4</Latency>
@@ -496,15 +496,15 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_74_3>
+                    </VITIS_LOOP_131_1>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>6</FF>
+                    <FF>74</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>82</LUT>
+                    <LUT>202</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -519,13 +519,14 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_74_3" OPTYPE="add" PRAGMA="" RTLNAME="i_3_fu_70_p2" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/mvau.hpp:74" URAM="0" VARIABLE="i_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_131_1" OPTYPE="add" PRAGMA="" RTLNAME="i_3_fu_117_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:131" URAM="0" VARIABLE="i_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_131_1" OPTYPE="add" PRAGMA="" RTLNAME="cntr_3_fu_123_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:188" URAM="0" VARIABLE="cntr_3"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>conv2x2_top_Pipeline_VITIS_LOOP_79_2</Name>
+            <Name>conv2x2_top_Pipeline_VITIS_LOOP_121_2</Name>
             <Loops>
-                <VITIS_LOOP_79_2/>
+                <VITIS_LOOP_121_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -544,8 +545,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_79_2>
-                        <Name>VITIS_LOOP_79_2</Name>
+                    <VITIS_LOOP_121_2>
+                        <Name>VITIS_LOOP_121_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>4</TripCount>
                         <Latency>4</Latency>
@@ -554,7 +555,7 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_79_2>
+                    </VITIS_LOOP_121_2>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -577,7 +578,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_79_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln79_fu_104_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:79" URAM="0" VARIABLE="add_ln79"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_121_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln121_fu_104_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:121" URAM="0" VARIABLE="add_ln121"/>
             </BindNodes>
         </Module>
         <Module>
@@ -586,7 +587,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.407</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>4.481</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>37</Best-caseLatency>
@@ -604,10 +605,10 @@
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>4320</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
-                    <FF>301</FF>
+                    <FF>367</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>1299</LUT>
+                    <LUT>1387</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -619,11 +620,11 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="convInp_fifo_U" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/convlayer.h:46" URAM="0" VARIABLE="convInp"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="in_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:42" URAM="0" VARIABLE="in_stream"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="out_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:43" URAM="0" VARIABLE="out_stream"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="inputBuf_U" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180" URAM="0" VARIABLE="inputBuf"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="inputBuf_1_U" SOURCE="/home/coder/Desktop/s2n2/finn-hlslib-lif/slidingwindow.h:180" URAM="0" VARIABLE="inputBuf_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="convInp_fifo_U" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h:119" URAM="0" VARIABLE="convInp"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="in_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:72" URAM="0" VARIABLE="in_stream"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="out_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:73" URAM="0" VARIABLE="out_stream"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="inputBuf_U" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180" URAM="0" VARIABLE="inputBuf"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="inputBuf_1_U" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180" URAM="0" VARIABLE="inputBuf_1"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -832,222 +833,226 @@
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="inline" location="../../finn-hlslib-lif/convlayer.h:37" status="valid" parentFunction="convlayer_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="stream" location="../../finn-hlslib-lif/convlayer.h:47" status="valid" parentFunction="convlayer_batch" variable="convInp" isDirective="0" options="variable=convInp depth=256"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/dma.h:141" status="valid" parentFunction="mem2stream" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/dma.h:154" status="valid" parentFunction="stream2mem" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/dma.h:224" status="valid" parentFunction="genparamstream" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/fclayer.h:100" status="valid" parentFunction="streamingfclayer_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:61" status="valid" parentFunction="xnormul" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:66" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:71" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:79" status="valid" parentFunction="binary" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:88" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:96" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:101" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:115" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:121" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:137" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:142" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:146" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:150" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:154" status="valid" parentFunction="operator const type-parameter-1-0 &amp;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:162" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:167" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:172" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:203" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:206" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:210" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:214" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:219" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:223" status="valid" parentFunction="operator const type-parameter-1-0 &amp;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:231" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:236" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:241" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:260" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:263" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:266" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:270" status="valid" parentFunction="operator const type-parameter-1-0 &amp;" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:274" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:278" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:283" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:291" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:296" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/interpret.hpp:301" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:89" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:114" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../../finn-hlslib-lif/mac.hpp:116" status="warning" parentFunction="mul" variable="res" isDirective="0" options="variable=res core=Mul_LUT">
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/convlayer.h:113" status="valid" parentFunction="convlayer_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/convlayer.h:186" status="valid" parentFunction="convlayer_batch_mmv" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/dma.h:141" status="valid" parentFunction="mem2stream" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/dma.h:154" status="valid" parentFunction="stream2mem" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/dma.h:224" status="valid" parentFunction="genparamstream" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/fclayer.h:100" status="valid" parentFunction="streamingfclayer_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:61" status="valid" parentFunction="xnormul" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:66" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:71" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:79" status="valid" parentFunction="binary" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:88" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:96" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:101" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:115" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:121" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:137" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:142" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:146" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:150" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:154" status="valid" parentFunction="operator const type-parameter-1-0 &amp;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:162" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:167" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:172" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:203" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:206" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:210" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:214" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:219" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:223" status="valid" parentFunction="operator const type-parameter-1-0 &amp;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:231" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:236" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:241" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:260" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:263" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:266" status="valid" parentFunction="container&lt;tv&gt;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:270" status="valid" parentFunction="operator const type-parameter-1-0 &amp;" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:274" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:278" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:283" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:291" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:296" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:301" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:89" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:114" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
+        <Pragma type="resource" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:116" status="warning" parentFunction="mul" variable="res" isDirective="0" options="variable=res core=Mul_LUT">
             <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:140" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../../finn-hlslib-lif/mac.hpp:142" status="warning" parentFunction="mul" variable="res" isDirective="0" options="variable=res core=DSP48">
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:140" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
+        <Pragma type="resource" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:142" status="warning" parentFunction="mul" variable="res" isDirective="0" options="variable=res core=DSP48">
             <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:165" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/mac.hpp:168" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:178" status="valid" parentFunction="acc" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/mac.hpp:181" status="valid" parentFunction="acc" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:206" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/mac.hpp:209" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mac.hpp:216" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:72" status="valid" parentFunction="streamingmaxpool" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:79" status="valid" parentFunction="streamingmaxpool" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:89" status="valid" parentFunction="streamingmaxpool" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/maxpool.h:144" status="valid" parentFunction="streamingmaxpool_precision" variable="buf" isDirective="0" options="variable=buf complete dim=2"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:147" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:157" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:160" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:174" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/maxpool.h:207" status="valid" parentFunction="streamingmaxpool_precision_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:251" status="valid" parentFunction="relu_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:254" status="valid" parentFunction="relu_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../../finn-hlslib-lif/maxpool.h:296" status="warning" parentFunction="accpool_batch" variable="accumulators" isDirective="0" options="variable=accumulators core=RAM_2P_LUTRAM">
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:165" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:168" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:178" status="valid" parentFunction="acc" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:181" status="valid" parentFunction="acc" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:206" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:209" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mac.hpp:216" status="valid" parentFunction="mac" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:72" status="valid" parentFunction="streamingmaxpool" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:79" status="valid" parentFunction="streamingmaxpool" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:89" status="valid" parentFunction="streamingmaxpool" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:144" status="valid" parentFunction="streamingmaxpool_precision" variable="buf" isDirective="0" options="variable=buf complete dim=2"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:147" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:157" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:160" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:174" status="valid" parentFunction="streamingmaxpool_precision" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:207" status="valid" parentFunction="streamingmaxpool_precision_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:251" status="valid" parentFunction="relu_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:254" status="valid" parentFunction="relu_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="resource" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:296" status="warning" parentFunction="accpool_batch" variable="accumulators" isDirective="0" options="variable=accumulators core=RAM_2P_LUTRAM">
             <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:302" status="valid" parentFunction="accpool_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:306" status="valid" parentFunction="accpool_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/maxpool.h:363" status="valid" parentFunction="labelselect_batch" variable="toplabels" isDirective="0" options="variable=toplabels complete dim=1"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/maxpool.h:366" status="valid" parentFunction="labelselect_batch" variable="topval" isDirective="0" options="variable=topval complete dim=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:371" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:375" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:378" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:383" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/maxpool.h:443" status="valid" parentFunction="pool_batch" variable="accu" isDirective="0" options="variable=accu complete dim=0"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/maxpool.h:450" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:457" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:464" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/maxpool.h:473" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mmv.hpp:53" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/mvau.hpp:15" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/mvau.hpp:39" status="valid" parentFunction="matrix_vector_activate_batch" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=0"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/mvau.hpp:46" status="valid" parentFunction="matrix_vector_activate_batch" variable="neust" isDirective="0" options="variable=neust complete dim=2"/>
-        <Pragma type="bind_storage" location="../../finn-hlslib-lif/mvau.hpp:49" status="valid" parentFunction="matrix_vector_activate_batch" variable="neust" isDirective="0" options="variable=neust type=ram_2p impl=bram"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/mvau.hpp:52" status="valid" parentFunction="matrix_vector_activate_batch" variable="accu" isDirective="0" options="variable=accu complete dim=0"/>
-        <Pragma type="reset" location="../../finn-hlslib-lif/mvau.hpp:56" status="valid" parentFunction="matrix_vector_activate_batch" variable="st_init" isDirective="0" options="variable=st_init"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/mvau.hpp:60" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/mvau.hpp:75" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/mvau.hpp:91" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/mvau.hpp:103" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/mvau.hpp:114" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:74" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:75" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_2P">
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:302" status="valid" parentFunction="accpool_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:306" status="valid" parentFunction="accpool_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:363" status="valid" parentFunction="labelselect_batch" variable="toplabels" isDirective="0" options="variable=toplabels complete dim=1"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:366" status="valid" parentFunction="labelselect_batch" variable="topval" isDirective="0" options="variable=topval complete dim=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:371" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:375" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:378" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:383" status="valid" parentFunction="labelselect_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:443" status="valid" parentFunction="pool_batch" variable="accu" isDirective="0" options="variable=accu complete dim=0"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:450" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:457" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:464" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/maxpool.h:473" status="valid" parentFunction="pool_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/mmv.hpp:53" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:112" status="valid" parentFunction="matrix_vector_activate_batch" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=0"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:117" status="valid" parentFunction="matrix_vector_activate_batch" variable="neust" isDirective="0" options="variable=neust complete dim=2"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:121" status="valid" parentFunction="matrix_vector_activate_batch" variable="accu" isDirective="0" options="variable=accu complete dim=0"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:132" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:151" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:164" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:176" status="valid" parentFunction="matrix_vector_activate_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:249" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:252" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="accu" isDirective="0" options="variable=accu complete dim=0"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:255" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="w.m_weights" isDirective="0" options="variable=w.m_weights complete dim=0"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:267" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:284" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:291" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:298" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/mvau.hpp:311" status="valid" parentFunction="matrix_vector_activate_stream_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:74" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
+        <Pragma type="resource" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:75" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_2P">
             <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
-        <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:96" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:97" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_BRAM">
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:96" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
+        <Pragma type="resource" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:97" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_BRAM">
             <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
-        <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:118" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:119" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_URAM">
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:118" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
+        <Pragma type="resource" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:119" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_URAM">
             <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
-        <Pragma type="inline" location="../../finn-hlslib-lif/slidingwindow.h:140" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../../finn-hlslib-lif/slidingwindow.h:141" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_LUTRAM">
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:140" status="valid" parentFunction="memory_resource" variable="" isDirective="0" options=""/>
+        <Pragma type="resource" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:141" status="warning" parentFunction="memory_resource" variable="inputBuf" isDirective="0" options="variable=inputBuf core=RAM_S2P_LUTRAM">
             <Msg msg_id="207-5531" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
         </Pragma>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/slidingwindow.h:182" status="valid" parentFunction="convolutioninputgenerator" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
-        <Pragma type="reset" location="../../finn-hlslib-lif/slidingwindow.h:195" status="warning" parentFunction="convolutioninputgenerator" variable="inp" isDirective="0" options="variable=inp">
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:182" status="valid" parentFunction="convolutioninputgenerator" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
+        <Pragma type="reset" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:195" status="warning" parentFunction="convolutioninputgenerator" variable="inp" isDirective="0" options="variable=inp">
             <Msg msg_id="207-5547" msg_severity="WARNING" msg_body="Invalid variable in '#pragma HLS reset': expect variable to be static or global"/>
         </Pragma>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/slidingwindow.h:198" status="valid" parentFunction="convolutioninputgenerator" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:249" status="valid" parentFunction="convolutioninputgenerator" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:250" status="valid" parentFunction="convolutioninputgenerator" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:260" status="warning" parentFunction="convolutioninputgenerator" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false">
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:198" status="valid" parentFunction="convolutioninputgenerator" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:249" status="valid" parentFunction="convolutioninputgenerator" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:250" status="valid" parentFunction="convolutioninputgenerator" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:260" status="warning" parentFunction="convolutioninputgenerator" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false">
             <Msg msg_id="214-199" msg_severity="WARNING" msg_body="Ignoring dependence pragma on local scalar variable 'current_block_write'."/>
         </Pragma>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:314" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:315" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/slidingwindow.h:316" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/slidingwindow.h:317" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=2"/>
-        <Pragma type="reset" location="../../finn-hlslib-lif/slidingwindow.h:330" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inp" isDirective="0" options="variable=inp"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/slidingwindow.h:333" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/slidingwindow.h:340" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/slidingwindow.h:366" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/slidingwindow.h:399" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options=""/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:401" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:402" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:413" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/slidingwindow.h:466" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
-        <Pragma type="reset" location="../../finn-hlslib-lif/slidingwindow.h:478" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inp" isDirective="0" options="variable=inp"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:480" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:481" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:487" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/slidingwindow.h:490" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:555" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:556" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:565" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/slidingwindow.h:616" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
-        <Pragma type="reset" location="../../finn-hlslib-lif/slidingwindow.h:629" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inp" isDirective="0" options="variable=inp"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/slidingwindow.h:632" status="valid" parentFunction="convolutioninputgenerator_dws" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:683" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:684" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:694" status="valid" parentFunction="convolutioninputgenerator_dws" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/slidingwindow.h:746" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
-        <Pragma type="reset" location="../../finn-hlslib-lif/slidingwindow.h:757" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inp" isDirective="0" options="variable=inp"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:759" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:760" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/slidingwindow.h:768" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:770" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:836" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:837" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
-        <Pragma type="dependence" location="../../finn-hlslib-lif/slidingwindow.h:846" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/slidingwindow.h:888" status="valid" parentFunction="convolutioninputgenerator_kernel1" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:77" status="valid" parentFunction="streamlimiter" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:160" status="valid" parentFunction="sameresize" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:234" status="valid" parentFunction="streamingcast" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:282" status="valid" parentFunction="fmpadding" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:371" status="valid" parentFunction="streamingdatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:391" status="valid" parentFunction="streamingdatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:403" status="valid" parentFunction="streamingdatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:512" status="valid" parentFunction="duplicatestreams" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:570" status="valid" parentFunction="addstreams" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/streamtools.h:575" status="valid" parentFunction="addstreams" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/streamtools.h:644" status="valid" parentFunction="addstreamslayer_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:691" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/streamtools.h:698" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:714" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/streamtools.h:720" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:733" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/streamtools.h:737" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:773" status="valid" parentFunction="flattenmultichandata" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/streamtools.h:777" status="valid" parentFunction="flattenmultichandata" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:804" status="valid" parentFunction="packmultichandata" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/streamtools.h:808" status="valid" parentFunction="packmultichandata" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:897" status="valid" parentFunction="qdma2stream_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/streamtools.h:920" status="valid" parentFunction="stream2qdma_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="array_partition" location="../../finn-hlslib-lif/vvau.hpp:100" status="valid" parentFunction="vector_vector_activate_batch" variable="accu" isDirective="0" options="variable=accu complete dim=0"/>
-        <Pragma type="pipeline" location="../../finn-hlslib-lif/vvau.hpp:109" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/vvau.hpp:116" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/vvau.hpp:125" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/vvau.hpp:139" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/vvau.hpp:141" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:83" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:88" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:95" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:127" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:132" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/weights.hpp:135" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:147" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:159" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/weights.hpp:162" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:192" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:197" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/weights.hpp:201" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:215" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:240" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:245" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/weights.hpp:248" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:265" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../../finn-hlslib-lif/weights.hpp:271" status="valid" parentFunction="setmask" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../../finn-hlslib-lif/weights.hpp:274" status="valid" parentFunction="setmask" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../conv2x2_top.cpp:22" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../conv2x2_top.cpp:28" status="valid" parentFunction="load_weights_once" variable="" isDirective="0" options="off"/>
-        <Pragma type="array_partition" location="../conv2x2_top.cpp:37" status="valid" parentFunction="conv2x2_top" variable="in" isDirective="0" options="variable=in complete dim=1"/>
-        <Pragma type="array_partition" location="../conv2x2_top.cpp:38" status="valid" parentFunction="conv2x2_top" variable="out" isDirective="0" options="variable=out complete dim=1"/>
-        <Pragma type="stream" location="../conv2x2_top.cpp:44" status="valid" parentFunction="conv2x2_top" variable="in_stream" isDirective="0" options="variable=in_stream depth=8"/>
-        <Pragma type="stream" location="../conv2x2_top.cpp:45" status="valid" parentFunction="conv2x2_top" variable="out_stream" isDirective="0" options="variable=out_stream depth=8"/>
-        <Pragma type="pipeline" location="../conv2x2_top.cpp:48" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../conv2x2_top.cpp:80" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:314" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:315" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:316" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:317" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=2"/>
+        <Pragma type="reset" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:330" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inp" isDirective="0" options="variable=inp"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:333" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:340" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:366" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:399" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="" isDirective="0" options=""/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:401" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:402" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:413" status="valid" parentFunction="convolutioninputgenerator_mmv" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:466" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
+        <Pragma type="reset" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:478" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inp" isDirective="0" options="variable=inp"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:480" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:481" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:487" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:490" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:555" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:556" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:565" status="valid" parentFunction="convolutioninputgenerator_kernel_stride" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:616" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
+        <Pragma type="reset" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:629" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inp" isDirective="0" options="variable=inp"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:632" status="valid" parentFunction="convolutioninputgenerator_dws" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:683" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:684" status="valid" parentFunction="convolutioninputgenerator_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:694" status="valid" parentFunction="convolutioninputgenerator_dws" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:746" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf complete dim=1"/>
+        <Pragma type="reset" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:757" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inp" isDirective="0" options="variable=inp"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:759" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:760" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:768" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:770" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:836" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf inter false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:837" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="inputBuf" isDirective="0" options="variable=inputBuf intra false"/>
+        <Pragma type="dependence" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:846" status="valid" parentFunction="convolutioninputgenerator_kernel_stride_dws" variable="current_block_write" isDirective="0" options="variable=current_block_write intra false"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/slidingwindow.h:888" status="valid" parentFunction="convolutioninputgenerator_kernel1" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:77" status="valid" parentFunction="streamlimiter" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:160" status="valid" parentFunction="sameresize" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:234" status="valid" parentFunction="streamingcast" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:282" status="valid" parentFunction="fmpadding" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:371" status="valid" parentFunction="streamingdatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:391" status="valid" parentFunction="streamingdatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:403" status="valid" parentFunction="streamingdatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:512" status="valid" parentFunction="duplicatestreams" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:570" status="valid" parentFunction="addstreams" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:575" status="valid" parentFunction="addstreams" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:644" status="valid" parentFunction="addstreamslayer_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:691" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:698" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:714" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:720" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:733" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:737" status="valid" parentFunction="multichandatawidthconverter_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:773" status="valid" parentFunction="flattenmultichandata" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:777" status="valid" parentFunction="flattenmultichandata" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:804" status="valid" parentFunction="packmultichandata" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:808" status="valid" parentFunction="packmultichandata" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:897" status="valid" parentFunction="qdma2stream_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/streamtools.h:920" status="valid" parentFunction="stream2qdma_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="array_partition" location="../../../../Documents/s2n2/finn-hlslib-lif/vvau.hpp:100" status="valid" parentFunction="vector_vector_activate_batch" variable="accu" isDirective="0" options="variable=accu complete dim=0"/>
+        <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/vvau.hpp:109" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/vvau.hpp:116" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/vvau.hpp:125" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/vvau.hpp:139" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/vvau.hpp:141" status="valid" parentFunction="vector_vector_activate_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:83" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:88" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:95" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:127" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:132" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:135" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:147" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:159" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:162" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:192" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:197" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:201" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:215" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:240" status="valid" parentFunction="tileindex" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:245" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:248" status="valid" parentFunction="operator[]" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:265" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:271" status="valid" parentFunction="setmask" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:274" status="valid" parentFunction="setmask" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../conv2x2_top.cpp:23" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../conv2x2_top.cpp:29" status="valid" parentFunction="load_weights_once" variable="" isDirective="0" options="off"/>
+        <Pragma type="array_partition" location="../conv2x2_top.cpp:45" status="valid" parentFunction="conv2x2_top" variable="in" isDirective="0" options="variable=in complete dim=1"/>
+        <Pragma type="array_partition" location="../conv2x2_top.cpp:46" status="valid" parentFunction="conv2x2_top" variable="out" isDirective="0" options="variable=out complete dim=1"/>
+        <Pragma type="stream" location="../conv2x2_top.cpp:74" status="valid" parentFunction="conv2x2_top" variable="in_stream" isDirective="0" options="variable=in_stream depth=8"/>
+        <Pragma type="stream" location="../conv2x2_top.cpp:75" status="valid" parentFunction="conv2x2_top" variable="out_stream" isDirective="0" options="variable=out_stream depth=8"/>
+        <Pragma type="pipeline" location="../conv2x2_top.cpp:78" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../conv2x2_top.cpp:122" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

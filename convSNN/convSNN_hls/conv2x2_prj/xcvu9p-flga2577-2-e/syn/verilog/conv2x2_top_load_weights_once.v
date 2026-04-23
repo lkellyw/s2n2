@@ -12,7 +12,9 @@ module conv2x2_top_load_weights_once (
         ap_start,
         ap_done,
         ap_idle,
-        ap_ready
+        ap_ready,
+        conv_weights_0_0,
+        conv_weights_0_0_ap_vld
 );
 
 parameter    ap_ST_fsm_state1 = 1'd1;
@@ -23,15 +25,18 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
+output  [1:0] conv_weights_0_0;
+output   conv_weights_0_0_ap_vld;
 
 reg ap_done;
 reg ap_idle;
 reg ap_ready;
+reg conv_weights_0_0_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg   [0:0] loaded;
-wire   [0:0] loaded_load_load_fu_4_p1;
+wire   [0:0] loaded_load_load_fu_8_p1;
 reg   [0:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ce_reg;
@@ -51,7 +56,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (loaded_load_load_fu_4_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((ap_start == 1'b1) & (loaded_load_load_fu_8_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
         loaded <= 1'd1;
     end
 end
@@ -89,6 +94,14 @@ always @ (*) begin
 end
 
 always @ (*) begin
+    if (((ap_start == 1'b1) & (loaded_load_load_fu_8_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        conv_weights_0_0_ap_vld = 1'b1;
+    end else begin
+        conv_weights_0_0_ap_vld = 1'b0;
+    end
+end
+
+always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
             ap_NS_fsm = ap_ST_fsm_state1;
@@ -101,6 +114,8 @@ end
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign loaded_load_load_fu_4_p1 = loaded;
+assign conv_weights_0_0 = 2'd3;
+
+assign loaded_load_load_fu_8_p1 = loaded;
 
 endmodule //conv2x2_top_load_weights_once
