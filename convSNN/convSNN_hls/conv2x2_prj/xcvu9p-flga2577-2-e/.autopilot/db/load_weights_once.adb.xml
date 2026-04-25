@@ -34,10 +34,10 @@ entry:0 %loaded_load = load i1 %loaded
 
 <Node id="4" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-entry:1 %br_ln31 = br i1 %loaded_load, void %if.end, void %return
+entry:1 %br_ln30 = br i1 %loaded_load, void %if.end, void %return
 
 ]]></Node>
-<StgValue><ssdm name="br_ln31"/></StgValue>
+<StgValue><ssdm name="br_ln30"/></StgValue>
 </operation>
 
 <operation id="4" st_id="1" stage="1" lat="1">
@@ -50,10 +50,10 @@ entry:1 %br_ln31 = br i1 %loaded_load, void %if.end, void %return
 
 <Node id="6" bw="0" op_0_bw="2" op_1_bw="2">
 <![CDATA[
-if.end:0 %store_ln33 = store i2 3, i2 %conv_weights_0_0
+if.end:0 %store_ln32 = store i2 3, i2 %conv_weights_0_0
 
 ]]></Node>
-<StgValue><ssdm name="store_ln33"/></StgValue>
+<StgValue><ssdm name="store_ln32"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -66,10 +66,10 @@ if.end:0 %store_ln33 = store i2 3, i2 %conv_weights_0_0
 
 <Node id="7" bw="0" op_0_bw="1" op_1_bw="1" op_2_bw="0">
 <![CDATA[
-if.end:1 %store_ln41 = store i1 1, i1 %loaded
+if.end:1 %store_ln34 = store i1 1, i1 %loaded
 
 ]]></Node>
-<StgValue><ssdm name="store_ln41"/></StgValue>
+<StgValue><ssdm name="store_ln34"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -82,10 +82,10 @@ if.end:1 %store_ln41 = store i1 1, i1 %loaded
 
 <Node id="8" bw="0" op_0_bw="0">
 <![CDATA[
-if.end:2 %br_ln42 = br void %return
+if.end:2 %br_ln35 = br void %return
 
 ]]></Node>
-<StgValue><ssdm name="br_ln42"/></StgValue>
+<StgValue><ssdm name="br_ln35"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -97,10 +97,10 @@ if.end:2 %br_ln42 = br void %return
 
 <Node id="10" bw="0">
 <![CDATA[
-return:0 %ret_ln42 = ret
+return:0 %ret_ln35 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln42"/></StgValue>
+<StgValue><ssdm name="ret_ln35"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -119,15 +119,15 @@ return:0 %ret_ln42 = ret
 <dataflows>
 <dataflow id="10" from="loaded" to="loaded_load" fromId="8" toId="2">
 </dataflow>
-<dataflow id="11" from="loaded_load" to="br_ln31" fromId="2" toId="3">
+<dataflow id="11" from="loaded_load" to="br_ln30" fromId="2" toId="3">
 </dataflow>
-<dataflow id="13" from="StgValue_12" to="store_ln33" fromId="12" toId="4">
+<dataflow id="13" from="StgValue_12" to="store_ln32" fromId="12" toId="4">
 </dataflow>
-<dataflow id="14" from="conv_weights_0_0" to="store_ln33" fromId="9" toId="4">
+<dataflow id="14" from="conv_weights_0_0" to="store_ln32" fromId="9" toId="4">
 </dataflow>
-<dataflow id="16" from="StgValue_15" to="store_ln41" fromId="15" toId="5">
+<dataflow id="16" from="StgValue_15" to="store_ln34" fromId="15" toId="5">
 </dataflow>
-<dataflow id="17" from="loaded" to="store_ln41" fromId="8" toId="5">
+<dataflow id="17" from="loaded" to="store_ln34" fromId="8" toId="5">
 </dataflow>
 <dataflow id="18" from="loaded_load" to="StgValue_1" fromId="2" toId="1">
 </dataflow>

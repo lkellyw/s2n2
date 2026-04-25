@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177/grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_activity": {
+				"grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177/grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

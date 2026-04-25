@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fc_finn_top'
 ================================================================
-* Date:           Thu Apr 23 02:33:05 2026
+* Date:           Sat Apr 25 21:40:48 2026
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        fc_finn_prj
@@ -121,7 +121,7 @@ ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_17 = wait i32 @_ssdm_op_Wait
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 31 [1/1] (0.00ns)   --->   "%empty_18 = wait i32 @_ssdm_op_Wait"   --->   Operation 31 'wait' 'empty_18' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_82_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_79_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 1.31>
 ST_10 : Operation 33 [1/1] (0.00ns)   --->   "%spectopmodule_ln33 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:33]   --->   Operation 33 'spectopmodule' 'spectopmodule_ln33' <Predicate = true> <Delay = 0.00>
@@ -153,8 +153,8 @@ ST_10 : Operation 58 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op
 ST_10 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %in_stream, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 60 [1/1] (0.00ns)   --->   "%empty_13 = specchannel i32 @_ssdm_op_SpecChannel, void @out_stream_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i1 %out_stream, i1 %out_stream"   --->   Operation 60 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %out_stream, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 62 [1/2] (1.31ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_82_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 62 'call' 'call_ln0' <Predicate = true> <Delay = 1.31> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%ret_ln86 = ret" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:86]   --->   Operation 63 'ret' 'ret_ln86' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 62 [1/2] (1.31ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_79_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 62 'call' 'call_ln0' <Predicate = true> <Delay = 1.31> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%ret_ln83 = ret" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:83]   --->   Operation 63 'ret' 'ret_ln83' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -192,7 +192,7 @@ The critical path consists of the following:
 
  <State 10>: 1.314ns
 The critical path consists of the following:
-	'call' operation ('call_ln0') to 'fc_finn_top_Pipeline_VITIS_LOOP_82_2' [67]  (1.314 ns)
+	'call' operation ('call_ln0') to 'fc_finn_top_Pipeline_VITIS_LOOP_79_2' [67]  (1.314 ns)
 
 
 ============================================================

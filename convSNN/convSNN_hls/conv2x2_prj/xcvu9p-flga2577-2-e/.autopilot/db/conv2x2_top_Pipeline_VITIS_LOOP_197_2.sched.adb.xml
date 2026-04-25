@@ -424,10 +424,10 @@ for.body12.i:6 %icmp_ln197 = icmp_eq  i3 %i, i3 6
 
 <Node id="32" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-for.body12.i:7 %i_2 = add i3 %i, i3 1
+for.body12.i:7 %i_3 = add i3 %i, i3 1
 
 ]]></Node>
-<StgValue><ssdm name="i_2"/></StgValue>
+<StgValue><ssdm name="i_3"/></StgValue>
 </operation>
 
 <operation id="32" st_id="2" stage="1" lat="1">
@@ -1654,7 +1654,7 @@ if.then18.i:7 %br_ln213 = br void %for.inc.i
 
 <Node id="137" bw="0" op_0_bw="3" op_1_bw="3" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i:0 %store_ln197 = store i3 %i_2, i3 %i_1
+for.inc.i:0 %store_ln197 = store i3 %i_3, i3 %i_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln197"/></StgValue>

@@ -424,10 +424,10 @@ for.body12.i:6 %icmp_ln197 = icmp_eq  i3 %i, i3 6
 
 <Node id="32" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-for.body12.i:7 %i_2 = add i3 %i, i3 1
+for.body12.i:7 %i_3 = add i3 %i, i3 1
 
 ]]></Node>
-<StgValue><ssdm name="i_2"/></StgValue>
+<StgValue><ssdm name="i_3"/></StgValue>
 </operation>
 
 <operation id="32" st_id="2" stage="1" lat="1">
@@ -1654,7 +1654,7 @@ if.then18.i:7 %br_ln213 = br void %for.inc.i
 
 <Node id="137" bw="0" op_0_bw="3" op_1_bw="3" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i:0 %store_ln197 = store i3 %i_2, i3 %i_1
+for.inc.i:0 %store_ln197 = store i3 %i_3, i3 %i_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln197"/></StgValue>
@@ -2223,9 +2223,9 @@ arrayidx153.i.case.1:1 %br_ln202 = br void %arrayidx153.i.exit
 </dataflow>
 <dataflow id="229" from="StgValue_228" to="icmp_ln197" fromId="228" toId="30">
 </dataflow>
-<dataflow id="230" from="i" to="i_2" fromId="25" toId="31">
+<dataflow id="230" from="i" to="i_3" fromId="25" toId="31">
 </dataflow>
-<dataflow id="232" from="StgValue_231" to="i_2" fromId="231" toId="31">
+<dataflow id="232" from="StgValue_231" to="i_3" fromId="231" toId="31">
 </dataflow>
 <dataflow id="233" from="icmp_ln197" to="br_ln197" fromId="30" toId="32">
 </dataflow>
@@ -2491,7 +2491,7 @@ arrayidx153.i.case.1:1 %br_ln202 = br void %arrayidx153.i.exit
 </dataflow>
 <dataflow id="374" from="current_block_write" to="store_ln213" fromId="7" toId="99">
 </dataflow>
-<dataflow id="375" from="i_2" to="store_ln197" fromId="31" toId="101">
+<dataflow id="375" from="i_3" to="store_ln197" fromId="31" toId="101">
 </dataflow>
 <dataflow id="376" from="i_1" to="store_ln197" fromId="6" toId="101">
 </dataflow>

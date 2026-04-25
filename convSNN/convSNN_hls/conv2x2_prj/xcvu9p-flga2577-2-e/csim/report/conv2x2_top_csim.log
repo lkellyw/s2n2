@@ -3,71 +3,9 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../conv2x2_tb.cpp in release mode
    Compiling ../../../../../conv2x2_top.cpp in release mode
    Generating csim.exe
-================ Testbench begin ================
-[TB] IN_FM from ref:
-  IN_FM[0] = 1
-  IN_FM[1] = 0
-  IN_FM[2] = 1
-  IN_FM[3] = 0
-[TB] EXPECT_SPK from ref:
-  EXPECT_SPK[0] = 1
-  EXPECT_SPK[1] = 0
-  EXPECT_SPK[2] = 1
-  EXPECT_SPK[3] = 0
-[TB] W_VAL from ref = 3
-[TB] Input sent to DUT:
-  1 0
-  1 0
-[DBG] load_weights_once()
-[DBG] W_VAL = 3
-[DBG] packed weight raw = 3
-================ conv2x2_top begin ================
-[DBG] Config:
-  KERNEL_DIM = 1
-  IFM_CH     = 1
-  IFM_DIM    = 2
-  OFM_CH     = 1
-  OFM_DIM    = 2
-  SIMD       = 1
-  SIMDSP     = 1
-  PE         = 1
-[DBG] Input array:
-  in[0] = 1
-  in[1] = 0
-  in[2] = 1
-  in[3] = 0
-[DBG] Input layout as 2x2:
-  1 0
-  1 0
-[DBG] write in_stream[0] = 1
-[DBG] write in_stream[1] = 0
-[DBG] write in_stream[2] = 1
-[DBG] write in_stream[3] = 0
-[DBG] decay = 0
-[DBG] Calling ConvLayer_Batch...
-[DBG] Returned from ConvLayer_Batch
-[DBG] read out_stream[0] = 1
-[DBG] read out_stream[1] = 0
-[DBG] read out_stream[2] = 1
-[DBG] read out_stream[3] = 0
-[DBG] Output layout as 2x2:
-  1 0
-  1 0
-================ conv2x2_top end ==================
-
-[TB] Per-index comparison:
-  idx 0: expected = 1, got = 1
-  idx 1: expected = 0, got = 0
-  idx 2: expected = 1, got = 1
-  idx 3: expected = 0, got = 0
-
 Expected spikes: 1 0 1 0 
 Got spikes     : 1 0 1 0 
-[TB] Output as 2x2:
-  1 0
-  1 0
 TB PASSED
-================ Testbench end ==================
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

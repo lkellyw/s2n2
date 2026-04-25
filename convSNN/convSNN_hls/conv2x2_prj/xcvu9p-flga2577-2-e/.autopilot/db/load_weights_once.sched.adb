@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>84</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -59,7 +59,7 @@
 						<name>loaded_load</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -75,7 +75,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>31</second>
+										<second>30</second>
 									</item>
 								</second>
 							</item>
@@ -88,7 +88,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>48</coreId>
+						<coreId>1701995631</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -112,10 +112,10 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>br_ln31</name>
+						<name>br_ln30</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -131,7 +131,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>31</second>
+										<second>30</second>
 									</item>
 								</second>
 							</item>
@@ -170,10 +170,10 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>conv_weights_0_0_write_ln33</name>
+						<name>conv_weights_0_0_write_ln32</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>33</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -189,7 +189,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>33</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -227,10 +227,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>loaded_write_ln41</name>
+						<name>loaded_write_ln34</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -246,7 +246,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>41</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
@@ -285,10 +285,10 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>br_ln42</name>
+						<name>br_ln35</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -304,7 +304,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>42</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -341,10 +341,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>_ln42</name>
+						<name>_ln35</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>load_weights_once</contextFuncName>
 						<contextNormFuncName>load_weights_once</contextNormFuncName>
 						<inlineStackInfo>
@@ -360,7 +360,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>load_weights_once</second>
 										</first>
-										<second>42</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -373,7 +373,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>846817120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -418,7 +418,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>128</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -449,7 +449,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1314013527</coreId>
+						<coreId>1599294536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>

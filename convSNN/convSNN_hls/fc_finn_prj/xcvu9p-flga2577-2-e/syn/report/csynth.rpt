@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'fc_finn_top'
 ================================================================
 + General Information: 
-    * Date:           Thu Apr 23 02:33:12 2026
+    * Date:           Sat Apr 25 21:40:55 2026
     * Version:        2023.1 (Build 3854077 on May  4 2023)
     * Project:        fc_finn_prj
     * Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
@@ -27,8 +27,8 @@
     |  o VITIS_LOOP_44_1                                             |     -|  7.30|        8|   80.000|         2|        1|     8|       yes|     -|   -|          -|           -|    -|
     | + fc_finn_top_Pipeline_VITIS_LOOP_131_1                        |     -|  3.64|       34|  340.000|         -|       34|     -|        no|     -|   -|  203 (~0%)|   684 (~0%)|    -|
     |  o VITIS_LOOP_131_1                                            |     -|  7.30|       32|  320.000|         2|        1|    32|       yes|     -|   -|          -|           -|    -|
-    | + fc_finn_top_Pipeline_VITIS_LOOP_82_2                         |     -|  5.99|        6|   60.000|         -|        6|     -|        no|     -|   -|    8 (~0%)|    71 (~0%)|    -|
-    |  o VITIS_LOOP_82_2                                             |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
+    | + fc_finn_top_Pipeline_VITIS_LOOP_79_2                         |     -|  5.99|        6|   60.000|         -|        6|     -|        no|     -|   -|    8 (~0%)|    71 (~0%)|    -|
+    |  o VITIS_LOOP_79_2                                             |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
     +----------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
 
 
@@ -119,8 +119,8 @@
 |    tile_1_fu_282_p2                                            | -   |        | tile_1     | add | fabric | 0       |
 |    sf_3_fu_288_p2                                              | -   |        | sf_3       | add | fabric | 0       |
 |    nf_4_fu_310_p2                                              | -   |        | nf_4       | add | fabric | 0       |
-|  + fc_finn_top_Pipeline_VITIS_LOOP_82_2                        | 0   |        |            |     |        |         |
-|    add_ln82_fu_104_p2                                          | -   |        | add_ln82   | add | fabric | 0       |
+|  + fc_finn_top_Pipeline_VITIS_LOOP_79_2                        | 0   |        |            |     |        |         |
+|    add_ln79_fu_104_p2                                          | -   |        | add_ln79   | add | fabric | 0       |
 +----------------------------------------------------------------+-----+--------+------------+-----+--------+---------+
 
 
@@ -165,7 +165,7 @@
 | pipeline        | II=1                                     | ../../../../Documents/s2n2/finn-hlslib-lif/dma.h:141 in mem2stream                                                                 |
 | pipeline        | II=1                                     | ../../../../Documents/s2n2/finn-hlslib-lif/dma.h:154 in stream2mem                                                                 |
 | pipeline        | II=1                                     | ../../../../Documents/s2n2/finn-hlslib-lif/dma.h:224 in genparamstream                                                             |
-| inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/fclayer.h:100 in streamingfclayer_batch                                                 |
+| inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/fclayer.h:103 in streamingfclayer_batch                                                 |
 | inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:61 in xnormul                                                             |
 | inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:66 in operator*                                                           |
 | inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:71 in operator*                                                           |
@@ -354,7 +354,7 @@
 | stream          | variable=in_stream depth=8               | ../fc_finn_top.cpp:41 in fc_finn_top, in_stream                                                                                    |
 | stream          | variable=out_stream depth=8              | ../fc_finn_top.cpp:42 in fc_finn_top, out_stream                                                                                   |
 | pipeline        | II=1                                     | ../fc_finn_top.cpp:45 in fc_finn_top                                                                                               |
-| pipeline        | II=1                                     | ../fc_finn_top.cpp:83 in fc_finn_top                                                                                               |
+| pipeline        | II=1                                     | ../fc_finn_top.cpp:80 in fc_finn_top                                                                                               |
 +-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 

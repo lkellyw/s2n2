@@ -339,11 +339,11 @@
                     <BindInstances>i_3_fu_248_p2 temp_1_fu_490_p2 add_ln165_fu_523_p2 tile_1_fu_282_p2 sf_3_fu_288_p2 nf_4_fu_310_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177</InstName>
-                    <ModuleName>fc_finn_top_Pipeline_VITIS_LOOP_82_2</ModuleName>
+                    <InstName>grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177</InstName>
+                    <ModuleName>fc_finn_top_Pipeline_VITIS_LOOP_79_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>177</ID>
-                    <BindInstances>add_ln82_fu_104_p2</BindInstances>
+                    <BindInstances>add_ln79_fu_104_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>in_stream_fifo_U out_stream_fifo_U fc_weights_0_U</BindInstances>
@@ -573,9 +573,9 @@
             </BindNodes>
         </Module>
         <Module>
-            <Name>fc_finn_top_Pipeline_VITIS_LOOP_82_2</Name>
+            <Name>fc_finn_top_Pipeline_VITIS_LOOP_79_2</Name>
             <Loops>
-                <VITIS_LOOP_82_2/>
+                <VITIS_LOOP_79_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -594,8 +594,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_82_2>
-                        <Name>VITIS_LOOP_82_2</Name>
+                    <VITIS_LOOP_79_2>
+                        <Name>VITIS_LOOP_79_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>4</TripCount>
                         <Latency>4</Latency>
@@ -604,7 +604,7 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_82_2>
+                    </VITIS_LOOP_79_2>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -627,7 +627,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_82_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln82_fu_104_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:82" URAM="0" VARIABLE="add_ln82"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_79_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln79_fu_104_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:79" URAM="0" VARIABLE="add_ln79"/>
             </BindNodes>
         </Module>
         <Module>
@@ -941,7 +941,7 @@
         <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/dma.h:141" status="valid" parentFunction="mem2stream" variable="" isDirective="0" options="II=1"/>
         <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/dma.h:154" status="valid" parentFunction="stream2mem" variable="" isDirective="0" options="II=1"/>
         <Pragma type="pipeline" location="../../../../Documents/s2n2/finn-hlslib-lif/dma.h:224" status="valid" parentFunction="genparamstream" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/fclayer.h:100" status="valid" parentFunction="streamingfclayer_batch" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/fclayer.h:103" status="valid" parentFunction="streamingfclayer_batch" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:61" status="valid" parentFunction="xnormul" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:66" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/interpret.hpp:71" status="valid" parentFunction="operator*" variable="" isDirective="0" options=""/>
@@ -1151,7 +1151,7 @@
         <Pragma type="stream" location="../fc_finn_top.cpp:41" status="valid" parentFunction="fc_finn_top" variable="in_stream" isDirective="0" options="variable=in_stream depth=8"/>
         <Pragma type="stream" location="../fc_finn_top.cpp:42" status="valid" parentFunction="fc_finn_top" variable="out_stream" isDirective="0" options="variable=out_stream depth=8"/>
         <Pragma type="pipeline" location="../fc_finn_top.cpp:45" status="valid" parentFunction="fc_finn_top" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../fc_finn_top.cpp:83" status="valid" parentFunction="fc_finn_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../fc_finn_top.cpp:80" status="valid" parentFunction="fc_finn_top" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

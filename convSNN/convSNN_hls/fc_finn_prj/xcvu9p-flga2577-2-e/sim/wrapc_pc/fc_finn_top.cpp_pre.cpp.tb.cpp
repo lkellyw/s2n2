@@ -87880,11 +87880,13 @@ void Matrix_Vector_Activate_Stream_Batch(hls::stream<TI> &in,
 # 83 "/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h"
 template<
   unsigned int MatrixW, unsigned int MatrixH,
-  unsigned int SIMD, unsigned int PE,
+  unsigned int SIMD, unsigned int SIMDSP, unsigned int PE,
 
   typename TSrcI = Identity,
   typename TDstI = Identity,
   typename TWeightI = Identity,
+
+  typename TD, unsigned int WIDTH, unsigned int I, unsigned int OFMDim,
 
   int InStreamW, int OutStreamW,
   typename TW, typename TA, typename R
@@ -87894,6 +87896,7 @@ void StreamingFCLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
        TW const &weights,
        TA const &activation,
        unsigned const reps,
+       TD decay,
     R const &r) {
 #pragma HLS INLINE
   unsigned const InpPerImage = (MatrixW * TSrcI::width) / InStreamW ;
@@ -87902,10 +87905,10 @@ void StreamingFCLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage> wa_in (in, reps);
   WidthAdjustedOutputStream<PE*TDstI::width, OutStreamW, OutPerImage> wa_out(out, reps);
 
-  Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, PE, 1, TSrcI, TDstI, TWeightI>
+  Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, SIMDSP, PE, 1, TSrcI, TDstI, TWeightI, TD, WIDTH, I, OFMDim>
     (static_cast<hls::stream<ap_uint<SIMD*TSrcI::width>>&>(wa_in),
      static_cast<hls::stream<ap_uint<PE*TDstI::width>>&> (wa_out),
-     weights, activation, reps, r);
+     weights, activation, decay, reps, r);
 }
 # 64 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
 # 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h" 1
@@ -87946,7 +87949,7 @@ void ConvLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage> wa_in (in, reps);
   WidthAdjustedOutputStream <PE*TDstI::width, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)> mvOut (out, reps);
-  hls::stream<ap_uint<SIMD*TSrcI::width> > convInp("StreamingConvLayer_Batch.convInp");
+  hls::stream<ap_uint<SIMD*TSrcI::width>, 1024 > convInp("StreamingConvLayer_Batch.convInp");
   ConvolutionInputGenerator<ConvKernelDim, IFMChannels, TSrcI::width, IFMDim,
    OFMDim, SIMD,1>(wa_in, convInp, reps, ap_resource_dflt());
   Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, SIMDSP, PE, 1, TSrcI, TDstI, TWeightI, TD, WIDTH, I, OFMDim>
@@ -88150,30 +88153,34 @@ void fc_finn_top(const ap_uint<1> in[8], ap_uint<1> out[4]) {
 #pragma HLS PIPELINE II=1
     in_stream.write(in[i]);
   }
-# 56 "/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp"
+
+
+
+
   ap_fixed<16, 6> decay = 0;
 
-  Matrix_Vector_Activate_Batch<
+  StreamingFCLayer_Batch<
       MATRIX_W,
       MATRIX_H,
       SIMD,
       1,
       PE,
-      1,
       Identity,
       Slice<ap_uint<1>, 1>,
       Identity,
       ap_fixed<16, 6>,
       16,
       6,
+      1,
+      1,
       1
   >(
       in_stream,
       out_stream,
       fc_weights,
       0,
-      decay,
       1,
+      decay,
       ap_resource_dflt()
   );
 
@@ -88207,5 +88214,5 @@ apatb_fc_finn_top_ir(in, out);
 return ;
 }
 #endif
-# 86 "/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp"
+# 83 "/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp"
 

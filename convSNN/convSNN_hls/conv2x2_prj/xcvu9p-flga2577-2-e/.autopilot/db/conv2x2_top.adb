@@ -142,7 +142,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>448</coreId>
+              <coreId>112</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -178,7 +178,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916402464</coreId>
+              <coreId>848957280</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -214,7 +214,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852401199</coreId>
+              <coreId>847691664</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -250,7 +250,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>848625992</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -286,7 +286,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916479968</coreId>
+              <coreId>88</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -327,7 +327,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
                         <second>conv2x2_top</second>
                       </first>
-                      <second>93</second>
+                      <second>56</second>
                     </item>
                     <item>
                       <first>
@@ -346,9 +346,9 @@
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
-              <storageDepth>2</storageDepth>
+              <storageDepth>1024</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>conv2x2_top_fifo_w1_d2_S</rtlModuleName>
+              <rtlModuleName>conv2x2_top_fifo_w1_d1024_S</rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -374,7 +374,7 @@
               <name>in_stream</name>
               <fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>72</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>conv2x2_top</contextFuncName>
               <contextNormFuncName>conv2x2_top</contextNormFuncName>
               <inlineStackInfo>
@@ -390,7 +390,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
                         <second>conv2x2_top</second>
                       </first>
-                      <second>72</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -402,9 +402,9 @@
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
-              <storageDepth>8</storageDepth>
+              <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>conv2x2_top_fifo_w1_d8_S</rtlModuleName>
+              <rtlModuleName>conv2x2_top_fifo_w1_d16_S</rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -430,7 +430,7 @@
               <name>out_stream</name>
               <fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>73</lineNumber>
+              <lineNumber>44</lineNumber>
               <contextFuncName>conv2x2_top</contextFuncName>
               <contextNormFuncName>conv2x2_top</contextNormFuncName>
               <inlineStackInfo>
@@ -446,7 +446,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
                         <second>conv2x2_top</second>
                       </first>
-                      <second>73</second>
+                      <second>44</second>
                     </item>
                   </second>
                 </item>
@@ -458,9 +458,9 @@
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
-              <storageDepth>8</storageDepth>
+              <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>conv2x2_top_fifo_w1_d8_S</rtlModuleName>
+              <rtlModuleName>conv2x2_top_fifo_w1_d16_S</rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -502,7 +502,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
                         <second>conv2x2_top</second>
                       </first>
-                      <second>93</second>
+                      <second>56</second>
                     </item>
                     <item>
                       <first>
@@ -572,7 +572,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
                         <second>conv2x2_top</second>
                       </first>
-                      <second>93</second>
+                      <second>56</second>
                     </item>
                     <item>
                       <first>
@@ -623,10 +623,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>_ln48</name>
+              <name>_ln41</name>
               <fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>48</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>conv2x2_top</contextFuncName>
               <contextNormFuncName>conv2x2_top</contextNormFuncName>
               <inlineStackInfo>
@@ -642,13 +642,13 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
                         <second>conv2x2_top</second>
                       </first>
-                      <second>48</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>call_ln48_load_weights_once_fu_147</rtlName>
+              <rtlName>call_ln41_load_weights_once_fu_147</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -699,7 +699,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916830000</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -742,7 +742,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916794944</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -828,7 +828,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916811328</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -910,14 +910,14 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130</rtlName>
+              <rtlName>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916794944</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1009,7 +1009,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916808816</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1100,7 +1100,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916759952</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1187,7 +1187,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916776336</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1281,7 +1281,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916759952</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1361,14 +1361,14 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170</rtlName>
+              <rtlName>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916773824</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1399,10 +1399,10 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>_ln135</name>
+              <name>_ln91</name>
               <fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>91</lineNumber>
               <contextFuncName>conv2x2_top</contextFuncName>
               <contextNormFuncName>conv2x2_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1418,7 +1418,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
                         <second>conv2x2_top</second>
                       </first>
-                      <second>135</second>
+                      <second>91</second>
                     </item>
                   </second>
                 </item>
@@ -1476,7 +1476,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916139792</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1507,7 +1507,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1330007625</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1520,7 +1520,7 @@
             <Obj>
               <type>2</type>
               <id>83</id>
-              <name>conv2x2_top_Pipeline_VITIS_LOOP_77_1</name>
+              <name>conv2x2_top_Pipeline_VITIS_LOOP_48_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1538,13 +1538,13 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916593824</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_77_1&gt;</content>
+          <content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_48_1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_35">
           <Value>
@@ -1600,7 +1600,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>916139792</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1613,7 +1613,7 @@
             <Obj>
               <type>2</type>
               <id>108</id>
-              <name>conv2x2_top_Pipeline_VITIS_LOOP_121_2</name>
+              <name>conv2x2_top_Pipeline_VITIS_LOOP_87_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1631,13 +1631,13 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1330007625</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_121_2&gt;</content>
+          <content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_87_2&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -2666,28 +2666,13 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>call_ln48_load_weights_once_fu_147 (load_weights_once)</first>
+          <first>call_ln41_load_weights_once_fu_147 (load_weights_once)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>1</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
               <second>2</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170 (conv2x2_top_Pipeline_VITIS_LOOP_121_2)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>8</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>71</second>
             </item>
           </second>
         </item>
@@ -2722,7 +2707,7 @@
           </second>
         </item>
         <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130 (conv2x2_top_Pipeline_VITIS_LOOP_77_1)</first>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130 (conv2x2_top_Pipeline_VITIS_LOOP_48_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2733,6 +2718,21 @@
             <item>
               <first>LUT</first>
               <second>91</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170 (conv2x2_top_Pipeline_VITIS_LOOP_87_2)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>71</second>
             </item>
           </second>
         </item>
@@ -2751,7 +2751,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Depth)</first>
-              <second>2</second>
+              <second>1024</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -2759,15 +2759,15 @@
             </item>
             <item>
               <first>(2Size:D*B)</first>
-              <second>2</second>
+              <second>1024</second>
             </item>
             <item>
               <first>FF</first>
-              <second>8</second>
+              <second>12</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>10</second>
+              <second>60</second>
             </item>
           </second>
         </item>
@@ -2778,7 +2778,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Depth)</first>
-              <second>8</second>
+              <second>16</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -2786,15 +2786,15 @@
             </item>
             <item>
               <first>(2Size:D*B)</first>
-              <second>8</second>
+              <second>16</second>
             </item>
             <item>
               <first>FF</first>
-              <second>6</second>
+              <second>7</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>15</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -2805,7 +2805,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Depth)</first>
-              <second>8</second>
+              <second>16</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -2813,15 +2813,15 @@
             </item>
             <item>
               <first>(2Size:D*B)</first>
-              <second>8</second>
+              <second>16</second>
             </item>
             <item>
               <first>FF</first>
-              <second>6</second>
+              <second>7</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>15</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -3115,25 +3115,6 @@
           </second>
         </item>
         <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170_ap_start_reg</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>1</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_155_ap_start_reg</first>
           <second>
             <count>3</count>
@@ -3172,7 +3153,26 @@
           </second>
         </item>
         <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130_ap_start_reg</first>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130_ap_start_reg</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>1</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3195,14 +3195,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item>
-          <first>call_ln48_load_weights_once_fu_147</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170</first>
+          <first>call_ln41_load_weights_once_fu_147</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -3223,7 +3216,14 @@
           </second>
         </item>
         <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130</first>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -3234,19 +3234,11 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>call_ln48_load_weights_once_fu_147 (load_weights_once)</first>
+          <first>call_ln41_load_weights_once_fu_147 (load_weights_once)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>43</item>
-          </second>
-        </item>
-        <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170 (conv2x2_top_Pipeline_VITIS_LOOP_121_2)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>61</item>
           </second>
         </item>
         <item>
@@ -3266,11 +3258,19 @@
           </second>
         </item>
         <item>
-          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130 (conv2x2_top_Pipeline_VITIS_LOOP_77_1)</first>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130 (conv2x2_top_Pipeline_VITIS_LOOP_48_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>49</item>
+          </second>
+        </item>
+        <item>
+          <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170 (conv2x2_top_Pipeline_VITIS_LOOP_87_2)</first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>61</item>
           </second>
         </item>
       </dp_component_map>
@@ -3683,20 +3683,11 @@
       <count>5</count>
       <item_version>0</item_version>
       <item>
-        <first>call_ln48_load_weights_once_fu_147</first>
+        <first>call_ln41_load_weights_once_fu_147</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>43</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>61</item>
-          <item>61</item>
         </second>
       </item>
       <item>
@@ -3718,12 +3709,21 @@
         </second>
       </item>
       <item>
-        <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130</first>
+        <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
           <item>49</item>
           <item>49</item>
+        </second>
+      </item>
+      <item>
+        <first>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>61</item>
+          <item>61</item>
         </second>
       </item>
     </dp_fu_nodes_module>

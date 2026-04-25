@@ -5838,6 +5838,11 @@ inline __attribute__((nodebug)) bool operator!=(
 # 361 "/tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_int.h" 2
 # 3 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
+
+# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 1
+# 48 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h"
+# 1 "/tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_int.h" 1
+# 49 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 1 3
 # 37 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 3
 
@@ -33806,13 +33811,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 5 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
-
-# 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 1
-# 48 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h"
-# 1 "/tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_int.h" 1
-# 49 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
-
+# 50 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
 
 
 using namespace hls;
@@ -41201,7 +41200,7 @@ void ConvLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage> wa_in (in, reps);
   WidthAdjustedOutputStream <PE*TDstI::width, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)> mvOut (out, reps);
-  hls::stream<ap_uint<SIMD*TSrcI::width> > convInp("StreamingConvLayer_Batch.convInp");
+  hls::stream<ap_uint<SIMD*TSrcI::width>, 1024 > convInp("StreamingConvLayer_Batch.convInp");
   ConvolutionInputGenerator<ConvKernelDim, IFMChannels, TSrcI::width, IFMDim,
    OFMDim, SIMD,1>(wa_in, convInp, reps, ap_resource_dflt());
   Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, SIMDSP, PE, 1, TSrcI, TDstI, TWeightI, TD, WIDTH, I, OFMDim>
@@ -41332,7 +41331,7 @@ void Vector_Vector_Activate_Batch(hls::stream<TI> &in,
   }
 }
 # 66 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 7 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 6 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 
 
@@ -41357,7 +41356,7 @@ static const unsigned PE = 1;
 
 typedef ap_int<8> WT;
 typedef ap_fixed<16,8> NEU_T;
-# 12 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 11 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 # 1 "/home/coder/Desktop/s2n2/convSNN/conv2x2_ref.h" 1
 
 
@@ -41365,7 +41364,7 @@ typedef ap_fixed<16,8> NEU_T;
 static const int IN_FM[4] = {1, 0, 1, 0};
 static const int W_VAL = 3;
 static const int EXPECT_SPK[4] = {1, 0, 1, 0};
-# 13 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 12 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 static FixedPointWeightsSp<
     SIMD,
@@ -41388,45 +41387,31 @@ static void load_weights_once() {
 
   conv_weights.m_weights[0][0] = ap_uint<SIMD * WT::width>(W_VAL & 0xFF);
 
-
-
-
-
-
-
   loaded = true;
 }
 
 __attribute__((sdx_kernel("conv2x2_top", 0))) void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
 #line 37 "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2.tcl"
 #pragma HLSDIRECTIVE TOP name=conv2x2_top
-# 44 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp"
+# 37 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp"
 
 #pragma HLS ARRAY_PARTITION variable=in complete dim=1
 #pragma HLS ARRAY_PARTITION variable=out complete dim=1
 
  load_weights_once();
-# 72 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp"
+
   hls::stream<ap_uint<1> > in_stream("in_stream");
   hls::stream<ap_uint<1> > out_stream("out_stream");
-#pragma HLS STREAM variable=in_stream depth=8
-#pragma HLS STREAM variable=out_stream depth=8
+#pragma HLS STREAM variable=in_stream depth=16
+#pragma HLS STREAM variable=out_stream depth=16
 
- VITIS_LOOP_77_1: for (int i = 0; i < 4; i++) {
+ VITIS_LOOP_48_1: for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
-
-
-
  in_stream.write(in[i]);
   }
 
   DummyActivation act;
-  NEU_T decay = NEU_T(0.0);
-
-
-
-
-
+  NEU_T decay = NEU_T(0);
 
   ConvLayer_Batch<
       KERNEL_DIM,
@@ -41434,14 +41419,21 @@ __attribute__((sdx_kernel("conv2x2_top", 0))) void conv2x2_top(const ap_uint<1> 
       IFM_DIM,
       OFM_CH,
       OFM_DIM,
+
       SIMD,
       SIMDSP,
       PE,
+
       Identity,
-      Slice<ap_uint<1>,1>,
+      Slice<ap_uint<1>, 1>,
       Identity,
-      NEU_T, 16, 8,
-      1, 1
+
+      NEU_T,
+      16,
+      8,
+
+      1,
+      1
   >(
       in_stream,
       out_stream,
@@ -41452,22 +41444,8 @@ __attribute__((sdx_kernel("conv2x2_top", 0))) void conv2x2_top(const ap_uint<1> 
       ap_resource_dflt()
   );
 
-
-
-
-
-  VITIS_LOOP_121_2: for (int i = 0; i < 4; i++) {
+  VITIS_LOOP_87_2: for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
  out[i] = out_stream.read();
-
-
-
   }
-
-
-
-
-
-
-
 }

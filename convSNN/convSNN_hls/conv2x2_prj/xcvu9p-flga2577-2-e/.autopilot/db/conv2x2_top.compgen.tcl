@@ -6,17 +6,17 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler conv2x2_top_fifo_w1_d2_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {convInp_U}
+	::AP::rtl_comp_handler conv2x2_top_fifo_w1_d1024_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {convInp_U}
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler conv2x2_top_fifo_w1_d8_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {in_stream_U}
+	::AP::rtl_comp_handler conv2x2_top_fifo_w1_d16_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {in_stream_U}
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler conv2x2_top_fifo_w1_d8_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {out_stream_U}
+	::AP::rtl_comp_handler conv2x2_top_fifo_w1_d16_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {out_stream_U}
 }
 
 

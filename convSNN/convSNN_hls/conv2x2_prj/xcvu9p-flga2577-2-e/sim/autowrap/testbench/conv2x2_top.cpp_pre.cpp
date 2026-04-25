@@ -83368,7 +83368,6 @@ inline bool operator!=(
 # 3 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 
-
 # 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 1
 # 48 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
@@ -87940,7 +87939,7 @@ void ConvLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
   unsigned const InpPerImage = IFMDim*IFMDim*IFMChannels/InStreamW * TSrcI::width;
   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage> wa_in (in, reps);
   WidthAdjustedOutputStream <PE*TDstI::width, OutStreamW, OFMDim * OFMDim * (OFMChannels / PE)> mvOut (out, reps);
-  hls::stream<ap_uint<SIMD*TSrcI::width> > convInp("StreamingConvLayer_Batch.convInp");
+  hls::stream<ap_uint<SIMD*TSrcI::width>, 1024 > convInp("StreamingConvLayer_Batch.convInp");
   ConvolutionInputGenerator<ConvKernelDim, IFMChannels, TSrcI::width, IFMDim,
    OFMDim, SIMD,1>(wa_in, convInp, reps, ap_resource_dflt());
   Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, SIMDSP, PE, 1, TSrcI, TDstI, TWeightI, TD, WIDTH, I, OFMDim>
@@ -88071,13 +88070,13 @@ void Vector_Vector_Activate_Batch(hls::stream<TI> &in,
   }
 }
 # 65 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
-# 7 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 6 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 # 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp" 1
-# 8 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 7 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 # 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h" 1
-# 9 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 8 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 # 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp" 1
-# 10 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 9 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 # 1 "/home/coder/Desktop/s2n2/convSNN/conv2x2_config.h" 1
 
@@ -88099,7 +88098,7 @@ static const unsigned PE = 1;
 
 typedef ap_int<8> WT;
 typedef ap_fixed<16,8> NEU_T;
-# 12 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 11 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 # 1 "/home/coder/Desktop/s2n2/convSNN/conv2x2_ref.h" 1
 
 
@@ -88107,7 +88106,7 @@ typedef ap_fixed<16,8> NEU_T;
 static const int IN_FM[4] = {1, 0, 1, 0};
 static const int W_VAL = 3;
 static const int EXPECT_SPK[4] = {1, 0, 1, 0};
-# 13 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
+# 12 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp" 2
 
 static FixedPointWeightsSp<
     SIMD,
@@ -88130,12 +88129,6 @@ static void load_weights_once() {
 
   conv_weights.m_weights[0][0] = ap_uint<SIMD * WT::width>(W_VAL & 0xFF);
 
-
-  std::cout << "[DBG] load_weights_once()" << std::endl;
-  std::cout << "[DBG] W_VAL = " << W_VAL << std::endl;
-  std::cout << "[DBG] packed weight raw = " << conv_weights.m_weights[0][0] << std::endl;
-
-
   loaded = true;
 }
 
@@ -88145,48 +88138,18 @@ void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
 
   load_weights_once();
 
-
-  std::cout << "================ conv2x2_top begin ================" << std::endl;
-  std::cout << "[DBG] Config:" << std::endl;
-  std::cout << "  KERNEL_DIM = " << KERNEL_DIM << std::endl;
-  std::cout << "  IFM_CH     = " << IFM_CH << std::endl;
-  std::cout << "  IFM_DIM    = " << IFM_DIM << std::endl;
-  std::cout << "  OFM_CH     = " << OFM_CH << std::endl;
-  std::cout << "  OFM_DIM    = " << OFM_DIM << std::endl;
-  std::cout << "  SIMD       = " << SIMD << std::endl;
-  std::cout << "  SIMDSP     = " << SIMDSP << std::endl;
-  std::cout << "  PE         = " << PE << std::endl;
-
-  std::cout << "[DBG] Input array:" << std::endl;
-  for (int i = 0; i < 4; i++) {
-    std::cout << "  in[" << i << "] = " << (int)in[i] << std::endl;
-  }
-
-  std::cout << "[DBG] Input layout as 2x2:" << std::endl;
-  std::cout << "  " << (int)in[0] << " " << (int)in[1] << std::endl;
-  std::cout << "  " << (int)in[2] << " " << (int)in[3] << std::endl;
-
-
   hls::stream<ap_uint<1> > in_stream("in_stream");
   hls::stream<ap_uint<1> > out_stream("out_stream");
-#pragma HLS STREAM variable=in_stream depth=8
-#pragma HLS STREAM variable=out_stream depth=8
+#pragma HLS STREAM variable=in_stream depth=16
+#pragma HLS STREAM variable=out_stream depth=16
 
   for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
-
-    std::cout << "[DBG] write in_stream[" << i << "] = " << (int)in[i] << std::endl;
-
     in_stream.write(in[i]);
   }
 
   DummyActivation act;
-  NEU_T decay = NEU_T(0.0);
-
-
-  std::cout << "[DBG] decay = " << decay << std::endl;
-  std::cout << "[DBG] Calling ConvLayer_Batch..." << std::endl;
-
+  NEU_T decay = NEU_T(0);
 
   ConvLayer_Batch<
       KERNEL_DIM,
@@ -88194,14 +88157,21 @@ void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
       IFM_DIM,
       OFM_CH,
       OFM_DIM,
+
       SIMD,
       SIMDSP,
       PE,
+
       Identity,
-      Slice<ap_uint<1>,1>,
+      Slice<ap_uint<1>, 1>,
       Identity,
-      NEU_T, 16, 8,
-      1, 1
+
+      NEU_T,
+      16,
+      8,
+
+      1,
+      1
   >(
       in_stream,
       out_stream,
@@ -88212,22 +88182,8 @@ void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
       ap_resource_dflt()
   );
 
-
-  std::cout << "[DBG] Returned from ConvLayer_Batch" << std::endl;
-
-
   for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
     out[i] = out_stream.read();
-
-    std::cout << "[DBG] read out_stream[" << i << "] = " << (int)out[i] << std::endl;
-
   }
-
-
-  std::cout << "[DBG] Output layout as 2x2:" << std::endl;
-  std::cout << "  " << (int)out[0] << " " << (int)out[1] << std::endl;
-  std::cout << "  " << (int)out[2] << " " << (int)out[3] << std::endl;
-  std::cout << "================ conv2x2_top end ==================" << std::endl;
-
 }

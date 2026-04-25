@@ -69,7 +69,7 @@ wire   [1:0] cntr_3_fu_123_p2;
 wire    ap_loop_init;
 reg   [1:0] ap_sig_allocacmp_cntr_2;
 reg   [2:0] i_2_fu_72;
-wire   [2:0] i_3_fu_117_p2;
+wire   [2:0] i_4_fu_117_p2;
 reg   [2:0] ap_sig_allocacmp_i;
 wire   [0:0] outElem_fu_213_p2;
 reg    ap_block_pp0_stage0_01001;
@@ -178,7 +178,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln131_fu_111_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_2_fu_72 <= i_3_fu_117_p2;
+            i_2_fu_72 <= i_4_fu_117_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             i_2_fu_72 <= 3'd0;
         end
@@ -344,7 +344,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign cntr_3_fu_123_p2 = (ap_sig_allocacmp_cntr_2 + 2'd1);
 
-assign i_3_fu_117_p2 = (ap_sig_allocacmp_i + 3'd1);
+assign i_4_fu_117_p2 = (ap_sig_allocacmp_i + 3'd1);
 
 assign icmp_ln131_fu_111_p2 = ((ap_sig_allocacmp_i == 3'd4) ? 1'b1 : 1'b0);
 

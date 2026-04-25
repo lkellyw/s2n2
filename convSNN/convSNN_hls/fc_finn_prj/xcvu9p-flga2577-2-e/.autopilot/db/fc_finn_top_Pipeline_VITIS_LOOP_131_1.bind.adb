@@ -314,7 +314,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -356,7 +356,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782974896</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -398,7 +398,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>2438721120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -440,7 +440,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782712896</coreId>
+						<coreId>3</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -482,7 +482,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2980965632</coreId>
+						<coreId>2438856544</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -524,7 +524,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782712416</coreId>
+						<coreId>2438764832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -566,7 +566,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782711952</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -608,7 +608,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782665152</coreId>
+						<coreId>2439398592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -650,7 +650,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2980985696</coreId>
+						<coreId>2438856544</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -692,7 +692,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782666176</coreId>
+						<coreId>2438502272</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -735,7 +735,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783150656</coreId>
+						<coreId>2438856544</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -778,7 +778,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782629760</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -821,7 +821,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782630272</coreId>
+						<coreId>2439226304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -864,7 +864,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783275344</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -900,14 +900,21 @@
 							<item class_id="11" tracking_level="0" version="0">
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second class_id="12" tracking_level="0" version="0">
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item class_id="13" tracking_level="0" version="0">
 										<first class_id="14" tracking_level="0" version="0">
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -927,7 +934,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>542329928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -964,14 +971,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -991,7 +1005,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782629856</coreId>
+						<coreId>304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>6</bitwidth>
@@ -1028,14 +1042,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1055,7 +1076,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783278240</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1092,14 +1113,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1156,14 +1184,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1220,14 +1255,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1247,7 +1289,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439400112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1285,14 +1327,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1312,7 +1361,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783281136</coreId>
+						<coreId>2439394160</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1348,14 +1397,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1375,7 +1431,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783123992</coreId>
+						<coreId>2439221784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -1411,14 +1467,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1475,14 +1538,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1540,14 +1610,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1567,7 +1644,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1868767266</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1603,14 +1680,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1630,7 +1714,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>384</coreId>
+						<coreId>2439214608</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1666,14 +1750,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1693,7 +1784,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2037672306</coreId>
+						<coreId>2439216952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1729,14 +1820,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1756,7 +1854,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783127056</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1792,14 +1890,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1819,7 +1924,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819113532</coreId>
+						<coreId>2439409952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1855,14 +1960,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1882,7 +1994,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783138864</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1918,14 +2030,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -1945,7 +2064,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783140496</coreId>
+						<coreId>2439233432</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1981,14 +2100,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2008,7 +2134,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1702043749</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2044,14 +2170,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2122,7 +2255,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852729702</coreId>
+						<coreId>171847458</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2158,14 +2291,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2222,14 +2362,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2249,7 +2396,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701998624</coreId>
+						<coreId>842690672</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2300,14 +2447,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2327,7 +2481,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1634559841</coreId>
+						<coreId>2439423360</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2364,14 +2518,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2391,7 +2552,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2427,14 +2588,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2454,7 +2622,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783297120</coreId>
+						<coreId>2439426416</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2491,14 +2659,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2518,7 +2693,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783299472</coreId>
+						<coreId>2439432480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2554,14 +2729,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2581,7 +2763,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783301856</coreId>
+						<coreId>2439433712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2618,14 +2800,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2645,7 +2834,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>759</coreId>
+						<coreId>2439436256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2681,14 +2870,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2708,7 +2904,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783307904</coreId>
+						<coreId>2438856544</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2745,14 +2941,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2772,7 +2975,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783181104</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2808,14 +3011,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2835,7 +3045,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2</coreId>
+						<coreId>2439255576</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2872,14 +3082,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2899,7 +3116,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783167040</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2935,14 +3152,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -2962,7 +3186,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>2439258048</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2999,14 +3223,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3026,7 +3257,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439261392</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3062,14 +3293,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3089,7 +3327,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783135152</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3126,14 +3364,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3153,7 +3398,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>2439270800</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3189,14 +3434,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3216,7 +3468,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783180640</coreId>
+						<coreId>2439297696</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3253,14 +3505,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3280,7 +3539,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869098792</coreId>
+						<coreId>1599294536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3322,7 +3581,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869833586</coreId>
+						<coreId>2439223632</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3375,14 +3634,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3402,7 +3668,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>892155696</coreId>
+						<coreId>1819113532</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3439,14 +3705,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3466,7 +3739,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1769299824</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -3502,14 +3775,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3566,14 +3846,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3593,7 +3880,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1866739570</coreId>
+						<coreId>2439288144</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -3629,14 +3916,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3656,7 +3950,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1013277545</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -3692,14 +3986,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3719,7 +4020,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2228334</coreId>
+						<coreId>2439294976</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -3755,14 +4056,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3782,7 +4090,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539770424</coreId>
+						<coreId>2439327344</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -3818,14 +4126,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3886,14 +4201,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3913,7 +4235,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1096045407</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3952,14 +4274,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -3979,7 +4308,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1179535650</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -4015,14 +4344,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4079,14 +4415,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4144,14 +4487,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4171,7 +4521,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439302592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -4207,14 +4557,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4234,7 +4591,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783135152</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>5</bitwidth>
@@ -4272,14 +4629,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>3</count>
+									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4342,14 +4706,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4407,14 +4778,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4434,7 +4812,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783224032</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4472,14 +4850,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4499,7 +4884,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783226320</coreId>
+						<coreId>2439328096</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -4535,14 +4920,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4599,14 +4991,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4663,14 +5062,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4727,14 +5133,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4791,14 +5204,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4818,7 +5238,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783237504</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4856,14 +5276,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4883,7 +5310,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783135152</coreId>
+						<coreId>2439345400</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4922,14 +5349,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -4949,7 +5383,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783243440</coreId>
+						<coreId>2439349656</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4988,14 +5422,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5051,14 +5492,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5115,14 +5563,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5142,7 +5597,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702258035</coreId>
+						<coreId>2439357152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5180,14 +5635,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5207,7 +5669,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783272816</coreId>
+						<coreId>2439360416</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5250,14 +5712,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5277,7 +5746,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>2905</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5315,14 +5784,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5342,7 +5818,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>480</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5378,14 +5854,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5405,7 +5888,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783262272</coreId>
+						<coreId>1819113532</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5443,14 +5926,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5470,7 +5960,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783264752</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5506,14 +5996,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5533,7 +6030,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439375856</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5571,14 +6068,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5598,7 +6102,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783270176</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5634,14 +6138,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5661,7 +6172,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783269216</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5699,14 +6210,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5726,7 +6244,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783269216</coreId>
+						<coreId>2439385248</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5768,7 +6286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783318384</coreId>
+						<coreId>2439445872</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5804,14 +6322,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5831,7 +6356,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784</coreId>
+						<coreId>1852795252</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5874,14 +6399,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5901,7 +6433,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783324592</coreId>
+						<coreId>2439454576</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5939,14 +6471,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -5966,7 +6505,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783328512</coreId>
+						<coreId>2439458920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6002,14 +6541,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6029,7 +6575,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>574452846</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6067,14 +6613,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6094,7 +6647,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6130,14 +6683,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6157,7 +6717,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439468480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6195,14 +6755,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6222,7 +6789,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1868767291</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6258,14 +6825,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6285,7 +6859,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783342336</coreId>
+						<coreId>575952208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6323,14 +6897,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6350,7 +6931,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783330304</coreId>
+						<coreId>1145981250</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6386,14 +6967,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6413,7 +7001,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783347704</coreId>
+						<coreId>1634755954</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6455,7 +7043,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783350256</coreId>
+						<coreId>1868767232</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6494,14 +7082,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6559,14 +7154,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6623,14 +7225,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6687,14 +7296,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6752,14 +7368,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6817,14 +7440,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6844,7 +7474,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783353984</coreId>
+						<coreId>1394617465</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6883,14 +7513,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6910,7 +7547,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783350112</coreId>
+						<coreId>1869376609</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6949,14 +7586,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -6976,7 +7620,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783367360</coreId>
+						<coreId>1918857313</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7015,14 +7659,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -7042,7 +7693,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1699560457</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7078,14 +7729,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -7105,7 +7763,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783371616</coreId>
+						<coreId>807418469</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7143,14 +7801,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -7170,7 +7835,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783374048</coreId>
+						<coreId>757935405</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7209,14 +7874,21 @@
 							<item>
 								<first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>58</second>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+											<second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+										</first>
+										<second>110</second>
 									</item>
 									<item>
 										<first>
@@ -7236,7 +7908,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439498688</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7278,7 +7950,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439519808</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7323,7 +7995,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783180144</coreId>
+						<coreId>2439273744</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7447,7 +8119,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783382344</coreId>
+						<coreId>2439518864</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>6</bitwidth>
@@ -7478,7 +8150,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783383776</coreId>
+						<coreId>2439522720</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7540,7 +8212,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783363072</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -7602,7 +8274,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783386912</coreId>
+						<coreId>2439525296</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -7633,7 +8305,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3088038927</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7664,7 +8336,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783388736</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -7695,7 +8367,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783389184</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -7726,7 +8398,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783361376</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -7757,7 +8429,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -7819,7 +8491,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783393664</coreId>
+						<coreId>33686528</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -7912,7 +8584,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783395488</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7943,7 +8615,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783396848</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7974,7 +8646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2439536560</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -8005,7 +8677,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783398336</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -8036,7 +8708,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783383632</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -8188,7 +8860,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>2439369376</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8228,7 +8900,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1162363731</coreId>
+					<coreId>2439234864</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8260,7 +8932,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783291264</coreId>
+					<coreId>2439422912</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8292,7 +8964,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783296176</coreId>
+					<coreId>980447336</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8324,7 +8996,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783301824</coreId>
+					<coreId>2439435296</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8356,7 +9028,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>480</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8388,7 +9060,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2</coreId>
+					<coreId>1769234797</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8420,7 +9092,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1699560457</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8452,7 +9124,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1667585631</coreId>
+					<coreId>2439267384</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8484,7 +9156,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783179696</coreId>
+					<coreId>2439273616</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8516,7 +9188,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1965162612</coreId>
+					<coreId>2439279792</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8570,7 +9242,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1768448768</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8603,7 +9275,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>2439353216</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8635,7 +9307,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783253200</coreId>
+					<coreId>2439353824</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8666,7 +9338,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783255744</coreId>
+					<coreId>2439363232</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8698,7 +9370,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783261328</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8730,7 +9402,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783267048</coreId>
+					<coreId>111</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8762,7 +9434,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>2439382056</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8794,7 +9466,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783317856</coreId>
+					<coreId>176</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8825,7 +9497,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1819113532</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8856,7 +9528,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783323648</coreId>
+					<coreId>1919905893</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8888,7 +9560,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783328976</coreId>
+					<coreId>1702258035</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8920,7 +9592,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783335792</coreId>
+					<coreId>976433978</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8952,7 +9624,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>2439474176</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8984,7 +9656,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>304</coreId>
+					<coreId>2439479968</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -9015,7 +9687,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783350208</coreId>
+					<coreId>875641456</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -9055,7 +9727,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2783372336</coreId>
+					<coreId>1701998624</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -9088,7 +9760,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>480</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

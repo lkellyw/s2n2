@@ -4,7 +4,7 @@ sv xil_defaultlib "fc_finn_top_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_
 sv xil_defaultlib "fc_finn_top_load_weights_once.v"
 sv xil_defaultlib "fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_44_1.v"
 sv xil_defaultlib "fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1.v"
-sv xil_defaultlib "fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_82_2.v"
+sv xil_defaultlib "fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_79_2.v"
 sv xil_defaultlib "fc_finn_top.v"
 sv xil_defaultlib "fc_finn_top_flow_control_loop_pipe_sequential_init.v"
 sv xil_defaultlib "fc_finn_top_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2_FC_W_ROM_AUTO_1R.v"

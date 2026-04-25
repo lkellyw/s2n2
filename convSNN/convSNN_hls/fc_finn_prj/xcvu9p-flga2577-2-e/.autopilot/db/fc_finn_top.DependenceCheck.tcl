@@ -14,8 +14,8 @@ set RtlHierarchyInfo {[
 	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161.mux_8_3_1_1_1_U15"},
 	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161.mux_4_2_16_1_1_U16"},
 	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161.flow_control_loop_pipe_sequential_init_U"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177"},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177.flow_control_loop_pipe_sequential_init_U"},
 	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.in_stream_fifo_U"},
 	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.out_stream_fifo_U"}]}
 set DependenceCheckSize 0

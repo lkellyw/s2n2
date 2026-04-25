@@ -190,10 +190,10 @@ if.end.i:2 %icmp_ln131 = icmp_eq  i3 %i, i3 4
 
 <Node id="20" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-if.end.i:3 %i_3 = add i3 %i, i3 1
+if.end.i:3 %i_4 = add i3 %i, i3 1
 
 ]]></Node>
-<StgValue><ssdm name="i_3"/></StgValue>
+<StgValue><ssdm name="i_4"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -237,7 +237,7 @@ if.end.i.split4:1 %cntr_3 = add i2 %cntr_2, i2 1
 
 <Node id="57" bw="0" op_0_bw="3" op_1_bw="3" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-if.end.i.split4:2 %store_ln131 = store i3 %i_3, i3 %i_2
+if.end.i.split4:2 %store_ln131 = store i3 %i_4, i3 %i_2
 
 ]]></Node>
 <StgValue><ssdm name="store_ln131"/></StgValue>
@@ -850,9 +850,9 @@ if.end.i.split4:4 %br_ln131 = br void %if.end.i
 </dataflow>
 <dataflow id="126" from="StgValue_125" to="icmp_ln131" fromId="125" toId="15">
 </dataflow>
-<dataflow id="127" from="i" to="i_3" fromId="14" toId="16">
+<dataflow id="127" from="i" to="i_4" fromId="14" toId="16">
 </dataflow>
-<dataflow id="129" from="StgValue_128" to="i_3" fromId="128" toId="16">
+<dataflow id="129" from="StgValue_128" to="i_4" fromId="128" toId="16">
 </dataflow>
 <dataflow id="130" from="icmp_ln131" to="br_ln131" fromId="15" toId="17">
 </dataflow>
@@ -860,7 +860,7 @@ if.end.i.split4:4 %br_ln131 = br void %if.end.i
 </dataflow>
 <dataflow id="133" from="StgValue_132" to="cntr_3" fromId="132" toId="18">
 </dataflow>
-<dataflow id="134" from="i_3" to="store_ln131" fromId="16" toId="19">
+<dataflow id="134" from="i_4" to="store_ln131" fromId="16" toId="19">
 </dataflow>
 <dataflow id="135" from="i_2" to="store_ln131" fromId="6" toId="19">
 </dataflow>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fc_finn_top'
 ================================================================
-* Date:           Thu Apr 23 02:33:12 2026
+* Date:           Sat Apr 25 21:40:55 2026
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        fc_finn_prj
@@ -41,7 +41,7 @@
         |grp_load_weights_once_fu_138                      |load_weights_once                      |        1|       35|  10.000 ns|   0.350 us|    1|   35|       no|
         |grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148   |fc_finn_top_Pipeline_VITIS_LOOP_44_1   |       10|       10|   0.100 us|   0.100 us|   10|   10|       no|
         |grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161  |fc_finn_top_Pipeline_VITIS_LOOP_131_1  |       34|       34|   0.340 us|   0.340 us|   34|   34|       no|
-        |grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177   |fc_finn_top_Pipeline_VITIS_LOOP_82_2   |        6|        6|  60.000 ns|  60.000 ns|    6|    6|       no|
+        |grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177   |fc_finn_top_Pipeline_VITIS_LOOP_79_2   |        6|        6|  60.000 ns|  60.000 ns|    6|    6|       no|
         +--------------------------------------------------+---------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
 
         * Loop: 
@@ -82,7 +82,7 @@
     +--------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
     |grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161  |fc_finn_top_Pipeline_VITIS_LOOP_131_1  |        0|   0|  203|  684|    0|
     |grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148   |fc_finn_top_Pipeline_VITIS_LOOP_44_1   |        0|   0|    8|  116|    0|
-    |grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177   |fc_finn_top_Pipeline_VITIS_LOOP_82_2   |        0|   0|    8|   71|    0|
+    |grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177   |fc_finn_top_Pipeline_VITIS_LOOP_79_2   |        0|   0|    8|   71|    0|
     |grp_load_weights_once_fu_138                      |load_weights_once                      |        0|   0|   28|  173|    0|
     +--------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
     |Total                                             |                                       |        0|   0|  247| 1044|    0|
@@ -136,7 +136,7 @@
     |ap_CS_fsm                                                      |  10|   0|   10|          0|
     |grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_ap_start_reg  |   1|   0|    1|          0|
     |grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148_ap_start_reg   |   1|   0|    1|          0|
-    |grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg   |   1|   0|    1|          0|
+    |grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg   |   1|   0|    1|          0|
     |grp_load_weights_once_fu_138_ap_start_reg                      |   1|   0|    1|          0|
     +---------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                          |  14|   0|   14|          0|
@@ -257,7 +257,7 @@ ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_17 = wait i32 @_ssdm_op_Wait
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 31 [1/1] (0.00ns)   --->   "%empty_18 = wait i32 @_ssdm_op_Wait"   --->   Operation 31 'wait' 'empty_18' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_82_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_79_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 1.31>
 ST_10 : Operation 33 [1/1] (0.00ns)   --->   "%spectopmodule_ln33 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:33]   --->   Operation 33 'spectopmodule' 'spectopmodule_ln33' <Predicate = true> <Delay = 0.00>
@@ -289,8 +289,8 @@ ST_10 : Operation 58 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op
 ST_10 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %in_stream, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 60 [1/1] (0.00ns)   --->   "%empty_13 = specchannel i32 @_ssdm_op_SpecChannel, void @out_stream_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i1 %out_stream, i1 %out_stream"   --->   Operation 60 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %out_stream, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 62 [1/2] (1.31ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_82_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 62 'call' 'call_ln0' <Predicate = true> <Delay = 1.31> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%ret_ln86 = ret" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:86]   --->   Operation 63 'ret' 'ret_ln86' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 62 [1/2] (1.31ns)   --->   "%call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_79_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream"   --->   Operation 62 'call' 'call_ln0' <Predicate = true> <Delay = 1.31> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%ret_ln83 = ret" [/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp:83]   --->   Operation 63 'ret' 'ret_ln83' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -377,7 +377,7 @@ specinterface_ln0  (specinterface) [ 00000000000]
 empty_13           (specchannel  ) [ 00000000000]
 specinterface_ln0  (specinterface) [ 00000000000]
 call_ln0           (call         ) [ 00000000000]
-ret_ln86           (ret          ) [ 00000000000]
+ret_ln83           (ret          ) [ 00000000000]
 </LifeTime>
 
 <model>
@@ -615,7 +615,7 @@ ret_ln86           (ret          ) [ 00000000000]
 <pin id="51" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fc_finn_top_Pipeline_VITIS_LOOP_82_2"/></StgValue>
+<StgValue><ssdm name="fc_finn_top_Pipeline_VITIS_LOOP_79_2"/></StgValue>
 </bind>
 </comp>
 
@@ -924,7 +924,7 @@ ret_ln86           (ret          ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="177" class="1004" name="grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177">
+<comp id="177" class="1004" name="grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177">
 <pin_list>
 <pin id="178" dir="0" index="0" bw="0" slack="0"/>
 <pin id="179" dir="0" index="1" bw="1" slack="0"/>
@@ -1212,7 +1212,7 @@ ret_ln86           (ret          ) [ 00000000000]
 |          |           grp_load_weights_once_fu_138           |  0.387  |    83   |    88   |
 |   call   |  grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148 |    0    |    5    |    67   |
 |          | grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161 |  0.387  |   142   |   522   |
-|          |  grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177 |    0    |    5    |    20   |
+|          |  grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177 |    0    |    5    |    20   |
 |----------|--------------------------------------------------|---------|---------|---------|
 |          |               in_0_read_read_fu_90               |    0    |    0    |    0    |
 |          |               in_1_read_read_fu_96               |    0    |    0    |    0    |

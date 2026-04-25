@@ -16,7 +16,7 @@ set SynModuleInfo {
       {MODELNAME fc_finn_top_mux_4_2_16_1_1 RTLNAME fc_finn_top_mux_4_2_16_1_1 BINDTYPE op TYPE mux IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME fc_finn_top_Pipeline_VITIS_LOOP_82_2 MODELNAME fc_finn_top_Pipeline_VITIS_LOOP_82_2 RTLNAME fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_82_2}
+  {SRCNAME fc_finn_top_Pipeline_VITIS_LOOP_79_2 MODELNAME fc_finn_top_Pipeline_VITIS_LOOP_79_2 RTLNAME fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_79_2}
   {SRCNAME fc_finn_top MODELNAME fc_finn_top RTLNAME fc_finn_top IS_TOP 1
     SUBMODULES {
       {MODELNAME fc_finn_top_fc_weights_0_RAM_AUTO_1R1W RTLNAME fc_finn_top_fc_weights_0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}

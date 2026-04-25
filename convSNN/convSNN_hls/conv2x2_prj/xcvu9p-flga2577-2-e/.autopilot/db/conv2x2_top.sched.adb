@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916402464</coreId>
+						<coreId>848957280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852401199</coreId>
+						<coreId>847691664</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>848625992</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -286,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916479968</coreId>
+						<coreId>88</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -327,7 +327,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -347,7 +347,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915567616</coreId>
+						<coreId>256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -374,7 +374,7 @@
 						<name>in_stream</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>conv2x2_top</contextFuncName>
 						<contextNormFuncName>conv2x2_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -390,7 +390,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>72</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -403,7 +403,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1314013527</coreId>
+						<coreId>847691664</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -430,7 +430,7 @@
 						<name>out_stream</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>73</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>conv2x2_top</contextFuncName>
 						<contextNormFuncName>conv2x2_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -446,7 +446,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>73</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -502,7 +502,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -572,7 +572,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -599,7 +599,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915882048</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -623,10 +623,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>_ln48</name>
+						<name>_ln41</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>conv2x2_top</contextFuncName>
 						<contextNormFuncName>conv2x2_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -642,7 +642,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -699,7 +699,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916830000</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -742,7 +742,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916794944</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -828,7 +828,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916811328</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -917,7 +917,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916794944</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1009,7 +1009,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916808816</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1100,7 +1100,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916759952</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1187,7 +1187,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916776336</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1281,7 +1281,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916759952</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1368,7 +1368,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916773824</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1399,10 +1399,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>_ln135</name>
+						<name>_ln91</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>conv2x2_top</contextFuncName>
 						<contextNormFuncName>conv2x2_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1418,7 +1418,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>135</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1476,7 +1476,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916139792</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1507,7 +1507,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1520,7 +1520,7 @@
 					<Obj>
 						<type>2</type>
 						<id>83</id>
-						<name>conv2x2_top_Pipeline_VITIS_LOOP_77_1</name>
+						<name>conv2x2_top_Pipeline_VITIS_LOOP_48_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1538,13 +1538,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916593824</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_77_1&gt;</content>
+				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_48_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_35">
 				<Value>
@@ -1600,7 +1600,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>916139792</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1613,7 +1613,7 @@
 					<Obj>
 						<type>2</type>
 						<id>108</id>
-						<name>conv2x2_top_Pipeline_VITIS_LOOP_121_2</name>
+						<name>conv2x2_top_Pipeline_VITIS_LOOP_87_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1631,13 +1631,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_121_2&gt;</content>
+				<content>&lt;constant:conv2x2_top_Pipeline_VITIS_LOOP_87_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">

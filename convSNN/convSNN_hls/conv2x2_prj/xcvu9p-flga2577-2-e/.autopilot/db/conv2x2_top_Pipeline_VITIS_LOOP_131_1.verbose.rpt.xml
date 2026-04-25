@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2x2_top_Pipeline_VITIS_LOOP_131_1'" level="0">
-<item name = "Date">Thu Apr 23 02:33:08 2026
+<item name = "Date">Sat Apr 25 21:02:40 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">conv2x2_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.481 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.324 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -82,7 +82,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="cntr_3_fu_123_p2">+, 0, 0, 9, 2, 1</column>
-<column name="i_3_fu_117_p2">+, 0, 0, 10, 3, 1</column>
+<column name="i_4_fu_117_p2">+, 0, 0, 10, 3, 1</column>
 <column name="newSecond_fu_207_p2">+, 0, 0, 16, 16, 16</column>
 <column name="temp_1_fu_201_p2">-, 0, 0, 16, 16, 16</column>
 <column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>

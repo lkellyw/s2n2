@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>2438489040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783498688</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783738752</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -322,7 +322,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783499128</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -358,7 +358,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2782414832</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -394,7 +394,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783512560</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -430,7 +430,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1314013527</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -641,7 +641,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -684,7 +684,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783607616</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -856,7 +856,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783512560</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -899,7 +899,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783774592</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -985,7 +985,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784156864</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1088,7 +1088,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784108032</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1175,7 +1175,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784124416</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1272,7 +1272,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784108032</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1347,10 +1347,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>_ln86</name>
+						<name>_ln83</name>
 						<fileName>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
-						<lineNumber>86</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>fc_finn_top</contextFuncName>
 						<contextNormFuncName>fc_finn_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1366,7 +1366,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
 											<second>fc_finn_top</second>
 										</first>
-										<second>86</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -1379,7 +1379,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784121904</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1424,7 +1424,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784073136</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1455,7 +1455,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1486,7 +1486,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784089696</coreId>
+						<coreId>2440225440</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1530,7 +1530,7 @@
 					<Obj>
 						<type>2</type>
 						<id>113</id>
-						<name>fc_finn_top_Pipeline_VITIS_LOOP_82_2</name>
+						<name>fc_finn_top_Pipeline_VITIS_LOOP_79_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1548,13 +1548,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2784073136</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fc_finn_top_Pipeline_VITIS_LOOP_82_2&gt;</content>
+				<content>&lt;constant:fc_finn_top_Pipeline_VITIS_LOOP_79_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -1582,7 +1582,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2977188352</coreId>
+					<coreId>1330007625</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

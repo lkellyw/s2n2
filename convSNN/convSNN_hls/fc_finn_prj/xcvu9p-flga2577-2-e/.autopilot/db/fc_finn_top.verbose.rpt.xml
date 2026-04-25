@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc_finn_top'" level="0">
-<item name = "Date">Thu Apr 23 02:33:12 2026
+<item name = "Date">Sat Apr 25 21:40:55 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">fc_finn_prj</item>
@@ -34,7 +34,7 @@
 <column name="grp_load_weights_once_fu_138">load_weights_once, 1, 35, 10.000 ns, 0.350 us, 1, 35, no</column>
 <column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148">fc_finn_top_Pipeline_VITIS_LOOP_44_1, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
 <column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161">fc_finn_top_Pipeline_VITIS_LOOP_131_1, 34, 34, 0.340 us, 0.340 us, 34, 34, no</column>
-<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177">fc_finn_top_Pipeline_VITIS_LOOP_82_2, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177">fc_finn_top_Pipeline_VITIS_LOOP_79_2, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -69,7 +69,7 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161">fc_finn_top_Pipeline_VITIS_LOOP_131_1, 0, 0, 203, 684, 0</column>
 <column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148">fc_finn_top_Pipeline_VITIS_LOOP_44_1, 0, 0, 8, 116, 0</column>
-<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177">fc_finn_top_Pipeline_VITIS_LOOP_82_2, 0, 0, 8, 71, 0</column>
+<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177">fc_finn_top_Pipeline_VITIS_LOOP_79_2, 0, 0, 8, 71, 0</column>
 <column name="grp_load_weights_once_fu_138">load_weights_once, 0, 0, 28, 173, 0</column>
 </table>
 </item>
@@ -109,7 +109,7 @@
 <column name="ap_CS_fsm">10, 0, 10, 0</column>
 <column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_load_weights_once_fu_138_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>

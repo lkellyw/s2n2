@@ -316,7 +316,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2</coreId>
+						<coreId>1200</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -359,7 +359,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915337936</coreId>
+						<coreId>847613392</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -402,7 +402,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -429,7 +429,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>847541728</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -473,7 +473,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -500,7 +500,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>847859088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -544,7 +544,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -571,7 +571,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1830839397</coreId>
+						<coreId>1713399139</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -596,7 +596,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>i_3</name>
+						<name>i_4</name>
 						<fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
 						<fileDirectory>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</fileDirectory>
 						<lineNumber>131</lineNumber>
@@ -615,7 +615,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -686,7 +686,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -713,7 +713,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -758,7 +758,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -801,7 +801,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.42</m_delay>
+				<m_delay>1.10</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -829,7 +829,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -856,7 +856,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915826512</coreId>
+						<coreId>7955819</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -899,7 +899,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -926,7 +926,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915769184</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -969,7 +969,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -996,7 +996,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915775744</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1039,7 +1039,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1066,7 +1066,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915803536</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1109,7 +1109,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1136,7 +1136,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915825888</coreId>
+						<coreId>573977145</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1184,7 +1184,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1211,7 +1211,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915344640</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -1257,7 +1257,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1284,7 +1284,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>914625344</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1327,7 +1327,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1361,7 +1361,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>997418094</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -1406,7 +1406,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1433,7 +1433,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915273776</coreId>
+						<coreId>848777904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -1478,7 +1478,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1505,7 +1505,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915869440</coreId>
+						<coreId>784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1548,7 +1548,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1575,7 +1575,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>848863904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1619,7 +1619,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1646,7 +1646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915771664</coreId>
+						<coreId>848866496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1690,7 +1690,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1717,7 +1717,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915781992</coreId>
+						<coreId>848400336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1761,7 +1761,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1788,7 +1788,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915872480</coreId>
+						<coreId>848404392</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1833,7 +1833,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1860,7 +1860,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915278960</coreId>
+						<coreId>848503744</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1910,7 +1910,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -1937,7 +1937,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6775156</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1982,7 +1982,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2009,7 +2009,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915216960</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2052,7 +2052,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2079,7 +2079,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915217248</coreId>
+						<coreId>848512464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2124,7 +2124,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2151,7 +2151,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>848699120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2194,7 +2194,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2221,7 +2221,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>848701360</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2266,7 +2266,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2293,7 +2293,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>171847424</coreId>
+						<coreId>848704376</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2336,7 +2336,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2363,7 +2363,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915231376</coreId>
+						<coreId>848705632</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2408,7 +2408,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2435,7 +2435,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915234568</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2478,7 +2478,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2505,7 +2505,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915807056</coreId>
+						<coreId>848716848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2522,7 +2522,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.31</m_delay>
+				<m_delay>1.48</m_delay>
 				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2550,7 +2550,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2577,7 +2577,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852383291</coreId>
+						<coreId>848719264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -2621,7 +2621,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2648,7 +2648,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915813120</coreId>
+						<coreId>848722192</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2694,7 +2694,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2721,7 +2721,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>848724960</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2767,7 +2767,7 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>93</second>
+										<second>56</second>
 									</item>
 									<item>
 										<first>
@@ -2794,7 +2794,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1869182069</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2836,7 +2836,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>608</coreId>
+						<coreId>88</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2881,7 +2881,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915821376</coreId>
+						<coreId>858350948</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2912,7 +2912,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>848731856</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -2943,7 +2943,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915961792</coreId>
+						<coreId>848832656</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -2974,7 +2974,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1314013527</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -3005,7 +3005,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915963008</coreId>
+						<coreId>848834384</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -3036,7 +3036,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915963248</coreId>
+						<coreId>848835072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -3067,7 +3067,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915965504</coreId>
+						<coreId>808727098</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3098,7 +3098,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>848837024</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3129,7 +3129,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>848838064</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3160,7 +3160,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915967488</coreId>
+						<coreId>848838304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -3191,7 +3191,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>915968320</coreId>
+						<coreId>848867712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
@@ -3470,7 +3470,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>915808688</coreId>
+					<coreId>848716272</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

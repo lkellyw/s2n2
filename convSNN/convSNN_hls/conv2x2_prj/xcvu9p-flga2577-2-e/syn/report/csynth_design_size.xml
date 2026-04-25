@@ -3,36 +3,36 @@
         <hiertable>
             <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
             <rows>
-                <row id="0" col0="conv2x2_top" col1="conv2x2_top.cpp:44" col2="2570" col3="405" col4="215" col5="251">
-                    <row id="1" col0="load_weights_once" col1="conv2x2_top.cpp:28" col2="31" col3="7" col4="6" col5="7"/>
-                    <row id="16" col0="ConvLayer_Batch&lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 1, 1, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="convlayer.h:106" col2="2039" col3="" col4="" col5="">
-                        <row id="2" col0="WidthAdjustedInputStream" col1="streamtools.h:837" col2="3" col3="" col4="" col5=""/>
+                <row id="0" col0="conv2x2_top" col1="conv2x2_top.cpp:37" col2="2228" col3="397" col4="215" col5="251">
+                    <row id="8" col0="load_weights_once" col1="conv2x2_top.cpp:27" col2="31" col3="7" col4="6" col5="7"/>
+                    <row id="13" col0="ConvLayer_Batch&lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 1, 1, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="convlayer.h:106" col2="2047" col3="" col4="" col5="">
+                        <row id="12" col0="WidthAdjustedInputStream" col1="streamtools.h:837" col2="3" col3="" col4="" col5=""/>
                         <row id="19" col0="WidthAdjustedOutputStream" col1="streamtools.h:869" col2="3" col3="" col4="" col5=""/>
-                        <row id="18" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:841" col2="3" col3="" col4="" col5=""/>
-                        <row id="17" col0="ConvolutionInputGenerator&lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&gt;" col1="slidingwindow.h:171" col2="300" col3="" col4="" col5="">
-                            <row id="5" col0="memory_resource&lt;ap_uint&lt;1&gt; (*)[2]&gt;" col1="slidingwindow.h:73" col2="2" col3="" col4="" col5=""/>
+                        <row id="17" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:841" col2="3" col3="" col4="" col5=""/>
+                        <row id="11" col0="ConvolutionInputGenerator&lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&gt;" col1="slidingwindow.h:171" col2="300" col3="" col4="" col5="">
+                            <row id="18" col0="memory_resource&lt;ap_uint&lt;1&gt; (*)[2]&gt;" col1="slidingwindow.h:73" col2="2" col3="" col4="" col5=""/>
                         </row>
-                        <row id="10" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:874" col2="3" col3="" col4="" col5=""/>
-                        <row id="7" col0="Matrix_Vector_Activate_Batch&lt;1, 1, 1, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 2, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="mvau.hpp:95" col2="1687" col3="" col4="" col5="">
-                            <row id="8" col0="weights" col1="weights.hpp:214" col2="13" col3="" col4="" col5="">
-                                <row id="13" col0="TileIndex" col1="weights.hpp:190" col2="8" col3="" col4="" col5=""/>
+                        <row id="15" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:874" col2="3" col3="" col4="" col5=""/>
+                        <row id="10" col0="Matrix_Vector_Activate_Batch&lt;1, 1, 1, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 2, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="mvau.hpp:95" col2="1687" col3="" col4="" col5="">
+                            <row id="16" col0="weights" col1="weights.hpp:214" col2="13" col3="" col4="" col5="">
+                                <row id="5" col0="TileIndex" col1="weights.hpp:190" col2="8" col3="" col4="" col5=""/>
                             </row>
-                            <row id="4" col0="operator[]" col1="weights.hpp:196" col2="172" col3="" col4="" col5=""/>
-                            <row id="20" col0="operator()&lt;ap_uint&lt;1&gt; &gt;" col1="interpret.hpp:235" col2="12" col3="" col4="" col5="">
-                                <row id="12" col0="Container" col1="interpret.hpp:202" col2="10" col3="" col4="" col5=""/>
+                            <row id="14" col0="operator[]" col1="weights.hpp:196" col2="172" col3="" col4="" col5=""/>
+                            <row id="2" col0="operator()&lt;ap_uint&lt;1&gt; &gt;" col1="interpret.hpp:235" col2="12" col3="" col4="" col5="">
+                                <row id="9" col0="Container" col1="interpret.hpp:202" col2="10" col3="" col4="" col5=""/>
                             </row>
-                            <row id="15" col0="operator()" col1="interpret.hpp:209" col2="38" col2_disp="   38 (2 calls)" col3="" col4="" col5=""/>
-                            <row id="9" col0="operator const ap_uint&lt;1&gt; &amp;" col1="interpret.hpp:222" col2="2" col3="" col4="" col5=""/>
+                            <row id="4" col0="operator()" col1="interpret.hpp:209" col2="38" col2_disp="   38 (2 calls)" col3="" col4="" col5=""/>
+                            <row id="20" col0="operator const ap_uint&lt;1&gt; &amp;" col1="interpret.hpp:222" col2="2" col3="" col4="" col5=""/>
                         </row>
-                        <row id="3" col0="~WidthAdjustedOutputStream" col1="streamtools.h:871" col2="1" col3="" col4="" col5=""/>
+                        <row id="7" col0="~WidthAdjustedOutputStream" col1="streamtools.h:871" col2="1" col3="" col4="" col5=""/>
                         <row id="6" col0="~WidthAdjustedInputStream" col1="streamtools.h:838" col2="1" col3="" col4="" col5=""/>
                     </row>
-                    <row id="2" col0="WidthAdjustedInputStream" col1="streamtools.h:837" col2="" col3="3" col4="" col5=""/>
+                    <row id="12" col0="WidthAdjustedInputStream" col1="streamtools.h:837" col2="" col3="3" col4="" col5=""/>
                     <row id="19" col0="WidthAdjustedOutputStream" col1="streamtools.h:869" col2="" col3="3" col4="" col5=""/>
-                    <row id="18" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:841" col2="" col3="1" col4="" col5=""/>
-                    <row id="17" col0="ConvolutionInputGenerator&lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&gt;" col1="slidingwindow.h:171" col2="" col3="141" col4="" col5=""/>
-                    <row id="10" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:874" col2="" col3="1" col4="" col5=""/>
-                    <row id="7" col0="Matrix_Vector_Activate_Batch&lt;1, 1, 1, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 2, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="mvau.hpp:95" col2="" col3="175" col4="" col5=""/>
+                    <row id="17" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:841" col2="" col3="1" col4="" col5=""/>
+                    <row id="11" col0="ConvolutionInputGenerator&lt;1, 1, 1, 2, 2, 1, 1, ap_resource_dflt&gt;" col1="slidingwindow.h:171" col2="" col3="141" col4="" col5=""/>
+                    <row id="15" col0="operator hls::stream&lt;ap_uint&lt;1&gt;, 0&gt; &amp;" col1="streamtools.h:874" col2="" col3="1" col4="" col5=""/>
+                    <row id="10" col0="Matrix_Vector_Activate_Batch&lt;1, 1, 1, 1, 1, 1, Identity, Slice&lt;ap_uint&lt;1&gt;, 1&gt;, Identity, ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 16, 8, 2, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, FixedPointWeightsSp&lt;1, ap_int&lt;8&gt;, 1, 1&gt;, DummyActivation, ap_resource_dflt&gt;" col1="mvau.hpp:95" col2="" col3="175" col4="" col5=""/>
                 </row>
             </rows>
             <notes/>

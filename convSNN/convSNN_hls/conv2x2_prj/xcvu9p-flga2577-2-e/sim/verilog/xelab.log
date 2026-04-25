@@ -2,7 +2,7 @@ Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 Running: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_conv2x2_top_top glbl -Oenable_linking_all_libraries -prj conv2x2_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s conv2x2_top 
-Multi-threading is on. Using 126 slave threads.
+Multi-threading is on. Using 286 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
@@ -10,14 +10,14 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/conv
 INFO: [VRFC 10-311] analyzing module apatb_conv2x2_top_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_load_weights_once.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top_load_weights_once
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_77_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_77_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_48_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_48_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_121_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_121_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_87_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_87_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
@@ -33,6 +33,12 @@ INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d8_S_ShiftReg
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_fifo_w1_d2_S.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d2_S
 INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_fifo_w1_d1024_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d1024_S
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d1024_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_fifo_w1_d16_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d16_S
+INFO: [VRFC 10-311] analyzing module conv2x2_top_fifo_w1_d16_S_ShiftReg
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_mux_4_2_1_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top_mux_4_2_1_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_mux_2_1_1_1_1.v" into library xil_defaultlib
@@ -58,10 +64,10 @@ Compiling module xil_defaultlib.conv2x2_top_load_weights_once
 Compiling module xil_defaultlib.conv2x2_top_mux_4_2_16_1_1(ID=1,...
 Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
 Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
-Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d2_S_ShiftRe...
-Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d2_S
-Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d8_S_ShiftRe...
-Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d8_S
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d1024_S_Shif...
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d1024_S
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d16_S_ShiftR...
+Compiling module xil_defaultlib.conv2x2_top_fifo_w1_d16_S
 Compiling module xil_defaultlib.conv2x2_top
 Compiling module xil_defaultlib.nodf_module_intf
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)

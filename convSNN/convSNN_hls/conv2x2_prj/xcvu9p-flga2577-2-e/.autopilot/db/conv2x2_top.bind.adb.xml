@@ -240,7 +240,7 @@ entry:33 %empty_17 = wait i32 @_ssdm_op_Wait
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="0">
 <![CDATA[
-entry:34 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_77_1, i1 %in_0_read, i1 %in_1_read, i1 %in_2_read, i1 %in_3_read, i1 %in_stream
+entry:34 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_48_1, i1 %in_0_read, i1 %in_1_read, i1 %in_2_read, i1 %in_3_read, i1 %in_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -258,7 +258,7 @@ entry:34 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_77_1, i1 %in_0_r
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="0">
 <![CDATA[
-entry:34 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_77_1, i1 %in_0_read, i1 %in_1_read, i1 %in_2_read, i1 %in_3_read, i1 %in_stream
+entry:34 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_48_1, i1 %in_0_read, i1 %in_1_read, i1 %in_2_read, i1 %in_3_read, i1 %in_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -345,10 +345,10 @@ entry:39 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_197_2, i1 %in_st
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="2">
 <![CDATA[
-entry:28 %call_ln48 = call void @load_weights_once, i1 %loaded, i2 %conv_weights_0_0
+entry:28 %call_ln41 = call void @load_weights_once, i1 %loaded, i2 %conv_weights_0_0
 
 ]]></Node>
-<StgValue><ssdm name="call_ln48"/></StgValue>
+<StgValue><ssdm name="call_ln41"/></StgValue>
 </operation>
 
 <operation id="30" st_id="7" stage="1" lat="1">
@@ -477,7 +477,7 @@ entry:45 %empty_23 = wait i32 @_ssdm_op_Wait
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:46 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_121_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
+entry:46 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_87_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -495,10 +495,10 @@ entry:46 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_121_2, i1 %out_0
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:0 %spectopmodule_ln44 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3
+entry:0 %spectopmodule_ln37 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln44"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln37"/></StgValue>
 </operation>
 
 <operation id="39" st_id="12" stage="1" lat="1">
@@ -750,7 +750,7 @@ entry:16 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %ou
 
 <Node id="33" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="1" op_8_bw="1">
 <![CDATA[
-entry:18 %empty = specchannel i32 @_ssdm_op_SpecChannel, void @convInp_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i1 %convInp, i1 %convInp
+entry:18 %empty = specchannel i32 @_ssdm_op_SpecChannel, void @convInp_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i1 %convInp, i1 %convInp
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -780,7 +780,7 @@ entry:19 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %co
 
 <Node id="36" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="1" op_8_bw="1">
 <![CDATA[
-entry:21 %empty_15 = specchannel i32 @_ssdm_op_SpecChannel, void @in_stream_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i1 %in_stream, i1 %in_stream
+entry:21 %empty_15 = specchannel i32 @_ssdm_op_SpecChannel, void @in_stream_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i1 %in_stream, i1 %in_stream
 
 ]]></Node>
 <StgValue><ssdm name="empty_15"/></StgValue>
@@ -810,7 +810,7 @@ entry:22 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %in
 
 <Node id="39" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="1" op_8_bw="1">
 <![CDATA[
-entry:24 %empty_16 = specchannel i32 @_ssdm_op_SpecChannel, void @out_stream_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i1 %out_stream, i1 %out_stream
+entry:24 %empty_16 = specchannel i32 @_ssdm_op_SpecChannel, void @out_stream_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i1 %out_stream, i1 %out_stream
 
 ]]></Node>
 <StgValue><ssdm name="empty_16"/></StgValue>
@@ -870,7 +870,7 @@ entry:37 %specmemcore_ln75 = specmemcore void @_ssdm_op_SpecMemCore, i1 %inputBu
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:46 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_121_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
+entry:46 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_87_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -885,10 +885,10 @@ entry:46 %call_ln0 = call void @conv2x2_top_Pipeline_VITIS_LOOP_121_2, i1 %out_0
 
 <Node id="62" bw="0">
 <![CDATA[
-entry:47 %ret_ln135 = ret
+entry:47 %ret_ln91 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln135"/></StgValue>
+<StgValue><ssdm name="ret_ln91"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -969,7 +969,7 @@ entry:47 %ret_ln135 = ret
 </dataflow>
 <dataflow id="106" from="_ssdm_op_Wait" to="empty_17" fromId="105" toId="22">
 </dataflow>
-<dataflow id="108" from="conv2x2_top_Pipeline_VITIS_LOOP_77_1" to="call_ln0" fromId="107" toId="23">
+<dataflow id="108" from="conv2x2_top_Pipeline_VITIS_LOOP_48_1" to="call_ln0" fromId="107" toId="23">
 </dataflow>
 <dataflow id="109" from="in_0_read" to="call_ln0" fromId="18" toId="23">
 </dataflow>
@@ -981,7 +981,7 @@ entry:47 %ret_ln135 = ret
 </dataflow>
 <dataflow id="113" from="in_stream" to="call_ln0" fromId="14" toId="23">
 </dataflow>
-<dataflow id="114" from="conv2x2_top_Pipeline_VITIS_LOOP_77_1" to="call_ln0" fromId="107" toId="24">
+<dataflow id="114" from="conv2x2_top_Pipeline_VITIS_LOOP_48_1" to="call_ln0" fromId="107" toId="24">
 </dataflow>
 <dataflow id="115" from="in_0_read" to="call_ln0" fromId="18" toId="24">
 </dataflow>
@@ -1017,11 +1017,11 @@ entry:47 %ret_ln135 = ret
 </dataflow>
 <dataflow id="132" from="convInp" to="call_ln0" fromId="13" toId="28">
 </dataflow>
-<dataflow id="134" from="load_weights_once" to="call_ln48" fromId="133" toId="29">
+<dataflow id="134" from="load_weights_once" to="call_ln41" fromId="133" toId="29">
 </dataflow>
-<dataflow id="135" from="loaded" to="call_ln48" fromId="84" toId="29">
+<dataflow id="135" from="loaded" to="call_ln41" fromId="84" toId="29">
 </dataflow>
-<dataflow id="136" from="conv_weights_0_0" to="call_ln48" fromId="85" toId="29">
+<dataflow id="136" from="conv_weights_0_0" to="call_ln41" fromId="85" toId="29">
 </dataflow>
 <dataflow id="137" from="_ssdm_op_Wait" to="empty_20" fromId="105" toId="30">
 </dataflow>
@@ -1065,7 +1065,7 @@ entry:47 %ret_ln135 = ret
 </dataflow>
 <dataflow id="158" from="_ssdm_op_Wait" to="empty_23" fromId="105" toId="36">
 </dataflow>
-<dataflow id="160" from="conv2x2_top_Pipeline_VITIS_LOOP_121_2" to="call_ln0" fromId="159" toId="37">
+<dataflow id="160" from="conv2x2_top_Pipeline_VITIS_LOOP_87_2" to="call_ln0" fromId="159" toId="37">
 </dataflow>
 <dataflow id="161" from="out_0" to="call_ln0" fromId="80" toId="37">
 </dataflow>
@@ -1077,9 +1077,9 @@ entry:47 %ret_ln135 = ret
 </dataflow>
 <dataflow id="165" from="out_stream" to="call_ln0" fromId="15" toId="37">
 </dataflow>
-<dataflow id="167" from="_ssdm_op_SpecTopModule" to="spectopmodule_ln44" fromId="166" toId="38">
+<dataflow id="167" from="_ssdm_op_SpecTopModule" to="spectopmodule_ln37" fromId="166" toId="38">
 </dataflow>
-<dataflow id="169" from="empty_3" to="spectopmodule_ln44" fromId="168" toId="38">
+<dataflow id="169" from="empty_3" to="spectopmodule_ln37" fromId="168" toId="38">
 </dataflow>
 <dataflow id="171" from="_ssdm_op_SpecBitsMap" to="specbitsmap_ln0" fromId="170" toId="39">
 </dataflow>
@@ -1605,7 +1605,7 @@ entry:47 %ret_ln135 = ret
 </dataflow>
 <dataflow id="450" from="StgValue_444" to="specmemcore_ln75" fromId="444" toId="62">
 </dataflow>
-<dataflow id="451" from="conv2x2_top_Pipeline_VITIS_LOOP_121_2" to="call_ln0" fromId="159" toId="63">
+<dataflow id="451" from="conv2x2_top_Pipeline_VITIS_LOOP_87_2" to="call_ln0" fromId="159" toId="63">
 </dataflow>
 <dataflow id="452" from="out_0" to="call_ln0" fromId="80" toId="63">
 </dataflow>

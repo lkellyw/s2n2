@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2x2_top_Pipeline_VITIS_LOOP_47_1'" level="0">
-<item name = "Date">Thu Apr 16 16:33:36 2026
+<item name = "Date">Thu Apr 23 03:41:49 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">conv2x2_prj</item>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mux_4_2_1_1_1_U1">mux_4_2_1_1_1, 0, 0, 0, 20, 0</column>
+<column name="mux_4_2_1_1_1_U2">mux_4_2_1_1_1, 0, 0, 0, 20, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -91,7 +91,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_4">9, 2, 3, 6</column>
+<column name="ap_sig_allocacmp_i_2">9, 2, 3, 6</column>
 <column name="i_fu_44">9, 2, 3, 6</column>
 <column name="in_stream_blk_n">9, 2, 1, 2</column>
 </table>

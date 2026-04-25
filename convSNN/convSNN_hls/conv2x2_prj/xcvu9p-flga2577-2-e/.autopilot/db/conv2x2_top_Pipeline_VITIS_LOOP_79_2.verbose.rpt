@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv2x2_top_Pipeline_VITIS_LOOP_79_2'
 ================================================================
-* Date:           Thu Apr 16 16:33:38 2026
+* Date:           Thu Apr 23 03:41:53 2026
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        conv2x2_prj
@@ -193,7 +193,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 0.95>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %out_stream, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %out_stream, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.38ns)   --->   "%store_ln0 = store i3 0, i3 %i"   --->   Operation 7 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc9"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_1 = load i3 %i" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:79]   --->   Operation 9 'load' 'i_1' <Predicate = true> <Delay = 0.00>
@@ -207,9 +207,9 @@ ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln79 = br void %for.inc9" [/hom
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 29 'ret' 'ret_ln0' <Predicate = (icmp_ln79)> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 1.31>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln80 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:80]   --->   Operation 17 'specpipeline' 'specpipeline_ln80' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln80 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_5" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:80]   --->   Operation 17 'specpipeline' 'specpipeline_ln80' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln79 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:79]   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln79' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln79 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:79]   --->   Operation 19 'specloopname' 'specloopname_ln79' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln79 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:79]   --->   Operation 19 'specloopname' 'specloopname_ln79' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (1.31ns)   --->   "%out_stream_read = read i1 @_ssdm_op_Read.ap_fifo.volatile.i1P0A, i1 %out_stream" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:81]   --->   Operation 20 'read' 'out_stream_read' <Predicate = true> <Delay = 1.31> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.31> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 8> <FIFO>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%write_ln81 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %out_2, i1 %out_stream_read" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:81]   --->   Operation 21 'write' 'write_ln81' <Predicate = (trunc_ln79 == 2)> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln81 = br void %arrayidx82.exit" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:81]   --->   Operation 22 'br' 'br_ln81' <Predicate = (trunc_ln79 == 2)> <Delay = 0.00>
@@ -341,7 +341,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_1"/></StgValue>
+<StgValue><ssdm name="empty_4"/></StgValue>
 </bind>
 </comp>
 
@@ -359,7 +359,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_5"/></StgValue>
 </bind>
 </comp>
 
@@ -467,7 +467,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 

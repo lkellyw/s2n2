@@ -44,7 +44,7 @@
  *
  *  This project has received funding from the European Union's Framework
  *  Programme for Research and Innovation Horizon 2020 (2014-2020) under
- *  the Marie SkÃÂodowska-Curie Grant Agreement No. 751339.
+ *  the Marie SkBodowska-Curie Grant Agreement No. 751339.
  *
  *******************************************************************************/
 
@@ -113,7 +113,7 @@ void Matrix_Vector_Activate_Batch(hls::stream<TI> &in,
 
   // Neuron State buffer. We assume MMV = 1
   CASSERT_DATAFLOW(MMV == 1);
-  static ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE] = {};
+  static ap_fixed<WIDTH, I> neust[OFMDim * OFMDim][NF * PE] = {}; // TODO: reset this
 #pragma HLS ARRAY_PARTITION variable=neust complete dim=2
 
   //decltype(activation.init(0,0))  accu[MMV][PE];

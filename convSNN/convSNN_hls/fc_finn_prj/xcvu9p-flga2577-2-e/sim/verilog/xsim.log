@@ -3,13 +3,13 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Apr 23 02:42:22 2026
-# Process ID: 300473
+# Start of session at: Sat Apr 25 21:41:30 2026
+# Process ID: 9246
 # Current directory: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/fc_finn_top/xsim_script.tcl}
 # Log file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/xsim.log
 # Journal file: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/xsim.jou
-# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3223.390 MHz, CPU Physical cores: 16, Host memory: 540851 MB
+# Running On: coder-kwlaial-kellylaijetnet, OS: Linux, CPU Frequency: 3150.000 MHz, CPU Physical cores: 2, Host memory: 1622698 MB
 #-----------------------------------------------------------
 source xsim.dir/fc_finn_top/xsim_script.tcl
 # xsim {fc_finn_top} -autoloadwcfg -tclbatch {fc_finn_top.tcl}
@@ -27,4 +27,4 @@ source fc_finn_top.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 1065 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top.autotb.v" Line 886
 ## quit
-INFO: [Common 17-206] Exiting xsim at Thu Apr 23 02:44:34 2026...
+INFO: [Common 17-206] Exiting xsim at Sat Apr 25 21:41:32 2026...

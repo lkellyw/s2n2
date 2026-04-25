@@ -15,7 +15,7 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>4.481</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.324</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
@@ -32,8 +32,8 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>0</BRAM_18K>
-            <FF>367</FF>
-            <LUT>1387</LUT>
+            <FF>373</FF>
+            <LUT>1441</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -262,21 +262,21 @@
             <ModuleName>conv2x2_top</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_77_1_fu_130</InstName>
-                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_77_1</ModuleName>
+                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130</InstName>
+                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_48_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>130</ID>
-                    <BindInstances>add_ln77_fu_93_p2</BindInstances>
+                    <BindInstances>add_ln48_fu_93_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_139</InstName>
                     <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_197_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>139</ID>
-                    <BindInstances>i_2_fu_278_p2 grp_fu_171_p2 ofm_x_fu_310_p2 ofm_y_2_fu_322_p2 grp_fu_182_p2 grp_fu_194_p2 grp_fu_182_p2 inp_4_fu_455_p2 grp_fu_171_p2 grp_fu_194_p2</BindInstances>
+                    <BindInstances>i_3_fu_278_p2 grp_fu_171_p2 ofm_x_fu_310_p2 ofm_y_2_fu_322_p2 grp_fu_182_p2 grp_fu_194_p2 grp_fu_182_p2 inp_4_fu_455_p2 grp_fu_171_p2 grp_fu_194_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>call_ln48_load_weights_once_fu_147</InstName>
+                    <InstName>call_ln41_load_weights_once_fu_147</InstName>
                     <ModuleName>load_weights_once</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>147</ID>
@@ -286,14 +286,14 @@
                     <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_131_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>155</ID>
-                    <BindInstances>i_3_fu_117_p2 cntr_3_fu_123_p2</BindInstances>
+                    <BindInstances>i_4_fu_117_p2 cntr_3_fu_123_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_121_2_fu_170</InstName>
-                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_121_2</ModuleName>
+                    <InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170</InstName>
+                    <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_87_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>170</ID>
-                    <BindInstances>add_ln121_fu_104_p2</BindInstances>
+                    <BindInstances>add_ln87_fu_104_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>convInp_fifo_U in_stream_fifo_U out_stream_fifo_U inputBuf_U inputBuf_1_U</BindInstances>
@@ -340,15 +340,15 @@
             </AreaEstimates>
         </Module>
         <Module>
-            <Name>conv2x2_top_Pipeline_VITIS_LOOP_77_1</Name>
+            <Name>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Name>
             <Loops>
-                <VITIS_LOOP_77_1/>
+                <VITIS_LOOP_48_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>1.314</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>1.480</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>6</Best-caseLatency>
@@ -361,8 +361,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_77_1>
-                        <Name>VITIS_LOOP_77_1</Name>
+                    <VITIS_LOOP_48_1>
+                        <Name>VITIS_LOOP_48_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>4</TripCount>
                         <Latency>4</Latency>
@@ -371,7 +371,7 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_77_1>
+                    </VITIS_LOOP_48_1>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -394,7 +394,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_93_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:77" URAM="0" VARIABLE="add_ln77"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_48_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln48_fu_93_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:48" URAM="0" VARIABLE="add_ln48"/>
             </BindNodes>
         </Module>
         <Module>
@@ -406,7 +406,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.455</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>2.407</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>8</Best-caseLatency>
@@ -452,7 +452,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_278_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:197" URAM="0" VARIABLE="i_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="i_3_fu_278_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:197" URAM="0" VARIABLE="i_3"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_171_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:216" URAM="0" VARIABLE="current_block_read"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="ofm_x_fu_310_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:232" URAM="0" VARIABLE="ofm_x"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_197_2" OPTYPE="add" PRAGMA="" RTLNAME="ofm_y_2_fu_322_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:235" URAM="0" VARIABLE="ofm_y_2"/>
@@ -473,7 +473,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>4.481</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>4.324</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>6</Best-caseLatency>
@@ -519,20 +519,20 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_131_1" OPTYPE="add" PRAGMA="" RTLNAME="i_3_fu_117_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:131" URAM="0" VARIABLE="i_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_131_1" OPTYPE="add" PRAGMA="" RTLNAME="i_4_fu_117_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:131" URAM="0" VARIABLE="i_4"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_131_1" OPTYPE="add" PRAGMA="" RTLNAME="cntr_3_fu_123_p2" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:188" URAM="0" VARIABLE="cntr_3"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>conv2x2_top_Pipeline_VITIS_LOOP_121_2</Name>
+            <Name>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Name>
             <Loops>
-                <VITIS_LOOP_121_2/>
+                <VITIS_LOOP_87_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>1.314</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>1.480</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>6</Best-caseLatency>
@@ -545,8 +545,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_121_2>
-                        <Name>VITIS_LOOP_121_2</Name>
+                    <VITIS_LOOP_87_2>
+                        <Name>VITIS_LOOP_87_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>4</TripCount>
                         <Latency>4</Latency>
@@ -555,7 +555,7 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_121_2>
+                    </VITIS_LOOP_87_2>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -578,7 +578,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_121_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln121_fu_104_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:121" URAM="0" VARIABLE="add_ln121"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_87_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln87_fu_104_p2" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:87" URAM="0" VARIABLE="add_ln87"/>
             </BindNodes>
         </Module>
         <Module>
@@ -587,7 +587,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>4.481</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>4.324</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>37</Best-caseLatency>
@@ -605,10 +605,10 @@
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>4320</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
-                    <FF>367</FF>
+                    <FF>373</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>1387</LUT>
+                    <LUT>1441</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -621,8 +621,8 @@
             </AreaEstimates>
             <BindNodes>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="convInp_fifo_U" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h:119" URAM="0" VARIABLE="convInp"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="in_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:72" URAM="0" VARIABLE="in_stream"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="out_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:73" URAM="0" VARIABLE="out_stream"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="in_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:43" URAM="0" VARIABLE="in_stream"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="out_stream_fifo_U" SOURCE="/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:44" URAM="0" VARIABLE="out_stream"/>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="inputBuf_U" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180" URAM="0" VARIABLE="inputBuf"/>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="inputBuf_1_U" SOURCE="/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180" URAM="0" VARIABLE="inputBuf_1"/>
             </BindNodes>
@@ -1045,14 +1045,14 @@
         <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:265" status="valid" parentFunction="weights" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:271" status="valid" parentFunction="setmask" variable="" isDirective="0" options=""/>
         <Pragma type="unroll" location="../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:274" status="valid" parentFunction="setmask" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../conv2x2_top.cpp:23" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
-        <Pragma type="inline" location="../conv2x2_top.cpp:29" status="valid" parentFunction="load_weights_once" variable="" isDirective="0" options="off"/>
-        <Pragma type="array_partition" location="../conv2x2_top.cpp:45" status="valid" parentFunction="conv2x2_top" variable="in" isDirective="0" options="variable=in complete dim=1"/>
-        <Pragma type="array_partition" location="../conv2x2_top.cpp:46" status="valid" parentFunction="conv2x2_top" variable="out" isDirective="0" options="variable=out complete dim=1"/>
-        <Pragma type="stream" location="../conv2x2_top.cpp:74" status="valid" parentFunction="conv2x2_top" variable="in_stream" isDirective="0" options="variable=in_stream depth=8"/>
-        <Pragma type="stream" location="../conv2x2_top.cpp:75" status="valid" parentFunction="conv2x2_top" variable="out_stream" isDirective="0" options="variable=out_stream depth=8"/>
-        <Pragma type="pipeline" location="../conv2x2_top.cpp:78" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../conv2x2_top.cpp:122" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="inline" location="../conv2x2_top.cpp:22" status="valid" parentFunction="operator()" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../conv2x2_top.cpp:28" status="valid" parentFunction="load_weights_once" variable="" isDirective="0" options="off"/>
+        <Pragma type="array_partition" location="../conv2x2_top.cpp:38" status="valid" parentFunction="conv2x2_top" variable="in" isDirective="0" options="variable=in complete dim=1"/>
+        <Pragma type="array_partition" location="../conv2x2_top.cpp:39" status="valid" parentFunction="conv2x2_top" variable="out" isDirective="0" options="variable=out complete dim=1"/>
+        <Pragma type="stream" location="../conv2x2_top.cpp:45" status="valid" parentFunction="conv2x2_top" variable="in_stream" isDirective="0" options="variable=in_stream depth=16"/>
+        <Pragma type="stream" location="../conv2x2_top.cpp:46" status="valid" parentFunction="conv2x2_top" variable="out_stream" isDirective="0" options="variable=out_stream depth=16"/>
+        <Pragma type="pipeline" location="../conv2x2_top.cpp:49" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../conv2x2_top.cpp:88" status="valid" parentFunction="conv2x2_top" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

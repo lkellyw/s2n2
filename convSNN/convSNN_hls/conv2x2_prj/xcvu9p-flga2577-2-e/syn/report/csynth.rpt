@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'conv2x2_top'
 ================================================================
 + General Information: 
-    * Date:           Thu Apr 23 02:33:11 2026
+    * Date:           Sat Apr 25 21:02:47 2026
     * Version:        2023.1 (Build 3854077 on May  4 2023)
     * Project:        conv2x2_prj
     * Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
@@ -19,16 +19,16 @@
     |                  Modules                 | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |            |     |
     |                  & Loops                 | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
     +------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
-    |+ conv2x2_top                             |     -|  2.82|       37|  370.000|         -|       38|     -|        no|     -|   -|  367 (~0%)|  1387 (~0%)|    -|
-    | + conv2x2_top_Pipeline_VITIS_LOOP_77_1   |     -|  5.99|        6|   60.000|         -|        6|     -|        no|     -|   -|    7 (~0%)|    91 (~0%)|    -|
-    |  o VITIS_LOOP_77_1                       |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
-    | + conv2x2_top_Pipeline_VITIS_LOOP_197_2  |     -|  4.84|        8|   80.000|         -|        8|     -|        no|     -|   -|  234 (~0%)|   858 (~0%)|    -|
+    |+ conv2x2_top                             |     -|  2.98|       37|  370.000|         -|       38|     -|        no|     -|   -|  373 (~0%)|  1441 (~0%)|    -|
+    | + conv2x2_top_Pipeline_VITIS_LOOP_48_1   |     -|  5.82|        6|   60.000|         -|        6|     -|        no|     -|   -|    7 (~0%)|    91 (~0%)|    -|
+    |  o VITIS_LOOP_48_1                       |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
+    | + conv2x2_top_Pipeline_VITIS_LOOP_197_2  |     -|  4.89|        8|   80.000|         -|        8|     -|        no|     -|   -|  234 (~0%)|   858 (~0%)|    -|
     |  o VITIS_LOOP_197_2                      |     -|  7.30|        6|   60.000|         2|        1|     6|       yes|     -|   -|          -|           -|    -|
     | + load_weights_once                      |     -|  7.30|        0|    0.000|         -|        0|     -|        no|     -|   -|    2 (~0%)|           -|    -|
-    | + conv2x2_top_Pipeline_VITIS_LOOP_131_1  |     -|  2.82|        6|   60.000|         -|        6|     -|        no|     -|   -|   74 (~0%)|   202 (~0%)|    -|
+    | + conv2x2_top_Pipeline_VITIS_LOOP_131_1  |     -|  2.98|        6|   60.000|         -|        6|     -|        no|     -|   -|   74 (~0%)|   202 (~0%)|    -|
     |  o VITIS_LOOP_131_1                      |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
-    | + conv2x2_top_Pipeline_VITIS_LOOP_121_2  |     -|  5.99|        6|   60.000|         -|        6|     -|        no|     -|   -|    8 (~0%)|    71 (~0%)|    -|
-    |  o VITIS_LOOP_121_2                      |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
+    | + conv2x2_top_Pipeline_VITIS_LOOP_87_2   |     -|  5.82|        6|   60.000|         -|        6|     -|        no|     -|   -|    8 (~0%)|    71 (~0%)|    -|
+    |  o VITIS_LOOP_87_2                       |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
     +------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
 
 
@@ -96,10 +96,10 @@
 | Name                                     | DSP | Pragma | Variable              | Op  | Impl   | Latency |
 +------------------------------------------+-----+--------+-----------------------+-----+--------+---------+
 | + conv2x2_top                            | 0   |        |                       |     |        |         |
-|  + conv2x2_top_Pipeline_VITIS_LOOP_77_1  | 0   |        |                       |     |        |         |
-|    add_ln77_fu_93_p2                     | -   |        | add_ln77              | add | fabric | 0       |
+|  + conv2x2_top_Pipeline_VITIS_LOOP_48_1  | 0   |        |                       |     |        |         |
+|    add_ln48_fu_93_p2                     | -   |        | add_ln48              | add | fabric | 0       |
 |  + conv2x2_top_Pipeline_VITIS_LOOP_197_2 | 0   |        |                       |     |        |         |
-|    i_2_fu_278_p2                         | -   |        | i_2                   | add | fabric | 0       |
+|    i_3_fu_278_p2                         | -   |        | i_3                   | add | fabric | 0       |
 |    grp_fu_171_p2                         | -   |        | current_block_read    | add | fabric | 0       |
 |    ofm_x_fu_310_p2                       | -   |        | ofm_x                 | add | fabric | 0       |
 |    ofm_y_2_fu_322_p2                     | -   |        | ofm_y_2               | add | fabric | 0       |
@@ -110,10 +110,10 @@
 |    grp_fu_171_p2                         | -   |        | current_block_write_2 | add | fabric | 0       |
 |    grp_fu_194_p2                         | -   |        | read_block_4          | add | fabric | 0       |
 |  + conv2x2_top_Pipeline_VITIS_LOOP_131_1 | 0   |        |                       |     |        |         |
-|    i_3_fu_117_p2                         | -   |        | i_3                   | add | fabric | 0       |
+|    i_4_fu_117_p2                         | -   |        | i_4                   | add | fabric | 0       |
 |    cntr_3_fu_123_p2                      | -   |        | cntr_3                | add | fabric | 0       |
-|  + conv2x2_top_Pipeline_VITIS_LOOP_121_2 | 0   |        |                       |     |        |         |
-|    add_ln121_fu_104_p2                   | -   |        | add_ln121             | add | fabric | 0       |
+|  + conv2x2_top_Pipeline_VITIS_LOOP_87_2  | 0   |        |                       |     |        |         |
+|    add_ln87_fu_104_p2                    | -   |        | add_ln87              | add | fabric | 0       |
 +------------------------------------------+-----+--------+-----------------------+-----+--------+---------+
 
 
@@ -339,14 +339,14 @@
 | inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:265 in weights                                                              |
 | inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:271 in setmask                                                              |
 | unroll          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:274 in setmask                                                              |
-| inline          |                                          | ../conv2x2_top.cpp:23 in operator()                                                                                                |
-| inline          | off                                      | ../conv2x2_top.cpp:29 in load_weights_once                                                                                         |
-| array_partition | variable=in complete dim=1               | ../conv2x2_top.cpp:45 in conv2x2_top, in                                                                                           |
-| array_partition | variable=out complete dim=1              | ../conv2x2_top.cpp:46 in conv2x2_top, out                                                                                          |
-| stream          | variable=in_stream depth=8               | ../conv2x2_top.cpp:74 in conv2x2_top, in_stream                                                                                    |
-| stream          | variable=out_stream depth=8              | ../conv2x2_top.cpp:75 in conv2x2_top, out_stream                                                                                   |
-| pipeline        | II=1                                     | ../conv2x2_top.cpp:78 in conv2x2_top                                                                                               |
-| pipeline        | II=1                                     | ../conv2x2_top.cpp:122 in conv2x2_top                                                                                              |
+| inline          |                                          | ../conv2x2_top.cpp:22 in operator()                                                                                                |
+| inline          | off                                      | ../conv2x2_top.cpp:28 in load_weights_once                                                                                         |
+| array_partition | variable=in complete dim=1               | ../conv2x2_top.cpp:38 in conv2x2_top, in                                                                                           |
+| array_partition | variable=out complete dim=1              | ../conv2x2_top.cpp:39 in conv2x2_top, out                                                                                          |
+| stream          | variable=in_stream depth=16              | ../conv2x2_top.cpp:45 in conv2x2_top, in_stream                                                                                    |
+| stream          | variable=out_stream depth=16             | ../conv2x2_top.cpp:46 in conv2x2_top, out_stream                                                                                   |
+| pipeline        | II=1                                     | ../conv2x2_top.cpp:49 in conv2x2_top                                                                                               |
+| pipeline        | II=1                                     | ../conv2x2_top.cpp:88 in conv2x2_top                                                                                               |
 +-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 

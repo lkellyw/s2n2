@@ -3,20 +3,32 @@
 ================================================================
 
 * Instructions per Function for each Compilation Phase
-+------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
-| Function                           | Location           | Compile/Link    | Unroll/Inline | Performance/Pipeline | Optimizations |
-+------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
-| + fc_finn_top                      | fc_finn_top.cpp:33 | 1,931           | 254           | 186                  | 242           |
-|    load_weights_once               | fc_finn_top.cpp:16 |    93           |  28           |  22                  |  30           |
-|  + Matrix_Vector_Activate_Batch... | mvau.hpp:95        | 1,687           | 192           |                      |               |
-|   + weights                        | weights.hpp:214    |    13           |               |                      |               |
-|      TileIndex                     | weights.hpp:190    |     8           |               |                      |               |
-|     operator[]                     | weights.hpp:196    |   172           |               |                      |               |
-|   + operator()<ap_uint<1> >        | interpret.hpp:235  |    12           |               |                      |               |
-|      Container                     | interpret.hpp:202  |    10           |               |                      |               |
-|     operator()                     | interpret.hpp:209  |    38 (2 calls) |               |                      |               |
-|     operator const ap_uint<1> &    | interpret.hpp:222  |     2           |               |                      |               |
-+------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
++-------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
+| Function                            | Location           | Compile/Link    | Unroll/Inline | Performance/Pipeline | Optimizations |
++-------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
+| + fc_finn_top                       | fc_finn_top.cpp:33 | 1,966           | 290           | 196                  | 242           |
+|    load_weights_once                | fc_finn_top.cpp:16 |    93           |  28           |  22                  |  30           |
+|  + StreamingFCLayer_Batch<8, 4,...  | fclayer.h:96       | 1,722           |               |                      |               |
+|     WidthAdjustedInputStream        | streamtools.h:837  |     3           |               |                      |               |
+|     WidthAdjustedOutputStream       | streamtools.h:869  |     3           |               |                      |               |
+|     operator hls::stream<ap_uint... | streamtools.h:841  |     3           |               |                      |               |
+|     operator hls::stream<ap_uint... | streamtools.h:874  |     3           |               |                      |               |
+|   + Matrix_Vector_Activate_Batch... | mvau.hpp:95        | 1,687           |               |                      |               |
+|    + weights                        | weights.hpp:214    |    13           |               |                      |               |
+|       TileIndex                     | weights.hpp:190    |     8           |               |                      |               |
+|      operator[]                     | weights.hpp:196    |   172           |               |                      |               |
+|    + operator()<ap_uint<1> >        | interpret.hpp:235  |    12           |               |                      |               |
+|       Container                     | interpret.hpp:202  |    10           |               |                      |               |
+|      operator()                     | interpret.hpp:209  |    38 (2 calls) |               |                      |               |
+|      operator const ap_uint<1> &    | interpret.hpp:222  |     2           |               |                      |               |
+|     ~WidthAdjustedOutputStream      | streamtools.h:871  |     1           |               |                      |               |
+|     ~WidthAdjustedInputStream       | streamtools.h:838  |     1           |               |                      |               |
+|    WidthAdjustedInputStream         | streamtools.h:837  |                 |   3           |                      |               |
+|    WidthAdjustedOutputStream        | streamtools.h:869  |                 |   3           |                      |               |
+|    operator hls::stream<ap_uint...  | streamtools.h:841  |                 |   1           |                      |               |
+|    operator hls::stream<ap_uint...  | streamtools.h:874  |                 |   1           |                      |               |
+|    Matrix_Vector_Activate_Batch...  | mvau.hpp:95        |                 | 196           |                      |               |
++-------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
 
 * Description of Compilation Phases
 +----------------------+------------------------------------------------------------+

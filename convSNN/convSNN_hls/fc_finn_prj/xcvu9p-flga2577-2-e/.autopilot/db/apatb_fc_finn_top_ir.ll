@@ -31,7 +31,7 @@ entry:
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define void @"arraycpy_hls.p0a8struct.ap_uint<1>.25"(i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.0" %dst_0, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.1" %dst_1, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.2" %dst_2, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.3" %dst_3, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.4" %dst_4, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.5" %dst_5, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.6" %dst_6, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.7" %dst_7, [8 x %"struct.ap_uint<1>"]* readonly "orig.arg.no"="1" "unpacked"="1" %src, i64 "orig.arg.no"="2" "unpacked"="2" %num) #1 {
+define void @"arraycpy_hls.p0a8struct.ap_uint<1>.23"(i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.0" %dst_0, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.1" %dst_1, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.2" %dst_2, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.3" %dst_3, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.4" %dst_4, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.5" %dst_5, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.6" %dst_6, i1* nocapture "orig.arg.no"="0" "unpacked"="0.0.7" %dst_7, [8 x %"struct.ap_uint<1>"]* readonly "orig.arg.no"="1" "unpacked"="1" %src, i64 "orig.arg.no"="2" "unpacked"="2" %num) #1 {
 entry:
   %0 = icmp eq [8 x %"struct.ap_uint<1>"]* %src, null
   br i1 %0, label %ret, label %copy
@@ -105,13 +105,13 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define internal void @"onebyonecpy_hls.p0a8struct.ap_uint<1>.22"(i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.0" %dst_0, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.1" %dst_1, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.2" %dst_2, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.3" %dst_3, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.4" %dst_4, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.5" %dst_5, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.6" %dst_6, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.7" %dst_7, [8 x %"struct.ap_uint<1>"]* noalias readonly "orig.arg.no"="1" "unpacked"="1" %src) #2 {
+define internal void @"onebyonecpy_hls.p0a8struct.ap_uint<1>.20"(i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.0" %dst_0, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.1" %dst_1, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.2" %dst_2, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.3" %dst_3, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.4" %dst_4, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.5" %dst_5, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.6" %dst_6, i1* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0.7" %dst_7, [8 x %"struct.ap_uint<1>"]* noalias readonly "orig.arg.no"="1" "unpacked"="1" %src) #2 {
 entry:
   %0 = icmp eq [8 x %"struct.ap_uint<1>"]* %src, null
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @"arraycpy_hls.p0a8struct.ap_uint<1>.25"(i1* %dst_0, i1* %dst_1, i1* %dst_2, i1* %dst_3, i1* %dst_4, i1* %dst_5, i1* %dst_6, i1* %dst_7, [8 x %"struct.ap_uint<1>"]* nonnull %src, i64 8)
+  call void @"arraycpy_hls.p0a8struct.ap_uint<1>.23"(i1* %dst_0, i1* %dst_1, i1* %dst_2, i1* %dst_3, i1* %dst_4, i1* %dst_5, i1* %dst_6, i1* %dst_7, [8 x %"struct.ap_uint<1>"]* nonnull %src, i64 8)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -189,7 +189,7 @@ ret:                                              ; preds = %copy, %entry
 ; Function Attrs: argmemonly noinline norecurse
 define internal void @copy_in([8 x %"struct.ap_uint<1>"]* noalias readonly "orig.arg.no"="0" "unpacked"="0", i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.0" %_0, i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.1" %_1, i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.2" %_2, i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.3" %_3, i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.4" %_4, i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.5" %_5, i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.6" %_6, i1* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0.7" %_7, [4 x %"struct.ap_uint<1>"]* noalias readonly "orig.arg.no"="2" "unpacked"="2", i1* noalias nocapture align 512 "orig.arg.no"="3" "unpacked"="3.0.0" %_01, i1* noalias nocapture align 512 "orig.arg.no"="3" "unpacked"="3.0.1" %_12, i1* noalias nocapture align 512 "orig.arg.no"="3" "unpacked"="3.0.2" %_23, i1* noalias nocapture align 512 "orig.arg.no"="3" "unpacked"="3.0.3" %_34) #3 {
 entry:
-  call void @"onebyonecpy_hls.p0a8struct.ap_uint<1>.22"(i1* align 512 %_0, i1* align 512 %_1, i1* align 512 %_2, i1* align 512 %_3, i1* align 512 %_4, i1* align 512 %_5, i1* align 512 %_6, i1* align 512 %_7, [8 x %"struct.ap_uint<1>"]* %0)
+  call void @"onebyonecpy_hls.p0a8struct.ap_uint<1>.20"(i1* align 512 %_0, i1* align 512 %_1, i1* align 512 %_2, i1* align 512 %_3, i1* align 512 %_4, i1* align 512 %_5, i1* align 512 %_6, i1* align 512 %_7, [8 x %"struct.ap_uint<1>"]* %0)
   call void @"onebyonecpy_hls.p0a4struct.ap_uint<1>"(i1* align 512 %_01, i1* align 512 %_12, i1* align 512 %_23, i1* align 512 %_34, [4 x %"struct.ap_uint<1>"]* %1)
   ret void
 }
@@ -298,7 +298,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define void @"arraycpy_hls.p0a4struct.ap_uint<1>.15"([4 x %"struct.ap_uint<1>"]* "orig.arg.no"="0" "unpacked"="0" %dst, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.2" %src_2, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.3" %src_3, i64 "orig.arg.no"="2" "unpacked"="2" %num) #1 {
+define void @"arraycpy_hls.p0a4struct.ap_uint<1>.13"([4 x %"struct.ap_uint<1>"]* "orig.arg.no"="0" "unpacked"="0" %dst, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.2" %src_2, i1* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.3" %src_3, i64 "orig.arg.no"="2" "unpacked"="2" %num) #1 {
 entry:
   %0 = icmp eq [4 x %"struct.ap_uint<1>"]* %dst, null
   br i1 %0, label %ret, label %copy
@@ -359,13 +359,13 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define internal void @"onebyonecpy_hls.p0a4struct.ap_uint<1>.12"([4 x %"struct.ap_uint<1>"]* noalias "orig.arg.no"="0" "unpacked"="0" %dst, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.2" %src_2, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.3" %src_3) #2 {
+define internal void @"onebyonecpy_hls.p0a4struct.ap_uint<1>.10"([4 x %"struct.ap_uint<1>"]* noalias "orig.arg.no"="0" "unpacked"="0" %dst, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.2" %src_2, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.3" %src_3) #2 {
 entry:
   %0 = icmp eq [4 x %"struct.ap_uint<1>"]* %dst, null
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @"arraycpy_hls.p0a4struct.ap_uint<1>.15"([4 x %"struct.ap_uint<1>"]* nonnull %dst, i1* %src_0, i1* %src_1, i1* %src_2, i1* %src_3, i64 4)
+  call void @"arraycpy_hls.p0a4struct.ap_uint<1>.13"([4 x %"struct.ap_uint<1>"]* nonnull %dst, i1* %src_0, i1* %src_1, i1* %src_2, i1* %src_3, i64 4)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -376,7 +376,7 @@ ret:                                              ; preds = %copy, %entry
 define internal void @copy_out([8 x %"struct.ap_uint<1>"]* noalias "orig.arg.no"="0" "unpacked"="0", i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.0" %_0, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.1" %_1, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.2" %_2, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.3" %_3, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.4" %_4, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.5" %_5, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.6" %_6, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.7" %_7, [4 x %"struct.ap_uint<1>"]* noalias "orig.arg.no"="2" "unpacked"="2", i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.0" %_01, i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.1" %_12, i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.2" %_23, i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.3" %_34) #4 {
 entry:
   call void @"onebyonecpy_hls.p0a8struct.ap_uint<1>"([8 x %"struct.ap_uint<1>"]* %0, i1* align 512 %_0, i1* align 512 %_1, i1* align 512 %_2, i1* align 512 %_3, i1* align 512 %_4, i1* align 512 %_5, i1* align 512 %_6, i1* align 512 %_7)
-  call void @"onebyonecpy_hls.p0a4struct.ap_uint<1>.12"([4 x %"struct.ap_uint<1>"]* %1, i1* align 512 %_01, i1* align 512 %_12, i1* align 512 %_23, i1* align 512 %_34)
+  call void @"onebyonecpy_hls.p0a4struct.ap_uint<1>.10"([4 x %"struct.ap_uint<1>"]* %1, i1* align 512 %_01, i1* align 512 %_12, i1* align 512 %_23, i1* align 512 %_34)
   ret void
 }
 
@@ -385,7 +385,7 @@ declare void @apatb_fc_finn_top_hw(i1*, i1*, i1*, i1*, i1*, i1*, i1*, i1*, i1*, 
 ; Function Attrs: argmemonly noinline norecurse
 define internal void @copy_back([8 x %"struct.ap_uint<1>"]* noalias "orig.arg.no"="0" "unpacked"="0", i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.0" %_0, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.1" %_1, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.2" %_2, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.3" %_3, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.4" %_4, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.5" %_5, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.6" %_6, i1* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.7" %_7, [4 x %"struct.ap_uint<1>"]* noalias "orig.arg.no"="2" "unpacked"="2", i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.0" %_01, i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.1" %_12, i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.2" %_23, i1* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.3" %_34) #4 {
 entry:
-  call void @"onebyonecpy_hls.p0a4struct.ap_uint<1>.12"([4 x %"struct.ap_uint<1>"]* %1, i1* align 512 %_01, i1* align 512 %_12, i1* align 512 %_23, i1* align 512 %_34)
+  call void @"onebyonecpy_hls.p0a4struct.ap_uint<1>.10"([4 x %"struct.ap_uint<1>"]* %1, i1* align 512 %_01, i1* align 512 %_12, i1* align 512 %_23, i1* align 512 %_34)
   ret void
 }
 

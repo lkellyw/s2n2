@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'load_weights_once'
 ================================================================
-* Date:           Thu Apr 23 02:33:00 2026
+* Date:           Sat Apr 25 21:02:30 2026
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        conv2x2_prj
@@ -75,12 +75,12 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:31]   --->   Operation 2 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%br_ln31 = br i1 %loaded_load, void %if.end, void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:31]   --->   Operation 3 'br' 'br_ln31' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%store_ln33 = store i2 3, i2 %conv_weights_0_0" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:33]   --->   Operation 4 'store' 'store_ln33' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%store_ln41 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:41]   --->   Operation 5 'store' 'store_ln41' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln42 = br void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:42]   --->   Operation 6 'br' 'br_ln42' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln42 = ret" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:42]   --->   Operation 7 'ret' 'ret_ln42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 2 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%br_ln30 = br i1 %loaded_load, void %if.end, void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 3 'br' 'br_ln30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%store_ln32 = store i2 3, i2 %conv_weights_0_0" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:32]   --->   Operation 4 'store' 'store_ln32' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%store_ln34 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:34]   --->   Operation 5 'store' 'store_ln34' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln35 = br void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:35]   --->   Operation 6 'br' 'br_ln35' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln35 = ret" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:35]   --->   Operation 7 'ret' 'ret_ln35' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================

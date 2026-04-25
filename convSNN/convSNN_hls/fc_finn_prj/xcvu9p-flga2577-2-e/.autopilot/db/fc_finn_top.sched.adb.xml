@@ -412,7 +412,7 @@ entry:46 %empty_18 = wait i32 @_ssdm_op_Wait
 
 <Node id="67" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="0" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:47 %call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_82_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
+entry:47 %call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_79_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -865,7 +865,7 @@ entry:30 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %ou
 
 <Node id="67" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="0" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:47 %call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_82_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
+entry:47 %call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_79_2, i1 %out_0, i1 %out_3, i1 %out_2, i1 %out_1, i1 %out_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -880,10 +880,10 @@ entry:47 %call_ln0 = call void @fc_finn_top_Pipeline_VITIS_LOOP_82_2, i1 %out_0,
 
 <Node id="68" bw="0">
 <![CDATA[
-entry:48 %ret_ln86 = ret
+entry:48 %ret_ln83 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln86"/></StgValue>
+<StgValue><ssdm name="ret_ln83"/></StgValue>
 </operation>
 </state>
 </state_list>

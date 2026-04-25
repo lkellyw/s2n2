@@ -3,7 +3,7 @@
     "basicblocks": 43,
     "calls": "1",
     "file": "conv2x2_top.cpp",
-    "fileloc": 44,
+    "fileloc": 37,
     "instructions": 244,
     "loads": {
       "G": 3,
@@ -22,7 +22,7 @@
     "basicblocks": 3,
     "calls": "",
     "file": "conv2x2_top.cpp",
-    "fileloc": 28,
+    "fileloc": 27,
     "instructions": 7,
     "loads": {
       "G": 1

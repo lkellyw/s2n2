@@ -96,19 +96,19 @@ architecture behav of fc_finn_top is
     signal grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_out_stream_write : STD_LOGIC;
     signal grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_fc_weights_0_address0 : STD_LOGIC_VECTOR (4 downto 0);
     signal grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_fc_weights_0_ce0 : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_idle : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_ready : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_stream_read : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_0_ap_vld : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_3_ap_vld : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_2_ap_vld : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_1_ap_vld : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_idle : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_ready : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_stream_read : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_0_ap_vld : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_3_ap_vld : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_2_ap_vld : STD_LOGIC;
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_1_ap_vld : STD_LOGIC;
     signal grp_load_weights_once_fu_138_ap_start_reg : STD_LOGIC := '0';
     signal grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state3 : STD_LOGIC;
@@ -129,7 +129,7 @@ architecture behav of fc_finn_top is
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal out_stream_full_n : STD_LOGIC;
     signal out_stream_write : STD_LOGIC;
-    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg : STD_LOGIC := '0';
+    signal grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state9 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
     signal ap_CS_fsm_state10 : STD_LOGIC;
@@ -206,7 +206,7 @@ architecture behav of fc_finn_top is
     end component;
 
 
-    component fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_82_2 IS
+    component fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_79_2 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -326,25 +326,25 @@ begin
         fc_weights_0_ce0 => grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_fc_weights_0_ce0,
         fc_weights_0_q0 => fc_weights_0_q0);
 
-    grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177 : component fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_82_2
+    grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177 : component fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_79_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start,
-        ap_done => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done,
-        ap_idle => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_idle,
-        ap_ready => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_ready,
+        ap_start => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start,
+        ap_done => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done,
+        ap_idle => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_idle,
+        ap_ready => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_ready,
         out_stream_dout => out_stream_dout,
         out_stream_empty_n => out_stream_empty_n,
-        out_stream_read => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_stream_read,
-        out_0 => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_0,
-        out_0_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_0_ap_vld,
-        out_3 => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_3,
-        out_3_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_3_ap_vld,
-        out_2 => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_2,
-        out_2_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_2_ap_vld,
-        out_1 => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_1,
-        out_1_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_1_ap_vld);
+        out_stream_read => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_stream_read,
+        out_0 => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_0,
+        out_0_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_0_ap_vld,
+        out_3 => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_3,
+        out_3_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_3_ap_vld,
+        out_2 => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_2,
+        out_2_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_2_ap_vld,
+        out_1 => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_1,
+        out_1_ap_vld => grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_1_ap_vld);
 
     in_stream_fifo_U : component fc_finn_top_fifo_w1_d8_S
     port map (
@@ -420,16 +420,16 @@ begin
     end process;
 
 
-    grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg_assign_proc : process(ap_clk)
+    grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg <= ap_const_logic_0;
+                grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
-                    grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_ready = ap_const_logic_1)) then 
-                    grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg <= ap_const_logic_0;
+                    grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_ready = ap_const_logic_1)) then 
+                    grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -452,7 +452,7 @@ begin
     end process;
 
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, grp_load_weights_once_fu_138_ap_done, grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148_ap_done, grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_ap_done, grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done, ap_CS_fsm_state4, ap_CS_fsm_state7, ap_CS_fsm_state10)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, grp_load_weights_once_fu_138_ap_done, grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148_ap_done, grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_ap_done, grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done, ap_CS_fsm_state4, ap_CS_fsm_state7, ap_CS_fsm_state10)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -490,7 +490,7 @@ begin
             when ap_ST_fsm_state9 => 
                 ap_NS_fsm <= ap_ST_fsm_state10;
             when ap_ST_fsm_state10 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state10) and (grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done = ap_const_logic_1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state10) and (grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state10;
@@ -509,9 +509,9 @@ begin
     ap_CS_fsm_state9 <= ap_CS_fsm(8);
     ap_NS_fsm_state6 <= ap_NS_fsm(5);
 
-    ap_ST_fsm_state10_blk_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done)
+    ap_ST_fsm_state10_blk_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done)
     begin
-        if ((grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done = ap_const_logic_0)) then 
+        if ((grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state10_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state10_blk <= ap_const_logic_0;
@@ -564,9 +564,9 @@ begin
     ap_ST_fsm_state8_blk <= ap_const_logic_0;
     ap_ST_fsm_state9_blk <= ap_const_logic_0;
 
-    ap_done_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done, ap_CS_fsm_state10)
+    ap_done_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done, ap_CS_fsm_state10)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) and (grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done = ap_const_logic_1))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state10) and (grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done = ap_const_logic_1))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -584,9 +584,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done, ap_CS_fsm_state10)
+    ap_ready_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done, ap_CS_fsm_state10)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) and (grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_done = ap_const_logic_1))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state10) and (grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_done = ap_const_logic_1))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -629,7 +629,7 @@ begin
 
     grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_ap_start <= grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_ap_start_reg;
     grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148_ap_start <= grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148_ap_start_reg;
-    grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_ap_start_reg;
+    grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_ap_start_reg;
     grp_load_weights_once_fu_138_ap_start <= grp_load_weights_once_fu_138_ap_start_reg;
 
     in_stream_read_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161_in_stream_read, ap_CS_fsm_state7)
@@ -651,19 +651,19 @@ begin
         end if; 
     end process;
 
-    out_0 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_0;
-    out_0_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_0_ap_vld;
-    out_1 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_1;
-    out_1_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_1_ap_vld;
-    out_2 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_2;
-    out_2_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_2_ap_vld;
-    out_3 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_3;
-    out_3_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_3_ap_vld;
+    out_0 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_0;
+    out_0_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_0_ap_vld;
+    out_1 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_1;
+    out_1_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_1_ap_vld;
+    out_2 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_2;
+    out_2_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_2_ap_vld;
+    out_3 <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_3;
+    out_3_ap_vld <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_3_ap_vld;
 
-    out_stream_read_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_stream_read, ap_CS_fsm_state10)
+    out_stream_read_assign_proc : process(grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_stream_read, ap_CS_fsm_state10)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            out_stream_read <= grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177_out_stream_read;
+            out_stream_read <= grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177_out_stream_read;
         else 
             out_stream_read <= ap_const_logic_0;
         end if; 

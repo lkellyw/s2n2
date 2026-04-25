@@ -61262,47 +61262,16 @@ int main() {
   ap_uint<1> in_mem[4];
   ap_uint<1> out_mem[4];
 
-  std::cout << "================ Testbench begin ================" << std::endl;
-  std::cout << "[TB] IN_FM from ref:" << std::endl;
-  for (int i = 0; i < 4; i++) {
-    std::cout << "  IN_FM[" << i << "] = " << IN_FM[i] << std::endl;
-  }
-
-  std::cout << "[TB] EXPECT_SPK from ref:" << std::endl;
-  for (int i = 0; i < 4; i++) {
-    std::cout << "  EXPECT_SPK[" << i << "] = " << EXPECT_SPK[i] << std::endl;
-  }
-
-  std::cout << "[TB] W_VAL from ref = " << W_VAL << std::endl;
-
   for (int i = 0; i < 4; i++) {
     in_mem[i] = IN_FM[i];
     out_mem[i] = 0;
   }
 
-  std::cout << "[TB] Input sent to DUT:" << std::endl;
-  std::cout << "  " << (int)in_mem[0] << " " << (int)in_mem[1] << std::endl;
-  std::cout << "  " << (int)in_mem[2] << " " << (int)in_mem[3] << std::endl;
-
   conv2x2_top(in_mem, out_mem);
 
   bool pass = true;
 
-  std::cout << "\n[TB] Per-index comparison:" << std::endl;
-  for (int i = 0; i < 4; i++) {
-    int got = (int)out_mem[i];
-    int exp = EXPECT_SPK[i];
-    std::cout << "  idx " << i
-              << ": expected = " << exp
-              << ", got = " << got;
-    if (got != exp) {
-      std::cout << "   <-- mismatch";
-      pass = false;
-    }
-    std::cout << std::endl;
-  }
-
-  std::cout << "\nExpected spikes: ";
+  std::cout << "Expected spikes: ";
   for (int i = 0; i < 4; i++) {
     std::cout << EXPECT_SPK[i] << " ";
   }
@@ -61310,21 +61279,17 @@ int main() {
 
   std::cout << "Got spikes     : ";
   for (int i = 0; i < 4; i++) {
-    std::cout << (int)out_mem[i] << " ";
+    int got = (int)out_mem[i];
+    std::cout << got << " ";
+    if (got != EXPECT_SPK[i]) pass = false;
   }
   std::cout << "\n";
 
-  std::cout << "[TB] Output as 2x2:" << std::endl;
-  std::cout << "  " << (int)out_mem[0] << " " << (int)out_mem[1] << std::endl;
-  std::cout << "  " << (int)out_mem[2] << " " << (int)out_mem[3] << std::endl;
-
   if (pass) {
     std::cout << "TB PASSED\n";
-    std::cout << "================ Testbench end ==================\n";
     return 0;
   } else {
     std::cout << "TB FAILED\n";
-    std::cout << "================ Testbench end ==================\n";
     return 1;
   }
 }

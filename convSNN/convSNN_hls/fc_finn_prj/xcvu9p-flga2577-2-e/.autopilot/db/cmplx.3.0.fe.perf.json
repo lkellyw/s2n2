@@ -4,7 +4,7 @@
     "calls": "1",
     "file": "fc_finn_top.cpp",
     "fileloc": 33,
-    "instructions": 164,
+    "instructions": 174,
     "loads": {
       "G": 6,
       "T": 8
@@ -14,7 +14,7 @@
       "G": 9,
       "T": 4
     },
-    "total_instructions": 186
+    "total_instructions": 196
   },
   "1": {
     "basicblocks": 7,

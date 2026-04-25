@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'load_weights_once'
 ================================================================
-* Date:           Thu Apr 23 02:33:05 2026
+* Date:           Sat Apr 25 21:02:37 2026
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        conv2x2_prj
@@ -151,12 +151,12 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:31]   --->   Operation 2 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%br_ln31 = br i1 %loaded_load, void %if.end, void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:31]   --->   Operation 3 'br' 'br_ln31' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%store_ln33 = store i2 3, i2 %conv_weights_0_0" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:33]   --->   Operation 4 'store' 'store_ln33' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%store_ln41 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:41]   --->   Operation 5 'store' 'store_ln41' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln42 = br void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:42]   --->   Operation 6 'br' 'br_ln42' <Predicate = (!loaded_load)> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln42 = ret" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:42]   --->   Operation 7 'ret' 'ret_ln42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%loaded_load = load i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 2 'load' 'loaded_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%br_ln30 = br i1 %loaded_load, void %if.end, void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30]   --->   Operation 3 'br' 'br_ln30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%store_ln32 = store i2 3, i2 %conv_weights_0_0" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:32]   --->   Operation 4 'store' 'store_ln32' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%store_ln34 = store i1 1, i1 %loaded" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:34]   --->   Operation 5 'store' 'store_ln34' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln35 = br void %return" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:35]   --->   Operation 6 'br' 'br_ln35' <Predicate = (!loaded_load)> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln35 = ret" [/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:35]   --->   Operation 7 'ret' 'ret_ln35' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -179,11 +179,11 @@ Port [ conv_weights_0_0]:  wired=1; compound=0; hidden=0; nouse=0; global=1; sta
 <LifeTime>
 <method=bitvector/>
 loaded_load (load ) [ 01]
-br_ln31     (br   ) [ 00]
-store_ln33  (store) [ 00]
-store_ln41  (store) [ 00]
-br_ln42     (br   ) [ 00]
-ret_ln42    (ret  ) [ 00]
+br_ln30     (br   ) [ 00]
+store_ln32  (store) [ 00]
+store_ln34  (store) [ 00]
+br_ln35     (br   ) [ 00]
+ret_ln35    (ret  ) [ 00]
 </LifeTime>
 
 <model>
@@ -236,7 +236,7 @@ ret_ln42    (ret  ) [ 00]
 </bind>
 </comp>
 
-<comp id="12" class="1004" name="store_ln33_store_fu_12">
+<comp id="12" class="1004" name="store_ln32_store_fu_12">
 <pin_list>
 <pin id="13" dir="0" index="0" bw="1" slack="0"/>
 <pin id="14" dir="0" index="1" bw="2" slack="0"/>
@@ -244,11 +244,11 @@ ret_ln42    (ret  ) [ 00]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln33/1 "/>
+<opset="store_ln32/1 "/>
 </bind>
 </comp>
 
-<comp id="18" class="1004" name="store_ln41_store_fu_18">
+<comp id="18" class="1004" name="store_ln34_store_fu_18">
 <pin_list>
 <pin id="19" dir="0" index="0" bw="1" slack="0"/>
 <pin id="20" dir="0" index="1" bw="1" slack="0"/>
@@ -256,7 +256,7 @@ ret_ln42    (ret  ) [ 00]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln41/1 "/>
+<opset="store_ln34/1 "/>
 </bind>
 </comp>
 
@@ -287,7 +287,7 @@ ret_ln42    (ret  ) [ 00]
 	Port: load_weights_once : conv_weights_0_0 | {}
   - Chain level:
 	State 1
-		br_ln31 : 1
+		br_ln30 : 1
 
 
 ============================================================

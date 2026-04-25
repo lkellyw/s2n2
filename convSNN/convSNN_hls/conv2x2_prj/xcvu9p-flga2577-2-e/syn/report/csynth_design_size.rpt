@@ -6,9 +6,9 @@
 +--------------------------------------+---------------------+-----------------+---------------+----------------------+---------------+
 | Function                             | Location            | Compile/Link    | Unroll/Inline | Performance/Pipeline | Optimizations |
 +--------------------------------------+---------------------+-----------------+---------------+----------------------+---------------+
-| + conv2x2_top                        | conv2x2_top.cpp:44  | 2,570           | 405           | 215                  | 251           |
-|    load_weights_once                 | conv2x2_top.cpp:28  |    31           |   7           |   6                  |   7           |
-|  + ConvLayer_Batch<1, 1, 2, 1, ...   | convlayer.h:106     | 2,039           |               |                      |               |
+| + conv2x2_top                        | conv2x2_top.cpp:37  | 2,228           | 397           | 215                  | 251           |
+|    load_weights_once                 | conv2x2_top.cpp:27  |    31           |   7           |   6                  |   7           |
+|  + ConvLayer_Batch<1, 1, 2, 1, ...   | convlayer.h:106     | 2,047           |               |                      |               |
 |     WidthAdjustedInputStream         | streamtools.h:837   |     3           |               |                      |               |
 |     WidthAdjustedOutputStream        | streamtools.h:869   |     3           |               |                      |               |
 |     operator hls::stream<ap_uint...  | streamtools.h:841   |     3           |               |                      |               |

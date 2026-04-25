@@ -101,6 +101,23 @@ Args:
   - String:          ''''
 ...
 --- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                   Line: 54, Column: 3 }
+Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void StreamingFCLayer_Batch<8u, 4u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, 1, 1, FixedPointWeightsSp<1u, ap_int<8>, 1u, 32u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 32u> const&, int const&, unsigned int, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_resource_dflt const&)'
+    DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h, 
+                       Line: 102, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
+    DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                       Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
@@ -211,6 +228,74 @@ Args:
   - String:          'Matrix_Vector_Activate_Batch<8u, 4u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 6u, 1u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 32u>, int, ap_resource_dflt>'
   - String:          ''' completely with a factor of '
   - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                   Line: 33, Column: 0 }
+Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'WidthAdjustedInputStream<1u, 1u, 8u>::WidthAdjustedInputStream(hls::stream<ap_uint<1>, 0>&, unsigned int)'
+    DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h, 
+                       Line: 837, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
+    DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                       Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                   Line: 33, Column: 0 }
+Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'WidthAdjustedOutputStream<1u, 1u, 4u>::WidthAdjustedOutputStream(hls::stream<ap_uint<1>, 0>&, unsigned int)'
+    DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h, 
+                       Line: 870, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
+    DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                       Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                   Line: 33, Column: 0 }
+Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'WidthAdjustedInputStream<1u, 1u, 8u>::operator hls::stream<ap_uint<1>, 0>&()'
+    DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h, 
+                       Line: 841, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
+    DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                       Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                   Line: 33, Column: 0 }
+Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'WidthAdjustedOutputStream<1u, 1u, 4u>::operator hls::stream<ap_uint<1>, 0>&()'
+    DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h, 
+                       Line: 874, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
+    DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
+                       Line: 33, Column: 0 }
+  - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner

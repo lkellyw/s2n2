@@ -121,7 +121,7 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 93, Column: 3 }
+                   Line: 56, Column: 3 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -131,7 +131,7 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 44, Column: 0 }
+                       Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
@@ -261,7 +261,7 @@ Args:
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -271,14 +271,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 44, Column: 0 }
+                       Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -288,14 +288,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 44, Column: 0 }
+                       Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -305,14 +305,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 44, Column: 0 }
+                       Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -322,14 +322,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 44, Column: 0 }
+                       Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -339,14 +339,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 44, Column: 0 }
+                       Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -356,7 +356,7 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 44, Column: 0 }
+                       Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -401,7 +401,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Applying '
@@ -420,7 +420,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 44, Column: 0 }
+                   Line: 37, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Applying '

@@ -12,7 +12,7 @@ set ModuleHierarchy {[{
 	{"Name" : "grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161","ID" : "6","Type" : "sequential",
 		"SubLoops" : [
 		{"Name" : "VITIS_LOOP_131_1","ID" : "7","Type" : "pipeline"},]},
-	{"Name" : "grp_fc_finn_top_Pipeline_VITIS_LOOP_82_2_fu_177","ID" : "8","Type" : "sequential",
+	{"Name" : "grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177","ID" : "8","Type" : "sequential",
 		"SubLoops" : [
-		{"Name" : "VITIS_LOOP_82_2","ID" : "9","Type" : "pipeline"},]},]
+		{"Name" : "VITIS_LOOP_79_2","ID" : "9","Type" : "pipeline"},]},]
 }]}
