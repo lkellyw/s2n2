@@ -18,8 +18,7 @@ module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1 (
         convInp_read,
         out_stream_din,
         out_stream_full_n,
-        out_stream_write,
-        temp_4
+        out_stream_write
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -36,7 +35,6 @@ output   convInp_read;
 output  [0:0] out_stream_din;
 input   out_stream_full_n;
 output   out_stream_write;
-input  [1:0] temp_4;
 
 reg ap_idle;
 reg convInp_read;
@@ -50,37 +48,35 @@ reg    ap_idle_pp0;
 wire    ap_block_state1_pp0_stage0_iter0;
 reg    ap_block_state2_pp0_stage0_iter1;
 reg    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln131_fu_111_p2;
+wire   [0:0] icmp_ln131_fu_99_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_3;
-reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_2;
-reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_1;
-reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum;
+reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_3;
+reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2;
+reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1;
+reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int;
 reg    out_stream_blk_n;
 wire    ap_block_pp0_stage0;
 reg    convInp_blk_n;
+reg   [1:0] cntr_2_reg_243;
 reg    ap_block_pp0_stage0_11001;
-reg   [1:0] cntr_2_reg_271;
-wire   [15:0] select_ln179_fu_220_p3;
-reg   [1:0] cntr_fu_68;
-wire   [1:0] cntr_3_fu_123_p2;
+wire   [15:0] select_ln179_fu_197_p3;
+reg   [1:0] cntr_fu_62;
+wire   [1:0] cntr_3_fu_111_p2;
 wire    ap_loop_init;
 reg   [1:0] ap_sig_allocacmp_cntr_2;
-reg   [2:0] i_2_fu_72;
-wire   [2:0] i_4_fu_117_p2;
+reg   [2:0] i_2_fu_66;
+wire   [2:0] i_4_fu_105_p2;
 reg   [2:0] ap_sig_allocacmp_i;
-wire   [0:0] outElem_fu_213_p2;
+wire   [0:0] outElem_fu_190_p2;
 reg    ap_block_pp0_stage0_01001;
-wire   [15:0] temp_fu_155_p6;
-wire   [11:0] trunc_ln2_fu_168_p4;
-wire   [1:0] select_ln202_fu_182_p3;
-wire   [9:0] shl_ln_fu_189_p3;
-wire   [15:0] zext_ln165_fu_197_p1;
-wire  signed [15:0] sext_ln155_fu_178_p1;
-wire   [15:0] temp_1_fu_201_p2;
-wire   [15:0] newSecond_fu_207_p2;
+wire   [15:0] temp_fu_143_p6;
+wire   [11:0] trunc_ln2_fu_156_p4;
+wire   [15:0] select_ln165_fu_170_p3;
+wire  signed [15:0] sext_ln155_fu_166_p1;
+wire   [15:0] temp_1_fu_178_p2;
+wire   [15:0] newSecond_fu_184_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -93,10 +89,10 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_3 = 16'd0;
-#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_2 = 16'd0;
-#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_1 = 16'd0;
-#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum = 16'd0;
+#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_3 = 16'd0;
+#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2 = 16'd0;
+#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1 = 16'd0;
+#0 void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int = 16'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -109,13 +105,13 @@ conv2x2_top_mux_4_2_16_1_1 #(
     .din3_WIDTH( 16 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
-mux_4_2_16_1_1_U15(
-    .din0(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_3),
-    .din1(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_2),
-    .din2(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_1),
-    .din3(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum),
-    .din4(cntr_2_reg_271),
-    .dout(temp_fu_155_p6)
+mux_4_2_16_1_1_U14(
+    .din0(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_3),
+    .din1(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2),
+    .din2(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1),
+    .din3(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int),
+    .din4(cntr_2_reg_243),
+    .dout(temp_fu_143_p6)
 );
 
 conv2x2_top_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
@@ -167,56 +163,56 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln131_fu_111_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            cntr_fu_68 <= cntr_3_fu_123_p2;
+        if (((icmp_ln131_fu_99_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            cntr_fu_62 <= cntr_3_fu_111_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            cntr_fu_68 <= 2'd0;
+            cntr_fu_62 <= 2'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln131_fu_111_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_2_fu_72 <= i_4_fu_117_p2;
+        if (((icmp_ln131_fu_99_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_2_fu_66 <= i_4_fu_105_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_2_fu_72 <= 3'd0;
+            i_2_fu_66 <= 3'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        cntr_2_reg_271 <= ap_sig_allocacmp_cntr_2;
+        cntr_2_reg_243 <= ap_sig_allocacmp_cntr_2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((cntr_2_reg_271 == 2'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum <= select_ln179_fu_220_p3;
+    if (((cntr_2_reg_243 == 2'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int <= select_ln179_fu_197_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((cntr_2_reg_271 == 2'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_1 <= select_ln179_fu_220_p3;
+    if (((cntr_2_reg_243 == 2'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1 <= select_ln179_fu_197_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((cntr_2_reg_271 == 2'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_2 <= select_ln179_fu_220_p3;
+    if (((cntr_2_reg_243 == 2'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2 <= select_ln179_fu_197_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((cntr_2_reg_271 == 2'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_Dum_3 <= select_ln179_fu_220_p3;
+    if (((cntr_2_reg_243 == 2'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_3 <= select_ln179_fu_197_p3;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln131_fu_111_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln131_fu_99_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -232,7 +228,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_idle_pp0 == 1'b1) & (ap_start_int == 1'b0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((ap_idle_pp0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_start_int == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -259,7 +255,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_cntr_2 = 2'd0;
     end else begin
-        ap_sig_allocacmp_cntr_2 = cntr_fu_68;
+        ap_sig_allocacmp_cntr_2 = cntr_fu_62;
     end
 end
 
@@ -267,7 +263,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 3'd0;
     end else begin
-        ap_sig_allocacmp_i = i_2_fu_72;
+        ap_sig_allocacmp_i = i_2_fu_66;
     end
 end
 
@@ -342,30 +338,26 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign cntr_3_fu_123_p2 = (ap_sig_allocacmp_cntr_2 + 2'd1);
+assign cntr_3_fu_111_p2 = (ap_sig_allocacmp_cntr_2 + 2'd1);
 
-assign i_4_fu_117_p2 = (ap_sig_allocacmp_i + 3'd1);
+assign i_4_fu_105_p2 = (ap_sig_allocacmp_i + 3'd1);
 
-assign icmp_ln131_fu_111_p2 = ((ap_sig_allocacmp_i == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln131_fu_99_p2 = ((ap_sig_allocacmp_i == 3'd4) ? 1'b1 : 1'b0);
 
-assign newSecond_fu_207_p2 = (temp_fu_155_p6 + temp_1_fu_201_p2);
+assign newSecond_fu_184_p2 = (temp_fu_143_p6 + temp_1_fu_178_p2);
 
-assign outElem_fu_213_p2 = (($signed(newSecond_fu_207_p2) > $signed(16'd0)) ? 1'b1 : 1'b0);
+assign outElem_fu_190_p2 = (($signed(newSecond_fu_184_p2) > $signed(16'd0)) ? 1'b1 : 1'b0);
 
-assign out_stream_din = outElem_fu_213_p2;
+assign out_stream_din = outElem_fu_190_p2;
 
-assign select_ln179_fu_220_p3 = ((outElem_fu_213_p2[0:0] == 1'b1) ? 16'd0 : newSecond_fu_207_p2);
+assign select_ln165_fu_170_p3 = ((convInp_dout[0:0] == 1'b1) ? 16'd768 : 16'd0);
 
-assign select_ln202_fu_182_p3 = ((convInp_dout[0:0] == 1'b1) ? temp_4 : 2'd0);
+assign select_ln179_fu_197_p3 = ((outElem_fu_190_p2[0:0] == 1'b1) ? 16'd0 : newSecond_fu_184_p2);
 
-assign sext_ln155_fu_178_p1 = $signed(trunc_ln2_fu_168_p4);
+assign sext_ln155_fu_166_p1 = $signed(trunc_ln2_fu_156_p4);
 
-assign shl_ln_fu_189_p3 = {{select_ln202_fu_182_p3}, {8'd0}};
+assign temp_1_fu_178_p2 = ($signed(select_ln165_fu_170_p3) - $signed(sext_ln155_fu_166_p1));
 
-assign temp_1_fu_201_p2 = ($signed(zext_ln165_fu_197_p1) - $signed(sext_ln155_fu_178_p1));
-
-assign trunc_ln2_fu_168_p4 = {{temp_fu_155_p6[14:3]}};
-
-assign zext_ln165_fu_197_p1 = shl_ln_fu_189_p3;
+assign trunc_ln2_fu_156_p4 = {{temp_fu_143_p6[14:3]}};
 
 endmodule //conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1

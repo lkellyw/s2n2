@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2x2_top'" level="0">
-<item name = "Date">Sat Apr 25 21:02:47 2026
+<item name = "Date">Sun Apr 26 00:20:13 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">conv2x2_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.324 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.347 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,11 +31,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130">conv2x2_top_Pipeline_VITIS_LOOP_48_1, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_139">conv2x2_top_Pipeline_VITIS_LOOP_197_2, 8, 8, 80.000 ns, 80.000 ns, 8, 8, no</column>
-<column name="call_ln41_load_weights_once_fu_147">load_weights_once, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_155">conv2x2_top_Pipeline_VITIS_LOOP_131_1, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170">conv2x2_top_Pipeline_VITIS_LOOP_87_2, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124">conv2x2_top_Pipeline_VITIS_LOOP_33_1, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133">conv2x2_top_Pipeline_VITIS_LOOP_197_2, 8, 8, 80.000 ns, 80.000 ns, 8, 8, no</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141">conv2x2_top_Pipeline_VITIS_LOOP_131_1, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155">conv2x2_top_Pipeline_VITIS_LOOP_64_2, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -54,10 +53,10 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, 26, 94, -</column>
-<column name="Instance">-, -, 325, 1222, -</column>
+<column name="Instance">-, -, 323, 1230, -</column>
 <column name="Memory">0, -, 4, 6, 0</column>
 <column name="Multiplexer">-, -, -, 119, -</column>
-<column name="Register">-, -, 18, -, -</column>
+<column name="Register">-, -, 16, -, -</column>
 <specialColumn name="Available SLR">1440, 2280, 788160, 394080, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
@@ -68,11 +67,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_155">conv2x2_top_Pipeline_VITIS_LOOP_131_1, 0, 0, 74, 202, 0</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_139">conv2x2_top_Pipeline_VITIS_LOOP_197_2, 0, 0, 234, 858, 0</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130">conv2x2_top_Pipeline_VITIS_LOOP_48_1, 0, 0, 7, 91, 0</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170">conv2x2_top_Pipeline_VITIS_LOOP_87_2, 0, 0, 8, 71, 0</column>
-<column name="call_ln41_load_weights_once_fu_147">load_weights_once, 0, 0, 2, 0, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141">conv2x2_top_Pipeline_VITIS_LOOP_131_1, 0, 0, 74, 210, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133">conv2x2_top_Pipeline_VITIS_LOOP_197_2, 0, 0, 234, 858, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124">conv2x2_top_Pipeline_VITIS_LOOP_33_1, 0, 0, 7, 91, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155">conv2x2_top_Pipeline_VITIS_LOOP_64_2, 0, 0, 8, 71, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -110,11 +108,10 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">12, 0, 12, 0</column>
-<column name="conv_weights_0_0">2, 0, 2, 0</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_155_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_139_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

@@ -5,34 +5,28 @@
 <ModuleName>conv2x2_top</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_48_1_fu_130</InstName>
-<ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_48_1</ModuleName>
+<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124</InstName>
+<ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_33_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>130</ID>
+<ID>124</ID>
 </Instance>
 <Instance>
-<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_139</InstName>
+<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133</InstName>
 <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_197_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>139</ID>
+<ID>133</ID>
 </Instance>
 <Instance>
-<InstName>call_ln41_load_weights_once_fu_147</InstName>
-<ModuleName>load_weights_once</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>147</ID>
-</Instance>
-<Instance>
-<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_155</InstName>
+<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141</InstName>
 <ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_131_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>155</ID>
+<ID>141</ID>
 </Instance>
 <Instance>
-<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_87_2_fu_170</InstName>
-<ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_87_2</ModuleName>
+<InstName>grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155</InstName>
+<ModuleName>conv2x2_top_Pipeline_VITIS_LOOP_64_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>170</ID>
+<ID>155</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -40,138 +34,9 @@
 
 <ModuleInformation>
 <Module>
-<Name>load_weights_once</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>0.000</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>0</Best-caseLatency>
-<Average-caseLatency>0</Average-caseLatency>
-<Worst-caseLatency>0</Worst-caseLatency>
-<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>0</PipelineInitiationInterval>
-<PipelineType>no</PipelineType>
-</SummaryOfOverallLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<FF>2</FF>
-<AVAIL_FF>2364480</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<BRAM_18K>0</BRAM_18K>
-<AVAIL_BRAM>4320</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<DSP>0</DSP>
-<AVAIL_DSP>6840</AVAIL_DSP>
-<UTIL_DSP>0</UTIL_DSP>
-<LUT>0</LUT>
-<AVAIL_LUT>1182240</AVAIL_LUT>
-<UTIL_LUT>0</UTIL_LUT>
-<URAM>0</URAM>
-<AVAIL_URAM>960</AVAIL_URAM>
-<UTIL_URAM>0</UTIL_URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>load_weights_once</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>load_weights_once</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>load_weights_once</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>load_weights_once</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>load_weights_once</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>load_weights_once</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>conv_weights_0_0</name>
-<Object>conv_weights_0_0</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>2</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>conv_weights_0_0_ap_vld</name>
-<Object>conv_weights_0_0</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Name>
+<Name>conv2x2_top_Pipeline_VITIS_LOOP_33_1</Name>
 <Loops>
-<VITIS_LOOP_48_1></VITIS_LOOP_48_1>
+<VITIS_LOOP_33_1></VITIS_LOOP_33_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -190,8 +55,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_48_1>
-<Name>VITIS_LOOP_48_1</Name>
+<VITIS_LOOP_33_1>
+<Name>VITIS_LOOP_33_1</Name>
 <Slack>7.30</Slack>
 <TripCount>4</TripCount>
 <Latency>4</Latency>
@@ -201,7 +66,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_48_1>
+</VITIS_LOOP_33_1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -226,7 +91,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -237,7 +102,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -248,7 +113,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -259,7 +124,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -270,7 +135,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -281,7 +146,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_48_1</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -722,7 +587,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>4.324</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.347</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>6</Best-caseLatency>
@@ -754,7 +619,7 @@
 <FF>74</FF>
 <AVAIL_FF>2364480</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>202</LUT>
+<LUT>210</LUT>
 <AVAIL_LUT>1182240</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -901,23 +766,12 @@
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>temp_4</name>
-<Object>temp_4</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Name>
+<Name>conv2x2_top_Pipeline_VITIS_LOOP_64_2</Name>
 <Loops>
-<VITIS_LOOP_87_2></VITIS_LOOP_87_2>
+<VITIS_LOOP_64_2></VITIS_LOOP_64_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -936,8 +790,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_87_2>
-<Name>VITIS_LOOP_87_2</Name>
+<VITIS_LOOP_64_2>
+<Name>VITIS_LOOP_64_2</Name>
 <Slack>7.30</Slack>
 <TripCount>4</TripCount>
 <Latency>4</Latency>
@@ -947,7 +801,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_87_2>
+</VITIS_LOOP_64_2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -972,7 +826,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_64_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -983,7 +837,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_64_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -994,7 +848,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_64_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1005,7 +859,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_64_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1016,7 +870,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_64_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1027,7 +881,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>conv2x2_top_Pipeline_VITIS_LOOP_87_2</Object>
+<Object>conv2x2_top_Pipeline_VITIS_LOOP_64_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1165,7 +1019,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>4.324</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.347</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>37</Best-caseLatency>
@@ -1183,10 +1037,10 @@
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<FF>373</FF>
+<FF>369</FF>
 <AVAIL_FF>2364480</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>1441</LUT>
+<LUT>1449</LUT>
 <AVAIL_LUT>1182240</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>

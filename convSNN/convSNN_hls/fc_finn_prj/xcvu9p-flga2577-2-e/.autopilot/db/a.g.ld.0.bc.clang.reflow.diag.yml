@@ -104,7 +104,7 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 54, Column: 3 }
+                   Line: 37, Column: 3 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -114,7 +114,7 @@ Args:
   - String:          ''' into '''
   - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                       Line: 33, Column: 0 }
+                       Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -233,7 +233,7 @@ Args:
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 33, Column: 0 }
+                   Line: 23, Column: 0 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -243,14 +243,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                       Line: 33, Column: 0 }
+                       Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 33, Column: 0 }
+                   Line: 23, Column: 0 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -260,14 +260,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                       Line: 33, Column: 0 }
+                       Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 33, Column: 0 }
+                   Line: 23, Column: 0 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -277,14 +277,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                       Line: 33, Column: 0 }
+                       Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 33, Column: 0 }
+                   Line: 23, Column: 0 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -294,14 +294,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                       Line: 33, Column: 0 }
+                       Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 33, Column: 0 }
+                   Line: 23, Column: 0 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -311,7 +311,7 @@ Args:
   - String:          ''' into '''
   - Caller:          'fc_finn_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                       Line: 33, Column: 0 }
+                       Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -356,7 +356,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 33, Column: 0 }
+                   Line: 23, Column: 0 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Applying '
@@ -375,7 +375,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp, 
-                   Line: 33, Column: 0 }
+                   Line: 23, Column: 0 }
 Function:        _Z11fc_finn_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Applying '

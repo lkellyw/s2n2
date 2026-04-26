@@ -1180,39 +1180,21 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_140_7: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_21_1:  '
-    FileOffset:      21
+    Message:         'Added loop label VITIS_LOOP_30_1:  '
+    FileOffset:      30
     FilePath:        /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp
-        Offset:          1911950
+        Offset:          1912334
         Length:          0
-        ReplacementText: 'VITIS_LOOP_21_1: '
+        ReplacementText: 'VITIS_LOOP_30_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_22_2:  '
-    FileOffset:      22
+    Message:         'Added loop label VITIS_LOOP_58_2:  '
+    FileOffset:      58
     FilePath:        /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp
-        Offset:          1911990
+        Offset:          1912765
         Length:          0
-        ReplacementText: 'VITIS_LOOP_22_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_44_1:  '
-    FileOffset:      44
-    FilePath:        /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp
-    Replacements:    
-      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp
-        Offset:          1912814
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_44_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_79_2:  '
-    FileOffset:      79
-    FilePath:        /home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp
-    Replacements:    
-      - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp
-        Offset:          1913272
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_79_2: '
+        ReplacementText: 'VITIS_LOOP_58_2: '
 ...

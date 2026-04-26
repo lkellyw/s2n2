@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 16
+set id 13
 set name fc_finn_top_mux_4_2_16_1_1
 set corename simcore_mux
 set op mux
@@ -51,6 +51,11 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 }
 
 
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fc_weights_0_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -58,29 +63,10 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 20 \
-    name fc_weights_0 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename fc_weights_0 \
-    op interface \
-    ports { fc_weights_0_address0 { O 5 vector } fc_weights_0_ce0 { O 1 bit } fc_weights_0_q0 { I 2 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc_weights_0'"
-}
-}
-
-
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
+    id 16 \
     name in_stream \
     type fifo \
     dir I \
@@ -95,7 +81,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 19 \
+    id 17 \
     name out_stream \
     type fifo \
     dir O \

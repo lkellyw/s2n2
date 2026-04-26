@@ -181,7 +181,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mux_2_1_1_1_1_U9 : component conv2x2_top_mux_2_1_1_1_1
+    mux_2_1_1_1_1_U8 : component conv2x2_top_mux_2_1_1_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

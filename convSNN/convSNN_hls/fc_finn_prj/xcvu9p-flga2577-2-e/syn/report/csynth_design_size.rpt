@@ -6,8 +6,7 @@
 +-------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
 | Function                            | Location           | Compile/Link    | Unroll/Inline | Performance/Pipeline | Optimizations |
 +-------------------------------------+--------------------+-----------------+---------------+----------------------+---------------+
-| + fc_finn_top                       | fc_finn_top.cpp:33 | 1,966           | 290           | 196                  | 242           |
-|    load_weights_once                | fc_finn_top.cpp:16 |    93           |  28           |  22                  |  30           |
+| + fc_finn_top                       | fc_finn_top.cpp:23 | 1,886           | 261           | 173                  | 211           |
 |  + StreamingFCLayer_Batch<8, 4,...  | fclayer.h:96       | 1,722           |               |                      |               |
 |     WidthAdjustedInputStream        | streamtools.h:837  |     3           |               |                      |               |
 |     WidthAdjustedOutputStream       | streamtools.h:869  |     3           |               |                      |               |

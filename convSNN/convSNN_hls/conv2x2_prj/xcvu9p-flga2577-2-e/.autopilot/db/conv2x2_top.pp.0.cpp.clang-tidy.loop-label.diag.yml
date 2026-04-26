@@ -1122,7 +1122,7 @@ Diagnostics:
     FilePath:        /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1909659
+        Offset:          1909807
         Length:          0
         ReplacementText: 'VITIS_LOOP_108_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1131,7 +1131,7 @@ Diagnostics:
     FilePath:        /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1909796
+        Offset:          1909944
         Length:          0
         ReplacementText: 'VITIS_LOOP_114_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1140,7 +1140,7 @@ Diagnostics:
     FilePath:        /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1909842
+        Offset:          1909990
         Length:          0
         ReplacementText: 'VITIS_LOOP_115_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1149,7 +1149,7 @@ Diagnostics:
     FilePath:        /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1910018
+        Offset:          1910166
         Length:          0
         ReplacementText: 'VITIS_LOOP_124_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1158,7 +1158,7 @@ Diagnostics:
     FilePath:        /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1910118
+        Offset:          1910266
         Length:          0
         ReplacementText: 'VITIS_LOOP_127_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1167,7 +1167,7 @@ Diagnostics:
     FilePath:        /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1910367
+        Offset:          1910515
         Length:          0
         ReplacementText: 'VITIS_LOOP_138_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1176,25 +1176,25 @@ Diagnostics:
     FilePath:        /home/coder/Documents/s2n2/finn-hlslib-lif/vvau.hpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1910426
+        Offset:          1910574
         Length:          0
         ReplacementText: 'VITIS_LOOP_140_7: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_48_1:  '
-    FileOffset:      48
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
     FilePath:        /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1912727
+        Offset:          1912442
         Length:          0
-        ReplacementText: 'VITIS_LOOP_48_1: '
+        ReplacementText: 'VITIS_LOOP_33_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_87_2:  '
-    FileOffset:      87
+    Message:         'Added loop label VITIS_LOOP_64_2:  '
+    FileOffset:      64
     FilePath:        /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp
     Replacements:    
       - FilePath:        /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp
-        Offset:          1913233
+        Offset:          1912894
         Length:          0
-        ReplacementText: 'VITIS_LOOP_87_2: '
+        ReplacementText: 'VITIS_LOOP_64_2: '
 ...

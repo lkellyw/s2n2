@@ -1,10 +1,10 @@
 {
   "0": {
     "basicblocks": 46,
-    "calls": "1",
+    "calls": "",
     "file": "fc_finn_top.cpp",
-    "fileloc": 33,
-    "instructions": 212,
+    "fileloc": 23,
+    "instructions": 211,
     "loads": {
       "G": 6,
       "L": 2,
@@ -16,21 +16,6 @@
       "L": 2,
       "T": 4
     },
-    "total_instructions": 242
-  },
-  "1": {
-    "basicblocks": 9,
-    "calls": "",
-    "file": "fc_finn_top.cpp",
-    "fileloc": 16,
-    "instructions": 30,
-    "loads": {
-      "G": 2
-    },
-    "name": "load_weights_once",
-    "stores": {
-      "G": 2
-    },
-    "total_instructions": 30
+    "total_instructions": 211
   }
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc_finn_top_Pipeline_VITIS_LOOP_131_1'" level="0">
-<item name = "Date">Sat Apr 25 21:40:46 2026
+<item name = "Date">Sat Apr 25 23:30:57 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">fc_finn_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 3.658 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.824 ns, 2.70 ns</column>
 </table>
 </item>
 </section>

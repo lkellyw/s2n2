@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fc_finn_top_Pipeline_VITIS_LOOP_131_1'
 ================================================================
-* Date:           Sat Apr 25 21:40:52 2026
+* Date:           Sat Apr 25 23:31:03 2026
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        fc_finn_prj
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  3.658 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  3.824 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -57,11 +57,11 @@
 |Expression           |        -|     -|        0|      471|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
 |Instance             |        -|     -|        0|       63|    -|
-|Memory               |        -|     -|        -|        -|    -|
+|Memory               |        0|     -|        2|        3|    -|
 |Multiplexer          |        -|     -|        -|      150|    -|
 |Register             |        -|     -|      203|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        0|     0|      203|      684|    0|
+|Total                |        0|     0|      205|      687|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1440|  2280|   788160|   394080|  320|
 +---------------------+---------+------+---------+---------+-----+
@@ -77,8 +77,8 @@
     +--------------------+----------------+---------+----+---+----+-----+
     |      Instance      |     Module     | BRAM_18K| DSP| FF| LUT| URAM|
     +--------------------+----------------+---------+----+---+----+-----+
-    |mux_4_2_16_1_1_U16  |mux_4_2_16_1_1  |        0|   0|  0|  20|    0|
-    |mux_8_3_1_1_1_U15   |mux_8_3_1_1_1   |        0|   0|  0|  43|    0|
+    |mux_4_2_16_1_1_U13  |mux_4_2_16_1_1  |        0|   0|  0|  20|    0|
+    |mux_8_3_1_1_1_U12   |mux_8_3_1_1_1   |        0|   0|  0|  43|    0|
     +--------------------+----------------+---------+----+---+----+-----+
     |Total               |                |        0|   0|  0|  63|    0|
     +--------------------+----------------+---------+----+---+----+-----+
@@ -87,7 +87,13 @@
     N/A
 
     * Memory: 
-    N/A
+    +----------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |     Memory     |                             Module                             | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |fc_weights_0_U  |fc_finn_top_Pipeline_VITIS_LOOP_131_1_fc_weights_0_ROM_AUTO_1R  |        0|  2|   3|    0|    32|    2|     1|           64|
+    +----------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total           |                                                                |        0|  2|   3|    0|    32|    2|     1|           64|
+    +----------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
     N/A
@@ -103,12 +109,12 @@
     |tile_1_fu_282_p2                  |         +|   0|  0|  39|          32|           1|
     |temp_1_fu_490_p2                  |         -|   0|  0|  23|          16|          16|
     |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
-    |ap_condition_475                  |       and|   0|  0|   2|           1|           1|
-    |ap_condition_478                  |       and|   0|  0|   2|           1|           1|
-    |ap_condition_482                  |       and|   0|  0|   2|           1|           1|
-    |ap_condition_485                  |       and|   0|  0|   2|           1|           1|
-    |ap_condition_488                  |       and|   0|  0|   2|           1|           1|
-    |ap_condition_491                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_476                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_479                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_483                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_486                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_489                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_492                  |       and|   0|  0|   2|           1|           1|
     |ap_predicate_op68_read_state3     |       and|   0|  0|   2|           1|           1|
     |icmp_ln131_fu_242_p2              |      icmp|   0|  0|  14|           6|           7|
     |icmp_ln134_fu_262_p2              |      icmp|   0|  0|  39|          32|           1|
@@ -190,23 +196,20 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------------+-----+-----+------------+---------------------------------------+--------------+
-|       RTL Ports       | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
-+-----------------------+-----+-----+------------+---------------------------------------+--------------+
-|ap_clk                 |   in|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
-|ap_rst                 |   in|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
-|ap_start               |   in|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
-|ap_done                |  out|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
-|ap_idle                |  out|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
-|ap_ready               |  out|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
-|in_stream_dout         |   in|    1|     ap_fifo|                              in_stream|       pointer|
-|in_stream_empty_n      |   in|    1|     ap_fifo|                              in_stream|       pointer|
-|in_stream_read         |  out|    1|     ap_fifo|                              in_stream|       pointer|
-|out_stream_din         |  out|    1|     ap_fifo|                             out_stream|       pointer|
-|out_stream_full_n      |   in|    1|     ap_fifo|                             out_stream|       pointer|
-|out_stream_write       |  out|    1|     ap_fifo|                             out_stream|       pointer|
-|fc_weights_0_address0  |  out|    5|   ap_memory|                           fc_weights_0|         array|
-|fc_weights_0_ce0       |  out|    1|   ap_memory|                           fc_weights_0|         array|
-|fc_weights_0_q0        |   in|    2|   ap_memory|                           fc_weights_0|         array|
-+-----------------------+-----+-----+------------+---------------------------------------+--------------+
++-------------------+-----+-----+------------+---------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++-------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  fc_finn_top_Pipeline_VITIS_LOOP_131_1|  return value|
+|in_stream_dout     |   in|    1|     ap_fifo|                              in_stream|       pointer|
+|in_stream_empty_n  |   in|    1|     ap_fifo|                              in_stream|       pointer|
+|in_stream_read     |  out|    1|     ap_fifo|                              in_stream|       pointer|
+|out_stream_din     |  out|    1|     ap_fifo|                             out_stream|       pointer|
+|out_stream_full_n  |   in|    1|     ap_fifo|                             out_stream|       pointer|
+|out_stream_write   |  out|    1|     ap_fifo|                             out_stream|       pointer|
++-------------------+-----+-----+------------+---------------------------------------+--------------+
 

@@ -12808,3 +12808,909 @@ INFO: [COSIM 212-211] II is measurable only when transaction number is greater t
 Command     cosim_design done; 169.69 sec.
 INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 9.5 seconds. CPU system time: 3.07 seconds. Elapsed time: 169.69 seconds; current allocated memory: 4.316 MB.
 Execute     cleanup_all 
+INFO-FLOW: Workspace /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e opened at Sun Apr 26 00:18:08 UTC 2026
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute       set_part xcvu9p-flga2577-2-e 
+Execute         create_platform xcvu9p-flga2577-2-e -board  
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2577-2-e'
+Command         create_platform done; 57.27 sec.
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source done; 0.15 sec.
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Command           ap_source done; 0.12 sec.
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.17 sec.
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 1.06 sec.
+Execute         ap_part_info -name xcvu9p-flga2577-2-e -data info 
+Execute         config_compile -quiet -complex-mul-dsp=0 
+Command       set_part done; 58.67 sec.
+Execute       send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Command     open_solution done; 59.12 sec.
+Execute     set_part xcvu9p-flga2577-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2577-2-e 
+Execute       create_platform xcvu9p-flga2577-2-e -board  
+Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvu9p-flga2577-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.33 sec.
+Execute     create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     csim_design -clean -O 
+INFO: [HLS 200-1510] Running: csim_design -clean -O 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       source csim/.lst_opt.tcl 
+Execute       send_msg_by_id INFO @200-2036@%s optimized 
+INFO: [HLS 200-2036] Building optimized C Simulation binaries
+Execute       ap_part_info -name xcvu9p-flga2577-2-e -data info 
+Execute       source run_sim.tcl 
+Command       ap_source done; 0.23 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 25.87 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.34 seconds. CPU system time: 0.59 seconds. Elapsed time: 25.87 seconds; current allocated memory: 2.391 MB.
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/pool.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/vvau.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/maxpool.h; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/dma.h; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/mmv.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/utils.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/mac.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/interpret.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/activations.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/slidingwindow.h; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/convlayer.h; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/streamtools.h; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/weights.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/mvau.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/coder/Document/s2n2/finn-hlslib-lif/bnn-library.h; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.08 seconds; current allocated memory: 1.461 GB.
+Execute         set_directive_top conv2x2_top -name=conv2x2_top 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO: [HLS 200-10] Analyzing design file '/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp as C++
+Execute         ap_part_info -name xcvu9p-flga2577-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp -foptimization-record-file=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/all.directive.json -E -std=c++14 -I/home/coder/Desktop/s2n2/convSNN -I/home/coder/Documents/s2n2/finn-hlslib-lif -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2577-2-e > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.cpp.clang.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 4.9 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2577-2-e > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/clang.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/clang.err.log
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:75:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:97:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:119:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:141:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Documents/s2n2/finn-hlslib-lif/maxpool.h:296:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp:116:9)
+WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/coder/Documents/s2n2/finn-hlslib-lif/mac.hpp:142:9)
+Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp std=c++14 -target fpga  -directive=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/.systemc_flag -fix-errors /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp -- -std=c++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 1.08 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp std=c++14 -target fpga  -directive=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/all.directive.json -fix-errors /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp -- -std=c++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.53 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.5 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute         clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp std=c++14 -target fpga  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp -- -std=c++14 -target fpga -fhls -ferror-limit=0 > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command           ap_source done; 0.2 sec.
+Command         clang_tidy done; 1.45 sec.
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp -- -std=c++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute         ap_part_info -name xcvu9p-flga2577-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp -std=c++14 -I/home/coder/Desktop/s2n2/convSNN -I/home/coder/Documents/s2n2/finn-hlslib-lif -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2577-2-e > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.clang.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.pp.0.cpp.clang.err.log
+WARNING: [HLS 207-5292] unused parameter 'reps' (/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h:837:77)
+WARNING: [HLS 207-5292] unused parameter 'reps' (/home/coder/Documents/s2n2/finn-hlslib-lif/streamtools.h:869:78)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:149:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:166:58)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:209:56)
+WARNING: [HLS 207-5292] unused parameter 'flag' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:209:72)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:213:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:218:30)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:240:53)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:262:39)
+WARNING: [HLS 207-5292] unused parameter 'flag' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:273:72)
+WARNING: [HLS 207-5292] unused parameter 'mmv' (/home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp:300:52)
+WARNING: [HLS 207-5292] unused parameter 'activation' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:98:17)
+WARNING: [HLS 207-5292] unused parameter 'decay' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:99:16)
+WARNING: [HLS 207-5292] unused parameter 'r' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:101:16)
+WARNING: [HLS 207-5547] Invalid variable in '#pragma HLS reset': expect variable to be static or global (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:195:28)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.95 seconds. CPU system time: 0.69 seconds. Elapsed time: 12 seconds; current allocated memory: 1.464 GB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc -args  "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.g.bc"  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.g.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.21 sec.
+Execute         run_link_or_opt -opt -out /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.1.lower.bc -args /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.1.lower.bc > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 1.76 sec.
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.2.m1.bc -args /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsmc++_39.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.2.m1.bc > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 1.98 sec.
+Execute         run_link_or_opt -opt -out /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.3.fpc.bc -args /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv2x2_top -reflow-float-conversion 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv2x2_top -reflow-float-conversion -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.3.fpc.bc > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 0.44 sec.
+Execute         run_link_or_opt -out /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.4.m2.bc -args /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libfloatconversion_39.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.4.m2.bc > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.15 sec.
+Execute         run_link_or_opt -opt -out /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.5.gdce.bc -args /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv2x2_top 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.5.gdce.bc > /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=conv2x2_top -mllvm -hls-db-dir -mllvm /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1024 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=1024 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.5.gdce.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2577-2-e 2> /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,211 Compile/Link /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,211 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 386 Unroll/Inline /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 386 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 204 Performance/Pipeline /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 204 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 239 Optimizations /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 239 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'void memory_resource<ap_uint<1> (*) [2]>(ap_uint<1> (*) [2], ap_resource_dflt const&)' into 'void ConvolutionInputGenerator<1u, 1u, 1u, 2u, 2u, 1u, 1u, ap_resource_dflt>(hls::stream<ap_uint<(1u) * (1u)>, 0>&, hls::stream<ap_uint<(1u) * (1u)>, 0>&, unsigned int, ap_resource_dflt const&)' (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:183:2)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>::TileIndex::TileIndex(FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, unsigned int, ap_uint<1>)' into 'FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>::weights(unsigned int, ap_uint<1>) const' (/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp:216:9)
+INFO: [HLS 214-131] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<1> >::operator ap_uint<1> const&() const' into 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:187:17)
+INFO: [HLS 214-131] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<1> >::operator()(unsigned int, unsigned int, bool) const' into 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:183:9)
+INFO: [HLS 214-131] Inlining function 'Slice<ap_uint<1>, 1u>::Container<ap_uint<1> >::operator()(unsigned int, unsigned int, bool) const' into 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:180:9)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>::TileIndex::operator[](unsigned int) const' into 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:165:14)
+INFO: [HLS 214-131] Inlining function 'FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>::weights(unsigned int, ap_uint<1>) const' into 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:162:29)
+INFO: [HLS 214-131] Inlining function 'void ConvLayer_Batch<1u, 1u, 2u, 1u, 2u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 1, 1, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, unsigned int, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_resource_dflt const&)' into 'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)' (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:40:3)
+WARNING: [HLS 214-199] Ignoring dependence pragma on local scalar variable 'current_block_write'. (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:260:9)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_150_2' is marked as complete unroll implied by the pipeline pragma (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:150:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_163_3' is marked as complete unroll implied by the pipeline pragma (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:163:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_200_1' is marked as complete unroll implied by the pipeline pragma (/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp:200:25)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_175_4' is marked as complete unroll implied by the pipeline pragma (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:175:25)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_150_2' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:150:24) in function 'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>' completely with a factor of 1 (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:101:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_163_3' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:163:23) in function 'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>' completely with a factor of 1 (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:101:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_200_1' (/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp:200:25) in function 'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>' completely with a factor of 1 (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:101:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_175_4' (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:175:25) in function 'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>' completely with a factor of 1 (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:101:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedInputStream<1u, 1u, 4u>::WidthAdjustedInputStream(hls::stream<ap_uint<1>, 0>&, unsigned int)' into 'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)' (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedOutputStream<1u, 1u, 4u>::WidthAdjustedOutputStream(hls::stream<ap_uint<1>, 0>&, unsigned int)' into 'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)' (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedInputStream<1u, 1u, 4u>::operator hls::stream<ap_uint<1>, 0>&()' into 'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)' (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'void ConvolutionInputGenerator<1u, 1u, 1u, 2u, 2u, 1u, 1u, ap_resource_dflt>(hls::stream<ap_uint<(1u) * (1u)>, 0>&, hls::stream<ap_uint<(1u) * (1u)>, 0>&, unsigned int, ap_resource_dflt const&)' into 'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)' (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'WidthAdjustedOutputStream<1u, 1u, 4u>::operator hls::stream<ap_uint<1>, 0>&()' into 'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)' (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)' into 'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)' (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_E5neust': Complete partitioning on dimension 2. (/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:116:0)
+INFO: [HLS 214-248] Applying array_partition to 'inputBuf.i': Complete partitioning on dimension 1. (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180:33)
+INFO: [HLS 214-248] Applying array_partition to 'in': Complete partitioning on dimension 1. (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO: [HLS 214-248] Applying array_partition to 'out': Complete partitioning on dimension 1. (/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:26:0)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.46 seconds. CPU system time: 0.56 seconds. Elapsed time: 12.21 seconds; current allocated memory: 1.464 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.464 GB.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv2x2_top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.0.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.466 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.1.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.2.prechk.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.467 GB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.g.1.bc to /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.o.1.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-102] Automatically partitioning small array 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, 5, 3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(stream<ap_uint<1>, 0>&, stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, 5, 3, 0>, int, ap_resource_dflt const&)neust' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, 5, 3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(stream<ap_uint<1>, 0>&, stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, 5, 3, 0>, int, ap_resource_dflt const&)neust' in dimension 1 completely.
+Command           transform done; 0.15 sec.
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.o.1.tmp.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:216:66) to (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:245:13) in function 'conv2x2_top'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.490 GB.
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.o.2.bc -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf.1' (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf' (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf.1' (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf' (/home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180).
+Execute             auto_get_db
+Command           transform done; 0.61 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.61 seconds; current allocated memory: 1.519 GB.
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 1.3 sec.
+Command       elaborate done; 26.86 sec.
+Execute       ap_eval exec zip -j /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command       ap_eval done; 0.2 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'conv2x2_top' ...
+Execute         ap_set_top_model conv2x2_top 
+Execute         get_model_list conv2x2_top -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model conv2x2_top 
+Execute         preproc_iomode -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         preproc_iomode -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         preproc_iomode -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         preproc_iomode -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         get_model_list conv2x2_top -filter all-wo-channel 
+INFO-FLOW: Model list for configure: conv2x2_top_Pipeline_VITIS_LOOP_33_1 conv2x2_top_Pipeline_VITIS_LOOP_197_2 conv2x2_top_Pipeline_VITIS_LOOP_131_1 conv2x2_top_Pipeline_VITIS_LOOP_64_2 conv2x2_top
+INFO-FLOW: Configuring Module : conv2x2_top_Pipeline_VITIS_LOOP_33_1 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         apply_spec_resource_limit conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+INFO-FLOW: Configuring Module : conv2x2_top_Pipeline_VITIS_LOOP_197_2 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         apply_spec_resource_limit conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+INFO-FLOW: Configuring Module : conv2x2_top_Pipeline_VITIS_LOOP_131_1 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         apply_spec_resource_limit conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+INFO-FLOW: Configuring Module : conv2x2_top_Pipeline_VITIS_LOOP_64_2 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         apply_spec_resource_limit conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+INFO-FLOW: Configuring Module : conv2x2_top ...
+Execute         set_default_model conv2x2_top 
+Execute         apply_spec_resource_limit conv2x2_top 
+INFO-FLOW: Model list for preprocess: conv2x2_top_Pipeline_VITIS_LOOP_33_1 conv2x2_top_Pipeline_VITIS_LOOP_197_2 conv2x2_top_Pipeline_VITIS_LOOP_131_1 conv2x2_top_Pipeline_VITIS_LOOP_64_2 conv2x2_top
+INFO-FLOW: Preprocessing Module: conv2x2_top_Pipeline_VITIS_LOOP_33_1 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         cdfg_preprocess -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+INFO-FLOW: Preprocessing Module: conv2x2_top_Pipeline_VITIS_LOOP_197_2 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         cdfg_preprocess -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+INFO-FLOW: Preprocessing Module: conv2x2_top_Pipeline_VITIS_LOOP_131_1 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         cdfg_preprocess -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+INFO-FLOW: Preprocessing Module: conv2x2_top_Pipeline_VITIS_LOOP_64_2 ...
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         cdfg_preprocess -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+INFO-FLOW: Preprocessing Module: conv2x2_top ...
+Execute         set_default_model conv2x2_top 
+Execute         cdfg_preprocess -model conv2x2_top 
+Execute         rtl_gen_preprocess conv2x2_top 
+INFO-FLOW: Model list for synthesis: conv2x2_top_Pipeline_VITIS_LOOP_33_1 conv2x2_top_Pipeline_VITIS_LOOP_197_2 conv2x2_top_Pipeline_VITIS_LOOP_131_1 conv2x2_top_Pipeline_VITIS_LOOP_64_2 conv2x2_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2x2_top_Pipeline_VITIS_LOOP_33_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         schedule -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_33_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_33_1'
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.26 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.82 seconds; current allocated memory: 1.521 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.verbose.sched.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.sched.adb -f 
+INFO-FLOW: Finish scheduling conv2x2_top_Pipeline_VITIS_LOOP_33_1.
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         bind -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.34 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.35 seconds; current allocated memory: 1.521 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.verbose.bind.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.bind.adb -f 
+INFO-FLOW: Finish binding conv2x2_top_Pipeline_VITIS_LOOP_33_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2x2_top_Pipeline_VITIS_LOOP_197_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         schedule -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_197_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_197_2'
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.29 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.65 seconds; current allocated memory: 1.522 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.verbose.sched.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.sched.adb -f 
+INFO-FLOW: Finish scheduling conv2x2_top_Pipeline_VITIS_LOOP_197_2.
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         bind -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.42 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.45 seconds; current allocated memory: 1.522 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.verbose.bind.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.bind.adb -f 
+INFO-FLOW: Finish binding conv2x2_top_Pipeline_VITIS_LOOP_197_2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2x2_top_Pipeline_VITIS_LOOP_131_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         schedule -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_131_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_131_1'
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.81 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.97 seconds; current allocated memory: 1.522 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.verbose.sched.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.sched.adb -f 
+INFO-FLOW: Finish scheduling conv2x2_top_Pipeline_VITIS_LOOP_131_1.
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         bind -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.46 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.48 seconds; current allocated memory: 1.522 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.verbose.bind.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.bind.adb -f 
+INFO-FLOW: Finish binding conv2x2_top_Pipeline_VITIS_LOOP_131_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2x2_top_Pipeline_VITIS_LOOP_64_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         schedule -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_64_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_64_2'
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.55 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.08 seconds; current allocated memory: 1.523 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.verbose.sched.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.sched.adb -f 
+INFO-FLOW: Finish scheduling conv2x2_top_Pipeline_VITIS_LOOP_64_2.
+Execute         set_default_model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         bind -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.56 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.57 seconds; current allocated memory: 1.523 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.verbose.bind.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.bind.adb -f 
+INFO-FLOW: Finish binding conv2x2_top_Pipeline_VITIS_LOOP_64_2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2x2_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model conv2x2_top 
+Execute         schedule -model conv2x2_top 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.16 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.92 seconds; current allocated memory: 1.523 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.verbose.sched.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.sched.adb -f 
+INFO-FLOW: Finish scheduling conv2x2_top.
+Execute         set_default_model conv2x2_top 
+Execute         bind -model conv2x2_top 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.56 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.61 seconds; current allocated memory: 1.523 GB.
+Execute         syn_report -verbosereport -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.verbose.bind.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.bind.adb -f 
+INFO-FLOW: Finish binding conv2x2_top.
+Execute         get_model_list conv2x2_top -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         rtl_gen_preprocess conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         rtl_gen_preprocess conv2x2_top 
+INFO-FLOW: Model list for RTL generation: conv2x2_top_Pipeline_VITIS_LOOP_33_1 conv2x2_top_Pipeline_VITIS_LOOP_197_2 conv2x2_top_Pipeline_VITIS_LOOP_131_1 conv2x2_top_Pipeline_VITIS_LOOP_64_2 conv2x2_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2x2_top_Pipeline_VITIS_LOOP_33_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model conv2x2_top_Pipeline_VITIS_LOOP_33_1 -top_prefix conv2x2_top_ -sub_prefix conv2x2_top_ -mg_file /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2x2_top_Pipeline_VITIS_LOOP_33_1' pipeline 'VITIS_LOOP_33_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_4_2_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2x2_top_Pipeline_VITIS_LOOP_33_1'.
+Command         create_rtl_model done; 0.29 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.74 seconds; current allocated memory: 1.523 GB.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_33_1 -style xilinx -f -lang vhdl -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/vhdl/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_33_1 -style xilinx -f -lang vlog -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+Execute         syn_report -csynth -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_33_1_csynth.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -rtlxml -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_33_1_csynth.xml 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -verbosereport -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.verbose.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 -f -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.adb 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_33_1 -bindview -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info conv2x2_top_Pipeline_VITIS_LOOP_33_1 -p /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2x2_top_Pipeline_VITIS_LOOP_197_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model conv2x2_top_Pipeline_VITIS_LOOP_197_2 -top_prefix conv2x2_top_ -sub_prefix conv2x2_top_ -mg_file /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.compgen.tcl 
+WARNING: [HLS 200-2049] Adding the rewind optimization to the pipelined process 'VITIS_LOOP_197_2' with inout ports inside a dataflow region can result in the creation of loop-carried dependencies and errors. Use caution when adding the rewind optimization to such loops.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2x2_top_Pipeline_VITIS_LOOP_197_2' pipeline 'VITIS_LOOP_197_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_2_1_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2x2_top_Pipeline_VITIS_LOOP_197_2'.
+Command         create_rtl_model done; 0.3 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.65 seconds; current allocated memory: 1.524 GB.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_197_2 -style xilinx -f -lang vhdl -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/vhdl/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_197_2 -style xilinx -f -lang vlog -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+Execute         syn_report -csynth -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_197_2_csynth.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -rtlxml -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_197_2_csynth.xml 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -verbosereport -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.verbose.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 -f -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.adb 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_197_2 -bindview -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info conv2x2_top_Pipeline_VITIS_LOOP_197_2 -p /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2x2_top_Pipeline_VITIS_LOOP_131_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model conv2x2_top_Pipeline_VITIS_LOOP_131_1 -top_prefix conv2x2_top_ -sub_prefix conv2x2_top_ -mg_file /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2x2_top_Pipeline_VITIS_LOOP_131_1' pipeline 'VITIS_LOOP_131_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_4_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2x2_top_Pipeline_VITIS_LOOP_131_1'.
+Command         create_rtl_model done; 0.38 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.12 seconds; current allocated memory: 1.526 GB.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_131_1 -style xilinx -f -lang vhdl -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/vhdl/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_131_1 -style xilinx -f -lang vlog -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+Execute         syn_report -csynth -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_131_1_csynth.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -rtlxml -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_131_1_csynth.xml 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -verbosereport -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.verbose.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 -f -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.adb 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_131_1 -bindview -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info conv2x2_top_Pipeline_VITIS_LOOP_131_1 -p /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2x2_top_Pipeline_VITIS_LOOP_64_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model conv2x2_top_Pipeline_VITIS_LOOP_64_2 -top_prefix conv2x2_top_ -sub_prefix conv2x2_top_ -mg_file /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2x2_top_Pipeline_VITIS_LOOP_64_2' pipeline 'VITIS_LOOP_64_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2x2_top_Pipeline_VITIS_LOOP_64_2'.
+Command         create_rtl_model done; 0.17 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.527 GB.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_64_2 -style xilinx -f -lang vhdl -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/vhdl/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         gen_rtl conv2x2_top_Pipeline_VITIS_LOOP_64_2 -style xilinx -f -lang vlog -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+Execute         syn_report -csynth -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_64_2_csynth.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -rtlxml -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_Pipeline_VITIS_LOOP_64_2_csynth.xml 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -verbosereport -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.verbose.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 -f -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.adb 
+Execute         db_write -model conv2x2_top_Pipeline_VITIS_LOOP_64_2 -bindview -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info conv2x2_top_Pipeline_VITIS_LOOP_64_2 -p /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2x2_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model conv2x2_top -top_prefix  -sub_prefix conv2x2_top_ -mg_file /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/in_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/in_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/in_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/in_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/out_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/out_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/out_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2x2_top/out_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2x2_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2x2_top'.
+INFO: [RTMG 210-278] Implementing memory 'conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'convInp_U(conv2x2_top_fifo_w1_d1024_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'in_stream_U(conv2x2_top_fifo_w1_d16_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_U(conv2x2_top_fifo_w1_d16_S)' using Shift Registers.
+Command         create_rtl_model done; 1.58 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.14 seconds; current allocated memory: 1.528 GB.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute         gen_rtl conv2x2_top -istop -style xilinx -f -lang vhdl -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/vhdl/conv2x2_top 
+Execute         gen_rtl conv2x2_top -istop -style xilinx -f -lang vlog -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/verilog/conv2x2_top 
+Execute         syn_report -csynth -model conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_csynth.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -rtlxml -model conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/conv2x2_top_csynth.xml 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -verbosereport -model conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.verbose.rpt 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         db_write -model conv2x2_top -f -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.adb 
+Execute         db_write -model conv2x2_top -bindview -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info conv2x2_top -p /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top 
+Execute         export_constraint_db -f -tool general -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.constraint.tcl 
+Execute         syn_report -designview -model conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.design.xml 
+Execute         syn_report -csynthDesign -model conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth.rpt -MHOut /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute           list_part -family xcvu9p-flga2577-2-e 
+Execute             ap_family_info -name xcvu9p-flga2577-2-e -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2577-2-e -data family 
+Execute         syn_report -wcfg -model conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model conv2x2_top -o /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.protoinst 
+Execute         sc_get_clocks conv2x2_top 
+Execute         sc_get_portdomain conv2x2_top 
+INFO-FLOW: Model list for RTL component generation: conv2x2_top_Pipeline_VITIS_LOOP_33_1 conv2x2_top_Pipeline_VITIS_LOOP_197_2 conv2x2_top_Pipeline_VITIS_LOOP_131_1 conv2x2_top_Pipeline_VITIS_LOOP_64_2 conv2x2_top
+INFO-FLOW: Handling components in module [conv2x2_top_Pipeline_VITIS_LOOP_33_1] ... 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.compgen.tcl 
+INFO-FLOW: Found component conv2x2_top_mux_4_2_1_1_1.
+INFO-FLOW: Append model conv2x2_top_mux_4_2_1_1_1
+INFO-FLOW: Found component conv2x2_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [conv2x2_top_Pipeline_VITIS_LOOP_197_2] ... 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.compgen.tcl 
+INFO-FLOW: Found component conv2x2_top_mux_2_1_1_1_1.
+INFO-FLOW: Append model conv2x2_top_mux_2_1_1_1_1
+INFO-FLOW: Found component conv2x2_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [conv2x2_top_Pipeline_VITIS_LOOP_131_1] ... 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.compgen.tcl 
+INFO-FLOW: Found component conv2x2_top_mux_4_2_16_1_1.
+INFO-FLOW: Append model conv2x2_top_mux_4_2_16_1_1
+INFO-FLOW: Found component conv2x2_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [conv2x2_top_Pipeline_VITIS_LOOP_64_2] ... 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.compgen.tcl 
+INFO-FLOW: Found component conv2x2_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [conv2x2_top] ... 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.compgen.tcl 
+INFO-FLOW: Found component conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W.
+INFO-FLOW: Append model conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W
+INFO-FLOW: Found component conv2x2_top_fifo_w1_d1024_S.
+INFO-FLOW: Append model conv2x2_top_fifo_w1_d1024_S
+INFO-FLOW: Found component conv2x2_top_fifo_w1_d16_S.
+INFO-FLOW: Append model conv2x2_top_fifo_w1_d16_S
+INFO-FLOW: Found component conv2x2_top_fifo_w1_d16_S.
+INFO-FLOW: Append model conv2x2_top_fifo_w1_d16_S
+INFO-FLOW: Append model conv2x2_top_Pipeline_VITIS_LOOP_33_1
+INFO-FLOW: Append model conv2x2_top_Pipeline_VITIS_LOOP_197_2
+INFO-FLOW: Append model conv2x2_top_Pipeline_VITIS_LOOP_131_1
+INFO-FLOW: Append model conv2x2_top_Pipeline_VITIS_LOOP_64_2
+INFO-FLOW: Append model conv2x2_top
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: conv2x2_top_mux_4_2_1_1_1 conv2x2_top_flow_control_loop_pipe_sequential_init conv2x2_top_mux_2_1_1_1_1 conv2x2_top_flow_control_loop_pipe_sequential_init conv2x2_top_mux_4_2_16_1_1 conv2x2_top_flow_control_loop_pipe_sequential_init conv2x2_top_flow_control_loop_pipe_sequential_init conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W conv2x2_top_fifo_w1_d1024_S conv2x2_top_fifo_w1_d16_S conv2x2_top_fifo_w1_d16_S conv2x2_top_Pipeline_VITIS_LOOP_33_1 conv2x2_top_Pipeline_VITIS_LOOP_197_2 conv2x2_top_Pipeline_VITIS_LOOP_131_1 conv2x2_top_Pipeline_VITIS_LOOP_64_2 conv2x2_top
+INFO-FLOW: Generating /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model conv2x2_top_mux_4_2_1_1_1
+INFO-FLOW: To file: write model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model conv2x2_top_mux_2_1_1_1_1
+INFO-FLOW: To file: write model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model conv2x2_top_mux_4_2_16_1_1
+INFO-FLOW: To file: write model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model conv2x2_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W
+INFO-FLOW: To file: write model conv2x2_top_fifo_w1_d1024_S
+INFO-FLOW: To file: write model conv2x2_top_fifo_w1_d16_S
+INFO-FLOW: To file: write model conv2x2_top_fifo_w1_d16_S
+INFO-FLOW: To file: write model conv2x2_top_Pipeline_VITIS_LOOP_33_1
+INFO-FLOW: To file: write model conv2x2_top_Pipeline_VITIS_LOOP_197_2
+INFO-FLOW: To file: write model conv2x2_top_Pipeline_VITIS_LOOP_131_1
+INFO-FLOW: To file: write model conv2x2_top_Pipeline_VITIS_LOOP_64_2
+INFO-FLOW: To file: write model conv2x2_top
+INFO-FLOW: Generating /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source done; 0.17 sec.
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/vhdl' dstVlogDir='/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/vlog' tclDir='/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db' modelList='conv2x2_top_mux_4_2_1_1_1
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_mux_2_1_1_1_1
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_mux_4_2_16_1_1
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W
+conv2x2_top_fifo_w1_d1024_S
+conv2x2_top_fifo_w1_d16_S
+conv2x2_top_fifo_w1_d16_S
+conv2x2_top_Pipeline_VITIS_LOOP_33_1
+conv2x2_top_Pipeline_VITIS_LOOP_197_2
+conv2x2_top_Pipeline_VITIS_LOOP_131_1
+conv2x2_top_Pipeline_VITIS_LOOP_64_2
+conv2x2_top
+' expOnly='0'
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcvu9p-flga2577-2-e -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2577-2-e -data info -quiet 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.compgen.tcl 
+Execute           ap_part_info -name xcvu9p-flga2577-2-e -data names -quiet 
+Execute           ap_part_info -name xcvu9p-flga2577-2-e -data info -quiet 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.compgen.tcl 
+Execute           ap_part_info -name xcvu9p-flga2577-2-e -data names -quiet 
+Execute           ap_part_info -name xcvu9p-flga2577-2-e -data info -quiet 
+Command         ap_source done; 0.36 sec.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.compgen.tcl 
+Execute           ap_part_info -name xcvu9p-flga2577-2-e -data names -quiet 
+Execute           ap_part_info -name xcvu9p-flga2577-2-e -data info -quiet 
+Command         ap_source done; 0.13 sec.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.compgen.tcl 
+Command         ap_source done; 0.15 sec.
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.26 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.35 seconds; current allocated memory: 1.532 GB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='conv2x2_top_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='conv2x2_top_mux_4_2_1_1_1
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_mux_2_1_1_1_1
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_mux_4_2_16_1_1
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_flow_control_loop_pipe_sequential_init
+conv2x2_top_inputBuf_RAM_2P_AUTO_1R1W
+conv2x2_top_fifo_w1_d1024_S
+conv2x2_top_fifo_w1_d16_S
+conv2x2_top_fifo_w1_d16_S
+conv2x2_top_Pipeline_VITIS_LOOP_33_1
+conv2x2_top_Pipeline_VITIS_LOOP_197_2
+conv2x2_top_Pipeline_VITIS_LOOP_131_1
+conv2x2_top_Pipeline_VITIS_LOOP_64_2
+conv2x2_top
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/top-io-be.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.compgen.dataonly.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_33_1.tbgen.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_197_2.tbgen.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_131_1.tbgen.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top_Pipeline_VITIS_LOOP_64_2.tbgen.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcvu9p-flga2577-2-e -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2577-2-e -data info -quiet 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.constraint.tcl 
+Execute         sc_get_clocks conv2x2_top 
+Execute         source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} report_dict {TOPINST conv2x2_top MODULE2INSTS {conv2x2_top conv2x2_top conv2x2_top_Pipeline_VITIS_LOOP_33_1 grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124 conv2x2_top_Pipeline_VITIS_LOOP_197_2 grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133 conv2x2_top_Pipeline_VITIS_LOOP_131_1 grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141 conv2x2_top_Pipeline_VITIS_LOOP_64_2 grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155} INST2MODULE {conv2x2_top conv2x2_top grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124 conv2x2_top_Pipeline_VITIS_LOOP_33_1 grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133 conv2x2_top_Pipeline_VITIS_LOOP_197_2 grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141 conv2x2_top_Pipeline_VITIS_LOOP_131_1 grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155 conv2x2_top_Pipeline_VITIS_LOOP_64_2} INSTDATA {conv2x2_top {DEPTH 1 CHILDREN {grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124 grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133 grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141 grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155}} grp_conv2x2_top_Pipeline_VITIS_LOOP_33_1_fu_124 {DEPTH 2 CHILDREN {}} grp_conv2x2_top_Pipeline_VITIS_LOOP_197_2_fu_133 {DEPTH 2 CHILDREN {}} grp_conv2x2_top_Pipeline_VITIS_LOOP_131_1_fu_141 {DEPTH 2 CHILDREN {}} grp_conv2x2_top_Pipeline_VITIS_LOOP_64_2_fu_155 {DEPTH 2 CHILDREN {}}} MODULEDATA {conv2x2_top_Pipeline_VITIS_LOOP_33_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln33_fu_93_p2 SOURCE /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:33 VARIABLE add_ln33 LOOP VITIS_LOOP_33_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} conv2x2_top_Pipeline_VITIS_LOOP_197_2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_3_fu_278_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:197 VARIABLE i_3 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_171_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:216 VARIABLE current_block_read LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ofm_x_fu_310_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:232 VARIABLE ofm_x LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ofm_y_2_fu_322_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:235 VARIABLE ofm_y_2 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_182_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:251 VARIABLE current_line_2 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_194_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:255 VARIABLE read_block_5 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_182_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:203 VARIABLE current_line_1 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME inp_4_fu_455_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:204 VARIABLE inp_4 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_171_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:207 VARIABLE current_block_write_2 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_194_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:211 VARIABLE read_block_4 LOOP VITIS_LOOP_197_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} conv2x2_top_Pipeline_VITIS_LOOP_131_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_4_fu_105_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:131 VARIABLE i_4 LOOP VITIS_LOOP_131_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME cntr_3_fu_111_p2 SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:188 VARIABLE cntr_3 LOOP VITIS_LOOP_131_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} conv2x2_top_Pipeline_VITIS_LOOP_64_2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln64_fu_104_p2 SOURCE /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:64 VARIABLE add_ln64 LOOP VITIS_LOOP_64_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} conv2x2_top {BINDINFO {{BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME convInp_fifo_U SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h:119 VARIABLE convInp LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME in_stream_fifo_U SOURCE /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:30 VARIABLE in_stream LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME out_stream_fifo_U SOURCE /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp:31 VARIABLE out_stream LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME inputBuf_U SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180 VARIABLE inputBuf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME inputBuf_1_U SOURCE /home/coder/Documents/s2n2/finn-hlslib-lif/slidingwindow.h:180 VARIABLE inputBuf_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage ram_2p}}} AREA {DSP 0 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 1.539 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2x2_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2x2_top.
+Execute         syn_report -model conv2x2_top -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 230.04 MHz
+Command         syn_report done; 0.11 sec.
+Command       autosyn done; 15.45 sec.
+Command     csynth_design done; 42.55 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5.97 seconds. CPU system time: 1.44 seconds. Elapsed time: 42.55 seconds; current allocated memory: 79.707 MB.
+Execute     cosim_design 
+INFO: [HLS 200-1510] Running: cosim_design 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvu9p-flga2577-2-e -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2577-2-e -data info -quiet 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute       ap_part_info -name xcvu9p-flga2577-2-e -data info 
+INFO-FLOW: TB processing: /home/coder/Desktop/s2n2/convSNN/conv2x2_tb.cpp /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/conv2x2_tb.cpp_pre.cpp
+Execute       clang_tidy xilinx-tb-process -desc tb-process /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/conv2x2_tb.cpp_pre.cpp.tb.cpp std=c++14 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/conv2x2_tb.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
+Command       clang_tidy done; 0.75 sec.
+Execute       ap_part_info -name xcvu9p-flga2577-2-e -data info 
+INFO-FLOW: TB processing: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/conv2x2_top.cpp_pre.cpp
+Execute       clang_tidy xilinx-tb-process -desc tb-process /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/conv2x2_top.cpp_pre.cpp.tb.cpp std=c++14 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/conv2x2_top.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
+Command       clang_tidy done; 1.05 sec.
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/./sim/autowrap/testbench/tb.status.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/global.setting.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.rtl_wrap.cfg.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       ap_part_info -name xcvu9p-flga2577-2-e -data info 
+Execute       source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command       ap_source done; 0.43 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute       source ../tv/cdatafile/ref.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source ../tv/cdatafile/ref.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.DependenceCheck.tcl 
+Execute       source /home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/.autopilot/db/conv2x2_top.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute       source .run_sim.tcl 
+Execute         source check_sim.tcl 
+Execute         source dataflow_monitor_API.tcl 
+Execute         source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command       ap_source done; 148.26 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command     cosim_design done; 158.31 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 9.81 seconds. CPU system time: 3.31 seconds. Elapsed time: 158.31 seconds; current allocated memory: 9.477 MB.
+Execute     cleanup_all 

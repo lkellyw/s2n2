@@ -61251,16 +61251,13 @@ inline bool operator!=(
 
 
 
-static const int FC_IN[8] = {1, 0, 1, 0, 1, 0, 1, 0};
-
-static const int FC_W[4][8] = {
-    { 1, 0, 1, 0, 1, 0, 1, 0},
-    { 1, 1, 1, 1, 0, 0, 0, 0},
-    {-1, 0,-1, 0,-1, 0,-1, 0},
-    { 0, 0, 0, 0, 1, 1, 1, 1}
+static const int FC_IN[8] = {
+  1, 0, 1, 0, 1, 0, 1, 0
 };
 
-static const int EXPECT_SPK[4] = {1, 1, 0, 1};
+static const int EXPECT_SPK[4] = {
+  1, 1, 0, 1
+};
 # 4 "/home/coder/Desktop/s2n2/convSNN/fc_finn_tb.cpp" 2
 
 void fc_finn_top(const ap_uint<1> in[8], ap_uint<1> out[4]);
@@ -61272,6 +61269,7 @@ int main() {
   for (int i = 0; i < 8; i++) {
     in_mem[i] = FC_IN[i];
   }
+
   for (int i = 0; i < 4; i++) {
     out_mem[i] = 0;
   }

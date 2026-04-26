@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc_finn_top'" level="0">
-<item name = "Date">Sat Apr 25 21:40:48 2026
+<item name = "Date">Sat Apr 25 23:31:00 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">fc_finn_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 3.658 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.824 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">60, 94, 0.600 us, 0.940 us, 61, 95, no</column>
+<column name="">58, 58, 0.580 us, 0.580 us, 59, 59, no</column>
 </table>
 </item>
 <item name = "Detail">

@@ -182,7 +182,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>741550437</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -224,7 +224,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>741550437</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -266,7 +266,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>741550437</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -308,7 +308,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>64</coreId>
+						<coreId>368</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -350,7 +350,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>256</coreId>
+						<coreId>4206732432</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -434,7 +434,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>4259382320</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -476,7 +476,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3</coreId>
+						<coreId>256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -519,7 +519,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848112320</coreId>
+						<coreId>4259385712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -562,7 +562,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848083776</coreId>
+						<coreId>4259025584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -605,7 +605,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>847643776</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -648,7 +648,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>847644120</coreId>
+						<coreId>4259386320</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -691,7 +691,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>847644752</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -734,7 +734,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848116208</coreId>
+						<coreId>4259366336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -777,7 +777,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259383088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -820,12 +820,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -847,7 +847,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848117312</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -891,12 +891,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -918,7 +918,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848086032</coreId>
+						<coreId>4259560320</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -962,12 +962,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -989,7 +989,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848082240</coreId>
+						<coreId>4259563216</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1033,12 +1033,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1060,7 +1060,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848084512</coreId>
+						<coreId>4259564496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1104,12 +1104,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1131,7 +1131,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848316800</coreId>
+						<coreId>4259566112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1175,12 +1175,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1202,7 +1202,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848080464</coreId>
+						<coreId>4259567440</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1246,12 +1246,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1317,12 +1317,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1388,12 +1388,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1415,7 +1415,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848095704</coreId>
+						<coreId>4259371840</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1460,12 +1460,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1487,7 +1487,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1530,12 +1530,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1557,7 +1557,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>926496095</coreId>
+						<coreId>859387487</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -1603,12 +1603,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1674,12 +1674,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1701,7 +1701,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259383088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1746,12 +1746,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1817,12 +1817,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1888,12 +1888,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1915,7 +1915,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6775156</coreId>
+						<coreId>4259588624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1958,12 +1958,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -1985,7 +1985,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2030,12 +2030,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2057,7 +2057,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259590272</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2102,12 +2102,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2172,12 +2172,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2242,12 +2242,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2315,12 +2315,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2387,12 +2387,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2458,12 +2458,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2529,12 +2529,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2600,12 +2600,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2671,12 +2671,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2743,12 +2743,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2815,12 +2815,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2887,12 +2887,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -2959,12 +2959,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3031,12 +3031,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3104,12 +3104,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3175,12 +3175,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3202,7 +3202,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848224048</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3247,12 +3247,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3320,12 +3320,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3347,7 +3347,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848229872</coreId>
+						<coreId>4259700192</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3393,12 +3393,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3420,7 +3420,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>4259395184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3466,12 +3466,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3493,7 +3493,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259396928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3536,12 +3536,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3563,7 +3563,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848237152</coreId>
+						<coreId>4259399472</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3607,12 +3607,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3678,12 +3678,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3705,7 +3705,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259403360</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -3748,12 +3748,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3775,7 +3775,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848241280</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3820,12 +3820,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3847,7 +3847,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>11</coreId>
+						<coreId>1314013527</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3892,12 +3892,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -3919,7 +3919,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848247672</coreId>
+						<coreId>539785588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3964,12 +3964,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4035,12 +4035,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4062,7 +4062,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259025584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4105,12 +4105,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4176,12 +4176,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4203,7 +4203,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848080464</coreId>
+						<coreId>4259573664</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4246,12 +4246,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4273,7 +4273,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848238848</coreId>
+						<coreId>4259575808</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4317,12 +4317,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4388,12 +4388,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4459,12 +4459,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4486,7 +4486,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4531,12 +4531,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4558,7 +4558,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>4204699184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4605,12 +4605,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4632,7 +4632,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>4259588016</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4678,12 +4678,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4705,7 +4705,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259529120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4751,12 +4751,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4778,7 +4778,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848275008</coreId>
+						<coreId>4259537528</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4824,12 +4824,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4851,7 +4851,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>171847424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4894,12 +4894,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -4965,12 +4965,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5036,12 +5036,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5108,12 +5108,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5135,7 +5135,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259549936</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5182,12 +5182,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5209,7 +5209,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869833586</coreId>
+						<coreId>4259550064</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5255,12 +5255,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5282,7 +5282,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259551952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5328,12 +5328,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5355,7 +5355,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848292112</coreId>
+						<coreId>4259554576</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5401,12 +5401,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5474,12 +5474,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5501,7 +5501,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848297936</coreId>
+						<coreId>7955819</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5547,12 +5547,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5574,7 +5574,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848298432</coreId>
+						<coreId>4259389136</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5617,12 +5617,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5644,7 +5644,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>480</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5688,12 +5688,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5759,12 +5759,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5786,7 +5786,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1685021487</coreId>
+						<coreId>1818766702</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -5829,12 +5829,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5856,7 +5856,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259517056</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5901,12 +5901,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -5928,7 +5928,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848137840</coreId>
+						<coreId>48</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5973,12 +5973,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6000,7 +6000,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848112320</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6045,12 +6045,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6116,12 +6116,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6143,7 +6143,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>4259512256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6186,12 +6186,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6257,12 +6257,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6284,7 +6284,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>4259530496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6327,12 +6327,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6354,7 +6354,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1768712546</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6398,12 +6398,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6469,12 +6469,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6540,12 +6540,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6611,12 +6611,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6638,7 +6638,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848112320</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6684,12 +6684,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6711,7 +6711,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702258035</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6756,12 +6756,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6783,7 +6783,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848168944</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6830,12 +6830,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6857,7 +6857,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848169664</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -6900,12 +6900,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -6971,12 +6971,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7042,12 +7042,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7114,12 +7114,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7185,12 +7185,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7212,7 +7212,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259025584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7259,12 +7259,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7286,7 +7286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4259678944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7332,12 +7332,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7359,7 +7359,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1030647657</coreId>
+						<coreId>4259681496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7405,12 +7405,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7432,7 +7432,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>608</coreId>
+						<coreId>1314013527</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7475,12 +7475,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7502,7 +7502,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848190776</coreId>
+						<coreId>784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7548,12 +7548,12 @@
 											<first>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</first>
 											<second>conv2x2_top</second>
 										</first>
-										<second>56</second>
+										<second>40</second>
 									</item>
 									<item>
 										<first>
 											<first>/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h</first>
-											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, DummyActivation, ap_resource_dflt&amp;gt;</second>
+											<second>ConvLayer_Batch&amp;lt;1, 1, 2, 1, 2, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 8, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 8, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 1&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
 										</first>
 										<second>120</second>
 									</item>
@@ -7575,7 +7575,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539784497</coreId>
+						<coreId>304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7617,7 +7617,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1142959104</coreId>
+						<coreId>304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7662,7 +7662,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848238864</coreId>
+						<coreId>4259401168</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7755,7 +7755,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848317776</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -7786,7 +7786,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -7817,7 +7817,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848197456</coreId>
+						<coreId>17</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7848,7 +7848,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848198240</coreId>
+						<coreId>4259625840</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -7879,7 +7879,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848197840</coreId>
+						<coreId>4259625024</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7910,7 +7910,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1836016416</coreId>
+						<coreId>4259625536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -7941,7 +7941,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>848201056</coreId>
+						<coreId>4259625624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7975,7 +7975,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>745827945</coreId>
+					<coreId>763</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8020,7 +8020,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>745827945</coreId>
+					<coreId>277</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8059,7 +8059,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>745827945</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8144,7 +8144,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>8</coreId>
+					<coreId>4259698528</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8178,7 +8178,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>848236624</coreId>
+					<coreId>4259398464</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8214,7 +8214,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>848226176</coreId>
+					<coreId>4259411968</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8246,7 +8246,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>4259571088</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8312,7 +8312,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1869833586</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8347,7 +8347,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>848280632</coreId>
+					<coreId>4206518048</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8387,7 +8387,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>848300560</coreId>
+					<coreId>1869833586</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8423,7 +8423,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1953853550</coreId>
+					<coreId>4259524816</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8455,7 +8455,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1769299824</coreId>
+					<coreId>1819113532</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8487,7 +8487,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1701016181</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8523,7 +8523,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>848166864</coreId>
+					<coreId>4259025584</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8555,7 +8555,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>848171552</coreId>
+					<coreId>4259668512</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8593,7 +8593,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1744840960</coreId>
+					<coreId>4259615752</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -8607,7 +8607,7 @@
 				<Obj>
 					<type>3</type>
 					<id>141</id>
-					<name>_Z25ConvolutionInputGeneratorILj1ELj1ELj1ELj2ELj2ELj1ELj1E16ap_resource_dfltEvRN3hls6streamI7ap_uintIXmlT4_T1_EELi0EEES6_jRKT6_.exit.exitStub</name>
+					<name>if.end.i.preheader.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

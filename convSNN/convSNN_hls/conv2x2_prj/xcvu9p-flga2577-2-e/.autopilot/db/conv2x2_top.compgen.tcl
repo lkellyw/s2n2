@@ -31,7 +31,7 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 29 \
+    id 27 \
     name in_0 \
     type other \
     dir I \
@@ -46,7 +46,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 30 \
+    id 28 \
     name in_1 \
     type other \
     dir I \
@@ -61,7 +61,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 31 \
+    id 29 \
     name in_2 \
     type other \
     dir I \
@@ -76,7 +76,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 32 \
+    id 30 \
     name in_3 \
     type other \
     dir I \
@@ -91,7 +91,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 33 \
+    id 31 \
     name out_0 \
     type other \
     dir O \
@@ -106,7 +106,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 34 \
+    id 32 \
     name out_1 \
     type other \
     dir O \
@@ -121,7 +121,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 35 \
+    id 33 \
     name out_2 \
     type other \
     dir O \
@@ -136,7 +136,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 36 \
+    id 34 \
     name out_3 \
     type other \
     dir O \

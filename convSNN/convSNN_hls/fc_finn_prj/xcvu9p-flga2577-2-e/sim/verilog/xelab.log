@@ -8,16 +8,12 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/conv
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_fc_finn_top_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fc_finn_top_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_load_weights_once.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fc_finn_top_load_weights_once
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_44_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_44_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_30_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_30_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_79_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_79_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_58_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_58_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fc_finn_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
@@ -29,6 +25,13 @@ INFO: [VRFC 10-311] analyzing module fc_finn_top_fc_weights_0_RAM_AUTO_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fifo_w1_d8_S.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fc_finn_top_fifo_w1_d8_S
 INFO: [VRFC 10-311] analyzing module fc_finn_top_fifo_w1_d8_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_Matrix_Vector_Activate_Batch_fc_weights_0_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_finn_top_Matrix_Vector_Activate_Batch_fc_weights_0_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fc_weights_0_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fc_weights_0_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_fifo_w1_d16_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_finn_top_fifo_w1_d16_S
+INFO: [VRFC 10-311] analyzing module fc_finn_top_fifo_w1_d16_S_ShiftReg
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_mux_8_3_1_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fc_finn_top_mux_8_3_1_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/sim/verilog/fc_finn_top_mux_4_2_16_1_1.v" into library xil_defaultlib
@@ -42,18 +45,15 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.fc_finn_top_fc_weights_0_RAM_AUT...
-Compiling module xil_defaultlib.fc_finn_top_load_weights_once_Pi...
-Compiling module xil_defaultlib.fc_finn_top_flow_control_loop_pi...
-Compiling module xil_defaultlib.fc_finn_top_load_weights_once_Pi...
-Compiling module xil_defaultlib.fc_finn_top_load_weights_once
 Compiling module xil_defaultlib.fc_finn_top_mux_8_3_1_1_1(ID=1,d...
+Compiling module xil_defaultlib.fc_finn_top_flow_control_loop_pi...
+Compiling module xil_defaultlib.fc_finn_top_fc_finn_top_Pipeline...
 Compiling module xil_defaultlib.fc_finn_top_fc_finn_top_Pipeline...
 Compiling module xil_defaultlib.fc_finn_top_mux_4_2_16_1_1(ID=1,...
 Compiling module xil_defaultlib.fc_finn_top_fc_finn_top_Pipeline...
 Compiling module xil_defaultlib.fc_finn_top_fc_finn_top_Pipeline...
-Compiling module xil_defaultlib.fc_finn_top_fifo_w1_d8_S_ShiftRe...
-Compiling module xil_defaultlib.fc_finn_top_fifo_w1_d8_S
+Compiling module xil_defaultlib.fc_finn_top_fifo_w1_d16_S_ShiftR...
+Compiling module xil_defaultlib.fc_finn_top_fifo_w1_d16_S
 Compiling module xil_defaultlib.fc_finn_top
 Compiling module xil_defaultlib.nodf_module_intf
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)

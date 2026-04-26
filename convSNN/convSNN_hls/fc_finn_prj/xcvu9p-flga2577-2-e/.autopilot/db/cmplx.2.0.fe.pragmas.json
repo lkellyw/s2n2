@@ -1,10 +1,10 @@
 {
   "0": {
     "basicblocks": 12,
-    "calls": "1 5 6 4 3 2",
+    "calls": "1 4 5 3 2",
     "file": "fc_finn_top.cpp",
-    "fileloc": 33,
-    "instructions": 58,
+    "fileloc": 23,
+    "instructions": 57,
     "loads": {
       "L": 2,
       "T": 1
@@ -13,22 +13,19 @@
     "stores": {
       "T": 1
     },
-    "total_instructions": 290
+    "total_instructions": 261
   },
   "1": {
-    "basicblocks": 10,
+    "basicblocks": 1,
     "calls": "",
-    "file": "fc_finn_top.cpp",
-    "fileloc": 16,
-    "instructions": 28,
-    "loads": {
-      "G": 2
-    },
-    "name": "load_weights_once",
+    "file": "streamtools.h",
+    "fileloc": 837,
+    "instructions": 3,
+    "name": "WidthAdjustedInputStream",
     "stores": {
-      "G": 2
+      "L": 1
     },
-    "total_instructions": 28
+    "total_instructions": 3
   },
   "2": {
     "basicblocks": 76,
@@ -60,27 +57,6 @@
     "basicblocks": 1,
     "calls": "",
     "file": "streamtools.h",
-    "fileloc": 841,
-    "instructions": 1,
-    "name": "operator hls::stream<ap_uint<1>, 0> &",
-    "total_instructions": 1
-  },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "streamtools.h",
-    "fileloc": 837,
-    "instructions": 3,
-    "name": "WidthAdjustedInputStream",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 3
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "streamtools.h",
     "fileloc": 869,
     "instructions": 3,
     "name": "WidthAdjustedOutputStream",
@@ -88,5 +64,14 @@
       "L": 1
     },
     "total_instructions": 3
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "streamtools.h",
+    "fileloc": 841,
+    "instructions": 1,
+    "name": "operator hls::stream<ap_uint<1>, 0> &",
+    "total_instructions": 1
   }
 }

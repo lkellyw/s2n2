@@ -18,10 +18,7 @@ module fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1 (
         in_stream_read,
         out_stream_din,
         out_stream_full_n,
-        out_stream_write,
-        fc_weights_0_address0,
-        fc_weights_0_ce0,
-        fc_weights_0_q0
+        out_stream_write
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -38,14 +35,10 @@ output   in_stream_read;
 output  [0:0] out_stream_din;
 input   out_stream_full_n;
 output   out_stream_write;
-output  [4:0] fc_weights_0_address0;
-output   fc_weights_0_ce0;
-input  [1:0] fc_weights_0_q0;
 
 reg ap_idle;
 reg in_stream_read;
 reg out_stream_write;
-reg fc_weights_0_ce0;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
@@ -69,6 +62,9 @@ reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp
 reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2;
 reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1;
 reg   [15:0] void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int;
+wire   [4:0] fc_weights_0_address0;
+reg    fc_weights_0_ce0;
+wire   [1:0] fc_weights_0_q0;
 reg    in_stream_blk_n;
 wire    ap_block_pp0_stage0;
 reg    out_stream_blk_n;
@@ -116,7 +112,7 @@ wire   [11:0] trunc_ln3_fu_476_p4;
 wire  signed [15:0] sext_ln155_fu_486_p1;
 wire   [15:0] temp_1_fu_490_p2;
 wire   [1:0] temp_3_fu_503_p3;
-wire   [11:0] tmp_2_fu_511_p3;
+wire   [11:0] tmp_1_fu_511_p3;
 wire  signed [15:0] sext_ln165_fu_519_p1;
 wire   [15:0] select_ln149_fu_496_p3;
 reg    ap_done_reg;
@@ -125,12 +121,12 @@ reg    ap_done_int;
 reg   [0:0] ap_NS_fsm;
 wire    ap_enable_pp0;
 wire    ap_start_int;
-reg    ap_condition_475;
-reg    ap_condition_478;
-reg    ap_condition_482;
-reg    ap_condition_485;
-reg    ap_condition_488;
-reg    ap_condition_491;
+reg    ap_condition_476;
+reg    ap_condition_479;
+reg    ap_condition_483;
+reg    ap_condition_486;
+reg    ap_condition_489;
+reg    ap_condition_492;
 wire    ap_ce_reg;
 
 // power-on initialization
@@ -145,6 +141,18 @@ initial begin
 #0 ap_done_reg = 1'b0;
 end
 
+fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fc_weights_0_ROM_AUTO_1R #(
+    .DataWidth( 2 ),
+    .AddressRange( 32 ),
+    .AddressWidth( 5 ))
+fc_weights_0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(fc_weights_0_address0),
+    .ce0(fc_weights_0_ce0),
+    .q0(fc_weights_0_q0)
+);
+
 fc_finn_top_mux_8_3_1_1_1 #(
     .ID( 1 ),
     .NUM_STAGE( 1 ),
@@ -158,7 +166,7 @@ fc_finn_top_mux_8_3_1_1_1 #(
     .din7_WIDTH( 1 ),
     .din8_WIDTH( 3 ),
     .dout_WIDTH( 1 ))
-mux_8_3_1_1_1_U15(
+mux_8_3_1_1_1_U12(
     .din0(inputBuf_fu_108),
     .din1(inputBuf_1_fu_112),
     .din2(inputBuf_2_fu_116),
@@ -180,7 +188,7 @@ fc_finn_top_mux_4_2_16_1_1 #(
     .din3_WIDTH( 16 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
-mux_4_2_16_1_1_U16(
+mux_4_2_16_1_1_U13(
     .din0(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_3),
     .din1(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2),
     .din2(void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1),
@@ -262,7 +270,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             nf_fu_140 <= 32'd0;
-        end else if ((1'b1 == ap_condition_475)) begin
+        end else if ((1'b1 == ap_condition_476)) begin
             nf_fu_140 <= nf_5_fu_322_p3;
         end
     end
@@ -280,16 +288,16 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             tile_fu_96 <= 32'd0;
-        end else if ((1'b1 == ap_condition_475)) begin
+        end else if ((1'b1 == ap_condition_476)) begin
             tile_fu_96 <= tile_2_fu_330_p3;
-        end else if ((1'b1 == ap_condition_478)) begin
+        end else if ((1'b1 == ap_condition_479)) begin
             tile_fu_96 <= tile_1_fu_282_p2;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_condition_482)) begin
+    if ((1'b1 == ap_condition_483)) begin
         if ((icmp_ln179_fu_529_p2 == 1'd1)) begin
             void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int <= 16'd0;
         end else if ((icmp_ln179_fu_529_p2 == 1'd0)) begin
@@ -299,7 +307,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_condition_485)) begin
+    if ((1'b1 == ap_condition_486)) begin
         if ((icmp_ln179_fu_529_p2 == 1'd1)) begin
             void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1 <= 16'd0;
         end else if ((icmp_ln179_fu_529_p2 == 1'd0)) begin
@@ -309,7 +317,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_condition_488)) begin
+    if ((1'b1 == ap_condition_489)) begin
         if ((icmp_ln179_fu_529_p2 == 1'd1)) begin
             void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2 <= 16'd0;
         end else if ((icmp_ln179_fu_529_p2 == 1'd0)) begin
@@ -319,7 +327,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_condition_491)) begin
+    if ((1'b1 == ap_condition_492)) begin
         if ((icmp_ln179_fu_529_p2 == 1'd1)) begin
             void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_3 <= 16'd0;
         end else if ((icmp_ln179_fu_529_p2 == 1'd0)) begin
@@ -540,27 +548,27 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_condition_475 = ((icmp_ln131_fu_242_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln172_fu_294_p2 == 1'd1));
+    ap_condition_476 = ((icmp_ln131_fu_242_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln172_fu_294_p2 == 1'd1));
 end
 
 always @ (*) begin
-    ap_condition_478 = ((icmp_ln131_fu_242_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln172_fu_294_p2 == 1'd0));
+    ap_condition_479 = ((icmp_ln131_fu_242_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln172_fu_294_p2 == 1'd0));
 end
 
 always @ (*) begin
-    ap_condition_482 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd3));
+    ap_condition_483 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd3));
 end
 
 always @ (*) begin
-    ap_condition_485 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd2));
+    ap_condition_486 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd2));
 end
 
 always @ (*) begin
-    ap_condition_488 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd1));
+    ap_condition_489 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd1));
 end
 
 always @ (*) begin
-    ap_condition_491 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd0));
+    ap_condition_492 = ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln172_reg_700 == 1'd1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (trunc_ln123_1_reg_681 == 2'd0));
 end
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
@@ -605,7 +613,7 @@ assign select_ln149_fu_496_p3 = ((icmp_ln149_reg_690[0:0] == 1'b1) ? temp_1_fu_4
 
 assign sext_ln155_fu_486_p1 = $signed(trunc_ln3_fu_476_p4);
 
-assign sext_ln165_fu_519_p1 = $signed(tmp_2_fu_511_p3);
+assign sext_ln165_fu_519_p1 = $signed(tmp_1_fu_511_p3);
 
 assign sf_3_fu_288_p2 = (sf_fu_92 + 32'd1);
 
@@ -617,7 +625,7 @@ assign tile_1_fu_282_p2 = (tile_fu_96 + 32'd1);
 
 assign tile_2_fu_330_p3 = ((icmp_ln192_fu_316_p2[0:0] == 1'b1) ? 32'd0 : tile_1_fu_282_p2);
 
-assign tmp_2_fu_511_p3 = {{temp_3_fu_503_p3}, {10'd0}};
+assign tmp_1_fu_511_p3 = {{temp_3_fu_503_p3}, {10'd0}};
 
 assign trunc_ln123_1_fu_258_p1 = nf_fu_140[1:0];
 

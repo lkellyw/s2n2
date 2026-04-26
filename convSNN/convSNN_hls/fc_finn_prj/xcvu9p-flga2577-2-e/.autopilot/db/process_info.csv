@@ -1,6 +1,4 @@
 ,AESL_inst_fc_finn_top,,module_status1.csv
-,grp_load_weights_once_fu_138,,module_status2.csv
-grp_load_weights_once_fu_138,grp_load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2_fu_10,,module_status3.csv
-,grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148,,module_status4.csv
-,grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161,,module_status5.csv
-,grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177,,module_status6.csv
+,grp_fc_finn_top_Pipeline_VITIS_LOOP_30_1_fu_132,,module_status2.csv
+,grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_145,,module_status3.csv
+,grp_fc_finn_top_Pipeline_VITIS_LOOP_58_2_fu_161,,module_status4.csv

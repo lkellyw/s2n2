@@ -3321,7 +3321,7 @@
       <key>filename</key>
       <string>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</string>
       <key>line</key>
-      <integer>100</integer>
+      <integer>103</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3463,38 +3463,6 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
-      <key>line</key>
-      <integer>22</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
-      <key>line</key>
-      <integer>28</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=load_weights_once_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
       <string>/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2.tcl</string>
       <key>line</key>
       <integer>37</integer>
@@ -3513,7 +3481,7 @@
       <key>filename</key>
       <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
       <key>line</key>
-      <integer>38</integer>
+      <integer>27</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3529,7 +3497,7 @@
       <key>filename</key>
       <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
       <key>line</key>
-      <integer>39</integer>
+      <integer>28</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3545,39 +3513,7 @@
       <key>filename</key>
       <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
       <key>line</key>
-      <integer>45</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv2x2_top_XLX_SEP_ PragmaOptions=variable=in_stream depth=16_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
-      <key>line</key>
-      <integer>46</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv2x2_top_XLX_SEP_ PragmaOptions=variable=out_stream depth=16_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
-      <key>line</key>
-      <integer>49</integer>
+      <integer>34</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3593,7 +3529,7 @@
       <key>filename</key>
       <string>/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp</string>
       <key>line</key>
-      <integer>88</integer>
+      <integer>65</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

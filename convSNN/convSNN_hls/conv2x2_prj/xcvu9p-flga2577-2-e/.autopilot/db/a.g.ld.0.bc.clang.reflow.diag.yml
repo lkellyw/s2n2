@@ -37,14 +37,14 @@ Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 187, Column: 17 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'Slice<ap_uint<1>, 1u>::Container<ap_uint<1> >::operator ap_uint<1> const&() const'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp, 
                        Line: 222, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, DummyActivation const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
+  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                        Line: 101, Column: 0 }
   - String:          ''''
@@ -54,14 +54,14 @@ Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 183, Column: 9 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'Slice<ap_uint<1>, 1u>::Container<ap_uint<1> >::operator()(unsigned int, unsigned int, bool) const'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp, 
                        Line: 209, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, DummyActivation const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
+  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                        Line: 101, Column: 0 }
   - String:          ''''
@@ -71,14 +71,14 @@ Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 180, Column: 9 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'Slice<ap_uint<1>, 1u>::Container<ap_uint<1> >::operator()(unsigned int, unsigned int, bool) const'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/interpret.hpp, 
                        Line: 209, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, DummyActivation const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
+  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                        Line: 101, Column: 0 }
   - String:          ''''
@@ -88,14 +88,14 @@ Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 165, Column: 14 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>::TileIndex::operator[](unsigned int) const'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp, 
                        Line: 196, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, DummyActivation const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
+  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                        Line: 101, Column: 0 }
   - String:          ''''
@@ -105,14 +105,14 @@ Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 162, Column: 29 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>::weights(unsigned int, ap_uint<1>) const'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp, 
                        Line: 214, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, DummyActivation const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
+  - Caller:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                        Line: 101, Column: 0 }
   - String:          ''''
@@ -121,17 +121,17 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 56, Column: 3 }
+                   Line: 40, Column: 3 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void ConvLayer_Batch<1u, 1u, 2u, 1u, 2u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 1, 1, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, DummyActivation const&, unsigned int, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_resource_dflt const&)'
+  - Callee:          'void ConvLayer_Batch<1u, 1u, 2u, 1u, 2u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 1, 1, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, unsigned int, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_resource_dflt const&)'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h, 
                        Line: 112, Column: 0 }
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 37, Column: 0 }
+                       Line: 26, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
@@ -150,7 +150,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 150, Column: 24 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_150_2
@@ -161,7 +161,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 163, Column: 23 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_163_3
@@ -172,7 +172,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp, 
                    Line: 200, Column: 25 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_200_1
@@ -183,7 +183,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 175, Column: 25 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_175_4
@@ -194,7 +194,7 @@ Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 101, Column: 0 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_150_2
@@ -202,7 +202,7 @@ Args:
   - LoopLoc:         '/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:150:24'
   - String:          ') '
   - String:          'in function '''
-  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>'
+  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>'
   - String:          ''' completely with a factor of '
   - Factor:          '1'
 ...
@@ -211,7 +211,7 @@ Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 101, Column: 0 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_163_3
@@ -219,7 +219,7 @@ Args:
   - LoopLoc:         '/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:163:23'
   - String:          ') '
   - String:          'in function '''
-  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>'
+  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>'
   - String:          ''' completely with a factor of '
   - Factor:          '1'
 ...
@@ -228,7 +228,7 @@ Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 101, Column: 0 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_200_1
@@ -236,7 +236,7 @@ Args:
   - LoopLoc:         '/home/coder/Documents/s2n2/finn-hlslib-lif/weights.hpp:200:25'
   - String:          ') '
   - String:          'in function '''
-  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>'
+  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>'
   - String:          ''' completely with a factor of '
   - Factor:          '1'
 ...
@@ -245,7 +245,7 @@ Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                    Line: 101, Column: 0 }
-Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
+Function:        _Z28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_175_4
@@ -253,7 +253,7 @@ Args:
   - LoopLoc:         '/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp:175:25'
   - String:          ') '
   - String:          'in function '''
-  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>'
+  - String:          'Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>'
   - String:          ''' completely with a factor of '
   - Factor:          '1'
 ...
@@ -261,7 +261,7 @@ Args:
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -271,14 +271,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 37, Column: 0 }
+                       Line: 26, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -288,14 +288,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 37, Column: 0 }
+                       Line: 26, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -305,14 +305,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 37, Column: 0 }
+                       Line: 26, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -322,14 +322,14 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 37, Column: 0 }
+                       Line: 26, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
@@ -339,24 +339,24 @@ Args:
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 37, Column: 0 }
+                       Line: 26, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, DummyActivation, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, DummyActivation const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
+  - Callee:          'void Matrix_Vector_Activate_Batch<1u, 1u, 1u, 1u, 1u, 1u, Identity, Slice<ap_uint<1>, 1u>, Identity, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u, 8u, 2u, ap_uint<1>, ap_uint<1>, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u>, int, ap_resource_dflt>(hls::stream<ap_uint<1>, 0>&, hls::stream<ap_uint<1>, 0>&, FixedPointWeightsSp<1u, ap_int<8>, 1u, 1u> const&, int const&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, ap_resource_dflt const&)'
     DebugLoc:        { File: /home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp, 
                        Line: 101, Column: 0 }
   - String:          ''' into '''
   - Caller:          'conv2x2_top(ap_uint<1> const*, ap_uint<1>*)'
     DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                       Line: 37, Column: 0 }
+                       Line: 26, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -369,7 +369,7 @@ Args:
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          _ZZ28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EE15DummyActivation16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSG_IT13_Li0EEERKT14_RKT15_T8_iRKT16_E5neust
+  - UOName:          _ZZ28Matrix_Vector_Activate_BatchILj1ELj1ELj1ELj1ELj1ELj1E8Identity5SliceI7ap_uintILi1EELj1EES0_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16ELj8ELj2ES3_S3_19FixedPointWeightsSpILj1E6ap_intILi8EELj1ELj1EEi16ap_resource_dfltEvRN3hls6streamIT12_Li0EEERNSF_IT13_Li0EEERKT14_RKT15_T8_iRKT16_E5neust
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -401,7 +401,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Applying '
@@ -420,7 +420,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: /home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp, 
-                   Line: 37, Column: 0 }
+                   Line: 26, Column: 0 }
 Function:        _Z11conv2x2_topPK7ap_uintILi1EEPS0_
 Args:            
   - String:          'Applying '

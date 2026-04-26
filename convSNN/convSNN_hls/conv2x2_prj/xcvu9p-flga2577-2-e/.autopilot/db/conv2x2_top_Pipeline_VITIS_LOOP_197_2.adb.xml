@@ -439,7 +439,7 @@ for.body12.i:7 %i_3 = add i3 %i, i3 1
 
 <Node id="33" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-for.body12.i:8 %br_ln197 = br i1 %icmp_ln197, void %for.body12.i.split, void %_Z25ConvolutionInputGeneratorILj1ELj1ELj1ELj2ELj2ELj1ELj1E16ap_resource_dfltEvRN3hls6streamI7ap_uintIXmlT4_T1_EELi0EEES6_jRKT6_.exit.exitStub
+for.body12.i:8 %br_ln197 = br i1 %icmp_ln197, void %for.body12.i.split, void %if.end.i.preheader.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln197"/></StgValue>
@@ -1686,7 +1686,7 @@ for.inc.i:1 %br_ln197 = br void %for.body12.i
 
 <Node id="140" bw="0">
 <![CDATA[
-_Z25ConvolutionInputGeneratorILj1ELj1ELj1ELj2ELj2ELj1ELj1E16ap_resource_dfltEvRN3hls6streamI7ap_uintIXmlT4_T1_EELi0EEES6_jRKT6_.exit.exitStub:0 %ret_ln0 = ret
+if.end.i.preheader.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>

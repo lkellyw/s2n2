@@ -177,7 +177,7 @@ conv2x2_top_mux_2_1_1_1_1 #(
     .din1_WIDTH( 1 ),
     .din2_WIDTH( 1 ),
     .dout_WIDTH( 1 ))
-mux_2_1_1_1_1_U9(
+mux_2_1_1_1_1_U8(
     .din0(inputBuf_q0),
     .din1(inputBuf_1_q0),
     .din2(p_0_fu_496_p3),

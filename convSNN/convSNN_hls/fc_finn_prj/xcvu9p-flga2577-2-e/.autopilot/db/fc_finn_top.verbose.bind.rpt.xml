@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc_finn_top'" level="0">
-<item name = "Date">Sat Apr 25 21:40:48 2026
+<item name = "Date">Sat Apr 25 23:31:01 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">fc_finn_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 3.658 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.824 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">60, 94, 0.600 us, 0.940 us, 61, 95, no</column>
+<column name="">58, 58, 0.580 us, 0.580 us, 59, 59, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_weights_once_fu_138">load_weights_once, 1, 35, 10.000 ns, 0.350 us, 1, 35, no</column>
-<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_44_1_fu_148">fc_finn_top_Pipeline_VITIS_LOOP_44_1, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
-<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_161">fc_finn_top_Pipeline_VITIS_LOOP_131_1, 34, 34, 0.340 us, 0.340 us, 34, 34, no</column>
-<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_79_2_fu_177">fc_finn_top_Pipeline_VITIS_LOOP_79_2, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_30_1_fu_132">fc_finn_top_Pipeline_VITIS_LOOP_30_1, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fu_145">fc_finn_top_Pipeline_VITIS_LOOP_131_1, 34, 34, 0.340 us, 0.340 us, 34, 34, no</column>
+<column name="grp_fc_finn_top_Pipeline_VITIS_LOOP_58_2_fu_161">fc_finn_top_Pipeline_VITIS_LOOP_58_2, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

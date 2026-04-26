@@ -13,16 +13,14 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/conv
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_conv2x2_top_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_load_weights_once.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv2x2_top_load_weights_once
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_48_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_48_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_33_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_33_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_197_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_131_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_87_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_87_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_64_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2x2_top_conv2x2_top_Pipeline_VITIS_LOOP_64_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2x2_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
@@ -65,7 +63,6 @@ Compiling module xil_defaultlib.conv2x2_top_flow_control_loop_pi...
 Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
 Compiling module xil_defaultlib.conv2x2_top_mux_2_1_1_1_1(ID=1,d...
 Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
-Compiling module xil_defaultlib.conv2x2_top_load_weights_once
 Compiling module xil_defaultlib.conv2x2_top_mux_4_2_16_1_1(ID=1,...
 Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
 Compiling module xil_defaultlib.conv2x2_top_conv2x2_top_Pipeline...
@@ -104,7 +101,7 @@ source conv2x2_top.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 495 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" Line 646
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Apr 25 21:05:40 2026...
+INFO: [Common 17-206] Exiting xsim at Sun Apr 26 00:22:53 2026...
 Expected spikes: 1 0 1 0 
 Got spikes     : 1 0 1 0 
 TB PASSED

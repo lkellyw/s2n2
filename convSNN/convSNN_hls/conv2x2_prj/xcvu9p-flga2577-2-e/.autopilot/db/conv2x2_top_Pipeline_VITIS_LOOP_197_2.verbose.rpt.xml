@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2x2_top_Pipeline_VITIS_LOOP_197_2'" level="0">
-<item name = "Date">Sat Apr 25 21:02:39 2026
+<item name = "Date">Sun Apr 26 00:20:09 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">conv2x2_prj</item>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mux_2_1_1_1_1_U9">mux_2_1_1_1_1, 0, 0, 0, 9, 0</column>
+<column name="mux_2_1_1_1_1_U8">mux_2_1_1_1_1, 0, 0, 0, 9, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

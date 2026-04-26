@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2x2_top_Pipeline_VITIS_LOOP_131_1'" level="0">
-<item name = "Date">Sat Apr 25 21:02:33 2026
+<item name = "Date">Sun Apr 26 00:20:04 2026
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">conv2x2_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.324 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.347 ns, 2.70 ns</column>
 </table>
 </item>
 </section>

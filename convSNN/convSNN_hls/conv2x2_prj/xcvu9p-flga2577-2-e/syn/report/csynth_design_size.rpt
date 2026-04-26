@@ -6,8 +6,7 @@
 +--------------------------------------+---------------------+-----------------+---------------+----------------------+---------------+
 | Function                             | Location            | Compile/Link    | Unroll/Inline | Performance/Pipeline | Optimizations |
 +--------------------------------------+---------------------+-----------------+---------------+----------------------+---------------+
-| + conv2x2_top                        | conv2x2_top.cpp:37  | 2,228           | 397           | 215                  | 251           |
-|    load_weights_once                 | conv2x2_top.cpp:27  |    31           |   7           |   6                  |   7           |
+| + conv2x2_top                        | conv2x2_top.cpp:26  | 2,211           | 386           | 204                  | 239           |
 |  + ConvLayer_Batch<1, 1, 2, 1, ...   | convlayer.h:106     | 2,047           |               |                      |               |
 |     WidthAdjustedInputStream         | streamtools.h:837   |     3           |               |                      |               |
 |     WidthAdjustedOutputStream        | streamtools.h:869   |     3           |               |                      |               |
@@ -30,7 +29,7 @@
 |    operator hls::stream<ap_uint...   | streamtools.h:841   |                 |   1           |                      |               |
 |    ConvolutionInputGenerator<1,...   | slidingwindow.h:171 |                 | 141           |                      |               |
 |    operator hls::stream<ap_uint...   | streamtools.h:874   |                 |   1           |                      |               |
-|    Matrix_Vector_Activate_Batch...   | mvau.hpp:95         |                 | 175           |                      |               |
+|    Matrix_Vector_Activate_Batch...   | mvau.hpp:95         |                 | 172           |                      |               |
 +--------------------------------------+---------------------+-----------------+---------------+----------------------+---------------+
 
 * Description of Compilation Phases

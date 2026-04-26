@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'fc_finn_top'
 ================================================================
 + General Information: 
-    * Date:           Sat Apr 25 21:40:55 2026
+    * Date:           Sat Apr 25 23:31:07 2026
     * Version:        2023.1 (Build 3854077 on May  4 2023)
     * Project:        fc_finn_prj
     * Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
@@ -15,21 +15,18 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +----------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
-    |                             Modules                            | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |            |     |
-    |                             & Loops                            | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
-    +----------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
-    |+ fc_finn_top                                                   |     -|  3.64|       94|  940.000|         -|       95|     -|        no|     -|   -|  275 (~0%)|  1209 (~0%)|    -|
-    | + load_weights_once                                            |     -|  4.90|       35|  350.000|         -|       35|     -|        no|     -|   -|   28 (~0%)|   173 (~0%)|    -|
-    |  + load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2  |     -|  4.90|       34|  340.000|         -|       34|     -|        no|     -|   -|   23 (~0%)|   157 (~0%)|    -|
-    |   o VITIS_LOOP_21_1_VITIS_LOOP_22_2                            |     -|  7.30|       32|  320.000|         2|        1|    32|       yes|     -|   -|          -|           -|    -|
-    | + fc_finn_top_Pipeline_VITIS_LOOP_44_1                         |     -|  5.99|       10|  100.000|         -|       10|     -|        no|     -|   -|    8 (~0%)|   116 (~0%)|    -|
-    |  o VITIS_LOOP_44_1                                             |     -|  7.30|        8|   80.000|         2|        1|     8|       yes|     -|   -|          -|           -|    -|
-    | + fc_finn_top_Pipeline_VITIS_LOOP_131_1                        |     -|  3.64|       34|  340.000|         -|       34|     -|        no|     -|   -|  203 (~0%)|   684 (~0%)|    -|
-    |  o VITIS_LOOP_131_1                                            |     -|  7.30|       32|  320.000|         2|        1|    32|       yes|     -|   -|          -|           -|    -|
-    | + fc_finn_top_Pipeline_VITIS_LOOP_79_2                         |     -|  5.99|        6|   60.000|         -|        6|     -|        no|     -|   -|    8 (~0%)|    71 (~0%)|    -|
-    |  o VITIS_LOOP_79_2                                             |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|           -|    -|
-    +----------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    +------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |                  Modules                 | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |           |     |
+    |                  & Loops                 | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ fc_finn_top                             |     -|  3.48|       58|  580.000|         -|       59|     -|        no|     -|   -|  247 (~0%)|  998 (~0%)|    -|
+    | + fc_finn_top_Pipeline_VITIS_LOOP_30_1   |     -|  5.82|       10|  100.000|         -|       10|     -|        no|     -|   -|    8 (~0%)|  116 (~0%)|    -|
+    |  o VITIS_LOOP_30_1                       |     -|  7.30|        8|   80.000|         2|        1|     8|       yes|     -|   -|          -|          -|    -|
+    | + fc_finn_top_Pipeline_VITIS_LOOP_131_1  |     -|  3.48|       34|  340.000|         -|       34|     -|        no|     -|   -|  205 (~0%)|  687 (~0%)|    -|
+    |  o VITIS_LOOP_131_1                      |     -|  7.30|       32|  320.000|         2|        1|    32|       yes|     -|   -|          -|          -|    -|
+    | + fc_finn_top_Pipeline_VITIS_LOOP_58_2   |     -|  5.82|        6|   60.000|         -|        6|     -|        no|     -|   -|    8 (~0%)|   71 (~0%)|    -|
+    |  o VITIS_LOOP_58_2                       |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|   -|          -|          -|    -|
+    +------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
 
 
 ================================================================
@@ -100,44 +97,36 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+----------------------------------------------------------------+-----+--------+------------+-----+--------+---------+
-| Name                                                           | DSP | Pragma | Variable   | Op  | Impl   | Latency |
-+----------------------------------------------------------------+-----+--------+------------+-----+--------+---------+
-| + fc_finn_top                                                  | 0   |        |            |     |        |         |
-|  + load_weights_once                                           | 0   |        |            |     |        |         |
-|   + load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2 | 0   |        |            |     |        |         |
-|     add_ln21_1_fu_105_p2                                       | -   |        | add_ln21_1 | add | fabric | 0       |
-|     add_ln21_fu_117_p2                                         | -   |        | add_ln21   | add | fabric | 0       |
-|     add_ln25_fu_161_p2                                         | -   |        | add_ln25   | add | fabric | 0       |
-|     add_ln22_fu_172_p2                                         | -   |        | add_ln22   | add | fabric | 0       |
-|  + fc_finn_top_Pipeline_VITIS_LOOP_44_1                        | 0   |        |            |     |        |         |
-|    add_ln44_fu_125_p2                                          | -   |        | add_ln44   | add | fabric | 0       |
-|  + fc_finn_top_Pipeline_VITIS_LOOP_131_1                       | 0   |        |            |     |        |         |
-|    i_3_fu_248_p2                                               | -   |        | i_3        | add | fabric | 0       |
-|    temp_1_fu_490_p2                                            | -   |        | temp_1     | sub | fabric | 0       |
-|    add_ln165_fu_523_p2                                         | -   |        | add_ln165  | add | fabric | 0       |
-|    tile_1_fu_282_p2                                            | -   |        | tile_1     | add | fabric | 0       |
-|    sf_3_fu_288_p2                                              | -   |        | sf_3       | add | fabric | 0       |
-|    nf_4_fu_310_p2                                              | -   |        | nf_4       | add | fabric | 0       |
-|  + fc_finn_top_Pipeline_VITIS_LOOP_79_2                        | 0   |        |            |     |        |         |
-|    add_ln79_fu_104_p2                                          | -   |        | add_ln79   | add | fabric | 0       |
-+----------------------------------------------------------------+-----+--------+------------+-----+--------+---------+
++------------------------------------------+-----+--------+-----------+-----+--------+---------+
+| Name                                     | DSP | Pragma | Variable  | Op  | Impl   | Latency |
++------------------------------------------+-----+--------+-----------+-----+--------+---------+
+| + fc_finn_top                            | 0   |        |           |     |        |         |
+|  + fc_finn_top_Pipeline_VITIS_LOOP_30_1  | 0   |        |           |     |        |         |
+|    add_ln30_fu_125_p2                    | -   |        | add_ln30  | add | fabric | 0       |
+|  + fc_finn_top_Pipeline_VITIS_LOOP_131_1 | 0   |        |           |     |        |         |
+|    i_3_fu_248_p2                         | -   |        | i_3       | add | fabric | 0       |
+|    temp_1_fu_490_p2                      | -   |        | temp_1    | sub | fabric | 0       |
+|    add_ln165_fu_523_p2                   | -   |        | add_ln165 | add | fabric | 0       |
+|    tile_1_fu_282_p2                      | -   |        | tile_1    | add | fabric | 0       |
+|    sf_3_fu_288_p2                        | -   |        | sf_3      | add | fabric | 0       |
+|    nf_4_fu_310_p2                        | -   |        | nf_4      | add | fabric | 0       |
+|  + fc_finn_top_Pipeline_VITIS_LOOP_58_2  | 0   |        |           |     |        |         |
+|    add_ln58_fu_104_p2                    | -   |        | add_ln58  | add | fabric | 0       |
++------------------------------------------+-----+--------+-----------+-----+--------+---------+
 
 
 ================================================================
 == Bind Storage Report
 ================================================================
-+----------------------------------------------------------------+------+------+--------+--------------+---------+------+---------+
-| Name                                                           | BRAM | URAM | Pragma | Variable     | Storage | Impl | Latency |
-+----------------------------------------------------------------+------+------+--------+--------------+---------+------+---------+
-| + fc_finn_top                                                  | 0    | 0    |        |              |         |      |         |
-|   in_stream_fifo_U                                             | -    | -    |        | in_stream    | fifo    | srl  | 0       |
-|   out_stream_fifo_U                                            | -    | -    |        | out_stream   | fifo    | srl  | 0       |
-|   fc_weights_0_U                                               | -    | -    |        | fc_weights_0 | ram_1p  | auto | 1       |
-|  + load_weights_once                                           | 0    | 0    |        |              |         |      |         |
-|   + load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2 | 0    | 0    |        |              |         |      |         |
-|     FC_W_U                                                     | -    | -    |        | FC_W         | rom_1p  | auto | 1       |
-+----------------------------------------------------------------+------+------+--------+--------------+---------+------+---------+
++------------------------------------------+------+------+--------+--------------+---------+------+---------+
+| Name                                     | BRAM | URAM | Pragma | Variable     | Storage | Impl | Latency |
++------------------------------------------+------+------+--------+--------------+---------+------+---------+
+| + fc_finn_top                            | 0    | 0    |        |              |         |      |         |
+|   in_stream_fifo_U                       | -    | -    |        | in_stream    | fifo    | srl  | 0       |
+|   out_stream_fifo_U                      | -    | -    |        | out_stream   | fifo    | srl  | 0       |
+|  + fc_finn_top_Pipeline_VITIS_LOOP_131_1 | 0    | 0    |        |              |         |      |         |
+|    fc_weights_0_U                        | -    | -    |        | fc_weights_0 | rom_1p  | auto | 1       |
++------------------------------------------+------+------+--------+--------------+---------+------+---------+
 
 
 ================================================================
@@ -347,14 +336,10 @@
 | inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:265 in weights                                                              |
 | inline          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:271 in setmask                                                              |
 | unroll          |                                          | ../../../../Documents/s2n2/finn-hlslib-lif/weights.hpp:274 in setmask                                                              |
-| inline          | off                                      | ../fc_finn_top.cpp:17 in load_weights_once                                                                                         |
-| pipeline        | II=1                                     | ../fc_finn_top.cpp:23 in load_weights_once                                                                                         |
-| array_partition | variable=in complete dim=1               | ../fc_finn_top.cpp:34 in fc_finn_top, in                                                                                           |
-| array_partition | variable=out complete dim=1              | ../fc_finn_top.cpp:35 in fc_finn_top, out                                                                                          |
-| stream          | variable=in_stream depth=8               | ../fc_finn_top.cpp:41 in fc_finn_top, in_stream                                                                                    |
-| stream          | variable=out_stream depth=8              | ../fc_finn_top.cpp:42 in fc_finn_top, out_stream                                                                                   |
-| pipeline        | II=1                                     | ../fc_finn_top.cpp:45 in fc_finn_top                                                                                               |
-| pipeline        | II=1                                     | ../fc_finn_top.cpp:80 in fc_finn_top                                                                                               |
+| array_partition | variable=in complete dim=1               | ../fc_finn_top.cpp:24 in fc_finn_top, in                                                                                           |
+| array_partition | variable=out complete dim=1              | ../fc_finn_top.cpp:25 in fc_finn_top, out                                                                                          |
+| pipeline        | II=1                                     | ../fc_finn_top.cpp:31 in fc_finn_top                                                                                               |
+| pipeline        | II=1                                     | ../fc_finn_top.cpp:59 in fc_finn_top                                                                                               |
 +-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 

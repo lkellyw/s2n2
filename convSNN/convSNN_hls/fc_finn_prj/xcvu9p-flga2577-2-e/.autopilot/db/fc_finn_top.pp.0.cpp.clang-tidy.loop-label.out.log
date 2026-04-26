@@ -654,23 +654,13 @@ VITIS_LOOP_484_1:
  ^~~
  VITIS_LOOP_140_7: 
 /home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41321:2: note: FIX-IT applied suggested code changes
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41381:3: warning: Added loop label VITIS_LOOP_21_1:   [xilinx-label-all-loops]
-  for (int row = 0; row < 4; row++) {
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41391:3: warning: Added loop label VITIS_LOOP_30_1:   [xilinx-label-all-loops]
+  for (int i = 0; i < 8; i++) {
   ^~~
-  VITIS_LOOP_21_1: 
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41381:3: note: FIX-IT applied suggested code changes
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41382:5: warning: Added loop label VITIS_LOOP_22_2:   [xilinx-label-all-loops]
-    for (int col = 0; col < 8; col++) {
-    ^~~
-    VITIS_LOOP_22_2: 
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41382:5: note: FIX-IT applied suggested code changes
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41408:2: warning: Added loop label VITIS_LOOP_44_1:   [xilinx-label-all-loops]
- for (int i = 0; i < 8; i++) {
- ^~~
- VITIS_LOOP_44_1: 
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41408:2: note: FIX-IT applied suggested code changes
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41443:3: warning: Added loop label VITIS_LOOP_79_2:   [xilinx-label-all-loops]
+  VITIS_LOOP_30_1: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41391:3: note: FIX-IT applied suggested code changes
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41419:3: warning: Added loop label VITIS_LOOP_58_2:   [xilinx-label-all-loops]
   for (int i = 0; i < 4; i++) {
   ^~~
-  VITIS_LOOP_79_2: 
-/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41443:3: note: FIX-IT applied suggested code changes
+  VITIS_LOOP_58_2: 
+/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn_prj/xcvu9p-flga2577-2-e/.autopilot/db/fc_finn_top.pp.0.cpp:41419:3: note: FIX-IT applied suggested code changes

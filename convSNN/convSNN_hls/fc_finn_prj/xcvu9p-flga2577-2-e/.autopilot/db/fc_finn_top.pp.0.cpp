@@ -41357,61 +41357,41 @@ typedef ap_int<8> WT;
 
 
 
-static const int FC_IN[8] = {1, 0, 1, 0, 1, 0, 1, 0};
-
-static const int FC_W[4][8] = {
-    { 1, 0, 1, 0, 1, 0, 1, 0},
-    { 1, 1, 1, 1, 0, 0, 0, 0},
-    {-1, 0,-1, 0,-1, 0,-1, 0},
-    { 0, 0, 0, 0, 1, 1, 1, 1}
+static const int FC_IN[8] = {
+  1, 0, 1, 0, 1, 0, 1, 0
 };
 
-static const int EXPECT_SPK[4] = {1, 1, 0, 1};
+static const int EXPECT_SPK[4] = {
+  1, 1, 0, 1
+};
 # 11 "/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp" 2
 
-
-
-static FixedPointWeightsSp<SIMD, WT, PE, (MATRIX_W / SIMD) * (MATRIX_H / PE)> fc_weights;
-
-static void load_weights_once() {
-#pragma HLS INLINE off
- static bool loaded = false;
-  if (loaded) return;
-
-  VITIS_LOOP_21_1: for (int row = 0; row < 4; row++) {
-    VITIS_LOOP_22_2: for (int col = 0; col < 8; col++) {
-#pragma HLS PIPELINE II=1
- const int tile = row * 8 + col;
-      ap_int<8> w = FC_W[row][col];
-      fc_weights.m_weights[0][tile] = ap_uint<8>(w);
+static FixedPointWeightsSp<SIMD, WT, PE, (MATRIX_W / SIMD) * (MATRIX_H / PE)> fc_weights = {
+  {
+    {
+       1, 0, 1, 0, 1, 0, 1, 0,
+       1, 1, 1, 1, 0, 0, 0, 0,
+      -1, 0,-1, 0,-1, 0,-1, 0,
+       0, 0, 0, 0, 1, 1, 1, 1
     }
   }
-
-  loaded = true;
-}
+};
 
 __attribute__((sdx_kernel("fc_finn_top", 0))) void fc_finn_top(const ap_uint<1> in[8], ap_uint<1> out[4]) {
 #line 40 "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc_finn.tcl"
 #pragma HLSDIRECTIVE TOP name=fc_finn_top
-# 33 "/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp"
+# 23 "/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp"
 
 #pragma HLS ARRAY_PARTITION variable=in complete dim=1
 #pragma HLS ARRAY_PARTITION variable=out complete dim=1
 
- load_weights_once();
+ hls::stream<ap_uint<1>, 16> in_stream("in_stream");
+  hls::stream<ap_uint<1>, 16> out_stream("out_stream");
 
-  hls::stream<ap_uint<1> > in_stream("in_stream");
-  hls::stream<ap_uint<1> > out_stream("out_stream");
-#pragma HLS STREAM variable=in_stream depth=8
-#pragma HLS STREAM variable=out_stream depth=8
-
- VITIS_LOOP_44_1: for (int i = 0; i < 8; i++) {
+  VITIS_LOOP_30_1: for (int i = 0; i < 8; i++) {
 #pragma HLS PIPELINE II=1
  in_stream.write(in[i]);
   }
-
-
-
 
   ap_fixed<16, 6> decay = 0;
 
@@ -41424,12 +41404,8 @@ __attribute__((sdx_kernel("fc_finn_top", 0))) void fc_finn_top(const ap_uint<1> 
       Identity,
       Slice<ap_uint<1>, 1>,
       Identity,
-      ap_fixed<16, 6>,
-      16,
-      6,
-      1,
-      1,
-      1
+      ap_fixed<16, 6>, 16, 6, 1,
+      1, 1
   >(
       in_stream,
       out_stream,
@@ -41440,7 +41416,7 @@ __attribute__((sdx_kernel("fc_finn_top", 0))) void fc_finn_top(const ap_uint<1> 
       ap_resource_dflt()
   );
 
-  VITIS_LOOP_79_2: for (int i = 0; i < 4; i++) {
+  VITIS_LOOP_58_2: for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
  out[i] = out_stream.read();
   }

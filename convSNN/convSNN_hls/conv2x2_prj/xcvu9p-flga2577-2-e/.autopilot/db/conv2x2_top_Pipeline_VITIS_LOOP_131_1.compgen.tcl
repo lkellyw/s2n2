@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 15
+set id 14
 set name conv2x2_top_mux_4_2_16_1_1
 set corename simcore_mux
 set op mux
@@ -61,7 +61,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 17 \
+    id 16 \
     name out_stream \
     type fifo \
     dir O \
@@ -76,7 +76,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
+    id 17 \
     name convInp \
     type fifo \
     dir I \
@@ -85,21 +85,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_convInp \
     op interface \
     ports { convInp_dout { I 1 vector } convInp_empty_n { I 1 bit } convInp_read { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 19 \
-    name temp_4 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_temp_4 \
-    op interface \
-    ports { temp_4 { I 2 vector } } \
 } "
 }
 

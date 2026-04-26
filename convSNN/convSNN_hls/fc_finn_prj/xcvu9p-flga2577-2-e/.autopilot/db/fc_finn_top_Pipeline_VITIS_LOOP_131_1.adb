@@ -9,7 +9,7 @@
       <module_structure>Sequential</module_structure>
       <ret_bitwidth>0</ret_bitwidth>
       <ports class_id="2" tracking_level="0" version="0">
-        <count>3</count>
+        <count>2</count>
         <item_version>0</item_version>
         <item class_id="3" tracking_level="1" version="0" object_id="_1">
           <Value class_id="4" tracking_level="0" version="0">
@@ -83,47 +83,11 @@
             <item_version>0</item_version>
           </bit_vecs>
         </item>
-        <item class_id_reference="3" object_id="_3">
-          <Value>
-            <Obj>
-              <type>1</type>
-              <id>7</id>
-              <name>fc_weights_0</name>
-              <fileName/>
-              <fileDirectory/>
-              <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
-              <inlineStackInfo>
-                <count>0</count>
-                <item_version>0</item_version>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName>RAM</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>145</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>2</bitwidth>
-          </Value>
-          <direction>0</direction>
-          <if_type>1</if_type>
-          <array_size>32</array_size>
-          <bit_vecs>
-            <count>0</count>
-            <item_version>0</item_version>
-          </bit_vecs>
-        </item>
       </ports>
       <nodes class_id="8" tracking_level="0" version="0">
-        <count>119</count>
+        <count>120</count>
         <item_version>0</item_version>
-        <item class_id="9" tracking_level="1" version="0" object_id="_4">
+        <item class_id="9" tracking_level="1" version="0" object_id="_3">
           <Value>
             <Obj>
               <type>0</type>
@@ -165,7 +129,7 @@
           <m_topoIndex>1</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_5">
+        <item class_id_reference="9" object_id="_4">
           <Value>
             <Obj>
               <type>0</type>
@@ -207,7 +171,7 @@
           <m_topoIndex>2</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_6">
+        <item class_id_reference="9" object_id="_5">
           <Value>
             <Obj>
               <type>0</type>
@@ -249,7 +213,7 @@
           <m_topoIndex>3</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_7">
+        <item class_id_reference="9" object_id="_6">
           <Value>
             <Obj>
               <type>0</type>
@@ -291,7 +255,7 @@
           <m_topoIndex>4</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_8">
+        <item class_id_reference="9" object_id="_7">
           <Value>
             <Obj>
               <type>0</type>
@@ -314,7 +278,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>256</coreId>
+              <coreId>64</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -333,7 +297,7 @@
           <m_topoIndex>5</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_9">
+        <item class_id_reference="9" object_id="_8">
           <Value>
             <Obj>
               <type>0</type>
@@ -356,7 +320,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -375,7 +339,7 @@
           <m_topoIndex>6</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_10">
+        <item class_id_reference="9" object_id="_9">
           <Value>
             <Obj>
               <type>0</type>
@@ -398,7 +362,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2438721120</coreId>
+              <coreId>448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -417,7 +381,7 @@
           <m_topoIndex>7</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_11">
+        <item class_id_reference="9" object_id="_10">
           <Value>
             <Obj>
               <type>0</type>
@@ -440,7 +404,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3</coreId>
+              <coreId>64</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -459,7 +423,7 @@
           <m_topoIndex>8</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_12">
+        <item class_id_reference="9" object_id="_11">
           <Value>
             <Obj>
               <type>0</type>
@@ -482,7 +446,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2438856544</coreId>
+              <coreId>873867584</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -501,7 +465,7 @@
           <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_13">
+        <item class_id_reference="9" object_id="_12">
           <Value>
             <Obj>
               <type>0</type>
@@ -524,7 +488,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2438764832</coreId>
+              <coreId>873729984</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -543,7 +507,7 @@
           <m_topoIndex>10</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_14">
+        <item class_id_reference="9" object_id="_13">
           <Value>
             <Obj>
               <type>0</type>
@@ -566,7 +530,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1330007625</coreId>
+              <coreId>873501488</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -585,7 +549,7 @@
           <m_topoIndex>11</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_15">
+        <item class_id_reference="9" object_id="_14">
           <Value>
             <Obj>
               <type>0</type>
@@ -608,7 +572,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439398592</coreId>
+              <coreId>873471120</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -627,7 +591,7 @@
           <m_topoIndex>12</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_16">
+        <item class_id_reference="9" object_id="_15">
           <Value>
             <Obj>
               <type>0</type>
@@ -650,7 +614,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2438856544</coreId>
+              <coreId>873410512</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -669,7 +633,7 @@
           <m_topoIndex>13</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_17">
+        <item class_id_reference="9" object_id="_16">
           <Value>
             <Obj>
               <type>0</type>
@@ -692,7 +656,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2438502272</coreId>
+              <coreId>1397508187</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -712,7 +676,7 @@
           <m_topoIndex>14</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_18">
+        <item class_id_reference="9" object_id="_17">
           <Value>
             <Obj>
               <type>0</type>
@@ -735,7 +699,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2438856544</coreId>
+              <coreId>873411648</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -755,12 +719,55 @@
           <m_topoIndex>15</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_19">
+        <item class_id_reference="9" object_id="_18">
           <Value>
             <Obj>
               <type>0</type>
               <id>25</id>
               <name>tile_write_ln0</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>873859808</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>183</item>
+            <item>184</item>
+          </oprand_edges>
+          <opcode>store</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.41</m_delay>
+          <m_topoIndex>16</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_19">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>26</id>
+              <name>sf_write_ln0</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -786,49 +793,6 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>183</item>
-            <item>184</item>
-          </oprand_edges>
-          <opcode>store</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.41</m_delay>
-          <m_topoIndex>16</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_20">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>26</id>
-              <name>sf_write_ln0</name>
-              <fileName/>
-              <fileDirectory/>
-              <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
-              <inlineStackInfo>
-                <count>0</count>
-                <item_version>0</item_version>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>2439226304</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
             <item>185</item>
             <item>186</item>
           </oprand_edges>
@@ -841,7 +805,7 @@
           <m_topoIndex>17</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_21">
+        <item class_id_reference="9" object_id="_20">
           <Value>
             <Obj>
               <type>0</type>
@@ -864,7 +828,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>176</coreId>
+              <coreId>873708352</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -883,7 +847,7 @@
           <m_topoIndex>18</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_22">
+        <item class_id_reference="9" object_id="_21">
           <Value>
             <Obj>
               <type>0</type>
@@ -907,7 +871,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -934,7 +898,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>542329928</coreId>
+              <coreId>873866776</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -954,7 +918,7 @@
           <m_topoIndex>19</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_23">
+        <item class_id_reference="9" object_id="_22">
           <Value>
             <Obj>
               <type>0</type>
@@ -978,7 +942,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1005,7 +969,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>304</coreId>
+              <coreId>873862704</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -1025,7 +989,7 @@
           <m_topoIndex>20</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_24">
+        <item class_id_reference="9" object_id="_23">
           <Value>
             <Obj>
               <type>0</type>
@@ -1049,7 +1013,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1076,7 +1040,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>873499936</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1096,7 +1060,7 @@
           <m_topoIndex>21</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_25">
+        <item class_id_reference="9" object_id="_24">
           <Value>
             <Obj>
               <type>0</type>
@@ -1120,7 +1084,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1167,7 +1131,7 @@
           <m_topoIndex>22</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_26">
+        <item class_id_reference="9" object_id="_25">
           <Value>
             <Obj>
               <type>0</type>
@@ -1191,7 +1155,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1238,7 +1202,7 @@
           <m_topoIndex>23</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_27">
+        <item class_id_reference="9" object_id="_26">
           <Value>
             <Obj>
               <type>0</type>
@@ -1262,7 +1226,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1289,7 +1253,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439400112</coreId>
+              <coreId>873865600</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1310,7 +1274,7 @@
           <m_topoIndex>24</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_28">
+        <item class_id_reference="9" object_id="_27">
           <Value>
             <Obj>
               <type>0</type>
@@ -1334,7 +1298,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1361,7 +1325,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439394160</coreId>
+              <coreId>64</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -1380,7 +1344,7 @@
           <m_topoIndex>25</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_29">
+        <item class_id_reference="9" object_id="_28">
           <Value>
             <Obj>
               <type>0</type>
@@ -1404,7 +1368,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1431,7 +1395,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439221784</coreId>
+              <coreId>873712432</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>2</bitwidth>
@@ -1450,7 +1414,7 @@
           <m_topoIndex>26</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_30">
+        <item class_id_reference="9" object_id="_29">
           <Value>
             <Obj>
               <type>0</type>
@@ -1474,7 +1438,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1521,7 +1485,7 @@
           <m_topoIndex>27</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_31">
+        <item class_id_reference="9" object_id="_30">
           <Value>
             <Obj>
               <type>0</type>
@@ -1545,7 +1509,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1572,7 +1536,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>6</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1593,7 +1557,7 @@
           <m_topoIndex>28</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_32">
+        <item class_id_reference="9" object_id="_31">
           <Value>
             <Obj>
               <type>0</type>
@@ -1617,7 +1581,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1663,7 +1627,7 @@
           <m_topoIndex>50</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_33">
+        <item class_id_reference="9" object_id="_32">
           <Value>
             <Obj>
               <type>0</type>
@@ -1687,7 +1651,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1714,7 +1678,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439214608</coreId>
+              <coreId>873869568</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1733,7 +1697,7 @@
           <m_topoIndex>51</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_34">
+        <item class_id_reference="9" object_id="_33">
           <Value>
             <Obj>
               <type>0</type>
@@ -1757,7 +1721,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1784,7 +1748,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439216952</coreId>
+              <coreId>796026212</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1803,7 +1767,7 @@
           <m_topoIndex>52</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_35">
+        <item class_id_reference="9" object_id="_34">
           <Value>
             <Obj>
               <type>0</type>
@@ -1827,7 +1791,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1854,7 +1818,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>304</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1873,7 +1837,7 @@
           <m_topoIndex>53</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_36">
+        <item class_id_reference="9" object_id="_35">
           <Value>
             <Obj>
               <type>0</type>
@@ -1897,7 +1861,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1924,7 +1888,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439409952</coreId>
+              <coreId>1279810338</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1943,7 +1907,7 @@
           <m_topoIndex>54</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_37">
+        <item class_id_reference="9" object_id="_36">
           <Value>
             <Obj>
               <type>0</type>
@@ -1967,7 +1931,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -1994,7 +1958,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1348423508</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2013,7 +1977,7 @@
           <m_topoIndex>55</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_38">
+        <item class_id_reference="9" object_id="_37">
           <Value>
             <Obj>
               <type>0</type>
@@ -2037,7 +2001,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2064,7 +2028,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439233432</coreId>
+              <coreId>1702065440</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2083,7 +2047,7 @@
           <m_topoIndex>56</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_39">
+        <item class_id_reference="9" object_id="_38">
           <Value>
             <Obj>
               <type>0</type>
@@ -2107,7 +2071,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2134,7 +2098,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702043749</coreId>
+              <coreId>873878112</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2153,7 +2117,7 @@
           <m_topoIndex>57</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_40">
+        <item class_id_reference="9" object_id="_39">
           <Value>
             <Obj>
               <type>0</type>
@@ -2177,7 +2141,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2197,7 +2161,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>inElem</originalName>
-              <rtlName>mux_8_3_1_1_1_U15</rtlName>
+              <rtlName>mux_8_3_1_1_1_U12</rtlName>
               <control>auto</control>
               <opType>mux</opType>
               <implIndex>auto</implIndex>
@@ -2232,7 +2196,7 @@
           <m_topoIndex>58</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_41">
+        <item class_id_reference="9" object_id="_40">
           <Value>
             <Obj>
               <type>0</type>
@@ -2255,7 +2219,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>171847458</coreId>
+              <coreId>1986360096</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2274,7 +2238,7 @@
           <m_topoIndex>59</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_42">
+        <item class_id_reference="9" object_id="_41">
           <Value>
             <Obj>
               <type>0</type>
@@ -2298,7 +2262,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2341,11 +2305,11 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.31</m_delay>
+          <m_delay>1.48</m_delay>
           <m_topoIndex>60</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_43">
+        <item class_id_reference="9" object_id="_42">
           <Value>
             <Obj>
               <type>0</type>
@@ -2369,7 +2333,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2396,7 +2360,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>842690672</coreId>
+              <coreId>873429408</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2430,7 +2394,7 @@
           <m_topoIndex>61</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_44">
+        <item class_id_reference="9" object_id="_43">
           <Value>
             <Obj>
               <type>0</type>
@@ -2454,7 +2418,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2481,7 +2445,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439423360</coreId>
+              <coreId>873890816</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2501,7 +2465,7 @@
           <m_topoIndex>62</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_45">
+        <item class_id_reference="9" object_id="_44">
           <Value>
             <Obj>
               <type>0</type>
@@ -2525,7 +2489,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2552,7 +2516,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1330007625</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2571,7 +2535,7 @@
           <m_topoIndex>63</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_46">
+        <item class_id_reference="9" object_id="_45">
           <Value>
             <Obj>
               <type>0</type>
@@ -2595,7 +2559,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2622,7 +2586,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439426416</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2642,7 +2606,7 @@
           <m_topoIndex>64</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_47">
+        <item class_id_reference="9" object_id="_46">
           <Value>
             <Obj>
               <type>0</type>
@@ -2666,7 +2630,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2693,7 +2657,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439432480</coreId>
+              <coreId>873899328</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2712,7 +2676,7 @@
           <m_topoIndex>65</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_48">
+        <item class_id_reference="9" object_id="_47">
           <Value>
             <Obj>
               <type>0</type>
@@ -2736,7 +2700,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2763,7 +2727,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439433712</coreId>
+              <coreId>376</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2783,7 +2747,7 @@
           <m_topoIndex>66</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_49">
+        <item class_id_reference="9" object_id="_48">
           <Value>
             <Obj>
               <type>0</type>
@@ -2807,7 +2771,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2834,7 +2798,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439436256</coreId>
+              <coreId>873907920</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2853,7 +2817,7 @@
           <m_topoIndex>67</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_50">
+        <item class_id_reference="9" object_id="_49">
           <Value>
             <Obj>
               <type>0</type>
@@ -2877,7 +2841,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2904,7 +2868,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2438856544</coreId>
+              <coreId>6645601</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2924,7 +2888,7 @@
           <m_topoIndex>68</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_51">
+        <item class_id_reference="9" object_id="_50">
           <Value>
             <Obj>
               <type>0</type>
@@ -2948,7 +2912,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -2975,7 +2939,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1701336098</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2994,7 +2958,7 @@
           <m_topoIndex>69</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_52">
+        <item class_id_reference="9" object_id="_51">
           <Value>
             <Obj>
               <type>0</type>
@@ -3018,7 +2982,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3045,7 +3009,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439255576</coreId>
+              <coreId>1920298867</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3065,7 +3029,7 @@
           <m_topoIndex>70</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_53">
+        <item class_id_reference="9" object_id="_52">
           <Value>
             <Obj>
               <type>0</type>
@@ -3089,7 +3053,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3116,7 +3080,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>796095598</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3135,7 +3099,7 @@
           <m_topoIndex>71</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_54">
+        <item class_id_reference="9" object_id="_53">
           <Value>
             <Obj>
               <type>0</type>
@@ -3159,7 +3123,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3186,7 +3150,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439258048</coreId>
+              <coreId>742273340</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3206,7 +3170,7 @@
           <m_topoIndex>72</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_55">
+        <item class_id_reference="9" object_id="_54">
           <Value>
             <Obj>
               <type>0</type>
@@ -3230,7 +3194,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3257,7 +3221,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439261392</coreId>
+              <coreId>1043414132</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3276,7 +3240,7 @@
           <m_topoIndex>73</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_56">
+        <item class_id_reference="9" object_id="_55">
           <Value>
             <Obj>
               <type>0</type>
@@ -3300,7 +3264,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3327,7 +3291,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>176</coreId>
+              <coreId>742273056</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3347,7 +3311,7 @@
           <m_topoIndex>74</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_57">
+        <item class_id_reference="9" object_id="_56">
           <Value>
             <Obj>
               <type>0</type>
@@ -3371,7 +3335,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3398,7 +3362,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439270800</coreId>
+              <coreId>1701080931</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3417,7 +3381,7 @@
           <m_topoIndex>75</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_58">
+        <item class_id_reference="9" object_id="_57">
           <Value>
             <Obj>
               <type>0</type>
@@ -3441,7 +3405,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3468,7 +3432,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439297696</coreId>
+              <coreId>757935405</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3488,7 +3452,7 @@
           <m_topoIndex>76</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_59">
+        <item class_id_reference="9" object_id="_58">
           <Value>
             <Obj>
               <type>0</type>
@@ -3512,7 +3476,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3539,7 +3503,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1599294536</coreId>
+              <coreId>873937712</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3558,7 +3522,7 @@
           <m_topoIndex>77</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_60">
+        <item class_id_reference="9" object_id="_59">
           <Value>
             <Obj>
               <type>0</type>
@@ -3581,7 +3545,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439223632</coreId>
+              <coreId>1702258035</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3617,7 +3581,7 @@
           <m_topoIndex>78</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_61">
+        <item class_id_reference="9" object_id="_60">
           <Value>
             <Obj>
               <type>0</type>
@@ -3641,7 +3605,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3668,7 +3632,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1819113532</coreId>
+              <coreId>873941872</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -3688,7 +3652,7 @@
           <m_topoIndex>29</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_62">
+        <item class_id_reference="9" object_id="_61">
           <Value>
             <Obj>
               <type>0</type>
@@ -3712,7 +3676,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3739,7 +3703,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1330007625</coreId>
+              <coreId>873729984</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -3758,7 +3722,7 @@
           <m_topoIndex>79</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_63">
+        <item class_id_reference="9" object_id="_62">
           <Value>
             <Obj>
               <type>0</type>
@@ -3782,7 +3746,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3829,7 +3793,7 @@
           <m_topoIndex>30</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_64">
+        <item class_id_reference="9" object_id="_63">
           <Value>
             <Obj>
               <type>0</type>
@@ -3853,77 +3817,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
-                        <second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
-                      </first>
-                      <second>110</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</first>
-                        <second>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
-                      </first>
-                      <second>153</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>2439288144</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>16</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>227</item>
-          </oprand_edges>
-          <opcode>load</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>80</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_65">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>87</id>
-              <name>void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_5</name>
-              <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>153</lineNumber>
-              <contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</contextFuncName>
-              <contextNormFuncName>Matrix_Vector_Activate_Batch_8_4_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_32_int_ap_resource_dflt_s</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-                  <second>
-                    <count>3</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
-                        <second>fc_finn_top</second>
-                      </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -3958,6 +3852,76 @@
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
+            <item>227</item>
+          </oprand_edges>
+          <opcode>load</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>80</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_64">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>87</id>
+              <name>void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_5</name>
+              <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>153</lineNumber>
+              <contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</contextFuncName>
+              <contextNormFuncName>Matrix_Vector_Activate_Batch_8_4_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_32_int_ap_resource_dflt_s</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
+                  <second>
+                    <count>3</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
+                        <second>fc_finn_top</second>
+                      </first>
+                      <second>37</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+                        <second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+                      </first>
+                      <second>110</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</first>
+                        <second>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+                      </first>
+                      <second>153</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1819113532</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>16</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
             <item>228</item>
           </oprand_edges>
           <opcode>load</opcode>
@@ -3969,7 +3933,7 @@
           <m_topoIndex>81</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_66">
+        <item class_id_reference="9" object_id="_65">
           <Value>
             <Obj>
               <type>0</type>
@@ -3993,7 +3957,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4020,7 +3984,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439294976</coreId>
+              <coreId>1330007625</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -4039,7 +4003,7 @@
           <m_topoIndex>82</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_67">
+        <item class_id_reference="9" object_id="_66">
           <Value>
             <Obj>
               <type>0</type>
@@ -4063,7 +4027,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4090,7 +4054,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439327344</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -4109,7 +4073,7 @@
           <m_topoIndex>83</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_68">
+        <item class_id_reference="9" object_id="_67">
           <Value>
             <Obj>
               <type>0</type>
@@ -4133,7 +4097,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4153,7 +4117,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>temp</originalName>
-              <rtlName>mux_4_2_16_1_1_U16</rtlName>
+              <rtlName>mux_4_2_16_1_1_U13</rtlName>
               <control>auto</control>
               <opType>mux</opType>
               <implIndex>auto</implIndex>
@@ -4184,7 +4148,7 @@
           <m_topoIndex>84</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_69">
+        <item class_id_reference="9" object_id="_68">
           <Value>
             <Obj>
               <type>0</type>
@@ -4208,7 +4172,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4235,7 +4199,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>873964544</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -4257,7 +4221,7 @@
           <m_topoIndex>85</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_70">
+        <item class_id_reference="9" object_id="_69">
           <Value>
             <Obj>
               <type>0</type>
@@ -4281,7 +4245,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4308,7 +4272,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>873967312</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -4327,7 +4291,7 @@
           <m_topoIndex>86</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_71">
+        <item class_id_reference="9" object_id="_70">
           <Value>
             <Obj>
               <type>0</type>
@@ -4351,7 +4315,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4398,7 +4362,7 @@
           <m_topoIndex>87</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_72">
+        <item class_id_reference="9" object_id="_71">
           <Value>
             <Obj>
               <type>0</type>
@@ -4422,7 +4386,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4470,7 +4434,7 @@
           <m_topoIndex>88</m_topoIndex>
           <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_73">
+        <item class_id_reference="9" object_id="_72">
           <Value>
             <Obj>
               <type>0</type>
@@ -4494,7 +4458,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4521,7 +4485,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439302592</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -4540,7 +4504,7 @@
           <m_topoIndex>31</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_74">
+        <item class_id_reference="9" object_id="_73">
           <Value>
             <Obj>
               <type>0</type>
@@ -4564,7 +4528,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4591,7 +4555,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1330007625</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>5</bitwidth>
@@ -4612,7 +4576,7 @@
           <m_topoIndex>32</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_75">
+        <item class_id_reference="9" object_id="_74">
           <Value>
             <Obj>
               <type>0</type>
@@ -4636,7 +4600,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4665,12 +4629,12 @@
               <originalName>value</originalName>
               <rtlName/>
               <control>auto</control>
-              <opType>ram</opType>
+              <opType>rom</opType>
               <implIndex>auto</implIndex>
-              <coreName>RAM</coreName>
+              <coreName>ROM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>83</coreId>
+              <coreId>101</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>2</bitwidth>
@@ -4689,7 +4653,7 @@
           <m_topoIndex>33</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_76">
+        <item class_id_reference="9" object_id="_75">
           <Value>
             <Obj>
               <type>0</type>
@@ -4713,7 +4677,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4761,12 +4725,12 @@
           <m_topoIndex>89</m_topoIndex>
           <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_77">
+        <item class_id_reference="9" object_id="_76">
           <Value>
             <Obj>
               <type>0</type>
               <id>99</id>
-              <name>tmp_2</name>
+              <name>tmp_1</name>
               <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>165</lineNumber>
@@ -4785,7 +4749,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4805,14 +4769,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_2_fu_511_p3</rtlName>
+              <rtlName>tmp_1_fu_511_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>873748160</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -4833,7 +4797,7 @@
           <m_topoIndex>90</m_topoIndex>
           <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_78">
+        <item class_id_reference="9" object_id="_77">
           <Value>
             <Obj>
               <type>0</type>
@@ -4857,7 +4821,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4884,7 +4848,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439328096</coreId>
+              <coreId>176</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -4903,7 +4867,7 @@
           <m_topoIndex>91</m_topoIndex>
           <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_79">
+        <item class_id_reference="9" object_id="_78">
           <Value>
             <Obj>
               <type>0</type>
@@ -4927,7 +4891,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -4974,7 +4938,7 @@
           <m_topoIndex>92</m_topoIndex>
           <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_80">
+        <item class_id_reference="9" object_id="_79">
           <Value>
             <Obj>
               <type>0</type>
@@ -4998,7 +4962,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5045,7 +5009,7 @@
           <m_topoIndex>34</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_81">
+        <item class_id_reference="9" object_id="_80">
           <Value>
             <Obj>
               <type>0</type>
@@ -5069,7 +5033,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5116,7 +5080,7 @@
           <m_topoIndex>35</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_82">
+        <item class_id_reference="9" object_id="_81">
           <Value>
             <Obj>
               <type>0</type>
@@ -5140,7 +5104,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5187,7 +5151,7 @@
           <m_topoIndex>36</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_83">
+        <item class_id_reference="9" object_id="_82">
           <Value>
             <Obj>
               <type>0</type>
@@ -5211,7 +5175,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5259,7 +5223,7 @@
           <m_topoIndex>37</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_84">
+        <item class_id_reference="9" object_id="_83">
           <Value>
             <Obj>
               <type>0</type>
@@ -5283,7 +5247,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5310,7 +5274,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439345400</coreId>
+              <coreId>873769416</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5332,7 +5296,7 @@
           <m_topoIndex>38</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_85">
+        <item class_id_reference="9" object_id="_84">
           <Value>
             <Obj>
               <type>0</type>
@@ -5356,7 +5320,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5383,7 +5347,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439349656</coreId>
+              <coreId>873772560</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5405,7 +5369,7 @@
           <m_topoIndex>39</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_86">
+        <item class_id_reference="9" object_id="_85">
           <Value>
             <Obj>
               <type>0</type>
@@ -5429,7 +5393,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5456,7 +5420,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1635151151</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5475,7 +5439,7 @@
           <m_topoIndex>40</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_87">
+        <item class_id_reference="9" object_id="_86">
           <Value>
             <Obj>
               <type>0</type>
@@ -5499,7 +5463,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5546,7 +5510,7 @@
           <m_topoIndex>93</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_88">
+        <item class_id_reference="9" object_id="_87">
           <Value>
             <Obj>
               <type>0</type>
@@ -5570,7 +5534,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5597,7 +5561,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439357152</coreId>
+              <coreId>742273340</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5618,7 +5582,7 @@
           <m_topoIndex>94</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_89">
+        <item class_id_reference="9" object_id="_88">
           <Value>
             <Obj>
               <type>0</type>
@@ -5642,156 +5606,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
-                        <second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
-                      </first>
-                      <second>110</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</first>
-                        <second>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
-                      </first>
-                      <second>184</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>2439360416</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>8</count>
-            <item_version>0</item_version>
-            <item>419</item>
-            <item>420</item>
-            <item>421</item>
-            <item>422</item>
-            <item>423</item>
-            <item>424</item>
-            <item>425</item>
-            <item>426</item>
-          </oprand_edges>
-          <opcode>switch</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.66</m_delay>
-          <m_topoIndex>95</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_90">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>116</id>
-              <name>void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1_write_ln184</name>
-              <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>184</lineNumber>
-              <contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</contextFuncName>
-              <contextNormFuncName>Matrix_Vector_Activate_Batch_8_4_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_32_int_ap_resource_dflt_s</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-                  <second>
-                    <count>3</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
-                        <second>fc_finn_top</second>
-                      </first>
-                      <second>54</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
-                        <second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
-                      </first>
-                      <second>110</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</first>
-                        <second>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
-                      </first>
-                      <second>184</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>2905</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>430</item>
-            <item>431</item>
-            <item>568</item>
-          </oprand_edges>
-          <opcode>store</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.38</m_delay>
-          <m_topoIndex>96</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_91">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>117</id>
-              <name>br_ln184</name>
-              <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>184</lineNumber>
-              <contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</contextFuncName>
-              <contextNormFuncName>Matrix_Vector_Activate_Batch_8_4_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_32_int_ap_resource_dflt_s</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
-                  <second>
-                    <count>3</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
-                        <second>fc_finn_top</second>
-                      </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5824,25 +5639,32 @@
             <bitwidth>0</bitwidth>
           </Value>
           <oprand_edges>
-            <count>1</count>
+            <count>8</count>
             <item_version>0</item_version>
-            <item>432</item>
+            <item>419</item>
+            <item>420</item>
+            <item>421</item>
+            <item>422</item>
+            <item>423</item>
+            <item>424</item>
+            <item>425</item>
+            <item>426</item>
           </oprand_edges>
-          <opcode>br</opcode>
+          <opcode>switch</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>97</m_topoIndex>
+          <m_delay>0.66</m_delay>
+          <m_topoIndex>95</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_92">
+        <item class_id_reference="9" object_id="_89">
           <Value>
             <Obj>
               <type>0</type>
-              <id>119</id>
-              <name>void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2_write_ln184</name>
+              <id>116</id>
+              <name>void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_1_write_ln184</name>
               <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>184</lineNumber>
@@ -5861,7 +5683,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5888,7 +5710,149 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1819113532</coreId>
+              <coreId>0</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>430</item>
+            <item>431</item>
+            <item>568</item>
+          </oprand_edges>
+          <opcode>store</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.38</m_delay>
+          <m_topoIndex>96</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_90">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>117</id>
+              <name>br_ln184</name>
+              <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>184</lineNumber>
+              <contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</contextFuncName>
+              <contextNormFuncName>Matrix_Vector_Activate_Batch_8_4_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_32_int_ap_resource_dflt_s</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
+                  <second>
+                    <count>3</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
+                        <second>fc_finn_top</second>
+                      </first>
+                      <second>37</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+                        <second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+                      </first>
+                      <second>110</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</first>
+                        <second>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+                      </first>
+                      <second>184</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>873790848</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>432</item>
+          </oprand_edges>
+          <opcode>br</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>97</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_91">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>119</id>
+              <name>void_Matrix_Vector_Activate_Batch_stream_stream_FixedPointWeightsSp_const_int_2_write_ln184</name>
+              <fileName>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>184</lineNumber>
+              <contextFuncName>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</contextFuncName>
+              <contextNormFuncName>Matrix_Vector_Activate_Batch_8_4_1_1_1_1_Identity_Slice_ap_uint_1_1_Identity_ap_fixed_16_6_AP_TRN_AP_WRAP_0_16_6_1_ap_uint_1_ap_uint_1_FixedPointWeightsSp_1_ap_int_8_1_32_int_ap_resource_dflt_s</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/coder/Desktop/s2n2/convSNN/convSNN_hls</first>
+                  <second>
+                    <count>3</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
+                        <second>fc_finn_top</second>
+                      </first>
+                      <second>37</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h</first>
+                        <second>StreamingFCLayer_Batch&amp;lt;8, 4, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, 1, 1, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+                      </first>
+                      <second>110</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/coder/Documents/s2n2/finn-hlslib-lif/mvau.hpp</first>
+                        <second>Matrix_Vector_Activate_Batch&amp;lt;8, 4, 1, 1, 1, 1, Identity, Slice&amp;lt;ap_uint&amp;lt;1&amp;gt;, 1&amp;gt;, Identity, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 16, 6, 1, ap_uint&amp;lt;1&amp;gt;, ap_uint&amp;lt;1&amp;gt;, FixedPointWeightsSp&amp;lt;1, ap_int&amp;lt;8&amp;gt;, 1, 32&amp;gt;, int, ap_resource_dflt&amp;gt;</second>
+                      </first>
+                      <second>184</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>873794272</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5909,7 +5873,7 @@
           <m_topoIndex>98</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_93">
+        <item class_id_reference="9" object_id="_92">
           <Value>
             <Obj>
               <type>0</type>
@@ -5933,7 +5897,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -5979,7 +5943,7 @@
           <m_topoIndex>99</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_94">
+        <item class_id_reference="9" object_id="_93">
           <Value>
             <Obj>
               <type>0</type>
@@ -6003,7 +5967,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6030,7 +5994,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439375856</coreId>
+              <coreId>873800488</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6051,7 +6015,7 @@
           <m_topoIndex>100</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_95">
+        <item class_id_reference="9" object_id="_94">
           <Value>
             <Obj>
               <type>0</type>
@@ -6075,7 +6039,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6102,7 +6066,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1397508096</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6121,7 +6085,7 @@
           <m_topoIndex>101</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_96">
+        <item class_id_reference="9" object_id="_95">
           <Value>
             <Obj>
               <type>0</type>
@@ -6145,7 +6109,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6172,7 +6136,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>873807384</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6193,7 +6157,7 @@
           <m_topoIndex>102</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_97">
+        <item class_id_reference="9" object_id="_96">
           <Value>
             <Obj>
               <type>0</type>
@@ -6217,7 +6181,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6244,7 +6208,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439385248</coreId>
+              <coreId>873809688</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6263,7 +6227,7 @@
           <m_topoIndex>103</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_98">
+        <item class_id_reference="9" object_id="_97">
           <Value>
             <Obj>
               <type>0</type>
@@ -6286,7 +6250,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439445872</coreId>
+              <coreId>304</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6305,7 +6269,7 @@
           <m_topoIndex>104</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_99">
+        <item class_id_reference="9" object_id="_98">
           <Value>
             <Obj>
               <type>0</type>
@@ -6329,7 +6293,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6356,7 +6320,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852795252</coreId>
+              <coreId>873813680</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6382,7 +6346,7 @@
           <m_topoIndex>105</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_100">
+        <item class_id_reference="9" object_id="_99">
           <Value>
             <Obj>
               <type>0</type>
@@ -6406,7 +6370,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6433,7 +6397,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439454576</coreId>
+              <coreId>20</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6454,7 +6418,7 @@
           <m_topoIndex>106</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_101">
+        <item class_id_reference="9" object_id="_100">
           <Value>
             <Obj>
               <type>0</type>
@@ -6478,7 +6442,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6505,7 +6469,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439458920</coreId>
+              <coreId>873825040</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6524,7 +6488,7 @@
           <m_topoIndex>107</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_102">
+        <item class_id_reference="9" object_id="_101">
           <Value>
             <Obj>
               <type>0</type>
@@ -6548,7 +6512,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6575,7 +6539,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>574452846</coreId>
+              <coreId>873825232</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6596,7 +6560,7 @@
           <m_topoIndex>108</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_103">
+        <item class_id_reference="9" object_id="_102">
           <Value>
             <Obj>
               <type>0</type>
@@ -6620,7 +6584,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6647,7 +6611,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>176</coreId>
+              <coreId>873814944</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6666,7 +6630,7 @@
           <m_topoIndex>109</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_104">
+        <item class_id_reference="9" object_id="_103">
           <Value>
             <Obj>
               <type>0</type>
@@ -6690,7 +6654,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6717,7 +6681,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439468480</coreId>
+              <coreId>873627504</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6738,7 +6702,7 @@
           <m_topoIndex>110</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_105">
+        <item class_id_reference="9" object_id="_104">
           <Value>
             <Obj>
               <type>0</type>
@@ -6762,7 +6726,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6789,7 +6753,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1868767291</coreId>
+              <coreId>873834128</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6808,7 +6772,7 @@
           <m_topoIndex>111</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_106">
+        <item class_id_reference="9" object_id="_105">
           <Value>
             <Obj>
               <type>0</type>
@@ -6832,7 +6796,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6859,7 +6823,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>575952208</coreId>
+              <coreId>873839360</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6880,7 +6844,7 @@
           <m_topoIndex>112</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_107">
+        <item class_id_reference="9" object_id="_106">
           <Value>
             <Obj>
               <type>0</type>
@@ -6904,7 +6868,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -6931,7 +6895,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1145981250</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -6950,7 +6914,7 @@
           <m_topoIndex>113</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_108">
+        <item class_id_reference="9" object_id="_107">
           <Value>
             <Obj>
               <type>0</type>
@@ -6974,7 +6938,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7001,7 +6965,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1634755954</coreId>
+              <coreId>1702258035</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7020,7 +6984,7 @@
           <m_topoIndex>114</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_109">
+        <item class_id_reference="9" object_id="_108">
           <Value>
             <Obj>
               <type>0</type>
@@ -7043,7 +7007,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1868767232</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -7065,7 +7029,7 @@
           <m_topoIndex>115</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_110">
+        <item class_id_reference="9" object_id="_109">
           <Value>
             <Obj>
               <type>0</type>
@@ -7089,7 +7053,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7133,11 +7097,11 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.31</m_delay>
+          <m_delay>1.48</m_delay>
           <m_topoIndex>116</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_111">
+        <item class_id_reference="9" object_id="_110">
           <Value>
             <Obj>
               <type>0</type>
@@ -7161,7 +7125,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7208,7 +7172,7 @@
           <m_topoIndex>41</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_112">
+        <item class_id_reference="9" object_id="_111">
           <Value>
             <Obj>
               <type>0</type>
@@ -7232,7 +7196,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7279,7 +7243,7 @@
           <m_topoIndex>42</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_113">
+        <item class_id_reference="9" object_id="_112">
           <Value>
             <Obj>
               <type>0</type>
@@ -7303,7 +7267,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7351,7 +7315,7 @@
           <m_topoIndex>43</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_114">
+        <item class_id_reference="9" object_id="_113">
           <Value>
             <Obj>
               <type>0</type>
@@ -7375,7 +7339,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7423,7 +7387,7 @@
           <m_topoIndex>44</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_115">
+        <item class_id_reference="9" object_id="_114">
           <Value>
             <Obj>
               <type>0</type>
@@ -7447,7 +7411,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7474,7 +7438,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1394617465</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7496,7 +7460,7 @@
           <m_topoIndex>45</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_116">
+        <item class_id_reference="9" object_id="_115">
           <Value>
             <Obj>
               <type>0</type>
@@ -7520,7 +7484,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7547,7 +7511,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1869376609</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7569,7 +7533,7 @@
           <m_topoIndex>46</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_117">
+        <item class_id_reference="9" object_id="_116">
           <Value>
             <Obj>
               <type>0</type>
@@ -7593,7 +7557,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7620,7 +7584,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1918857313</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7642,7 +7606,7 @@
           <m_topoIndex>47</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_118">
+        <item class_id_reference="9" object_id="_117">
           <Value>
             <Obj>
               <type>0</type>
@@ -7666,7 +7630,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7693,7 +7657,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1699560457</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7712,7 +7676,7 @@
           <m_topoIndex>117</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_119">
+        <item class_id_reference="9" object_id="_118">
           <Value>
             <Obj>
               <type>0</type>
@@ -7736,7 +7700,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7763,7 +7727,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>807418469</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7784,7 +7748,7 @@
           <m_topoIndex>118</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_120">
+        <item class_id_reference="9" object_id="_119">
           <Value>
             <Obj>
               <type>0</type>
@@ -7808,7 +7772,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7835,7 +7799,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>757935405</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7857,7 +7821,7 @@
           <m_topoIndex>48</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_121">
+        <item class_id_reference="9" object_id="_120">
           <Value>
             <Obj>
               <type>0</type>
@@ -7881,7 +7845,7 @@
                         <first>/home/coder/Desktop/s2n2/convSNN/fc_finn_top.cpp</first>
                         <second>fc_finn_top</second>
                       </first>
-                      <second>54</second>
+                      <second>37</second>
                     </item>
                     <item>
                       <first>
@@ -7908,7 +7872,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439498688</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7927,7 +7891,7 @@
           <m_topoIndex>119</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_122">
+        <item class_id_reference="9" object_id="_121">
           <Value>
             <Obj>
               <type>0</type>
@@ -7950,7 +7914,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439519808</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -7966,6 +7930,47 @@
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
           <m_topoIndex>49</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_122">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>570</id>
+              <name>fc_weights_0</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>fc_weights_0_U</rtlName>
+              <control>auto</control>
+              <opType>rom_1p</opType>
+              <implIndex>auto</implIndex>
+              <coreName>ROM</coreName>
+              <isStorage>1</isStorage>
+              <storageDepth>32</storageDepth>
+              <coreId>101</coreId>
+              <rtlModuleName>fc_finn_top_fc_finn_top_Pipeline_VITIS_LOOP_131_1_fc_weights_0_ROM_AUTO_1R</rtlModuleName>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>0</count>
+            <item_version>0</item_version>
+          </oprand_edges>
+          <opcode>GlobalMem</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0</m_delay>
+          <m_topoIndex>-1</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
       </nodes>
@@ -7995,7 +8000,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439273744</coreId>
+              <coreId>873934944</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -8057,7 +8062,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>138</coreId>
+              <coreId>145</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -8119,7 +8124,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439518864</coreId>
+              <coreId>138</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -8150,7 +8155,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439522720</coreId>
+              <coreId>874010912</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -8274,7 +8279,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439525296</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -8305,7 +8310,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3088038927</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -8491,7 +8496,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>33686528</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -8646,7 +8651,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2439536560</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -8860,7 +8865,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439369376</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -8900,7 +8905,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439234864</coreId>
+            <coreId>1634755954</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -8932,7 +8937,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439422912</coreId>
+            <coreId>873890192</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -8964,7 +8969,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>980447336</coreId>
+            <coreId>742093927</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -8996,7 +9001,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439435296</coreId>
+            <coreId>609</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9028,7 +9033,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>480</coreId>
+            <coreId>892155696</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9060,7 +9065,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1769234797</coreId>
+            <coreId>1635000320</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9092,7 +9097,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1699560457</coreId>
+            <coreId>694510703</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9124,7 +9129,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439267384</coreId>
+            <coreId>1936942413</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9156,7 +9161,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439273616</coreId>
+            <coreId>541347401</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9188,7 +9193,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439279792</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9242,7 +9247,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1768448768</coreId>
+            <coreId>1397508187</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9275,7 +9280,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439353216</coreId>
+            <coreId>796095598</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9307,7 +9312,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439353824</coreId>
+            <coreId>1970238309</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9338,7 +9343,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439363232</coreId>
+            <coreId>873781920</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9370,7 +9375,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>873793504</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9402,7 +9407,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>111</coreId>
+            <coreId>873798080</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9434,7 +9439,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439382056</coreId>
+            <coreId>873806200</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9466,7 +9471,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>176</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9497,7 +9502,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1819113532</coreId>
+            <coreId>873813664</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9528,7 +9533,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1919905893</coreId>
+            <coreId>873819688</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9560,7 +9565,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1702258035</coreId>
+            <coreId>873826208</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9592,7 +9597,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>976433978</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9624,7 +9629,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439474176</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9656,7 +9661,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2439479968</coreId>
+            <coreId>873844992</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9687,7 +9692,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>875641456</coreId>
+            <coreId>1212371803</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9727,7 +9732,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1701998624</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9760,7 +9765,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>480</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -12783,7 +12788,7 @@
           </second>
         </item>
         <item>
-          <first>mux_4_2_16_1_1_U16 (mux_4_2_16_1_1)</first>
+          <first>mux_4_2_16_1_1_U13 (mux_4_2_16_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -12798,7 +12803,7 @@
           </second>
         </item>
         <item>
-          <first>mux_8_3_1_1_1_U15 (mux_8_3_1_1_1)</first>
+          <first>mux_8_3_1_1_1_U12 (mux_8_3_1_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -12886,7 +12891,7 @@
           </second>
         </item>
         <item>
-          <first>ap_condition_475 ( and ) </first>
+          <first>ap_condition_476 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -12909,7 +12914,7 @@
           </second>
         </item>
         <item>
-          <first>ap_condition_478 ( and ) </first>
+          <first>ap_condition_479 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -12932,7 +12937,7 @@
           </second>
         </item>
         <item>
-          <first>ap_condition_482 ( and ) </first>
+          <first>ap_condition_483 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -12955,7 +12960,7 @@
           </second>
         </item>
         <item>
-          <first>ap_condition_485 ( and ) </first>
+          <first>ap_condition_486 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -12978,7 +12983,7 @@
           </second>
         </item>
         <item>
-          <first>ap_condition_488 ( and ) </first>
+          <first>ap_condition_489 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -13001,7 +13006,7 @@
           </second>
         </item>
         <item>
-          <first>ap_condition_491 ( and ) </first>
+          <first>ap_condition_492 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -13436,8 +13441,43 @@
         <item_version>0</item_version>
       </dp_fifo_resource>
       <dp_memory_resource>
-        <count>0</count>
+        <count>1</count>
         <item_version>0</item_version>
+        <item>
+          <first>fc_weights_0_U</first>
+          <second>
+            <count>7</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Words)</first>
+              <second>32</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(2Banks)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(3W*Bits*Banks)</first>
+              <second>64</second>
+            </item>
+            <item>
+              <first>BRAM</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>3</second>
+            </item>
+          </second>
+        </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
         <count>15</count>
@@ -14316,14 +14356,14 @@
           </second>
         </item>
         <item>
-          <first>mux_4_2_16_1_1_U16</first>
+          <first>mux_4_2_16_1_1_U13</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mux_8_3_1_1_1_U15</first>
+          <first>mux_8_3_1_1_1_U12</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -14334,7 +14374,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>mux_4_2_16_1_1_U16 (mux_4_2_16_1_1)</first>
+          <first>mux_4_2_16_1_1_U13 (mux_4_2_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -14342,7 +14382,7 @@
           </second>
         </item>
         <item>
-          <first>mux_8_3_1_1_1_U15 (mux_8_3_1_1_1)</first>
+          <first>mux_8_3_1_1_1_U12 (mux_8_3_1_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -14487,12 +14527,20 @@
         <item_version>0</item_version>
       </dp_fifo_map>
       <dp_memory_map>
-        <count>0</count>
+        <count>1</count>
         <item_version>0</item_version>
+        <item>
+          <first>fc_weights_0_U</first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>82</item>
+          </second>
+        </item>
       </dp_memory_map>
     </res>
     <node_label_latency class_id="41" tracking_level="0" version="0">
-      <count>119</count>
+      <count>120</count>
       <item_version>0</item_version>
       <item class_id="42" tracking_level="0" version="0">
         <first>8</first>
@@ -15325,6 +15373,13 @@
         <second>
           <first>1</first>
           <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>570</first>
+        <second>
+          <first>0</first>
+          <second>2</second>
         </second>
       </item>
     </node_label_latency>
@@ -16610,7 +16665,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_2_fu_511</first>
+        <first>tmp_1_fu_511</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -17439,25 +17494,9 @@
       </item>
     </dp_regname_phi>
     <dp_port_io_nodes class_id="58" tracking_level="0" version="0">
-      <count>3</count>
+      <count>2</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>fc_weights_0(p0)</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>load</first>
-            <second>
-              <count>2</count>
-              <item_version>0</item_version>
-              <item>97</item>
-              <item>97</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
         <first>in_stream</first>
         <second>
           <count>1</count>
@@ -17489,7 +17528,7 @@
       </item>
     </dp_port_io_nodes>
     <port2core>
-      <count>3</count>
+      <count>2</count>
       <item_version>0</item_version>
       <item>
         <first>1</first>
@@ -17503,13 +17542,6 @@
         <second>
           <first>666</first>
           <second>10</second>
-        </second>
-      </item>
-      <item>
-        <first>7</first>
-        <second>
-          <first>666</first>
-          <second>136</second>
         </second>
       </item>
     </port2core>
@@ -17583,7 +17615,7 @@
         <first>97</first>
         <second>
           <first>666</first>
-          <second>136</second>
+          <second>147</second>
         </second>
       </item>
       <item>

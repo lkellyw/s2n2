@@ -457,7 +457,7 @@ for.body.i.split:1 %speclooptripcount_ln111 = speclooptripcount void @_ssdm_op_S
 
 <Node id="38" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body.i.split:2 %specloopname_ln131 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
+for.body.i.split:2 %specloopname_ln131 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln131"/></StgValue>
@@ -592,7 +592,7 @@ if.end.i_ifconv:14 %fc_weights_0_addr = getelementptr i2 %fc_weights_0, i64 0, i
 </operation>
 
 <operation id="42" st_id="2" stage="2" lat="2">
-<core>RAM</core>
+<core>ROM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln131" val="0"/>
@@ -1543,7 +1543,7 @@ if.end.i_ifconv:12 %select_ln149 = select i1 %icmp_ln149, i16 %temp_1, i16 %conv
 </operation>
 
 <operation id="97" st_id="3" stage="1" lat="2">
-<core>RAM</core>
+<core>ROM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -1581,10 +1581,10 @@ if.end.i_ifconv:16 %temp_3 = select i1 %inElem, i2 %value, i2 0
 
 <Node id="99" bw="12" op_0_bw="12" op_1_bw="2" op_2_bw="10">
 <![CDATA[
-if.end.i_ifconv:17 %tmp_2 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i2.i10, i2 %temp_3, i10 0
+if.end.i_ifconv:17 %tmp_1 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i2.i10, i2 %temp_3, i10 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_2"/></StgValue>
+<StgValue><ssdm name="tmp_1"/></StgValue>
 </operation>
 
 <operation id="100" st_id="3" stage="1" lat="1">
@@ -1596,7 +1596,7 @@ if.end.i_ifconv:17 %tmp_2 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i2.i
 
 <Node id="100" bw="16" op_0_bw="12">
 <![CDATA[
-if.end.i_ifconv:18 %sext_ln165 = sext i12 %tmp_2
+if.end.i_ifconv:18 %sext_ln165 = sext i12 %tmp_1
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln165"/></StgValue>

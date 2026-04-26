@@ -1,58 +1,14 @@
 {
+    "0": {
+        "name": "fc_finn_top",
+        "file": "fc_finn_top.cpp",
+        "fileloc": "23",
+        "instructions": "48",
+        "total_instructions": "222",
+        "calls": "3 1 2",
+        "basicblocks": "1"
+    },
     "1": {
-        "name": "fc_finn_top_Pipeline_VITIS_LOOP_79_2",
-        "file": "fc_finn_top.cpp",
-        "fileloc": "0",
-        "instructions": "25",
-        "total_instructions": "25",
-        "calls": "",
-        "basicblocks": "9",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "2": {
-        "name": "load_weights_once_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2",
-        "file": "fc_finn_top.cpp",
-        "fileloc": "0",
-        "instructions": "36",
-        "total_instructions": "36",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "G": "1",
-            "L": "3"
-        },
-        "stores": {
-            "G": "1",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "3": {
-        "name": "load_weights_once",
-        "file": "fc_finn_top.cpp",
-        "fileloc": "16",
-        "instructions": "6",
-        "total_instructions": "42",
-        "calls": "2",
-        "basicblocks": "3",
-        "loads": {
-            "G": "1"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "4": {
         "name": "fc_finn_top_Pipeline_VITIS_LOOP_131_1",
         "file": "fc_finn_top.cpp",
         "fileloc": "0",
@@ -72,8 +28,26 @@
             "L": "1"
         }
     },
-    "5": {
-        "name": "fc_finn_top_Pipeline_VITIS_LOOP_44_1",
+    "2": {
+        "name": "fc_finn_top_Pipeline_VITIS_LOOP_58_2",
+        "file": "fc_finn_top.cpp",
+        "fileloc": "0",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "fc_finn_top_Pipeline_VITIS_LOOP_30_1",
         "file": "fc_finn_top.cpp",
         "fileloc": "0",
         "instructions": "25",
@@ -89,14 +63,5 @@
         "loops": {
             "L": "1"
         }
-    },
-    "0": {
-        "name": "fc_finn_top",
-        "file": "fc_finn_top.cpp",
-        "fileloc": "33",
-        "instructions": "49",
-        "total_instructions": "265",
-        "calls": "3 5 4 1",
-        "basicblocks": "1"
     }
 }

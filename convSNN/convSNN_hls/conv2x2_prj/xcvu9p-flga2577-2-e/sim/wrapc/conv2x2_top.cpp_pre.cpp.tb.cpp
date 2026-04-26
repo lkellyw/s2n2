@@ -87880,11 +87880,13 @@ void Matrix_Vector_Activate_Stream_Batch(hls::stream<TI> &in,
 # 83 "/home/coder/Documents/s2n2/finn-hlslib-lif/fclayer.h"
 template<
   unsigned int MatrixW, unsigned int MatrixH,
-  unsigned int SIMD, unsigned int PE,
+  unsigned int SIMD, unsigned int SIMDSP, unsigned int PE,
 
   typename TSrcI = Identity,
   typename TDstI = Identity,
   typename TWeightI = Identity,
+
+  typename TD, unsigned int WIDTH, unsigned int I, unsigned int OFMDim,
 
   int InStreamW, int OutStreamW,
   typename TW, typename TA, typename R
@@ -87894,6 +87896,7 @@ void StreamingFCLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
        TW const &weights,
        TA const &activation,
        unsigned const reps,
+       TD decay,
     R const &r) {
 #pragma HLS INLINE
   unsigned const InpPerImage = (MatrixW * TSrcI::width) / InStreamW ;
@@ -87902,10 +87905,10 @@ void StreamingFCLayer_Batch(hls::stream<ap_uint<InStreamW>> &in,
   WidthAdjustedInputStream <InStreamW, SIMD*TSrcI::width, InpPerImage> wa_in (in, reps);
   WidthAdjustedOutputStream<PE*TDstI::width, OutStreamW, OutPerImage> wa_out(out, reps);
 
-  Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, PE, 1, TSrcI, TDstI, TWeightI>
+  Matrix_Vector_Activate_Batch<MatrixW, MatrixH, SIMD, SIMDSP, PE, 1, TSrcI, TDstI, TWeightI, TD, WIDTH, I, OFMDim>
     (static_cast<hls::stream<ap_uint<SIMD*TSrcI::width>>&>(wa_in),
      static_cast<hls::stream<ap_uint<PE*TDstI::width>>&> (wa_out),
-     weights, activation, reps, r);
+     weights, activation, decay, reps, r);
 }
 # 64 "/home/coder/Documents/s2n2/finn-hlslib-lif/bnn-library.h" 2
 # 1 "/home/coder/Documents/s2n2/finn-hlslib-lif/convlayer.h" 1
@@ -88120,43 +88123,27 @@ static FixedPointWeightsSp<
     WT,
     PE,
     (KERNEL_DIM * KERNEL_DIM * IFM_CH * OFM_CH) / (SIMD * PE)
-> conv_weights;
-
-struct DummyActivation {
-  ap_uint<1> operator()(NEU_T const &accu) const {
-#pragma HLS inline
-    return (accu > 0) ? ap_uint<1>(1) : ap_uint<1>(0);
+> conv_weights = {
+  {
+    {
+      W_VAL
+    }
   }
 };
-
-static void load_weights_once() {
-#pragma HLS INLINE off
-  static bool loaded = false;
-  if (loaded) return;
-
-  conv_weights.m_weights[0][0] = ap_uint<SIMD * WT::width>(W_VAL & 0xFF);
-
-  loaded = true;
-}
 
 void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
 #pragma HLS ARRAY_PARTITION variable=in complete dim=1
 #pragma HLS ARRAY_PARTITION variable=out complete dim=1
 
-  load_weights_once();
-
-  hls::stream<ap_uint<1> > in_stream("in_stream");
-  hls::stream<ap_uint<1> > out_stream("out_stream");
-#pragma HLS STREAM variable=in_stream depth=16
-#pragma HLS STREAM variable=out_stream depth=16
+  hls::stream<ap_uint<1>, 16> in_stream("in_stream");
+  hls::stream<ap_uint<1>, 16> out_stream("out_stream");
 
   for (int i = 0; i < 4; i++) {
 #pragma HLS PIPELINE II=1
     in_stream.write(in[i]);
   }
 
-  DummyActivation act;
-  NEU_T decay = NEU_T(0);
+  NEU_T decay = 0;
 
   ConvLayer_Batch<
       KERNEL_DIM,
@@ -88164,26 +88151,19 @@ void conv2x2_top(const ap_uint<1> in[4], ap_uint<1> out[4]) {
       IFM_DIM,
       OFM_CH,
       OFM_DIM,
-
       SIMD,
       SIMDSP,
       PE,
-
       Identity,
       Slice<ap_uint<1>, 1>,
       Identity,
-
-      NEU_T,
-      16,
-      8,
-
-      1,
-      1
+      NEU_T, 16, 8,
+      1, 1
   >(
       in_stream,
       out_stream,
       conv_weights,
-      act,
+      0,
       1,
       decay,
       ap_resource_dflt()
@@ -88219,5 +88199,5 @@ apatb_conv2x2_top_ir(in, out);
 return ;
 }
 #endif
-# 91 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp"
+# 68 "/home/coder/Desktop/s2n2/convSNN/conv2x2_top.cpp"
 
