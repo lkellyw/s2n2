@@ -1,0 +1,6 @@
+,AESL_inst_fc1full_top,,module_status1.csv
+,grp_load_weights_once_fu_190,,module_status2.csv
+grp_load_weights_once_fu_190,grp_load_weights_once_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_10,,module_status3.csv
+,grp_fc1full_top_Pipeline_VITIS_LOOP_72_1_fu_200,,module_status4.csv
+,grp_fc1full_top_Pipeline_VITIS_LOOP_131_1_fu_207,,module_status5.csv
+,grp_fc1full_top_Pipeline_VITIS_LOOP_105_2_fu_215,,module_status6.csv

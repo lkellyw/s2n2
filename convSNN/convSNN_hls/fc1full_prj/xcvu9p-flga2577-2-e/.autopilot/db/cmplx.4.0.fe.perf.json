@@ -1,0 +1,36 @@
+{
+  "0": {
+    "basicblocks": 3286,
+    "calls": "1",
+    "file": "fc1full_top.cpp",
+    "fileloc": 61,
+    "instructions": 13226,
+    "loads": {
+      "G": 2,
+      "L": 2,
+      "T": 1
+    },
+    "name": "fc1full_top",
+    "stores": {
+      "G": 1,
+      "L": 2,
+      "T": 64
+    },
+    "total_instructions": 13256
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "fc1full_top.cpp",
+    "fileloc": 44,
+    "instructions": 30,
+    "loads": {
+      "G": 2
+    },
+    "name": "load_weights_once",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 30
+  }
+}
