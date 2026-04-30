@@ -9,8 +9,6 @@ set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/fpo_v7_1:$
 set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
 set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
 set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2023.1/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
 
 proc cpvcdfromsctortl {} {
 	#copy *.vcd from sc to verilog/vhdl dir

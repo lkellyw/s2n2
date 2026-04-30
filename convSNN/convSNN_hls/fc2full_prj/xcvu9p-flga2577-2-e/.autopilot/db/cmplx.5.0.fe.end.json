@@ -1,0 +1,102 @@
+{
+    "0": {
+        "name": "fc2full_top",
+        "file": "fc2full_top.cpp",
+        "fileloc": "63",
+        "instructions": "219",
+        "total_instructions": "722",
+        "calls": "1 3 2 4",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "load_weights_once",
+        "file": "fc2full_top.cpp",
+        "fileloc": "46",
+        "instructions": "6",
+        "total_instructions": "41",
+        "calls": "5",
+        "basicblocks": "3",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "2": {
+        "name": "fc2full_top_Pipeline_VITIS_LOOP_131_1",
+        "file": "fc2full_top.cpp",
+        "fileloc": "0",
+        "instructions": "355",
+        "total_instructions": "355",
+        "calls": "",
+        "basicblocks": "91",
+        "loads": {
+            "G": "6",
+            "L": "69"
+        },
+        "stores": {
+            "G": "10",
+            "L": "76"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "fc2full_top_Pipeline_VITIS_LOOP_75_1",
+        "file": "fc2full_top.cpp",
+        "fileloc": "0",
+        "instructions": "81",
+        "total_instructions": "81",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "fc2full_top_Pipeline_VITIS_LOOP_108_2",
+        "file": "fc2full_top.cpp",
+        "fileloc": "0",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "load_weights_once_Pipeline_VITIS_LOOP_51_1_VITIS_LOOP_52_2",
+        "file": "fc2full_top.cpp",
+        "fileloc": "0",
+        "instructions": "35",
+        "total_instructions": "35",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

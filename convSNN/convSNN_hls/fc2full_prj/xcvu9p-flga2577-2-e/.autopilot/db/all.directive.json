@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "fc2full_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fc2full_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/fc2full.tcl",
+    "sourceLine": 36,
+    "success": true
+  }
+]

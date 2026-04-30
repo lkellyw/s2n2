@@ -43,18 +43,18 @@ namespace __gnu_cxx
 # 39 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
 # 1 "/usr/include/features.h" 1 3 4
 # 461 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 452 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 453 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 454 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/sys/cdefs.h" 1 3 4
+# 452 "/usr/include/sys/cdefs.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 453 "/usr/include/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/bits/long-double.h" 1 3 4
+# 454 "/usr/include/sys/cdefs.h" 2 3 4
 # 462 "/usr/include/features.h" 2 3 4
 # 485 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 1 "/usr/include/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/gnu/stubs.h" 3 4
+# 1 "/usr/include/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/gnu/stubs.h" 2 3 4
 # 486 "/usr/include/features.h" 2 3 4
 # 40 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
 # 509 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
@@ -182,29 +182,29 @@ namespace __cxx11 {
 
 # 1 "/usr/include/wchar.h" 1 3 4
 # 27 "/usr/include/wchar.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 28 "/usr/include/wchar.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
-# 75 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 1 "/usr/include/bits/floatn.h" 1 3 4
+# 75 "/usr/include/bits/floatn.h" 3 4
 typedef _Complex float __cfloat128 __attribute__ ((__mode__ (__TC__)));
-# 87 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 87 "/usr/include/bits/floatn.h" 3 4
 typedef __float128 _Float128;
-# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
-# 214 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 120 "/usr/include/bits/floatn.h" 3 4
+# 1 "/usr/include/bits/floatn-common.h" 1 3 4
+# 24 "/usr/include/bits/floatn-common.h" 3 4
+# 1 "/usr/include/bits/long-double.h" 1 3 4
+# 25 "/usr/include/bits/floatn-common.h" 2 3 4
+# 214 "/usr/include/bits/floatn-common.h" 3 4
 typedef float _Float32;
-# 251 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 251 "/usr/include/bits/floatn-common.h" 3 4
 typedef double _Float64;
-# 268 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 268 "/usr/include/bits/floatn-common.h" 3 4
 typedef double _Float32x;
-# 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 285 "/usr/include/bits/floatn-common.h" 3 4
 typedef long double _Float64x;
-# 121 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 121 "/usr/include/bits/floatn.h" 2 3 4
 # 31 "/usr/include/wchar.h" 2 3 4
 
 
@@ -221,18 +221,18 @@ typedef long unsigned int size_t;
 typedef __builtin_va_list __gnuc_va_list;
 # 39 "/usr/include/wchar.h" 2 3 4
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 1 "/usr/include/bits/wchar.h" 1 3 4
 # 41 "/usr/include/wchar.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 3 4
+# 1 "/usr/include/bits/types/wint_t.h" 1 3 4
+# 20 "/usr/include/bits/types/wint_t.h" 3 4
 typedef unsigned int wint_t;
 # 42 "/usr/include/wchar.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 1 3 4
+# 1 "/usr/include/bits/types/mbstate_t.h" 1 3 4
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 1 3 4
-# 13 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 3 4
+# 1 "/usr/include/bits/types/__mbstate_t.h" 1 3 4
+# 13 "/usr/include/bits/types/__mbstate_t.h" 3 4
 typedef struct
 {
   int __count;
@@ -242,11 +242,11 @@ typedef struct
     char __wchb[4];
   } __value;
 } __mbstate_t;
-# 5 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 2 3 4
+# 5 "/usr/include/bits/types/mbstate_t.h" 2 3 4
 
 typedef __mbstate_t mbstate_t;
 # 43 "/usr/include/wchar.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
+# 1 "/usr/include/bits/types/__FILE.h" 1 3 4
 
 
 
@@ -255,7 +255,7 @@ typedef struct _IO_FILE __FILE;
 # 44 "/usr/include/wchar.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
+# 1 "/usr/include/bits/types/FILE.h" 1 3 4
 
 
 
@@ -266,10 +266,10 @@ typedef struct _IO_FILE FILE;
 # 47 "/usr/include/wchar.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
+# 1 "/usr/include/bits/types/locale_t.h" 1 3 4
+# 22 "/usr/include/bits/types/locale_t.h" 3 4
+# 1 "/usr/include/bits/types/__locale_t.h" 1 3 4
+# 28 "/usr/include/bits/types/__locale_t.h" 3 4
 struct __locale_struct
 {
 
@@ -285,7 +285,7 @@ struct __locale_struct
 };
 
 typedef struct __locale_struct *__locale_t;
-# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
+# 23 "/usr/include/bits/types/locale_t.h" 2 3 4
 
 typedef __locale_t locale_t;
 # 50 "/usr/include/wchar.h" 2 3 4
@@ -8676,14 +8676,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 9 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 27 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/types.h" 1 3 4
+# 27 "/usr/include/bits/types.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/timesize.h" 1 3 4
+# 29 "/usr/include/bits/types.h" 2 3 4
 
 
 typedef unsigned char __u_char;
@@ -8729,11 +8729,11 @@ typedef unsigned long int __u_quad_t;
 
 typedef long int __intmax_t;
 typedef unsigned long int __uintmax_t;
-# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
-# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
-# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 141 "/usr/include/bits/types.h" 3 4
+# 1 "/usr/include/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/time64.h" 1 3 4
+# 143 "/usr/include/bits/types.h" 2 3 4
 
 
 typedef unsigned long int __dev_t;
@@ -8808,14 +8808,14 @@ typedef unsigned int __socklen_t;
 typedef int __sig_atomic_t;
 # 28 "/usr/include/stdint.h" 2 3 4
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
 # 30 "/usr/include/stdint.h" 2 3 4
 
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+# 1 "/usr/include/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/bits/stdint-intn.h" 3 4
 typedef __int8_t int8_t;
 typedef __int16_t int16_t;
 typedef __int32_t int32_t;
@@ -8823,8 +8823,8 @@ typedef __int64_t int64_t;
 # 35 "/usr/include/stdint.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+# 1 "/usr/include/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/bits/stdint-uintn.h" 3 4
 typedef __uint8_t uint8_t;
 typedef __uint16_t uint16_t;
 typedef __uint32_t uint32_t;
@@ -9137,7 +9137,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 28 "/usr/include/locale.h" 3 4
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
+# 1 "/usr/include/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
 
 extern "C" {
@@ -9315,10 +9315,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 28 "/usr/include/ctype.h" 3 4
 extern "C" {
 # 39 "/usr/include/ctype.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/endian.h" 1 3 4
-# 35 "/usr/include/x86_64-linux-gnu/bits/endian.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/endianness.h" 1 3 4
-# 36 "/usr/include/x86_64-linux-gnu/bits/endian.h" 2 3 4
+# 1 "/usr/include/bits/endian.h" 1 3 4
+# 35 "/usr/include/bits/endian.h" 3 4
+# 1 "/usr/include/bits/endianness.h" 1 3 4
+# 36 "/usr/include/bits/endian.h" 2 3 4
 # 40 "/usr/include/ctype.h" 2 3 4
 
 
@@ -9628,7 +9628,7 @@ namespace __cxx11 {
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
 # 30 "/usr/include/sched.h" 2 3 4
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 1 3 4
+# 1 "/usr/include/bits/types/time_t.h" 1 3 4
 
 
 
@@ -9637,8 +9637,8 @@ namespace __cxx11 {
 
 typedef __time_t time_t;
 # 32 "/usr/include/sched.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
+# 1 "/usr/include/bits/types/struct_timespec.h" 1 3 4
+# 10 "/usr/include/bits/types/struct_timespec.h" 3 4
 struct timespec
 {
   __time_t tv_sec;
@@ -9646,7 +9646,7 @@ struct timespec
 
 
   __syscall_slong_t tv_nsec;
-# 26 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
+# 26 "/usr/include/bits/types/struct_timespec.h" 3 4
 };
 # 33 "/usr/include/sched.h" 2 3 4
 
@@ -9659,15 +9659,15 @@ typedef __pid_t pid_t;
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/sched.h" 1 3 4
-# 76 "/usr/include/x86_64-linux-gnu/bits/sched.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 3 4
+# 1 "/usr/include/bits/sched.h" 1 3 4
+# 76 "/usr/include/bits/sched.h" 3 4
+# 1 "/usr/include/bits/types/struct_sched_param.h" 1 3 4
+# 23 "/usr/include/bits/types/struct_sched_param.h" 3 4
 struct sched_param
 {
   int sched_priority;
 };
-# 77 "/usr/include/x86_64-linux-gnu/bits/sched.h" 2 3 4
+# 77 "/usr/include/bits/sched.h" 2 3 4
 
 extern "C" {
 
@@ -9691,8 +9691,8 @@ extern int setns (int __fd, int __nstype) throw ();
 
 }
 # 44 "/usr/include/sched.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/cpu-set.h" 1 3 4
-# 32 "/usr/include/x86_64-linux-gnu/bits/cpu-set.h" 3 4
+# 1 "/usr/include/bits/cpu-set.h" 1 3 4
+# 32 "/usr/include/bits/cpu-set.h" 3 4
 typedef unsigned long int __cpu_mask;
 
 
@@ -9704,7 +9704,7 @@ typedef struct
 {
   __cpu_mask __bits[1024 / (8 * sizeof (__cpu_mask))];
 } cpu_set_t;
-# 115 "/usr/include/x86_64-linux-gnu/bits/cpu-set.h" 3 4
+# 115 "/usr/include/bits/cpu-set.h" 3 4
 extern "C" {
 
 extern int __sched_cpucount (size_t __setsize, const cpu_set_t *__setp)
@@ -9765,11 +9765,11 @@ extern int sched_getaffinity (__pid_t __pid, size_t __cpusetsize,
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/time.h" 1 3 4
-# 73 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timex.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h" 1 3 4
+# 1 "/usr/include/bits/time.h" 1 3 4
+# 73 "/usr/include/bits/time.h" 3 4
+# 1 "/usr/include/bits/timex.h" 1 3 4
+# 22 "/usr/include/bits/timex.h" 3 4
+# 1 "/usr/include/bits/types/struct_timeval.h" 1 3 4
 
 
 
@@ -9782,7 +9782,7 @@ struct timeval
   __time_t tv_sec;
   __suseconds_t tv_usec;
 };
-# 23 "/usr/include/x86_64-linux-gnu/bits/timex.h" 2 3 4
+# 23 "/usr/include/bits/timex.h" 2 3 4
 
 
 
@@ -9815,7 +9815,7 @@ struct timex
   int :32; int :32; int :32; int :32;
   int :32; int :32; int :32;
 };
-# 74 "/usr/include/x86_64-linux-gnu/bits/time.h" 2 3 4
+# 74 "/usr/include/bits/time.h" 2 3 4
 
 extern "C" {
 
@@ -9827,7 +9827,7 @@ extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) throw ();
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/clock_t.h" 1 3 4
+# 1 "/usr/include/bits/types/clock_t.h" 1 3 4
 
 
 
@@ -9837,7 +9837,7 @@ extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) throw ();
 typedef __clock_t clock_t;
 # 38 "/usr/include/time.h" 2 3 4
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h" 1 3 4
+# 1 "/usr/include/bits/types/struct_tm.h" 1 3 4
 
 
 
@@ -9871,7 +9871,7 @@ struct tm
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h" 1 3 4
+# 1 "/usr/include/bits/types/clockid_t.h" 1 3 4
 
 
 
@@ -9880,7 +9880,7 @@ struct tm
 
 typedef __clockid_t clockid_t;
 # 47 "/usr/include/time.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/timer_t.h" 1 3 4
+# 1 "/usr/include/bits/types/timer_t.h" 1 3 4
 
 
 
@@ -9889,7 +9889,7 @@ typedef __clockid_t clockid_t;
 
 typedef __timer_t timer_t;
 # 48 "/usr/include/time.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h" 1 3 4
+# 1 "/usr/include/bits/types/struct_itimerspec.h" 1 3 4
 
 
 
@@ -10089,15 +10089,15 @@ extern int getdate_r (const char *__restrict __string,
 # 24 "/usr/include/pthread.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 1 3 4
-# 44 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 2 3 4
-# 45 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+# 1 "/usr/include/bits/pthreadtypes.h" 1 3 4
+# 23 "/usr/include/bits/pthreadtypes.h" 3 4
+# 1 "/usr/include/bits/thread-shared-types.h" 1 3 4
+# 44 "/usr/include/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/bits/pthreadtypes-arch.h" 1 3 4
+# 21 "/usr/include/bits/pthreadtypes-arch.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 22 "/usr/include/bits/pthreadtypes-arch.h" 2 3 4
+# 45 "/usr/include/bits/thread-shared-types.h" 2 3 4
 
 
 
@@ -10112,9 +10112,9 @@ typedef struct __pthread_internal_slist
 {
   struct __pthread_internal_slist *__next;
 } __pthread_slist_t;
-# 74 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
+# 74 "/usr/include/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/bits/struct_mutex.h" 1 3 4
+# 22 "/usr/include/bits/struct_mutex.h" 3 4
 struct __pthread_mutex_s
 {
   int __lock;
@@ -10130,12 +10130,12 @@ struct __pthread_mutex_s
   short __spins;
   short __elision;
   __pthread_list_t __list;
-# 53 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
+# 53 "/usr/include/bits/struct_mutex.h" 3 4
 };
-# 75 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
-# 87 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
+# 75 "/usr/include/bits/thread-shared-types.h" 2 3 4
+# 87 "/usr/include/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/bits/struct_rwlock.h" 1 3 4
+# 23 "/usr/include/bits/struct_rwlock.h" 3 4
 struct __pthread_rwlock_arch_t
 {
   unsigned int __readers;
@@ -10159,9 +10159,9 @@ struct __pthread_rwlock_arch_t
 
 
   unsigned int __flags;
-# 55 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
+# 55 "/usr/include/bits/struct_rwlock.h" 3 4
 };
-# 88 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+# 88 "/usr/include/bits/thread-shared-types.h" 2 3 4
 
 
 
@@ -10192,7 +10192,7 @@ struct __pthread_cond_s
   unsigned int __wrefs;
   unsigned int __g_signals[2];
 };
-# 24 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 2 3 4
+# 24 "/usr/include/bits/pthreadtypes.h" 2 3 4
 
 
 
@@ -10289,17 +10289,17 @@ typedef union
   int __align;
 } pthread_barrierattr_t;
 # 27 "/usr/include/pthread.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/setjmp.h" 1 3 4
-# 26 "/usr/include/x86_64-linux-gnu/bits/setjmp.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/setjmp.h" 2 3 4
+# 1 "/usr/include/bits/setjmp.h" 1 3 4
+# 26 "/usr/include/bits/setjmp.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 27 "/usr/include/bits/setjmp.h" 2 3 4
 
 
 
 
 typedef long int __jmp_buf[8];
 # 28 "/usr/include/pthread.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
 # 29 "/usr/include/pthread.h" 2 3 4
 
 
@@ -15843,7 +15843,7 @@ namespace __cxx11 {
 # 75 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 3
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 25 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 26 "/usr/include/stdlib.h" 2 3 4
 
 
@@ -15859,8 +15859,8 @@ extern "C" {
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 1 3 4
-# 52 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3 4
+# 1 "/usr/include/bits/waitflags.h" 1 3 4
+# 52 "/usr/include/bits/waitflags.h" 3 4
 typedef enum
 {
   P_ALL,
@@ -15868,7 +15868,7 @@ typedef enum
   P_PGID
 } idtype_t;
 # 40 "/usr/include/stdlib.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/waitstatus.h" 1 3 4
+# 1 "/usr/include/bits/waitstatus.h" 1 3 4
 # 41 "/usr/include/stdlib.h" 2 3 4
 # 58 "/usr/include/stdlib.h" 3 4
 typedef struct
@@ -16108,8 +16108,8 @@ extern long int a64l (const char *__s)
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/sys/types.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 1 "/usr/include/sys/types.h" 1 3 4
+# 27 "/usr/include/sys/types.h" 3 4
 extern "C" {
 
 
@@ -16176,7 +16176,7 @@ typedef __off_t off_t;
 
 
 typedef __off64_t off64_t;
-# 103 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 103 "/usr/include/sys/types.h" 3 4
 typedef __id_t id_t;
 
 
@@ -16196,7 +16196,7 @@ typedef __caddr_t caddr_t;
 
 
 typedef __key_t key_t;
-# 134 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 134 "/usr/include/sys/types.h" 3 4
 typedef __useconds_t useconds_t;
 
 
@@ -16208,7 +16208,7 @@ typedef __suseconds_t suseconds_t;
 
 
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
-# 145 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+# 145 "/usr/include/sys/types.h" 2 3 4
 
 
 
@@ -16229,11 +16229,11 @@ typedef __uint64_t u_int64_t;
 
 
 typedef int register_t __attribute__ ((__mode__ (__word__)));
-# 176 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 176 "/usr/include/sys/types.h" 3 4
 # 1 "/usr/include/endian.h" 1 3 4
 # 35 "/usr/include/endian.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 1 3 4
-# 33 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+# 1 "/usr/include/bits/byteswap.h" 1 3 4
+# 33 "/usr/include/bits/byteswap.h" 3 4
 static __inline __uint16_t
 __bswap_16 (__uint16_t __bsx)
 {
@@ -16258,7 +16258,7 @@ __bswap_32 (__uint32_t __bsx)
 
 
 }
-# 69 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+# 69 "/usr/include/bits/byteswap.h" 3 4
 __extension__ static __inline __uint64_t
 __bswap_64 (__uint64_t __bsx)
 {
@@ -16269,8 +16269,8 @@ __bswap_64 (__uint64_t __bsx)
 
 }
 # 36 "/usr/include/endian.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 1 3 4
-# 32 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 3 4
+# 1 "/usr/include/bits/uintn-identity.h" 1 3 4
+# 32 "/usr/include/bits/uintn-identity.h" 3 4
 static __inline __uint16_t
 __uint16_identity (__uint16_t __x)
 {
@@ -16289,23 +16289,23 @@ __uint64_identity (__uint64_t __x)
   return __x;
 }
 # 37 "/usr/include/endian.h" 2 3 4
-# 177 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+# 177 "/usr/include/sys/types.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/sys/select.h" 1 3 4
-# 30 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/select.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/select.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/select.h" 2 3 4
-# 31 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
+# 1 "/usr/include/sys/select.h" 1 3 4
+# 30 "/usr/include/sys/select.h" 3 4
+# 1 "/usr/include/bits/select.h" 1 3 4
+# 22 "/usr/include/bits/select.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 23 "/usr/include/bits/select.h" 2 3 4
+# 31 "/usr/include/sys/select.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h" 1 3 4
+# 1 "/usr/include/bits/types/sigset_t.h" 1 3 4
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h" 1 3 4
+# 1 "/usr/include/bits/types/__sigset_t.h" 1 3 4
 
 
 
@@ -16314,14 +16314,14 @@ typedef struct
 {
   unsigned long int __val[(1024 / (8 * sizeof (unsigned long int)))];
 } __sigset_t;
-# 5 "/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h" 2 3 4
+# 5 "/usr/include/bits/types/sigset_t.h" 2 3 4
 
 
 typedef __sigset_t sigset_t;
-# 34 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
-# 49 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 34 "/usr/include/sys/select.h" 2 3 4
+# 49 "/usr/include/sys/select.h" 3 4
 typedef long int __fd_mask;
-# 59 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 59 "/usr/include/sys/select.h" 3 4
 typedef struct
   {
 
@@ -16341,22 +16341,22 @@ typedef struct
 
 
 typedef __fd_mask fd_mask;
-# 91 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 91 "/usr/include/sys/select.h" 3 4
 extern "C" {
-# 101 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 101 "/usr/include/sys/select.h" 3 4
 extern int select (int __nfds, fd_set *__restrict __readfds,
      fd_set *__restrict __writefds,
      fd_set *__restrict __exceptfds,
      struct timeval *__restrict __timeout);
-# 113 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 113 "/usr/include/sys/select.h" 3 4
 extern int pselect (int __nfds, fd_set *__restrict __readfds,
       fd_set *__restrict __writefds,
       fd_set *__restrict __exceptfds,
       const struct timespec *__restrict __timeout,
       const __sigset_t *__restrict __sigmask);
-# 126 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 126 "/usr/include/sys/select.h" 3 4
 }
-# 180 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+# 180 "/usr/include/sys/types.h" 2 3 4
 
 
 
@@ -16378,11 +16378,11 @@ typedef __fsblkcnt_t fsblkcnt_t;
 
 
 typedef __fsfilcnt_t fsfilcnt_t;
-# 219 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 219 "/usr/include/sys/types.h" 3 4
 typedef __blkcnt64_t blkcnt64_t;
 typedef __fsblkcnt64_t fsblkcnt64_t;
 typedef __fsfilcnt64_t fsfilcnt64_t;
-# 230 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 230 "/usr/include/sys/types.h" 3 4
 }
 # 395 "/usr/include/stdlib.h" 2 3 4
 
@@ -16886,7 +16886,7 @@ extern int getpt (void);
 extern int getloadavg (double __loadavg[], int __nelem)
      throw () __attribute__ ((__nonnull__ (1)));
 # 1013 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
+# 1 "/usr/include/bits/stdlib-float.h" 1 3 4
 # 1014 "/usr/include/stdlib.h" 2 3 4
 # 1023 "/usr/include/stdlib.h" 3 4
 }
@@ -17068,7 +17068,7 @@ namespace std
 
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 28 "/usr/include/stdio.h" 2 3 4
 
 extern "C" {
@@ -17083,16 +17083,16 @@ extern "C" {
 # 37 "/usr/include/stdio.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 3 4
+# 1 "/usr/include/bits/types/__fpos_t.h" 1 3 4
+# 10 "/usr/include/bits/types/__fpos_t.h" 3 4
 typedef struct _G_fpos_t
 {
   __off_t __pos;
   __mbstate_t __state;
 } __fpos_t;
 # 40 "/usr/include/stdio.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 3 4
+# 1 "/usr/include/bits/types/__fpos64_t.h" 1 3 4
+# 10 "/usr/include/bits/types/__fpos64_t.h" 3 4
 typedef struct _G_fpos64_t
 {
   __off64_t __pos;
@@ -17101,8 +17101,8 @@ typedef struct _G_fpos64_t
 # 41 "/usr/include/stdio.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 1 3 4
-# 35 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 3 4
+# 1 "/usr/include/bits/types/struct_FILE.h" 1 3 4
+# 35 "/usr/include/bits/types/struct_FILE.h" 3 4
 struct _IO_FILE;
 struct _IO_marker;
 struct _IO_codecvt;
@@ -17171,8 +17171,8 @@ struct _IO_FILE
 # 44 "/usr/include/stdio.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 3 4
+# 1 "/usr/include/bits/types/cookie_io_functions_t.h" 1 3 4
+# 27 "/usr/include/bits/types/cookie_io_functions_t.h" 3 4
 typedef __ssize_t cookie_read_function_t (void *__cookie, char *__buf,
                                           size_t __nbytes);
 
@@ -17223,7 +17223,7 @@ typedef __fpos_t fpos_t;
 
 typedef __fpos64_t fpos64_t;
 # 133 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
+# 1 "/usr/include/bits/stdio_lim.h" 1 3 4
 # 134 "/usr/include/stdio.h" 2 3 4
 
 
@@ -17661,8 +17661,8 @@ extern void perror (const char *__s);
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 1 3 4
-# 26 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 3 4
+# 1 "/usr/include/bits/sys_errlist.h" 1 3 4
+# 26 "/usr/include/bits/sys_errlist.h" 3 4
 extern int sys_nerr;
 extern const char *const sys_errlist[];
 
@@ -17817,10 +17817,10 @@ namespace std
 
 # 1 "/usr/include/errno.h" 1 3 4
 # 28 "/usr/include/errno.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/errno.h" 1 3 4
-# 26 "/usr/include/x86_64-linux-gnu/bits/errno.h" 3 4
+# 1 "/usr/include/bits/errno.h" 1 3 4
+# 26 "/usr/include/bits/errno.h" 3 4
 # 1 "/usr/include/linux/errno.h" 1 3 4
-# 1 "/usr/include/x86_64-linux-gnu/asm/errno.h" 1 3 4
+# 1 "/usr/include/asm/errno.h" 1 3 4
 # 1 "/usr/include/asm-generic/errno.h" 1 3 4
 
 
@@ -17828,9 +17828,9 @@ namespace std
 
 # 1 "/usr/include/asm-generic/errno-base.h" 1 3 4
 # 6 "/usr/include/asm-generic/errno.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/asm/errno.h" 2 3 4
+# 1 "/usr/include/asm/errno.h" 2 3 4
 # 1 "/usr/include/linux/errno.h" 2 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/errno.h" 2 3 4
+# 27 "/usr/include/bits/errno.h" 2 3 4
 # 29 "/usr/include/errno.h" 2 3 4
 
 
@@ -17851,8 +17851,8 @@ extern int *__errno_location (void) throw () __attribute__ ((__const__));
 extern char *program_invocation_name;
 extern char *program_invocation_short_name;
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/error_t.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/types/error_t.h" 3 4
+# 1 "/usr/include/bits/types/error_t.h" 1 3 4
+# 22 "/usr/include/bits/types/error_t.h" 3 4
 typedef int error_t;
 # 49 "/usr/include/errno.h" 2 3 4
 
@@ -22198,10 +22198,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 50 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwctype" 3
 # 1 "/usr/include/wctype.h" 1 3 4
 # 38 "/usr/include/wctype.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 1 3 4
-# 38 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3 4
+# 1 "/usr/include/bits/wctype-wchar.h" 1 3 4
+# 38 "/usr/include/bits/wctype-wchar.h" 3 4
 typedef unsigned long int wctype_t;
-# 56 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3 4
+# 56 "/usr/include/bits/wctype-wchar.h" 3 4
 enum
 {
   __ISwupper = 0,
@@ -22293,7 +22293,7 @@ extern int iswxdigit (wint_t __wc) throw ();
 
 
 extern int iswblank (wint_t __wc) throw ();
-# 155 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3 4
+# 155 "/usr/include/bits/wctype-wchar.h" 3 4
 extern wctype_t wctype (const char *__property) throw ();
 
 
@@ -29314,7 +29314,7 @@ class half;
 
 # 1 "/usr/include/math.h" 1 3 4
 # 27 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 28 "/usr/include/math.h" 2 3 4
 
 
@@ -29330,22 +29330,22 @@ extern "C" {
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h" 1 3 4
-# 26 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 2 3 4
+# 1 "/usr/include/bits/math-vector.h" 1 3 4
+# 25 "/usr/include/bits/math-vector.h" 3 4
+# 1 "/usr/include/bits/libm-simd-decl-stubs.h" 1 3 4
+# 26 "/usr/include/bits/math-vector.h" 2 3 4
 # 41 "/usr/include/math.h" 2 3 4
 # 138 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h" 1 3 4
+# 1 "/usr/include/bits/flt-eval-method.h" 1 3 4
 # 139 "/usr/include/math.h" 2 3 4
 # 149 "/usr/include/math.h" 3 4
 typedef float float_t;
 typedef double double_t;
 # 190 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/fp-logb.h" 1 3 4
+# 1 "/usr/include/bits/fp-logb.h" 1 3 4
 # 191 "/usr/include/math.h" 2 3 4
 # 233 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/fp-fast.h" 1 3 4
+# 1 "/usr/include/bits/fp-fast.h" 1 3 4
 # 234 "/usr/include/math.h" 2 3 4
 
 
@@ -29369,8 +29369,8 @@ enum
       4,
   };
 # 289 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
 extern int __fpclassify (double __value) throw ()
      __attribute__ ((__const__));
 
@@ -29395,8 +29395,8 @@ extern int __iseqsig (double __x, double __y) throw ();
 extern int __issignaling (double __value) throw ()
      __attribute__ ((__const__));
 # 290 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern double acos (double __x) throw (); extern double __acos (double __x) throw ();
 
 extern double asin (double __x) throw (); extern double __asin (double __x) throw ();
@@ -29513,7 +29513,7 @@ extern double floor (double __x) throw () __attribute__ ((__const__)); extern do
 
 
 extern double fmod (double __x, double __y) throw (); extern double __fmod (double __x, double __y) throw ();
-# 182 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 182 "/usr/include/bits/mathcalls.h" 3 4
 extern int finite (double __value) throw () __attribute__ ((__const__));
 
 
@@ -29534,7 +29534,7 @@ extern double copysign (double __x, double __y) throw () __attribute__ ((__const
 
 
 extern double nan (const char *__tagb) throw (); extern double __nan (const char *__tagb) throw ();
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 217 "/usr/include/bits/mathcalls.h" 3 4
 extern double j0 (double) throw (); extern double __j0 (double) throw ();
 extern double j1 (double) throw (); extern double __j1 (double) throw ();
 extern double jn (int, double) throw (); extern double __jn (int, double) throw ();
@@ -29721,8 +29721,8 @@ extern int setpayloadsig (double *__x, double __payload) throw ();
 extern double scalb (double __x, double __n) throw (); extern double __scalb (double __x, double __n) throw ();
 # 291 "/usr/include/math.h" 2 3 4
 # 306 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
 extern int __fpclassifyf (float __value) throw ()
      __attribute__ ((__const__));
 
@@ -29747,8 +29747,8 @@ extern int __iseqsigf (float __x, float __y) throw ();
 extern int __issignalingf (float __value) throw ()
      __attribute__ ((__const__));
 # 307 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern float acosf (float __x) throw (); extern float __acosf (float __x) throw ();
 
 extern float asinf (float __x) throw (); extern float __asinf (float __x) throw ();
@@ -29865,7 +29865,7 @@ extern float floorf (float __x) throw () __attribute__ ((__const__)); extern flo
 
 
 extern float fmodf (float __x, float __y) throw (); extern float __fmodf (float __x, float __y) throw ();
-# 177 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 177 "/usr/include/bits/mathcalls.h" 3 4
 extern int isinff (float __value) throw () __attribute__ ((__const__));
 
 
@@ -29891,7 +29891,7 @@ extern float copysignf (float __x, float __y) throw () __attribute__ ((__const__
 
 
 extern float nanf (const char *__tagb) throw (); extern float __nanf (const char *__tagb) throw ();
-# 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 211 "/usr/include/bits/mathcalls.h" 3 4
 extern int isnanf (float __value) throw () __attribute__ ((__const__));
 
 
@@ -30084,8 +30084,8 @@ extern int setpayloadsigf (float *__x, float __payload) throw ();
 extern float scalbf (float __x, float __n) throw (); extern float __scalbf (float __x, float __n) throw ();
 # 308 "/usr/include/math.h" 2 3 4
 # 349 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
 extern int __fpclassifyl (long double __value) throw ()
      __attribute__ ((__const__));
 
@@ -30110,8 +30110,8 @@ extern int __iseqsigl (long double __x, long double __y) throw ();
 extern int __issignalingl (long double __value) throw ()
      __attribute__ ((__const__));
 # 350 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern long double acosl (long double __x) throw (); extern long double __acosl (long double __x) throw ();
 
 extern long double asinl (long double __x) throw (); extern long double __asinl (long double __x) throw ();
@@ -30228,7 +30228,7 @@ extern long double floorl (long double __x) throw () __attribute__ ((__const__))
 
 
 extern long double fmodl (long double __x, long double __y) throw (); extern long double __fmodl (long double __x, long double __y) throw ();
-# 177 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 177 "/usr/include/bits/mathcalls.h" 3 4
 extern int isinfl (long double __value) throw () __attribute__ ((__const__));
 
 
@@ -30254,7 +30254,7 @@ extern long double copysignl (long double __x, long double __y) throw () __attri
 
 
 extern long double nanl (const char *__tagb) throw (); extern long double __nanl (const char *__tagb) throw ();
-# 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 211 "/usr/include/bits/mathcalls.h" 3 4
 extern int isnanl (long double __value) throw () __attribute__ ((__const__));
 
 
@@ -30447,8 +30447,8 @@ extern int setpayloadsigl (long double *__x, long double __payload) throw ();
 extern long double scalbl (long double __x, long double __n) throw (); extern long double __scalbl (long double __x, long double __n) throw ();
 # 351 "/usr/include/math.h" 2 3 4
 # 389 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 acosf32 (_Float32 __x) throw (); extern _Float32 __acosf32 (_Float32 __x) throw ();
 
 extern _Float32 asinf32 (_Float32 __x) throw (); extern _Float32 __asinf32 (_Float32 __x) throw ();
@@ -30565,14 +30565,14 @@ extern _Float32 floorf32 (_Float32 __x) throw () __attribute__ ((__const__)); ex
 
 
 extern _Float32 fmodf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __fmodf32 (_Float32 __x, _Float32 __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 196 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 copysignf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __copysignf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
 
 
 
 extern _Float32 nanf32 (const char *__tagb) throw (); extern _Float32 __nanf32 (const char *__tagb) throw ();
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 217 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 j0f32 (_Float32) throw (); extern _Float32 __j0f32 (_Float32) throw ();
 extern _Float32 j1f32 (_Float32) throw (); extern _Float32 __j1f32 (_Float32) throw ();
 extern _Float32 jnf32 (int, _Float32) throw (); extern _Float32 __jnf32 (int, _Float32) throw ();
@@ -30592,7 +30592,7 @@ extern _Float32 lgammaf32 (_Float32) throw (); extern _Float32 __lgammaf32 (_Flo
 
 
 extern _Float32 tgammaf32 (_Float32) throw (); extern _Float32 __tgammaf32 (_Float32) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 249 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 lgammaf32_r (_Float32, int *__signgamp) throw (); extern _Float32 __lgammaf32_r (_Float32, int *__signgamp) throw ();
 
 
@@ -30739,8 +30739,8 @@ extern int setpayloadf32 (_Float32 *__x, _Float32 __payload) throw ();
 extern int setpayloadsigf32 (_Float32 *__x, _Float32 __payload) throw ();
 # 390 "/usr/include/math.h" 2 3 4
 # 406 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 acosf64 (_Float64 __x) throw (); extern _Float64 __acosf64 (_Float64 __x) throw ();
 
 extern _Float64 asinf64 (_Float64 __x) throw (); extern _Float64 __asinf64 (_Float64 __x) throw ();
@@ -30857,14 +30857,14 @@ extern _Float64 floorf64 (_Float64 __x) throw () __attribute__ ((__const__)); ex
 
 
 extern _Float64 fmodf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __fmodf64 (_Float64 __x, _Float64 __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 196 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 copysignf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __copysignf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
 
 
 
 extern _Float64 nanf64 (const char *__tagb) throw (); extern _Float64 __nanf64 (const char *__tagb) throw ();
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 217 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 j0f64 (_Float64) throw (); extern _Float64 __j0f64 (_Float64) throw ();
 extern _Float64 j1f64 (_Float64) throw (); extern _Float64 __j1f64 (_Float64) throw ();
 extern _Float64 jnf64 (int, _Float64) throw (); extern _Float64 __jnf64 (int, _Float64) throw ();
@@ -30884,7 +30884,7 @@ extern _Float64 lgammaf64 (_Float64) throw (); extern _Float64 __lgammaf64 (_Flo
 
 
 extern _Float64 tgammaf64 (_Float64) throw (); extern _Float64 __tgammaf64 (_Float64) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 249 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 lgammaf64_r (_Float64, int *__signgamp) throw (); extern _Float64 __lgammaf64_r (_Float64, int *__signgamp) throw ();
 
 
@@ -31031,8 +31031,8 @@ extern int setpayloadf64 (_Float64 *__x, _Float64 __payload) throw ();
 extern int setpayloadsigf64 (_Float64 *__x, _Float64 __payload) throw ();
 # 407 "/usr/include/math.h" 2 3 4
 # 420 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
 extern int __fpclassifyf128 (_Float128 __value) throw ()
      __attribute__ ((__const__));
 
@@ -31059,8 +31059,8 @@ extern int __issignalingf128 (_Float128 __value) throw ()
 # 421 "/usr/include/math.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float128 acosf128 (_Float128 __x) throw (); extern _Float128 __acosf128 (_Float128 __x) throw ();
 
 extern _Float128 asinf128 (_Float128 __x) throw (); extern _Float128 __asinf128 (_Float128 __x) throw ();
@@ -31177,14 +31177,14 @@ extern _Float128 floorf128 (_Float128 __x) throw () __attribute__ ((__const__));
 
 
 extern _Float128 fmodf128 (_Float128 __x, _Float128 __y) throw (); extern _Float128 __fmodf128 (_Float128 __x, _Float128 __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 196 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float128 copysignf128 (_Float128 __x, _Float128 __y) throw () __attribute__ ((__const__)); extern _Float128 __copysignf128 (_Float128 __x, _Float128 __y) throw () __attribute__ ((__const__));
 
 
 
 
 extern _Float128 nanf128 (const char *__tagb) throw (); extern _Float128 __nanf128 (const char *__tagb) throw ();
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 217 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float128 j0f128 (_Float128) throw (); extern _Float128 __j0f128 (_Float128) throw ();
 extern _Float128 j1f128 (_Float128) throw (); extern _Float128 __j1f128 (_Float128) throw ();
 extern _Float128 jnf128 (int, _Float128) throw (); extern _Float128 __jnf128 (int, _Float128) throw ();
@@ -31204,7 +31204,7 @@ extern _Float128 lgammaf128 (_Float128) throw (); extern _Float128 __lgammaf128 
 
 
 extern _Float128 tgammaf128 (_Float128) throw (); extern _Float128 __tgammaf128 (_Float128) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 249 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float128 lgammaf128_r (_Float128, int *__signgamp) throw (); extern _Float128 __lgammaf128_r (_Float128, int *__signgamp) throw ();
 
 
@@ -31351,8 +31351,8 @@ extern int setpayloadf128 (_Float128 *__x, _Float128 __payload) throw ();
 extern int setpayloadsigf128 (_Float128 *__x, _Float128 __payload) throw ();
 # 424 "/usr/include/math.h" 2 3 4
 # 440 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x acosf32x (_Float32x __x) throw (); extern _Float32x __acosf32x (_Float32x __x) throw ();
 
 extern _Float32x asinf32x (_Float32x __x) throw (); extern _Float32x __asinf32x (_Float32x __x) throw ();
@@ -31469,14 +31469,14 @@ extern _Float32x floorf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
 extern _Float32x fmodf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __fmodf32x (_Float32x __x, _Float32x __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 196 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x copysignf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __copysignf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
 
 
 
 extern _Float32x nanf32x (const char *__tagb) throw (); extern _Float32x __nanf32x (const char *__tagb) throw ();
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 217 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x j0f32x (_Float32x) throw (); extern _Float32x __j0f32x (_Float32x) throw ();
 extern _Float32x j1f32x (_Float32x) throw (); extern _Float32x __j1f32x (_Float32x) throw ();
 extern _Float32x jnf32x (int, _Float32x) throw (); extern _Float32x __jnf32x (int, _Float32x) throw ();
@@ -31496,7 +31496,7 @@ extern _Float32x lgammaf32x (_Float32x) throw (); extern _Float32x __lgammaf32x 
 
 
 extern _Float32x tgammaf32x (_Float32x) throw (); extern _Float32x __tgammaf32x (_Float32x) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 249 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x lgammaf32x_r (_Float32x, int *__signgamp) throw (); extern _Float32x __lgammaf32x_r (_Float32x, int *__signgamp) throw ();
 
 
@@ -31643,8 +31643,8 @@ extern int setpayloadf32x (_Float32x *__x, _Float32x __payload) throw ();
 extern int setpayloadsigf32x (_Float32x *__x, _Float32x __payload) throw ();
 # 441 "/usr/include/math.h" 2 3 4
 # 457 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x acosf64x (_Float64x __x) throw (); extern _Float64x __acosf64x (_Float64x __x) throw ();
 
 extern _Float64x asinf64x (_Float64x __x) throw (); extern _Float64x __asinf64x (_Float64x __x) throw ();
@@ -31761,14 +31761,14 @@ extern _Float64x floorf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
 extern _Float64x fmodf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __fmodf64x (_Float64x __x, _Float64x __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 196 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x copysignf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __copysignf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
 
 
 
 extern _Float64x nanf64x (const char *__tagb) throw (); extern _Float64x __nanf64x (const char *__tagb) throw ();
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 217 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x j0f64x (_Float64x) throw (); extern _Float64x __j0f64x (_Float64x) throw ();
 extern _Float64x j1f64x (_Float64x) throw (); extern _Float64x __j1f64x (_Float64x) throw ();
 extern _Float64x jnf64x (int, _Float64x) throw (); extern _Float64x __jnf64x (int, _Float64x) throw ();
@@ -31788,7 +31788,7 @@ extern _Float64x lgammaf64x (_Float64x) throw (); extern _Float64x __lgammaf64x 
 
 
 extern _Float64x tgammaf64x (_Float64x) throw (); extern _Float64x __tgammaf64x (_Float64x) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 249 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x lgammaf64x_r (_Float64x, int *__signgamp) throw (); extern _Float64x __lgammaf64x_r (_Float64x, int *__signgamp) throw ();
 
 
@@ -31935,8 +31935,8 @@ extern int setpayloadf64x (_Float64x *__x, _Float64x __payload) throw ();
 extern int setpayloadsigf64x (_Float64x *__x, _Float64x __payload) throw ();
 # 458 "/usr/include/math.h" 2 3 4
 # 503 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern float fadd (double __x, double __y) throw ();
 
 
@@ -31949,8 +31949,8 @@ extern float fmul (double __x, double __y) throw ();
 extern float fsub (double __x, double __y) throw ();
 # 504 "/usr/include/math.h" 2 3 4
 # 517 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern float faddl (long double __x, long double __y) throw ();
 
 
@@ -31963,8 +31963,8 @@ extern float fmull (long double __x, long double __y) throw ();
 extern float fsubl (long double __x, long double __y) throw ();
 # 518 "/usr/include/math.h" 2 3 4
 # 537 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern double daddl (long double __x, long double __y) throw ();
 
 
@@ -31977,8 +31977,8 @@ extern double dmull (long double __x, long double __y) throw ();
 extern double dsubl (long double __x, long double __y) throw ();
 # 538 "/usr/include/math.h" 2 3 4
 # 616 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float32 f32addf32x (_Float32x __x, _Float32x __y) throw ();
 
 
@@ -31991,8 +31991,8 @@ extern _Float32 f32mulf32x (_Float32x __x, _Float32x __y) throw ();
 extern _Float32 f32subf32x (_Float32x __x, _Float32x __y) throw ();
 # 617 "/usr/include/math.h" 2 3 4
 # 626 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float32 f32addf64 (_Float64 __x, _Float64 __y) throw ();
 
 
@@ -32005,8 +32005,8 @@ extern _Float32 f32mulf64 (_Float64 __x, _Float64 __y) throw ();
 extern _Float32 f32subf64 (_Float64 __x, _Float64 __y) throw ();
 # 627 "/usr/include/math.h" 2 3 4
 # 636 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float32 f32addf64x (_Float64x __x, _Float64x __y) throw ();
 
 
@@ -32019,8 +32019,8 @@ extern _Float32 f32mulf64x (_Float64x __x, _Float64x __y) throw ();
 extern _Float32 f32subf64x (_Float64x __x, _Float64x __y) throw ();
 # 637 "/usr/include/math.h" 2 3 4
 # 646 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float32 f32addf128 (_Float128 __x, _Float128 __y) throw ();
 
 
@@ -32033,8 +32033,8 @@ extern _Float32 f32mulf128 (_Float128 __x, _Float128 __y) throw ();
 extern _Float32 f32subf128 (_Float128 __x, _Float128 __y) throw ();
 # 647 "/usr/include/math.h" 2 3 4
 # 666 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float32x f32xaddf64 (_Float64 __x, _Float64 __y) throw ();
 
 
@@ -32047,8 +32047,8 @@ extern _Float32x f32xmulf64 (_Float64 __x, _Float64 __y) throw ();
 extern _Float32x f32xsubf64 (_Float64 __x, _Float64 __y) throw ();
 # 667 "/usr/include/math.h" 2 3 4
 # 676 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float32x f32xaddf64x (_Float64x __x, _Float64x __y) throw ();
 
 
@@ -32061,8 +32061,8 @@ extern _Float32x f32xmulf64x (_Float64x __x, _Float64x __y) throw ();
 extern _Float32x f32xsubf64x (_Float64x __x, _Float64x __y) throw ();
 # 677 "/usr/include/math.h" 2 3 4
 # 686 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float32x f32xaddf128 (_Float128 __x, _Float128 __y) throw ();
 
 
@@ -32075,8 +32075,8 @@ extern _Float32x f32xmulf128 (_Float128 __x, _Float128 __y) throw ();
 extern _Float32x f32xsubf128 (_Float128 __x, _Float128 __y) throw ();
 # 687 "/usr/include/math.h" 2 3 4
 # 706 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float64 f64addf64x (_Float64x __x, _Float64x __y) throw ();
 
 
@@ -32089,8 +32089,8 @@ extern _Float64 f64mulf64x (_Float64x __x, _Float64x __y) throw ();
 extern _Float64 f64subf64x (_Float64x __x, _Float64x __y) throw ();
 # 707 "/usr/include/math.h" 2 3 4
 # 716 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float64 f64addf128 (_Float128 __x, _Float128 __y) throw ();
 
 
@@ -32103,8 +32103,8 @@ extern _Float64 f64mulf128 (_Float128 __x, _Float128 __y) throw ();
 extern _Float64 f64subf128 (_Float128 __x, _Float128 __y) throw ();
 # 717 "/usr/include/math.h" 2 3 4
 # 736 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
 extern _Float64x f64xaddf128 (_Float128 __x, _Float128 __y) throw ();
 
 
@@ -32138,11 +32138,11 @@ enum
       4
   };
 # 973 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
+# 1 "/usr/include/bits/iscanonical.h" 1 3 4
+# 23 "/usr/include/bits/iscanonical.h" 3 4
 extern int __iscanonicall (long double __x)
      throw () __attribute__ ((__const__));
-# 46 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
+# 46 "/usr/include/bits/iscanonical.h" 3 4
 extern "C++" {
 inline int iscanonical (float __val) { return ((void) (__typeof (__val)) (__val), 1); }
 inline int iscanonical (double __val) { return ((void) (__typeof (__val)) (__val), 1); }
@@ -38754,32 +38754,32 @@ struct half::half_traits<half, unsigned long> {
 # 194 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 26 "/usr/include/limits.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 27 "/usr/include/limits.h" 2 3 4
 # 183 "/usr/include/limits.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 2 3 4
-# 161 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 1 3 4
-# 38 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 3 4
+# 1 "/usr/include/bits/posix1_lim.h" 1 3 4
+# 27 "/usr/include/bits/posix1_lim.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/bits/posix1_lim.h" 2 3 4
+# 161 "/usr/include/bits/posix1_lim.h" 3 4
+# 1 "/usr/include/bits/local_lim.h" 1 3 4
+# 38 "/usr/include/bits/local_lim.h" 3 4
 # 1 "/usr/include/linux/limits.h" 1 3 4
-# 39 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 2 3 4
-# 162 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 2 3 4
+# 39 "/usr/include/bits/local_lim.h" 2 3 4
+# 162 "/usr/include/bits/posix1_lim.h" 2 3 4
 # 184 "/usr/include/limits.h" 2 3 4
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/posix2_lim.h" 1 3 4
+# 1 "/usr/include/bits/posix2_lim.h" 1 3 4
 # 188 "/usr/include/limits.h" 2 3 4
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 1 3 4
-# 64 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/uio_lim.h" 1 3 4
-# 65 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
+# 1 "/usr/include/bits/xopen_lim.h" 1 3 4
+# 64 "/usr/include/bits/xopen_lim.h" 3 4
+# 1 "/usr/include/bits/uio_lim.h" 1 3 4
+# 65 "/usr/include/bits/xopen_lim.h" 2 3 4
 # 192 "/usr/include/limits.h" 2 3 4
 # 195 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed/limits.h" 2 3 4
 # 8 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed/syslimits.h" 2 3 4
@@ -39490,7 +39490,7 @@ template <class DataType>
 
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 27 "/usr/include/string.h" 2 3 4
 
 
@@ -57677,13 +57677,13 @@ inline bool operator!=(const ap_int<_AP_W> &__x, const complex<ap_int<_AP_W> > &
 
 # 1 "/usr/include/fenv.h" 1 3 4
 # 26 "/usr/include/fenv.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 27 "/usr/include/fenv.h" 2 3 4
 # 64 "/usr/include/fenv.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/fenv.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/fenv.h" 3 4
+# 1 "/usr/include/bits/fenv.h" 1 3 4
+# 24 "/usr/include/bits/fenv.h" 3 4
 
-# 24 "/usr/include/x86_64-linux-gnu/bits/fenv.h" 3 4
+# 24 "/usr/include/bits/fenv.h" 3 4
 enum
   {
     FE_INVALID =
@@ -57755,7 +57755,7 @@ typedef struct
 
   }
 fenv_t;
-# 106 "/usr/include/x86_64-linux-gnu/bits/fenv.h" 3 4
+# 106 "/usr/include/bits/fenv.h" 3 4
 typedef struct
   {
     unsigned short int __control_word;

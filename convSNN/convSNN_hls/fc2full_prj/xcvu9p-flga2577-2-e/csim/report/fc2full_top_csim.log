@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../fc2full_tb.cpp in release mode
+   Compiling ../../../../../fc2full_top.cpp in release mode
+   Generating csim.exe
+Expected FC2 spikes: 1 0 1 1 1 
+Got FC2 spikes     : 1 0 1 1 1 
+FC2FULL TB PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 64
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

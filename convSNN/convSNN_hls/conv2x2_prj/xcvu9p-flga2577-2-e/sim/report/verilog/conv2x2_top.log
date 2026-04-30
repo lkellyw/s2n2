@@ -21,9 +21,7 @@ Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 Running: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_conv2x2_top_top glbl -Oenable_linking_all_libraries -prj conv2x2_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s conv2x2_top 
-Multi-threading is on. Using 286 slave threads.
-WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
-    LIBRARY_PATH
+Multi-threading is on. Using 254 slave threads.
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" into library xil_defaultlib
@@ -116,7 +114,7 @@ source conv2x2_top.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 495 ns : File "/home/coder/Desktop/s2n2/convSNN/convSNN_hls/conv2x2_prj/xcvu9p-flga2577-2-e/sim/verilog/conv2x2_top.autotb.v" Line 646
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Apr 26 00:22:53 2026...
+INFO: [Common 17-206] Exiting xsim at Thu Apr 30 06:05:09 2026...
 Expected spikes: 1 0 1 0 
 Got spikes     : 1 0 1 0 
 TB PASSED

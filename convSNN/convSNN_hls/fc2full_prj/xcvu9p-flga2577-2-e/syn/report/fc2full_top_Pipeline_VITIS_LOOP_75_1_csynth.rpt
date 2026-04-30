@@ -1,0 +1,215 @@
+
+
+================================================================
+== Vitis HLS Report for 'fc2full_top_Pipeline_VITIS_LOOP_75_1'
+================================================================
+* Date:           Thu Apr 30 14:19:07 2026
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        fc2full_prj
+* Solution:       xcvu9p-flga2577-2-e (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.424 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       66|       66|  0.660 us|  0.660 us|   66|   66|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_75_1  |       64|       64|         2|          1|          1|    64|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       33|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        0|      273|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       45|    -|
+|Register             |        -|     -|       11|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       11|      351|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------+----------------+---------+----+---+-----+-----+
+    |      Instance     |     Module     | BRAM_18K| DSP| FF| LUT | URAM|
+    +-------------------+----------------+---------+----+---+-----+-----+
+    |mux_64_6_1_1_1_U4  |mux_64_6_1_1_1  |        0|   0|  0|  273|    0|
+    +-------------------+----------------+---------+----+---+-----+-----+
+    |Total              |                |        0|   0|  0|  273|    0|
+    +-------------------+----------------+---------+----+---+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln75_fu_573_p2         |         +|   0|  0|  14|           7|           1|
+    |ap_block_pp0_stage0_01001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln75_fu_567_p2        |      icmp|   0|  0|  15|           7|           8|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  33|          16|          12|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1     |   9|          2|    7|         14|
+    |i_fu_164                 |   9|          2|    7|         14|
+    |in_stream_blk_n          |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   17|         34|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                |  1|   0|    1|          0|
+    |ap_done_reg              |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
+    |i_fu_164                 |  7|   0|    7|          0|
+    |p_0_reg_732              |  1|   0|    1|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    | 11|   0|   11|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+--------------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
++------------------+-----+-----+------------+--------------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  fc2full_top_Pipeline_VITIS_LOOP_75_1|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  fc2full_top_Pipeline_VITIS_LOOP_75_1|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  fc2full_top_Pipeline_VITIS_LOOP_75_1|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  fc2full_top_Pipeline_VITIS_LOOP_75_1|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  fc2full_top_Pipeline_VITIS_LOOP_75_1|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  fc2full_top_Pipeline_VITIS_LOOP_75_1|  return value|
+|in_stream_din     |  out|    1|     ap_fifo|                             in_stream|       pointer|
+|in_stream_full_n  |   in|    1|     ap_fifo|                             in_stream|       pointer|
+|in_stream_write   |  out|    1|     ap_fifo|                             in_stream|       pointer|
+|in_0_load         |   in|    1|     ap_none|                             in_0_load|        scalar|
+|in_1_load         |   in|    1|     ap_none|                             in_1_load|        scalar|
+|in_2_load         |   in|    1|     ap_none|                             in_2_load|        scalar|
+|in_3_load         |   in|    1|     ap_none|                             in_3_load|        scalar|
+|in_4_load         |   in|    1|     ap_none|                             in_4_load|        scalar|
+|in_5_load         |   in|    1|     ap_none|                             in_5_load|        scalar|
+|in_6_load         |   in|    1|     ap_none|                             in_6_load|        scalar|
+|in_7_load         |   in|    1|     ap_none|                             in_7_load|        scalar|
+|in_8_load         |   in|    1|     ap_none|                             in_8_load|        scalar|
+|in_9_load         |   in|    1|     ap_none|                             in_9_load|        scalar|
+|in_10_load        |   in|    1|     ap_none|                            in_10_load|        scalar|
+|in_11_load        |   in|    1|     ap_none|                            in_11_load|        scalar|
+|in_12_load        |   in|    1|     ap_none|                            in_12_load|        scalar|
+|in_13_load        |   in|    1|     ap_none|                            in_13_load|        scalar|
+|in_14_load        |   in|    1|     ap_none|                            in_14_load|        scalar|
+|in_15_load        |   in|    1|     ap_none|                            in_15_load|        scalar|
+|in_16_load        |   in|    1|     ap_none|                            in_16_load|        scalar|
+|in_17_load        |   in|    1|     ap_none|                            in_17_load|        scalar|
+|in_18_load        |   in|    1|     ap_none|                            in_18_load|        scalar|
+|in_19_load        |   in|    1|     ap_none|                            in_19_load|        scalar|
+|in_20_load        |   in|    1|     ap_none|                            in_20_load|        scalar|
+|in_21_load        |   in|    1|     ap_none|                            in_21_load|        scalar|
+|in_22_load        |   in|    1|     ap_none|                            in_22_load|        scalar|
+|in_23_load        |   in|    1|     ap_none|                            in_23_load|        scalar|
+|in_24_load        |   in|    1|     ap_none|                            in_24_load|        scalar|
+|in_25_load        |   in|    1|     ap_none|                            in_25_load|        scalar|
+|in_26_load        |   in|    1|     ap_none|                            in_26_load|        scalar|
+|in_27_load        |   in|    1|     ap_none|                            in_27_load|        scalar|
+|in_28_load        |   in|    1|     ap_none|                            in_28_load|        scalar|
+|in_29_load        |   in|    1|     ap_none|                            in_29_load|        scalar|
+|in_30_load        |   in|    1|     ap_none|                            in_30_load|        scalar|
+|in_31_load        |   in|    1|     ap_none|                            in_31_load|        scalar|
+|in_32_load        |   in|    1|     ap_none|                            in_32_load|        scalar|
+|in_33_load        |   in|    1|     ap_none|                            in_33_load|        scalar|
+|in_34_load        |   in|    1|     ap_none|                            in_34_load|        scalar|
+|in_35_load        |   in|    1|     ap_none|                            in_35_load|        scalar|
+|in_36_load        |   in|    1|     ap_none|                            in_36_load|        scalar|
+|in_37_load        |   in|    1|     ap_none|                            in_37_load|        scalar|
+|in_38_load        |   in|    1|     ap_none|                            in_38_load|        scalar|
+|in_39_load        |   in|    1|     ap_none|                            in_39_load|        scalar|
+|in_40_load        |   in|    1|     ap_none|                            in_40_load|        scalar|
+|in_41_load        |   in|    1|     ap_none|                            in_41_load|        scalar|
+|in_42_load        |   in|    1|     ap_none|                            in_42_load|        scalar|
+|in_43_load        |   in|    1|     ap_none|                            in_43_load|        scalar|
+|in_44_load        |   in|    1|     ap_none|                            in_44_load|        scalar|
+|in_45_load        |   in|    1|     ap_none|                            in_45_load|        scalar|
+|in_46_load        |   in|    1|     ap_none|                            in_46_load|        scalar|
+|in_47_load        |   in|    1|     ap_none|                            in_47_load|        scalar|
+|in_48_load        |   in|    1|     ap_none|                            in_48_load|        scalar|
+|in_49_load        |   in|    1|     ap_none|                            in_49_load|        scalar|
+|in_50_load        |   in|    1|     ap_none|                            in_50_load|        scalar|
+|in_51_load        |   in|    1|     ap_none|                            in_51_load|        scalar|
+|in_52_load        |   in|    1|     ap_none|                            in_52_load|        scalar|
+|in_53_load        |   in|    1|     ap_none|                            in_53_load|        scalar|
+|in_54_load        |   in|    1|     ap_none|                            in_54_load|        scalar|
+|in_55_load        |   in|    1|     ap_none|                            in_55_load|        scalar|
+|in_56_load        |   in|    1|     ap_none|                            in_56_load|        scalar|
+|in_57_load        |   in|    1|     ap_none|                            in_57_load|        scalar|
+|in_58_load        |   in|    1|     ap_none|                            in_58_load|        scalar|
+|in_59_load        |   in|    1|     ap_none|                            in_59_load|        scalar|
+|in_60_load        |   in|    1|     ap_none|                            in_60_load|        scalar|
+|in_61_load        |   in|    1|     ap_none|                            in_61_load|        scalar|
+|in_62_load        |   in|    1|     ap_none|                            in_62_load|        scalar|
+|in_63_load        |   in|    1|     ap_none|                            in_63_load|        scalar|
++------------------+-----+-----+------------+--------------------------------------+--------------+
+

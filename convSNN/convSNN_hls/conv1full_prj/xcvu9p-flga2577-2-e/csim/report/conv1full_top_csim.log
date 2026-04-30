@@ -1,0 +1,76 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../conv1full_tb.cpp in release mode
+   Compiling ../../../../../conv1full_top.cpp in release mode
+   Generating csim.exe
+Mismatch at i=853 expected=1 got=0
+Mismatch at i=896 expected=1 got=0
+Mismatch at i=1045 expected=1 got=0
+Mismatch at i=1075 expected=1 got=0
+Mismatch at i=1183 expected=1 got=0
+Mismatch at i=1203 expected=1 got=0
+Mismatch at i=1208 expected=1 got=0
+Mismatch at i=1432 expected=1 got=0
+Mismatch at i=1439 expected=1 got=0
+Mismatch at i=1440 expected=1 got=0
+Mismatch at i=1567 expected=1 got=0
+Mismatch at i=1606 expected=1 got=0
+Mismatch at i=1651 expected=1 got=0
+Mismatch at i=1656 expected=1 got=0
+Mismatch at i=1683 expected=1 got=0
+Mismatch at i=1688 expected=1 got=0
+Mismatch at i=1713 expected=1 got=0
+Mismatch at i=1749 expected=1 got=0
+Mismatch at i=1841 expected=1 got=0
+Mismatch at i=1857 expected=1 got=0
+Mismatch at i=1862 expected=1 got=0
+Mismatch at i=1864 expected=1 got=0
+Mismatch at i=1866 expected=1 got=0
+Mismatch at i=1873 expected=1 got=0
+Mismatch at i=1937 expected=1 got=0
+Mismatch at i=1969 expected=1 got=0
+Mismatch at i=2033 expected=1 got=0
+Mismatch at i=2065 expected=1 got=0
+Mismatch at i=2112 expected=1 got=0
+Mismatch at i=2157 expected=1 got=0
+Mismatch at i=2165 expected=1 got=0
+Mismatch at i=2193 expected=1 got=0
+Mismatch at i=2259 expected=1 got=0
+Mismatch at i=2264 expected=1 got=0
+Mismatch at i=2293 expected=1 got=0
+Mismatch at i=2325 expected=1 got=0
+Mismatch at i=2374 expected=1 got=0
+Mismatch at i=2378 expected=1 got=0
+Mismatch at i=2395 expected=1 got=0
+Mismatch at i=2413 expected=1 got=0
+Mismatch at i=2453 expected=1 got=0
+Mismatch at i=2465 expected=1 got=0
+Mismatch at i=2470 expected=1 got=0
+Mismatch at i=2472 expected=1 got=0
+Mismatch at i=2474 expected=1 got=0
+Mismatch at i=2545 expected=1 got=0
+Mismatch at i=2577 expected=1 got=0
+Mismatch at i=2589 expected=1 got=0
+Mismatch at i=2616 expected=1 got=0
+Mismatch at i=2753 expected=1 got=0
+Mismatch at i=2758 expected=1 got=0
+Mismatch at i=2760 expected=1 got=0
+Mismatch at i=2762 expected=1 got=0
+Mismatch at i=2808 expected=1 got=0
+Mismatch at i=2815 expected=1 got=0
+Mismatch at i=2872 expected=1 got=0
+Mismatch at i=2879 expected=1 got=0
+Mismatch at i=2929 expected=1 got=0
+Mismatch at i=2965 expected=1 got=0
+Mismatch at i=3041 expected=1 got=0
+Mismatch at i=3046 expected=1 got=0
+Mismatch at i=3048 expected=1 got=0
+Mismatch at i=3050 expected=1 got=0
+Mismatch at i=3148 expected=1 got=0
+Mismatch at i=3174 expected=1 got=0
+Mismatch at i=3178 expected=1 got=0
+Mismatch at i=3195 expected=1 got=0
+CONV1FULL TB FAILED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3200
+ERR: [SIM 100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 3] *************** CSIM finish ***************

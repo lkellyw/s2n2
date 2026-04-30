@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 12,
-    "calls": "3 4 1 6 2 5",
+    "calls": "3 4 1 2 6 5",
     "file": "conv2x2_top.cpp",
     "fileloc": 26,
     "instructions": 65,
@@ -25,13 +25,19 @@
     "total_instructions": 1
   },
   "2": {
-    "basicblocks": 1,
+    "basicblocks": 39,
     "calls": "",
-    "file": "streamtools.h",
-    "fileloc": 874,
-    "instructions": 1,
-    "name": "operator hls::stream<ap_uint<1>, 0> &",
-    "total_instructions": 1
+    "file": "slidingwindow.h",
+    "fileloc": 171,
+    "instructions": 141,
+    "loads": {
+      "L": 1
+    },
+    "name": "ConvolutionInputGenerator<1, 1, 1, 2, 2, 1, 1, ap_resource_dflt>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 141
   },
   "3": {
     "basicblocks": 1,
@@ -75,18 +81,12 @@
     "total_instructions": 172
   },
   "6": {
-    "basicblocks": 39,
+    "basicblocks": 1,
     "calls": "",
-    "file": "slidingwindow.h",
-    "fileloc": 171,
-    "instructions": 141,
-    "loads": {
-      "L": 1
-    },
-    "name": "ConvolutionInputGenerator<1, 1, 1, 2, 2, 1, 1, ap_resource_dflt>",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 141
+    "file": "streamtools.h",
+    "fileloc": 874,
+    "instructions": 1,
+    "name": "operator hls::stream<ap_uint<1>, 0> &",
+    "total_instructions": 1
   }
 }

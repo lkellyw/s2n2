@@ -50,7 +50,6 @@ IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC"
 IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/auto_cc/include"
-IFLAG += -I "/usr/include/x86_64-linux-gnu"
 IFLAG += -D__VITIS_HLS__
 IFLAG += -D__HLS_COSIM__
 IFLAG += -D__SIM_FPO__

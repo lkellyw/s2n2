@@ -1,0 +1,34 @@
+{
+  "0": {
+    "basicblocks": 102,
+    "calls": "1",
+    "file": "fc2full_top.cpp",
+    "fileloc": 63,
+    "instructions": 412,
+    "loads": {
+      "G": 7,
+      "T": 64
+    },
+    "name": "fc2full_top",
+    "stores": {
+      "G": 11,
+      "T": 5
+    },
+    "total_instructions": 434
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fc2full_top.cpp",
+    "fileloc": 46,
+    "instructions": 22,
+    "loads": {
+      "G": 2
+    },
+    "name": "load_weights_once",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 22
+  }
+}
